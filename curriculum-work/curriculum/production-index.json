@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-002",
+  "current_batch": "KEDU-PRODUCTION-003",
   "units": [
     {
       "id": "K2-00.U01",
@@ -221,88 +221,88 @@
       "id": "K2-04.U01",
       "course": "K2-04",
       "title": "지시·요청·제약·출력 계약",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
+      "batch": "KEDU-PRODUCTION-003",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/prompt/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "preparation_verified_generation_pending",
       "classroom_trial": "not_run"
     },
     {
       "id": "K2-04.U02",
       "course": "K2-04",
       "title": "Zero/One/Few-shot의 비교",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
+      "batch": "KEDU-PRODUCTION-003",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/prompt/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "preparation_verified_generation_pending",
       "classroom_trial": "not_run"
     },
     {
       "id": "K2-04.U03",
       "course": "K2-04",
       "title": "추론 기법과 실행 전략의 경계",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
+      "batch": "KEDU-PRODUCTION-003",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/prompt/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "preparation_verified_generation_pending",
       "classroom_trial": "not_run"
     },
     {
       "id": "K2-04.U04",
       "course": "K2-04",
       "title": "Golden Dataset과 회귀",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
+      "batch": "KEDU-PRODUCTION-003",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/prompt/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "preparation_verified_generation_pending",
       "classroom_trial": "not_run"
     },
     {
       "id": "K2-05.U01",
       "course": "K2-05",
       "title": "정보의 출처와 신뢰 경계",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
+      "batch": "KEDU-PRODUCTION-003",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/context/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "preparation_verified_generation_pending",
       "classroom_trial": "not_run"
     },
     {
       "id": "K2-05.U02",
       "course": "K2-05",
       "title": "선택·순서·형식",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
+      "batch": "KEDU-PRODUCTION-003",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/context/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "preparation_verified_generation_pending",
       "classroom_trial": "not_run"
     },
     {
       "id": "K2-05.U03",
       "course": "K2-05",
       "title": "Token 예산과 답변 여유",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
+      "batch": "KEDU-PRODUCTION-003",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/context/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "preparation_verified_generation_pending",
       "classroom_trial": "not_run"
     },
     {
       "id": "K2-05.U04",
       "course": "K2-05",
       "title": "State·Memory에서 현재 Context로",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
+      "batch": "KEDU-PRODUCTION-003",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/context/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "preparation_verified_generation_pending",
       "classroom_trial": "not_run"
     },
     {
@@ -788,29 +788,23 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-003",
+    "id": "KEDU-PRODUCTION-004",
     "proposed_scope": [
-      "K2-04",
-      "K2-05",
-      "L1"
+      "K2-06",
+      "L2"
     ],
     "status": "not_started",
-    "recommended_reasoning_effort": "high",
-    "reason": "L0 baseline is ready; author Prompt/Context lessons and shared fixtures before Harness L2."
+    "recommended_reasoning_effort": "high"
   },
-  "batch_status": "L0_CONTRACT_VERIFIED_GENERATION_PENDING",
+  "batch_status": "MATERIAL_AND_PREPARATION_VERIFIED_GENERATION_PENDING",
   "first_unfinished_gate": {
-    "id": "L1-PROMPT-CONTEXT",
+    "id": "L2-HARNESS",
     "status": "not_started",
     "recommended_reasoning_effort": "high",
-    "next_actions": [
-      "Author K2-04/K2-05 material and shared synthetic policy/question fixtures",
-      "Specify comparable baseline and Prompt/Context changes using the same app",
-      "Keep actual generation G-MODEL pending until a real model is validated"
-    ],
-    "independent_pending_gates": [
-      "G-MODEL actual generation",
-      "G-UI browser/student classroom validation"
+    "independent_pending": [
+      "G-MODEL real generation",
+      "Human answer grading",
+      "Classroom/UI validation"
     ]
   },
   "milestones": {
@@ -819,6 +813,11 @@
       "path": "curriculum-work/practice/document-assistant/milestones/L0.json",
       "generation_verified": false,
       "ui_verified": false
+    },
+    "L1": {
+      "status": "MATERIAL_AND_PREPARATION_VERIFIED_GENERATION_PENDING",
+      "path": "curriculum-work/practice/document-assistant/milestones/L1.json",
+      "generation_verified": false
     }
   }
 }

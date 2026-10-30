@@ -1,0 +1,1132 @@
+[
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C01",
+    "variant": "baseline",
+    "character_count": 1050,
+    "prompt_sha256": "3415f45fd3a3c5b92ff713a84d54bdacada1aefd6f832af1f8628ef875db9799",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C01",
+    "variant": "instruction",
+    "character_count": 1151,
+    "prompt_sha256": "a4632020032f170102104b43a29fd5317e5e647807c97981378c721b31f38477",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C01",
+    "variant": "one_shot",
+    "character_count": 1272,
+    "prompt_sha256": "ce44ca420889942069fb9f27309f4dd26c10fd5ea87848719861038d2d9d5ce7",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 1,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C01",
+    "variant": "few_shot",
+    "character_count": 1403,
+    "prompt_sha256": "42ae6923920fdcab54a2f12e28fae97101eb0fe604bede42ba81a725ed0ac86b",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 2,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C01",
+    "variant": "focused",
+    "character_count": 398,
+    "prompt_sha256": "7f876a17aa9f422a3fb878ee0eb4809deae3d6a305d9cf04d533bf15fb834157",
+    "document_ids": [
+      "DOC-A"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C02",
+    "variant": "baseline",
+    "character_count": 1050,
+    "prompt_sha256": "6f18a5c3c48719d65cc75d0c8927a538dbe701edb5096358babd4444384d173c",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C02",
+    "variant": "instruction",
+    "character_count": 1151,
+    "prompt_sha256": "1ae2a6d1cf84b487a3cb1d39876d79ce0ecc3b901a67cd5e82dee0a1547c696e",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C02",
+    "variant": "one_shot",
+    "character_count": 1272,
+    "prompt_sha256": "cded60fbc6401484d94d6e73299c2045ecac6734989790f283f2180f4a9242ed",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 1,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C02",
+    "variant": "few_shot",
+    "character_count": 1403,
+    "prompt_sha256": "51caec2d0ff4b86b0f4edb966edf838fa44865a5fb9d0a8ffe95612e93e996cd",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 2,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C02",
+    "variant": "focused",
+    "character_count": 385,
+    "prompt_sha256": "fb18cef0f092b8153b77d1e01b3963a3bfbaf741d1727252ee516e1f24819d1b",
+    "document_ids": [
+      "DOC-B"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C03",
+    "variant": "baseline",
+    "character_count": 1044,
+    "prompt_sha256": "2f2ff82283033911bdc927c39e88af142f98be5d5b727f46a6646df23c81d337",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C03",
+    "variant": "instruction",
+    "character_count": 1145,
+    "prompt_sha256": "14d1233e9df9e1e8ba3d677cef731808599efb63d6a570fd69eb4120e40f0711",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C03",
+    "variant": "one_shot",
+    "character_count": 1266,
+    "prompt_sha256": "64f59e0e88f744fcc48ae5fb630936972774f4f8d4733b7fcf8696346540e8c8",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 1,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C03",
+    "variant": "few_shot",
+    "character_count": 1397,
+    "prompt_sha256": "3f1be881dc5f9b859a21ccc6fddeb61306311c8bdf71a58d5a04f620586d28b5",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 2,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C03",
+    "variant": "focused",
+    "character_count": 160,
+    "prompt_sha256": "c706e9806657b9e73c5a9c8200c1084ab6f849b312b8d6bc78e8f2886829b7ce",
+    "document_ids": [],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C04",
+    "variant": "baseline",
+    "character_count": 1040,
+    "prompt_sha256": "bc21f6fd6971cefd1e648fe5d7c7f99b7c0e0fe98df4dd6076fafda0c936f12d",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C04",
+    "variant": "instruction",
+    "character_count": 1141,
+    "prompt_sha256": "2eb5fe24face4956293f63ce0417492d6d33150500ea7cee89cd26f313f1c367",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C04",
+    "variant": "one_shot",
+    "character_count": 1262,
+    "prompt_sha256": "d76e58c0c8af5780c1c625659aff0584b52f9c2d7fdf7d0e61bc6d7a578e6df8",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 1,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C04",
+    "variant": "few_shot",
+    "character_count": 1393,
+    "prompt_sha256": "49873788166a3b15711554f3c5a17036d7763f67e175b05c9ceafef3cfd903c0",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 2,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C04",
+    "variant": "focused",
+    "character_count": 388,
+    "prompt_sha256": "a5f129520b755487e90d745b3980e85b432754ab774e2f19adc3a2b9a362a6c9",
+    "document_ids": [
+      "DOC-A"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C05",
+    "variant": "baseline",
+    "character_count": 1058,
+    "prompt_sha256": "9c12c5a4bba8d2b972ca75fb259d6cb1892cb922165060a826e18a11421d66d6",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C05",
+    "variant": "instruction",
+    "character_count": 1159,
+    "prompt_sha256": "7561f5b5681b5a7e475938c699c6648efa563191b532d36cc4b3849daf425a1d",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C05",
+    "variant": "one_shot",
+    "character_count": 1280,
+    "prompt_sha256": "b8d8e2d3536ad7e3a7dec9f6cc34293a8282ac165bb9c9a2ee59c0b15438d31c",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 1,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C05",
+    "variant": "few_shot",
+    "character_count": 1411,
+    "prompt_sha256": "78118f21b14edacc53a9290890c4395f5f6c6d7ec49510aaf5d02e4e6ca17c2c",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 2,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C05",
+    "variant": "focused",
+    "character_count": 573,
+    "prompt_sha256": "4d81a6d318455b3b702b69c024eff80e09be339bf863907473bd15647405a934",
+    "document_ids": [
+      "DOC-A",
+      "DOC-A-OLD"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C06",
+    "variant": "baseline",
+    "character_count": 1054,
+    "prompt_sha256": "92bd731ee28a69c93b09aa49368f16ffd0e2fb1c1c36ee38932c62ff27dbf6b6",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C06",
+    "variant": "instruction",
+    "character_count": 1155,
+    "prompt_sha256": "d03f0730e8f85b5f1d2c15aecb3dacce4b042782fc63a19225ff84fa97dfae54",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C06",
+    "variant": "one_shot",
+    "character_count": 1276,
+    "prompt_sha256": "60679ab2034875251db2a8f34899992c102d3e29e7c47aee25d8d1153a7b2e76",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 1,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C06",
+    "variant": "few_shot",
+    "character_count": 1407,
+    "prompt_sha256": "36e99f68619fe278213557d63fc4186fdfce3aaa66cb039f7f3daf9aacb805b0",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 2,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C06",
+    "variant": "focused",
+    "character_count": 170,
+    "prompt_sha256": "579393558595ccf34fdbd7f6c1c7fb5ea7c2e322a9243652da74100501bcd4e6",
+    "document_ids": [],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C07",
+    "variant": "baseline",
+    "character_count": 1055,
+    "prompt_sha256": "e5f1e5b4c0bce8f6d9594d515aee1a6ac557f679565c20ce493cc79d9a22b8a4",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C07",
+    "variant": "instruction",
+    "character_count": 1156,
+    "prompt_sha256": "039bcfeb008beda9b726d20628e785293c59cd90efa9b1f3916b2e1331fe4fce",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C07",
+    "variant": "one_shot",
+    "character_count": 1277,
+    "prompt_sha256": "73bb65ddf13b951950a63631bb11099bea2cd1c973fa5d817d813caf2c570d14",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 1,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C07",
+    "variant": "few_shot",
+    "character_count": 1408,
+    "prompt_sha256": "54a523635abfa047d4c6992b780235d507c2feaab82b6017afc3296e9888debe",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 2,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C07",
+    "variant": "focused",
+    "character_count": 584,
+    "prompt_sha256": "a1d2500aea5f96673ac0b584ab82d05eb195ffbc02d1e89a2cf56ba99b5f1178",
+    "document_ids": [
+      "DOC-A",
+      "DOC-I"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C08",
+    "variant": "baseline",
+    "character_count": 1052,
+    "prompt_sha256": "e06015147c8d975cf15b220855ede6fbc5be9e8ff16a7e22f8feef78dc14826e",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C08",
+    "variant": "instruction",
+    "character_count": 1153,
+    "prompt_sha256": "a4700caf8210026e6bedb3c83157f8f851db96710f74870b2a3a1535860e0b12",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C08",
+    "variant": "one_shot",
+    "character_count": 1274,
+    "prompt_sha256": "d3c8336cf1dc88215335c08d360d4d2fb2640e3277e88b244226d0d4a4361d21",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 1,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C08",
+    "variant": "few_shot",
+    "character_count": 1405,
+    "prompt_sha256": "e7a41f581f2c5dee1c53de1d1363cbffec023cf8829e68c2f7c72d9c4562385f",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 2,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C08",
+    "variant": "focused",
+    "character_count": 400,
+    "prompt_sha256": "fa5abd3b76938a3d8c2063ba5dce74818f84ce6a1e07496032acaa8c072b9feb",
+    "document_ids": [
+      "DOC-A"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C09",
+    "variant": "baseline",
+    "character_count": 1054,
+    "prompt_sha256": "9737c27d1baa24f4e62d4460e9904e47ba526fd6d21238cfcfeec642272d4e04",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C09",
+    "variant": "instruction",
+    "character_count": 1155,
+    "prompt_sha256": "5af2d53d1c2aaf18b585de02ea5bbaaa50aca0a12de8108071cba67bbbd09d61",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C09",
+    "variant": "one_shot",
+    "character_count": 1276,
+    "prompt_sha256": "63b2b854185e36922ff538c4845d4d7e8b7d72717ee09801514f8d2bcf14ea8d",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 1,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C09",
+    "variant": "few_shot",
+    "character_count": 1407,
+    "prompt_sha256": "331a87185314dc0f425355a03e1ab29e13ccab12dbe53f524ff3965a94fe8c93",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 2,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C09",
+    "variant": "focused",
+    "character_count": 623,
+    "prompt_sha256": "ad4bcd7720257ff9807c2313e294fde15b5862c7c2a2d27d9f8b847833e7de46",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "case_id": "C10",
+    "variant": "baseline",
+    "status": "input_rejected_before_generation",
+    "generation_executed": false
+  },
+  {
+    "case_id": "C10",
+    "variant": "instruction",
+    "status": "input_rejected_before_generation",
+    "generation_executed": false
+  },
+  {
+    "case_id": "C10",
+    "variant": "one_shot",
+    "status": "input_rejected_before_generation",
+    "generation_executed": false
+  },
+  {
+    "case_id": "C10",
+    "variant": "few_shot",
+    "status": "input_rejected_before_generation",
+    "generation_executed": false
+  },
+  {
+    "case_id": "C10",
+    "variant": "focused",
+    "status": "input_rejected_before_generation",
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C11",
+    "variant": "baseline",
+    "character_count": 1057,
+    "prompt_sha256": "10c65f438f53febfe8e7343530a5f8540d81896cf4227bbbe4321e4c9c15f106",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C11",
+    "variant": "instruction",
+    "character_count": 1158,
+    "prompt_sha256": "2702132ba6e0f2405a9d73360fd1d5efa0d1860fb364136a6db9524935e0c929",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C11",
+    "variant": "one_shot",
+    "character_count": 1279,
+    "prompt_sha256": "99846b5c8356039af3f297e4e3ca635f0db2c4bdd380d4d3a2708ce24dbac8a4",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 1,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C11",
+    "variant": "few_shot",
+    "character_count": 1410,
+    "prompt_sha256": "6510f6e56b1f99134e43fa1f9451b0a3dfe26396d38dab9bcb24284b3621bd34",
+    "document_ids": [
+      "DOC-A",
+      "DOC-B",
+      "DOC-A-OLD",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 2,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C11",
+    "variant": "focused",
+    "character_count": 405,
+    "prompt_sha256": "58808e2028dd024da0afa794dea21479e46a4274af1a02b7d211a36ee780588a",
+    "document_ids": [
+      "DOC-A"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C12",
+    "variant": "baseline",
+    "character_count": 654,
+    "prompt_sha256": "d9fa657e175e31fb2cde4d55092dad715d850fc56906179fe3b2efc433281566",
+    "document_ids": [
+      "DOC-B",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C12",
+    "variant": "instruction",
+    "character_count": 755,
+    "prompt_sha256": "b7369bcffc96ea73b7e888383976b5bc6abeb1d239f275665c287f76d0f601ae",
+    "document_ids": [
+      "DOC-B",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C12",
+    "variant": "one_shot",
+    "character_count": 876,
+    "prompt_sha256": "08dd7233deea1b8c6d2b3c752c23b5980ad9e0c1c28e611021a8f8a1dbb31950",
+    "document_ids": [
+      "DOC-B",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 1,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C12",
+    "variant": "few_shot",
+    "character_count": 1007,
+    "prompt_sha256": "ac982a9823f08a6ef3829e2ed45faae5ff9e1449d24c6c4837202726c763051d",
+    "document_ids": [
+      "DOC-B",
+      "DOC-I",
+      "DOC-T"
+    ],
+    "shot_count": 2,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  },
+  {
+    "status": "prepared_not_generated",
+    "case_id": "C12",
+    "variant": "focused",
+    "character_count": 171,
+    "prompt_sha256": "0f090fb28530684641cf25fc406d73abbeca4954b9abd9b741428524babfc88d",
+    "document_ids": [],
+    "shot_count": 0,
+    "dataset_version": "documents-v1/core-v1/shots-v1",
+    "actor": "staff_teaching_fixture",
+    "selection": "manual_fixture_not_retrieval",
+    "token_count": null,
+    "runtime_token_budget_verified": false,
+    "generation_executed": false
+  }
+]

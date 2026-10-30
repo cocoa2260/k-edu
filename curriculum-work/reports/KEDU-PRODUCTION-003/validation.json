@@ -1,0 +1,31 @@
+{
+  "task_id": "KEDU-PRODUCTION-003",
+  "status": "MATERIAL_AND_PREPARATION_VERIFIED_GENERATION_PENDING",
+  "tests_passed": 93,
+  "prepared_inputs": 55,
+  "invalid_input_rejections": 5,
+  "generation_executed": false,
+  "quality_scored": false,
+  "retrieval_executed": false,
+  "production_auth_verified": false,
+  "runtime_budget_verified": false,
+  "reference_tokenizer_executed": true,
+  "reference_count_scope": "C01 five variants; includes pinned Qwen chat template, no generation",
+  "l0_chat_schema_unchanged": true,
+  "manual_fixture_scope": "Staff role/manifest/selected documents are teaching fixtures; not retrieval, authenticated permission enforcement or index deletion tests.",
+  "comparison_controls": [
+    "baseline/instruction same docs and question",
+    "instruction/one/few same docs and instructions",
+    "instruction/focused same instructions/question/shot count"
+  ],
+  "grade_denominators": {
+    "factual_grounding": 6,
+    "boundary_behavior": 6
+  },
+  "remaining": [
+    "G-MODEL actual local generation and per-case human grading",
+    "Classroom trial",
+    "Actual selected Provider tokenizer/template/context budget verification"
+  ],
+  "independent_reviewer": false
+}

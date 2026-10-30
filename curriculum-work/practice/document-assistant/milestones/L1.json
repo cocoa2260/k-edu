@@ -1,0 +1,22 @@
+{
+  "stage": "L1",
+  "status": "MATERIAL_AND_PREPARATION_VERIFIED_GENERATION_PENDING",
+  "baseline": "L0",
+  "new_endpoint": "POST /ai/prepare",
+  "old_endpoint": "POST /ai/chat unchanged",
+  "fixture_files": [
+    "data/documents-v1.json",
+    "data/core-v1.json",
+    "data/shots-v1.json"
+  ],
+  "variants": [
+    "baseline",
+    "instruction",
+    "one_shot",
+    "few_shot",
+    "focused"
+  ],
+  "actual_generation_verified": false,
+  "reference_token_counts": "curriculum-work/reports/KEDU-PRODUCTION-003/token-counts.json",
+  "next_stage": "L2"
+}

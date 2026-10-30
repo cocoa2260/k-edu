@@ -31,3 +31,7 @@ requirements.txt는 이번 격리 Linux Python 3.12 환경에서 설치·계약 
 설정된 SOCKS 프록시를 사용하는 환경에서도 HTTP 클라이언트가 동작하도록 httpx의 socks 옵션을 포함한다. 프록시를 끄거나 TLS 검증을 끄는 해결법은 사용하지 않는다.
 
 검증 결과와 실제 Provider·UI의 미확인은 [L0 결과](../../../reports/KEDU-PRODUCTION-002/RESULT.md)에 있다. 학생의 실제 생성·성능·화면 증거는 별도로 기록해야 한다.
+
+## L1 확장
+
+POST /ai/prepare는 사례 ID와 조건으로 입력만 준비한다. 실제 생성은 하지 않는다. [L1 안내](../L1.md)에서 비교 조건·공통 자료·명령·채점을 확인한다. /ai/chat 계약은 유지한다.

@@ -1,14 +1,9 @@
 # K-Edu 교육과정 개편 — 현재 위치와 읽을 파일
 
-**5단계 제작 중. Hugging Face 입문·Tokenizer 검증에 이어 L0 기준 Backend의 계약 검증을 마쳤다.**
+**현재: Prompt·Context와 L1을 제작했다. 70개 중 11개 단원 자료 작성, 실제 생성·품질 평가는 미실행이다.**
 
-최근 추가된 **[L0 기준 앱 강의](lessons/baseline/lesson.md)**는 실제 코드가 어디에 있고 무엇을 고정했는지 설명한다. [검증 결과](reports/KEDU-PRODUCTION-002/RESULT.md)에서 계약 테스트 30개·로컬 HTTP 데모와 실제 모델 미확인을 구분해 볼 수 있다.
+[Prompt 강의](lessons/prompt/lesson.md) · [Context 강의](lessons/context/lesson.md) · [L1 공통 실습](practice/document-assistant/L1.md) · [검증 결과](reports/KEDU-PRODUCTION-003/RESULT.md)
 
-먼저 읽을 강의는 **[Hugging Face 첫 방문에서 모델 입력 확인까지](lessons/huggingface/README.md)** 한 개다. 설명·실제 화면·따라하기·확인 질문이 이어지며 실행 파일은 분리했다.
-
-현재 70개 단원 중 3개의 자료를 작성했다. Linux CPU의 Qwen·Smol 실제 Tokenizer 실행과 캐시 재현을 검증했고, 계약·회귀 테스트 17개가 통과했다. 전체 강의·실습의 제작 완료가 아니다.
-
-중단 후에는 **[제작 현황과 이어서 할 일](PROGRESS.md)**을 읽고 첫 미완료 Gate부터 재개한다. [첫 묶음 결과](reports/KEDU-PRODUCTION-001/RESULT.md)에서 검증한 범위와 남은 항목을 확인할 수 있다.
 
 ## 전체 구성안
 
@@ -24,7 +19,7 @@
 | 2 | 결과를 보고 분석 방식 보완 | 완료 |
 | 3 | 전체 강의 비교·분석 | 결과 보존 |
 | 4 | 전체 목차·누적 실습 구성 결정 | v0.3을 첫 제작 묶음의 기준으로 사용 |
-| 5 | 확정한 강의·실습 제작 및 검증 | 첫 3개 단원 자료·Linux CPU Tokenizer 검증 완료. L0 Backend 계약 검증 완료, 다음 Prompt·Context 제작 |
+| 5 | 확정한 강의·실습 제작 및 검증 | 11개 단원 자료·L0/L1 준비 검증. 다음 Harness/L2 제작 |
 
 구성안은 과목명·배치·범위의 추천이다. 기존 academy 원문·파일명은 유지한다. 새 강의 자료와 입문 실행 도구를 별도 작성했고, 누적 앱·실습 Dataset·훈련은 제작 전이다. 실제 모델·훈련·교육장 성능은 검증 게이트를 둔 후속 작업이다.
 

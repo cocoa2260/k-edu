@@ -1,0 +1,27 @@
+{
+  "task_id": "KEDU-PRODUCTION-003",
+  "scope": [
+    "K2-04",
+    "K2-05",
+    "L1"
+  ],
+  "branch": "work/curriculum-production-001",
+  "recommended_reasoning_effort": "high",
+  "new_units_authored": 8,
+  "new_fixtures": "documents-v1/core-v1/shots-v1",
+  "actual_generation_executed": false,
+  "paid_api_calls": 0,
+  "next_task": "KEDU-PRODUCTION-004 K2-06/L2",
+  "status": "MATERIAL_AND_PREPARATION_VERIFIED_GENERATION_PENDING",
+  "total_units_authored": 11,
+  "full_curriculum_complete": false,
+  "input_tokens": null,
+  "output_tokens": null,
+  "tool_calls": null,
+  "telemetry_complete": false,
+  "independent_reviewer": false,
+  "runner_implemented": false,
+  "publication": {
+    "state": "prepared"
+  }
+}

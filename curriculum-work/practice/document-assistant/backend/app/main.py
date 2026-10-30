@@ -62,6 +62,23 @@ def create_app(provider: AIProvider | None = None) -> FastAPI:
             answer=result.answer,
         )
 
+    from typing import Literal
+    from pydantic import BaseModel, ValidationError
+    from app.experiments import prepare
+
+    class PrepareRequest(BaseModel):
+        case_id: str
+        variant: Literal["baseline", "instruction", "one_shot", "few_shot", "focused"]
+
+    @api.post("/ai/prepare")
+    def prepare_experiment(request: PrepareRequest) -> dict:
+        try:
+            return prepare(request.case_id, request.variant)
+        except ValidationError as exc:
+            raise HTTPException(422, "질문 또는 준비 입력의 문자 제한을 확인하세요") from exc
+        except ValueError as exc:
+            raise HTTPException(422, "알 수 없는 실험 사례 또는 조건입니다") from exc
+
     return api
 
 
