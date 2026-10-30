@@ -1,0 +1,254 @@
+{
+  "task_id": "KEDU-DESIGN-001",
+  "run_id": "20261030T101518Z",
+  "status": "PROPOSED_READY_FOR_REVIEW",
+  "attempt_count": 3,
+  "repairs_completed": 2,
+  "source_commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+  "analysis_commit": "be205182880a445cabbd08bb3eda06e02c454904",
+  "telemetry_complete": false,
+  "runner_implemented": false,
+  "reasoning_effort_auto_switched": false,
+  "independent_reviewer": false,
+  "checkpoint_times": {
+    "input_versions_verified": "2026-10-30T10:15:18Z",
+    "draft_written": "2026-10-30T10:30:37.060437+00:00",
+    "repair_completed": "2026-10-30T10:35:20.624241+00:00",
+    "second_repair_completed": "2026-10-30T10:37:54.484431+00:00",
+    "local_validation_completed": "2026-10-30T10:37:54.844551+00:00"
+  },
+  "revision_records": [
+    {
+      "attempt": 1,
+      "report_sha256": "3e849e1eaeba1ca6ea6d7a716407bddf7ceed640531af40058efc156da685658",
+      "automatic_checks": {
+        "checked_at": "2026-10-30T10:32:21.317827+00:00",
+        "passed": true,
+        "checks": [
+          {
+            "id": "D01",
+            "status": "pass",
+            "errors": [],
+            "scope": "Pinned analysis report/evidence and 164 original text-source blobs are unchanged; no external currentness verification."
+          },
+          {
+            "id": "D02",
+            "status": "pass",
+            "errors": [],
+            "scope": "15 proposed blocks, 63 units, 42 primary mappings, 33 QA dispositions and 35 finding dispositions; not a content-quality score."
+          },
+          {
+            "id": "D03",
+            "status": "pass",
+            "errors": [],
+            "scope": "Course and cumulative-stage dependency graphs have known nodes and no cycles; gate and owner references exist."
+          },
+          {
+            "id": "D04",
+            "status": "pass",
+            "errors": [],
+            "scope": "22 named distinct outcomes have destinations, cumulative progression is preserved, training is a separate branch and artifacts remain planned."
+          },
+          {
+            "id": "D05",
+            "status": "pass",
+            "errors": [],
+            "scope": "Roles have goals, action choices, state, handoff contracts and finite global budgets; enforcement is a future implementation requirement."
+          },
+          {
+            "id": "D06",
+            "status": "pass",
+            "errors": [],
+            "scope": "Frozen comparison-set design, distinct handoff tests, planned train/validation/test split and explicit real-model/training gates; no measured quality claim."
+          },
+          {
+            "id": "D07",
+            "status": "pass",
+            "errors": [],
+            "scope": "Human plan has no code fences, design/approval/execution boundaries are labeled, usage is not invented, and no lessons/models/training are claimed completed."
+          },
+          {
+            "id": "D08",
+            "status": "pass",
+            "errors": [],
+            "scope": "Attempt/repair records and report output allowlist; immutable input checks cover local source protection. Remote diff is checked at publication."
+          }
+        ]
+      },
+      "semantic_review": "revise",
+      "issues": [
+        {
+          "id": "S01",
+          "problem": "L0 acceptance could require UI even though the plan permits CLI progress.",
+          "repair": "G-UI now explicitly diagnostic at L0 and blocking only at L9; L0 acceptance updated."
+        },
+        {
+          "id": "S02",
+          "problem": "Writer evidence requests and reviewer repairs could use separate counters and compound loops.",
+          "repair": "Added one Runtime-owned global handoff-repair counter; clarified authoritative counters and earliest global/role limits."
+        },
+        {
+          "id": "S03",
+          "problem": "Early manual Context cases could be mistaken as proving index filtering/deletion or all 18 cases as factual accuracy.",
+          "repair": "Added stage-specific evidence interpretation and separate positive-answer versus rejection/boundary scoring."
+        },
+        {
+          "id": "S04",
+          "problem": "The actual small-model action protocol was not explicit.",
+          "repair": "Specify verified native Tool Calling or validated model-generated action envelopes, both checked by the same Runtime."
+        }
+      ]
+    },
+    {
+      "attempt": 2,
+      "change_scope": "Targeted contract, gate and scoring clarifications; 14 courses, 63 units, 10 practice stages and 22 preservation outcomes remain.",
+      "remaining_required_revisions": [
+        "S05",
+        "S06"
+      ],
+      "report_sha256": "6d78d6d36e853290bc391e6751a32532b985fa808999088faf489459648f3831",
+      "automatic_checks": {
+        "checked_at": "2026-10-30T10:35:21.003878+00:00",
+        "passed": true,
+        "checks": [
+          {
+            "id": "D01",
+            "status": "pass",
+            "errors": [],
+            "scope": "Pinned analysis report/evidence and 164 original text-source blobs are unchanged; no external currentness verification."
+          },
+          {
+            "id": "D02",
+            "status": "pass",
+            "errors": [],
+            "scope": "15 proposed blocks, 63 units, 42 primary mappings, 33 QA dispositions and 35 finding dispositions; not a content-quality score."
+          },
+          {
+            "id": "D03",
+            "status": "pass",
+            "errors": [],
+            "scope": "Course and cumulative-stage dependency graphs have known nodes and no cycles; gate and owner references exist."
+          },
+          {
+            "id": "D04",
+            "status": "pass",
+            "errors": [],
+            "scope": "22 named distinct outcomes have destinations, cumulative progression is preserved, training is a separate branch and artifacts remain planned."
+          },
+          {
+            "id": "D05",
+            "status": "pass",
+            "errors": [],
+            "scope": "Roles have goals, action choices, state, handoff contracts and finite global budgets; enforcement is a future implementation requirement."
+          },
+          {
+            "id": "D06",
+            "status": "pass",
+            "errors": [],
+            "scope": "Frozen comparison-set design, distinct handoff tests, planned train/validation/test split and explicit real-model/training gates; no measured quality claim."
+          },
+          {
+            "id": "D07",
+            "status": "pass",
+            "errors": [],
+            "scope": "Human plan has no code fences, design/approval/execution boundaries are labeled, usage is not invented, and no lessons/models/training are claimed completed."
+          },
+          {
+            "id": "D08",
+            "status": "pass",
+            "errors": [],
+            "scope": "Attempt/repair records and report output allowlist; immutable input checks cover local source protection. Remote diff is checked at publication."
+          }
+        ],
+        "controls": [
+          {
+            "case": "cycle",
+            "expected": "D03",
+            "failed_checks": [
+              "D03"
+            ],
+            "detected": true
+          },
+          {
+            "case": "lost_activation_outcome",
+            "expected": "D04",
+            "failed_checks": [
+              "D04"
+            ],
+            "detected": true
+          },
+          {
+            "case": "unbounded_calls",
+            "expected": "D05",
+            "failed_checks": [
+              "D05"
+            ],
+            "detected": true
+          },
+          {
+            "case": "unbounded_handoff_repair",
+            "expected": "D05",
+            "failed_checks": [
+              "D05"
+            ],
+            "detected": true
+          },
+          {
+            "case": "fake_execution_claim",
+            "expected": "D07",
+            "failed_checks": [
+              "D07"
+            ],
+            "detected": true
+          }
+        ]
+      },
+      "semantic_review": "revise",
+      "issues": [
+        {
+          "id": "S05",
+          "problem": "Position information and the Diffusion introduction preserved during the pilot were not explicit named destinations in the new outline.",
+          "repair": "Explicitly preserve position representation in K2-02.U04 and Diffusion as a short modeling-approach comparison in K2-00.U03."
+        },
+        {
+          "id": "S06",
+          "problem": "Vision input-quality unit did not explicitly name existing CLIP/VLM, OCR-free and layout-aware distinctions.",
+          "repair": "Make their role/quality distinctions explicit in K2-13.U03 and the preservation manifest."
+        }
+      ]
+    },
+    {
+      "attempt": 3,
+      "change_scope": "Targeted preservation destinations; course/unit/stage counts unchanged. Named outcome mappings strengthened from 22 to 25, without lowering criteria.",
+      "resolved": [
+        "S05",
+        "S06"
+      ],
+      "remaining_required_revisions": []
+    }
+  ],
+  "input_tokens": null,
+  "output_tokens": null,
+  "tool_calls": null,
+  "external_model_api_calls": 0,
+  "approved_curriculum": false,
+  "lesson_files_modified": false,
+  "actual_model_or_training_executed": false,
+  "publication": {
+    "target_branch": "work/curriculum-design-001",
+    "state_at_record_creation": "not_yet_published"
+  },
+  "report_sha256": "abde47af44456625a24cf2244b3d096d2cbed216d7a907b62dbcf6c33e5db3c0",
+  "counts": {
+    "orientation_blocks": 1,
+    "teaching_courses": 14,
+    "learning_units": 63,
+    "practice_stages": 10,
+    "preserved_outcomes": 25,
+    "source_mappings": 42,
+    "qa_dispositions": 33,
+    "stage3_findings_dispositions": 35,
+    "static_checks_passed": 8,
+    "control_cases_detected": 5
+  }
+}

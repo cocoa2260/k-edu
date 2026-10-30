@@ -1,0 +1,39 @@
+{
+  "task_id": "KEDU-DESIGN-001",
+  "revision": 1,
+  "stage": 4,
+  "mode": "curriculum_and_cumulative_practice_design",
+  "source_commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+  "analysis_commit": "be205182880a445cabbd08bb3eda06e02c454904",
+  "input_manifest": "curriculum-work/reports/KEDU-ANALYSIS-001/20261030T080144Z/evidence.json",
+  "outputs": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z",
+  "protected_paths": [
+    "academy/",
+    "curriculum-work/reports/KEDU-ANALYSIS-001/20261030T080144Z/"
+  ],
+  "write_allowlist": [
+    "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/",
+    "curriculum-work/README.md",
+    "curriculum-work/loop/tasks/KEDU-DESIGN-001.json",
+    "curriculum-work/loop/checks/check_design.py"
+  ],
+  "limits": {
+    "max_attempts": 3,
+    "max_repairs": 2,
+    "stop_on_same_failure_after_repair": true,
+    "soft_deadline_minutes": 90,
+    "external_model_api_calls": 0
+  },
+  "required_checks": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "D07",
+    "D08"
+  ],
+  "success_state": "PROPOSED_READY_FOR_REVIEW",
+  "approval_scope": "The user authorized work on stage 4; exact titles, required scope and changes remain reviewable design choices. No lesson edits, implementation, deployments or benchmark claims."
+}
