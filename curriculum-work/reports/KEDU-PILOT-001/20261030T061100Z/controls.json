@@ -1,0 +1,35 @@
+{
+  "cases": [
+    {
+      "control_id": "C01",
+      "expected_failed_check": "A03",
+      "actual_failed_checks": [
+        "A03",
+        "A04"
+      ],
+      "detected": true,
+      "method": "automated fixture copy; final artifacts not modified"
+    },
+    {
+      "control_id": "C03",
+      "expected_failed_check": "A07",
+      "actual_failed_checks": [
+        "A07"
+      ],
+      "detected": true,
+      "method": "automated fixture copy; final artifacts not modified"
+    },
+    {
+      "control_id": "C02",
+      "detected": true,
+      "method": "same-session Work semantic review; not a blind or independent model test",
+      "failed_rubric": [
+        "Q01",
+        "Q02"
+      ]
+    }
+  ],
+  "all_detected": true,
+  "independent_evaluator": false,
+  "final_artifacts_mutated": false
+}

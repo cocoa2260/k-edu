@@ -1,0 +1,48 @@
+{
+  "control_id": "C02",
+  "injected_proposal": {
+    "recommendation": "delete",
+    "source_id": "S04",
+    "start_line": 1432,
+    "end_line": 1545,
+    "reason": "Phase1 already teaches AI/ML/DL definitions, so delete all of these evaluation sections."
+  },
+  "detected": true,
+  "method": "same-session Work semantic review; not a blind or independent model test",
+  "failed_rubric": [
+    "Q01",
+    "Q02"
+  ],
+  "reason": "기초 정의의 중복 근거는 데이터 분리·과적합·누수·Metric 삭제를 지지하지 않는다. S02 L209, S03 L185는 평가를 예고할 뿐이며 S04 L1432–1452, L1479–1545의 새 판단과 활동은 보존해야 한다.",
+  "source_refs": [
+    {
+      "source_id": "S02",
+      "start_line": 205,
+      "end_line": 209,
+      "quote_line": 205,
+      "excerpt": "### 5-3. '모델을 학습한다'는 말의 의미"
+    },
+    {
+      "source_id": "S03",
+      "start_line": 183,
+      "end_line": 185,
+      "quote_line": 183,
+      "excerpt": "Loss 자체가 Model을 수정하지는 않습니다. **현재 상태가 목표와 얼마나 다른지 계산한 결과**이기 때문입니다. 실제 Parameter를 바꾸려면 다음 단계가 필요합니다."
+    },
+    {
+      "source_id": "S04",
+      "start_line": 1432,
+      "end_line": 1452,
+      "quote_line": 1432,
+      "excerpt": "## 2. Train, Validation, Test를 왜 나누는가?"
+    },
+    {
+      "source_id": "S04",
+      "start_line": 1479,
+      "end_line": 1545,
+      "quote_line": 1479,
+      "excerpt": "## 4. Overfitting과 Underfitting"
+    }
+  ],
+  "limits": "이 사례 한 건의 검토이며 일반적인 교육 품질 판별 정확도를 측정하지 않았다."
+}

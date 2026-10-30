@@ -1,0 +1,429 @@
+{
+  "source_id": "S04",
+  "total_lines": 1693,
+  "blocks": [
+    {
+      "id": "B01",
+      "start_line": 1,
+      "end_line": 69,
+      "title": "Phase 2 — 02. AI / 머신러닝 / 딥러닝 개요",
+      "status": "검토함",
+      "findings": [
+        "F23"
+      ],
+      "reason": "학습 목표·안내를 본문과 분리해 확인."
+    },
+    {
+      "id": "B02",
+      "start_line": 70,
+      "end_line": 100,
+      "title": "[학습] AI / 머신러닝 / 딥러닝 개요 (Unit 1)",
+      "status": "검토함",
+      "findings": [
+        "F23"
+      ],
+      "reason": "학습 목표·안내를 본문과 분리해 확인."
+    },
+    {
+      "id": "B03",
+      "start_line": 101,
+      "end_line": 130,
+      "title": "이번 과목의 학습 지도",
+      "status": "검토함",
+      "findings": [
+        "F23"
+      ],
+      "reason": "학습 목표·안내를 본문과 분리해 확인."
+    },
+    {
+      "id": "B04",
+      "start_line": 131,
+      "end_line": 197,
+      "title": "① 문제 이해 (Why)",
+      "status": "검토함",
+      "findings": [
+        "F01"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B05",
+      "start_line": 198,
+      "end_line": 240,
+      "title": "왜 이런 기술이 필요했을까?",
+      "status": "검토함",
+      "findings": [
+        "F02"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B06",
+      "start_line": 241,
+      "end_line": 280,
+      "title": "② 개념 이해 (Concept)",
+      "status": "검토함",
+      "findings": [
+        "F01"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B07",
+      "start_line": 281,
+      "end_line": 354,
+      "title": "머신러닝(Machine Learning)",
+      "status": "검토함",
+      "findings": [
+        "F01"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B08",
+      "start_line": 355,
+      "end_line": 398,
+      "title": "딥러닝(Deep Learning)",
+      "status": "검토함",
+      "findings": [
+        "F01",
+        "F03"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B09",
+      "start_line": 399,
+      "end_line": 479,
+      "title": "③ 구조와 원리 (Architecture / Principle)",
+      "status": "검토함",
+      "findings": [
+        "F02"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B10",
+      "start_line": 480,
+      "end_line": 561,
+      "title": "딥러닝의 동작 원리",
+      "status": "검토함",
+      "findings": [
+        "F04"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B11",
+      "start_line": 562,
+      "end_line": 589,
+      "title": "AI는 왜 계속 새로운 기술이 등장했을까?",
+      "status": "비교 불충분",
+      "findings": [
+        "F06"
+      ],
+      "reason": "지정 비교 3개 파일에는 상세 설명 없음. Phase1의 예고된 다른 교시까지 고유성 판정하지 않음."
+    },
+    {
+      "id": "B12",
+      "start_line": 590,
+      "end_line": 671,
+      "title": "Rule-Based AI의 한계",
+      "status": "검토함",
+      "findings": [
+        "F02"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B13",
+      "start_line": 672,
+      "end_line": 719,
+      "title": "머신러닝은 규칙을 사람이 만드는 것이 아니라 AI가 학습한다.",
+      "status": "검토함",
+      "findings": [
+        "F02"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B14",
+      "start_line": 720,
+      "end_line": 791,
+      "title": "그런데 머신러닝도 한계가 있었다.",
+      "status": "검토함",
+      "findings": [
+        "F03"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B15",
+      "start_line": 792,
+      "end_line": 907,
+      "title": "머신러닝에는 여러 학습 방법이 있다.",
+      "status": "검토함",
+      "findings": [
+        "F05"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B16",
+      "start_line": 908,
+      "end_line": 1029,
+      "title": "딥러닝도 하나의 모델만을 의미하지 않는다.",
+      "status": "검토함",
+      "findings": [
+        "F06",
+        "F10"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B17",
+      "start_line": 1030,
+      "end_line": 1080,
+      "title": "핵심 흐름 다시 정리",
+      "status": "검토함",
+      "findings": [
+        "F06",
+        "F13"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B18",
+      "start_line": 1081,
+      "end_line": 1132,
+      "title": "③-1. Training과 Inference를 구분하자",
+      "status": "검토함",
+      "findings": [
+        "F07"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B19",
+      "start_line": 1133,
+      "end_line": 1162,
+      "title": "③-2. Classification과 Regression",
+      "status": "검토함",
+      "findings": [
+        "F08"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B20",
+      "start_line": 1163,
+      "end_line": 1182,
+      "title": "③-3. 가장 중요한 목표: Generalization",
+      "status": "검토함",
+      "findings": [
+        "F09"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B21",
+      "start_line": 1183,
+      "end_line": 1218,
+      "title": "④ 관계 이해 (Relation)",
+      "status": "검토함",
+      "findings": [
+        "F10"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B22",
+      "start_line": 1219,
+      "end_line": 1239,
+      "title": "⑤ 적용 예시 (Example / Application)",
+      "status": "검토함",
+      "findings": [
+        "F11"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B23",
+      "start_line": 1240,
+      "end_line": 1291,
+      "title": "⑤-1. Practice — 같은 문제를 Rule과 Machine Learning으로 설계해 보기",
+      "status": "검토함",
+      "findings": [
+        "F12"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B24",
+      "start_line": 1292,
+      "end_line": 1347,
+      "title": "⑥ 핵심 정리 (Summary)",
+      "status": "검토함",
+      "findings": [
+        "F13"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B25",
+      "start_line": 1348,
+      "end_line": 1376,
+      "title": "AIKOS Knowledge 제안",
+      "status": "검토함",
+      "findings": [
+        "F23",
+        "F13"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B26",
+      "start_line": 1377,
+      "end_line": 1388,
+      "title": "[보강 학습] “학습한다”는 말을 실제 데이터와 평가 과정으로 이해하기",
+      "status": "검토함",
+      "findings": [
+        "F23"
+      ],
+      "reason": "학습 목표·안내를 본문과 분리해 확인."
+    },
+    {
+      "id": "B27",
+      "start_line": 1389,
+      "end_line": 1431,
+      "title": "1. Sample, Feature, Label",
+      "status": "검토함",
+      "findings": [
+        "F14"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B28",
+      "start_line": 1432,
+      "end_line": 1452,
+      "title": "2. Train, Validation, Test를 왜 나누는가?",
+      "status": "검토함",
+      "findings": [
+        "F15"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B29",
+      "start_line": 1453,
+      "end_line": 1478,
+      "title": "3. Loss와 Optimization: 틀린 정도를 이용해 조금씩 고치기",
+      "status": "검토함",
+      "findings": [
+        "F16"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B30",
+      "start_line": 1479,
+      "end_line": 1501,
+      "title": "4. Overfitting과 Underfitting",
+      "status": "검토함",
+      "findings": [
+        "F17"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B31",
+      "start_line": 1502,
+      "end_line": 1517,
+      "title": "5. Data Leakage: 시험 답안이 학습 과정으로 새어 들어간 경우",
+      "status": "검토함",
+      "findings": [
+        "F18"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B32",
+      "start_line": 1518,
+      "end_line": 1545,
+      "title": "6. Accuracy 하나만 보면 왜 위험한가?",
+      "status": "검토함",
+      "findings": [
+        "F19"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B33",
+      "start_line": 1546,
+      "end_line": 1561,
+      "title": "7. Self-supervised Learning과 Transfer Learning",
+      "status": "검토함",
+      "findings": [
+        "F20"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B34",
+      "start_line": 1562,
+      "end_line": 1570,
+      "title": "Practice — 작은 Dataset의 책임 나누기",
+      "status": "검토함",
+      "findings": [
+        "F21"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B35",
+      "start_line": 1571,
+      "end_line": 1635,
+      "title": "Practice 2 — 학습 파이프라인 전체 설계하기",
+      "status": "검토함",
+      "findings": [
+        "F21"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B36",
+      "start_line": 1636,
+      "end_line": 1662,
+      "title": "보강 핵심 정리",
+      "status": "검토함",
+      "findings": [
+        "F22"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B37",
+      "start_line": 1663,
+      "end_line": 1680,
+      "title": "실무 팁",
+      "status": "검토함",
+      "findings": [
+        "F22",
+        "F03"
+      ],
+      "reason": "본문·도식·활동을 연결된 판단과 대조함."
+    },
+    {
+      "id": "B38",
+      "start_line": 1681,
+      "end_line": 1693,
+      "title": "참고자료 — 원문으로 확인하기",
+      "status": "해당 없음",
+      "findings": [
+        "F23"
+      ],
+      "reason": "본문 내 위치·내용은 확인. 외부 참고 링크의 현재 유효성은 범위 밖."
+    }
+  ]
+}

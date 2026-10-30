@@ -1,0 +1,42 @@
+{
+  "cases": [
+    {
+      "id": "C01",
+      "detected": true,
+      "method": "automated copy mutation",
+      "expected": "A03",
+      "failed_checks": [
+        "A03",
+        "A04"
+      ]
+    },
+    {
+      "id": "C03",
+      "detected": true,
+      "method": "automated copy mutation",
+      "expected": "A07",
+      "failed_checks": [
+        "A07"
+      ]
+    },
+    {
+      "id": "C02",
+      "detected": true,
+      "method": "same-session Work semantic review; not independent",
+      "failed_rubric": [
+        "Q01",
+        "Q02"
+      ],
+      "injected_proposal": "Delete S04 L1432–1545 because AI/ML/DL definitions appear in Phase1.",
+      "reason": "Day1 4교시는 모델 구조·발전의 이유를 다루며 해당 평가 구간의 대체 근거가 아니다. 데이터 분리·과적합·누수·Metric의 새 학습 성과를 보존해야 한다.",
+      "evidence": [
+        "S04 L1432–1452",
+        "S04 L1479–1545",
+        "S07 L215–394"
+      ]
+    }
+  ],
+  "all_detected": true,
+  "independent_evaluator": false,
+  "final_artifacts_mutated": false
+}

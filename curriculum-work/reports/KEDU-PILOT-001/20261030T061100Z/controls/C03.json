@@ -1,0 +1,23 @@
+{
+  "control_id": "C03",
+  "injected_error": "unsupported_execution",
+  "overrides": {
+    "execution_claims.json": {
+      "lesson_code_executed": false,
+      "ollama_verified": true,
+      "rag_verified": false,
+      "multi_agent_verified": true,
+      "external_model_api_calls": 0,
+      "input_tokens": null,
+      "output_tokens": null,
+      "tool_calls": null,
+      "telemetry_complete": false
+    }
+  },
+  "expected_failed_check": "A07",
+  "actual_failed_checks": [
+    "A07"
+  ],
+  "detected": true,
+  "method": "automated fixture copy; final artifacts not modified"
+}

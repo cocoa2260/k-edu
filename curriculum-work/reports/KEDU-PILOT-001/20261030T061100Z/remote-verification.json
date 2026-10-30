@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-30T06:11:14.331Z",
+  "source_commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+  "files": [
+    {
+      "id": "S02",
+      "sha": "89b94bceaa54cbc165fe994b51ec495043573d00",
+      "url": "https://github.com/cocoa2260/k-edu/blob/bc58756866cd6bdee20c102fb54340f21e65ad56/academy/00.%20%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95(curriculum)/00.%20Phase1_Theoretical/04.%20GPT,%20Ollama,%20Gemma/Day1/Day1_03_%EC%9D%BC%EB%B0%98_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%EA%B3%BC_AI%EC%9D%98_%EC%B0%A8%EC%9D%B4_%EA%B0%95%EC%9D%98%EC%9A%A9_v0.2.md"
+    },
+    {
+      "id": "S04",
+      "sha": "fb3ada033eed3f57b847d2ea4fa9889288cf31d2",
+      "url": "https://github.com/cocoa2260/k-edu/blob/bc58756866cd6bdee20c102fb54340f21e65ad56/academy/00.%20%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95(curriculum)/01.%20Phase2_AI/02.%20AI%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%20%EB%94%A5%EB%9F%AC%EB%8B%9D%20%EA%B0%9C%EC%9A%94/AI%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%20%EB%94%A5%EB%9F%AC%EB%8B%9D%20%EA%B0%9C%EC%9A%94_%EA%B0%95%EC%9D%98%EC%9A%A9.md"
+    },
+    {
+      "id": "S01",
+      "sha": "3cb81e503410a081d7b080e520bda61932674d25",
+      "url": "https://github.com/cocoa2260/k-edu/blob/bc58756866cd6bdee20c102fb54340f21e65ad56/academy/00.%20%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95(curriculum)/00.%20Phase1_Theoretical/04.%20GPT,%20Ollama,%20Gemma/Day1/Day1_02_AI_%EC%A0%84%EC%B2%B4_%EC%A7%80%EB%8F%84_%EA%B0%95%EC%9D%98%EC%9A%A9_v0.2.md"
+    },
+    {
+      "id": "S03",
+      "sha": "655ae8c2bbf9c66c604030d6af0c515517c06250",
+      "url": "https://github.com/cocoa2260/k-edu/blob/bc58756866cd6bdee20c102fb54340f21e65ad56/academy/00.%20%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95(curriculum)/00.%20Phase1_Theoretical/04.%20GPT,%20Ollama,%20Gemma/Day2/Day2_03_AI_Model%EA%B3%BC_Parameter_Training%EA%B3%BC_Inference_%EA%B0%95%EC%9D%98%EC%9A%A9_v0.2.md"
+    }
+  ],
+  "branch_head_matches_design": true
+}

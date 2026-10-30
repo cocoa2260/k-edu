@@ -1,0 +1,50 @@
+{
+  "task_id": "KEDU-PILOT-001",
+  "task_revision": 2,
+  "run_id": "20261030T064535Z-r2",
+  "previous_run": "20261030T061100Z",
+  "kind": "supplemental_analysis_and_publication_preparation",
+  "status": "READY_FOR_REVIEW",
+  "source_commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+  "source_manifest": "sources.json",
+  "attempt_count": 1,
+  "repairs_completed": 0,
+  "logging_started_at": "2026-10-30T06:45:35.693960+00:00",
+  "telemetry_complete": false,
+  "metrics": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "tool_calls": null,
+    "external_model_api_calls": 0
+  },
+  "source_read_provenance": {
+    "previous_full_reads_reused": [
+      "S01",
+      "S02",
+      "S03",
+      "S04"
+    ],
+    "additional_full_read_in_previous_followup": "S07",
+    "new_full_reread_of_all_sources_claimed": false
+  },
+  "resolved_outside_scope_item": "F06: Day1 4교시 직접 비교",
+  "pending_outside_scope": [
+    "F20: Transfer Learning 용어 경계 공식 기술 검증",
+    "전체 분석 뒤 과목 구성/순서/시수·제목 확정"
+  ],
+  "lesson_files_modified": false,
+  "runner_implemented": false,
+  "reasoning_effort_auto_switched": false,
+  "publication_authorization": {
+    "repository": "cocoa2260/k-edu",
+    "branch": "work/loop-pilot-001",
+    "scope": "Analysis and execution records only; source copies excluded",
+    "authorized_by_current_user_request": true
+  },
+  "analysis_completed_at": "2026-10-30T06:46:57.039441+00:00",
+  "automatic_checks_passed": 8,
+  "ai_rubric_passed": 5,
+  "control_cases_detected": 3,
+  "independent_reviewer": false,
+  "published_layout_reproduction": "PASS: both initial final and revision 2 checks without report source copies"
+}

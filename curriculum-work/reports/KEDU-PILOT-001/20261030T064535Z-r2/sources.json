@@ -1,0 +1,46 @@
+{
+  "repository": "cocoa2260/k-edu",
+  "commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+  "files": [
+    {
+      "id": "S01",
+      "path": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day1/Day1_02_AI_전체_지도_강의용_v0.2.md",
+      "blob_sha": "3cb81e503410a081d7b080e520bda61932674d25",
+      "url": "https://github.com/cocoa2260/k-edu/blob/bc58756866cd6bdee20c102fb54340f21e65ad56/academy/00.%20%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95(curriculum)/00.%20Phase1_Theoretical/04.%20GPT,%20Ollama,%20Gemma/Day1/Day1_02_AI_%EC%A0%84%EC%B2%B4_%EC%A7%80%EB%8F%84_%EA%B0%95%EC%9D%98%EC%9A%A9_v0.2.md",
+      "local_file": "inputs/S01.md",
+      "line_count": 557
+    },
+    {
+      "id": "S02",
+      "path": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day1/Day1_03_일반_프로그램과_AI의_차이_강의용_v0.2.md",
+      "blob_sha": "89b94bceaa54cbc165fe994b51ec495043573d00",
+      "url": "https://github.com/cocoa2260/k-edu/blob/bc58756866cd6bdee20c102fb54340f21e65ad56/academy/00.%20%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95(curriculum)/00.%20Phase1_Theoretical/04.%20GPT,%20Ollama,%20Gemma/Day1/Day1_03_%EC%9D%BC%EB%B0%98_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%EA%B3%BC_AI%EC%9D%98_%EC%B0%A8%EC%9D%B4_%EA%B0%95%EC%9D%98%EC%9A%A9_v0.2.md",
+      "local_file": "inputs/S02.md",
+      "line_count": 632
+    },
+    {
+      "id": "S03",
+      "path": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day2/Day2_03_AI_Model과_Parameter_Training과_Inference_강의용_v0.2.md",
+      "blob_sha": "655ae8c2bbf9c66c604030d6af0c515517c06250",
+      "url": "https://github.com/cocoa2260/k-edu/blob/bc58756866cd6bdee20c102fb54340f21e65ad56/academy/00.%20%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95(curriculum)/00.%20Phase1_Theoretical/04.%20GPT,%20Ollama,%20Gemma/Day2/Day2_03_AI_Model%EA%B3%BC_Parameter_Training%EA%B3%BC_Inference_%EA%B0%95%EC%9D%98%EC%9A%A9_v0.2.md",
+      "local_file": "inputs/S03.md",
+      "line_count": 825
+    },
+    {
+      "id": "S04",
+      "path": "academy/00. 교육과정(curriculum)/01. Phase2_AI/02. AI 머신러닝 딥러닝 개요/AI 머신러닝 딥러닝 개요_강의용.md",
+      "blob_sha": "fb3ada033eed3f57b847d2ea4fa9889288cf31d2",
+      "url": "https://github.com/cocoa2260/k-edu/blob/bc58756866cd6bdee20c102fb54340f21e65ad56/academy/00.%20%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95(curriculum)/01.%20Phase2_AI/02.%20AI%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%20%EB%94%A5%EB%9F%AC%EB%8B%9D%20%EA%B0%9C%EC%9A%94/AI%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%20%EB%94%A5%EB%9F%AC%EB%8B%9D%20%EA%B0%9C%EC%9A%94_%EA%B0%95%EC%9D%98%EC%9A%A9.md",
+      "local_file": "inputs/S04.md",
+      "line_count": 1693
+    },
+    {
+      "id": "S07",
+      "path": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day1/Day1_04_ML에서_Deep_Learning과_생성형_AI까지_강의용_v0.2.md",
+      "blob_sha": "e99ac0c0d0cdf16e947ee2654c20bffc5083094e",
+      "url": "https://github.com/cocoa2260/k-edu/blob/bc58756866cd6bdee20c102fb54340f21e65ad56/academy/00.%20%EA%B5%90%EC%9C%A1%EA%B3%BC%EC%A0%95(curriculum)/00.%20Phase1_Theoretical/04.%20GPT,%20Ollama,%20Gemma/Day1/Day1_04_ML%EC%97%90%EC%84%9C_Deep_Learning%EA%B3%BC_%EC%83%9D%EC%84%B1%ED%98%95_AI%EA%B9%8C%EC%A7%80_%EA%B0%95%EC%9D%98%EC%9A%A9_v0.2.md",
+      "local_file": "inputs/S07.md",
+      "line_count": 802
+    }
+  ]
+}

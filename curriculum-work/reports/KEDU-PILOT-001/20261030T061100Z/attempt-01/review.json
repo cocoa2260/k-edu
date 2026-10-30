@@ -1,0 +1,96 @@
+{
+  "attempt": 1,
+  "reviewer": "same Work session; sequential reviewer role; not independent",
+  "automatic": {
+    "passed": false,
+    "checks": [
+      {
+        "id": "A01",
+        "status": "pass",
+        "errors": [],
+        "scope": "Locked commit, four paths, locally recomputed Git blobs and refreshed GitHub blob metadata."
+      },
+      {
+        "id": "A02",
+        "status": "pass",
+        "errors": [],
+        "scope": "Required artifact fields, types, allowed values and unique IDs."
+      },
+      {
+        "id": "A03",
+        "status": "pass",
+        "errors": [],
+        "scope": "68 source/comparison references: valid lines and exact excerpt text. Does not judge semantic support."
+      },
+      {
+        "id": "A04",
+        "status": "fail",
+        "errors": [
+          "B37 finding has no overlapping target reference"
+        ],
+        "scope": "38 logical blocks form a non-overlapping partition of all target lines, including metadata/references."
+      },
+      {
+        "id": "A05",
+        "status": "pass",
+        "errors": [],
+        "scope": "Four protected local source copies unchanged; attempt output names allowlisted. Remote changed paths checked separately after publication."
+      },
+      {
+        "id": "A06",
+        "status": "pass",
+        "errors": [],
+        "scope": "Markdown fences, UTF-8 replacement characters and immutable source link/anchor structure; no live external URL checks."
+      },
+      {
+        "id": "A07",
+        "status": "pass",
+        "errors": [],
+        "scope": "Structured execution claims and exposed usage only; prose additionally reviewed under Q05."
+      },
+      {
+        "id": "A08",
+        "status": "pass",
+        "errors": [],
+        "scope": "Attempt cap and recorded draft/repair checkpoints; soft deadline evaluated by caller between stages."
+      }
+    ]
+  },
+  "ai_review": [
+    {
+      "id": "Q01",
+      "status": "pass",
+      "reason": "개념 공유/설명 반복/새 심화를 구별. 집값 표 수치 차이와 설명 구조 반복을 구분했고 정확히 같은 코드 복사라는 주장은 없음."
+    },
+    {
+      "id": "Q02",
+      "status": "revise",
+      "failure_id": "Q02:report:preservation_mapping",
+      "reason": "보존할 고유 성과는 명시했으나 평가 중심 재구성 시 Activation·학습 방식 등을 어디에 남길지 연결표가 없다. 편집 때 빠지지 않도록 보존 위치 제안이 필요."
+    },
+    {
+      "id": "Q03",
+      "status": "revise",
+      "failure_id": "Q03:report:learning_sequence",
+      "reason": "권고별 목록은 있으나 이미 배운 내용에서 새 데이터/평가 활동으로 이동하는 순서가 구체적이지 않다. 검토용 단계별 활동 연결을 추가."
+    },
+    {
+      "id": "Q04",
+      "status": "pass",
+      "reason": "보강 학습과 두 종이 설계 활동이 이미 존재함을 확인. 없는 실습으로 보고하지 않음. 실제 6행 데이터와 실행 코드는 없는 것으로 구분."
+    },
+    {
+      "id": "Q05",
+      "status": "revise",
+      "failure_id": "Q05:report:pending_types",
+      "reason": "Phase1 추가 비교, 교육적 구성 선택, Transfer 용어 기술 확인을 후속 작업별로 분명하게 구분해 마무리할 필요."
+    }
+  ],
+  "failures": [
+    {
+      "id": "A04:B37:missing_reference_overlap",
+      "reason": "B37에 연결한 F03의 이유에는 주의사항이 언급되지만 구조화된 원문 근거에 해당 구간이 빠져 있다."
+    }
+  ],
+  "result": "REVISE"
+}

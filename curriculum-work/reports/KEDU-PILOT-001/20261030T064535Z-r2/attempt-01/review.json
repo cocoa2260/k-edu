@@ -1,0 +1,107 @@
+{
+  "attempt": 1,
+  "reviewer": "same Work session; sequential review role; not independent",
+  "automatic": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "A01",
+        "status": "pass",
+        "errors": [],
+        "scope": "Locked commit, 5 paths, locally recomputed Git blobs and GitHub blob metadata."
+      },
+      {
+        "id": "A02",
+        "status": "pass",
+        "errors": [],
+        "scope": "Required artifact fields, types, allowed values and unique IDs."
+      },
+      {
+        "id": "A03",
+        "status": "pass",
+        "errors": [],
+        "scope": "78 source/comparison references: valid lines and exact excerpt text. Does not judge semantic support."
+      },
+      {
+        "id": "A04",
+        "status": "pass",
+        "errors": [],
+        "scope": "38 logical blocks form a non-overlapping partition of all target lines, including metadata/references."
+      },
+      {
+        "id": "A05",
+        "status": "pass",
+        "errors": [],
+        "scope": "5 protected source files unchanged; attempt output names allowlisted. Remote changed paths checked separately after publication."
+      },
+      {
+        "id": "A06",
+        "status": "pass",
+        "errors": [],
+        "scope": "Markdown fences, UTF-8 replacement characters and immutable source link/anchor structure; no live external URL checks."
+      },
+      {
+        "id": "A07",
+        "status": "pass",
+        "errors": [],
+        "scope": "Structured execution claims and exposed usage only; prose additionally reviewed under Q05."
+      },
+      {
+        "id": "A08",
+        "status": "pass",
+        "errors": [],
+        "scope": "Attempt cap and recorded draft/repair checkpoints; soft deadline evaluated by caller between stages."
+      }
+    ]
+  },
+  "ai_review": [
+    {
+      "id": "Q01",
+      "status": "pass",
+      "reason": "Day1 4교시 실제 본문으로 CNN·RNN·Transformer 기초 소개의 중복을 확인했다. Diffusion과 위치 정보는 일괄 중복으로 판정하지 않았다."
+    },
+    {
+      "id": "Q02",
+      "status": "pass",
+      "reason": "층의 소개와 Activation의 구체적 계산을 구분했고 데이터·평가 성과를 보존했다. 중복 축소를 신규 원리 삭제로 확장하지 않았다."
+    },
+    {
+      "id": "Q03",
+      "status": "pass",
+      "reason": "Day1 4교시의 Phase2 심화 예고를 실제 근거로 확인했다. 직접 연결된 강의 비교의 누락을 후속 범위 검토에 반영했다."
+    },
+    {
+      "id": "Q04",
+      "status": "pass",
+      "reason": "사전학습 재사용 설명도 앞 교시에 있음을 반영했다. 대상의 보강 본문과 종이 설계 활동을 누락으로 오인하지 않았다."
+    },
+    {
+      "id": "Q05",
+      "status": "pass",
+      "reason": "추가 비교·제목 제안·과거 시범 범위·기술 미검증·미실행을 구분했다. 게시 승인을 제목/과목 개편 확정으로 해석하지 않았다."
+    }
+  ],
+  "scope_review": {
+    "required_related_lesson": "S07 Day1 4교시",
+    "included": true,
+    "initial_scope_gap_resolved": true,
+    "whole_curriculum_compared": false
+  },
+  "changed_findings": [
+    "F03",
+    "F04",
+    "F06",
+    "F20"
+  ],
+  "added_findings": [
+    "F24"
+  ],
+  "remaining_required_revisions": [],
+  "pending_decisions": [
+    "전체 분석 뒤 과목명·통합/배치·시수 확정"
+  ],
+  "pending_technical_verification": [
+    "F20: Transfer Learning 용어 경계 공식 기술 검증"
+  ],
+  "result": "READY_FOR_REVIEW"
+}

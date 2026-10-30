@@ -1,0 +1,11 @@
+{
+  "lesson_code_executed": false,
+  "ollama_verified": false,
+  "rag_verified": false,
+  "multi_agent_verified": false,
+  "external_model_api_calls": 0,
+  "input_tokens": null,
+  "output_tokens": null,
+  "tool_calls": null,
+  "telemetry_complete": false
+}

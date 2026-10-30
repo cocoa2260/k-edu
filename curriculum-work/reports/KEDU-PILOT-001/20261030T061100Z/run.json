@@ -1,0 +1,120 @@
+{
+  "task_id": "KEDU-PILOT-001",
+  "task": {
+    "schema_version": "0.1",
+    "task_id": "KEDU-PILOT-001",
+    "task_revision": 1,
+    "state": "planned",
+    "mode": "analyze",
+    "repository": "cocoa2260/k-edu",
+    "base_ref": "docs/academy-curriculum-v0.1",
+    "source_commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+    "source_root": "academy/00. 교육과정(curriculum)/",
+    "target": {
+      "source_id": "S04",
+      "path": "academy/00. 교육과정(curriculum)/01. Phase2_AI/02. AI 머신러닝 딥러닝 개요/AI 머신러닝 딥러닝 개요_강의용.md",
+      "blob_sha": "fb3ada033eed3f57b847d2ea4fa9889288cf31d2",
+      "read_scope": "full_file"
+    },
+    "comparisons": [
+      {
+        "source_id": "S01",
+        "path": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day1/Day1_02_AI_전체_지도_강의용_v0.2.md",
+        "blob_sha": "3cb81e503410a081d7b080e520bda61932674d25"
+      },
+      {
+        "source_id": "S02",
+        "path": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day1/Day1_03_일반_프로그램과_AI의_차이_강의용_v0.2.md",
+        "blob_sha": "89b94bceaa54cbc165fe994b51ec495043573d00"
+      },
+      {
+        "source_id": "S03",
+        "path": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day2/Day2_03_AI_Model과_Parameter_Training과_Inference_강의용_v0.2.md",
+        "blob_sha": "655ae8c2bbf9c66c604030d6af0c515517c06250"
+      }
+    ],
+    "write_allowlist": [
+      "curriculum-work/reports/KEDU-PILOT-001/"
+    ],
+    "protected_paths": [
+      "academy/"
+    ],
+    "limits": {
+      "max_attempts": 3,
+      "max_repairs": 2,
+      "stop_on_same_failure_after_repair": true,
+      "soft_deadline_minutes": 30,
+      "transient_tool_retries_per_operation": 1,
+      "external_model_api_calls": 0
+    },
+    "required_automatic_checks": [
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A05",
+      "A06",
+      "A07",
+      "A08"
+    ],
+    "required_ai_review": [
+      "Q01",
+      "Q02",
+      "Q03",
+      "Q04",
+      "Q05"
+    ],
+    "required_controls": [
+      "C01",
+      "C02",
+      "C03"
+    ],
+    "success_state": "READY_FOR_REVIEW",
+    "approval_required_for": [
+      "course_delete_or_merge",
+      "learning_sequence_change",
+      "apply_lesson_edits"
+    ]
+  },
+  "run_id": "20261030T061100Z",
+  "status": "READY_FOR_REVIEW",
+  "attempt_count": 2,
+  "repairs_completed": 1,
+  "source_commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+  "source_manifest": "sources.json",
+  "started_at": "2026-10-30T06:11:00.167263+00:00",
+  "analysis_completed_at": "2026-10-30T06:17:30.878474+00:00",
+  "telemetry_complete": false,
+  "metrics": {
+    "wall_clock_seconds_to_analysis_ready": 390.711211,
+    "model_api_calls": null,
+    "external_model_api_calls": 0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "tool_calls": null
+  },
+  "missing_metrics_reason": "Work internal usage and setup before logging are not exposed; wall clock covers logged checkpoints, not publication.",
+  "soft_deadline_minutes": 30,
+  "soft_deadline_exceeded_at_analysis_ready": false,
+  "automatic_checks_passed": 8,
+  "ai_rubric_passed": 5,
+  "controls_detected": 3,
+  "independent_reviewer": false,
+  "resolved_findings": [
+    "A04:B37:missing_reference_overlap",
+    "Q02:report:preservation_mapping",
+    "Q03:report:learning_sequence",
+    "Q05:report:pending_types"
+  ],
+  "remaining_required_revisions": [],
+  "pending_outside_scope": [
+    "F06: Phase1 Day1 4교시 추가 비교",
+    "F20: Transfer Learning 용어 경계 공식 기술 검증",
+    "전체 분석 뒤 과목 구성/순서/시수 결정"
+  ],
+  "stop_reason": null,
+  "lesson_files_modified": false,
+  "runner_implemented": false,
+  "reasoning_effort_auto_switched": false,
+  "deliverable_status": "ARCHIVED_INITIAL_ANALYSIS; superseded by 20261030T064535Z-r2"
+}

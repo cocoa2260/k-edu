@@ -1,0 +1,55 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "id": "A01",
+      "status": "pass",
+      "errors": [],
+      "scope": "Locked commit, four paths, locally recomputed Git blobs and refreshed GitHub blob metadata."
+    },
+    {
+      "id": "A02",
+      "status": "pass",
+      "errors": [],
+      "scope": "Required artifact fields, types, allowed values and unique IDs."
+    },
+    {
+      "id": "A03",
+      "status": "pass",
+      "errors": [],
+      "scope": "68 source/comparison references: valid lines and exact excerpt text. Does not judge semantic support."
+    },
+    {
+      "id": "A04",
+      "status": "fail",
+      "errors": [
+        "B37 finding has no overlapping target reference"
+      ],
+      "scope": "38 logical blocks form a non-overlapping partition of all target lines, including metadata/references."
+    },
+    {
+      "id": "A05",
+      "status": "pass",
+      "errors": [],
+      "scope": "Four protected local source copies unchanged; attempt output names allowlisted. Remote changed paths checked separately after publication."
+    },
+    {
+      "id": "A06",
+      "status": "pass",
+      "errors": [],
+      "scope": "Markdown fences, UTF-8 replacement characters and immutable source link/anchor structure; no live external URL checks."
+    },
+    {
+      "id": "A07",
+      "status": "pass",
+      "errors": [],
+      "scope": "Structured execution claims and exposed usage only; prose additionally reviewed under Q05."
+    },
+    {
+      "id": "A08",
+      "status": "pass",
+      "errors": [],
+      "scope": "Attempt cap and recorded draft/repair checkpoints; soft deadline evaluated by caller between stages."
+    }
+  ]
+}

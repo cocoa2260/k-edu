@@ -1,0 +1,98 @@
+{
+  "attempt": 2,
+  "reviewer": "same Work session; sequential reviewer role; not independent",
+  "automatic": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "A01",
+        "status": "pass",
+        "errors": [],
+        "scope": "Locked commit, four paths, locally recomputed Git blobs and refreshed GitHub blob metadata."
+      },
+      {
+        "id": "A02",
+        "status": "pass",
+        "errors": [],
+        "scope": "Required artifact fields, types, allowed values and unique IDs."
+      },
+      {
+        "id": "A03",
+        "status": "pass",
+        "errors": [],
+        "scope": "69 source/comparison references: valid lines and exact excerpt text. Does not judge semantic support."
+      },
+      {
+        "id": "A04",
+        "status": "pass",
+        "errors": [],
+        "scope": "38 logical blocks form a non-overlapping partition of all target lines, including metadata/references."
+      },
+      {
+        "id": "A05",
+        "status": "pass",
+        "errors": [],
+        "scope": "Four protected local source copies unchanged; attempt output names allowlisted. Remote changed paths checked separately after publication."
+      },
+      {
+        "id": "A06",
+        "status": "pass",
+        "errors": [],
+        "scope": "Markdown fences, UTF-8 replacement characters and immutable source link/anchor structure; no live external URL checks."
+      },
+      {
+        "id": "A07",
+        "status": "pass",
+        "errors": [],
+        "scope": "Structured execution claims and exposed usage only; prose additionally reviewed under Q05."
+      },
+      {
+        "id": "A08",
+        "status": "pass",
+        "errors": [],
+        "scope": "Attempt cap and recorded draft/repair checkpoints; soft deadline evaluated by caller between stages."
+      }
+    ]
+  },
+  "ai_review": [
+    {
+      "id": "Q01",
+      "status": "pass",
+      "reason": "양쪽 원문과 학습 성과를 대조. 소재 변경·개념 반복·심화가 구별되어 있고 범위 밖 구조 비교를 단정하지 않음."
+    },
+    {
+      "id": "Q02",
+      "status": "pass",
+      "reason": "F03/F04/F05의 표현·Activation·학습 신호 구분을 별도 보존 메모에 명시. F07의 Prompt/RAG 연결, 데이터 분리·과적합·누수·Metric·활동을 연결표에 보존."
+    },
+    {
+      "id": "Q03",
+      "status": "pass",
+      "reason": "Phase1 용어 점검에서 분할·일반화·오류 비용·Pipeline 설계로 확장하는 활동 순서와 제출 성과 제시."
+    },
+    {
+      "id": "Q04",
+      "status": "pass",
+      "reason": "기존 보강 본문·종이 활동을 인정하고 실행 코드와 6행 표 실물 미제공을 구분."
+    },
+    {
+      "id": "Q05",
+      "status": "pass",
+      "reason": "범위 밖 추가 비교, 기술 용어 검증, 교육적 구성 선택, 미실행과 권고를 구분. 추론 강도 자동 전환이나 독립 Runner 실행으로 표시하지 않음."
+    }
+  ],
+  "resolved_findings": [
+    "A04:B37:missing_reference_overlap",
+    "Q02:report:preservation_mapping",
+    "Q03:report:learning_sequence",
+    "Q05:report:pending_types"
+  ],
+  "remaining_required_revisions": [],
+  "new_findings": [],
+  "pending_outside_scope": [
+    "F06: Phase1 Day1 4교시 추가 비교",
+    "F20: Transfer Learning 용어 경계 공식 기술 검증",
+    "전체 분석 뒤 과목 구성/순서/시수 결정"
+  ],
+  "result": "READY_FOR_REVIEW"
+}

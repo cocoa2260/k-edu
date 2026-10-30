@@ -1,0 +1,7 @@
+{"timestamp": "2026-10-30T06:45:35.707748+00:00", "event": "logging_started", "task_revision": 2, "note": "Publication preparation checkpoints only; prior conversation reading time is not measured."}
+{"timestamp": "2026-10-30T06:45:35.707800+00:00", "event": "supplement_sources_verified", "new_source": "S07", "reused_sources": ["S01", "S02", "S03", "S04"], "commit": "bc58756866cd6bdee20c102fb54340f21e65ad56"}
+{"timestamp": "2026-10-30T06:45:35.707837+00:00", "event": "draft_created", "attempt": 1, "findings": 24, "coverage_blocks": 38, "note": "Supplemental report; original pilot attempts remain unchanged."}
+{"timestamp": "2026-10-30T06:46:56.904586+00:00", "event": "automatic_checks_completed", "attempt": 1, "passed_checks": ["A01", "A02", "A03", "A04", "A05", "A06", "A07", "A08"], "exit_code": 0}
+{"timestamp": "2026-10-30T06:46:56.904719+00:00", "event": "control_cases_completed", "controls": ["C01", "C02", "C03"], "independent_evaluator": false}
+{"timestamp": "2026-10-30T06:46:56.904778+00:00", "event": "review_completed", "attempt": 1, "result": "READY_FOR_REVIEW", "remaining_required_revisions": []}
+{"timestamp": "2026-10-30T06:46:57.039689+00:00", "event": "published_layout_reproduction_passed", "runs": ["20261030T061100Z", "20261030T064535Z-r2"], "source_mode": "original repository paths; no report input copies"}
