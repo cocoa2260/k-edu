@@ -278,7 +278,12 @@
   },
   "publication": {
     "target_branch": "work/curriculum-design-001",
-    "state": "prepared_for_publication",
-    "base_commit": "42a94694fa13deab8c0549a27f11ccc5b0a8ae77"
+    "state": "published",
+    "design_content_commit": "90014b016aea8caa502ff3dacc7dbdca5d2b7abe",
+    "verified_at": "2026-10-30T12:57:40.376Z",
+    "changed_files": 7,
+    "all_file_blobs_match": true,
+    "academy_and_previous_reports_unchanged": true,
+    "verification_scope": "v0.3 content tree compared with 42a94694fa13deab8c0549a27f11ccc5b0a8ae77; five text files and two actual JPEG captures, branch head verified. Metadata update follows in a separate commit."
   }
 }
