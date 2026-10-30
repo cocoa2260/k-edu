@@ -1,0 +1,138 @@
+{
+  "schema_version": "0.1",
+  "task_id": "KEDU-PRODUCTION-004",
+  "observed_at_utc": "2026-10-30T17:23:24.294422+00:00",
+  "status": "MATERIAL_AND_FIXTURE_CONTROL_VERIFIED_REAL_MODEL_PENDING",
+  "tests": "tests.json",
+  "demo": "observed-demo.json",
+  "scenario_summary": {
+    "valid_shape": {
+      "status": "draft_needs_review",
+      "stop_reason": "structure_passed_review_required",
+      "calls": 1,
+      "retries": 0,
+      "repairs": 0
+    },
+    "timeout_then_success": {
+      "status": "draft_needs_review",
+      "stop_reason": "structure_passed_review_required",
+      "calls": 2,
+      "retries": 1,
+      "repairs": 0
+    },
+    "repair_then_success": {
+      "status": "draft_needs_review",
+      "stop_reason": "structure_passed_review_required",
+      "calls": 2,
+      "retries": 0,
+      "repairs": 1
+    },
+    "repeated_invalid": {
+      "status": "stopped",
+      "stop_reason": "repair_limit",
+      "calls": 2,
+      "retries": 0,
+      "repairs": 1
+    },
+    "global_three_calls": {
+      "status": "draft_needs_review",
+      "stop_reason": "structure_passed_review_required",
+      "calls": 3,
+      "retries": 1,
+      "repairs": 1
+    },
+    "retry_exhausted": {
+      "status": "stopped",
+      "stop_reason": "retry_limit",
+      "calls": 2,
+      "retries": 1,
+      "repairs": 0
+    },
+    "upstream_terminal": {
+      "status": "stopped",
+      "stop_reason": "provider_error",
+      "calls": 1,
+      "retries": 0,
+      "repairs": 0
+    },
+    "restricted_citation": {
+      "status": "stopped",
+      "stop_reason": "repair_limit",
+      "calls": 2,
+      "retries": 0,
+      "repairs": 1
+    },
+    "forged_approval": {
+      "status": "stopped",
+      "stop_reason": "repair_limit",
+      "calls": 2,
+      "retries": 0,
+      "repairs": 1
+    },
+    "wrong_fact_shape_passes": {
+      "status": "draft_needs_review",
+      "stop_reason": "structure_passed_review_required",
+      "calls": 1,
+      "retries": 0,
+      "repairs": 0
+    }
+  },
+  "fixed_case_comparison": {
+    "case_count_each": 12,
+    "structural_pass_count": {
+      "A": 9,
+      "B": 10
+    },
+    "input_rejected_each": 1,
+    "changes": [
+      {
+        "case_id": "C01",
+        "before": false,
+        "after": true
+      },
+      {
+        "case_id": "C02",
+        "before": false,
+        "after": true
+      },
+      {
+        "case_id": "C07",
+        "before": true,
+        "after": false
+      }
+    ],
+    "quality_score": null,
+    "kind": "scripted_outputs_not_model_quality"
+  },
+  "safeguards_verified": [
+    "global Provider-attempt cap 3",
+    "run-global retry cap 1 and repair cap 1",
+    "unchanged retry input",
+    "failure-ID-only repair feedback",
+    "same validator after repair",
+    "repeated failure returns no draft",
+    "restricted/unknown citation ID rejected",
+    "approval extra field rejected",
+    "late or cancelled result discarded",
+    "final assembled input character contract",
+    "all 60 L1 combinations: 55 callable preparations and 5 pre-call blank rejections",
+    "old API schema and 93 prior tests retained"
+  ],
+  "explicitly_not_verified": [
+    "real generation",
+    "semantic grounding or factual accuracy",
+    "prompt-injection resistance",
+    "actual authentication/authorization/approval store",
+    "hard wall-clock cancellation",
+    "token or cost enforcement",
+    "production concurrency or capacity",
+    "React UI",
+    "classroom trial"
+  ],
+  "documentation_lookup": {
+    "status": "unavailable",
+    "detail": "Both search systems returned isError with no content; no dependency upgrade or new SDK integration. Installed Pydantic behavior verified by execution."
+  },
+  "reviewer": "same Work session; no independent reviewer",
+  "new_dependencies": false
+}

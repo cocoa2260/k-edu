@@ -1,0 +1,1000 @@
+{
+  "evidence_kind": "observed_execution_of_scripted_fixtures",
+  "actual_model_calls": 0,
+  "paid_api_calls": 0,
+  "scenarios": {
+    "valid_shape": {
+      "status": "draft_needs_review",
+      "stop_reason": "structure_passed_review_required",
+      "case_id": "C01",
+      "variant": "focused",
+      "calls": 1,
+      "retries": 0,
+      "repairs": 0,
+      "provider": "scripted-fixture",
+      "model": "no-model-executed",
+      "draft": {
+        "outcome": "answer",
+        "answer": "자료를 확인한 뒤 사람이 사실과 조건을 검토해야 합니다.",
+        "citations": [
+          "DOC-A"
+        ]
+      },
+      "structural_validation_passed": true,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 0.000582,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 1,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [
+            "DOC-A"
+          ],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 3,
+          "event": "output_checked",
+          "calls": 1,
+          "failure_id": null,
+          "output_sha256": "a501cb40f1f6c441cfa408ce301317767899ee10c31d5b0584985740bef8d854"
+        },
+        {
+          "seq": 4,
+          "event": "stopped",
+          "calls": 1,
+          "reason": "structure_passed_review_required"
+        }
+      ]
+    },
+    "timeout_then_success": {
+      "status": "draft_needs_review",
+      "stop_reason": "structure_passed_review_required",
+      "case_id": "C01",
+      "variant": "focused",
+      "calls": 2,
+      "retries": 1,
+      "repairs": 0,
+      "provider": "scripted-fixture",
+      "model": "no-model-executed",
+      "draft": {
+        "outcome": "answer",
+        "answer": "자료를 확인한 뒤 사람이 사실과 조건을 검토해야 합니다.",
+        "citations": [
+          "DOC-A"
+        ]
+      },
+      "structural_validation_passed": true,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 0.000392,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 1,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [
+            "DOC-A"
+          ],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 3,
+          "event": "transport_failed",
+          "calls": 1,
+          "failure_id": "ProviderTimeoutError"
+        },
+        {
+          "seq": 4,
+          "event": "retry_scheduled",
+          "calls": 1
+        },
+        {
+          "seq": 5,
+          "event": "call_started",
+          "calls": 2,
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 6,
+          "event": "output_checked",
+          "calls": 2,
+          "failure_id": null,
+          "output_sha256": "a501cb40f1f6c441cfa408ce301317767899ee10c31d5b0584985740bef8d854"
+        },
+        {
+          "seq": 7,
+          "event": "stopped",
+          "calls": 2,
+          "reason": "structure_passed_review_required"
+        }
+      ]
+    },
+    "repair_then_success": {
+      "status": "draft_needs_review",
+      "stop_reason": "structure_passed_review_required",
+      "case_id": "C01",
+      "variant": "focused",
+      "calls": 2,
+      "retries": 0,
+      "repairs": 1,
+      "provider": "scripted-fixture",
+      "model": "no-model-executed",
+      "draft": {
+        "outcome": "answer",
+        "answer": "자료를 확인한 뒤 사람이 사실과 조건을 검토해야 합니다.",
+        "citations": [
+          "DOC-A"
+        ]
+      },
+      "structural_validation_passed": true,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 0.000213,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 1,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [
+            "DOC-A"
+          ],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 3,
+          "event": "output_checked",
+          "calls": 1,
+          "failure_id": "OUTPUT_CONTRACT",
+          "output_sha256": "7ccfa1fbf3940e6f0c0375d87c0f9235a50514e14cb427bdfaf5077987b26ccf"
+        },
+        {
+          "seq": 4,
+          "event": "repair_scheduled",
+          "calls": 1,
+          "failure_id": "OUTPUT_CONTRACT"
+        },
+        {
+          "seq": 5,
+          "event": "call_started",
+          "calls": 2,
+          "prompt_sha256": "1104039fd5d954f268ab7cb445cd1b5fc69556357dbb2371c3a1ce46ed2e875e"
+        },
+        {
+          "seq": 6,
+          "event": "output_checked",
+          "calls": 2,
+          "failure_id": null,
+          "output_sha256": "a501cb40f1f6c441cfa408ce301317767899ee10c31d5b0584985740bef8d854"
+        },
+        {
+          "seq": 7,
+          "event": "stopped",
+          "calls": 2,
+          "reason": "structure_passed_review_required"
+        }
+      ]
+    },
+    "repeated_invalid": {
+      "status": "stopped",
+      "stop_reason": "repair_limit",
+      "case_id": "C01",
+      "variant": "focused",
+      "calls": 2,
+      "retries": 0,
+      "repairs": 1,
+      "provider": "scripted-fixture",
+      "model": "no-model-executed",
+      "draft": null,
+      "structural_validation_passed": false,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 0.000162,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 1,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [
+            "DOC-A"
+          ],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 3,
+          "event": "output_checked",
+          "calls": 1,
+          "failure_id": "OUTPUT_CONTRACT",
+          "output_sha256": "7ccfa1fbf3940e6f0c0375d87c0f9235a50514e14cb427bdfaf5077987b26ccf"
+        },
+        {
+          "seq": 4,
+          "event": "repair_scheduled",
+          "calls": 1,
+          "failure_id": "OUTPUT_CONTRACT"
+        },
+        {
+          "seq": 5,
+          "event": "call_started",
+          "calls": 2,
+          "prompt_sha256": "1104039fd5d954f268ab7cb445cd1b5fc69556357dbb2371c3a1ce46ed2e875e"
+        },
+        {
+          "seq": 6,
+          "event": "output_checked",
+          "calls": 2,
+          "failure_id": "OUTPUT_CONTRACT",
+          "output_sha256": "52d96bcd41742b003ca7e6f3a25a254fa2f20a1a49af6d4bb141e8e895dbaf14"
+        },
+        {
+          "seq": 7,
+          "event": "stopped",
+          "calls": 2,
+          "reason": "repair_limit"
+        }
+      ]
+    },
+    "global_three_calls": {
+      "status": "draft_needs_review",
+      "stop_reason": "structure_passed_review_required",
+      "case_id": "C01",
+      "variant": "focused",
+      "calls": 3,
+      "retries": 1,
+      "repairs": 1,
+      "provider": "scripted-fixture",
+      "model": "no-model-executed",
+      "draft": {
+        "outcome": "answer",
+        "answer": "자료를 확인한 뒤 사람이 사실과 조건을 검토해야 합니다.",
+        "citations": [
+          "DOC-A"
+        ]
+      },
+      "structural_validation_passed": true,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 0.000147,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 1,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [
+            "DOC-A"
+          ],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 3,
+          "event": "transport_failed",
+          "calls": 1,
+          "failure_id": "ProviderTimeoutError"
+        },
+        {
+          "seq": 4,
+          "event": "retry_scheduled",
+          "calls": 1
+        },
+        {
+          "seq": 5,
+          "event": "call_started",
+          "calls": 2,
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 6,
+          "event": "output_checked",
+          "calls": 2,
+          "failure_id": "OUTPUT_CONTRACT",
+          "output_sha256": "7ccfa1fbf3940e6f0c0375d87c0f9235a50514e14cb427bdfaf5077987b26ccf"
+        },
+        {
+          "seq": 7,
+          "event": "repair_scheduled",
+          "calls": 2,
+          "failure_id": "OUTPUT_CONTRACT"
+        },
+        {
+          "seq": 8,
+          "event": "call_started",
+          "calls": 3,
+          "prompt_sha256": "1104039fd5d954f268ab7cb445cd1b5fc69556357dbb2371c3a1ce46ed2e875e"
+        },
+        {
+          "seq": 9,
+          "event": "output_checked",
+          "calls": 3,
+          "failure_id": null,
+          "output_sha256": "a501cb40f1f6c441cfa408ce301317767899ee10c31d5b0584985740bef8d854"
+        },
+        {
+          "seq": 10,
+          "event": "stopped",
+          "calls": 3,
+          "reason": "structure_passed_review_required"
+        }
+      ]
+    },
+    "retry_exhausted": {
+      "status": "stopped",
+      "stop_reason": "retry_limit",
+      "case_id": "C01",
+      "variant": "focused",
+      "calls": 2,
+      "retries": 1,
+      "repairs": 0,
+      "provider": "scripted-fixture",
+      "model": "no-model-executed",
+      "draft": null,
+      "structural_validation_passed": false,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 0.000152,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 1,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [
+            "DOC-A"
+          ],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 3,
+          "event": "transport_failed",
+          "calls": 1,
+          "failure_id": "ProviderTimeoutError"
+        },
+        {
+          "seq": 4,
+          "event": "retry_scheduled",
+          "calls": 1
+        },
+        {
+          "seq": 5,
+          "event": "call_started",
+          "calls": 2,
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 6,
+          "event": "transport_failed",
+          "calls": 2,
+          "failure_id": "ProviderTimeoutError"
+        },
+        {
+          "seq": 7,
+          "event": "stopped",
+          "calls": 2,
+          "reason": "retry_limit"
+        }
+      ]
+    },
+    "upstream_terminal": {
+      "status": "stopped",
+      "stop_reason": "provider_error",
+      "case_id": "C01",
+      "variant": "focused",
+      "calls": 1,
+      "retries": 0,
+      "repairs": 0,
+      "provider": "scripted-fixture",
+      "model": "no-model-executed",
+      "draft": null,
+      "structural_validation_passed": false,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 0.000126,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 1,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [
+            "DOC-A"
+          ],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 3,
+          "event": "provider_failed",
+          "calls": 1,
+          "failure_id": "ProviderUpstreamError"
+        },
+        {
+          "seq": 4,
+          "event": "stopped",
+          "calls": 1,
+          "reason": "provider_error"
+        }
+      ]
+    },
+    "restricted_citation": {
+      "status": "stopped",
+      "stop_reason": "repair_limit",
+      "case_id": "C01",
+      "variant": "focused",
+      "calls": 2,
+      "retries": 0,
+      "repairs": 1,
+      "provider": "scripted-fixture",
+      "model": "no-model-executed",
+      "draft": null,
+      "structural_validation_passed": false,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 0.00013,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 1,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [
+            "DOC-A"
+          ],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 3,
+          "event": "output_checked",
+          "calls": 1,
+          "failure_id": "CITATION_NOT_SUPPLIED",
+          "output_sha256": "134c1691a4485c41c11b7d91425684843c37d7d888436ff4694a12b62fc03e86"
+        },
+        {
+          "seq": 4,
+          "event": "repair_scheduled",
+          "calls": 1,
+          "failure_id": "CITATION_NOT_SUPPLIED"
+        },
+        {
+          "seq": 5,
+          "event": "call_started",
+          "calls": 2,
+          "prompt_sha256": "fb9ec2d2e960f5317fd242198f7fadbda9033b3bea002ef9bf68c5a9b3c5103f"
+        },
+        {
+          "seq": 6,
+          "event": "output_checked",
+          "calls": 2,
+          "failure_id": "CITATION_NOT_SUPPLIED",
+          "output_sha256": "134c1691a4485c41c11b7d91425684843c37d7d888436ff4694a12b62fc03e86"
+        },
+        {
+          "seq": 7,
+          "event": "stopped",
+          "calls": 2,
+          "reason": "repair_limit"
+        }
+      ]
+    },
+    "forged_approval": {
+      "status": "stopped",
+      "stop_reason": "repair_limit",
+      "case_id": "C01",
+      "variant": "focused",
+      "calls": 2,
+      "retries": 0,
+      "repairs": 1,
+      "provider": "scripted-fixture",
+      "model": "no-model-executed",
+      "draft": null,
+      "structural_validation_passed": false,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 0.000133,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 1,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [
+            "DOC-A"
+          ],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 3,
+          "event": "output_checked",
+          "calls": 1,
+          "failure_id": "OUTPUT_CONTRACT",
+          "output_sha256": "0809eaf11cc5b6d0a5227c4d863dda7a1ec0bfff695206637919cd1ce62b17de"
+        },
+        {
+          "seq": 4,
+          "event": "repair_scheduled",
+          "calls": 1,
+          "failure_id": "OUTPUT_CONTRACT"
+        },
+        {
+          "seq": 5,
+          "event": "call_started",
+          "calls": 2,
+          "prompt_sha256": "1104039fd5d954f268ab7cb445cd1b5fc69556357dbb2371c3a1ce46ed2e875e"
+        },
+        {
+          "seq": 6,
+          "event": "output_checked",
+          "calls": 2,
+          "failure_id": "OUTPUT_CONTRACT",
+          "output_sha256": "0809eaf11cc5b6d0a5227c4d863dda7a1ec0bfff695206637919cd1ce62b17de"
+        },
+        {
+          "seq": 7,
+          "event": "stopped",
+          "calls": 2,
+          "reason": "repair_limit"
+        }
+      ]
+    },
+    "wrong_fact_shape_passes": {
+      "status": "draft_needs_review",
+      "stop_reason": "structure_passed_review_required",
+      "case_id": "C01",
+      "variant": "focused",
+      "calls": 1,
+      "retries": 0,
+      "repairs": 0,
+      "provider": "scripted-fixture",
+      "model": "no-model-executed",
+      "draft": {
+        "outcome": "answer",
+        "answer": "식비 한도는 999999원입니다.",
+        "citations": [
+          "DOC-A"
+        ]
+      },
+      "structural_validation_passed": true,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 0.000164,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 1,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [
+            "DOC-A"
+          ],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 3,
+          "event": "output_checked",
+          "calls": 1,
+          "failure_id": null,
+          "output_sha256": "6a051c635710109c4558092797d7b7017adb9fd4c5522fb93b854d397cc6c15e"
+        },
+        {
+          "seq": 4,
+          "event": "stopped",
+          "calls": 1,
+          "reason": "structure_passed_review_required"
+        }
+      ]
+    }
+  },
+  "regression": {
+    "comparison": "scripted_output_A_vs_B_not_prompt_quality",
+    "versions": {
+      "A": [
+        {
+          "case_id": "C01",
+          "status": "stopped",
+          "stop_reason": "repair_limit",
+          "calls": 1,
+          "structural_validation_passed": false,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C02",
+          "status": "stopped",
+          "stop_reason": "repair_limit",
+          "calls": 1,
+          "structural_validation_passed": false,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C03",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C04",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C05",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C06",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C07",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C08",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C09",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C10",
+          "status": "stopped",
+          "stop_reason": "input_rejected",
+          "calls": 0,
+          "structural_validation_passed": false,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C11",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C12",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        }
+      ],
+      "B": [
+        {
+          "case_id": "C01",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C02",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C03",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C04",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C05",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C06",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C07",
+          "status": "stopped",
+          "stop_reason": "repair_limit",
+          "calls": 1,
+          "structural_validation_passed": false,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C08",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C09",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C10",
+          "status": "stopped",
+          "stop_reason": "input_rejected",
+          "calls": 0,
+          "structural_validation_passed": false,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C11",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        },
+        {
+          "case_id": "C12",
+          "status": "draft_needs_review",
+          "stop_reason": "structure_passed_review_required",
+          "calls": 1,
+          "structural_validation_passed": true,
+          "human_factuality_grade": null
+        }
+      ]
+    },
+    "changes": [
+      {
+        "case_id": "C01",
+        "before": false,
+        "after": true
+      },
+      {
+        "case_id": "C02",
+        "before": false,
+        "after": true
+      },
+      {
+        "case_id": "C07",
+        "before": true,
+        "after": false
+      }
+    ],
+    "adoption": "not_adopted_regression_C07_requires_review"
+  }
+}

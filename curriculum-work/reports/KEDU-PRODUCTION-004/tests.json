@@ -1,0 +1,15 @@
+{
+  "command": "python -m pytest -q",
+  "cwd": "curriculum-work/practice/document-assistant/backend",
+  "observed_at_utc": "2026-10-30T17:23:24.294422+00:00",
+  "exit_code": 0,
+  "passed": 136,
+  "pytest_seconds": 1.2,
+  "stdout": "........................................................................ [ 52%]\n................................................................         [100%]\n136 passed in 1.20s\n",
+  "stderr": "",
+  "network": "Real httpx HTTPTransport is forbidden by the existing autouse fixture",
+  "prior_L0_L1_tests": 93,
+  "new_L2_tests": 43,
+  "actual_model_calls": 0,
+  "paid_api_calls": 0
+}

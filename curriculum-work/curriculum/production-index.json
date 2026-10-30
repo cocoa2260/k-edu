@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-003",
+  "current_batch": "KEDU-PRODUCTION-004",
   "units": [
     {
       "id": "K2-00.U01",
@@ -309,55 +309,55 @@
       "id": "K2-06.U01",
       "course": "K2-06",
       "title": "Harness의 최소 책임",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
+      "batch": "KEDU-PRODUCTION-004",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/harness/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "fixture_control_verified_real_model_pending",
       "classroom_trial": "not_run"
     },
     {
       "id": "K2-06.U02",
       "course": "K2-06",
       "title": "오류·재시도·반복의 다른 목적",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
+      "batch": "KEDU-PRODUCTION-004",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/harness/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "fixture_control_verified_real_model_pending",
       "classroom_trial": "not_run"
     },
     {
       "id": "K2-06.U03",
       "course": "K2-06",
       "title": "검증 실패와 제한된 보완",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
+      "batch": "KEDU-PRODUCTION-004",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/harness/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "fixture_control_verified_real_model_pending",
       "classroom_trial": "not_run"
     },
     {
       "id": "K2-06.U04",
       "course": "K2-06",
       "title": "버전 간 개선과 회귀",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
+      "batch": "KEDU-PRODUCTION-004",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/harness/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "fixture_control_verified_real_model_pending",
       "classroom_trial": "not_run"
     },
     {
       "id": "K2-06.U05",
       "course": "K2-06",
       "title": "승인·중단·관찰의 신뢰 경계",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
+      "batch": "KEDU-PRODUCTION-004",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/harness/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "fixture_control_verified_real_model_pending",
       "classroom_trial": "not_run"
     },
     {
@@ -788,22 +788,24 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-004",
+    "id": "KEDU-PRODUCTION-005",
     "proposed_scope": [
-      "K2-06",
-      "L2"
+      "K2-07",
+      "K2-08",
+      "L3"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "MATERIAL_AND_PREPARATION_VERIFIED_GENERATION_PENDING",
+  "batch_status": "MATERIAL_AND_FIXTURE_CONTROL_VERIFIED_REAL_MODEL_PENDING",
   "first_unfinished_gate": {
-    "id": "L2-HARNESS",
+    "id": "L3-REPRESENTATION-INDEX",
     "status": "not_started",
     "recommended_reasoning_effort": "high",
     "independent_pending": [
-      "G-MODEL real generation",
+      "G-MODEL real generation for L0/L1/L2",
       "Human answer grading",
+      "Hard token/cost budgets and cancellation",
       "Classroom/UI validation"
     ]
   },
@@ -817,6 +819,11 @@
     "L1": {
       "status": "MATERIAL_AND_PREPARATION_VERIFIED_GENERATION_PENDING",
       "path": "curriculum-work/practice/document-assistant/milestones/L1.json",
+      "generation_verified": false
+    },
+    "L2": {
+      "status": "MATERIAL_AND_FIXTURE_CONTROL_VERIFIED_REAL_MODEL_PENDING",
+      "path": "curriculum-work/practice/document-assistant/milestones/L2.json",
       "generation_verified": false
     }
   }

@@ -1,0 +1,51 @@
+{
+  "task_id": "KEDU-PRODUCTION-004",
+  "recorded_at_utc": "2026-10-30T17:23:24.294422+00:00",
+  "branch": "work/curriculum-production-001",
+  "parent_commit": "c36fe26e419a2334fca79a798f61b3d3ec4385da",
+  "status": "VERIFIED_LOCALLY_PUBLICATION_PREPARED",
+  "recommended_reasoning_effort": "high",
+  "authored_units": 5,
+  "total_authored_units": 16,
+  "total_units": 70,
+  "actual_model_calls": 0,
+  "paid_api_calls": 0,
+  "tests_passed": 136,
+  "internal_reasoning_tokens": null,
+  "total_model_tokens": null,
+  "tool_count": null,
+  "elapsed_work_seconds": null,
+  "telemetry_note": "Internal token/tool totals unavailable; not estimated.",
+  "independent_reviewer": false,
+  "generic_runner_implemented": false,
+  "reasoning_setting_automatically_changed": false,
+  "outputs": [
+    "curriculum-work/lessons/harness/lesson.md",
+    "curriculum-work/practice/document-assistant/L2.md",
+    "curriculum-work/practice/document-assistant/backend/app/harness.py",
+    "curriculum-work/practice/document-assistant/backend/tools/harness_demo.py",
+    "curriculum-work/practice/document-assistant/backend/tests/test_harness.py",
+    "curriculum-work/practice/document-assistant/backend/README.md",
+    "curriculum-work/practice/document-assistant/README.md",
+    "curriculum-work/practice/document-assistant/milestones/L2.json",
+    "curriculum-work/loop/tasks/KEDU-PRODUCTION-004.json",
+    "curriculum-work/curriculum/production-index.json",
+    "curriculum-work/README.md",
+    "curriculum-work/PROGRESS.md",
+    "curriculum-work/reports/KEDU-PRODUCTION-004/RESULT.md",
+    "curriculum-work/reports/KEDU-PRODUCTION-004/validation.json",
+    "curriculum-work/reports/KEDU-PRODUCTION-004/tests.json",
+    "curriculum-work/reports/KEDU-PRODUCTION-004/observed-demo.json",
+    "curriculum-work/reports/KEDU-PRODUCTION-004/run.json"
+  ],
+  "pending": [
+    "G-MODEL",
+    "human grading",
+    "classroom/UI"
+  ],
+  "next_task": "KEDU-PRODUCTION-005 K2-07/K2-08/L3",
+  "publication": {
+    "status": "prepared",
+    "commit": null
+  }
+}

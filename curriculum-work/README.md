@@ -1,8 +1,8 @@
 # K-Edu 교육과정 개편 — 현재 위치와 읽을 파일
 
-**현재: Prompt·Context와 L1을 제작했다. 70개 중 11개 단원 자료 작성, 실제 생성·품질 평가는 미실행이다.**
+**현재: Harness·Loop 5개 단원과 L2를 제작했다. 70개 중 16개 단원 자료 작성, 실제 모델 생성·품질 평가는 미실행이다.**
 
-[Prompt 강의](lessons/prompt/lesson.md) · [Context 강의](lessons/context/lesson.md) · [L1 공통 실습](practice/document-assistant/L1.md) · [검증 결과](reports/KEDU-PRODUCTION-003/RESULT.md)
+[Harness 강의](lessons/harness/lesson.md) · [L2 실습](practice/document-assistant/L2.md) · [이번 결과](reports/KEDU-PRODUCTION-004/RESULT.md) · [이전 Prompt](lessons/prompt/lesson.md) · [Context](lessons/context/lesson.md)
 
 
 ## 전체 구성안
@@ -19,9 +19,9 @@
 | 2 | 결과를 보고 분석 방식 보완 | 완료 |
 | 3 | 전체 강의 비교·분석 | 결과 보존 |
 | 4 | 전체 목차·누적 실습 구성 결정 | v0.3을 첫 제작 묶음의 기준으로 사용 |
-| 5 | 확정한 강의·실습 제작 및 검증 | 11개 단원 자료·L0/L1 준비 검증. 다음 Harness/L2 제작 |
+| 5 | 확정한 강의·실습 제작 및 검증 | 16개 단원 자료·L0/L1 계약·L2 고정 응답 제어 검증. 다음 검색 표현/Index/L3 |
 
-구성안은 과목명·배치·범위의 추천이다. 기존 academy 원문·파일명은 유지한다. 새 강의 자료와 입문 실행 도구를 별도 작성했고, 누적 앱·실습 Dataset·훈련은 제작 전이다. 실제 모델·훈련·교육장 성능은 검증 게이트를 둔 후속 작업이다.
+구성안은 과목명·배치·범위의 추천이다. 기존 academy 원문·파일명은 유지한다. 새 강의와 누적 앱 L0~L2, 가상 문서·평가 자료를 작성했다. 자동 검색·Index·훈련은 제작 전이다. 실제 모델·훈련·교육장 성능은 검증 게이트를 둔 후속 작업이다.
 
 ## 분석 근거와 과거 시범
 

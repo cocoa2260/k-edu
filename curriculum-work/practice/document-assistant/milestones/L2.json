@@ -1,0 +1,30 @@
+{
+  "stage": "L2",
+  "baseline": "L1",
+  "status": "MATERIAL_AND_FIXTURE_CONTROL_VERIFIED_REAL_MODEL_PENDING",
+  "implementation": "backend/app/harness.py",
+  "offline_entry": "backend/tools/harness_demo.py",
+  "new_web_endpoint": null,
+  "existing_endpoints": [
+    "POST /ai/chat",
+    "POST /ai/prepare"
+  ],
+  "default_limits": {
+    "provider_attempts": 3,
+    "retries": 1,
+    "repairs": 1,
+    "elapsed_seconds": 90,
+    "elapsed_mode": "between_calls_not_inflight_cancellation"
+  },
+  "validation_scope": [
+    "output structure",
+    "citation ID membership only"
+  ],
+  "factuality_verified": false,
+  "approval_system_implemented": false,
+  "side_effect_tools_implemented": false,
+  "actual_generation_verified": false,
+  "ui_verified": false,
+  "evidence": "curriculum-work/reports/KEDU-PRODUCTION-004/validation.json",
+  "next_stage": "L3"
+}
