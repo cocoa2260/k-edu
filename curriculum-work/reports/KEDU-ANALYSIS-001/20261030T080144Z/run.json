@@ -1,0 +1,133 @@
+{
+  "task_id": "KEDU-ANALYSIS-001",
+  "run_id": "20261030T080144Z",
+  "task_revision": 1,
+  "status": "READY_FOR_REVIEW",
+  "attempt_count": 2,
+  "repairs_completed": 1,
+  "source_commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+  "runner_implemented": false,
+  "independent_reviewer": false,
+  "reasoning_effort_auto_switched": false,
+  "telemetry_complete": false,
+  "checkpoint_times": {
+    "source_collection_verified": "2026-10-30T08:01:44Z",
+    "draft_written": "2026-10-30T08:16:20.804220+00:00",
+    "execution_record_created": "2026-10-30T08:19:03.454104+00:00",
+    "repair_completed": "2026-10-30T08:20:30.801081+00:00",
+    "local_validation_completed": "2026-10-30T08:20:31.604874+00:00"
+  },
+  "accounting_limits": "Actual file/process checkpoints only. No complete measurement of prior conversation, internal model calls, tokens or all tool calls.",
+  "revision_records": [
+    {
+      "attempt": 1,
+      "snapshot_sha256": "c8405d26d40097fcfc7ed06d86b7dee07b3af681c82d138bbb252d67bea7b6d4",
+      "automatic_checks": {
+        "checked_at": "2026-10-30T08:19:04.142388+00:00",
+        "passed": true,
+        "checks": [
+          {
+            "id": "A01",
+            "status": "pass",
+            "errors": [],
+            "scope": "Source commit and all manifested source bytes/size/lines; not live freshness."
+          },
+          {
+            "id": "A02",
+            "status": "pass",
+            "errors": [],
+            "scope": "Findings have reasons, preserved outcomes, proposals, references, unique IDs and report counterparts."
+          },
+          {
+            "id": "A03",
+            "status": "pass",
+            "errors": [],
+            "scope": "178 evidence/role references have valid ranges and exact anchor excerpts; semantic support is reviewed separately."
+          },
+          {
+            "id": "A04",
+            "status": "pass",
+            "errors": [],
+            "scope": "All declared Markdown dispositions and primary roles; line partitions are structural coverage, not a semantic-completeness score."
+          },
+          {
+            "id": "A05",
+            "status": "pass",
+            "errors": [],
+            "scope": "Protected source bytes unchanged and run output allowlist; full remote tree diff is checked separately on publication."
+          },
+          {
+            "id": "A06",
+            "status": "pass",
+            "errors": [],
+            "scope": "Human report has no code/JSON fences, balanced details, pinned source links and decision boundary labels; no live external link check."
+          },
+          {
+            "id": "A07",
+            "status": "pass",
+            "errors": [],
+            "scope": "84 independent Python AST parses and bounded mock execution are separated from actual LLM/E2E/training claims and unknown usage."
+          },
+          {
+            "id": "A08",
+            "status": "pass",
+            "errors": [],
+            "scope": "Attempt cap, changes and actual checkpoint accounting; this script does not implement a Runner or enforce model deadlines."
+          }
+        ]
+      },
+      "semantic_review": "revise",
+      "issues": [
+        {
+          "id": "S01",
+          "problem": "Current teaching environment and distributed requirements pin were not compared explicitly.",
+          "repair": "Added F33 with both source references; no unsupported compatibility failure claim."
+        },
+        {
+          "id": "S02",
+          "problem": "Pilot Transfer Learning terminology question not explicitly retained as unresolved.",
+          "repair": "Added F34; left technical verification pending."
+        },
+        {
+          "id": "S03",
+          "problem": "Implementation gap description should explicitly acknowledge the managed RAG example.",
+          "repair": "Added F35 and separated product illustration from local cumulative implementation."
+        }
+      ]
+    },
+    {
+      "attempt": 2,
+      "changed_findings": [
+        "F33",
+        "F34",
+        "F35"
+      ],
+      "change_scope": "Three targeted additions, linked detailed/human checklist updates; original 32 findings and 42 roles retained.",
+      "remaining_required_revisions": []
+    }
+  ],
+  "external_model_api_calls": 0,
+  "curriculum_edits_approved": false,
+  "lesson_files_modified": false,
+  "branch": "work/curriculum-analysis-001",
+  "counts": {
+    "source_text_files": 164,
+    "markdown_files": 79,
+    "primary_lesson_roles": 42,
+    "qa_dispositions": 33,
+    "findings": 35,
+    "evidence_references": 184,
+    "automatic_checks_passed": 8,
+    "control_cases_detected": 3,
+    "python_ast_passed": 84
+  },
+  "report_sha256": "72b1ecd81c222aae03233648434abbd94b80afb90b5d242cc5e0a634d6efedca",
+  "publication": {
+    "target_repository": "cocoa2260/k-edu",
+    "target_branch": "work/curriculum-analysis-001",
+    "parent_commit": "f9f035076f97046fe6763064af10b72d0a85c381",
+    "scope": "Analysis report, evidence and validation records plus task/checker/navigation only; no original source copies or lesson edits.",
+    "state": "prepared_for_publication",
+    "remote_verification_record": "The publishing assistant verifies the resulting immutable Git tree and published file blobs after commit. No prepublication field is used as proof of upload."
+  }
+}

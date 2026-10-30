@@ -1,0 +1,38 @@
+{
+  "task_id": "KEDU-ANALYSIS-001",
+  "task_revision": 1,
+  "mode": "whole_curriculum_analysis",
+  "source_commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+  "source_root": "academy/00. 교육과정(curriculum)/",
+  "source_manifest": "curriculum-work/reports/KEDU-ANALYSIS-001/20261030T080144Z/evidence.json",
+  "instruction": "Compare the complete current lecture corpus by concepts, distinguish repetition from deeper outcomes, identify practice/dependency gaps, and submit one human-readable review document. Do not edit lessons or decide the final curriculum.",
+  "limits": {
+    "max_attempts": 3,
+    "max_repairs": 2,
+    "stop_on_same_failure_after_repair": true,
+    "soft_deadline_minutes": 90,
+    "external_model_api_calls": 0
+  },
+  "limit_note": "The pilot 30-minute scope is enlarged for this corpus-wide task. Limits apply to this Work procedure; no independent Runner enforcement is claimed.",
+  "protected_paths": [
+    "academy/"
+  ],
+  "write_allowlist": [
+    "curriculum-work/reports/KEDU-ANALYSIS-001/20261030T080144Z/",
+    "curriculum-work/README.md",
+    "curriculum-work/loop/tasks/KEDU-ANALYSIS-001.json",
+    "curriculum-work/loop/checks/check_curriculum.py"
+  ],
+  "required_checks": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08"
+  ],
+  "success_state": "READY_FOR_REVIEW",
+  "next_stage": "4: decide curriculum outline and cumulative practice; no approval of specific proposals is inferred."
+}

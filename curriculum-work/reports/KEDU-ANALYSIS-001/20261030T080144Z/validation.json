@@ -1,0 +1,269 @@
+{
+  "task_id": "KEDU-ANALYSIS-001",
+  "source_commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+  "automatic_initial": {
+    "checked_at": "2026-10-30T08:19:04.142388+00:00",
+    "passed": true,
+    "checks": [
+      {
+        "id": "A01",
+        "status": "pass",
+        "errors": [],
+        "scope": "Source commit and all manifested source bytes/size/lines; not live freshness."
+      },
+      {
+        "id": "A02",
+        "status": "pass",
+        "errors": [],
+        "scope": "Findings have reasons, preserved outcomes, proposals, references, unique IDs and report counterparts."
+      },
+      {
+        "id": "A03",
+        "status": "pass",
+        "errors": [],
+        "scope": "178 evidence/role references have valid ranges and exact anchor excerpts; semantic support is reviewed separately."
+      },
+      {
+        "id": "A04",
+        "status": "pass",
+        "errors": [],
+        "scope": "All declared Markdown dispositions and primary roles; line partitions are structural coverage, not a semantic-completeness score."
+      },
+      {
+        "id": "A05",
+        "status": "pass",
+        "errors": [],
+        "scope": "Protected source bytes unchanged and run output allowlist; full remote tree diff is checked separately on publication."
+      },
+      {
+        "id": "A06",
+        "status": "pass",
+        "errors": [],
+        "scope": "Human report has no code/JSON fences, balanced details, pinned source links and decision boundary labels; no live external link check."
+      },
+      {
+        "id": "A07",
+        "status": "pass",
+        "errors": [],
+        "scope": "84 independent Python AST parses and bounded mock execution are separated from actual LLM/E2E/training claims and unknown usage."
+      },
+      {
+        "id": "A08",
+        "status": "pass",
+        "errors": [],
+        "scope": "Attempt cap, changes and actual checkpoint accounting; this script does not implement a Runner or enforce model deadlines."
+      }
+    ]
+  },
+  "automatic_final": {
+    "checked_at": "2026-10-30T08:20:31.604874+00:00",
+    "passed": true,
+    "checks": [
+      {
+        "id": "A01",
+        "status": "pass",
+        "errors": [],
+        "scope": "Source commit and all manifested source bytes/size/lines; not live freshness."
+      },
+      {
+        "id": "A02",
+        "status": "pass",
+        "errors": [],
+        "scope": "Findings have reasons, preserved outcomes, proposals, references, unique IDs and report counterparts."
+      },
+      {
+        "id": "A03",
+        "status": "pass",
+        "errors": [],
+        "scope": "184 evidence/role references have valid ranges and exact anchor excerpts; semantic support is reviewed separately."
+      },
+      {
+        "id": "A04",
+        "status": "pass",
+        "errors": [],
+        "scope": "All declared Markdown dispositions and primary roles; line partitions are structural coverage, not a semantic-completeness score."
+      },
+      {
+        "id": "A05",
+        "status": "pass",
+        "errors": [],
+        "scope": "Protected source bytes unchanged and run output allowlist; full remote tree diff is checked separately on publication."
+      },
+      {
+        "id": "A06",
+        "status": "pass",
+        "errors": [],
+        "scope": "Human report has no code/JSON fences, balanced details, pinned source links and decision boundary labels; no live external link check."
+      },
+      {
+        "id": "A07",
+        "status": "pass",
+        "errors": [],
+        "scope": "84 independent Python AST parses and bounded mock execution are separated from actual LLM/E2E/training claims and unknown usage."
+      },
+      {
+        "id": "A08",
+        "status": "pass",
+        "errors": [],
+        "scope": "Attempt cap, changes and actual checkpoint accounting; this script does not implement a Runner or enforce model deadlines."
+      }
+    ],
+    "controls": [
+      {
+        "case": "bad_reference",
+        "expected": "A03",
+        "failed_checks": [
+          "A03"
+        ],
+        "detected": true
+      },
+      {
+        "case": "missing_primary_role",
+        "expected": "A04",
+        "failed_checks": [
+          "A04"
+        ],
+        "detected": true
+      },
+      {
+        "case": "unsupported_model_execution",
+        "expected": "A07",
+        "failed_checks": [
+          "A07"
+        ],
+        "detected": true
+      }
+    ]
+  },
+  "semantic_review": [
+    {
+      "id": "Q01",
+      "status": "pass",
+      "reason": "Compared concept-aligned source spans on both sides; distinguished shared terms from equal explanations/outcomes. Internal Agent duplication and source variant differences were recorded."
+    },
+    {
+      "id": "Q02",
+      "status": "pass",
+      "reason": "Explicitly retained Transformer calculations/masks, dataset evaluation, retrieval operations, Agent runtime, tuning/reload and document IR/locators/generation. Moves and deletions remain proposals."
+    },
+    {
+      "id": "Q03",
+      "status": "pass",
+      "reason": "Mapped all 42 primary files and programming prerequisites; no final timetable or assumed student completion. Existing Phase1 app is the candidate input to cumulative practice."
+    },
+    {
+      "id": "Q04",
+      "status": "pass",
+      "reason": "Indexed all current Markdown files including supplements, alternate merged version and postscript sections. Repaired missing environment-pin comparison and acknowledged managed RAG illustration. No absence claims based only on file titles."
+    },
+    {
+      "id": "Q05",
+      "status": "pass",
+      "reason": "Separated source observations, proposals, unresolved terminology/currentness, Python AST checks, one actual pure-mock execution and unexecuted real model/E2E/training. Same-session review and incomplete telemetry disclosed."
+    }
+  ],
+  "independent_evaluator": false,
+  "revision_summary": [
+    {
+      "attempt": 1,
+      "snapshot_sha256": "c8405d26d40097fcfc7ed06d86b7dee07b3af681c82d138bbb252d67bea7b6d4",
+      "automatic_checks": {
+        "checked_at": "2026-10-30T08:19:04.142388+00:00",
+        "passed": true,
+        "checks": [
+          {
+            "id": "A01",
+            "status": "pass",
+            "errors": [],
+            "scope": "Source commit and all manifested source bytes/size/lines; not live freshness."
+          },
+          {
+            "id": "A02",
+            "status": "pass",
+            "errors": [],
+            "scope": "Findings have reasons, preserved outcomes, proposals, references, unique IDs and report counterparts."
+          },
+          {
+            "id": "A03",
+            "status": "pass",
+            "errors": [],
+            "scope": "178 evidence/role references have valid ranges and exact anchor excerpts; semantic support is reviewed separately."
+          },
+          {
+            "id": "A04",
+            "status": "pass",
+            "errors": [],
+            "scope": "All declared Markdown dispositions and primary roles; line partitions are structural coverage, not a semantic-completeness score."
+          },
+          {
+            "id": "A05",
+            "status": "pass",
+            "errors": [],
+            "scope": "Protected source bytes unchanged and run output allowlist; full remote tree diff is checked separately on publication."
+          },
+          {
+            "id": "A06",
+            "status": "pass",
+            "errors": [],
+            "scope": "Human report has no code/JSON fences, balanced details, pinned source links and decision boundary labels; no live external link check."
+          },
+          {
+            "id": "A07",
+            "status": "pass",
+            "errors": [],
+            "scope": "84 independent Python AST parses and bounded mock execution are separated from actual LLM/E2E/training claims and unknown usage."
+          },
+          {
+            "id": "A08",
+            "status": "pass",
+            "errors": [],
+            "scope": "Attempt cap, changes and actual checkpoint accounting; this script does not implement a Runner or enforce model deadlines."
+          }
+        ]
+      },
+      "semantic_review": "revise",
+      "issues": [
+        {
+          "id": "S01",
+          "problem": "Current teaching environment and distributed requirements pin were not compared explicitly.",
+          "repair": "Added F33 with both source references; no unsupported compatibility failure claim."
+        },
+        {
+          "id": "S02",
+          "problem": "Pilot Transfer Learning terminology question not explicitly retained as unresolved.",
+          "repair": "Added F34; left technical verification pending."
+        },
+        {
+          "id": "S03",
+          "problem": "Implementation gap description should explicitly acknowledge the managed RAG example.",
+          "repair": "Added F35 and separated product illustration from local cumulative implementation."
+        }
+      ]
+    },
+    {
+      "attempt": 2,
+      "changed_findings": [
+        "F33",
+        "F34",
+        "F35"
+      ],
+      "change_scope": "Three targeted additions, linked detailed/human checklist updates; original 32 findings and 42 roles retained.",
+      "remaining_required_revisions": []
+    }
+  ],
+  "pending_technical_verification": [
+    "F34 Transfer Learning terminology boundary",
+    "Current model IDs/revisions, SDK/Framework/MCP specifications and licenses",
+    "Pinned environment compatibility including F33",
+    "Actual classroom model/RAG/Agent/training performance"
+  ],
+  "pending_curriculum_decisions": [
+    "Canonical editable source / merged derivative strategy",
+    "Course roles, titles, placement and hours",
+    "Cumulative RAG/Single/Multi role contracts and required versus advanced scope",
+    "Training setup and learner prerequisites"
+  ],
+  "remaining_required_report_revisions": [],
+  "result": "READY_FOR_REVIEW",
+  "limits": "Automatic checks verify record consistency and source evidence positions, not independent educational correctness. Control cases are structural mutations, not an independent semantic benchmark."
+}

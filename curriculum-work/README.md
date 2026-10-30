@@ -1,29 +1,47 @@
-# K-Edu 교육과정 개편 — 첫 강의 분석
+# K-Edu 교육과정 개편 — 현재 위치와 읽을 파일
 
-**최신 추천: 기초 설명의 반복을 줄이고, 데이터 설계·모델 평가 중심으로 재구성한다.**
+**3단계: 전체 강의 비교·분석 결과를 검토할 차례다.**
 
-제목 제안은 **「머신러닝의 데이터 설계와 모델 평가」**다. 과목 구성과 제목은 아직 확정하지 않았다.
+## 먼저 읽을 문서 한 개
 
-- [최신 결과 요약](reports/KEDU-PILOT-001/20261030T064535Z-r2/RESULT.md)
-- [상세 분석과 원문별 근거](reports/KEDU-PILOT-001/20261030T064535Z-r2/attempt-01/analysis.md)
-- [자동 검사 결과](reports/KEDU-PILOT-001/20261030T064535Z-r2/attempt-01/automatic_checks.json)
-- [추가 비교 실행 기록](reports/KEDU-PILOT-001/20261030T064535Z-r2/run.json)
-- [최초 시범의 초안·보완 기록](reports/KEDU-PILOT-001/20261030T061100Z/)
+**[전체 분석 검토본 — REVIEW.md](reports/KEDU-ANALYSIS-001/20261030T080144Z/REVIEW.md)**
 
-Day1 4교시 본문을 추가 비교해 CNN·RNN·Transformer의 기초 소개가 Phase1에 이미 있음을 확인했다. 원래 시범은 비교 3개 파일, 추가 비교 후는 4개 파일이다. 최초 시범의 범위를 소급해 확대하지 않았다.
+앞의 1~4에는 핵심 판단, Phase2 13과목의 추천 역할, Prompt·Context·Harness·Loop·Multi-Agent의 현재 수준, 다음 결정 사항이 있다. 상세 근거와 주교안·Q&A별 처리는 같은 문서의 접힌 부록에서 볼 수 있다.
 
-## 자동 검사 재현
+| 순서 | 하는 일 | 현재 상태 |
+|---|---|---|
+| 1 | 강의 하나로 분석 방식을 시험 | 완료 |
+| 2 | 결과를 보고 분석 방식 보완 | 완료 |
+| 3 | 전체 강의 비교·분석 | 분석·기록 검사 완료, 사용자 검토 대기 |
+| 4 | 전체 목차·누적 실습 구성 결정 | 진행 전 |
+| 5 | 확정한 강의·실습 제작 및 검증 | 진행 전 |
 
-저장소 루트에서 실행한다.
+분석 결과를 보관한 상태다. 강의 본문·파일명·최종 목차·시수는 변경하지 않았다. 과목명과 재배치는 아직 제안이다.
 
-```bash
-python3 curriculum-work/loop/checks/check_analysis.py curriculum-work/reports/KEDU-PILOT-001/20261030T064535Z-r2 attempt-01
-```
+## 과거 시범 결과
 
-강의 원문 복사본은 추가하지 않는다. 검사기는 `sources.json`에 기록된 원본 저장소 경로를 읽어 고정 Blob SHA와 대조한다. 원문이 바뀌면 해당 기준 커밋에서 재현해야 한다.
+[Phase2-02 시범 — Day1 4교시 추가 비교 결과](reports/KEDU-PILOT-001/20261030T064535Z-r2/RESULT.md)
 
-자동 검사는 근거·형식·상태 검증이다. 교육적 의미 검토나 전체 Work 실행을 자동 재현하는 Runner는 아니다. 강의 원문 수정·과목 통합·최종 목차·시수 확정·모델 실행은 이번 범위에 포함되지 않는다.
+과거 시범의 초안·보완 기록을 그대로 보존했다. 최신 전체 분석의 결론은 위 REVIEW.md를 따른다.
 
-## 기록 안내
+<details>
+<summary>운영 담당자용 파일 안내 — 결과 검토에 필수 아님</summary>
 
-`loop/loop-spec.md`는 실행 전에 작성한 v0.1 설계 원본이다. 그 안의 미실행 표시는 설계 당시 기록이며 현재 결과는 위 최신 보고서와 실행 기록을 따른다. 최초 시범의 `attempt-01`은 검사 실패가 있던 실제 초안, `attempt-02`는 당시 보완본이다. 이번 추가 비교는 별도 run과 task revision 2로 기록했다.
+| 파일 | 역할 |
+|---|---|
+| [evidence.json](reports/KEDU-ANALYSIS-001/20261030T080144Z/evidence.json) | 실제 원문 버전·전체 파일 범위·35개 판단·근거·교안/Q&A 연결·수행 범위 |
+| [validation.json](reports/KEDU-ANALYSIS-001/20261030T080144Z/validation.json) | 초안/보완본의 실제 검사 결과·순차 의미 검토·오류 검출 사례·남은 판단 |
+| [run.json](reports/KEDU-ANALYSIS-001/20261030T080144Z/run.json) | 현재 실행 상태·시도/보완 횟수·체크포인트·기록 한계 |
+| [KEDU-ANALYSIS-001.json](loop/tasks/KEDU-ANALYSIS-001.json) | 전체 분석의 실제 작업 범위·제한·출력 지시서 |
+| [check_curriculum.py](loop/checks/check_curriculum.py) | 전체 분석 기록용 검사 코드. 실제 재현 명령은 파일의 Usage 참조 |
+| [loop-spec.md](loop/loop-spec.md) | 최초 시범 전의 v0.1 설계 원본. 예시와 당시 미실행 상태는 현재 실행 결과가 아님 |
+| [prompts.md](loop/prompts.md) | 최초 시범의 실제 역할별 지시. 전체 범용 Runner 구현을 의미하지 않음 |
+| [check_analysis.py](loop/checks/check_analysis.py) | 최초 시범 S04 전용 검사기. 전체 자료 검사는 check_curriculum.py로 구분 |
+
+표의 JSON은 설명용 예시가 아니라 해당 실행에서 사용하거나 작성한 기록이다. 검사 코드가 존재한다는 사실과 실제 검사 실행 결과는 구분하며, 후자는 validation.json을 확인한다.
+
+전체 분석은 164개 텍스트 파일의 전체 구조·개념 검색 및 관련 원문 구간 대조다. 모든 문장·코드의 정확성, 외부 SDK의 현재성, 실제 모델 성능까지 승인한 검수가 아니다. 검사 재현에는 같은 기준의 academy 원문이 필요하다.
+
+독립 자동 Runner, 단계별 추론 강도 자동 전환, 실제 교육장 모델/RAG/Multi-Agent/튜닝 실행은 이번 작업에 포함하지 않았다. 의미 검토는 같은 Work 세션의 순차 검토이며 독립 평가자가 아니다.
+
+</details>
