@@ -3,7 +3,7 @@
   "recorded_at_utc": "2026-10-30T18:06:09.023199+00:00",
   "branch": "work/curriculum-production-001",
   "parent_commit": "5d5bc20ee84eb162e8f63e548a0f425247ccc8d7",
-  "status": "LOCAL_EXECUTION_VERIFIED_QUALITY_NOT_ACCEPTED_PUBLICATION_PREPARED",
+  "status": "PUBLISHED_EXECUTION_VERIFIED_QUALITY_NOT_ACCEPTED",
   "recommended_reasoning_effort": "high",
   "new_units_authored": 4,
   "total_authored_units": 28,
@@ -45,7 +45,13 @@
   ],
   "next_task": "KEDU-PRODUCTION-007 K2-10/L5",
   "publication": {
-    "status": "prepared",
-    "commit": null
+    "status": "verified",
+    "content_commit": "97f8ac4b2036fb5f4f872ee638786d25ef04120a",
+    "tree_sha": "2c5378f37ee1654e6c06823151f7eb319431b397",
+    "uploaded_files": 23,
+    "all_uploaded_blob_hashes_match": true,
+    "all_other_original_files_preserved": true,
+    "branch_head_checked": true,
+    "note": "Follow-up metadata commit; content_commit identifies the verified code, lessons, and actual observations. Quality remains not accepted."
   }
 }
