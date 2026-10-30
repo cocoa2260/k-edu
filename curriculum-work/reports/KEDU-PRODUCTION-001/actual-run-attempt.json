@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "curriculum-work/practice/huggingface-tokenizer/inspect_tokenizer.py",
+    "--profile",
+    "qwen",
+    "--output",
+    "/workspace/scratch/2eedeaf0c30d/production-work/tokenizer-not-ready"
+  ],
+  "exit_code": 2,
+  "stdout": "",
+  "stderr": "{\"status\": \"setup_required\", \"message\": \"Install the pinned lab requirements first; see --preflight\", \"tokenizer_executed\": false}\n"
+}

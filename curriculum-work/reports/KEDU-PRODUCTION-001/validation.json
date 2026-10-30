@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-30T13:34:12.075931+00:00",
+  "checks": [
+    {
+      "name": "contract-tests",
+      "passed": true,
+      "detail": {
+        "expected_exit": 0,
+        "actual_exit": 0
+      }
+    },
+    {
+      "name": "preflight",
+      "passed": true,
+      "detail": {
+        "expected_exit": 2,
+        "actual_exit": 2
+      }
+    },
+    {
+      "name": "preflight_is_not_execution",
+      "passed": true,
+      "detail": "setup_required"
+    },
+    {
+      "name": "actual-run-attempt",
+      "passed": true,
+      "detail": {
+        "expected_exit": 2,
+        "actual_exit": 2
+      }
+    },
+    {
+      "name": "no_fabricated_observations",
+      "passed": true,
+      "detail": "Real path stopped at missing dependencies. No tokenizer execution or output was fabricated."
+    },
+    {
+      "name": "python_syntax",
+      "passed": true,
+      "detail": {
+        "files": 3
+      }
+    },
+    {
+      "name": "70_unit_tracking",
+      "passed": true,
+      "detail": "Three material units in the first batch; not full-course completion."
+    },
+    {
+      "name": "local_links_and_existing_asset_references",
+      "passed": true,
+      "detail": {
+        "broken": [],
+        "known_asset_paths": "Existing target paths verified against the pinned GitHub base tree, because the local source snapshot is partial; all new paths must exist locally. Base blobs are preserved at publication."
+      }
+    },
+    {
+      "name": "human_code_boundary",
+      "passed": true,
+      "detail": "Explanations/screens/activities are separate from executable Python and observed outputs; no pasted code/JSON fences in the main lesson."
+    },
+    {
+      "name": "unit_evidence_coverage",
+      "passed": true,
+      "detail": "Same-session content review of navigation/card/tokenizer goals; not an independent educator or classroom trial."
+    }
+  ],
+  "all_checks_passed": true,
+  "contract_tests": 13,
+  "actual_tokenizer_executed": false,
+  "actual_model_generation_executed": false,
+  "training_executed": false,
+  "runtime_gate": "SETUP_REQUIRED",
+  "direct_dependency_pins": "candidate_not_installation_validated",
+  "classroom_hardware_verified": false,
+  "independent_reviewer": false,
+  "network_download_attempted": false,
+  "network_note": "The session permits a limited set of hosts and has no dependency/model cache. No blocked destination was bypassed; package/model downloads were not attempted. Web metadata retrieval is separate from execution-host downloads."
+}

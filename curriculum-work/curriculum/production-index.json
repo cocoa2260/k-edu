@@ -188,10 +188,10 @@
       "course": "K2-03",
       "title": "Hugging Face 첫 방문과 공식 예제 찾기",
       "batch": "KEDU-PRODUCTION-001",
-      "material_status": "in_progress",
+      "material_status": "authored",
       "material_path": "curriculum-work/lessons/huggingface/README.md",
-      "review_status": "not_reviewed",
-      "runtime_status": "not_applicable",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "not_applicable_for_screen_reading",
       "classroom_trial": "not_run"
     },
     {
@@ -199,10 +199,10 @@
       "course": "K2-03",
       "title": "Model Card·파일·실행 경로 읽기",
       "batch": "KEDU-PRODUCTION-001",
-      "material_status": "in_progress",
+      "material_status": "authored",
       "material_path": "curriculum-work/lessons/huggingface/README.md",
-      "review_status": "not_reviewed",
-      "runtime_status": "not_applicable",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "not_applicable_for_screen_reading",
       "classroom_trial": "not_run"
     },
     {
@@ -210,10 +210,10 @@
       "course": "K2-03",
       "title": "Tokenizer·Chat Template 관찰",
       "batch": "KEDU-PRODUCTION-001",
-      "material_status": "in_progress",
+      "material_status": "authored",
       "material_path": "curriculum-work/lessons/huggingface/README.md",
-      "review_status": "not_reviewed",
-      "runtime_status": "not_run",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "setup_required",
       "classroom_trial": "not_run"
     },
     {
@@ -798,5 +798,22 @@
     ],
     "status": "not_started",
     "reason": "First build HF navigation/tokenizer literacy requested by user, then return to original first cumulative app batch."
+  },
+  "batch_status": "MATERIAL_READY_RUNTIME_PENDING",
+  "first_unfinished_gate": {
+    "id": "HF-TOKENIZER-ACTUAL",
+    "status": "setup_required",
+    "next_actions": [
+      "Install pinned direct dependencies in an isolated Python 3.12 environment and record resolved versions",
+      "Acquire allowlisted tokenizer files at the two pinned model revisions; no model weights",
+      "Run qwen observation + cache replay, inspect checks and compare stable observation values",
+      "Run max-length 16 and smol profile, review expected/actual differences",
+      "Update validation/runtime records and only then mark this unit runtime-verified"
+    ],
+    "do_not": [
+      "Do not reanalyse all original lessons",
+      "Do not mark static/error-path tests as actual tokenizer success",
+      "Do not overwrite existing observed runs"
+    ]
   }
 }

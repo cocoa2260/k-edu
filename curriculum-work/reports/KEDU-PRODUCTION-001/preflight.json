@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "curriculum-work/practice/huggingface-tokenizer/inspect_tokenizer.py",
+    "--preflight"
+  ],
+  "exit_code": 2,
+  "stdout": "{\n  \"status\": \"setup_required\",\n  \"python\": \"3.12.14\",\n  \"dependencies\": {\n    \"transformers\": {\n      \"expected\": \"4.57.1\",\n      \"installed\": null,\n      \"matches\": false\n    },\n    \"tokenizers\": {\n      \"expected\": \"0.22.1\",\n      \"installed\": null,\n      \"matches\": false\n    },\n    \"huggingface-hub\": {\n      \"expected\": \"0.36.0\",\n      \"installed\": null,\n      \"matches\": false\n    }\n  },\n  \"profile\": {\n    \"name\": \"qwen\",\n    \"model_id\": \"Qwen/Qwen3-0.6B\",\n    \"revision\": \"c1899de289a04d12100db370d81485cdf75e47ca\",\n    \"metadata_source\": \"https://huggingface.co/api/models/Qwen/Qwen3-0.6B\",\n    \"template_kwargs\": {\n      \"enable_thinking\": false\n    }\n  },\n  \"sample_count\": 3,\n  \"tokenizer_executed\": false,\n  \"network_used\": false\n}\n",
+  "stderr": ""
+}

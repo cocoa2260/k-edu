@@ -1,0 +1,5 @@
+# Tokenizer-only teaching environment, not the cumulative app's dependency file.
+# Direct pins are a candidate until installation + actual tokenizer run succeeds.
+transformers==4.57.1
+tokenizers==0.22.1
+huggingface-hub==0.36.0

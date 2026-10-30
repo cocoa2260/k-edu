@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.1",
+  "samples": [
+    {"id": "KO", "text": "안녕하세요. 오늘은 모델에 들어가는 입력을 확인합니다."},
+    {"id": "EN", "text": "Hello. Today we inspect the input passed to a language model."},
+    {"id": "SHORT", "text": "Hi!"}
+  ],
+  "messages": [
+    {"role": "system", "content": "Answer briefly."},
+    {"role": "user", "content": "What is a tokenizer?"}
+  ]
+}

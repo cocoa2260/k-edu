@@ -1,0 +1,61 @@
+{
+  "task_id": "KEDU-PRODUCTION-001",
+  "stage": 5,
+  "status": "MATERIAL_READY_RUNTIME_PENDING",
+  "design_commit": "3ba763f788530ee0a39dd8bf43c8eb89833258d4",
+  "source_commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+  "branch": "work/curriculum-production-001",
+  "started_checkpoint": "6bdc7fba9e401e8e3c233ef6cd02d31ed4d43be9",
+  "scope": [
+    "PRE-HF",
+    "K2-03.U05",
+    "K2-03.U06",
+    "K2-03.U07"
+  ],
+  "units_material_authored": 3,
+  "total_units": 70,
+  "full_curriculum_complete": false,
+  "actual_tokenizer_executed": false,
+  "actual_model_generation_executed": false,
+  "training_executed": false,
+  "external_model_api_calls": 0,
+  "telemetry_complete": false,
+  "input_tokens": null,
+  "output_tokens": null,
+  "tool_calls": null,
+  "independent_reviewer": false,
+  "runner_implemented": false,
+  "network_download_attempted": false,
+  "next_gate": "HF-TOKENIZER-ACTUAL",
+  "publication": {
+    "state": "prepared",
+    "branch": "work/curriculum-production-001"
+  },
+  "checkpoint_updated_at": "2026-10-30T13:35:06.863995+00:00",
+  "validation_summary": {
+    "checks_passed": 10,
+    "contract_tests_passed": 13,
+    "actual_tokenizer": "not_executed_setup_required"
+  },
+  "artifacts_sha256": {
+    "curriculum-work/PROGRESS.md": "ff262f41282cf02121c22d8b141c24d171b28516b8ea4b8696721c3da2ee3005",
+    "curriculum-work/README.md": "a12319e020761abc48153ceb6b615dc71d88075a016118d5dde0797ba6c92222",
+    "curriculum-work/curriculum/production-index.json": "72c2d312908c11e5e6f122bff9fc63864e395f9c735b359537e813cb5baf055d",
+    "curriculum-work/lessons/huggingface/INSTRUCTOR.md": "571d21b6ab083ed21360a4d191bee073783794ee4ffe98eb0f00e0d306e22459",
+    "curriculum-work/lessons/huggingface/README.md": "a1ca4993ec793b5f8a75b961b768c8c8f68ef1dd6bfdea925ad92f56b83a2df0",
+    "curriculum-work/loop/tasks/KEDU-PRODUCTION-001.json": "fb2a660d3ddb3c47c07f61eaab14e5332cf43e69fb273dd847d356bca60a69b9",
+    "curriculum-work/practice/huggingface-tokenizer/README.md": "0c94e07eb5c15584641226938c0f2066122de55e4c55f24de76e184b70ab330a",
+    "curriculum-work/practice/huggingface-tokenizer/WORKSHEET.md": "afc6b3d6a649e92c5a84da5cb7a44defd6366d92ef7ee6d1b594f165a98d11f2",
+    "curriculum-work/practice/huggingface-tokenizer/inputs.json": "ea68d89419ef78d55d565f76fc12074e7415f4b5599aa6be728019d05b52feac",
+    "curriculum-work/practice/huggingface-tokenizer/inspect_tokenizer.py": "1a78a6609d1d4ef91954d42237fb2886e0ab3e60433c0941d3470d024ec8ae01",
+    "curriculum-work/practice/huggingface-tokenizer/models.json": "cac892afdfb1bc109bfbb6fe2e7a7bde50758c528e49abd00db01c87b6381dfb",
+    "curriculum-work/practice/huggingface-tokenizer/requirements.txt": "63bd68eafa1a831c6053f980281c84bc631f2a9ddb5130c6f8f8bd555494c37f",
+    "curriculum-work/practice/huggingface-tokenizer/tests/test_contracts.py": "e67a761ef38aee7e8d0ad7ae26c9ce691a42a1b2ebedc0b8c9fd28684eba960d",
+    "curriculum-work/practice/huggingface-tokenizer/tokenizer_steps.py": "7208c42fc7cc4cd5fd52391c34eae75d8d088588e3c3ede1f3fd39a0e517d9bb",
+    "curriculum-work/reports/KEDU-PRODUCTION-001/RESULT.md": "d57086604bdb69906224f9c25bb02f3ef3a775219313ea2f5e2c3d12b6878c39",
+    "curriculum-work/reports/KEDU-PRODUCTION-001/actual-run-attempt.json": "0b3622f4538993b14ae95eae3f39ae1e63260b3c7b35aaedb208833afcd68a2f",
+    "curriculum-work/reports/KEDU-PRODUCTION-001/contract-tests.json": "1752b28d5089565ac188d4d82cc35780dc32a359e678879ece75f2c1c9552b65",
+    "curriculum-work/reports/KEDU-PRODUCTION-001/preflight.json": "32e8481fb5d82a9c3f980b162b621d2bcdc4e3c4a0f56dde8bc1fc19573757c2",
+    "curriculum-work/reports/KEDU-PRODUCTION-001/validation.json": "8941fe36ae14c96b0e1c5f4b7d2f951f94a331b431920728a11d6e84696bb914"
+  }
+}

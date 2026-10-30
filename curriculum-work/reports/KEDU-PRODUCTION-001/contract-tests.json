@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "curriculum-work/practice/huggingface-tokenizer/tests",
+    "-v"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_branch_revision_rejected (test_contracts.Contracts.test_branch_revision_rejected) ... ok\ntest_default_inputs_and_immutable_profiles (test_contracts.Contracts.test_default_inputs_and_immutable_profiles) ... ok\ntest_empty_sample_rejected (test_contracts.Contracts.test_empty_sample_rejected) ... ok\ntest_existing_evidence_is_not_overwritten (test_contracts.Contracts.test_existing_evidence_is_not_overwritten) ... ok\ntest_invalid_max_length_stops_before_loading (test_contracts.Contracts.test_invalid_max_length_stops_before_loading) ... ok\ntest_last_role_must_be_user (test_contracts.Contracts.test_last_role_must_be_user) ... ok\ntest_missing_output_stops_before_loading (test_contracts.Contracts.test_missing_output_stops_before_loading) ... ok\ntest_missing_setup_never_writes_success (test_contracts.Contracts.test_missing_setup_never_writes_success) ... ok\ntest_preflight_never_imports_or_loads_tokenizer (test_contracts.Contracts.test_preflight_never_imports_or_loads_tokenizer) ... ok\ntest_profile_duplicates_rejected (test_contracts.Contracts.test_profile_duplicates_rejected) ... ok\ntest_sample_duplicate_rejected (test_contracts.Contracts.test_sample_duplicate_rejected) ... ok\ntest_unknown_profile_rejected (test_contracts.Contracts.test_unknown_profile_rejected) ... ok\ntest_unknown_role_rejected (test_contracts.Contracts.test_unknown_role_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.009s\n\nOK\n"
+}
