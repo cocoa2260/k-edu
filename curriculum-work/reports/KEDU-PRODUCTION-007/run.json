@@ -3,7 +3,7 @@
   "recorded_at_utc": "2026-10-30T18:40:00.603184+00:00",
   "branch": "work/curriculum-production-001",
   "parent_commit": "5cdea33bb4c12d0aebd3e673b65dc72c5f6e6401",
-  "status": "LOCAL_RUNTIME_VERIFIED_MODEL_QUALITY_NOT_ACCEPTED_PUBLICATION_PREPARED",
+  "status": "PUBLISHED_RUNTIME_VERIFIED_MODEL_TASK_QUALITY_NOT_ACCEPTED",
   "recommended_reasoning_effort": "high",
   "new_units_authored": 4,
   "total_authored_units": 32,
@@ -48,7 +48,13 @@
   ],
   "next_task": "KEDU-PRODUCTION-008 K2-11/L6",
   "publication": {
-    "status": "prepared",
-    "commit": null
+    "status": "verified",
+    "content_commit": "02699f2739993c56e935258e07cd8ca689a719aa",
+    "tree_sha": "4f669cab86587c94dba9933a00971f7d89d3d5e8",
+    "uploaded_files": 27,
+    "all_uploaded_blob_hashes_match": true,
+    "all_other_original_files_preserved": true,
+    "branch_head_checked": true,
+    "note": "Follow-up metadata commit. content_commit identifies lessons, code and actual observations. Model task completion and answer quality remain not accepted."
   }
 }
