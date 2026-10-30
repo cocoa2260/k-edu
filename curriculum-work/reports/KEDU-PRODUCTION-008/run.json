@@ -3,7 +3,7 @@
   "recorded_at_utc": "2026-10-30T23:53:03.468709+00:00",
   "branch": "work/curriculum-production-001",
   "parent_commit": "204f3feba91c4f1df6570c7c2f86486090438002",
-  "status": "LOCAL_VERIFIED_QUALITY_NOT_ACCEPTED_PUBLICATION_PREPARED",
+  "status": "PUBLISHED_RUNTIME_VERIFIED_MODEL_TASK_QUALITY_NOT_ACCEPTED",
   "recommended_reasoning_effort": "high",
   "new_units_authored": 4,
   "total_authored_units": 36,
@@ -44,7 +44,14 @@
   ],
   "next_task": "KEDU-PRODUCTION-009 K2-12.U01-U04 / L7 dataset preparation",
   "publication": {
-    "status": "prepared",
-    "commit": null
+    "status": "verified",
+    "content_commit": "254d3c70cf18379444c2b21a7e99233dec1ebeff",
+    "tree_sha": "a872ab5ec41d62a4a21638fe42194118c4446539",
+    "uploaded_files": 23,
+    "all_uploaded_blob_hashes_match": true,
+    "all_other_original_files_preserved": true,
+    "branch_head_checked": true,
+    "verified_at_utc": "2026-10-30T23:55:13.926Z",
+    "note": "Follow-up publication metadata commit; content_commit identifies verified lessons, code and observations. Model task quality remains not accepted."
   }
 }
