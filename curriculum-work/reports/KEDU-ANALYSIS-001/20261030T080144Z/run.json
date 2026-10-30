@@ -15,7 +15,8 @@
     "draft_written": "2026-10-30T08:16:20.804220+00:00",
     "execution_record_created": "2026-10-30T08:19:03.454104+00:00",
     "repair_completed": "2026-10-30T08:20:30.801081+00:00",
-    "local_validation_completed": "2026-10-30T08:20:31.604874+00:00"
+    "local_validation_completed": "2026-10-30T08:20:31.604874+00:00",
+    "publication_verified": "2026-10-30T08:26:05.718658+00:00"
   },
   "accounting_limits": "Actual file/process checkpoints only. No complete measurement of prior conversation, internal model calls, tokens or all tool calls.",
   "revision_records": [
@@ -127,7 +128,12 @@
     "target_branch": "work/curriculum-analysis-001",
     "parent_commit": "f9f035076f97046fe6763064af10b72d0a85c381",
     "scope": "Analysis report, evidence and validation records plus task/checker/navigation only; no original source copies or lesson edits.",
-    "state": "prepared_for_publication",
-    "remote_verification_record": "The publishing assistant verifies the resulting immutable Git tree and published file blobs after commit. No prepublication field is used as proof of upload."
+    "state": "published",
+    "remote_verification_record": "Verified the initial analysis-content commit tree against parent f9f035076f97046fe6763064af10b72d0a85c381, all seven changed file blobs, branch head and the immutable published report. This publication metadata is a subsequent record of that successful upload.",
+    "analysis_content_commit": "3ad1f5179e592c812b01e5aeb6de7e2c3d521737",
+    "verified_at": "2026-10-30T08:26:05.718658+00:00",
+    "verified_changed_file_count": 7,
+    "all_published_file_blobs_match": true,
+    "academy_tree_unchanged": true
   }
 }
