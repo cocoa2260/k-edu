@@ -28,8 +28,14 @@
   "network_download_attempted": true,
   "next_gate": "L0-BASELINE",
   "publication": {
-    "state": "prepared",
-    "branch": "work/curriculum-production-001"
+    "state": "published",
+    "branch": "work/curriculum-production-001",
+    "content_commit": "07f54901bcb950afd2e08d4e61eb22d51f003f9a",
+    "verified_at": "2026-10-30T15:59:54.805Z",
+    "changed_files": 29,
+    "all_30_exported_blobs_verified": true,
+    "other_original_files_unchanged": true,
+    "scope": "Actual tokenizer observations, two targeted fixes, 17 tests, environment snapshot and progress updates. Publication metadata follows in its own commit."
   },
   "checkpoint_updated_at": "2026-10-30T15:57:04.974333+00:00",
   "validation_summary": {
