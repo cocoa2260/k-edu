@@ -235,17 +235,7 @@
   "approved_curriculum": false,
   "lesson_files_modified": false,
   "actual_model_or_training_executed": false,
-  "publication": {
-    "target_branch": "work/curriculum-design-001",
-    "state": "published",
-    "design_content_commit": "6373df78a51464942f49cab81fd76a6931715b6c",
-    "verified_at": "2026-10-30T10:42:24.208563+00:00",
-    "changed_files": 7,
-    "all_file_blobs_match": true,
-    "academy_and_previous_reports_unchanged": true,
-    "verification_scope": "Initial design-content commit tree compared with be205182880a445cabbd08bb3eda06e02c454904, seven published file blobs, branch head and immutable human plan. This metadata records that completed upload in a subsequent commit."
-  },
-  "report_sha256": "abde47af44456625a24cf2244b3d096d2cbed216d7a907b62dbcf6c33e5db3c0",
+  "report_sha256": "f60398082955afe28fb58011470a690bc1780567ee0a80603476db9eb683629b",
   "counts": {
     "orientation_blocks": 1,
     "teaching_courses": 14,
@@ -257,5 +247,33 @@
     "stage3_findings_dispositions": 35,
     "static_checks_passed": 8,
     "control_cases_detected": 5
+  },
+  "scope_extensions": [
+    {
+      "revision": "v0.2",
+      "requested_by": "user",
+      "scope": [
+        "Model Card literacy",
+        "Dataset creation/augmentation",
+        "LoRA/QLoRA explicit outcomes"
+      ],
+      "status": "design_updated_execution_pending"
+    }
+  ],
+  "previous_publication": {
+    "target_branch": "work/curriculum-design-001",
+    "state": "published",
+    "design_content_commit": "6373df78a51464942f49cab81fd76a6931715b6c",
+    "verified_at": "2026-10-30T10:42:24.208563+00:00",
+    "changed_files": 7,
+    "all_file_blobs_match": true,
+    "academy_and_previous_reports_unchanged": true,
+    "verification_scope": "Initial design-content commit tree compared with be205182880a445cabbd08bb3eda06e02c454904, seven published file blobs, branch head and immutable human plan. This metadata records that completed upload in a subsequent commit."
+  },
+  "publication": {
+    "target_branch": "work/curriculum-design-001",
+    "state": "prepared_for_publication",
+    "base_commit": "a24c79163ff36b44643011664d85db0170b935d9",
+    "verification_scope": "Previous publication remains recorded separately; this revision must be verified after upload."
   }
 }

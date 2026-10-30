@@ -162,9 +162,9 @@
         },
         {
           "id": "K2-01.U02",
-          "title": "Train·Validation·Test와 누수",
-          "new_outcome": "분리 이유와 동일 문서·유사 샘플이 새는 경로를 찾는다.",
-          "student_evidence": "분리표와 누수 반례"
+          "title": "데이터 제작 원칙·분리와 누수",
+          "new_outcome": "분리 이유와 동일 문서·유사 샘플이 새는 경로를 찾는다. 수집 출처·사용 범위·라벨 기준·품질 검사·Dataset Card를 설계하고 원문/유사 샘플 그룹 단위로 분리한다.",
+          "student_evidence": "라벨 지침·출처/그룹 분리표·누수 반례"
         },
         {
           "id": "K2-01.U03",
@@ -270,9 +270,9 @@
         },
         {
           "id": "K2-03.U04",
-          "title": "환각·불확실성과 시스템 평가",
-          "new_outcome": "형식·내용·근거·안전·지연을 별도로 평가한다.",
-          "student_evidence": "실패 분류와 모델/업무 평가 기준"
+          "title": "환각·평가와 Model Card 읽기",
+          "new_outcome": "형식·내용·근거·안전·지연을 별도로 평가한다. Model Card·연결된 License/Config에서 용도·학습/평가 조건·한계·실행 요구를 읽고 검증/미확인을 구분한다.",
+          "student_evidence": "두 모델 선택 근거표·출처·미확인 항목"
         }
       ]
     },
@@ -664,15 +664,15 @@
       "units": [
         {
           "id": "K2-12.U01",
-          "title": "학습 목표와 Parameter 전략",
-          "new_outcome": "SFT/Instruction/선호 목표와 Full/Partial/LoRA/QLoRA 전략을 분리한다.",
-          "student_evidence": "목표×전략 표와 선택 근거"
+          "title": "학습 목표와 LoRA·QLoRA 전략",
+          "new_outcome": "SFT/Instruction/선호 목표와 Full/Partial/LoRA/QLoRA 전략을 분리한다. 동결 Base와 저랭크 Adapter, rank/alpha/dropout/target modules, 양자화 Base와 연산 dtype의 차이를 설명한다.",
+          "student_evidence": "목표×전략 표·학습 Parameter·장비 적합성 근거"
         },
         {
           "id": "K2-12.U02",
-          "title": "작은 Task의 Baseline과 Dataset",
-          "new_outcome": "고정 Prompt/Decoding·Train/Validation/Test·누수·Chat Template/Loss 범위를 정한다.",
-          "student_evidence": "분리된 데이터 목록·원본 기준선"
+          "title": "Dataset 제작·검수·증강과 Baseline",
+          "new_outcome": "고정 Prompt/Decoding·Train/Validation/Test·누수·Chat Template/Loss 범위를 정한다. Seed 작성·검수·그룹 분리 후 Train만 증강하고 원본/변형 계보와 Dataset Card를 작성한다.",
+          "student_evidence": "분리 Manifest·증강 채택/기각표·Dataset Card·원본 기준선"
         },
         {
           "id": "K2-12.U03",
@@ -682,9 +682,9 @@
         },
         {
           "id": "K2-12.U04",
-          "title": "저장·새 프로세스 Reload·회귀",
-          "new_outcome": "Adapter를 다시 로드해 같은 Test와 일반 능력/안전 사례를 비교한다.",
-          "student_evidence": "Base/Tuned/Reload 결과·회귀와 실패 해석"
+          "title": "Reload·증강 효과 비교와 Model Card 작성",
+          "new_outcome": "Adapter를 다시 로드해 같은 Test와 일반 능력/안전 사례를 비교한다. Base/원본 학습/증강 학습을 같은 미사용 Test로 비교하고 학습량 차이·실패·제약을 Model Card에 기록한다.",
+          "student_evidence": "Base/Seed/Augmented/Reload 비교·학습량·Model Card"
         }
       ]
     },
@@ -3269,6 +3269,79 @@
       "curriculum-work/practice/document-assistant/evals/ rubrics, baseline and results",
       "curriculum-work/practice/document-assistant/milestones/ stage manifests/patch references",
       "curriculum-work/reports/ Work design/build/check records, separate from student runtime traces"
+    ]
+  },
+  "requested_extensions": {
+    "revision": "v0.2",
+    "reason": "User requested explicit LoRA/QLoRA, Model Card literacy, dataset creation and augmentation.",
+    "status": "proposed_not_implemented",
+    "model_card": {
+      "targets": [
+        "K2-03.U04",
+        "L0",
+        "L7"
+      ],
+      "outcomes": [
+        "Compare Base/Instruct/Adapter and model revision, tokenizer/chat template, language/task fit, license and restrictions, training/evaluation data and metrics, limitations, precision/runtime requirements.",
+        "Separate author-reported claims, missing information and locally verified evidence; follow linked license/config/tokenizer files. Parameter count alone is not a VRAM estimate."
+      ],
+      "outputs": [
+        "Two-model selection worksheet with source links/revisions and unknowns",
+        "Student-written training-result Model Card with failures and evaluation conditions"
+      ]
+    },
+    "dataset_creation": {
+      "targets": [
+        "K2-01.U02",
+        "K2-12.U02",
+        "L1",
+        "L7"
+      ],
+      "outcomes": [
+        "Distinguish RAG source corpus, training examples and evaluation cases.",
+        "Task definition → permitted sources → schema/labeling guide → seed annotation → adjudication/quality checks → group split → versioned Dataset Card.",
+        "Track source/parent IDs, permissions, privacy handling, provenance, rejected records and dataset hashes. Document-derived siblings belong to one split."
+      ],
+      "outputs": [
+        "Annotation guide, versioned dataset, split manifest and Dataset Card"
+      ]
+    },
+    "augmentation": {
+      "targets": [
+        "K2-12.U02",
+        "K2-12.U04",
+        "L7"
+      ],
+      "outcomes": [
+        "Split by source group before augmentation; augment Train only. Never generate training examples from held-out Test/Validation or their source groups.",
+        "Use paraphrases, controlled variations, hard negatives and optional local-model synthetic examples; recheck meaning, evidence and labels, remove near duplicates and unsupported answers.",
+        "Keep parent IDs, transformation/prompt/model revision and human-review verdict. Synthetic labels are not ground truth.",
+        "Compare Base, seed-data Tuned and augmented-data Tuned on the same untouched Test; record sample count, optimizer steps, training tokens and seed so extra training is not mistaken for augmentation quality."
+      ],
+      "outputs": [
+        "Accepted/rejected augmentation audit and unchanged-Test comparison"
+      ]
+    },
+    "lora_qlora": {
+      "targets": [
+        "K2-12.U01",
+        "K2-12.U03",
+        "K2-12.U04",
+        "L7"
+      ],
+      "outcomes": [
+        "Explain frozen base and trainable low-rank adapters, rank/alpha/dropout/target modules, trainable parameter counts and compatible base revision.",
+        "Distinguish LoRA from QLoRA: a quantized frozen base with trainable adapters; ordinary quantized inference is not QLoRA training.",
+        "Record compute dtype, quantization configuration, optimizer, batch/accumulation, sequence length, memory, adapter save and fresh-process reload."
+      ],
+      "execution_policy": "Require an actual compatible small-model training/save/reload run. Full/LoRA/QLoRA comparisons are conditional on measured hardware compatibility; do not promise QLoRA on GTX 1060 3GB or equate 4-bit weights with total training memory. Keep hardware failures and unexecuted paths explicit."
+    },
+    "schedule_policy": "Retain 14 course IDs and 63 logical unit IDs for this revision; expand the existing unit contents. Unit count is not teaching hours. Re-estimate workload before freezing the timetable.",
+    "references": [
+      "https://huggingface.co/docs/hub/model-cards",
+      "https://huggingface.co/docs/hub/datasets-cards",
+      "https://huggingface.co/docs/peft/developer_guides/lora",
+      "https://huggingface.co/docs/peft/developer_guides/quantization"
     ]
   }
 }

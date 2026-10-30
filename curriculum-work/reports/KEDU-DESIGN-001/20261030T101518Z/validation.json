@@ -2,7 +2,7 @@
   "task_id": "KEDU-DESIGN-001",
   "result": "PROPOSED_READY_FOR_REVIEW",
   "automatic_final": {
-    "checked_at": "2026-10-30T10:37:54.844551+00:00",
+    "checked_at": "2026-10-30T11:16:13.775250+00:00",
     "passed": true,
     "checks": [
       {
@@ -352,5 +352,13 @@
     "Cumulative RAG/Single/Multi scope and real training track",
     "First single-format completion versus multi-format expansion; no final hour allocation"
   ],
-  "verification_limits": "Checks establish internal design/source/graph/contract/claim consistency, not implementation, real-model quality, training feasibility, classroom timing or user approval."
+  "verification_limits": "Checks establish internal design/source/graph/contract/claim consistency, not implementation, real-model quality, training feasibility, classroom timing or user approval.",
+  "scope_extension_review": {
+    "revision": "v0.2",
+    "static_passed": true,
+    "controls_detected": 5,
+    "semantic_review": "Model-selection evidence, dataset provenance/group splitting, train-only reviewed augmentation, unchanged held-out comparison, and explicit LoRA/QLoRA outcomes aligned across human plan and structured requirements. Same-session review; not independent.",
+    "execution_verified": false,
+    "hours_reestimated": false
+  }
 }

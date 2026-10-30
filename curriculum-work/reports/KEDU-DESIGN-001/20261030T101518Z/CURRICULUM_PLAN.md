@@ -1,4 +1,4 @@
-# K-Edu 전체 목차와 누적 실습 구성안 v0.1
+# K-Edu 전체 목차와 누적 실습 구성안 v0.2
 
 2026-10-30 · 4단계 · KEDU-DESIGN-001 · 사용자 검토용 구성안
 
@@ -7,6 +7,30 @@
 처음에는 **2번 목차표와 3번 실습표**를 보면 된다. 상세 단원·이동 근거·역할 계약·평가·제작 조건은 같은 문서의 접힌 부록에 있다. 본문에 실행 코드나 JSON 예시를 넣지 않았다.
 
 이 문서는 구성과 제작 기준을 구체화한 제안이다. **강의 본문·기존 파일명·실습 앱·데이터는 아직 변경하거나 제작하지 않았다.** 실제 모델·훈련·교육장 성능을 검증한 결과도 아니다. 과목명과 범위는 이 구성안을 검토한 뒤 제작 기준으로 채택할 수 있다.
+
+## 추가 반영 — 모델을 고르고, 데이터를 만들어 학습하기
+
+2026-10-30 추가 요청 반영. 아래 내용은 **제작할 학습 목표와 실습**이며 실행 결과가 아니다. 14개 본과목 안에 연결하고, 단원 ID는 유지한다. 범위가 늘었으므로 시간표 확정 전에 실습량을 다시 산정한다.
+
+| 내용 | 배울 위치 | 학생이 직접 하는 일 |
+|---|---|---|
+| Model Card 읽기 | K2-03 → L0 모델 선택 | 두 후보의 Base/Instruct/Adapter·리비전·언어·용도·학습/평가 조건·한계·라이선스·실행 요구를 비교하고 선택 이유를 쓴다. |
+| Dataset 제작 | K2-01 원칙 → K2-12·L7 제작 | 과제 정의 → 출처/사용 범위 확인 → 필드·라벨 지침 → Seed 작성 → 검수 → 원문 그룹별 분리 → Dataset Card·버전 관리까지 수행한다. |
+| Dataset 증강 | K2-12·L7 | Train만 바꿔쓰기·조건 변형·어려운 오답/거부 사례로 확장하고 의미·근거·라벨·중복을 검수한다. 원본과 증강 학습의 효과를 같은 Test에서 비교한다. |
+| LoRA·QLoRA | K2-12·L7 | 동결 Base와 학습 Adapter, rank·alpha·dropout·target modules, 양자화/연산 dtype을 이해하고 실제 학습·저장·새 프로세스 재로드를 확인한다. |
+| 직접 Card 작성 | L7 결과 정리 | Dataset Card에는 출처·제작/검수·분리·한계를, Model Card에는 Base·설정·데이터·평가 조건·실패·제약을 기록한다. |
+
+**Model Card는 모델 선택의 근거를 읽는 실습이다.** 작성자의 성능 주장과 학생이 실제 확인한 사실, 정보가 없어 미확인인 항목을 구분한다. 연결된 라이선스·Config·Tokenizer·Chat Template까지 확인한다. Parameter 수나 양자화 파일 크기만 보고 실행 메모리를 확정하지 않는다.
+
+**RAG에 넣을 원문 묶음, 모델 학습용 입력/정답, 성능 평가용 문제는 역할이 다르다.** L1의 평가 사례 제작에도 출처·기대 행동·채점 기준·버전을 적용하되, 평가 정답을 훈련 자료로 재사용하지 않는다.
+
+**증강은 데이터 증강(Data Augmentation)이라는 이름으로 넣는다.** 먼저 원문/기관/유사 예제의 그룹을 나누고, Train 그룹에서만 파생 예제를 만든다. Validation/Test와 그 원문 그룹은 증강 재료로 쓰지 않는다. 합성 답변을 정답으로 자동 인정하지 않으며, 원본 ID·변형 방법·생성 모델/Prompt·사람의 채택/기각 기록을 남긴다. 잘못 바뀐 조건·근거 없는 답변·근접 중복은 제외한다. 로컬 모델 생성은 선택 경로이며 수동 변형으로도 실습한다.
+
+평가는 **Base → 원본 데이터 학습 → 증강 데이터 학습**을 같은 고정 Test로 비교한다. 데이터 수뿐 아니라 Optimizer Step·학습 Token·Seed도 기록해 학습량 증가와 증강 품질의 효과를 구분한다. 증강을 했어도 나빠질 수 있으며 그 결과도 제출한다. 기존 40/10/20개 데이터 수는 작은 시작 예시이지 고정된 충분량이나 성능 보장이 아니다.
+
+LoRA는 동결된 Base에 저랭크 Adapter를 학습하는 전략이고, QLoRA는 양자화된 Base와 Adapter 학습을 결합한다. **양자화 모델을 실행하는 것만으로 QLoRA 학습을 했다고 보지 않는다.** 실제 훈련·저장·재로드 목표는 유지하되 Full/LoRA/QLoRA 전 경로의 실행 비교는 장비 검증 후 정한다. GTX 1060 3GB에서의 QLoRA 가능 여부는 미확인이며, 4-bit 가중치가 전체 훈련 메모리를 뜻하지 않는다.
+
+제작 참고: [Model Cards](https://huggingface.co/docs/hub/model-cards), [Dataset Cards](https://huggingface.co/docs/hub/datasets-cards), [LoRA](https://huggingface.co/docs/peft/developer_guides/lora), [양자화와 QLoRA](https://huggingface.co/docs/peft/developer_guides/quantization). 구체 모델·라이브러리 버전·장비 호환성은 제작 시 다시 검증한다.
 
 ## 1. 이번 구성에서 정한 추천 기준
 
@@ -30,7 +54,7 @@
 | K2-00 | AI 서비스의 목표와 전체 흐름 | 시작 안내: 목표·실패·평가·운영을 연결 | L0 |
 | K2-01 | 머신러닝의 데이터 설계와 모델 평가 | 데이터 분리·일반화·누수·업무 지표 | 단원별 관찰·계산 실습 / 후속 구현의 선수지식 |
 | K2-02 | Transformer의 내부 원리 | 신경망 계산·QKV·위치 정보·Mask·KV Cache | 단원별 관찰·계산 실습 / 후속 구현의 선수지식 |
-| K2-03 | LLM의 학습·생성·한계 | LLM 학습 목표·Post-training·생성·한계 | 단원별 관찰·계산 실습 / 후속 구현의 선수지식 |
+| K2-03 | LLM의 학습·생성·한계 | LLM 학습 목표·Post-training·생성·한계·Model Card | 단원별 관찰·계산 실습 / 후속 구현의 선수지식 |
 | K2-04 | Prompt Engineering: 지시·출력·평가 | 같은 과제의 지시·출력·전후 평가 | L1 |
 | K2-05 | Context Engineering: 정보 선택·구성·예산 | 근거 선택·순서·출처·Token 예산 | L1 |
 | K2-06 | Harness와 Loop Engineering: 실행·검증·개선 | 입출력 검사·State·Trace·부분 보완·종료 | L2 |
@@ -39,7 +63,7 @@
 | K2-09 | 근거를 제시하는 RAG | 검색부터 답변·근거·평가까지 연결 | L4 |
 | K2-10 | Tool을 사용하는 Single-Agent | 도구/종료를 선택하고 Runtime이 검증·실행 | L5 |
 | K2-11 | 역할을 나누는 Multi-Agent | 검색·작성·검토 역할과 동일 기준선 비교 | L6 |
-| K2-12 | Fine-tuning의 학습과 평가 | 실제 학습·Adapter 저장·재로드·회귀 | L7 |
+| K2-12 | Fine-tuning의 학습과 평가 | Dataset 제작·증강·LoRA/QLoRA·재로드·평가 | L7 |
 | K2-13 | OCR·Multimodal과 문서 입력 품질 | Parsing/OCR·표/순서·입력 품질·검토 | L8 |
 | K2-14 | Document AI 통합과 보고서 생성 | 공통 문서 구조·보고서·UI·서비스 통합 | L9 |
 
@@ -119,7 +143,7 @@
 | 학습 단위 | 새로 배우는 것 | 학생이 제출할 근거 |
 |---|---|---|
 | 예측 시점과 데이터의 역할 | 이미 배운 Sample·Feature·Label을 실제 입력·예측 시점에 적용한다. | 예측 시점/사용 가능한 Feature 표 |
-| Train·Validation·Test와 누수 | 분리 이유와 동일 문서·유사 샘플이 새는 경로를 찾는다. | 분리표와 누수 반례 |
+| 데이터 제작 원칙·분리와 누수 | 분리 이유와 동일 문서·유사 샘플이 새는 경로를 찾는다. 수집 출처·사용 범위·라벨 기준·품질 검사·Dataset Card를 설계하고 원문/유사 샘플 그룹 단위로 분리한다. | 라벨 지침·출처/그룹 분리표·누수 반례 |
 | 일반화·과적합과 실험 통제 | Training Loss와 실제 목표를 구분하고 한 조건씩 바꾼다. | 조건 고정표와 결과 해석 |
 | 평가 지표와 오류의 영향 | Accuracy·Precision·Recall·F1을 업무 실패의 차이로 선택한다. | 혼동행렬·지표·금지 행동 기준 |
 
@@ -148,7 +172,7 @@ Token·Training의 첫 설명은 참조하고 언어 모델 고유 동작을 다
 | 학습 목표와 Post-training | Causal LM 목표·SFT·선호 최적화·Alignment를 구분한다. | 단계별 데이터/목표/바뀌는 대상 표 |
 | Logit에서 Token 선택까지 | Temperature·Greedy·Top-k/Top-p·Sampling·Beam의 목적을 구분한다. | 같은 조건에서 생성 설정 1개 변경 기록 |
 | Parameter·Context·Memory·Retrieval | 저장 위치·수명·다음 호출에 전달되는 방식을 구분한다. | 네 정보의 위치/재사용 책임 설명 |
-| 환각·불확실성과 시스템 평가 | 형식·내용·근거·안전·지연을 별도로 평가한다. | 실패 분류와 모델/업무 평가 기준 |
+| 환각·평가와 Model Card 읽기 | 형식·내용·근거·안전·지연을 별도로 평가한다. Model Card·연결된 License/Config에서 용도·학습/평가 조건·한계·실행 요구를 읽고 검증/미확인을 구분한다. | 두 모델 선택 근거표·출처·미확인 항목 |
 
 ### K2-04. Prompt Engineering: 지시·출력·평가
 
@@ -263,10 +287,10 @@ RAG를 Tool로 사용하며 Model 선택과 Runtime 실행의 책임을 추적�
 
 | 학습 단위 | 새로 배우는 것 | 학생이 제출할 근거 |
 |---|---|---|
-| 학습 목표와 Parameter 전략 | SFT/Instruction/선호 목표와 Full/Partial/LoRA/QLoRA 전략을 분리한다. | 목표×전략 표와 선택 근거 |
-| 작은 Task의 Baseline과 Dataset | 고정 Prompt/Decoding·Train/Validation/Test·누수·Chat Template/Loss 범위를 정한다. | 분리된 데이터 목록·원본 기준선 |
+| 학습 목표와 LoRA·QLoRA 전략 | SFT/Instruction/선호 목표와 Full/Partial/LoRA/QLoRA 전략을 분리한다. 동결 Base와 저랭크 Adapter, rank/alpha/dropout/target modules, 양자화 Base와 연산 dtype의 차이를 설명한다. | 목표×전략 표·학습 Parameter·장비 적합성 근거 |
+| Dataset 제작·검수·증강과 Baseline | 고정 Prompt/Decoding·Train/Validation/Test·누수·Chat Template/Loss 범위를 정한다. Seed 작성·검수·그룹 분리 후 Train만 증강하고 원본/변형 계보와 Dataset Card를 작성한다. | 분리 Manifest·증강 채택/기각표·Dataset Card·원본 기준선 |
 | 실제 학습과 자원 기록 | 고정 Base에서 학습 가능한 Parameter와 Optimizer Step을 확인한다. | 실제 학습 로그·설정·메모리·Adapter |
-| 저장·새 프로세스 Reload·회귀 | Adapter를 다시 로드해 같은 Test와 일반 능력/안전 사례를 비교한다. | Base/Tuned/Reload 결과·회귀와 실패 해석 |
+| Reload·증강 효과 비교와 Model Card 작성 | Adapter를 다시 로드해 같은 Test와 일반 능력/안전 사례를 비교한다. Base/원본 학습/증강 학습을 같은 미사용 Test로 비교하고 학습량 차이·실패·제약을 Model Card에 기록한다. | Base/Seed/Augmented/Reload 비교·학습량·Model Card |
 
 ### K2-13. OCR·Multimodal과 문서 입력 품질
 
