@@ -1,0 +1,18 @@
+{
+  "stage": "L6",
+  "status": "ROLE_HANDOFF_RUNTIME_VERIFIED_ACTUAL_ROLES_EXECUTED_TASK_QUALITY_NOT_ACCEPTED",
+  "case_count": 18,
+  "handoff_boundary_cases": 4,
+  "actual_three_roles_verified": true,
+  "actual_task_quality_accepted": false,
+  "approval_granted": false,
+  "global_limits": {
+    "models": 8,
+    "tools": 6,
+    "repairs": 1,
+    "transient_retries": 1,
+    "elapsed_seconds": 240
+  },
+  "evidence": "curriculum-work/reports/KEDU-PRODUCTION-008/validation.json",
+  "next_stage": "L7 dataset preparation before actual training"
+}

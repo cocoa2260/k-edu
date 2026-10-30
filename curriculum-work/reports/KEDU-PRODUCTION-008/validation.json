@@ -1,0 +1,102 @@
+{
+  "task_id": "KEDU-PRODUCTION-008",
+  "observed_at_utc": "2026-10-30T23:53:03.468709+00:00",
+  "status": "ROLE_HANDOFF_RUNTIME_VERIFIED_ACTUAL_ROLES_EXECUTED_TASK_QUALITY_NOT_ACCEPTED",
+  "summary": {
+    "case_count": 18,
+    "core_factual_cases": 6,
+    "core_boundary_cases": 6,
+    "agent_cases": 6,
+    "main_generations": 42,
+    "role_calls": {
+      "researcher": 30,
+      "writer": 6,
+      "reviewer": 6
+    },
+    "tool_attempts": 14,
+    "handler_entries": 14,
+    "handler_by_name": {
+      "search_documents": 8,
+      "read_evidence": 6
+    },
+    "termination_counts": {
+      "clarification": 11,
+      "review_rejected": 6,
+      "input_rejected": 1
+    },
+    "writer_reached": [
+      "C07",
+      "C11",
+      "A02",
+      "A03",
+      "A04",
+      "A05"
+    ],
+    "reviewer_reached": [
+      "C07",
+      "C11",
+      "A02",
+      "A03",
+      "A04",
+      "A05"
+    ],
+    "delivered_drafts": 0,
+    "partial_drafts": 6,
+    "writer_abstain_drafts": 6,
+    "A05_fault_encountered": true,
+    "quality_accepted": false
+  },
+  "total_local_generations": 48,
+  "paid_api_calls": 0,
+  "tests_passed": 243,
+  "verified": [
+    "role-specific input/action/tool contracts",
+    "trusted handoff with current-source and receiver-scope validation",
+    "fixed-code handoff metadata rather than free summaries",
+    "one run-global ledger across role reentry",
+    "writer evidence request / reviewer repair share one repair",
+    "repeated failure, model/tool/role/retry/deadline/cancel boundaries",
+    "whole JSON fence transport normalization without code execution",
+    "actual same-18-case Single/Multi comparison with unequal-budget disclosure",
+    "M01-M04 scripted probes separate from actual quality"
+  ],
+  "not_accepted": [
+    "reliable actual task completion",
+    "answer factual quality",
+    "reviewer verdict correctness",
+    "L4/L5 quality gates"
+  ],
+  "unverified": [
+    "independent reviewer/student trial",
+    "hard in-flight cancellation",
+    "real authentication/durable approval",
+    "full framework Agent/MCP transport",
+    "web/UI integration",
+    "classroom throughput/other hardware"
+  ],
+  "semantics": "Valid schema, quote substring and model pass do not prove semantic entailment or authorization.",
+  "reviewer": "same Work session, no independent reviewer",
+  "resume_note": "Model cache missing on resume; same pinned revisions downloaded again, 13 checkpoints preserved.",
+  "artifact_checks": {
+    "changed_files": 23,
+    "markdown_files": 8,
+    "json_files": 11,
+    "markdown_code_fences": 0,
+    "broken_relative_links": 0,
+    "remote_only_links_verified_in_base_tree": [
+      "curriculum-work/loop/checks/check_analysis.py",
+      "curriculum-work/loop/loop-spec.md",
+      "curriculum-work/loop/prompts.md",
+      "curriculum-work/reports/KEDU-PILOT-001/20261030T064535Z-r2/RESULT.md"
+    ],
+    "other_available_local_base_blobs_match": true,
+    "known_stale_local_publication_metadata_excluded_from_writes": [
+      "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/run.json",
+      "curriculum-work/reports/KEDU-PRODUCTION-003/run.json"
+    ],
+    "stale_metadata_note": "Remote pinned copies checked: published; local prepared copies retained, not uploaded. Final remote tree preservation checked separately.",
+    "authored_units": 36,
+    "total_units": 70,
+    "protected_old_reports_and_academy_not_in_write_set": true
+  }
+}

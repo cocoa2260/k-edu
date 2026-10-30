@@ -1,0 +1,2930 @@
+{
+  "evidence_kind": "observed_scripted_M01_M04_not_model_quality",
+  "control": {
+    "status": "draft_needs_human_review",
+    "stop_reason": "model_review_passed_human_review_required",
+    "draft": {
+      "outcome": "answer",
+      "answer": "30000",
+      "claims": [
+        {
+          "text": "cap 30000",
+          "source_id": "A@v1:L1",
+          "quote": "cap 30000"
+        }
+      ]
+    },
+    "partial_draft": {
+      "outcome": "answer",
+      "answer": "30000",
+      "claims": [
+        {
+          "text": "cap 30000",
+          "source_id": "A@v1:L1",
+          "quote": "cap 30000"
+        }
+      ]
+    },
+    "reply": null,
+    "model_review": {
+      "kind": "review",
+      "verdict": "pass",
+      "failure_ids": [],
+      "comment": "Source inspected"
+    },
+    "budget": {
+      "models": 5,
+      "tools": 2,
+      "repairs": 0,
+      "retries": 0,
+      "roles": {
+        "researcher": 3,
+        "writer": 1,
+        "reviewer": 1
+      }
+    },
+    "limits": {
+      "max_model_calls": 8,
+      "max_tool_calls": 6,
+      "max_repairs": 1,
+      "max_transient_retries": 1,
+      "researcher_calls": 4,
+      "writer_calls": 2,
+      "reviewer_calls": 3,
+      "elapsed_seconds": 240.0
+    },
+    "trace": [
+      {
+        "seq": 1,
+        "event": "role_model_called",
+        "role": "researcher",
+        "budget": {
+          "models": 1,
+          "tools": 0,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 1
+          }
+        },
+        "prompt_sha256": "9724b17fd4e4fc07c4f761100f1f0ac12f6e768755d34b7c3286f9330bc4ee7b"
+      },
+      {
+        "seq": 2,
+        "event": "role_action",
+        "role": "researcher",
+        "budget": {
+          "models": 1,
+          "tools": 0,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 1
+          }
+        },
+        "action": {
+          "kind": "tool",
+          "name": "search_documents",
+          "arguments": {
+            "query": "meal",
+            "k": 3
+          }
+        }
+      },
+      {
+        "seq": 3,
+        "event": "role_tool_observed",
+        "role": "researcher",
+        "budget": {
+          "models": 1,
+          "tools": 1,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 1
+          }
+        },
+        "name": "search_documents",
+        "observation": {
+          "hits": [
+            {
+              "source_id": "A@v1:L1",
+              "preview": "cap 30000"
+            }
+          ]
+        }
+      },
+      {
+        "seq": 4,
+        "event": "role_model_called",
+        "role": "researcher",
+        "budget": {
+          "models": 2,
+          "tools": 1,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 2
+          }
+        },
+        "prompt_sha256": "e7899719a5b6d3b4b6f5b0337242bc47876f44950afb09a929771f042aa33ed1"
+      },
+      {
+        "seq": 5,
+        "event": "role_action",
+        "role": "researcher",
+        "budget": {
+          "models": 2,
+          "tools": 1,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 2
+          }
+        },
+        "action": {
+          "kind": "tool",
+          "name": "read_evidence",
+          "arguments": {
+            "source_id": "A@v1:L1"
+          }
+        }
+      },
+      {
+        "seq": 6,
+        "event": "role_tool_observed",
+        "role": "researcher",
+        "budget": {
+          "models": 2,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 2
+          }
+        },
+        "name": "read_evidence",
+        "observation": {
+          "source_id": "A@v1:L1",
+          "text": "cap 30000",
+          "source_locator": "sqlite:documents/A@v1:L1"
+        }
+      },
+      {
+        "seq": 7,
+        "event": "role_model_called",
+        "role": "researcher",
+        "budget": {
+          "models": 3,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 3
+          }
+        },
+        "prompt_sha256": "bd6a590d0383934200ae69ebd13278c780cbcabe57df4e4a8611e672ad17a581"
+      },
+      {
+        "seq": 8,
+        "event": "role_action",
+        "role": "researcher",
+        "budget": {
+          "models": 3,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 3
+          }
+        },
+        "action": {
+          "kind": "handoff",
+          "evidence_ids": [
+            "A@v1:L1"
+          ],
+          "missing_information": []
+        }
+      },
+      {
+        "seq": 9,
+        "event": "handoff_validated",
+        "role": "researcher",
+        "budget": {
+          "models": 3,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 3
+          }
+        },
+        "handoff": {
+          "run_id": "36b0438fac624a178c6393e84fd7973d",
+          "role_id": "researcher",
+          "target_role": "writer",
+          "question_id": "CONTROL",
+          "source_manifest_version": {
+            "generation": 1,
+            "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+          },
+          "evidence_ids": [
+            "A@v1:L1"
+          ],
+          "claim_citations": [],
+          "status": "validated",
+          "failure_ids": [],
+          "budget_used": {
+            "models": 3,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3
+            }
+          },
+          "missing_information": []
+        }
+      },
+      {
+        "seq": 10,
+        "event": "role_model_called",
+        "role": "writer",
+        "budget": {
+          "models": 4,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 3,
+            "writer": 1
+          }
+        },
+        "prompt_sha256": "bbce6325cc25f7e2c97c576f0f384908cf22b46928827e43b7cdfa6d9d509e20"
+      },
+      {
+        "seq": 11,
+        "event": "role_action",
+        "role": "writer",
+        "budget": {
+          "models": 4,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 3,
+            "writer": 1
+          }
+        },
+        "action": {
+          "kind": "final",
+          "draft": {
+            "outcome": "answer",
+            "answer": "30000",
+            "claims": [
+              {
+                "text": "cap 30000",
+                "source_id": "A@v1:L1",
+                "quote": "cap 30000"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "seq": 12,
+        "event": "handoff_validated",
+        "role": "writer",
+        "budget": {
+          "models": 4,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 3,
+            "writer": 1
+          }
+        },
+        "handoff": {
+          "run_id": "36b0438fac624a178c6393e84fd7973d",
+          "role_id": "writer",
+          "target_role": "reviewer",
+          "question_id": "CONTROL",
+          "source_manifest_version": {
+            "generation": 1,
+            "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+          },
+          "evidence_ids": [
+            "A@v1:L1"
+          ],
+          "claim_citations": [
+            {
+              "text": "cap 30000",
+              "source_id": "A@v1:L1",
+              "quote": "cap 30000"
+            }
+          ],
+          "status": "validated",
+          "failure_ids": [],
+          "budget_used": {
+            "models": 4,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 1
+            }
+          },
+          "missing_information": []
+        }
+      },
+      {
+        "seq": 13,
+        "event": "role_model_called",
+        "role": "reviewer",
+        "budget": {
+          "models": 5,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 3,
+            "writer": 1,
+            "reviewer": 1
+          }
+        },
+        "prompt_sha256": "18f9c4c34d68f7db7fbde32bc8078eac76a2f9b9771f5db18c2a8fe401b795b8"
+      },
+      {
+        "seq": 14,
+        "event": "role_action",
+        "role": "reviewer",
+        "budget": {
+          "models": 5,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 3,
+            "writer": 1,
+            "reviewer": 1
+          }
+        },
+        "action": {
+          "kind": "review",
+          "verdict": "pass",
+          "failure_ids": [],
+          "comment": "Source inspected"
+        }
+      },
+      {
+        "seq": 15,
+        "event": "model_review",
+        "role": "reviewer",
+        "budget": {
+          "models": 5,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 3,
+            "writer": 1,
+            "reviewer": 1
+          }
+        },
+        "verdict": {
+          "kind": "review",
+          "verdict": "pass",
+          "failure_ids": [],
+          "comment": "Source inspected"
+        }
+      },
+      {
+        "seq": 16,
+        "event": "handoff_validated",
+        "role": "reviewer",
+        "budget": {
+          "models": 5,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 3,
+            "writer": 1,
+            "reviewer": 1
+          }
+        },
+        "handoff": {
+          "run_id": "36b0438fac624a178c6393e84fd7973d",
+          "role_id": "reviewer",
+          "target_role": "delivery",
+          "question_id": "CONTROL",
+          "source_manifest_version": {
+            "generation": 1,
+            "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+          },
+          "evidence_ids": [
+            "A@v1:L1"
+          ],
+          "claim_citations": [
+            {
+              "text": "cap 30000",
+              "source_id": "A@v1:L1",
+              "quote": "cap 30000"
+            }
+          ],
+          "status": "validated",
+          "failure_ids": [],
+          "budget_used": {
+            "models": 5,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 1,
+              "reviewer": 1
+            }
+          },
+          "missing_information": []
+        }
+      },
+      {
+        "seq": 17,
+        "event": "stopped",
+        "role": "reviewer",
+        "budget": {
+          "models": 5,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 3,
+            "writer": 1,
+            "reviewer": 1
+          }
+        },
+        "reason": "model_review_passed_human_review_required"
+      }
+    ],
+    "handoffs": [
+      {
+        "run_id": "36b0438fac624a178c6393e84fd7973d",
+        "role_id": "researcher",
+        "target_role": "writer",
+        "question_id": "CONTROL",
+        "source_manifest_version": {
+          "generation": 1,
+          "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+        },
+        "evidence_ids": [
+          "A@v1:L1"
+        ],
+        "claim_citations": [],
+        "status": "validated",
+        "failure_ids": [],
+        "budget_used": {
+          "models": 3,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 3
+          }
+        },
+        "missing_information": []
+      },
+      {
+        "run_id": "36b0438fac624a178c6393e84fd7973d",
+        "role_id": "writer",
+        "target_role": "reviewer",
+        "question_id": "CONTROL",
+        "source_manifest_version": {
+          "generation": 1,
+          "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+        },
+        "evidence_ids": [
+          "A@v1:L1"
+        ],
+        "claim_citations": [
+          {
+            "text": "cap 30000",
+            "source_id": "A@v1:L1",
+            "quote": "cap 30000"
+          }
+        ],
+        "status": "validated",
+        "failure_ids": [],
+        "budget_used": {
+          "models": 4,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 3,
+            "writer": 1
+          }
+        },
+        "missing_information": []
+      },
+      {
+        "run_id": "36b0438fac624a178c6393e84fd7973d",
+        "role_id": "reviewer",
+        "target_role": "delivery",
+        "question_id": "CONTROL",
+        "source_manifest_version": {
+          "generation": 1,
+          "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+        },
+        "evidence_ids": [
+          "A@v1:L1"
+        ],
+        "claim_citations": [
+          {
+            "text": "cap 30000",
+            "source_id": "A@v1:L1",
+            "quote": "cap 30000"
+          }
+        ],
+        "status": "validated",
+        "failure_ids": [],
+        "budget_used": {
+          "models": 5,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 3,
+            "writer": 1,
+            "reviewer": 1
+          }
+        },
+        "missing_information": []
+      }
+    ],
+    "sources": {
+      "A@v1:L1": {
+        "doc_id": "A",
+        "version": "v1",
+        "line": 1,
+        "text": "cap 30000",
+        "origin_path": "data/documents-v1.json",
+        "source_locator": "sqlite:documents/A@v1:L1"
+      }
+    },
+    "dispatched_tool_names": [
+      "search_documents",
+      "read_evidence"
+    ],
+    "citation_validation_calls": 0,
+    "elapsed_seconds": 0.0018,
+    "semantic_grounding_verified": false,
+    "approval_granted": false,
+    "external_effects_executed": false,
+    "deadline_mode": "between_calls_not_inflight_cancellation"
+  },
+  "scenarios": {
+    "M01": {
+      "status": "stopped",
+      "stop_reason": "repeated_failure",
+      "draft": null,
+      "partial_draft": null,
+      "reply": null,
+      "model_review": null,
+      "budget": {
+        "models": 4,
+        "tools": 2,
+        "repairs": 1,
+        "retries": 0,
+        "roles": {
+          "researcher": 4
+        }
+      },
+      "limits": {
+        "max_model_calls": 8,
+        "max_tool_calls": 6,
+        "max_repairs": 1,
+        "max_transient_retries": 1,
+        "researcher_calls": 4,
+        "writer_calls": 2,
+        "reviewer_calls": 3,
+        "elapsed_seconds": 240.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "role_model_called",
+          "role": "researcher",
+          "budget": {
+            "models": 1,
+            "tools": 0,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 1
+            }
+          },
+          "prompt_sha256": "9724b17fd4e4fc07c4f761100f1f0ac12f6e768755d34b7c3286f9330bc4ee7b"
+        },
+        {
+          "seq": 2,
+          "event": "role_action",
+          "role": "researcher",
+          "budget": {
+            "models": 1,
+            "tools": 0,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 1
+            }
+          },
+          "action": {
+            "kind": "tool",
+            "name": "search_documents",
+            "arguments": {
+              "query": "meal",
+              "k": 3
+            }
+          }
+        },
+        {
+          "seq": 3,
+          "event": "role_tool_observed",
+          "role": "researcher",
+          "budget": {
+            "models": 1,
+            "tools": 1,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 1
+            }
+          },
+          "name": "search_documents",
+          "observation": {
+            "hits": [
+              {
+                "source_id": "A@v1:L1",
+                "preview": "cap 30000"
+              }
+            ]
+          }
+        },
+        {
+          "seq": 4,
+          "event": "role_model_called",
+          "role": "researcher",
+          "budget": {
+            "models": 2,
+            "tools": 1,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 2
+            }
+          },
+          "prompt_sha256": "e7899719a5b6d3b4b6f5b0337242bc47876f44950afb09a929771f042aa33ed1"
+        },
+        {
+          "seq": 5,
+          "event": "role_action",
+          "role": "researcher",
+          "budget": {
+            "models": 2,
+            "tools": 1,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 2
+            }
+          },
+          "action": {
+            "kind": "tool",
+            "name": "read_evidence",
+            "arguments": {
+              "source_id": "A@v1:L1"
+            }
+          }
+        },
+        {
+          "seq": 6,
+          "event": "role_tool_observed",
+          "role": "researcher",
+          "budget": {
+            "models": 2,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 2
+            }
+          },
+          "name": "read_evidence",
+          "observation": {
+            "source_id": "A@v1:L1",
+            "text": "cap 30000",
+            "source_locator": "sqlite:documents/A@v1:L1"
+          }
+        },
+        {
+          "seq": 7,
+          "event": "role_model_called",
+          "role": "researcher",
+          "budget": {
+            "models": 3,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3
+            }
+          },
+          "prompt_sha256": "bd6a590d0383934200ae69ebd13278c780cbcabe57df4e4a8611e672ad17a581"
+        },
+        {
+          "seq": 8,
+          "event": "role_action",
+          "role": "researcher",
+          "budget": {
+            "models": 3,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3
+            }
+          },
+          "action": {
+            "kind": "handoff",
+            "evidence_ids": [
+              "A@v1:L1"
+            ],
+            "missing_information": []
+          }
+        },
+        {
+          "seq": 9,
+          "event": "failure",
+          "role": "researcher",
+          "budget": {
+            "models": 3,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3
+            }
+          },
+          "failure_id": "HANDOFF_SCOPE"
+        },
+        {
+          "seq": 10,
+          "event": "repair_consumed",
+          "role": "researcher",
+          "budget": {
+            "models": 3,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 3
+            }
+          },
+          "failure_id": "HANDOFF_SCOPE"
+        },
+        {
+          "seq": 11,
+          "event": "role_model_called",
+          "role": "researcher",
+          "budget": {
+            "models": 4,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4
+            }
+          },
+          "prompt_sha256": "9bbb33f870ee06b4049ea49e9773ab647465f166a07e281fbc1d8ba1ad9cec2e"
+        },
+        {
+          "seq": 12,
+          "event": "role_action",
+          "role": "researcher",
+          "budget": {
+            "models": 4,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4
+            }
+          },
+          "action": {
+            "kind": "handoff",
+            "evidence_ids": [
+              "A@v1:L1"
+            ],
+            "missing_information": []
+          }
+        },
+        {
+          "seq": 13,
+          "event": "failure",
+          "role": "researcher",
+          "budget": {
+            "models": 4,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4
+            }
+          },
+          "failure_id": "HANDOFF_SCOPE"
+        },
+        {
+          "seq": 14,
+          "event": "stopped",
+          "role": "researcher",
+          "budget": {
+            "models": 4,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4
+            }
+          },
+          "reason": "repeated_failure"
+        }
+      ],
+      "handoffs": [],
+      "sources": {},
+      "dispatched_tool_names": [
+        "search_documents",
+        "read_evidence"
+      ],
+      "citation_validation_calls": 0,
+      "elapsed_seconds": 0.0005,
+      "semantic_grounding_verified": false,
+      "approval_granted": false,
+      "external_effects_executed": false,
+      "deadline_mode": "between_calls_not_inflight_cancellation"
+    },
+    "M02": {
+      "status": "draft_needs_human_review",
+      "stop_reason": "model_review_passed_human_review_required",
+      "draft": {
+        "outcome": "answer",
+        "answer": "30000",
+        "claims": [
+          {
+            "text": "cap 30000",
+            "source_id": "A@v1:L1",
+            "quote": "cap 30000"
+          }
+        ]
+      },
+      "partial_draft": {
+        "outcome": "answer",
+        "answer": "30000",
+        "claims": [
+          {
+            "text": "cap 30000",
+            "source_id": "A@v1:L1",
+            "quote": "cap 30000"
+          }
+        ]
+      },
+      "reply": null,
+      "model_review": {
+        "kind": "review",
+        "verdict": "pass",
+        "failure_ids": [],
+        "comment": "Source inspected"
+      },
+      "budget": {
+        "models": 7,
+        "tools": 2,
+        "repairs": 1,
+        "retries": 0,
+        "roles": {
+          "researcher": 4,
+          "writer": 2,
+          "reviewer": 1
+        }
+      },
+      "limits": {
+        "max_model_calls": 8,
+        "max_tool_calls": 6,
+        "max_repairs": 1,
+        "max_transient_retries": 1,
+        "researcher_calls": 4,
+        "writer_calls": 2,
+        "reviewer_calls": 3,
+        "elapsed_seconds": 240.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "role_model_called",
+          "role": "researcher",
+          "budget": {
+            "models": 1,
+            "tools": 0,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 1
+            }
+          },
+          "prompt_sha256": "9724b17fd4e4fc07c4f761100f1f0ac12f6e768755d34b7c3286f9330bc4ee7b"
+        },
+        {
+          "seq": 2,
+          "event": "role_action",
+          "role": "researcher",
+          "budget": {
+            "models": 1,
+            "tools": 0,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 1
+            }
+          },
+          "action": {
+            "kind": "handoff",
+            "evidence_ids": [],
+            "missing_information": [
+              "NEED_MORE_CONTEXT"
+            ]
+          }
+        },
+        {
+          "seq": 3,
+          "event": "handoff_validated",
+          "role": "researcher",
+          "budget": {
+            "models": 1,
+            "tools": 0,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 1
+            }
+          },
+          "handoff": {
+            "run_id": "1b1b81ebffa54068adcccb05eadbabb7",
+            "role_id": "researcher",
+            "target_role": "writer",
+            "question_id": "M02",
+            "source_manifest_version": {
+              "generation": 1,
+              "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+            },
+            "evidence_ids": [],
+            "claim_citations": [],
+            "status": "validated",
+            "failure_ids": [],
+            "budget_used": {
+              "models": 1,
+              "tools": 0,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 1
+              }
+            },
+            "missing_information": [
+              "NEED_MORE_CONTEXT"
+            ]
+          }
+        },
+        {
+          "seq": 4,
+          "event": "role_model_called",
+          "role": "writer",
+          "budget": {
+            "models": 2,
+            "tools": 0,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 1,
+              "writer": 1
+            }
+          },
+          "prompt_sha256": "72b728585789ec87dc043d2da1fe3829031893ac0e970e69fc22a403b581e4c5"
+        },
+        {
+          "seq": 5,
+          "event": "role_action",
+          "role": "writer",
+          "budget": {
+            "models": 2,
+            "tools": 0,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 1,
+              "writer": 1
+            }
+          },
+          "action": {
+            "kind": "request_evidence",
+            "query": "meal cap"
+          }
+        },
+        {
+          "seq": 6,
+          "event": "evidence_requested",
+          "role": "writer",
+          "budget": {
+            "models": 2,
+            "tools": 0,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 1,
+              "writer": 1
+            }
+          },
+          "query": "meal cap"
+        },
+        {
+          "seq": 7,
+          "event": "role_model_called",
+          "role": "researcher",
+          "budget": {
+            "models": 3,
+            "tools": 0,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 2,
+              "writer": 1
+            }
+          },
+          "prompt_sha256": "4f10ac9fd9724b04a178f057a4ce7026853b68f9d99201e13f5a7f4a07c83e4e"
+        },
+        {
+          "seq": 8,
+          "event": "role_action",
+          "role": "researcher",
+          "budget": {
+            "models": 3,
+            "tools": 0,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 2,
+              "writer": 1
+            }
+          },
+          "action": {
+            "kind": "tool",
+            "name": "search_documents",
+            "arguments": {
+              "query": "meal",
+              "k": 3
+            }
+          }
+        },
+        {
+          "seq": 9,
+          "event": "role_tool_observed",
+          "role": "researcher",
+          "budget": {
+            "models": 3,
+            "tools": 1,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 2,
+              "writer": 1
+            }
+          },
+          "name": "search_documents",
+          "observation": {
+            "hits": [
+              {
+                "source_id": "A@v1:L1",
+                "preview": "cap 30000"
+              }
+            ]
+          }
+        },
+        {
+          "seq": 10,
+          "event": "role_model_called",
+          "role": "researcher",
+          "budget": {
+            "models": 4,
+            "tools": 1,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 1
+            }
+          },
+          "prompt_sha256": "e7899719a5b6d3b4b6f5b0337242bc47876f44950afb09a929771f042aa33ed1"
+        },
+        {
+          "seq": 11,
+          "event": "role_action",
+          "role": "researcher",
+          "budget": {
+            "models": 4,
+            "tools": 1,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 1
+            }
+          },
+          "action": {
+            "kind": "tool",
+            "name": "read_evidence",
+            "arguments": {
+              "source_id": "A@v1:L1"
+            }
+          }
+        },
+        {
+          "seq": 12,
+          "event": "role_tool_observed",
+          "role": "researcher",
+          "budget": {
+            "models": 4,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 1
+            }
+          },
+          "name": "read_evidence",
+          "observation": {
+            "source_id": "A@v1:L1",
+            "text": "cap 30000",
+            "source_locator": "sqlite:documents/A@v1:L1"
+          }
+        },
+        {
+          "seq": 13,
+          "event": "role_model_called",
+          "role": "researcher",
+          "budget": {
+            "models": 5,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4,
+              "writer": 1
+            }
+          },
+          "prompt_sha256": "bd6a590d0383934200ae69ebd13278c780cbcabe57df4e4a8611e672ad17a581"
+        },
+        {
+          "seq": 14,
+          "event": "role_action",
+          "role": "researcher",
+          "budget": {
+            "models": 5,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4,
+              "writer": 1
+            }
+          },
+          "action": {
+            "kind": "handoff",
+            "evidence_ids": [
+              "A@v1:L1"
+            ],
+            "missing_information": []
+          }
+        },
+        {
+          "seq": 15,
+          "event": "handoff_validated",
+          "role": "researcher",
+          "budget": {
+            "models": 5,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4,
+              "writer": 1
+            }
+          },
+          "handoff": {
+            "run_id": "1b1b81ebffa54068adcccb05eadbabb7",
+            "role_id": "researcher",
+            "target_role": "writer",
+            "question_id": "M02",
+            "source_manifest_version": {
+              "generation": 1,
+              "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+            },
+            "evidence_ids": [
+              "A@v1:L1"
+            ],
+            "claim_citations": [],
+            "status": "validated",
+            "failure_ids": [],
+            "budget_used": {
+              "models": 5,
+              "tools": 2,
+              "repairs": 1,
+              "retries": 0,
+              "roles": {
+                "researcher": 4,
+                "writer": 1
+              }
+            },
+            "missing_information": []
+          }
+        },
+        {
+          "seq": 16,
+          "event": "role_model_called",
+          "role": "writer",
+          "budget": {
+            "models": 6,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4,
+              "writer": 2
+            }
+          },
+          "prompt_sha256": "bbce6325cc25f7e2c97c576f0f384908cf22b46928827e43b7cdfa6d9d509e20"
+        },
+        {
+          "seq": 17,
+          "event": "role_action",
+          "role": "writer",
+          "budget": {
+            "models": 6,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4,
+              "writer": 2
+            }
+          },
+          "action": {
+            "kind": "final",
+            "draft": {
+              "outcome": "answer",
+              "answer": "30000",
+              "claims": [
+                {
+                  "text": "cap 30000",
+                  "source_id": "A@v1:L1",
+                  "quote": "cap 30000"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "seq": 18,
+          "event": "handoff_validated",
+          "role": "writer",
+          "budget": {
+            "models": 6,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4,
+              "writer": 2
+            }
+          },
+          "handoff": {
+            "run_id": "1b1b81ebffa54068adcccb05eadbabb7",
+            "role_id": "writer",
+            "target_role": "reviewer",
+            "question_id": "M02",
+            "source_manifest_version": {
+              "generation": 1,
+              "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+            },
+            "evidence_ids": [
+              "A@v1:L1"
+            ],
+            "claim_citations": [
+              {
+                "text": "cap 30000",
+                "source_id": "A@v1:L1",
+                "quote": "cap 30000"
+              }
+            ],
+            "status": "validated",
+            "failure_ids": [],
+            "budget_used": {
+              "models": 6,
+              "tools": 2,
+              "repairs": 1,
+              "retries": 0,
+              "roles": {
+                "researcher": 4,
+                "writer": 2
+              }
+            },
+            "missing_information": []
+          }
+        },
+        {
+          "seq": 19,
+          "event": "role_model_called",
+          "role": "reviewer",
+          "budget": {
+            "models": 7,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4,
+              "writer": 2,
+              "reviewer": 1
+            }
+          },
+          "prompt_sha256": "18f9c4c34d68f7db7fbde32bc8078eac76a2f9b9771f5db18c2a8fe401b795b8"
+        },
+        {
+          "seq": 20,
+          "event": "role_action",
+          "role": "reviewer",
+          "budget": {
+            "models": 7,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4,
+              "writer": 2,
+              "reviewer": 1
+            }
+          },
+          "action": {
+            "kind": "review",
+            "verdict": "pass",
+            "failure_ids": [],
+            "comment": "Source inspected"
+          }
+        },
+        {
+          "seq": 21,
+          "event": "model_review",
+          "role": "reviewer",
+          "budget": {
+            "models": 7,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4,
+              "writer": 2,
+              "reviewer": 1
+            }
+          },
+          "verdict": {
+            "kind": "review",
+            "verdict": "pass",
+            "failure_ids": [],
+            "comment": "Source inspected"
+          }
+        },
+        {
+          "seq": 22,
+          "event": "handoff_validated",
+          "role": "reviewer",
+          "budget": {
+            "models": 7,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4,
+              "writer": 2,
+              "reviewer": 1
+            }
+          },
+          "handoff": {
+            "run_id": "1b1b81ebffa54068adcccb05eadbabb7",
+            "role_id": "reviewer",
+            "target_role": "delivery",
+            "question_id": "M02",
+            "source_manifest_version": {
+              "generation": 1,
+              "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+            },
+            "evidence_ids": [
+              "A@v1:L1"
+            ],
+            "claim_citations": [
+              {
+                "text": "cap 30000",
+                "source_id": "A@v1:L1",
+                "quote": "cap 30000"
+              }
+            ],
+            "status": "validated",
+            "failure_ids": [],
+            "budget_used": {
+              "models": 7,
+              "tools": 2,
+              "repairs": 1,
+              "retries": 0,
+              "roles": {
+                "researcher": 4,
+                "writer": 2,
+                "reviewer": 1
+              }
+            },
+            "missing_information": []
+          }
+        },
+        {
+          "seq": 23,
+          "event": "stopped",
+          "role": "reviewer",
+          "budget": {
+            "models": 7,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4,
+              "writer": 2,
+              "reviewer": 1
+            }
+          },
+          "reason": "model_review_passed_human_review_required"
+        }
+      ],
+      "handoffs": [
+        {
+          "run_id": "1b1b81ebffa54068adcccb05eadbabb7",
+          "role_id": "researcher",
+          "target_role": "writer",
+          "question_id": "M02",
+          "source_manifest_version": {
+            "generation": 1,
+            "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+          },
+          "evidence_ids": [],
+          "claim_citations": [],
+          "status": "validated",
+          "failure_ids": [],
+          "budget_used": {
+            "models": 1,
+            "tools": 0,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 1
+            }
+          },
+          "missing_information": [
+            "NEED_MORE_CONTEXT"
+          ]
+        },
+        {
+          "run_id": "1b1b81ebffa54068adcccb05eadbabb7",
+          "role_id": "researcher",
+          "target_role": "writer",
+          "question_id": "M02",
+          "source_manifest_version": {
+            "generation": 1,
+            "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+          },
+          "evidence_ids": [
+            "A@v1:L1"
+          ],
+          "claim_citations": [],
+          "status": "validated",
+          "failure_ids": [],
+          "budget_used": {
+            "models": 5,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4,
+              "writer": 1
+            }
+          },
+          "missing_information": []
+        },
+        {
+          "run_id": "1b1b81ebffa54068adcccb05eadbabb7",
+          "role_id": "writer",
+          "target_role": "reviewer",
+          "question_id": "M02",
+          "source_manifest_version": {
+            "generation": 1,
+            "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+          },
+          "evidence_ids": [
+            "A@v1:L1"
+          ],
+          "claim_citations": [
+            {
+              "text": "cap 30000",
+              "source_id": "A@v1:L1",
+              "quote": "cap 30000"
+            }
+          ],
+          "status": "validated",
+          "failure_ids": [],
+          "budget_used": {
+            "models": 6,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4,
+              "writer": 2
+            }
+          },
+          "missing_information": []
+        },
+        {
+          "run_id": "1b1b81ebffa54068adcccb05eadbabb7",
+          "role_id": "reviewer",
+          "target_role": "delivery",
+          "question_id": "M02",
+          "source_manifest_version": {
+            "generation": 1,
+            "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+          },
+          "evidence_ids": [
+            "A@v1:L1"
+          ],
+          "claim_citations": [
+            {
+              "text": "cap 30000",
+              "source_id": "A@v1:L1",
+              "quote": "cap 30000"
+            }
+          ],
+          "status": "validated",
+          "failure_ids": [],
+          "budget_used": {
+            "models": 7,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 4,
+              "writer": 2,
+              "reviewer": 1
+            }
+          },
+          "missing_information": []
+        }
+      ],
+      "sources": {
+        "A@v1:L1": {
+          "doc_id": "A",
+          "version": "v1",
+          "line": 1,
+          "text": "cap 30000",
+          "origin_path": "data/documents-v1.json",
+          "source_locator": "sqlite:documents/A@v1:L1"
+        }
+      },
+      "dispatched_tool_names": [
+        "search_documents",
+        "read_evidence"
+      ],
+      "citation_validation_calls": 0,
+      "elapsed_seconds": 0.0006,
+      "semantic_grounding_verified": false,
+      "approval_granted": false,
+      "external_effects_executed": false,
+      "deadline_mode": "between_calls_not_inflight_cancellation"
+    },
+    "M03": {
+      "status": "stopped",
+      "stop_reason": "repeated_failure",
+      "draft": null,
+      "partial_draft": {
+        "outcome": "answer",
+        "answer": "30000",
+        "claims": [
+          {
+            "text": "cap 30000",
+            "source_id": "A@v1:L1",
+            "quote": "cap 30000"
+          }
+        ]
+      },
+      "reply": null,
+      "model_review": {
+        "kind": "review",
+        "verdict": "repair",
+        "failure_ids": [
+          "UNSUPPORTED_CLAIM"
+        ],
+        "comment": "Check claim"
+      },
+      "budget": {
+        "models": 7,
+        "tools": 2,
+        "repairs": 1,
+        "retries": 0,
+        "roles": {
+          "researcher": 3,
+          "writer": 2,
+          "reviewer": 2
+        }
+      },
+      "limits": {
+        "max_model_calls": 8,
+        "max_tool_calls": 6,
+        "max_repairs": 1,
+        "max_transient_retries": 1,
+        "researcher_calls": 4,
+        "writer_calls": 2,
+        "reviewer_calls": 3,
+        "elapsed_seconds": 240.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "role_model_called",
+          "role": "researcher",
+          "budget": {
+            "models": 1,
+            "tools": 0,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 1
+            }
+          },
+          "prompt_sha256": "9724b17fd4e4fc07c4f761100f1f0ac12f6e768755d34b7c3286f9330bc4ee7b"
+        },
+        {
+          "seq": 2,
+          "event": "role_action",
+          "role": "researcher",
+          "budget": {
+            "models": 1,
+            "tools": 0,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 1
+            }
+          },
+          "action": {
+            "kind": "tool",
+            "name": "search_documents",
+            "arguments": {
+              "query": "meal",
+              "k": 3
+            }
+          }
+        },
+        {
+          "seq": 3,
+          "event": "role_tool_observed",
+          "role": "researcher",
+          "budget": {
+            "models": 1,
+            "tools": 1,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 1
+            }
+          },
+          "name": "search_documents",
+          "observation": {
+            "hits": [
+              {
+                "source_id": "A@v1:L1",
+                "preview": "cap 30000"
+              }
+            ]
+          }
+        },
+        {
+          "seq": 4,
+          "event": "role_model_called",
+          "role": "researcher",
+          "budget": {
+            "models": 2,
+            "tools": 1,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 2
+            }
+          },
+          "prompt_sha256": "e7899719a5b6d3b4b6f5b0337242bc47876f44950afb09a929771f042aa33ed1"
+        },
+        {
+          "seq": 5,
+          "event": "role_action",
+          "role": "researcher",
+          "budget": {
+            "models": 2,
+            "tools": 1,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 2
+            }
+          },
+          "action": {
+            "kind": "tool",
+            "name": "read_evidence",
+            "arguments": {
+              "source_id": "A@v1:L1"
+            }
+          }
+        },
+        {
+          "seq": 6,
+          "event": "role_tool_observed",
+          "role": "researcher",
+          "budget": {
+            "models": 2,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 2
+            }
+          },
+          "name": "read_evidence",
+          "observation": {
+            "source_id": "A@v1:L1",
+            "text": "cap 30000",
+            "source_locator": "sqlite:documents/A@v1:L1"
+          }
+        },
+        {
+          "seq": 7,
+          "event": "role_model_called",
+          "role": "researcher",
+          "budget": {
+            "models": 3,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3
+            }
+          },
+          "prompt_sha256": "bd6a590d0383934200ae69ebd13278c780cbcabe57df4e4a8611e672ad17a581"
+        },
+        {
+          "seq": 8,
+          "event": "role_action",
+          "role": "researcher",
+          "budget": {
+            "models": 3,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3
+            }
+          },
+          "action": {
+            "kind": "handoff",
+            "evidence_ids": [
+              "A@v1:L1"
+            ],
+            "missing_information": []
+          }
+        },
+        {
+          "seq": 9,
+          "event": "handoff_validated",
+          "role": "researcher",
+          "budget": {
+            "models": 3,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3
+            }
+          },
+          "handoff": {
+            "run_id": "f5b0eab280ae438e8887276840c9ad8a",
+            "role_id": "researcher",
+            "target_role": "writer",
+            "question_id": "M03",
+            "source_manifest_version": {
+              "generation": 1,
+              "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+            },
+            "evidence_ids": [
+              "A@v1:L1"
+            ],
+            "claim_citations": [],
+            "status": "validated",
+            "failure_ids": [],
+            "budget_used": {
+              "models": 3,
+              "tools": 2,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 3
+              }
+            },
+            "missing_information": []
+          }
+        },
+        {
+          "seq": 10,
+          "event": "role_model_called",
+          "role": "writer",
+          "budget": {
+            "models": 4,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 1
+            }
+          },
+          "prompt_sha256": "bbce6325cc25f7e2c97c576f0f384908cf22b46928827e43b7cdfa6d9d509e20"
+        },
+        {
+          "seq": 11,
+          "event": "role_action",
+          "role": "writer",
+          "budget": {
+            "models": 4,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 1
+            }
+          },
+          "action": {
+            "kind": "final",
+            "draft": {
+              "outcome": "answer",
+              "answer": "30000",
+              "claims": [
+                {
+                  "text": "cap 30000",
+                  "source_id": "A@v1:L1",
+                  "quote": "cap 30000"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "seq": 12,
+          "event": "handoff_validated",
+          "role": "writer",
+          "budget": {
+            "models": 4,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 1
+            }
+          },
+          "handoff": {
+            "run_id": "f5b0eab280ae438e8887276840c9ad8a",
+            "role_id": "writer",
+            "target_role": "reviewer",
+            "question_id": "M03",
+            "source_manifest_version": {
+              "generation": 1,
+              "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+            },
+            "evidence_ids": [
+              "A@v1:L1"
+            ],
+            "claim_citations": [
+              {
+                "text": "cap 30000",
+                "source_id": "A@v1:L1",
+                "quote": "cap 30000"
+              }
+            ],
+            "status": "validated",
+            "failure_ids": [],
+            "budget_used": {
+              "models": 4,
+              "tools": 2,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 3,
+                "writer": 1
+              }
+            },
+            "missing_information": []
+          }
+        },
+        {
+          "seq": 13,
+          "event": "role_model_called",
+          "role": "reviewer",
+          "budget": {
+            "models": 5,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 1,
+              "reviewer": 1
+            }
+          },
+          "prompt_sha256": "18f9c4c34d68f7db7fbde32bc8078eac76a2f9b9771f5db18c2a8fe401b795b8"
+        },
+        {
+          "seq": 14,
+          "event": "role_action",
+          "role": "reviewer",
+          "budget": {
+            "models": 5,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 1,
+              "reviewer": 1
+            }
+          },
+          "action": {
+            "kind": "review",
+            "verdict": "repair",
+            "failure_ids": [
+              "UNSUPPORTED_CLAIM"
+            ],
+            "comment": "Check claim"
+          }
+        },
+        {
+          "seq": 15,
+          "event": "model_review",
+          "role": "reviewer",
+          "budget": {
+            "models": 5,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 1,
+              "reviewer": 1
+            }
+          },
+          "verdict": {
+            "kind": "review",
+            "verdict": "repair",
+            "failure_ids": [
+              "UNSUPPORTED_CLAIM"
+            ],
+            "comment": "Check claim"
+          }
+        },
+        {
+          "seq": 16,
+          "event": "review_repair_requested",
+          "role": "reviewer",
+          "budget": {
+            "models": 5,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 1,
+              "reviewer": 1
+            }
+          }
+        },
+        {
+          "seq": 17,
+          "event": "role_model_called",
+          "role": "writer",
+          "budget": {
+            "models": 6,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 2,
+              "reviewer": 1
+            }
+          },
+          "prompt_sha256": "58459f1ef40e6af22171fe9e8fbdcbf24ac28682b2a520ae83d3f6d255c1803b"
+        },
+        {
+          "seq": 18,
+          "event": "role_action",
+          "role": "writer",
+          "budget": {
+            "models": 6,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 2,
+              "reviewer": 1
+            }
+          },
+          "action": {
+            "kind": "final",
+            "draft": {
+              "outcome": "answer",
+              "answer": "30000",
+              "claims": [
+                {
+                  "text": "cap 30000",
+                  "source_id": "A@v1:L1",
+                  "quote": "cap 30000"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "seq": 19,
+          "event": "handoff_validated",
+          "role": "writer",
+          "budget": {
+            "models": 6,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 2,
+              "reviewer": 1
+            }
+          },
+          "handoff": {
+            "run_id": "f5b0eab280ae438e8887276840c9ad8a",
+            "role_id": "writer",
+            "target_role": "reviewer",
+            "question_id": "M03",
+            "source_manifest_version": {
+              "generation": 1,
+              "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+            },
+            "evidence_ids": [
+              "A@v1:L1"
+            ],
+            "claim_citations": [
+              {
+                "text": "cap 30000",
+                "source_id": "A@v1:L1",
+                "quote": "cap 30000"
+              }
+            ],
+            "status": "validated",
+            "failure_ids": [
+              "UNSUPPORTED_CLAIM"
+            ],
+            "budget_used": {
+              "models": 6,
+              "tools": 2,
+              "repairs": 1,
+              "retries": 0,
+              "roles": {
+                "researcher": 3,
+                "writer": 2,
+                "reviewer": 1
+              }
+            },
+            "missing_information": []
+          }
+        },
+        {
+          "seq": 20,
+          "event": "role_model_called",
+          "role": "reviewer",
+          "budget": {
+            "models": 7,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 2,
+              "reviewer": 2
+            }
+          },
+          "prompt_sha256": "fd90dd6f396e6e49bc64025bfa839f602b73180993719f342e1d639af01e6322"
+        },
+        {
+          "seq": 21,
+          "event": "role_action",
+          "role": "reviewer",
+          "budget": {
+            "models": 7,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 2,
+              "reviewer": 2
+            }
+          },
+          "action": {
+            "kind": "review",
+            "verdict": "repair",
+            "failure_ids": [
+              "UNSUPPORTED_CLAIM"
+            ],
+            "comment": "Check claim"
+          }
+        },
+        {
+          "seq": 22,
+          "event": "model_review",
+          "role": "reviewer",
+          "budget": {
+            "models": 7,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 2,
+              "reviewer": 2
+            }
+          },
+          "verdict": {
+            "kind": "review",
+            "verdict": "repair",
+            "failure_ids": [
+              "UNSUPPORTED_CLAIM"
+            ],
+            "comment": "Check claim"
+          }
+        },
+        {
+          "seq": 23,
+          "event": "stopped",
+          "role": "reviewer",
+          "budget": {
+            "models": 7,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 2,
+              "reviewer": 2
+            }
+          },
+          "reason": "repeated_failure"
+        }
+      ],
+      "handoffs": [
+        {
+          "run_id": "f5b0eab280ae438e8887276840c9ad8a",
+          "role_id": "researcher",
+          "target_role": "writer",
+          "question_id": "M03",
+          "source_manifest_version": {
+            "generation": 1,
+            "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+          },
+          "evidence_ids": [
+            "A@v1:L1"
+          ],
+          "claim_citations": [],
+          "status": "validated",
+          "failure_ids": [],
+          "budget_used": {
+            "models": 3,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3
+            }
+          },
+          "missing_information": []
+        },
+        {
+          "run_id": "f5b0eab280ae438e8887276840c9ad8a",
+          "role_id": "writer",
+          "target_role": "reviewer",
+          "question_id": "M03",
+          "source_manifest_version": {
+            "generation": 1,
+            "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+          },
+          "evidence_ids": [
+            "A@v1:L1"
+          ],
+          "claim_citations": [
+            {
+              "text": "cap 30000",
+              "source_id": "A@v1:L1",
+              "quote": "cap 30000"
+            }
+          ],
+          "status": "validated",
+          "failure_ids": [],
+          "budget_used": {
+            "models": 4,
+            "tools": 2,
+            "repairs": 0,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 1
+            }
+          },
+          "missing_information": []
+        },
+        {
+          "run_id": "f5b0eab280ae438e8887276840c9ad8a",
+          "role_id": "writer",
+          "target_role": "reviewer",
+          "question_id": "M03",
+          "source_manifest_version": {
+            "generation": 1,
+            "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+          },
+          "evidence_ids": [
+            "A@v1:L1"
+          ],
+          "claim_citations": [
+            {
+              "text": "cap 30000",
+              "source_id": "A@v1:L1",
+              "quote": "cap 30000"
+            }
+          ],
+          "status": "validated",
+          "failure_ids": [
+            "UNSUPPORTED_CLAIM"
+          ],
+          "budget_used": {
+            "models": 6,
+            "tools": 2,
+            "repairs": 1,
+            "retries": 0,
+            "roles": {
+              "researcher": 3,
+              "writer": 2,
+              "reviewer": 1
+            }
+          },
+          "missing_information": []
+        }
+      ],
+      "sources": {
+        "A@v1:L1": {
+          "doc_id": "A",
+          "version": "v1",
+          "line": 1,
+          "text": "cap 30000",
+          "origin_path": "data/documents-v1.json",
+          "source_locator": "sqlite:documents/A@v1:L1"
+        }
+      },
+      "dispatched_tool_names": [
+        "search_documents",
+        "read_evidence"
+      ],
+      "citation_validation_calls": 0,
+      "elapsed_seconds": 0.0005,
+      "semantic_grounding_verified": false,
+      "approval_granted": false,
+      "external_effects_executed": false,
+      "deadline_mode": "between_calls_not_inflight_cancellation"
+    },
+    "M04": {
+      "model_budget": {
+        "status": "stopped",
+        "stop_reason": "model_budget",
+        "draft": null,
+        "partial_draft": {
+          "outcome": "answer",
+          "answer": "30000",
+          "claims": [
+            {
+              "text": "cap 30000",
+              "source_id": "A@v1:L1",
+              "quote": "cap 30000"
+            }
+          ]
+        },
+        "reply": null,
+        "model_review": null,
+        "budget": {
+          "models": 4,
+          "tools": 2,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 3,
+            "writer": 1
+          }
+        },
+        "limits": {
+          "max_model_calls": 4,
+          "max_tool_calls": 6,
+          "max_repairs": 1,
+          "max_transient_retries": 1,
+          "researcher_calls": 4,
+          "writer_calls": 2,
+          "reviewer_calls": 3,
+          "elapsed_seconds": 240.0
+        },
+        "trace": [
+          {
+            "seq": 1,
+            "event": "role_model_called",
+            "role": "researcher",
+            "budget": {
+              "models": 1,
+              "tools": 0,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 1
+              }
+            },
+            "prompt_sha256": "9724b17fd4e4fc07c4f761100f1f0ac12f6e768755d34b7c3286f9330bc4ee7b"
+          },
+          {
+            "seq": 2,
+            "event": "role_action",
+            "role": "researcher",
+            "budget": {
+              "models": 1,
+              "tools": 0,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 1
+              }
+            },
+            "action": {
+              "kind": "tool",
+              "name": "search_documents",
+              "arguments": {
+                "query": "meal",
+                "k": 3
+              }
+            }
+          },
+          {
+            "seq": 3,
+            "event": "role_tool_observed",
+            "role": "researcher",
+            "budget": {
+              "models": 1,
+              "tools": 1,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 1
+              }
+            },
+            "name": "search_documents",
+            "observation": {
+              "hits": [
+                {
+                  "source_id": "A@v1:L1",
+                  "preview": "cap 30000"
+                }
+              ]
+            }
+          },
+          {
+            "seq": 4,
+            "event": "role_model_called",
+            "role": "researcher",
+            "budget": {
+              "models": 2,
+              "tools": 1,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 2
+              }
+            },
+            "prompt_sha256": "e7899719a5b6d3b4b6f5b0337242bc47876f44950afb09a929771f042aa33ed1"
+          },
+          {
+            "seq": 5,
+            "event": "role_action",
+            "role": "researcher",
+            "budget": {
+              "models": 2,
+              "tools": 1,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 2
+              }
+            },
+            "action": {
+              "kind": "tool",
+              "name": "read_evidence",
+              "arguments": {
+                "source_id": "A@v1:L1"
+              }
+            }
+          },
+          {
+            "seq": 6,
+            "event": "role_tool_observed",
+            "role": "researcher",
+            "budget": {
+              "models": 2,
+              "tools": 2,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 2
+              }
+            },
+            "name": "read_evidence",
+            "observation": {
+              "source_id": "A@v1:L1",
+              "text": "cap 30000",
+              "source_locator": "sqlite:documents/A@v1:L1"
+            }
+          },
+          {
+            "seq": 7,
+            "event": "role_model_called",
+            "role": "researcher",
+            "budget": {
+              "models": 3,
+              "tools": 2,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 3
+              }
+            },
+            "prompt_sha256": "bd6a590d0383934200ae69ebd13278c780cbcabe57df4e4a8611e672ad17a581"
+          },
+          {
+            "seq": 8,
+            "event": "role_action",
+            "role": "researcher",
+            "budget": {
+              "models": 3,
+              "tools": 2,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 3
+              }
+            },
+            "action": {
+              "kind": "handoff",
+              "evidence_ids": [
+                "A@v1:L1"
+              ],
+              "missing_information": []
+            }
+          },
+          {
+            "seq": 9,
+            "event": "handoff_validated",
+            "role": "researcher",
+            "budget": {
+              "models": 3,
+              "tools": 2,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 3
+              }
+            },
+            "handoff": {
+              "run_id": "2dc20ec163a241a885b3befce97f08db",
+              "role_id": "researcher",
+              "target_role": "writer",
+              "question_id": "M04-budget",
+              "source_manifest_version": {
+                "generation": 1,
+                "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+              },
+              "evidence_ids": [
+                "A@v1:L1"
+              ],
+              "claim_citations": [],
+              "status": "validated",
+              "failure_ids": [],
+              "budget_used": {
+                "models": 3,
+                "tools": 2,
+                "repairs": 0,
+                "retries": 0,
+                "roles": {
+                  "researcher": 3
+                }
+              },
+              "missing_information": []
+            }
+          },
+          {
+            "seq": 10,
+            "event": "role_model_called",
+            "role": "writer",
+            "budget": {
+              "models": 4,
+              "tools": 2,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 3,
+                "writer": 1
+              }
+            },
+            "prompt_sha256": "bbce6325cc25f7e2c97c576f0f384908cf22b46928827e43b7cdfa6d9d509e20"
+          },
+          {
+            "seq": 11,
+            "event": "role_action",
+            "role": "writer",
+            "budget": {
+              "models": 4,
+              "tools": 2,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 3,
+                "writer": 1
+              }
+            },
+            "action": {
+              "kind": "final",
+              "draft": {
+                "outcome": "answer",
+                "answer": "30000",
+                "claims": [
+                  {
+                    "text": "cap 30000",
+                    "source_id": "A@v1:L1",
+                    "quote": "cap 30000"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "seq": 12,
+            "event": "handoff_validated",
+            "role": "writer",
+            "budget": {
+              "models": 4,
+              "tools": 2,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 3,
+                "writer": 1
+              }
+            },
+            "handoff": {
+              "run_id": "2dc20ec163a241a885b3befce97f08db",
+              "role_id": "writer",
+              "target_role": "reviewer",
+              "question_id": "M04-budget",
+              "source_manifest_version": {
+                "generation": 1,
+                "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+              },
+              "evidence_ids": [
+                "A@v1:L1"
+              ],
+              "claim_citations": [
+                {
+                  "text": "cap 30000",
+                  "source_id": "A@v1:L1",
+                  "quote": "cap 30000"
+                }
+              ],
+              "status": "validated",
+              "failure_ids": [],
+              "budget_used": {
+                "models": 4,
+                "tools": 2,
+                "repairs": 0,
+                "retries": 0,
+                "roles": {
+                  "researcher": 3,
+                  "writer": 1
+                }
+              },
+              "missing_information": []
+            }
+          },
+          {
+            "seq": 13,
+            "event": "stopped",
+            "role": "reviewer",
+            "budget": {
+              "models": 4,
+              "tools": 2,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 3,
+                "writer": 1
+              }
+            },
+            "reason": "model_budget"
+          }
+        ],
+        "handoffs": [
+          {
+            "run_id": "2dc20ec163a241a885b3befce97f08db",
+            "role_id": "researcher",
+            "target_role": "writer",
+            "question_id": "M04-budget",
+            "source_manifest_version": {
+              "generation": 1,
+              "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+            },
+            "evidence_ids": [
+              "A@v1:L1"
+            ],
+            "claim_citations": [],
+            "status": "validated",
+            "failure_ids": [],
+            "budget_used": {
+              "models": 3,
+              "tools": 2,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 3
+              }
+            },
+            "missing_information": []
+          },
+          {
+            "run_id": "2dc20ec163a241a885b3befce97f08db",
+            "role_id": "writer",
+            "target_role": "reviewer",
+            "question_id": "M04-budget",
+            "source_manifest_version": {
+              "generation": 1,
+              "profile_sha256": "ab184de2b7bbb44c290ac11731d00af056da7e41c5dd4021aea5c137e3a237f1"
+            },
+            "evidence_ids": [
+              "A@v1:L1"
+            ],
+            "claim_citations": [
+              {
+                "text": "cap 30000",
+                "source_id": "A@v1:L1",
+                "quote": "cap 30000"
+              }
+            ],
+            "status": "validated",
+            "failure_ids": [],
+            "budget_used": {
+              "models": 4,
+              "tools": 2,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 3,
+                "writer": 1
+              }
+            },
+            "missing_information": []
+          }
+        ],
+        "sources": {
+          "A@v1:L1": {
+            "doc_id": "A",
+            "version": "v1",
+            "line": 1,
+            "text": "cap 30000",
+            "origin_path": "data/documents-v1.json",
+            "source_locator": "sqlite:documents/A@v1:L1"
+          }
+        },
+        "dispatched_tool_names": [
+          "search_documents",
+          "read_evidence"
+        ],
+        "citation_validation_calls": 0,
+        "elapsed_seconds": 0.0005,
+        "semantic_grounding_verified": false,
+        "approval_granted": false,
+        "external_effects_executed": false,
+        "deadline_mode": "between_calls_not_inflight_cancellation"
+      },
+      "transient_timeout": {
+        "status": "stopped",
+        "stop_reason": "transient_budget",
+        "draft": null,
+        "partial_draft": null,
+        "reply": null,
+        "model_review": null,
+        "budget": {
+          "models": 2,
+          "tools": 0,
+          "repairs": 0,
+          "retries": 1,
+          "roles": {
+            "researcher": 2
+          }
+        },
+        "limits": {
+          "max_model_calls": 8,
+          "max_tool_calls": 6,
+          "max_repairs": 1,
+          "max_transient_retries": 1,
+          "researcher_calls": 4,
+          "writer_calls": 2,
+          "reviewer_calls": 3,
+          "elapsed_seconds": 240.0
+        },
+        "trace": [
+          {
+            "seq": 1,
+            "event": "role_model_called",
+            "role": "researcher",
+            "budget": {
+              "models": 1,
+              "tools": 0,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 1
+              }
+            },
+            "prompt_sha256": "9724b17fd4e4fc07c4f761100f1f0ac12f6e768755d34b7c3286f9330bc4ee7b"
+          },
+          {
+            "seq": 2,
+            "event": "model_transient_retry",
+            "role": "researcher",
+            "budget": {
+              "models": 1,
+              "tools": 0,
+              "repairs": 0,
+              "retries": 1,
+              "roles": {
+                "researcher": 1
+              }
+            }
+          },
+          {
+            "seq": 3,
+            "event": "role_model_called",
+            "role": "researcher",
+            "budget": {
+              "models": 2,
+              "tools": 0,
+              "repairs": 0,
+              "retries": 1,
+              "roles": {
+                "researcher": 2
+              }
+            },
+            "prompt_sha256": "9724b17fd4e4fc07c4f761100f1f0ac12f6e768755d34b7c3286f9330bc4ee7b"
+          },
+          {
+            "seq": 4,
+            "event": "stopped",
+            "role": "researcher",
+            "budget": {
+              "models": 2,
+              "tools": 0,
+              "repairs": 0,
+              "retries": 1,
+              "roles": {
+                "researcher": 2
+              }
+            },
+            "reason": "transient_budget"
+          }
+        ],
+        "handoffs": [],
+        "sources": {},
+        "dispatched_tool_names": [],
+        "citation_validation_calls": 0,
+        "elapsed_seconds": 0.0,
+        "semantic_grounding_verified": false,
+        "approval_granted": false,
+        "external_effects_executed": false,
+        "deadline_mode": "between_calls_not_inflight_cancellation"
+      },
+      "deadline": {
+        "status": "stopped",
+        "stop_reason": "deadline",
+        "draft": null,
+        "partial_draft": null,
+        "reply": null,
+        "model_review": null,
+        "budget": {
+          "models": 1,
+          "tools": 0,
+          "repairs": 0,
+          "retries": 0,
+          "roles": {
+            "researcher": 1
+          }
+        },
+        "limits": {
+          "max_model_calls": 8,
+          "max_tool_calls": 6,
+          "max_repairs": 1,
+          "max_transient_retries": 1,
+          "researcher_calls": 4,
+          "writer_calls": 2,
+          "reviewer_calls": 3,
+          "elapsed_seconds": 240.0
+        },
+        "trace": [
+          {
+            "seq": 1,
+            "event": "role_model_called",
+            "role": "researcher",
+            "budget": {
+              "models": 1,
+              "tools": 0,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 1
+              }
+            },
+            "prompt_sha256": "9724b17fd4e4fc07c4f761100f1f0ac12f6e768755d34b7c3286f9330bc4ee7b"
+          },
+          {
+            "seq": 2,
+            "event": "stopped",
+            "role": "researcher",
+            "budget": {
+              "models": 1,
+              "tools": 0,
+              "repairs": 0,
+              "retries": 0,
+              "roles": {
+                "researcher": 1
+              }
+            },
+            "reason": "deadline"
+          }
+        ],
+        "handoffs": [],
+        "sources": {},
+        "dispatched_tool_names": [],
+        "citation_validation_calls": 0,
+        "elapsed_seconds": 241.0,
+        "semantic_grounding_verified": false,
+        "approval_granted": false,
+        "external_effects_executed": false,
+        "deadline_mode": "between_calls_not_inflight_cancellation"
+      }
+    }
+  },
+  "actual_model_generations": 0,
+  "paid_api_calls": 0,
+  "scoring": "Four handoff cases excluded from 18-case Single/Multi quality denominator"
+}

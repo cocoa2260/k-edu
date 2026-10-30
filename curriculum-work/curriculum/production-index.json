@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-007",
+  "current_batch": "KEDU-PRODUCTION-008",
   "units": [
     {
       "id": "K2-00.U01",
@@ -556,45 +556,49 @@
       "id": "K2-11.U01",
       "course": "K2-11",
       "title": "역할 분리가 필요한 문제",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-008",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/multi-agent/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_roles_and_handoff_verified_quality_not_accepted",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-008/validation.json"
     },
     {
       "id": "K2-11.U02",
       "course": "K2-11",
       "title": "역할별 상태·Tool·입출력",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-008",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/multi-agent/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_roles_and_handoff_verified_quality_not_accepted",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-008/validation.json"
     },
     {
       "id": "K2-11.U03",
       "course": "K2-11",
       "title": "검토와 한 번의 보완",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-008",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/multi-agent/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_roles_and_handoff_verified_quality_not_accepted",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-008/validation.json"
     },
     {
       "id": "K2-11.U04",
       "course": "K2-11",
       "title": "실패 전파와 동일 조건 비교",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-008",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/multi-agent/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_roles_and_handoff_verified_quality_not_accepted",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-008/validation.json"
     },
     {
       "id": "K2-12.U01",
@@ -804,23 +808,25 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-008",
+    "id": "KEDU-PRODUCTION-009",
     "proposed_scope": [
-      "K2-11",
-      "L6"
+      "K2-12.U01",
+      "K2-12.U02",
+      "K2-12.U03",
+      "K2-12.U04"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "RUNTIME_AND_GUIDED_TOOL_DISPATCH_VERIFIED_TASK_QUALITY_NOT_ACCEPTED",
+  "batch_status": "ROLE_HANDOFF_RUNTIME_VERIFIED_ACTUAL_ROLES_EXECUTED_TASK_QUALITY_NOT_ACCEPTED",
   "first_unfinished_gate": {
-    "id": "L6-ROLE-HANDOFF",
+    "id": "L7-DATASET-PREPARATION",
     "status": "not_started",
     "recommended_reasoning_effort": "high",
     "independent_pending": [
-      "L5 reliable model task completion",
-      "L4 answer quality not accepted",
-      "Full framework/MCP integration",
+      "L4/L5/L6 actual task and answer quality",
+      "full Framework/MCP",
+      "foundations/orientation unwritten",
       "classroom/UI"
     ]
   },
@@ -857,6 +863,12 @@
       "status": "RUNTIME_AND_GUIDED_TOOL_DISPATCH_VERIFIED_TASK_QUALITY_NOT_ACCEPTED",
       "path": "curriculum-work/practice/document-assistant/milestones/L5.json",
       "model_tool_request_verified": true,
+      "quality_accepted": false
+    },
+    "L6": {
+      "status": "ROLE_HANDOFF_RUNTIME_VERIFIED_ACTUAL_ROLES_EXECUTED_TASK_QUALITY_NOT_ACCEPTED",
+      "path": "curriculum-work/practice/document-assistant/milestones/L6.json",
+      "actual_roles_verified": true,
       "quality_accepted": false
     }
   }

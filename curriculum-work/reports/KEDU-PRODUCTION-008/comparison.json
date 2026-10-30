@@ -1,0 +1,481 @@
+{
+  "single_source": "KEDU-PRODUCTION-007/observed.json",
+  "same_configuration_fields": [
+    "embedding",
+    "generation",
+    "data_hashes"
+  ],
+  "single_caps": {
+    "models": 4,
+    "tools": 3,
+    "elapsed_seconds": 180
+  },
+  "multi_caps": {
+    "models": 8,
+    "tools": 6,
+    "elapsed_seconds": 240,
+    "roles": {
+      "researcher": 4,
+      "writer": 2,
+      "reviewer": 3
+    }
+  },
+  "confounds": [
+    "role prompts and policies differ",
+    "global budgets differ",
+    "historical sequential CPU runs, no performance repetitions",
+    "early clarification without task completion is not efficiency improvement",
+    "13 cases before interruption, 5 after cache download/resume; latency not controlled benchmark"
+  ],
+  "single_initialization_seconds": null,
+  "multi_latest_resume_initialization": {
+    "model_and_encoder_load_seconds": 116.7773,
+    "scope": "outside case latency"
+  },
+  "comparisons": [
+    {
+      "case_id": "C01",
+      "bucket": "factual_grounding",
+      "single": {
+        "stop_reason": "tool_limit",
+        "models": 4,
+        "tool_attempts": 3,
+        "handler_entries": 3,
+        "returned_sources": 0,
+        "elapsed_seconds": 53.7407
+      },
+      "multi": {
+        "stop_reason": "clarification",
+        "models": 1,
+        "roles": {
+          "researcher": 1
+        },
+        "tool_attempts": 0,
+        "handler_entries": 0,
+        "handed_sources": 0,
+        "elapsed_seconds": 9.9144
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "C02",
+      "bucket": "factual_grounding",
+      "single": {
+        "stop_reason": "tool_limit",
+        "models": 4,
+        "tool_attempts": 3,
+        "handler_entries": 3,
+        "returned_sources": 0,
+        "elapsed_seconds": 38.669
+      },
+      "multi": {
+        "stop_reason": "clarification",
+        "models": 1,
+        "roles": {
+          "researcher": 1
+        },
+        "tool_attempts": 0,
+        "handler_entries": 0,
+        "handed_sources": 0,
+        "elapsed_seconds": 7.3107
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "C03",
+      "bucket": "boundary_behavior",
+      "single": {
+        "stop_reason": "tool_limit",
+        "models": 4,
+        "tool_attempts": 3,
+        "handler_entries": 3,
+        "returned_sources": 0,
+        "elapsed_seconds": 43.2547
+      },
+      "multi": {
+        "stop_reason": "clarification",
+        "models": 1,
+        "roles": {
+          "researcher": 1
+        },
+        "tool_attempts": 0,
+        "handler_entries": 0,
+        "handed_sources": 0,
+        "elapsed_seconds": 7.6954
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "C04",
+      "bucket": "boundary_behavior",
+      "single": {
+        "stop_reason": "tool_limit",
+        "models": 4,
+        "tool_attempts": 3,
+        "handler_entries": 3,
+        "returned_sources": 0,
+        "elapsed_seconds": 40.4358
+      },
+      "multi": {
+        "stop_reason": "clarification",
+        "models": 1,
+        "roles": {
+          "researcher": 1
+        },
+        "tool_attempts": 0,
+        "handler_entries": 0,
+        "handed_sources": 0,
+        "elapsed_seconds": 7.5951
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "C05",
+      "bucket": "factual_grounding",
+      "single": {
+        "stop_reason": "tool_limit",
+        "models": 4,
+        "tool_attempts": 3,
+        "handler_entries": 3,
+        "returned_sources": 0,
+        "elapsed_seconds": 38.26
+      },
+      "multi": {
+        "stop_reason": "clarification",
+        "models": 1,
+        "roles": {
+          "researcher": 1
+        },
+        "tool_attempts": 0,
+        "handler_entries": 0,
+        "handed_sources": 0,
+        "elapsed_seconds": 9.8726
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "C06",
+      "bucket": "boundary_behavior",
+      "single": {
+        "stop_reason": "tool_limit",
+        "models": 4,
+        "tool_attempts": 3,
+        "handler_entries": 3,
+        "returned_sources": 0,
+        "elapsed_seconds": 43.3319
+      },
+      "multi": {
+        "stop_reason": "clarification",
+        "models": 1,
+        "roles": {
+          "researcher": 1
+        },
+        "tool_attempts": 0,
+        "handler_entries": 0,
+        "handed_sources": 0,
+        "elapsed_seconds": 8.3446
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "C07",
+      "bucket": "boundary_behavior",
+      "single": {
+        "stop_reason": "tool_limit",
+        "models": 4,
+        "tool_attempts": 3,
+        "handler_entries": 3,
+        "returned_sources": 0,
+        "elapsed_seconds": 38.2839
+      },
+      "multi": {
+        "stop_reason": "review_rejected",
+        "models": 5,
+        "roles": {
+          "researcher": 3,
+          "writer": 1,
+          "reviewer": 1
+        },
+        "tool_attempts": 2,
+        "handler_entries": 2,
+        "handed_sources": 1,
+        "elapsed_seconds": 48.5796
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "C08",
+      "bucket": "factual_grounding",
+      "single": {
+        "stop_reason": "tool_limit",
+        "models": 4,
+        "tool_attempts": 3,
+        "handler_entries": 3,
+        "returned_sources": 0,
+        "elapsed_seconds": 45.2783
+      },
+      "multi": {
+        "stop_reason": "clarification",
+        "models": 1,
+        "roles": {
+          "researcher": 1
+        },
+        "tool_attempts": 0,
+        "handler_entries": 0,
+        "handed_sources": 0,
+        "elapsed_seconds": 7.8603
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "C09",
+      "bucket": "factual_grounding",
+      "single": {
+        "stop_reason": "repeated_failure",
+        "models": 2,
+        "tool_attempts": 2,
+        "handler_entries": 2,
+        "returned_sources": 0,
+        "elapsed_seconds": 15.2792
+      },
+      "multi": {
+        "stop_reason": "clarification",
+        "models": 1,
+        "roles": {
+          "researcher": 1
+        },
+        "tool_attempts": 0,
+        "handler_entries": 0,
+        "handed_sources": 0,
+        "elapsed_seconds": 8.0473
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "C10",
+      "bucket": "boundary_behavior",
+      "single": {
+        "stop_reason": "input_rejected",
+        "models": 0,
+        "tool_attempts": 0,
+        "handler_entries": 0,
+        "returned_sources": 0,
+        "elapsed_seconds": 0.0002
+      },
+      "multi": {
+        "stop_reason": "input_rejected",
+        "models": 0,
+        "roles": {},
+        "tool_attempts": 0,
+        "handler_entries": 0,
+        "handed_sources": 0,
+        "elapsed_seconds": 0.0
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "C11",
+      "bucket": "factual_grounding",
+      "single": {
+        "stop_reason": "tool_limit",
+        "models": 4,
+        "tool_attempts": 3,
+        "handler_entries": 3,
+        "returned_sources": 0,
+        "elapsed_seconds": 44.0499
+      },
+      "multi": {
+        "stop_reason": "review_rejected",
+        "models": 5,
+        "roles": {
+          "researcher": 3,
+          "writer": 1,
+          "reviewer": 1
+        },
+        "tool_attempts": 2,
+        "handler_entries": 2,
+        "handed_sources": 1,
+        "elapsed_seconds": 49.096
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "C12",
+      "bucket": "boundary_behavior",
+      "single": {
+        "stop_reason": "tool_limit",
+        "models": 4,
+        "tool_attempts": 3,
+        "handler_entries": 3,
+        "returned_sources": 0,
+        "elapsed_seconds": 40.6143
+      },
+      "multi": {
+        "stop_reason": "clarification",
+        "models": 1,
+        "roles": {
+          "researcher": 1
+        },
+        "tool_attempts": 0,
+        "handler_entries": 0,
+        "handed_sources": 0,
+        "elapsed_seconds": 7.6072
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "A01",
+      "bucket": "agent_boundary",
+      "single": {
+        "stop_reason": "direct_response",
+        "models": 1,
+        "tool_attempts": 0,
+        "handler_entries": 0,
+        "returned_sources": 0,
+        "elapsed_seconds": 10.2272
+      },
+      "multi": {
+        "stop_reason": "clarification",
+        "models": 1,
+        "roles": {
+          "researcher": 1
+        },
+        "tool_attempts": 0,
+        "handler_entries": 0,
+        "handed_sources": 0,
+        "elapsed_seconds": 7.4023
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "A02",
+      "bucket": "agent_boundary",
+      "single": {
+        "stop_reason": "tool_limit",
+        "models": 4,
+        "tool_attempts": 3,
+        "handler_entries": 3,
+        "returned_sources": 0,
+        "elapsed_seconds": 52.57
+      },
+      "multi": {
+        "stop_reason": "review_rejected",
+        "models": 5,
+        "roles": {
+          "researcher": 3,
+          "writer": 1,
+          "reviewer": 1
+        },
+        "tool_attempts": 2,
+        "handler_entries": 2,
+        "handed_sources": 1,
+        "elapsed_seconds": 61.9918
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "A03",
+      "bucket": "agent_boundary",
+      "single": {
+        "stop_reason": "tool_limit",
+        "models": 4,
+        "tool_attempts": 3,
+        "handler_entries": 3,
+        "returned_sources": 0,
+        "elapsed_seconds": 30.3903
+      },
+      "multi": {
+        "stop_reason": "review_rejected",
+        "models": 5,
+        "roles": {
+          "researcher": 3,
+          "writer": 1,
+          "reviewer": 1
+        },
+        "tool_attempts": 2,
+        "handler_entries": 2,
+        "handed_sources": 1,
+        "elapsed_seconds": 53.559
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "A04",
+      "bucket": "agent_boundary",
+      "single": {
+        "stop_reason": "repeated_failure",
+        "models": 2,
+        "tool_attempts": 2,
+        "handler_entries": 2,
+        "returned_sources": 0,
+        "elapsed_seconds": 14.7626
+      },
+      "multi": {
+        "stop_reason": "review_rejected",
+        "models": 5,
+        "roles": {
+          "researcher": 3,
+          "writer": 1,
+          "reviewer": 1
+        },
+        "tool_attempts": 2,
+        "handler_entries": 2,
+        "handed_sources": 1,
+        "elapsed_seconds": 61.8271
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "A05",
+      "bucket": "agent_boundary",
+      "single": {
+        "stop_reason": "tool_limit",
+        "models": 3,
+        "tool_attempts": 3,
+        "handler_entries": 3,
+        "returned_sources": 0,
+        "elapsed_seconds": 38.4537
+      },
+      "multi": {
+        "stop_reason": "review_rejected",
+        "models": 6,
+        "roles": {
+          "researcher": 4,
+          "writer": 1,
+          "reviewer": 1
+        },
+        "tool_attempts": 4,
+        "handler_entries": 4,
+        "handed_sources": 1,
+        "elapsed_seconds": 63.8017
+      },
+      "quality_accepted": false
+    },
+    {
+      "case_id": "A06",
+      "bucket": "agent_boundary",
+      "single": {
+        "stop_reason": "tool_limit",
+        "models": 4,
+        "tool_attempts": 3,
+        "handler_entries": 3,
+        "returned_sources": 0,
+        "elapsed_seconds": 33.0557
+      },
+      "multi": {
+        "stop_reason": "clarification",
+        "models": 1,
+        "roles": {
+          "researcher": 1
+        },
+        "tool_attempts": 0,
+        "handler_entries": 0,
+        "handed_sources": 0,
+        "elapsed_seconds": 4.9349
+      },
+      "quality_accepted": false
+    }
+  ],
+  "additional_handoff_cases_in_denominator": false,
+  "automatic_semantic_accuracy_assigned": false
+}

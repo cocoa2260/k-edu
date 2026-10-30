@@ -1,4 +1,4 @@
-# 문서 답변 누적 실습 — Backend L0~L5
+# 문서 답변 누적 실습 — Backend L0~L6
 
 Day3 7~8교시의 코드와 CORS에서 출발해 L1 입력 준비, L2 Harness, L3 실제 Embedding·검색·Index를 같은 프로젝트에 추가했다. 기존 대화 API는 유지하고 L4 CLI에서 실제 검색·로컬 생성·출력 검사를 연결했다. 답변 품질은 채택 보류다. 처음 시작하는 학생은 [L0 본문](../../../lessons/baseline/lesson.md)을 읽는다.
 
@@ -61,3 +61,11 @@ POST /ai/prepare는 사례 ID와 조건으로 입력만 준비한다. 실제 생
 HFCpuProvider의 신규 출력 상한을 선택 인자로 추가했다. 기본 512 Token은 유지하고 L5만 192 Token으로 실행한다. requirements-agent-tested.txt는 이 환경의 전체 스냅샷이며 기존 L3/L4 환경 파일은 보존한다. 실제 모델 과제 완료·답변 품질은 미통과다.
 
 현재 L5 모델 입력은 app/agent.py의 planner_prompt 함수가 구성한다. 같은 파일의 INSTRUCTIONS 상수는 준비 실행에서 사용한 과거 지시이며 현재 경로에서 사용하지 않는다.
+
+## L6 확장
+
+[L6 안내](../L6.md)에서 L5 CPU 환경/캐시를 재사용한다. multi_agent.py는 세 역할의 계약과 현재 원문·수신 범위 Handoff를 검사하며 전역 모델 8회·도구 6회·보완/일시 재시도 각 1회·240초 전후 검사 한도를 유지한다. 역할별 4/2/3회는 전체 8회 안에 포함한다.
+
+tools.multi_lab는 같은 18개를 체크포인트로 저장한다. role-probes 옵션은 Runtime이 실제 E5로 근거를 준비한 별도 역할 호출이며 통합 성공이 아니다. tools.multi_fixture_lab의 Control/M01~M04는 고정 응답 검사다. 기존 웹 API를 새 Runtime에 연결하지 않았고 새 의존성도 추가하지 않았다. 의미적 품질은 미통과다.
+
+응답 전체의 단일 JSON 코드 블록만 transport 포장으로 제거한다. Markdown 안의 Python을 실행하거나 앞뒤 문장에서 JSON을 추출하지 않는다. 모델 원응답은 observed.json의 생성 관찰에 보존한다.

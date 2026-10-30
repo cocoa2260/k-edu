@@ -1,0 +1,22 @@
+{
+  "task_id": "KEDU-PRODUCTION-008",
+  "scope": [
+    "K2-11",
+    "L6"
+  ],
+  "parent_commit": "204f3feba91c4f1df6570c7c2f86486090438002",
+  "branch": "work/curriculum-production-001",
+  "recommended_reasoning_effort": "high",
+  "new_units_authored": 4,
+  "case_count": 18,
+  "handoff_boundary_cases": 4,
+  "quality_accepted": false,
+  "paid_api_calls": 0,
+  "protected": [
+    "academy/**",
+    "past reports",
+    "existing data except new handoff-v1",
+    "existing web APIs"
+  ],
+  "next_task": "KEDU-PRODUCTION-009 K2-12.U01-U04 dataset preparation"
+}

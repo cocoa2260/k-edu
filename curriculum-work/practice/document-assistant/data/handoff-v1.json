@@ -1,0 +1,11 @@
+{
+  "version":"handoff-v1",
+  "comparison_set":"M01-M04 boundary probes only, excluded from the 18-case quality denominator",
+  "cases":[
+    {"id":"M01","scenario":"evidence ID unavailable to the receiving role","expected":"Reject before receiving-role model input; no permission promotion"},
+    {"id":"M02","scenario":"writer requests additional evidence once","expected":"Research re-entry preserves previous role counts and uses the shared repair counter"},
+    {"id":"M03","scenario":"reviewer rejects the same failure after one repair","expected":"Stop, retain partial draft separately, no final delivery"},
+    {"id":"M04","scenario":"role timeout or global budget/deadline exhausted","expected":"Stop whole task; never grant a fresh budget for the next role"}
+  ],
+  "authority":"Teacher-authored controlled boundary scenarios; not model-selected approval or policy"
+}

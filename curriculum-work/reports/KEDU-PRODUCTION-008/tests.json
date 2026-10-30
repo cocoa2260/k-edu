@@ -1,0 +1,10 @@
+{
+  "command": "python -m pytest -q",
+  "passed": 243,
+  "prior_tests": 214,
+  "new_tests": 29,
+  "stdout": "........................................................................ [ 29%]\n........................................................................ [ 59%]\n........................................................................ [ 88%]\n...........................                                              [100%]\n243 passed in 3.77s\n",
+  "exit_code": 0,
+  "seconds": 3.77,
+  "scope": "Scripted role/state, schema, handoff, stale index, shared budgets and prior regressions; actual model observations separate"
+}
