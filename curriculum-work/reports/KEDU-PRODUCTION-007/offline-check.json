@@ -1,0 +1,10 @@
+{
+  "case_id": "A01",
+  "actual_generations": 1,
+  "http_attempts": 0,
+  "raw_outputs_equal": true,
+  "reply_equal": true,
+  "stop_reason_equal": true,
+  "actual_stop_reason": "direct_response",
+  "scope": "cached E5/Qwen loading and A01 replay; requests guard, not OS isolation"
+}

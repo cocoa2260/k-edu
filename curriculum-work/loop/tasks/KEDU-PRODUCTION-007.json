@@ -1,0 +1,22 @@
+{
+  "task_id": "KEDU-PRODUCTION-007",
+  "scope": [
+    "K2-10",
+    "L5"
+  ],
+  "parent_commit": "5cdea33bb4c12d0aebd3e673b65dc72c5f6e6401",
+  "branch": "work/curriculum-production-001",
+  "recommended_reasoning_effort": "high",
+  "new_units_authored": 4,
+  "case_count": 18,
+  "actual_model_dispatch_verified": true,
+  "quality_accepted": false,
+  "paid_api_calls": 0,
+  "protected": [
+    "academy/**",
+    "past reports",
+    "existing core-v1/documents-v1",
+    "existing web APIs"
+  ],
+  "next_task": "KEDU-PRODUCTION-008 K2-11/L6"
+}

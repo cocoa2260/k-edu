@@ -1,0 +1,1086 @@
+{
+  "evidence_kind": "observed_scripted_faults_and_real_library_API_not_model_quality",
+  "scenarios": {
+    "A01": {
+      "status": "message_needs_review",
+      "stop_reason": "direct_response",
+      "draft": null,
+      "reply": "안녕하세요.",
+      "decisions": 1,
+      "tool_attempts": 0,
+      "tool_retries": 0,
+      "sources": {},
+      "trace": [
+        {
+          "seq": 1,
+          "event": "planner_called",
+          "decisions": 1,
+          "tools": 0,
+          "prompt_sha256": "55aa6f7f17f053b6a44727124fcaeb44be464f80691955ae9642a66ab38e7f18"
+        },
+        {
+          "seq": 2,
+          "event": "action_selected",
+          "decisions": 1,
+          "tools": 0,
+          "action": {
+            "kind": "respond",
+            "text": "안녕하세요."
+          }
+        },
+        {
+          "seq": 3,
+          "event": "stopped",
+          "decisions": 1,
+          "tools": 0,
+          "reason": "direct_response"
+        }
+      ],
+      "elapsed_seconds": 0.0009,
+      "limits": {
+        "max_decisions": 4,
+        "max_tools": 3,
+        "max_failures": 2,
+        "max_tool_retries": 1,
+        "elapsed_seconds": 180.0
+      },
+      "semantic_grounding_verified": false,
+      "external_effects_executed": false,
+      "tool_dispatches": 0,
+      "dispatched_tool_names": [],
+      "memory_notes_created": 0,
+      "deadline_mode": "between_calls_not_inflight_cancellation"
+    },
+    "A02": {
+      "status": "draft_needs_review",
+      "stop_reason": "final_review_required",
+      "draft": {
+        "outcome": "answer",
+        "answer": "cap 30000",
+        "claims": [
+          {
+            "text": "cap 30000",
+            "source_id": "A@v1:L1",
+            "quote": "cap 30000"
+          }
+        ]
+      },
+      "reply": null,
+      "decisions": 3,
+      "tool_attempts": 2,
+      "tool_retries": 0,
+      "sources": {
+        "A@v1:L1": {
+          "doc_id": "A",
+          "version": "v1",
+          "line": 1,
+          "text": "cap 30000",
+          "origin_path": "data/documents-v1.json",
+          "source_locator": "sqlite:documents/A@v1:L1"
+        }
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "planner_called",
+          "decisions": 1,
+          "tools": 0,
+          "prompt_sha256": "ab1df0f846b2b6d294243c8843859fd1577b692addf310e2ee8f694be15c7e4c"
+        },
+        {
+          "seq": 2,
+          "event": "action_selected",
+          "decisions": 1,
+          "tools": 0,
+          "action": {
+            "kind": "tool",
+            "name": "search_documents",
+            "arguments": {
+              "query": "meal cap",
+              "k": 3
+            }
+          }
+        },
+        {
+          "seq": 3,
+          "event": "tool_started",
+          "decisions": 1,
+          "tools": 1,
+          "name": "search_documents",
+          "arguments": {
+            "query": "meal cap",
+            "k": 3
+          }
+        },
+        {
+          "seq": 4,
+          "event": "tool_observed",
+          "decisions": 1,
+          "tools": 1,
+          "name": "search_documents",
+          "observation": {
+            "hits": [
+              {
+                "source_id": "A@v1:L1",
+                "preview": "cap 30000"
+              }
+            ]
+          }
+        },
+        {
+          "seq": 5,
+          "event": "planner_called",
+          "decisions": 2,
+          "tools": 1,
+          "prompt_sha256": "2c3dbf2b1755401d4fc029b416aa75dba6214eab54e9d1292e3424b60286e004"
+        },
+        {
+          "seq": 6,
+          "event": "action_selected",
+          "decisions": 2,
+          "tools": 1,
+          "action": {
+            "kind": "tool",
+            "name": "read_evidence",
+            "arguments": {
+              "source_id": "A@v1:L1"
+            }
+          }
+        },
+        {
+          "seq": 7,
+          "event": "tool_started",
+          "decisions": 2,
+          "tools": 2,
+          "name": "read_evidence",
+          "arguments": {
+            "source_id": "A@v1:L1"
+          }
+        },
+        {
+          "seq": 8,
+          "event": "tool_observed",
+          "decisions": 2,
+          "tools": 2,
+          "name": "read_evidence",
+          "observation": {
+            "source_id": "A@v1:L1",
+            "text": "cap 30000",
+            "source_locator": "sqlite:documents/A@v1:L1"
+          }
+        },
+        {
+          "seq": 9,
+          "event": "planner_called",
+          "decisions": 3,
+          "tools": 2,
+          "prompt_sha256": "14adce26be0eaa789636653802cb56aaff5469169b9fe85eb924ed5c2d553ec9"
+        },
+        {
+          "seq": 10,
+          "event": "action_selected",
+          "decisions": 3,
+          "tools": 2,
+          "action": {
+            "kind": "final",
+            "draft": {
+              "outcome": "answer",
+              "answer": "cap 30000",
+              "claims": [
+                {
+                  "text": "cap 30000",
+                  "source_id": "A@v1:L1",
+                  "quote": "cap 30000"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "seq": 11,
+          "event": "stopped",
+          "decisions": 3,
+          "tools": 2,
+          "reason": "final_review_required"
+        }
+      ],
+      "elapsed_seconds": 0.0016,
+      "limits": {
+        "max_decisions": 4,
+        "max_tools": 3,
+        "max_failures": 2,
+        "max_tool_retries": 1,
+        "elapsed_seconds": 180.0
+      },
+      "semantic_grounding_verified": false,
+      "external_effects_executed": false,
+      "tool_dispatches": 2,
+      "dispatched_tool_names": [
+        "search_documents",
+        "read_evidence"
+      ],
+      "memory_notes_created": 0,
+      "deadline_mode": "between_calls_not_inflight_cancellation"
+    },
+    "A03": {
+      "status": "stopped",
+      "stop_reason": "repeated_failure",
+      "draft": null,
+      "reply": null,
+      "decisions": 2,
+      "tool_attempts": 2,
+      "tool_retries": 0,
+      "sources": {},
+      "trace": [
+        {
+          "seq": 1,
+          "event": "planner_called",
+          "decisions": 1,
+          "tools": 0,
+          "prompt_sha256": "ab1df0f846b2b6d294243c8843859fd1577b692addf310e2ee8f694be15c7e4c"
+        },
+        {
+          "seq": 2,
+          "event": "action_selected",
+          "decisions": 1,
+          "tools": 0,
+          "action": {
+            "kind": "tool",
+            "name": "delete_all_documents",
+            "arguments": {}
+          }
+        },
+        {
+          "seq": 3,
+          "event": "tool_started",
+          "decisions": 1,
+          "tools": 1,
+          "name": "delete_all_documents",
+          "arguments": {}
+        },
+        {
+          "seq": 4,
+          "event": "failure",
+          "decisions": 1,
+          "tools": 1,
+          "failure_id": "UNKNOWN_TOOL"
+        },
+        {
+          "seq": 5,
+          "event": "planner_called",
+          "decisions": 2,
+          "tools": 1,
+          "prompt_sha256": "e3d1add68a648c92b5307658f8dae7fb617245a50382b6a48e8999bb8d318f72"
+        },
+        {
+          "seq": 6,
+          "event": "action_selected",
+          "decisions": 2,
+          "tools": 1,
+          "action": {
+            "kind": "tool",
+            "name": "delete_all_documents",
+            "arguments": {}
+          }
+        },
+        {
+          "seq": 7,
+          "event": "tool_started",
+          "decisions": 2,
+          "tools": 2,
+          "name": "delete_all_documents",
+          "arguments": {}
+        },
+        {
+          "seq": 8,
+          "event": "failure",
+          "decisions": 2,
+          "tools": 2,
+          "failure_id": "UNKNOWN_TOOL"
+        },
+        {
+          "seq": 9,
+          "event": "stopped",
+          "decisions": 2,
+          "tools": 2,
+          "reason": "repeated_failure"
+        }
+      ],
+      "elapsed_seconds": 0.0002,
+      "limits": {
+        "max_decisions": 4,
+        "max_tools": 3,
+        "max_failures": 2,
+        "max_tool_retries": 1,
+        "elapsed_seconds": 180.0
+      },
+      "semantic_grounding_verified": false,
+      "external_effects_executed": false,
+      "tool_dispatches": 0,
+      "dispatched_tool_names": [],
+      "memory_notes_created": 0,
+      "deadline_mode": "between_calls_not_inflight_cancellation"
+    },
+    "A04": {
+      "status": "stopped",
+      "stop_reason": "repeated_failure",
+      "draft": null,
+      "reply": null,
+      "decisions": 2,
+      "tool_attempts": 2,
+      "tool_retries": 0,
+      "sources": {},
+      "trace": [
+        {
+          "seq": 1,
+          "event": "planner_called",
+          "decisions": 1,
+          "tools": 0,
+          "prompt_sha256": "ab1df0f846b2b6d294243c8843859fd1577b692addf310e2ee8f694be15c7e4c"
+        },
+        {
+          "seq": 2,
+          "event": "action_selected",
+          "decisions": 1,
+          "tools": 0,
+          "action": {
+            "kind": "tool",
+            "name": "save_note",
+            "arguments": {
+              "text": "note",
+              "approved": true
+            }
+          }
+        },
+        {
+          "seq": 3,
+          "event": "tool_started",
+          "decisions": 1,
+          "tools": 1,
+          "name": "save_note",
+          "arguments": {
+            "text": "note",
+            "approved": true
+          }
+        },
+        {
+          "seq": 4,
+          "event": "failure",
+          "decisions": 1,
+          "tools": 1,
+          "failure_id": "TOOL_ARGUMENTS"
+        },
+        {
+          "seq": 5,
+          "event": "planner_called",
+          "decisions": 2,
+          "tools": 1,
+          "prompt_sha256": "5b340caf669f2cf5eb7e80117f3174869c0391dae979e7e5fcd08443a7a17320"
+        },
+        {
+          "seq": 6,
+          "event": "action_selected",
+          "decisions": 2,
+          "tools": 1,
+          "action": {
+            "kind": "tool",
+            "name": "save_note",
+            "arguments": {
+              "text": "note",
+              "approved": true
+            }
+          }
+        },
+        {
+          "seq": 7,
+          "event": "tool_started",
+          "decisions": 2,
+          "tools": 2,
+          "name": "save_note",
+          "arguments": {
+            "text": "note",
+            "approved": true
+          }
+        },
+        {
+          "seq": 8,
+          "event": "failure",
+          "decisions": 2,
+          "tools": 2,
+          "failure_id": "TOOL_ARGUMENTS"
+        },
+        {
+          "seq": 9,
+          "event": "stopped",
+          "decisions": 2,
+          "tools": 2,
+          "reason": "repeated_failure"
+        }
+      ],
+      "elapsed_seconds": 0.0001,
+      "limits": {
+        "max_decisions": 4,
+        "max_tools": 3,
+        "max_failures": 2,
+        "max_tool_retries": 1,
+        "elapsed_seconds": 180.0
+      },
+      "semantic_grounding_verified": false,
+      "external_effects_executed": false,
+      "tool_dispatches": 0,
+      "dispatched_tool_names": [],
+      "memory_notes_created": 0,
+      "deadline_mode": "between_calls_not_inflight_cancellation"
+    },
+    "A05": {
+      "status": "draft_needs_review",
+      "stop_reason": "final_review_required",
+      "draft": {
+        "outcome": "answer",
+        "answer": "cap 30000",
+        "claims": [
+          {
+            "text": "cap 30000",
+            "source_id": "A@v1:L1",
+            "quote": "cap 30000"
+          }
+        ]
+      },
+      "reply": null,
+      "decisions": 3,
+      "tool_attempts": 3,
+      "tool_retries": 1,
+      "sources": {
+        "A@v1:L1": {
+          "doc_id": "A",
+          "version": "v1",
+          "line": 1,
+          "text": "cap 30000",
+          "origin_path": "data/documents-v1.json",
+          "source_locator": "sqlite:documents/A@v1:L1"
+        }
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "planner_called",
+          "decisions": 1,
+          "tools": 0,
+          "prompt_sha256": "ab1df0f846b2b6d294243c8843859fd1577b692addf310e2ee8f694be15c7e4c"
+        },
+        {
+          "seq": 2,
+          "event": "action_selected",
+          "decisions": 1,
+          "tools": 0,
+          "action": {
+            "kind": "tool",
+            "name": "search_documents",
+            "arguments": {
+              "query": "meal cap",
+              "k": 3
+            }
+          }
+        },
+        {
+          "seq": 3,
+          "event": "tool_started",
+          "decisions": 1,
+          "tools": 1,
+          "name": "search_documents",
+          "arguments": {
+            "query": "meal cap",
+            "k": 3
+          }
+        },
+        {
+          "seq": 4,
+          "event": "tool_transient_failure",
+          "decisions": 1,
+          "tools": 1,
+          "name": "search_documents"
+        },
+        {
+          "seq": 5,
+          "event": "tool_retry_scheduled",
+          "decisions": 1,
+          "tools": 1
+        },
+        {
+          "seq": 6,
+          "event": "tool_started",
+          "decisions": 1,
+          "tools": 2,
+          "name": "search_documents",
+          "arguments": {
+            "query": "meal cap",
+            "k": 3
+          }
+        },
+        {
+          "seq": 7,
+          "event": "tool_observed",
+          "decisions": 1,
+          "tools": 2,
+          "name": "search_documents",
+          "observation": {
+            "hits": [
+              {
+                "source_id": "A@v1:L1",
+                "preview": "cap 30000"
+              }
+            ]
+          }
+        },
+        {
+          "seq": 8,
+          "event": "planner_called",
+          "decisions": 2,
+          "tools": 2,
+          "prompt_sha256": "2c3dbf2b1755401d4fc029b416aa75dba6214eab54e9d1292e3424b60286e004"
+        },
+        {
+          "seq": 9,
+          "event": "action_selected",
+          "decisions": 2,
+          "tools": 2,
+          "action": {
+            "kind": "tool",
+            "name": "read_evidence",
+            "arguments": {
+              "source_id": "A@v1:L1"
+            }
+          }
+        },
+        {
+          "seq": 10,
+          "event": "tool_started",
+          "decisions": 2,
+          "tools": 3,
+          "name": "read_evidence",
+          "arguments": {
+            "source_id": "A@v1:L1"
+          }
+        },
+        {
+          "seq": 11,
+          "event": "tool_observed",
+          "decisions": 2,
+          "tools": 3,
+          "name": "read_evidence",
+          "observation": {
+            "source_id": "A@v1:L1",
+            "text": "cap 30000",
+            "source_locator": "sqlite:documents/A@v1:L1"
+          }
+        },
+        {
+          "seq": 12,
+          "event": "planner_called",
+          "decisions": 3,
+          "tools": 3,
+          "prompt_sha256": "14adce26be0eaa789636653802cb56aaff5469169b9fe85eb924ed5c2d553ec9"
+        },
+        {
+          "seq": 13,
+          "event": "action_selected",
+          "decisions": 3,
+          "tools": 3,
+          "action": {
+            "kind": "final",
+            "draft": {
+              "outcome": "answer",
+              "answer": "cap 30000",
+              "claims": [
+                {
+                  "text": "cap 30000",
+                  "source_id": "A@v1:L1",
+                  "quote": "cap 30000"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "seq": 14,
+          "event": "stopped",
+          "decisions": 3,
+          "tools": 3,
+          "reason": "final_review_required"
+        }
+      ],
+      "elapsed_seconds": 0.0003,
+      "limits": {
+        "max_decisions": 4,
+        "max_tools": 3,
+        "max_failures": 2,
+        "max_tool_retries": 1,
+        "elapsed_seconds": 180.0
+      },
+      "semantic_grounding_verified": false,
+      "external_effects_executed": false,
+      "tool_dispatches": 3,
+      "dispatched_tool_names": [
+        "search_documents",
+        "search_documents",
+        "read_evidence"
+      ],
+      "memory_notes_created": 0,
+      "deadline_mode": "between_calls_not_inflight_cancellation"
+    },
+    "A06": {
+      "status": "stopped",
+      "stop_reason": "repeated_failure",
+      "draft": null,
+      "reply": null,
+      "decisions": 2,
+      "tool_attempts": 2,
+      "tool_retries": 0,
+      "sources": {},
+      "trace": [
+        {
+          "seq": 1,
+          "event": "planner_called",
+          "decisions": 1,
+          "tools": 0,
+          "prompt_sha256": "ab1df0f846b2b6d294243c8843859fd1577b692addf310e2ee8f694be15c7e4c"
+        },
+        {
+          "seq": 2,
+          "event": "action_selected",
+          "decisions": 1,
+          "tools": 0,
+          "action": {
+            "kind": "tool",
+            "name": "never_exists",
+            "arguments": {}
+          }
+        },
+        {
+          "seq": 3,
+          "event": "tool_started",
+          "decisions": 1,
+          "tools": 1,
+          "name": "never_exists",
+          "arguments": {}
+        },
+        {
+          "seq": 4,
+          "event": "failure",
+          "decisions": 1,
+          "tools": 1,
+          "failure_id": "UNKNOWN_TOOL"
+        },
+        {
+          "seq": 5,
+          "event": "planner_called",
+          "decisions": 2,
+          "tools": 1,
+          "prompt_sha256": "e3d1add68a648c92b5307658f8dae7fb617245a50382b6a48e8999bb8d318f72"
+        },
+        {
+          "seq": 6,
+          "event": "action_selected",
+          "decisions": 2,
+          "tools": 1,
+          "action": {
+            "kind": "tool",
+            "name": "never_exists",
+            "arguments": {}
+          }
+        },
+        {
+          "seq": 7,
+          "event": "tool_started",
+          "decisions": 2,
+          "tools": 2,
+          "name": "never_exists",
+          "arguments": {}
+        },
+        {
+          "seq": 8,
+          "event": "failure",
+          "decisions": 2,
+          "tools": 2,
+          "failure_id": "UNKNOWN_TOOL"
+        },
+        {
+          "seq": 9,
+          "event": "stopped",
+          "decisions": 2,
+          "tools": 2,
+          "reason": "repeated_failure"
+        }
+      ],
+      "elapsed_seconds": 0.0001,
+      "limits": {
+        "max_decisions": 4,
+        "max_tools": 3,
+        "max_failures": 2,
+        "max_tool_retries": 1,
+        "elapsed_seconds": 180.0
+      },
+      "semantic_grounding_verified": false,
+      "external_effects_executed": false,
+      "tool_dispatches": 0,
+      "dispatched_tool_names": [],
+      "memory_notes_created": 0,
+      "deadline_mode": "between_calls_not_inflight_cancellation"
+    },
+    "protected_without_grant": {
+      "status": "stopped",
+      "stop_reason": "repeated_failure",
+      "draft": null,
+      "reply": null,
+      "decisions": 2,
+      "tool_attempts": 2,
+      "tool_retries": 0,
+      "sources": {},
+      "trace": [
+        {
+          "seq": 1,
+          "event": "planner_called",
+          "decisions": 1,
+          "tools": 0,
+          "prompt_sha256": "ab1df0f846b2b6d294243c8843859fd1577b692addf310e2ee8f694be15c7e4c"
+        },
+        {
+          "seq": 2,
+          "event": "action_selected",
+          "decisions": 1,
+          "tools": 0,
+          "action": {
+            "kind": "tool",
+            "name": "save_note",
+            "arguments": {
+              "text": "note"
+            }
+          }
+        },
+        {
+          "seq": 3,
+          "event": "tool_started",
+          "decisions": 1,
+          "tools": 1,
+          "name": "save_note",
+          "arguments": {
+            "text": "note"
+          }
+        },
+        {
+          "seq": 4,
+          "event": "failure",
+          "decisions": 1,
+          "tools": 1,
+          "failure_id": "APPROVAL_REQUIRED"
+        },
+        {
+          "seq": 5,
+          "event": "planner_called",
+          "decisions": 2,
+          "tools": 1,
+          "prompt_sha256": "5bee6cd696c7c545d788d8dbb319ca8a342f0b54fc331655da4b0805c8384d73"
+        },
+        {
+          "seq": 6,
+          "event": "action_selected",
+          "decisions": 2,
+          "tools": 1,
+          "action": {
+            "kind": "tool",
+            "name": "save_note",
+            "arguments": {
+              "text": "note"
+            }
+          }
+        },
+        {
+          "seq": 7,
+          "event": "tool_started",
+          "decisions": 2,
+          "tools": 2,
+          "name": "save_note",
+          "arguments": {
+            "text": "note"
+          }
+        },
+        {
+          "seq": 8,
+          "event": "failure",
+          "decisions": 2,
+          "tools": 2,
+          "failure_id": "APPROVAL_REQUIRED"
+        },
+        {
+          "seq": 9,
+          "event": "stopped",
+          "decisions": 2,
+          "tools": 2,
+          "reason": "repeated_failure"
+        }
+      ],
+      "elapsed_seconds": 0.0001,
+      "limits": {
+        "max_decisions": 4,
+        "max_tools": 3,
+        "max_failures": 2,
+        "max_tool_retries": 1,
+        "elapsed_seconds": 180.0
+      },
+      "semantic_grounding_verified": false,
+      "external_effects_executed": false,
+      "tool_dispatches": 0,
+      "dispatched_tool_names": [],
+      "memory_notes_created": 0,
+      "deadline_mode": "between_calls_not_inflight_cancellation"
+    },
+    "successful_repeat_cap": {
+      "status": "stopped",
+      "stop_reason": "tool_limit",
+      "draft": null,
+      "reply": null,
+      "decisions": 4,
+      "tool_attempts": 3,
+      "tool_retries": 0,
+      "sources": {},
+      "trace": [
+        {
+          "seq": 1,
+          "event": "planner_called",
+          "decisions": 1,
+          "tools": 0,
+          "prompt_sha256": "ab1df0f846b2b6d294243c8843859fd1577b692addf310e2ee8f694be15c7e4c"
+        },
+        {
+          "seq": 2,
+          "event": "action_selected",
+          "decisions": 1,
+          "tools": 0,
+          "action": {
+            "kind": "tool",
+            "name": "search_documents",
+            "arguments": {
+              "query": "meal cap",
+              "k": 3
+            }
+          }
+        },
+        {
+          "seq": 3,
+          "event": "tool_started",
+          "decisions": 1,
+          "tools": 1,
+          "name": "search_documents",
+          "arguments": {
+            "query": "meal cap",
+            "k": 3
+          }
+        },
+        {
+          "seq": 4,
+          "event": "tool_observed",
+          "decisions": 1,
+          "tools": 1,
+          "name": "search_documents",
+          "observation": {
+            "hits": [
+              {
+                "source_id": "A@v1:L1",
+                "preview": "cap 30000"
+              }
+            ]
+          }
+        },
+        {
+          "seq": 5,
+          "event": "planner_called",
+          "decisions": 2,
+          "tools": 1,
+          "prompt_sha256": "2c3dbf2b1755401d4fc029b416aa75dba6214eab54e9d1292e3424b60286e004"
+        },
+        {
+          "seq": 6,
+          "event": "action_selected",
+          "decisions": 2,
+          "tools": 1,
+          "action": {
+            "kind": "tool",
+            "name": "search_documents",
+            "arguments": {
+              "query": "meal cap",
+              "k": 3
+            }
+          }
+        },
+        {
+          "seq": 7,
+          "event": "tool_started",
+          "decisions": 2,
+          "tools": 2,
+          "name": "search_documents",
+          "arguments": {
+            "query": "meal cap",
+            "k": 3
+          }
+        },
+        {
+          "seq": 8,
+          "event": "tool_observed",
+          "decisions": 2,
+          "tools": 2,
+          "name": "search_documents",
+          "observation": {
+            "hits": [
+              {
+                "source_id": "A@v1:L1",
+                "preview": "cap 30000"
+              }
+            ]
+          }
+        },
+        {
+          "seq": 9,
+          "event": "planner_called",
+          "decisions": 3,
+          "tools": 2,
+          "prompt_sha256": "2c3dbf2b1755401d4fc029b416aa75dba6214eab54e9d1292e3424b60286e004"
+        },
+        {
+          "seq": 10,
+          "event": "action_selected",
+          "decisions": 3,
+          "tools": 2,
+          "action": {
+            "kind": "tool",
+            "name": "search_documents",
+            "arguments": {
+              "query": "meal cap",
+              "k": 3
+            }
+          }
+        },
+        {
+          "seq": 11,
+          "event": "tool_started",
+          "decisions": 3,
+          "tools": 3,
+          "name": "search_documents",
+          "arguments": {
+            "query": "meal cap",
+            "k": 3
+          }
+        },
+        {
+          "seq": 12,
+          "event": "tool_observed",
+          "decisions": 3,
+          "tools": 3,
+          "name": "search_documents",
+          "observation": {
+            "hits": [
+              {
+                "source_id": "A@v1:L1",
+                "preview": "cap 30000"
+              }
+            ]
+          }
+        },
+        {
+          "seq": 13,
+          "event": "planner_called",
+          "decisions": 4,
+          "tools": 3,
+          "prompt_sha256": "2c3dbf2b1755401d4fc029b416aa75dba6214eab54e9d1292e3424b60286e004"
+        },
+        {
+          "seq": 14,
+          "event": "action_selected",
+          "decisions": 4,
+          "tools": 3,
+          "action": {
+            "kind": "tool",
+            "name": "search_documents",
+            "arguments": {
+              "query": "meal cap",
+              "k": 3
+            }
+          }
+        },
+        {
+          "seq": 15,
+          "event": "stopped",
+          "decisions": 4,
+          "tools": 3,
+          "reason": "tool_limit"
+        }
+      ],
+      "elapsed_seconds": 0.0005,
+      "limits": {
+        "max_decisions": 4,
+        "max_tools": 3,
+        "max_failures": 2,
+        "max_tool_retries": 1,
+        "elapsed_seconds": 180.0
+      },
+      "semantic_grounding_verified": false,
+      "external_effects_executed": false,
+      "tool_dispatches": 3,
+      "dispatched_tool_names": [
+        "search_documents",
+        "search_documents",
+        "search_documents"
+      ],
+      "memory_notes_created": 0,
+      "deadline_mode": "between_calls_not_inflight_cancellation"
+    }
+  },
+  "approval_probe": {
+    "result": {
+      "status": "created_in_memory_only",
+      "note_number": 1
+    },
+    "replay_rejected": "APPROVAL_REQUIRED",
+    "note_count": 1,
+    "scope": "trusted run/argument-bound in-memory grant, no external write or durable authorization"
+  },
+  "framework": {
+    "tool_class": "langchain_core.tools.StructuredTool",
+    "search_result_equal": true,
+    "read_result": {
+      "source_id": "A@v1:L1",
+      "text": "cap 30000",
+      "source_locator": "sqlite:documents/A@v1:L1"
+    },
+    "extra_argument_rejection": "ValidationError",
+    "protected_tool_exported": false,
+    "input_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "query": {
+          "maxLength": 300,
+          "minLength": 1,
+          "title": "Query",
+          "type": "string"
+        },
+        "k": {
+          "default": 3,
+          "maximum": 3,
+          "minimum": 1,
+          "title": "K",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "query"
+      ],
+      "title": "SearchArgs",
+      "type": "object"
+    },
+    "tracing_enabled": false,
+    "full_framework_agent_executed": false,
+    "MCP_transport_executed": false
+  },
+  "actual_model_generations": 0,
+  "paid_api_calls": 0,
+  "guarded_requests_attempts": 0
+}

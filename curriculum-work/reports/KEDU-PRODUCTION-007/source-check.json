@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://reference.langchain.com/python/langchain-core/tools/structured/StructuredTool",
+    "final_url": "https://reference.langchain.com/python/langchain-core/tools/structured/StructuredTool",
+    "status": 200,
+    "chars": 338203
+  },
+  {
+    "url": "https://modelcontextprotocol.io/specification/latest/server/tools",
+    "final_url": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools",
+    "status": 200,
+    "chars": 501671
+  },
+  {
+    "installed_langchain_core": "1.7.3",
+    "from_function_signature": "(func: 'Callable[..., Any] | None' = None, coroutine: 'Callable[..., Awaitable[Any]] | None' = None, name: 'str | None' = None, description: 'str | None' = None, return_direct: 'bool' = False, args_schema: 'ArgsSchema | None' = None, infer_schema: 'bool' = True, *, response_format: \"Literal['content', 'content_and_artifact']\" = 'content', parse_docstring: 'bool' = False, error_on_invalid_docstring: 'bool' = False, **kwargs: 'Any') -> 'StructuredTool'"
+  }
+]

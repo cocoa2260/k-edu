@@ -1,4 +1,4 @@
-# 문서 답변 누적 실습 — Backend L0~L4
+# 문서 답변 누적 실습 — Backend L0~L5
 
 Day3 7~8교시의 코드와 CORS에서 출발해 L1 입력 준비, L2 Harness, L3 실제 Embedding·검색·Index를 같은 프로젝트에 추가했다. 기존 대화 API는 유지하고 L4 CLI에서 실제 검색·로컬 생성·출력 검사를 연결했다. 답변 품질은 채택 보류다. 처음 시작하는 학생은 [L0 본문](../../../lessons/baseline/lesson.md)을 읽는다.
 
@@ -53,3 +53,11 @@ POST /ai/prepare는 사례 ID와 조건으로 입력만 준비한다. 실제 생
 [L4 안내](../L4.md)는 같은 L3 CPU 환경에서 Qwen3-0.6B 가중치를 추가해 실제 RAG를 실행한다. 기존 웹 API Factory는 자동 전환하지 않으며 HFCpuProvider는 CLI에서 명시적으로 주입한다. 공통 Harness에 입력 준비·출력 계약·검사기를 주입하는 선택 인자를 추가했고 기존 L2 동작은 유지한다.
 
 구조·Source ID·부분 인용 검사는 의미적 근거 검증이 아니다. 실제 두 지시 버전 모두 서비스 채택을 보류했다. 사례별 결과는 [읽기용 검토본](../../../reports/KEDU-PRODUCTION-006/REVIEW.md)에 있다.
+
+## L5 확장
+
+[L5 안내](../L5.md)에서 별도 CPU 환경·LangChain Core 1.7.3과 같은 모델 캐시를 사용한다. 실제 모델 행동과 Registry의 이름/인수/권한·발견한 출처·종료 상한을 연결했다. StructuredTool 연결은 도구 API만 확인했으며 Framework Agent/MCP 실행은 아니다.
+
+HFCpuProvider의 신규 출력 상한을 선택 인자로 추가했다. 기본 512 Token은 유지하고 L5만 192 Token으로 실행한다. requirements-agent-tested.txt는 이 환경의 전체 스냅샷이며 기존 L3/L4 환경 파일은 보존한다. 실제 모델 과제 완료·답변 품질은 미통과다.
+
+현재 L5 모델 입력은 app/agent.py의 planner_prompt 함수가 구성한다. 같은 파일의 INSTRUCTIONS 상수는 준비 실행에서 사용한 과거 지시이며 현재 경로에서 사용하지 않는다.

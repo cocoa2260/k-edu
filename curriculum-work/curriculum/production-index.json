@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-006",
+  "current_batch": "KEDU-PRODUCTION-007",
   "units": [
     {
       "id": "K2-00.U01",
@@ -508,45 +508,49 @@
       "id": "K2-10.U01",
       "course": "K2-10",
       "title": "Agent·Workflow·Tool·MCP",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-007",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/single-agent/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "guided_actual_tool_dispatch_verified_task_completion_not_accepted",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-007/validation.json"
     },
     {
       "id": "K2-10.U02",
       "course": "K2-10",
       "title": "Tool Schema·Registry·검증",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-007",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/single-agent/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "guided_actual_tool_dispatch_verified_task_completion_not_accepted",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-007/validation.json"
     },
     {
       "id": "K2-10.U03",
       "course": "K2-10",
       "title": "State·Observation·종료",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-007",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/single-agent/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "guided_actual_tool_dispatch_verified_task_completion_not_accepted",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-007/validation.json"
     },
     {
       "id": "K2-10.U04",
       "course": "K2-10",
       "title": "Single-Agent 평가와 Framework 포팅",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-007",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/single-agent/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "StructuredTool_bridge_verified_full_framework_agent_pending",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-007/validation.json"
     },
     {
       "id": "K2-11.U01",
@@ -800,24 +804,23 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-007",
+    "id": "KEDU-PRODUCTION-008",
     "proposed_scope": [
-      "K2-10",
-      "L5"
+      "K2-11",
+      "L6"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "END_TO_END_EXECUTED_QUALITY_NOT_ACCEPTED",
+  "batch_status": "RUNTIME_AND_GUIDED_TOOL_DISPATCH_VERIFIED_TASK_QUALITY_NOT_ACCEPTED",
   "first_unfinished_gate": {
-    "id": "L5-TOOL-RUNTIME",
+    "id": "L6-ROLE-HANDOFF",
     "status": "not_started",
     "recommended_reasoning_effort": "high",
     "independent_pending": [
-      "L4 semantic quality not accepted",
-      "independent grading",
-      "L0 actual web API generation",
-      "L1 actual five-variant comparison",
+      "L5 reliable model task completion",
+      "L4 answer quality not accepted",
+      "Full framework/MCP integration",
       "classroom/UI"
     ]
   },
@@ -848,6 +851,12 @@
       "status": "END_TO_END_EXECUTED_QUALITY_NOT_ACCEPTED",
       "path": "curriculum-work/practice/document-assistant/milestones/L4.json",
       "generation_verified": true,
+      "quality_accepted": false
+    },
+    "L5": {
+      "status": "RUNTIME_AND_GUIDED_TOOL_DISPATCH_VERIFIED_TASK_QUALITY_NOT_ACCEPTED",
+      "path": "curriculum-work/practice/document-assistant/milestones/L5.json",
+      "model_tool_request_verified": true,
       "quality_accepted": false
     }
   }

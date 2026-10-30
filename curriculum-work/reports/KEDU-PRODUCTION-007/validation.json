@@ -1,0 +1,68 @@
+{
+  "task_id": "KEDU-PRODUCTION-007",
+  "observed_at_utc": "2026-10-30T18:40:00.603184+00:00",
+  "status": "RUNTIME_AND_GUIDED_TOOL_DISPATCH_VERIFIED_TASK_QUALITY_NOT_ACCEPTED",
+  "summary": {
+    "cases": 18,
+    "actual_decision_attempts": 60,
+    "actual_generations": 60,
+    "tool_attempts": 46,
+    "tool_dispatches": 46,
+    "dispatch_by_name": {
+      "search_documents": 42,
+      "read_evidence": 4
+    },
+    "termination_counts": {
+      "tool_limit": 14,
+      "repeated_failure": 2,
+      "input_rejected": 1,
+      "direct_response": 1
+    },
+    "grounded_drafts": 0,
+    "A05_injected_fault_encountered": true,
+    "private_source_observed": false,
+    "quality_accepted": false
+  },
+  "main_generations": 60,
+  "pilot_generations": 7,
+  "offline_replay_generations": 1,
+  "total_local_generations": 68,
+  "paid_api_calls": 0,
+  "verified": [
+    "model-generated tool request dispatched by trusted registry",
+    "same core 12 plus agent 6 preserved",
+    "strict action/tool schemas and unknown-name rejection",
+    "discovered-source and current-index checks",
+    "run/argument-bound in-memory single-use grant demonstration",
+    "no automatic protected-tool retry",
+    "run-global bounded decisions/tools/read retries",
+    "late model/tool result discarded at checks",
+    "real StructuredTool invoke contract with tracing disabled",
+    "scripted fault/approval results kept separate from actual model behavior"
+  ],
+  "observed_not_met": [
+    "actual model search-read-final task completion",
+    "L4 answer quality acceptance"
+  ],
+  "unverified": [
+    "independent instructor/student grading",
+    "full Framework Agent port",
+    "MCP transport/server/client",
+    "real user authentication and durable approval",
+    "hard in-flight deadline cancellation",
+    "classroom capacity, UI, GTX 1060 3GB, other OS"
+  ],
+  "semantics": "Quote existence is not claim entailment. No automatic factual accuracy score assigned.",
+  "framework": {
+    "package": "langchain-core",
+    "version": "1.7.3",
+    "scope": "StructuredTool bridge only",
+    "source": "https://reference.langchain.com/python/langchain-core/tools/structured/StructuredTool"
+  },
+  "MCP": {
+    "specification_checked": "2026-07-28",
+    "implemented": false,
+    "source": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools"
+  },
+  "reviewer": "same Work session; no independent reviewer"
+}

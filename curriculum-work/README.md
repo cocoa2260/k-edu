@@ -1,8 +1,8 @@
 # K-Edu 교육과정 개편 — 현재 위치와 읽을 파일
 
-**현재: RAG 4개 단원과 L4를 작성했다. 70개 중 28개 단원 자료 작성. 실제 검색·생성 경로는 실행했고 답변 품질은 채택 보류다.**
+**현재: Single-Agent 4개 단원·L5 Runtime과 실제 모델 도구 요청을 확인했다. 자료는 70개 중 32개 작성. 과제 완료·답변 품질은 채택 보류다.**
 
-[RAG 강의](lessons/rag/lesson.md) · [실제 사례 검토](reports/KEDU-PRODUCTION-006/REVIEW.md) · [L4 실습](practice/document-assistant/L4.md) · [검증 범위](reports/KEDU-PRODUCTION-006/RESULT.md)
+[Single-Agent 강의](lessons/single-agent/lesson.md) · [실제 선택 검토](reports/KEDU-PRODUCTION-007/REVIEW.md) · [L5 실습](practice/document-assistant/L5.md) · [검증 범위](reports/KEDU-PRODUCTION-007/RESULT.md)
 
 
 ## 전체 구성안
@@ -19,9 +19,9 @@
 | 2 | 결과를 보고 분석 방식 보완 | 완료 |
 | 3 | 전체 강의 비교·분석 | 결과 보존 |
 | 4 | 전체 목차·누적 실습 구성 결정 | v0.3을 첫 제작 묶음의 기준으로 사용 |
-| 5 | 확정한 강의·실습 제작 및 검증 | 28개 단원 자료·실제 RAG 실행. 답변 품질 보류, 다음 Single-Agent/L5 |
+| 5 | 확정한 강의·실습 제작 및 검증 | 32개 단원 자료·실제 Agent 요청/도구 실행. 과제 완료·품질 보류, 다음 역할 분리/L6 |
 
-구성안은 과목명·배치·범위의 추천이다. 기존 academy 원문·파일명은 유지한다. 새 강의와 누적 앱 L0~L4와 실제 검색·로컬 생성을 작성했다. RAG 답변 품질은 채택 보류이며 실제 훈련은 제작 전이다. 실제 모델·훈련·교육장 성능은 검증 게이트를 둔 후속 작업이다.
+구성안은 과목명·배치·범위의 추천이다. 기존 academy 원문·파일명은 유지한다. 새 강의와 누적 앱 L0~L5와 실제 검색·로컬 생성·도구 Runtime을 작성했다. RAG 답변 품질은 채택 보류이며 실제 훈련은 제작 전이다. 실제 모델·훈련·교육장 성능은 검증 게이트를 둔 후속 작업이다.
 
 ## 분석 근거와 과거 시범
 

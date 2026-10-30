@@ -1,0 +1,12 @@
+{
+  "command": "python -m pytest -q",
+  "observed_at_utc": "2026-10-30T18:40:00.603184+00:00",
+  "passed": 214,
+  "prior_tests": 184,
+  "new_tests": 30,
+  "exit_code": 0,
+  "stdout": "........................................................................ [ 33%]\n........................................................................ [ 67%]\n......................................................................   [100%]\n214 passed in 2.11s\n",
+  "stderr": "",
+  "seconds": 2.11,
+  "scope": "fixed boundary fixtures plus real StructuredTool API; model experiment is separate observed.json"
+}
