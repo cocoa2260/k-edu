@@ -66,6 +66,16 @@ class Contracts(unittest.TestCase):
         self.assertFalse(result["tokenizer_executed"])
         self.assertFalse(result["network_used"])
 
+    def test_missing_template_dependency_is_detected(self):
+        def version(package):
+            if package == "jinja2":
+                raise lab.importlib.metadata.PackageNotFoundError(package)
+            return lab.DEPENDENCIES[package]
+        with patch.object(lab.importlib.metadata, "version", side_effect=version):
+            status = lab.dependency_status()
+        self.assertFalse(status["jinja2"]["matches"])
+        self.assertIsNone(status["jinja2"]["installed"])
+
     def test_missing_setup_never_writes_success(self):
         with tempfile.TemporaryDirectory() as tmp, patch.object(lab, "load_real_tokenizer", side_effect=lab.SetupRequired("dependency missing")), redirect_stderr(StringIO()):
             out = Path(tmp) / "run"
@@ -86,6 +96,25 @@ class Contracts(unittest.TestCase):
     def test_missing_output_stops_before_loading(self):
         with patch.object(lab, "load_real_tokenizer", side_effect=AssertionError("must not load")), redirect_stderr(StringIO()):
             self.assertEqual(lab.main([]), 2)
+
+    def observed_qwen(self, max_length):
+        # Real recorded observation from this verification run, not a tokenizer stub.
+        import os
+        base = os.environ.get("KEDU_OBSERVATIONS", str(ROOT.parents[1] / "reports/KEDU-PRODUCTION-001/runtime"))
+        if not Path(base).is_dir():
+            self.skipTest("Set KEDU_OBSERVATIONS to the real Qwen observation directory")
+        return lab.read_json(Path(base) / ("qwen-01" if max_length == 8 else "qwen-length16-fixed") / "observations.json")
+
+    def test_real_observation_with_truncation(self):
+        self.assertEqual(lab.check_observation(self.observed_qwen(8)), [])
+
+    def test_real_observation_fitting_limit_is_valid(self):
+        self.assertEqual(lab.check_observation(self.observed_qwen(16)), [])
+
+    def test_corrupted_truncation_flag_is_rejected(self):
+        data = self.observed_qwen(16)
+        data["samples"][0]["was_truncated"] = True
+        self.assertTrue(any("Truncation behavior" in error for error in lab.check_observation(data)))
 
 
 if __name__ == "__main__":

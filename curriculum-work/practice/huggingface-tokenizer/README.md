@@ -4,7 +4,7 @@
 
 ## 준비 상태
 
-Python 3.12, 인터넷으로 준비한 Python 의존성, 선택한 리비전의 Tokenizer 파일이 필요하다. GPU·PyTorch·생성 모델 가중치는 이 실습의 필요 조건이 아니다. 직접 의존성 버전을 고정했지만 전체 전이 의존성 Lock이나 교육장 호환성 인증은 아니다. 실제 확인 결과는 [제작 기록](../../reports/KEDU-PRODUCTION-001/RESULT.md)을 확인한다.
+Python 3.12, 인터넷으로 준비한 Python 의존성, 선택한 리비전의 Tokenizer 파일이 필요하다. GPU·PyTorch·생성 모델 가중치는 이 실습의 필요 조건이 아니다. Linux x86_64 / Python 3.12.14에서 직접 의존성 설치와 실제 Qwen·Smol Tokenizer 실행을 검증했다. requirements-tested.txt에는 전체 설치 버전을 기록했다. 다른 운영체제와 교육장 호환성은 별도 확인이 필요하다. 실제 확인 결과는 [제작 기록](../../reports/KEDU-PRODUCTION-001/RESULT.md)을 확인한다.
 
 ## 실행 순서
 
@@ -54,6 +54,6 @@ runs는 실행할 때 생성한다. 이 폴더에 정상 결과 예시를 미리
 <details>
 <summary>개발자용 계약 검사</summary>
 
-저장소 루트에서 `python -m unittest discover -s curriculum-work/practice/huggingface-tokenizer/tests -v`를 실행한다. 이 검사는 고정 리비전 요구·입력 오류·의존성 미준비·기존 결과 덮어쓰기 방지를 확인한다. 실제 Tokenizer가 작동했다는 증거는 위의 관찰 명령 결과로 별도 확보한다.
+저장소 루트에서 `python -m unittest discover -s curriculum-work/practice/huggingface-tokenizer/tests -v`를 실행한다. 이 검사는 고정 리비전 요구·입력 오류·의존성 미준비·기존 결과 덮어쓰기 방지를 확인한다. 기록된 실제 관찰을 읽는 회귀 검사는 보고서의 runtime 폴더가 있으면 함께 실행한다. 실제 Tokenizer의 새 실행 증거는 위의 관찰 명령으로 별도 확보한다.
 
 </details>

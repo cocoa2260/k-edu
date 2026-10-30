@@ -1,0 +1,14 @@
+{
+  "command": [
+    "production-work/tokenizer-venv/bin/python",
+    "k-edu/curriculum-work/practice/huggingface-tokenizer/inspect_tokenizer.py",
+    "--output",
+    "production-work/observed/qwen-length16",
+    "--max-length",
+    "16"
+  ],
+  "exit_code": 1,
+  "elapsed_seconds": 1.745,
+  "stdout": "{\"status\": \"actual_tokenizer_observed\", \"checks_passed\": false, \"report\": \"production-work/observed/qwen-length16/observations.md\"}\n",
+  "stderr": "None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.\n"
+}

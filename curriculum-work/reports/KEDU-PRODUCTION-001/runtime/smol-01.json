@@ -1,0 +1,15 @@
+{
+  "command": [
+    "production-work/tokenizer-venv/bin/python",
+    "k-edu/curriculum-work/practice/huggingface-tokenizer/inspect_tokenizer.py",
+    "--output",
+    "production-work/observed/smol-01",
+    "--profile",
+    "smol",
+    "--allow-download"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 14.784,
+  "stdout": "{\"status\": \"actual_tokenizer_observed\", \"checks_passed\": true, \"report\": \"production-work/observed/smol-01/observations.md\"}\n",
+  "stderr": "None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.\n\nFetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]\nFetching 6 files:  17%|█▋        | 1/6 [00:06<00:34,  6.90s/it]\nFetching 6 files: 100%|██████████| 6/6 [00:06<00:00,  1.16s/it]\n"
+}

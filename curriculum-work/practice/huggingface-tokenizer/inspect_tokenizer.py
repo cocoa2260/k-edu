@@ -17,7 +17,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-DEPENDENCIES = {"transformers": "4.57.1", "tokenizers": "0.22.1", "huggingface-hub": "0.36.0"}
+DEPENDENCIES = {"transformers": "4.57.1", "tokenizers": "0.22.1", "huggingface-hub": "0.36.0", "jinja2": "3.1.6"}
 TOKENIZER_FILES = ["config.json", "tokenizer.json", "tokenizer_config.json", "special_tokens_map.json", "added_tokens.json", "vocab.json", "merges.txt", "chat_template.jinja"]
 
 
@@ -161,6 +161,9 @@ def check_observation(data: dict) -> list[str]:
             errors.append("Sample token/ID/piece lengths differ: " + row["id"])
         if row["truncated_count"] != len(row["truncated_ids"]) or row["truncated_count"] > data["max_length"]:
             errors.append("Truncation limit/count mismatch: " + row["id"])
+        expected_count = min(len(row["ids"]), data["max_length"])
+        if row["truncated_count"] != expected_count or row["was_truncated"] != (len(row["ids"]) > data["max_length"]):
+            errors.append("Truncation behavior differs from input length/limit: " + row["id"])
         if len(ids) != len(mask) or any(m not in (0, 1) for m in mask):
             errors.append("Invalid padding mask: " + row["id"])
         elif [x for x, m in zip(ids, mask) if m == 1] != row["ids"]:
@@ -169,8 +172,6 @@ def check_observation(data: dict) -> list[str]:
             errors.append("Masked padding is not the tokenizer's pad token: " + row["id"])
     if len(widths) > 1:
         errors.append("Padding did not produce a common batch width")
-    if not any(row["was_truncated"] for row in rows):
-        errors.append("No truncation was observed; lower --max-length or add a longer sample")
     if not data["chat"]["encode_without_added_specials_matches"]:
         errors.append("Chat template tokenization and rendered-text encoding disagree")
     return errors

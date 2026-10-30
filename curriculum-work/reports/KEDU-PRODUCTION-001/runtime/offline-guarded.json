@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "http_request_attempts": 0,
+  "offline_flags": true,
+  "scope": "Python requests blocked; not OS network isolation",
+  "stdout": "{\"status\": \"actual_tokenizer_observed\", \"checks_passed\": true, \"report\": \"production-work/observed/qwen-offline-guarded/observations.md\"}\n",
+  "stderr": "None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.\n"
+}
