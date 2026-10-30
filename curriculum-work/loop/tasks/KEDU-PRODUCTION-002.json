@@ -1,0 +1,33 @@
+{
+  "task_id": "KEDU-PRODUCTION-002",
+  "stage": 5,
+  "scope": [
+    "L0-BASELINE"
+  ],
+  "branch": "work/curriculum-production-001",
+  "design_commit": "3ba763f788530ee0a39dd8bf43c8eb89833258d4",
+  "input_commit": "f48ce98a6f1a94bafe5e39857000857a23f3bf04",
+  "recommended_reasoning_effort": "high",
+  "goals": [
+    "Distinguish Markdown code blocks from existing standalone app",
+    "Extract and trace source blocks into one cumulative backend",
+    "Freeze /ai/chat contract, environment and CORS",
+    "Run contract tests and real local HTTP demo; probe model readiness separately"
+  ],
+  "boundaries": {
+    "original_sources_modified": false,
+    "paid_api_calls": 0,
+    "real_generation_required_for_l0_contract_ready": false,
+    "ui_required_for_cli_baseline": false,
+    "new_70_unit_lessons_counted": 0
+  },
+  "outputs": [
+    "curriculum-work/practice/document-assistant/**",
+    "curriculum-work/lessons/baseline/lesson.md",
+    "curriculum-work/reports/KEDU-PRODUCTION-002/**",
+    "curriculum-work/curriculum/production-index.json",
+    "curriculum-work/PROGRESS.md",
+    "curriculum-work/README.md"
+  ],
+  "next_task": "KEDU-PRODUCTION-003: K2-04/K2-05 and L1 Prompt/Context material and fixtures"
+}

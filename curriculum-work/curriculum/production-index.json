@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-001",
+  "current_batch": "KEDU-PRODUCTION-002",
   "units": [
     {
       "id": "K2-00.U01",
@@ -788,30 +788,37 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-002",
+    "id": "KEDU-PRODUCTION-003",
     "proposed_scope": [
-      "L0",
       "K2-04",
       "K2-05",
-      "K2-06",
-      "L1",
-      "L2"
+      "L1"
     ],
     "status": "not_started",
-    "reason": "First build HF navigation/tokenizer literacy requested by user, then return to original first cumulative app batch."
+    "recommended_reasoning_effort": "high",
+    "reason": "L0 baseline is ready; author Prompt/Context lessons and shared fixtures before Harness L2."
   },
-  "batch_status": "RUNTIME_VERIFIED_CLASSROOM_PENDING",
+  "batch_status": "L0_CONTRACT_VERIFIED_GENERATION_PENDING",
   "first_unfinished_gate": {
-    "id": "L0-BASELINE",
+    "id": "L1-PROMPT-CONTEXT",
     "status": "not_started",
     "recommended_reasoning_effort": "high",
     "next_actions": [
-      "Inspect and freeze Phase1 Day3 Provider app entry, dependencies and input/output contract",
-      "Record real generation provider readiness separately from contract-only checks",
-      "Prepare K2-04~06 / L1~L2 as the next production batch"
+      "Author K2-04/K2-05 material and shared synthetic policy/question fixtures",
+      "Specify comparable baseline and Prompt/Context changes using the same app",
+      "Keep actual generation G-MODEL pending until a real model is validated"
     ],
-    "first_batch_remaining": [
-      "Classroom hardware and teaching-time/student trial validation"
+    "independent_pending_gates": [
+      "G-MODEL actual generation",
+      "G-UI browser/student classroom validation"
     ]
+  },
+  "milestones": {
+    "L0": {
+      "status": "contract_verified",
+      "path": "curriculum-work/practice/document-assistant/milestones/L0.json",
+      "generation_verified": false,
+      "ui_verified": false
+    }
   }
 }

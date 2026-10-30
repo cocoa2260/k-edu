@@ -1,0 +1,95 @@
+{
+  "task_id": "KEDU-PRODUCTION-002",
+  "phase": "L0",
+  "checked_at": "2026-10-30T16:14:25.213431+00:00",
+  "status": "L0_CONTRACT_VERIFIED_GENERATION_PENDING",
+  "python": "3.12.14",
+  "versions": {
+    "fastapi": "0.162.0",
+    "pydantic": "2.14.2",
+    "httpx": "0.28.1",
+    "uvicorn": "0.54.0",
+    "openai": "3.41.0",
+    "python-dotenv": "1.2.4",
+    "pytest": "9.2.0"
+  },
+  "source_blocks": 11,
+  "contract_tests": {
+    "passed": 30,
+    "failed": 0,
+    "scope": "Mock/in-process ASGI + adapter interface tests; real external HTTP is blocked during pytest"
+  },
+  "http_smoke": {
+    "scope": "real_loopback_http_contract_only",
+    "health": {
+      "status": "ok",
+      "provider": "contract-demo",
+      "model": "no-model-executed"
+    },
+    "success_status": 200,
+    "success_body": {
+      "provider": "contract-demo",
+      "model": "no-model-executed",
+      "answer": "CONTRACT DEMO ONLY: 기준 확인"
+    },
+    "invalid_status": 422,
+    "preflight_status": 200,
+    "model_generation_executed": false
+  },
+  "readiness": {
+    "scope": "local_ollama_inventory_only_no_generation",
+    "base_url": "http://localhost:11434",
+    "ollama_model_configured": false,
+    "openai_key_configured": false,
+    "openai_api_called": false,
+    "generation_executed": false,
+    "model_download_attempted": false,
+    "service_status": "connection_failed",
+    "gate": "G_MODEL_PENDING"
+  },
+  "real_generation_executed": false,
+  "ui_executed": false,
+  "model_download_attempted": false,
+  "paid_api_calls": 0,
+  "official_web_docs_fetch": "Attempted official search and page fetch failed in the session. Existing upstream code retained; installed Responses.create signature checked locally; live OpenAI/Ollama generation currentness remains unverified.",
+  "changes_from_source": [
+    "Apply Day3-08 CORS block to Day3-07 main",
+    "Use uvicorn --factory instead of module import constructing a provider",
+    "Remove test collection environment mutation; isolate each test and block real HTTP transport"
+  ],
+  "contract": {
+    "method": "POST",
+    "path": "/ai/chat",
+    "request_fields": [
+      "message"
+    ],
+    "input_length": [
+      1,
+      2000
+    ],
+    "blank": "reject; trim accepted text",
+    "extra_request_fields": "ignored by inherited Pydantic default; cannot change provider",
+    "success_fields": [
+      "provider",
+      "model",
+      "answer"
+    ],
+    "errors": {
+      "validation": 422,
+      "connection": 503,
+      "timeout": 504,
+      "upstream_or_format": 502
+    },
+    "provider_selection": "server environment at app creation, no fallback",
+    "health": "configuration only; does not generate",
+    "streaming": false,
+    "auth_implemented": false,
+    "cors_is_auth": false
+  },
+  "remaining": [
+    "G-MODEL actual model readiness/generation and classroom performance",
+    "G-UI React browser rendering and UI behavior",
+    "Original FastAPI lesson/version consistency outside this new app baseline"
+  ],
+  "runtime_environment_repair": "Installed httpx SOCKS support to use the inherited proxy; did not disable proxy or TLS verification."
+}

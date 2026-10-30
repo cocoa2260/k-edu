@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/workspace/scratch/2eedeaf0c30d/baseline-work/venv/bin/python",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "exit_code": 0,
+  "stdout": "..............................                                           [100%]\n30 passed in 1.12s\n",
+  "stderr": ""
+}

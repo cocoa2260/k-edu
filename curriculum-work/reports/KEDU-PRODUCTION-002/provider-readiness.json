@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/workspace/scratch/2eedeaf0c30d/baseline-work/venv/bin/python",
+    "-m",
+    "tools.check_readiness"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"scope\": \"local_ollama_inventory_only_no_generation\",\n  \"base_url\": \"http://localhost:11434\",\n  \"ollama_model_configured\": false,\n  \"openai_key_configured\": false,\n  \"openai_api_called\": false,\n  \"generation_executed\": false,\n  \"model_download_attempted\": false,\n  \"service_status\": \"connection_failed\",\n  \"gate\": \"G_MODEL_PENDING\"\n}\n",
+  "stderr": ""
+}

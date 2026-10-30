@@ -1,6 +1,6 @@
 # 5단계 제작 현황과 이어서 할 일
 
-**현재: 첫 묶음의 3개 단원 자료와 Linux CPU의 실제 Tokenizer 검증을 마쳤다. 전체 70개 단원 제작은 진행 중이다.**
+**현재: Hugging Face 3개 단원·실제 Tokenizer 검증에 이어 L0 기준 Backend와 계약 검증을 마쳤다. 전체 70개 단원 제작은 진행 중이다.**
 
 먼저 볼 강의는 **[Hugging Face 첫 방문에서 모델 입력 확인까지](lessons/huggingface/README.md)** 한 개다. 설명·실제 화면·활동·명령·확인 질문이 이어져 있다. 실행 파일과 강사용 자료는 필요할 때 해당 본문에서 연다.
 
@@ -8,10 +8,10 @@
 |---|---|
 | 기준 구성안 | v0.3 · 3ba763f788530ee0a39dd8bf43c8eb89833258d4 |
 | 작업 브랜치 | work/curriculum-production-001 |
-| 이번 묶음 | PRE-HF 및 K2-03.U05~07: 첫 방문·Model Card·Tokenizer |
+| 이번 묶음 | KEDU-PRODUCTION-002 / L0 기준 Backend·환경·API 계약 |
 | 자료 작성 | 70개 학습 단위 중 3개. PRE-HF는 같은 자료의 첫 방문 경로로 중복 집계하지 않음 |
 | 검토 | 같은 작업 세션에서 구조·학습목표·활동·오류 경로 검토. 독립 교육 평가·학생 수업 평가는 미실시 |
-| 코드 검사 | 입력·준비 미완료·기존 결과 보호 계약·실제 관찰 회귀 테스트 17개 통과 |
+| 코드 검사 | Tokenizer 계약·회귀 17개 통과. L0 계약 30개와 로컬 HTTP 서버 왕복 통과 |
 | 실제 Tokenizer 실행 | Linux CPU에서 Qwen·캐시 재실행·길이 16·Smol 실제 관찰 통과. 오프라인 재실행 HTTP 시도 0회 |
 | 실제 모델 생성·훈련 | 이번 입문 묶음에서 미수행. 후속 단계에서 별도 검증 |
 | 나머지 67개 학습 단위 | 제작 전 |
@@ -22,13 +22,15 @@
 
 이 안내는 설정 변경을 수행했다는 뜻이 아니다. 실제 추론 설정은 사용자가 선택한다. 강도 안내만을 이유로 매 작업마다 승인 질문을 반복하지 않는다. 일반적인 작업 묶음은 이미 정한 강도와 범위 안에서 계속 진행하며, 상위 강도 적용이 꼭 필요한 작업은 필요한 이유와 다음 행동을 명확히 알린다.
 
-**바로 다음 작업:** L0-BASELINE — 기존 Phase1 Day3 앱의 Provider·환경·입출력 계약을 확인하고 K2-04~06 / L1~L2 제작 기준을 고정한다. **추천: High.** 기준 충돌이나 복잡한 구조 문제가 나오면 상향 이유를 알린다.
+**바로 다음 작업:** K2-04/K2-05와 L1의 Prompt·Context 학습자료·공통 규정/질문·평가 기준 제작. **추천: High.** 개념 충돌·복잡한 설계 문제가 확인되면 상향 이유를 알린다.
 
 ## 다음에 바로 할 일
 
-첫 미완료 제작 항목은 **L0-BASELINE**이다. 기존 Day3 앱의 실제 시작점과 의존성·Provider·입출력 계약을 확인한 뒤, 같은 앱에서 Prompt·Context → Harness·Loop를 추가한다. 확인한 사실과 실제 생성 모델 연결의 미확인을 나눠 기록한다.
+첫 제작 항목은 **L1-PROMPT-CONTEXT / KEDU-PRODUCTION-003**이다. [L0 기준 앱](practice/document-assistant/README.md)의 환경·Provider·/ai/chat 계약을 이어받아 같은 규정/질문에서 Prompt·Context 변경을 비교하도록 제작한다. 이후 K2-06/L2에서 Harness·실패 검증·상한을 연결한다.
 
-Tokenizer 검증은 2026-10-31에 실제 수행했다. 격리 Python 환경의 설치·의존성 검사, 두 고정 모델 Tokenizer, 길이 8/16, 캐시 재현을 확인했다. Jinja2 누락과 ‘잘림이 없으면 실패’였던 검사 조건을 수정했다. 테스트는 17개 통과했고 Windows/Mac·학생 PC·수업 시간은 아직 미검증이다. [사람이 읽는 실제 결과](reports/KEDU-PRODUCTION-001/RESULT.md)와 [설치 버전 스냅샷](practice/huggingface-tokenizer/requirements-tested.txt)을 참고한다.
+L0은 원문 Markdown의 11개 코드 블록을 실제 파일로 옮기고 CORS를 합쳤다. Import 때 앱을 생성하던 부작용은 --factory 실행으로 보완했다. 원문은 보존했다. 계약 테스트 30개·실제 로컬 HTTP 데모·의존성 검사를 통과했다. 로컬 Ollama는 연결 실패·모델 미설정으로 G-MODEL이 남아 있고 React 브라우저 검증도 미실시다. [L0 강의 본문](lessons/baseline/lesson.md), [검증 결과](reports/KEDU-PRODUCTION-002/RESULT.md), [기준 Manifest](practice/document-assistant/milestones/L0.json)를 참고한다.
+
+Tokenizer 검증은 이전 묶음의 [실제 결과](reports/KEDU-PRODUCTION-001/RESULT.md)에 보존했다. 이번 L0 안내를 70개 단원에 추가하지 않아 작성 단원 수는 3개로 유지한다.
 
 ## 중단 후 재개 방법
 
@@ -41,6 +43,6 @@ Tokenizer 검증은 2026-10-31에 실제 수행했다. 격리 Python 환경의 �
 
 ## 그다음 제작 묶음
 
-이번 입문 자료를 재사용하며 L0 기준 앱·환경·Provider 계약 확인 뒤 K2-04~06 / L1~L2를 만든다. 이후 L3/L4 → L5/L6, 별도 L7 훈련, L8/L9 문서 확장을 이어간다. 현재 모델 생성 환경·훈련 장비·총 시수·학생 수업 평가는 미확정이다.
+이번 입문·L0 기준 앱을 재사용하며 K2-04~06 / L1~L2를 만든다. 이후 L3/L4 → L5/L6, 별도 L7 훈련, L8/L9 문서 확장을 이어간다. 현재 모델 생성 환경·훈련 장비·총 시수·학생 수업 평가는 미확정이다.
 
 [이번 묶음의 제작·검증 결과](reports/KEDU-PRODUCTION-001/RESULT.md)에는 실제 명령과 한계가 있다. 사람이 전체 운영 JSON을 읽어야 진행 상황을 이해하는 구조로 만들지 않았다.

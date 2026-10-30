@@ -1,0 +1,59 @@
+{
+  "stage": "L0",
+  "status": "CONTRACT_BASELINE_READY",
+  "source_commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+  "production_parent_commit": "f48ce98a6f1a94bafe5e39857000857a23f3bf04",
+  "source_map": "curriculum-work/practice/document-assistant/baseline-source-map.json",
+  "contract": {
+    "method": "POST",
+    "path": "/ai/chat",
+    "request_fields": [
+      "message"
+    ],
+    "input_length": [
+      1,
+      2000
+    ],
+    "blank": "reject; trim accepted text",
+    "extra_request_fields": "ignored by inherited Pydantic default; cannot change provider",
+    "success_fields": [
+      "provider",
+      "model",
+      "answer"
+    ],
+    "errors": {
+      "validation": 422,
+      "connection": 503,
+      "timeout": 504,
+      "upstream_or_format": 502
+    },
+    "provider_selection": "server environment at app creation, no fallback",
+    "health": "configuration only; does not generate",
+    "streaming": false,
+    "auth_implemented": false,
+    "cors_is_auth": false
+  },
+  "versions": {
+    "fastapi": "0.162.0",
+    "pydantic": "2.14.2",
+    "httpx": "0.28.1",
+    "uvicorn": "0.54.0",
+    "openai": "3.41.0",
+    "python-dotenv": "1.2.4",
+    "pytest": "9.2.0"
+  },
+  "validation": "curriculum-work/reports/KEDU-PRODUCTION-002/validation.json",
+  "contract_tests_passed": 30,
+  "real_loopback_contract_http_verified": true,
+  "model_generation_verified": false,
+  "ui_verified": false,
+  "student_prerequisites_verified": false,
+  "source_files_unchanged": true,
+  "first_lesson_unit_count_added": 0,
+  "next_stage": "L1",
+  "pending_gates": [
+    "G-MODEL actual generation",
+    "G-UI actual React/browser; diagnostic only at L0",
+    "Classroom Python/API prerequisite checks"
+  ]
+}

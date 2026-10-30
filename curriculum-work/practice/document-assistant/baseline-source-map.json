@@ -1,0 +1,140 @@
+{
+  "source_commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+  "phase": "L0",
+  "original_sources_modified": false,
+  "entries": [
+    {
+      "target": "curriculum-work/practice/document-assistant/backend/app/providers/base.py",
+      "source": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day3/Day3_07_AI_Provider_추상화_OpenAI와_Ollama_FastAPI_통합_실습_v0.2.md",
+      "source_blob_sha": "fdcedebd168d470eecf621b952f8b7ce0898152a",
+      "source_lines": [
+        179,
+        192
+      ],
+      "target_sha256_at_extraction": "58dc67474ab1159d9537bf58abd657abf264019f7c2affae711f4c92188863ce",
+      "adaptation": "Exact executable block extracted from the lesson",
+      "target_sha256": "58dc67474ab1159d9537bf58abd657abf264019f7c2affae711f4c92188863ce"
+    },
+    {
+      "target": "curriculum-work/practice/document-assistant/backend/app/providers/errors.py",
+      "source": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day3/Day3_07_AI_Provider_추상화_OpenAI와_Ollama_FastAPI_통합_실습_v0.2.md",
+      "source_blob_sha": "fdcedebd168d470eecf621b952f8b7ce0898152a",
+      "source_lines": [
+        212,
+        229
+      ],
+      "target_sha256_at_extraction": "b0c1cec756205f4fd6cd66ef4e472e4580bb2d06bdcd95f43eaf860c5e9bb66a",
+      "adaptation": "Exact executable block extracted from the lesson",
+      "target_sha256": "b0c1cec756205f4fd6cd66ef4e472e4580bb2d06bdcd95f43eaf860c5e9bb66a"
+    },
+    {
+      "target": "curriculum-work/practice/document-assistant/backend/app/config.py",
+      "source": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day3/Day3_07_AI_Provider_추상화_OpenAI와_Ollama_FastAPI_통합_실습_v0.2.md",
+      "source_blob_sha": "fdcedebd168d470eecf621b952f8b7ce0898152a",
+      "source_lines": [
+        239,
+        251
+      ],
+      "target_sha256_at_extraction": "4fbfdc6045e8083b711e4fe0a6dad016df195bdf0de2966fe6b7eb664dc62396",
+      "adaptation": "Exact executable block extracted from the lesson",
+      "target_sha256": "4fbfdc6045e8083b711e4fe0a6dad016df195bdf0de2966fe6b7eb664dc62396"
+    },
+    {
+      "target": "curriculum-work/practice/document-assistant/backend/app/providers/ollama_provider.py",
+      "source": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day3/Day3_07_AI_Provider_추상화_OpenAI와_Ollama_FastAPI_통합_실습_v0.2.md",
+      "source_blob_sha": "fdcedebd168d470eecf621b952f8b7ce0898152a",
+      "source_lines": [
+        265,
+        321
+      ],
+      "target_sha256_at_extraction": "2e2d8d2ebc94128de2f23b457635ca20da637e446ef29e03ea66c7b3acfc7fd8",
+      "adaptation": "Exact executable block extracted from the lesson",
+      "target_sha256": "2e2d8d2ebc94128de2f23b457635ca20da637e446ef29e03ea66c7b3acfc7fd8"
+    },
+    {
+      "target": "curriculum-work/practice/document-assistant/backend/app/providers/openai_provider.py",
+      "source": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day3/Day3_07_AI_Provider_추상화_OpenAI와_Ollama_FastAPI_통합_실습_v0.2.md",
+      "source_blob_sha": "fdcedebd168d470eecf621b952f8b7ce0898152a",
+      "source_lines": [
+        333,
+        384
+      ],
+      "target_sha256_at_extraction": "71de928fac848f31aef5185e95b1ad93daba79eef71731d51a88724204a011cc",
+      "adaptation": "Exact executable block extracted from the lesson",
+      "target_sha256": "71de928fac848f31aef5185e95b1ad93daba79eef71731d51a88724204a011cc"
+    },
+    {
+      "target": "curriculum-work/practice/document-assistant/backend/app/providers/factory.py",
+      "source": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day3/Day3_07_AI_Provider_추상화_OpenAI와_Ollama_FastAPI_통합_실습_v0.2.md",
+      "source_blob_sha": "fdcedebd168d470eecf621b952f8b7ce0898152a",
+      "source_lines": [
+        396,
+        415
+      ],
+      "target_sha256_at_extraction": "ec1ea8f831261b75f11229451a227ab4bacd2081cb1d42d26178b5e8cb1f5bdc",
+      "adaptation": "Exact executable block extracted from the lesson",
+      "target_sha256": "ec1ea8f831261b75f11229451a227ab4bacd2081cb1d42d26178b5e8cb1f5bdc"
+    },
+    {
+      "target": "curriculum-work/practice/document-assistant/backend/app/service.py",
+      "source": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day3/Day3_07_AI_Provider_추상화_OpenAI와_Ollama_FastAPI_통합_실습_v0.2.md",
+      "source_blob_sha": "fdcedebd168d470eecf621b952f8b7ce0898152a",
+      "source_lines": [
+        431,
+        452
+      ],
+      "target_sha256_at_extraction": "2959c0e51e8074327456508673af4c52298f984b01348cb14192ae4d26395a3e",
+      "adaptation": "Exact executable block extracted from the lesson",
+      "target_sha256": "2959c0e51e8074327456508673af4c52298f984b01348cb14192ae4d26395a3e"
+    },
+    {
+      "target": "curriculum-work/practice/document-assistant/backend/app/schemas.py",
+      "source": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day3/Day3_07_AI_Provider_추상화_OpenAI와_Ollama_FastAPI_통합_실습_v0.2.md",
+      "source_blob_sha": "fdcedebd168d470eecf621b952f8b7ce0898152a",
+      "source_lines": [
+        464,
+        481
+      ],
+      "target_sha256_at_extraction": "8ccba60ce2a8588334137d5a111495d42da8364909132abe2aa9969fa31d7ae5",
+      "adaptation": "Exact executable block extracted from the lesson",
+      "target_sha256": "8ccba60ce2a8588334137d5a111495d42da8364909132abe2aa9969fa31d7ae5"
+    },
+    {
+      "target": "curriculum-work/practice/document-assistant/backend/tests/test_provider.py",
+      "source": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day3/Day3_07_AI_Provider_추상화_OpenAI와_Ollama_FastAPI_통합_실습_v0.2.md",
+      "source_blob_sha": "fdcedebd168d470eecf621b952f8b7ce0898152a",
+      "source_lines": [
+        591,
+        723
+      ],
+      "target_sha256_at_extraction": "c9e438de9da35454d9afd541dda823a5e11d7fddd6133380cf1b3f538f469de4",
+      "adaptation": "Exact executable block extracted from the lesson",
+      "target_sha256": "64db74f23223e153b9229257ff9a98a86cdd6f01119124eae0ed727eda6b92d3"
+    },
+    {
+      "target": "curriculum-work/practice/document-assistant/backend/app/main.py",
+      "source": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day3/Day3_07_AI_Provider_추상화_OpenAI와_Ollama_FastAPI_통합_실습_v0.2.md",
+      "source_blob_sha": "fdcedebd168d470eecf621b952f8b7ce0898152a",
+      "source_lines": [
+        495,
+        543
+      ],
+      "target_sha256_at_extraction": "092f31c0143d04c589871c002e52dcccb4a970bf2f2aa9cb2193f4f91d30a610",
+      "adaptation": "Combine Day3-08 CORS block (185-200); remove import-time app construction; use uvicorn factory. HTTP fields/errors unchanged.",
+      "target_sha256": "092f31c0143d04c589871c002e52dcccb4a970bf2f2aa9cb2193f4f91d30a610"
+    },
+    {
+      "target": "curriculum-work/practice/document-assistant/backend/tests/test_frontend_contract.py",
+      "source": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day3/Day3_08_React_FastAPI_AI_Provider_Model_최종_통합_실습_v0.2.md",
+      "source_blob_sha": "56d35f7ccd33357341fe03dca44348968bb8e736",
+      "source_lines": [
+        762,
+        817
+      ],
+      "target_sha256_at_extraction": "dd9ad8bd7e13ac9d2186a1984469da275cdf9586f774cb9a58517343f33cc36b",
+      "adaptation": "Exact executable block extracted from the lesson",
+      "target_sha256": "927bebb1ec2a34bc813bd803e40f440ddc501b6abef1b2f478688994429909f8"
+    }
+  ],
+  "test_adaptation": "Remove module-collection environment mutation; app import no longer creates a provider. Other executable provider/schema/service blocks are preserved."
+}
