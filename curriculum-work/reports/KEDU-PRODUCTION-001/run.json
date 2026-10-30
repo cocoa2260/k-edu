@@ -28,8 +28,15 @@
   "network_download_attempted": false,
   "next_gate": "HF-TOKENIZER-ACTUAL",
   "publication": {
-    "state": "prepared",
-    "branch": "work/curriculum-production-001"
+    "state": "published",
+    "branch": "work/curriculum-production-001",
+    "content_commit": "36ec20c69b24b9ba4984bffd6c2d31bcf9b80040",
+    "verified_at": "2026-10-30T13:36:35.943Z",
+    "all_20_blobs_verified": true,
+    "protected_academy_analysis_design_unchanged": true,
+    "scope": "Compared full tree with the pinned design base; 20 allowed file changes only. Actual tokenizer execution remains pending.",
+    "reader_entry": "curriculum-work/lessons/huggingface/README.md",
+    "resume_entry": "curriculum-work/PROGRESS.md"
   },
   "checkpoint_updated_at": "2026-10-30T13:35:06.863995+00:00",
   "validation_summary": {
