@@ -1,0 +1,48 @@
+{
+  "task_id": "KEDU-PRODUCTION-001",
+  "stage": 5,
+  "scope": [
+    "PRE-HF",
+    "K2-03.U05",
+    "K2-03.U06",
+    "K2-03.U07"
+  ],
+  "design_commit": "3ba763f788530ee0a39dd8bf43c8eb89833258d4",
+  "source_commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+  "branch": "work/curriculum-production-001",
+  "goals": [
+    "Novice-facing illustrated Hub/model-card guide",
+    "Executable CPU tokenizer inspection; no model-weight loading or paid inference",
+    "Learner worksheet, instructor criteria and honest validation evidence",
+    "70-unit progress and explicit resumable checkpoint"
+  ],
+  "protected": [
+    "academy/**",
+    "curriculum-work/reports/KEDU-ANALYSIS-001/**",
+    "curriculum-work/reports/KEDU-DESIGN-001/**",
+    "curriculum-work/reports/KEDU-PILOT-001/**"
+  ],
+  "outputs": [
+    "curriculum-work/lessons/huggingface/**",
+    "curriculum-work/practice/huggingface-tokenizer/**",
+    "curriculum-work/curriculum/production-index.json",
+    "curriculum-work/PROGRESS.md",
+    "curriculum-work/reports/KEDU-PRODUCTION-001/**",
+    "curriculum-work/README.md"
+  ],
+  "done_definition": {
+    "material": "Objectives, explained screens/actions, exercise and grading evidence cover the three units",
+    "runtime": "Actual locked tokenizer runs and offline replay; static or stub tests alone do not meet this criterion",
+    "teaching": "Same-session review separate from classroom trial",
+    "report": "Show partial gates honestly, commit all files and exact next action before stopping"
+  },
+  "execution_constraints": {
+    "no_paid_inference": true,
+    "no_weight_download": true,
+    "no_fake_tokenizer_success": true,
+    "classroom_hardware_unverified": true,
+    "automatic_token_quota_reading_available": false,
+    "user_messages_sent": false
+  },
+  "checkpoint_policy": "Commit coherent checkpoints to the dedicated branch. On resume read PROGRESS.md and production-index.json, verify branch head/design and continue the first unfinished gate; do not reanalyse all academy files."
+}
