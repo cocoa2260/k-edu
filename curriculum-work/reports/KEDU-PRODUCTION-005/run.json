@@ -3,7 +3,7 @@
   "recorded_at_utc": "2026-10-30T17:45:38.449021+00:00",
   "branch": "work/curriculum-production-001",
   "parent_commit": "e521b2b17b2f777926b9e985ce4af74c00263ba1",
-  "status": "LOCAL_VERIFIED_PUBLICATION_PREPARED",
+  "status": "PUBLISHED_VERIFIED_REAL_EMBEDDING_INDEX_GENERATION_PENDING",
   "recommended_reasoning_effort": "high",
   "new_units_authored": 8,
   "total_authored_units": 24,
@@ -55,7 +55,13 @@
   ],
   "next_task": "KEDU-PRODUCTION-006 K2-09/L4",
   "publication": {
-    "status": "prepared",
-    "commit": null
+    "status": "verified",
+    "content_commit": "a7444d0a14544cc25785db3ffffd3deb29af9374",
+    "tree_sha": "6b74997e765d04db3b69093e2b50345f6f964ae3",
+    "uploaded_files": 27,
+    "all_uploaded_blob_hashes_match": true,
+    "all_other_original_files_preserved": true,
+    "branch_head_checked": true,
+    "note": "This metadata is saved in a follow-up commit; content_commit identifies verified lessons, code, and observations."
   }
 }
