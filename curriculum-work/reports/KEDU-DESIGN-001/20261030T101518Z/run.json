@@ -235,11 +235,11 @@
   "approved_curriculum": false,
   "lesson_files_modified": false,
   "actual_model_or_training_executed": false,
-  "report_sha256": "f60398082955afe28fb58011470a690bc1780567ee0a80603476db9eb683629b",
+  "report_sha256": "7d4cf159c531b74c6feb0d90d8d4fd71161894f36208c76953a8c7a20d12bda7",
   "counts": {
     "orientation_blocks": 1,
     "teaching_courses": 14,
-    "learning_units": 63,
+    "learning_units": 70,
     "practice_stages": 10,
     "preserved_outcomes": 25,
     "source_mappings": 42,
@@ -258,6 +258,12 @@
         "LoRA/QLoRA explicit outcomes"
       ],
       "status": "design_updated_execution_pending"
+    },
+    {
+      "revision": "v0.3",
+      "user_agreement": "Accepted eight-part expansion and requested novice Hugging Face guidance with screens plus PEFT/library orientation.",
+      "status": "design_updated_two_screen_samples_no_model_execution",
+      "new_unit_count": 70
     }
   ],
   "previous_publication": {
@@ -273,7 +279,6 @@
   "publication": {
     "target_branch": "work/curriculum-design-001",
     "state": "prepared_for_publication",
-    "base_commit": "a24c79163ff36b44643011664d85db0170b935d9",
-    "verification_scope": "Previous publication remains recorded separately; this revision must be verified after upload."
+    "base_commit": "42a94694fa13deab8c0549a27f11ccc5b0a8ae77"
   }
 }

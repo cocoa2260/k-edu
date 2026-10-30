@@ -2,7 +2,7 @@
   "task_id": "KEDU-DESIGN-001",
   "result": "PROPOSED_READY_FOR_REVIEW",
   "automatic_final": {
-    "checked_at": "2026-10-30T11:16:13.775250+00:00",
+    "checked_at": "2026-10-30T12:55:02.708344+00:00",
     "passed": true,
     "checks": [
       {
@@ -15,7 +15,7 @@
         "id": "D02",
         "status": "pass",
         "errors": [],
-        "scope": "15 proposed blocks, 63 units, 42 primary mappings, 33 QA dispositions and 35 finding dispositions; not a content-quality score."
+        "scope": "15 proposed blocks, 70 units, 42 primary mappings, 33 QA dispositions and 35 finding dispositions; not a content-quality score."
       },
       {
         "id": "D03",
@@ -354,10 +354,11 @@
   ],
   "verification_limits": "Checks establish internal design/source/graph/contract/claim consistency, not implementation, real-model quality, training feasibility, classroom timing or user approval.",
   "scope_extension_review": {
-    "revision": "v0.2",
+    "revision": "v0.3",
     "static_passed": true,
     "controls_detected": 5,
-    "semantic_review": "Model-selection evidence, dataset provenance/group splitting, train-only reviewed augmentation, unchanged held-out comparison, and explicit LoRA/QLoRA outcomes aligned across human plan and structured requirements. Same-session review; not independent.",
+    "semantic_review": "Same-session review: first Hub guidance precedes first model download; K2-03 has separate exploration/card/tokenizer units; K2-12 eight distinct units; LoRA training retained; QLoRA and one optional IA3/DoRA comparison gated; 70 logical units and preserved outcomes remapped; example screenshots are actual UI samples not full lecture or runtime proof.",
+    "independent": false,
     "execution_verified": false,
     "hours_reestimated": false
   }

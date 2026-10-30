@@ -6,9 +6,9 @@
 
 **[전체 목차와 누적 실습 구성안 — CURRICULUM_PLAN.md](reports/KEDU-DESIGN-001/20261030T101518Z/CURRICULUM_PLAN.md)**
 
-먼저 2번 목차표와 3번 누적 실습표를 보면 된다. 상세 단원·원문 이동·역할/상한·평가·제작 조건은 같은 문서의 접힌 부록에 있다. 실행 코드나 JSON 예시를 본문에 넣지 않았다.
+이번 보완은 구성안 상단의 Hugging Face 첫 방문·실제 화면 예시·PEFT 학습 깊이 표에서 볼 수 있다. 전체는 2번 목차표와 3번 누적 실습표를 보면 된다. 상세 단원·원문 이동·역할/상한·평가·제작 조건은 같은 문서의 접힌 부록에 있다. 실행 코드나 JSON 예시를 본문에 넣지 않았다.
 
-추천은 Phase1 24교시 기반 유지, Phase2 본과목 14개와 시작 안내, 같은 앱의 Prompt·Context → Harness·Loop → 검색·RAG → Single-Agent → Multi-Agent 확장이다. 실제 Fine-tuning·Adapter Reload는 별도 실험, OCR·다중 문서 형식·보고서는 확장 경로로 연결했다.
+추천은 Phase1 24교시 기반 유지, Phase2 본과목 14개와 시작 안내, 70개 학습 단위(시간 수 아님), 같은 앱의 Prompt·Context → Harness·Loop → 검색·RAG → Single-Agent → Multi-Agent 확장이다. 실제 Fine-tuning·Adapter Reload는 별도 실험, OCR·다중 문서 형식·보고서는 확장 경로로 연결했다.
 
 | 순서 | 하는 일 | 현재 상태 |
 |---|---|---|
