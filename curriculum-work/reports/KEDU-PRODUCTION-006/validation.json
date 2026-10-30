@@ -1,0 +1,52 @@
+{
+  "task_id": "KEDU-PRODUCTION-006",
+  "observed_at_utc": "2026-10-30T18:06:09.023199+00:00",
+  "status": "END_TO_END_EXECUTED_QUALITY_NOT_ACCEPTED",
+  "actual_generations": 31,
+  "main_and_comparison_generations": 29,
+  "offline_replay_generations": 2,
+  "paid_api_calls": 0,
+  "runtime_verified": [
+    "real E5 retrieval and real Qwen CPU generation",
+    "same 12 cases and two controlled comparisons per version",
+    "L2 shared retry/repair/call caps retained",
+    "actual C01 format repair then success",
+    "actual C03/C04 repeated output failures stopped without draft",
+    "citation ID and exact-substring quote checks",
+    "clickable same-run source snapshots",
+    "no restricted or old source in Context",
+    "C10 rejected before generation",
+    "C01 cached replay equal with zero guarded HTTP attempts"
+  ],
+  "quality": {
+    "accepted": false,
+    "review": "evaluation.json",
+    "reviewer": "same Work session, not independent",
+    "factual_strict_pass": {
+      "v1": 0,
+      "v2": 0
+    },
+    "factual_total": 6,
+    "boundary_strict_pass": {
+      "v1": 3,
+      "v2": 1
+    },
+    "boundary_total": 6
+  },
+  "unverified": [
+    "independent teacher/student grading",
+    "classroom capacity and UI",
+    "robust semantic entailment checks",
+    "real authentication/approval",
+    "end-to-end deadline preemption",
+    "L0 web API actual Ollama/OpenAI generation",
+    "L1 all five variants actual generation",
+    "GTX 1060 3GB and other operating systems"
+  ],
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3-0.6B/blob/c1899de289a04d12100db370d81485cdf75e47ca/README.md"
+  ],
+  "source_lookup": "search service errored; pinned official card read directly with proxy/TLS",
+  "generation_choice": "Greedy/non-thinking fixed comparison, not optimized recommended sampling",
+  "dependencies": "Reuse L3 CPU environment without upgrades; L3 requirements-retrieval-tested.txt remains valid"
+}

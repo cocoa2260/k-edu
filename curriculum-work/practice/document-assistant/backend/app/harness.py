@@ -69,6 +69,9 @@ def run_harness(
     limits: Limits | None = None,
     cancelled: Callable[[], bool] = lambda: False,
     clock: Callable[[], float] = time.monotonic,
+    prepare_input: Callable | None = None,
+    output_contract: str = CONTRACT,
+    output_checker: Callable | None = None,
 ) -> dict:
     """Caller owns cancellation and limits; neither is read from model output.
 
@@ -101,8 +104,8 @@ def run_harness(
         }
 
     try:
-        prepared = prepare(case_id, variant)
-        original = ChatRequest(message=prepared["message"] + CONTRACT).message
+        prepared = (prepare_input or prepare)(case_id, variant)
+        original = ChatRequest(message=prepared["message"] + output_contract).message
     except (ValidationError, ValueError):
         event("input_rejected")
         return finish("input_rejected")
@@ -141,7 +144,7 @@ def run_harness(
             return finish("cancelled")
         if clock() - started >= limits.elapsed_seconds:
             return finish("elapsed_limit")  # Discard a late result.
-        draft, failure_id = check_output(raw, prepared["document_ids"])
+        draft, failure_id = (output_checker or check_output)(raw, prepared["document_ids"])
         event("output_checked", failure_id=failure_id,
               output_sha256=digest(raw) if isinstance(raw, str) else None)
         if draft is not None:

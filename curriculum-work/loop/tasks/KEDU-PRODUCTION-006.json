@@ -1,0 +1,21 @@
+{
+  "task_id": "KEDU-PRODUCTION-006",
+  "scope": [
+    "K2-09",
+    "L4"
+  ],
+  "branch": "work/curriculum-production-001",
+  "parent_commit": "5d5bc20ee84eb162e8f63e548a0f425247ccc8d7",
+  "recommended_reasoning_effort": "high",
+  "new_units_authored": 4,
+  "actual_generation_executed": true,
+  "quality_accepted": false,
+  "paid_api_calls": 0,
+  "protected": [
+    "academy/**",
+    "past reports",
+    "original L1 data",
+    "existing web API contracts"
+  ],
+  "next_task": "KEDU-PRODUCTION-007 K2-10/L5"
+}

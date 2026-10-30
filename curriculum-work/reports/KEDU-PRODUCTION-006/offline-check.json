@@ -1,0 +1,10 @@
+{
+  "http_attempts": 0,
+  "case_id": "C01",
+  "revision": "v2",
+  "status": "draft_needs_review",
+  "calls": 2,
+  "raw_outputs_equal": true,
+  "draft_equal": true,
+  "scope": "requests request guard and local_files_only; not OS isolation"
+}

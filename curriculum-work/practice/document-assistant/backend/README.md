@@ -1,6 +1,6 @@
-# 문서 답변 누적 실습 — Backend L0~L3
+# 문서 답변 누적 실습 — Backend L0~L4
 
-Day3 7~8교시의 코드와 CORS에서 출발해 L1 입력 준비, L2 Harness, L3 실제 Embedding·검색·Index를 같은 프로젝트에 추가했다. 대화 API와 검색 실험 도구는 현재 별도로 실행하며, L4에서 검색과 생성을 연결한다. 처음 시작하는 학생은 [L0 본문](../../../lessons/baseline/lesson.md)을 읽는다.
+Day3 7~8교시의 코드와 CORS에서 출발해 L1 입력 준비, L2 Harness, L3 실제 Embedding·검색·Index를 같은 프로젝트에 추가했다. 기존 대화 API는 유지하고 L4 CLI에서 실제 검색·로컬 생성·출력 검사를 연결했다. 답변 품질은 채택 보류다. 처음 시작하는 학생은 [L0 본문](../../../lessons/baseline/lesson.md)을 읽는다.
 
 ## 시작하기
 
@@ -47,3 +47,9 @@ POST /ai/prepare는 사례 ID와 조건으로 입력만 준비한다. 실제 생
 [L3 안내](../L3.md)에서 별도 Linux CPU 환경 설치와 고정 모델 다운로드·캐시 실행을 따라간다. retrieval 패키지는 실제 E5 Embedding과 SQLite Exact 검색을 수행한다. BM25/Dense/Hybrid와 권한·현행 필터, 실제 임시 갱신/삭제·오래된 선택 거부를 검사했다. 선택 FAISS 비교는 별도 합성 벡터다.
 
 실제 답변 생성이나 새 웹 API는 추가하지 않았다. requirements-retrieval-tested.txt는 이번 ML 추가 환경 전체 스냅샷이며 플랫폼 공통 Lock이 아니다. 기존 L0의 requirements-tested.txt와 과거 보고서는 보존한다. 모델 파일·SQLite 실행 파일은 Git에 넣지 않으며 새 출력 폴더로 재현한다.
+
+## L4 확장
+
+[L4 안내](../L4.md)는 같은 L3 CPU 환경에서 Qwen3-0.6B 가중치를 추가해 실제 RAG를 실행한다. 기존 웹 API Factory는 자동 전환하지 않으며 HFCpuProvider는 CLI에서 명시적으로 주입한다. 공통 Harness에 입력 준비·출력 계약·검사기를 주입하는 선택 인자를 추가했고 기존 L2 동작은 유지한다.
+
+구조·Source ID·부분 인용 검사는 의미적 근거 검증이 아니다. 실제 두 지시 버전 모두 서비스 채택을 보류했다. 사례별 결과는 [읽기용 검토본](../../../reports/KEDU-PRODUCTION-006/REVIEW.md)에 있다.

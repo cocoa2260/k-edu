@@ -1,0 +1,12 @@
+{
+  "command": "python -m pytest -q",
+  "observed_at_utc": "2026-10-30T18:06:09.023199+00:00",
+  "passed": 184,
+  "prior_tests": 164,
+  "new_tests": 20,
+  "exit_code": 0,
+  "stdout": "........................................................................ [ 39%]\n........................................................................ [ 78%]\n........................................                                 [100%]\n184 passed in 1.82s\n",
+  "stderr": "",
+  "seconds": 1.82,
+  "scope": "scripted boundary tests; actual model evidence is separate observed.json"
+}
