@@ -24,8 +24,15 @@
   "next_task": "KEDU-PRODUCTION-003",
   "next_recommended_reasoning_effort": "high",
   "publication": {
-    "state": "prepared",
-    "branch": "work/curriculum-production-001"
+    "state": "published",
+    "branch": "work/curriculum-production-001",
+    "content_commit": "ba9660a7fe56bcf95cf1d0fec26217530ca65170",
+    "verified_at": "2026-10-30T16:20:35.294Z",
+    "changed_files": 41,
+    "all_41_blobs_match": true,
+    "other_original_files_unchanged": true,
+    "original_day3_source_blobs_verified": true,
+    "scope": "L0 backend/source map, API/HTTP contract evidence, lesson and progress. Actual model generation/UI remain pending."
   },
   "artifact_sha256": {
     "curriculum-work/PROGRESS.md": "c689892d9c4bec9dbbcc536ef22704fd77430fc37813ae687552062d0149cc50",
