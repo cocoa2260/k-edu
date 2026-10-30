@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-004",
+  "current_batch": "KEDU-PRODUCTION-005",
   "units": [
     {
       "id": "K2-00.U01",
@@ -364,89 +364,97 @@
       "id": "K2-07.U01",
       "course": "K2-07",
       "title": "ID·내부 표현·검색 표현",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-005",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/embedding/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_cpu_embedding_and_index_verified",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
     },
     {
       "id": "K2-07.U02",
       "course": "K2-07",
       "title": "Dense·Sparse·BM25",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-005",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/embedding/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_cpu_embedding_and_index_verified",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
     },
     {
       "id": "K2-07.U03",
       "course": "K2-07",
       "title": "유사도·정규화·차원",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-005",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/embedding/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_cpu_embedding_and_index_verified",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
     },
     {
       "id": "K2-07.U04",
       "course": "K2-07",
       "title": "Hybrid·Reranking·모델 교체",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-005",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/embedding/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_hybrid_and_profile_rebuild_verified_learned_reranker_not_run",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
     },
     {
       "id": "K2-08.U01",
       "course": "K2-08",
       "title": "문서·Vector·Metadata의 계약",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-005",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/vector-index/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_cpu_embedding_and_index_verified",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
     },
     {
       "id": "K2-08.U02",
       "course": "K2-08",
       "title": "Exact Search와 ANN",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-005",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/vector-index/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_faiss_synthetic_ann_verified_separate_from_text_corpus",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
     },
     {
       "id": "K2-08.U03",
       "course": "K2-08",
       "title": "HNSW·IVF의 탐색",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-005",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/vector-index/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_faiss_synthetic_ann_verified_separate_from_text_corpus",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
     },
     {
       "id": "K2-08.U04",
       "course": "K2-08",
       "title": "Filter·갱신·삭제·재색인",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-005",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/vector-index/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_cpu_embedding_and_index_verified",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
     },
     {
       "id": "K2-09.U01",
@@ -788,24 +796,23 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-005",
+    "id": "KEDU-PRODUCTION-006",
     "proposed_scope": [
-      "K2-07",
-      "K2-08",
-      "L3"
+      "K2-09",
+      "L4"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "MATERIAL_AND_FIXTURE_CONTROL_VERIFIED_REAL_MODEL_PENDING",
+  "batch_status": "REAL_EMBEDDING_EXACT_INDEX_AND_BOUNDARIES_VERIFIED_GENERATION_PENDING",
   "first_unfinished_gate": {
-    "id": "L3-REPRESENTATION-INDEX",
+    "id": "L4-RAG",
     "status": "not_started",
     "recommended_reasoning_effort": "high",
     "independent_pending": [
-      "G-MODEL real generation for L0/L1/L2",
+      "L0/L1/L2 G-MODEL actual generation",
       "Human answer grading",
-      "Hard token/cost budgets and cancellation",
+      "Different-weight embedding migration",
       "Classroom/UI validation"
     ]
   },
@@ -824,6 +831,12 @@
     "L2": {
       "status": "MATERIAL_AND_FIXTURE_CONTROL_VERIFIED_REAL_MODEL_PENDING",
       "path": "curriculum-work/practice/document-assistant/milestones/L2.json",
+      "generation_verified": false
+    },
+    "L3": {
+      "status": "REAL_EMBEDDING_EXACT_INDEX_AND_BOUNDARIES_VERIFIED",
+      "path": "curriculum-work/practice/document-assistant/milestones/L3.json",
+      "embedding_verified": true,
       "generation_verified": false
     }
   }

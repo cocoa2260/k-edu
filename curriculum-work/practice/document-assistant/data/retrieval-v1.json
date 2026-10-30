@@ -1,0 +1,23 @@
+{
+  "version": "retrieval-v1",
+  "source_cases": "core-v1 unchanged",
+  "authority": "Teacher relevance labels; evaluation only, never encoder inputs",
+  "metric": "Document recall within top 3 chunks, macro average on the eight labeled cases",
+  "relevant_document_ids": {
+    "C01": ["DOC-A"],
+    "C02": ["DOC-B"],
+    "C04": ["DOC-A"],
+    "C05": ["DOC-A"],
+    "C07": ["DOC-A"],
+    "C08": ["DOC-A"],
+    "C09": ["DOC-A", "DOC-B"],
+    "C11": ["DOC-A"]
+  },
+  "boundary_cases": {
+    "C03": "No policy value supplied; nonempty search results do not establish answerability",
+    "C06": "Restricted document must be absent from results and Context",
+    "C10": "Reject blank input before embedding query",
+    "C12": "DOC-A excluded by trusted case manifest; actual deletion tested separately"
+  },
+  "note": "Relevant document recall is not claim support, citation correctness or answer accuracy"
+}

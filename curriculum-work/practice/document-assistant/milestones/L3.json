@@ -1,0 +1,37 @@
+{
+  "stage": "L3",
+  "baseline": "L2",
+  "status": "REAL_EMBEDDING_EXACT_INDEX_AND_BOUNDARIES_VERIFIED",
+  "model": {
+    "model_id": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "dimension": 384,
+    "pooling": "attention_mask_mean",
+    "normalized": true,
+    "max_tokens": 128,
+    "query_prefix": "query: ",
+    "passage_prefix": "passage: "
+  },
+  "record_contract": [
+    "document ID/version",
+    "chunk ID/internal line",
+    "origin and logical SQLite locator",
+    "body hash",
+    "access/current/deleted",
+    "embedding profile/generation"
+  ],
+  "implementations": [
+    "backend/retrieval/encoder.py",
+    "backend/retrieval/index.py"
+  ],
+  "entry": "backend/tools/retrieval_lab.py",
+  "optional_ann": "backend/tools/ann_lab.py",
+  "source_data_unchanged": true,
+  "actual_embedding_verified": true,
+  "answer_generation_verified": false,
+  "authentication_implemented": false,
+  "model_migration_scope": "same weights changed Token limit; changed ID/revision denied by contract tests",
+  "different_weight_migration_verified": false,
+  "next_stage": "L4",
+  "evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
+}

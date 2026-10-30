@@ -1,0 +1,6 @@
+{
+  "http_attempts": 0,
+  "all_36_ordered_results_equal": true,
+  "metrics_equal": true,
+  "scope": "requests Session.request guard plus local_files_only; not OS network isolation"
+}

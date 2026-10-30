@@ -1,0 +1,3 @@
+# Optional synthetic ANN comparison only, not required by the SQLite exact index.
+faiss-cpu==1.15.1
+numpy==2.5.4

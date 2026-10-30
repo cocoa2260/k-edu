@@ -1,0 +1,61 @@
+{
+  "task_id": "KEDU-PRODUCTION-005",
+  "observed_at_utc": "2026-10-30T17:45:38.449021+00:00",
+  "status": "REAL_EMBEDDING_EXACT_INDEX_AND_BOUNDARIES_VERIFIED_GENERATION_PENDING",
+  "environment": {
+    "python": "3.12.14",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "huggingface-hub": "0.36.0",
+      "numpy": "2.5.4",
+      "faiss-cpu": "1.15.1",
+      "safetensors": "0.8.0"
+    }
+  },
+  "evidence": {
+    "tests": "tests.json",
+    "actual_retrieval": "retrieval-observed.json",
+    "optional_ann": "ann-observed.json",
+    "offline_replay": "offline-check.json"
+  },
+  "verified": [
+    "pinned E5 CPU weights with 384D attention-mask mean pooling and normalization",
+    "actual BM25/dense/hybrid over same 12 cases",
+    "teacher relevance labels excluded from encoder input",
+    "restricted/old/deleted rows filtered before scoring",
+    "Context re-fetch and generation invalidation",
+    "actual temporary update/delete removes old Context and vectors",
+    "same-weight 512-to-128 Token-limit profile mismatch and fresh rebuild",
+    "all ordered offline results reproduced with zero guarded HTTP attempts",
+    "actual FAISS HNSW/IVF versus Flat on separate synthetic data",
+    "136 prior tests retained"
+  ],
+  "unverified": [
+    "different-weight embedding model migration",
+    "learned reranker",
+    "answer generation and end-to-end RAG",
+    "semantic grounding/citation correctness",
+    "real authentication or multitenant authorization",
+    "forensic secure deletion/backups",
+    "concurrent distributed index consistency",
+    "GTX 1060 3GB or classroom capacity",
+    "Windows/macOS",
+    "React UI",
+    "classroom trial"
+  ],
+  "source_checks": {
+    "search_service": "returned error; official sources fetched directly with configured proxy/TLS",
+    "model_card": "https://huggingface.co/intfloat/multilingual-e5-small/blob/614241f622f53c4eeff9890bdc4f31cfecc418b3/README.md",
+    "faiss": [
+      "https://github.com/facebookresearch/faiss/wiki/Faiss-indexes",
+      "https://github.com/facebookresearch/faiss/wiki/Guidelines-to-choose-an-index"
+    ],
+    "bm25_implementation_reference": "https://github.com/apache/lucene/blob/main/lucene/core/src/java/org/apache/lucene/search/similarities/BM25Similarity.java",
+    "note": "Small local BM25 is not Lucene and uses a simple Korean eojeol/word tokenizer"
+  },
+  "reviewer": "same Work session, no independent reviewer",
+  "paid_api_calls": 0,
+  "answer_generation_calls": 0
+}

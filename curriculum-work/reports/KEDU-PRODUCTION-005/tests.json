@@ -1,0 +1,14 @@
+{
+  "observed_at_utc": "2026-10-30T17:45:38.449021+00:00",
+  "command": "python -m pytest -q",
+  "cwd": "curriculum-work/practice/document-assistant/backend",
+  "passed": 164,
+  "prior_tests": 136,
+  "new_tests": 28,
+  "exit_code": 0,
+  "stdout": "........................................................................ [ 43%]\n........................................................................ [ 87%]\n....................                                                     [100%]\n164 passed in 1.37s\n",
+  "stderr": "",
+  "pytest_seconds": 1.37,
+  "test_encoder": "nonsemantic 2D boundary fixture, separate from actual E5 execution",
+  "actual_model_validation": "retrieval-observed.json and offline-check.json"
+}

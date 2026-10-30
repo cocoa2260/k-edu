@@ -1,0 +1,245 @@
+{
+  "evidence_kind": "actual_faiss_search_on_synthetic_unit_vectors",
+  "faiss_version": "1.15.1",
+  "seed": 20261031,
+  "rows": [
+    {
+      "index": "exact",
+      "efSearch": null,
+      "nprobe": null,
+      "recall_at_10_vs_exact": 1.0,
+      "median_batch_ms": 2.302398999745492,
+      "batch_queries": 128,
+      "first_query_ids": [
+        2749,
+        2292,
+        1912,
+        2524,
+        576,
+        2750,
+        4009,
+        1049,
+        312,
+        3788
+      ],
+      "first_query_exact_ids": [
+        2749,
+        2292,
+        1912,
+        2524,
+        576,
+        2750,
+        4009,
+        1049,
+        312,
+        3788
+      ]
+    },
+    {
+      "index": "hnsw",
+      "efSearch": 8,
+      "nprobe": null,
+      "recall_at_10_vs_exact": 0.44921875,
+      "median_batch_ms": 0.5076740008007619,
+      "batch_queries": 128,
+      "first_query_ids": [
+        2749,
+        2292,
+        1912,
+        576,
+        4009,
+        3788,
+        2012,
+        1932,
+        2272,
+        3528
+      ],
+      "first_query_exact_ids": [
+        2749,
+        2292,
+        1912,
+        2524,
+        576,
+        2750,
+        4009,
+        1049,
+        312,
+        3788
+      ]
+    },
+    {
+      "index": "hnsw",
+      "efSearch": 64,
+      "nprobe": null,
+      "recall_at_10_vs_exact": 0.928125,
+      "median_batch_ms": 3.074575999562512,
+      "batch_queries": 128,
+      "first_query_ids": [
+        2749,
+        2292,
+        1912,
+        2524,
+        576,
+        2750,
+        4009,
+        1049,
+        312,
+        3788
+      ],
+      "first_query_exact_ids": [
+        2749,
+        2292,
+        1912,
+        2524,
+        576,
+        2750,
+        4009,
+        1049,
+        312,
+        3788
+      ]
+    },
+    {
+      "index": "ivf",
+      "efSearch": null,
+      "nprobe": 1,
+      "recall_at_10_vs_exact": 0.16640625,
+      "median_batch_ms": 0.14913199993316084,
+      "batch_queries": 128,
+      "first_query_ids": [
+        1912,
+        4009,
+        2499,
+        2529,
+        2333,
+        2227,
+        1631,
+        3040,
+        3497,
+        1621
+      ],
+      "first_query_exact_ids": [
+        2749,
+        2292,
+        1912,
+        2524,
+        576,
+        2750,
+        4009,
+        1049,
+        312,
+        3788
+      ]
+    },
+    {
+      "index": "ivf",
+      "efSearch": null,
+      "nprobe": 16,
+      "recall_at_10_vs_exact": 0.8171875,
+      "median_batch_ms": 1.1246610001762747,
+      "batch_queries": 128,
+      "first_query_ids": [
+        2749,
+        2292,
+        1912,
+        2750,
+        4009,
+        1049,
+        312,
+        3788,
+        2012,
+        786
+      ],
+      "first_query_exact_ids": [
+        2749,
+        2292,
+        1912,
+        2524,
+        576,
+        2750,
+        4009,
+        1049,
+        312,
+        3788
+      ]
+    },
+    {
+      "index": "ivf",
+      "efSearch": null,
+      "nprobe": 64,
+      "recall_at_10_vs_exact": 1.0,
+      "median_batch_ms": 3.867334000460687,
+      "batch_queries": 128,
+      "first_query_ids": [
+        2749,
+        2292,
+        1912,
+        2524,
+        576,
+        2750,
+        4009,
+        1049,
+        312,
+        3788
+      ],
+      "first_query_exact_ids": [
+        2749,
+        2292,
+        1912,
+        2524,
+        576,
+        2750,
+        4009,
+        1049,
+        312,
+        3788
+      ]
+    }
+  ],
+  "vector_math": {
+    "query": [
+      1.0,
+      0.0
+    ],
+    "A": [
+      0.8,
+      0.6
+    ],
+    "B": [
+      2.0,
+      2.0
+    ],
+    "results": [
+      {
+        "candidate": "A",
+        "dot": 0.8,
+        "cosine": 0.8,
+        "squared_l2": 0.39999999999999997,
+        "normalized_dot": 0.8,
+        "normalized_squared_l2": 0.39999999999999997
+      },
+      {
+        "candidate": "B",
+        "dot": 2.0,
+        "cosine": 0.7071067811865475,
+        "squared_l2": 5.0,
+        "normalized_dot": 0.7071067811865475,
+        "normalized_squared_l2": 0.5857864376269049
+      }
+    ]
+  },
+  "vectors": 4096,
+  "dimension": 32,
+  "queries": 128,
+  "k": 10,
+  "hnsw_M": 8,
+  "efConstruction": 40,
+  "ivf_nlist": 64,
+  "threads": 1,
+  "timing": "warm search; median of 5 batches; excludes encoding/training/build",
+  "semantic_quality": null,
+  "notes": [
+    "Not the nine eligible text chunks or E5 corpus",
+    "FAISS HNSW removal is not implemented here; SQLite deletion is a separate exact index test"
+  ]
+}
