@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-011",
+  "current_batch": "KEDU-PRODUCTION-012",
   "units": [
     {
       "id": "K2-00.U01",
@@ -700,45 +700,49 @@
       "id": "K2-13.U01",
       "course": "K2-13",
       "title": "PDF 유형·Parsing·OCR 선택",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-012",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/document-parsing/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "synthetic_pdf_ocr_executed_vision_not_run_quality_not_accepted",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-012/validation.json"
     },
     {
       "id": "K2-13.U02",
       "course": "K2-13",
       "title": "Layout·표·Reading Order",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-012",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/document-parsing/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "synthetic_pdf_ocr_executed_vision_not_run_quality_not_accepted",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-012/validation.json"
     },
     {
       "id": "K2-13.U03",
       "course": "K2-13",
       "title": "OCR와 Vision의 품질·한계",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-012",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/document-parsing/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "synthetic_pdf_ocr_executed_vision_not_run_quality_not_accepted",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-012/validation.json"
     },
     {
       "id": "K2-13.U04",
       "course": "K2-13",
       "title": "문서 안의 지시·권한·원문 추적",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-012",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/document-parsing/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "synthetic_pdf_ocr_executed_vision_not_run_quality_not_accepted",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-012/validation.json"
     },
     {
       "id": "K2-14.U01",
@@ -816,15 +820,15 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-012",
+    "id": "KEDU-PRODUCTION-013",
     "proposed_scope": [
-      "K2-13",
-      "L8"
+      "K2-14",
+      "L9"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "ALL_ROWS_TRAINED_AND_AGENT_REGRESSION_EXECUTED_QUALITY_PENDING",
+  "batch_status": "PDF_OCR_AND_SOURCE_BOUNDARIES_VERIFIED_QUALITY_REVIEW_PENDING",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -886,6 +890,13 @@
       "full_training_verified": false,
       "all_training_rows_seen": true,
       "regression_18_executed": true
+    },
+    "L8": {
+      "status": "SYNTHETIC_PDF_OCR_AND_PHYSICAL_SOURCE_ROUNDTRIP_VERIFIED",
+      "path": "curriculum-work/practice/document-assistant/milestones/L8.json",
+      "pdf_ocr_verified": true,
+      "vision_verified": false,
+      "quality_accepted": false
     }
   }
 }

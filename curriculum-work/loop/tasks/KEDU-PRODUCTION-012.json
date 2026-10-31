@@ -1,0 +1,9 @@
+{
+  "id": "KEDU-PRODUCTION-012",
+  "scope": ["K2-13.U01", "K2-13.U02", "K2-13.U03", "K2-13.U04", "L8"],
+  "recommended_reasoning_effort": "high",
+  "human_reading_path": ["curriculum-work/lessons/document-parsing/lesson.md", "curriculum-work/reports/KEDU-PRODUCTION-012/RESULT.md"],
+  "protected": ["academy/", "prior reports", "existing core/agent/finetuning fixtures", "existing web APIs", "existing retrieval implementation"],
+  "constraints": ["no executable fences in human lesson", "no paid API", "document text is data", "actual OCR distinct from nonsemantic index fixture", "no independent quality/classroom completion claim"],
+  "outputs": ["lesson", "L8 practice and milestone", "bounded local PDF/OCR CLI and tests", "small synthetic PDFs and rendered previews", "observed/runtime and validation evidence", "progress metadata"]
+}

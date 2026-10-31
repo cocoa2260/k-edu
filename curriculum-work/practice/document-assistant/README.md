@@ -1,4 +1,4 @@
-# 문서 답변 누적 실습 — L0에서 L7 소규모 훈련까지
+# 문서 답변 누적 실습 — L0에서 L8 문서 입력까지
 
 같은 Backend를 단계별로 확장한다. 강의 설명과 실행 코드는 파일을 나눠 두었다.
 
@@ -11,7 +11,8 @@
 | L4 | [실습](L4.md) · [RAG 강의](../../lessons/rag/lesson.md) | 실제 검색·Qwen 생성·출력 보완/종료, 품질 보류 |
 | L5 | [실습](L5.md) · [Single-Agent](../../lessons/single-agent/lesson.md) | 실제 모델 Tool 요청·Runtime·종료, 과제 품질 보류 |
 | L6 | [실습](L6.md) · [Multi-Agent](../../lessons/multi-agent/lesson.md) | 실제 역할·전달/공통 예산, 최종 답변 품질 보류 |
-| L7 준비 | [실습](L7.md) · [Fine-tuning 준비](../../lessons/fine-tuning/lesson.md) | 실제 Dataset/Token/label·저장/재로드, 모델 훈련 미실행 |
+| L7 | [실습](L7.md) · [훈련 강의](../../lessons/fine-tuning/training.md) | 전체 Train 포함 제한 Step 학습·18개 Agent 회귀, 품질 보류 |
+| L8 | [실습](L8.md) · [문서 입력 강의](../../lessons/document-parsing/lesson.md) | 실제 한글 PDF/OCR·표·물리 원문 연결, Vision 미실행 |
 
 [Backend 실행 안내](backend/README.md)에서 실행한다. L4 CLI에서 실제 로컬 생성을 실행했다. 답변 품질은 채택 보류이고 React 화면·교육장 수업은 미검증이다. 고정 응답을 모델 결과로 기록하지 않는다.
 
@@ -20,3 +21,5 @@ baseline-source-map.json은 L0 원문 이동 당시의 해시 기록이다. 이�
 [실제 LoRA 소규모 훈련 결과](../../reports/KEDU-PRODUCTION-010/RESULT.md)를 함께 본다.
 
 [전체 Train 포함 학습·18개 Agent 회귀 결과](../../reports/KEDU-PRODUCTION-011/RESULT.md): 모든 예제를 학습에 포함했으며 품질 채택은 미완료다.
+
+[L8 PDF/OCR 실제 결과](../../reports/KEDU-PRODUCTION-012/RESULT.md): 합성 문서 네 개와 변경 범위 검사만 실행했다. 일반 문서 품질·LLM/Vision·실제 업로드 UI는 미검증이다.

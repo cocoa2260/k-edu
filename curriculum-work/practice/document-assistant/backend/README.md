@@ -85,3 +85,7 @@ requirements-lora.txt와 tools.lora_lab를 사용한다. CPU 일반 정밀도 �
 ## L7 전체 Train 포함 학습과 회귀
 
 tools.lora_full_lab는 같은 초기 Adapter와 조건별 28 Step을 사용하고 원본 20개/증강 28개 전체를 학습에 포함한다. Validation 선택을 고정한 뒤 Test와 기존 L5 18개 회귀를 세 조건에서 실행한다. 완료 기록은 사례별로 저장하며 코드/자료/환경이 다르면 재개를 거부한다. tools.lora_full_reload로 별도 프로세스 재로드를 확인한다. [실제 결과](../../../reports/KEDU-PRODUCTION-011/RESULT.md)를 본다.
+
+## L8 문서 입력
+
+[L8 안내](../L8.md)는 requirements-document.txt의 별도 CPU 환경에서 tools.document_assets와 tools.document_lab를 사용한다. 기존 data/document-v1에 저장한 PDF와 새 output 폴더를 지정한다. document_tests만 실행해 기존 FastAPI/Torch 의존 환경과 분리한다. 실제 PDF/OCR·BM25/물리 출처 연결을 검사하며 Encoder는 비의미적 상수 Fixture다. 기존 Index 코드·문서/Agent/훈련 데이터·모델·웹 API는 변경하지 않았다. [이번 결과](../../../reports/KEDU-PRODUCTION-012/RESULT.md)를 본다.

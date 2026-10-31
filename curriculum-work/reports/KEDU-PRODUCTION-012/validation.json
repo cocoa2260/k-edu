@@ -1,0 +1,67 @@
+{
+  "batch": "KEDU-PRODUCTION-012",
+  "date_utc": "2026-10-31T03:45:07.499227+00:00",
+  "material_authored_units": 48,
+  "total_units": 70,
+  "full_curriculum_complete": false,
+  "review": "same_session_not_independent",
+  "runtime": {
+    "pdf_count": 4,
+    "physical_pages": 5,
+    "actual_tesseract": true,
+    "language": "kor+eng",
+    "table_cells_exact": 9,
+    "manual_layout_regions_only": true,
+    "index_boundary": "real LocalIndex BM25, constant nonsemantic encoder",
+    "tests_passed": 44,
+    "legacy_278_tests_rerun": false,
+    "vision_calls": 0,
+    "llm_calls": 0
+  },
+  "visual_qa": {
+    "method": "pdftoppm renders opened with view_image",
+    "pages": [
+      "digital:1",
+      "scan:1",
+      "degraded:1",
+      "mixed:1",
+      "mixed:2"
+    ],
+    "assessment": "Korean glyphs, table boundaries and text legible; no unintended clipping; degradation intentional"
+  },
+  "quality_accepted": false,
+  "classroom_trial": "not_run",
+  "unresolved": [
+    "general document OCR/layout quality",
+    "CLIP/VLM/OCR-free model execution",
+    "real authentication and hostile PDF isolation",
+    "UI/upload/source highlight",
+    "prior RAG/Agent/LoRA quality acceptance and QLoRA",
+    "independent instructor/student trial"
+  ],
+  "source_sha256": {
+    "curriculum-work/practice/document-assistant/backend/requirements-document.txt": "4e7b2435a5e2cd2e89e99606f9f7e0f31a4606aa3a51d535883c2bd97edcc23f",
+    "curriculum-work/practice/document-assistant/backend/app/document_ingest.py": "416b7b06dae7aa7ebbc43237100c47f562f243c231fc49481c3576f3ee38b8cc",
+    "curriculum-work/practice/document-assistant/backend/document_tests/test_document_ingest.py": "deab35415d8ff01542ce7468c206c92b1336690d8528c94332b9c506cdda461c",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/degraded.pdf": "589f4db3406df70ca4e3e15937cc4137e70e4452ba868e5ec8ef57b71cbc917c",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/scan.pdf": "697f552c870d3d3e420e99120d0ab781553da05330fe78396775b4ae37a42e4b",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/TESSDATA-LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/FONT-OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/digital.pdf": "01f0a3f4de1d0993f18d4c9e1f413ab9114244a946cf97518d90776583a1f866",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/mixed.pdf": "9625d177d2958f0c328aaa36b6c4978f4e8e417711629650ac960f8b36227ccb",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/degraded-preview-1.png": "605a4aad7947dd70f1497ae10fa4e362f86c78801218574318c3fe7907161840",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/scan-preview-1.png": "4bf7026c11d990223427d36efc25969085904ea45f596895cfba2c331097f0b7",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/digital-preview-1.png": "4bf01fdde713b5367f0807bb3f7431c66917fee0e5912ad13dace74be121e891",
+    "curriculum-work/practice/document-assistant/backend/tools/document_assets.py": "cbe21a45127a7ff045c0186e9468364ab3959d40bd8595a1ab0fe5558ef8ed49",
+    "curriculum-work/practice/document-assistant/backend/tools/document_specimens.py": "7b2c986bb4d926202548b3febd16b03fa704a09617c97d465e109ee3b460db67",
+    "curriculum-work/practice/document-assistant/backend/tools/document_lab.py": "0ba8717a515317c40a835a428343e253222a1edbf646a597f00c501843652abc"
+  },
+  "asset_setup": {
+    "public_downloads_verified": true,
+    "input_hashes_match_recorded_snapshot": true,
+    "deterministic_static_font_save_check": "5df15eafd82a08691f434a255e595b981a6118233174d540f13e9030c0b1e1de",
+    "note": "stored PDFs are authoritative; original font conversion used timestamp metadata different from later deterministic setup"
+  },
+  "relative_markdown_links_checked": 94,
+  "relative_markdown_link_errors": 0
+}

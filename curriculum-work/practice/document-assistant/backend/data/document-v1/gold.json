@@ -1,0 +1,52 @@
+{
+  "synthetic": true,
+  "page_points": [
+    595,
+    842
+  ],
+  "font_sha256": "895d2d34bd17a3657e35a506aa6d301a014a127d3be305edda7b81c50c57327a",
+  "gold_scan_lines": [
+    "환불 신청 안내",
+    "신청 기한: 결제 후 7일",
+    "고객 부담금: 15000원",
+    "접수 번호: RF-1048"
+  ],
+  "gold_table": [
+    [
+      "구분",
+      "기한",
+      "부담금"
+    ],
+    [
+      "미사용",
+      "7일",
+      "0원"
+    ],
+    [
+      "사용 이력",
+      "개별 검토",
+      "15000원"
+    ]
+  ],
+  "critical_fields": [
+    "7일",
+    "15000원",
+    "RF-1048"
+  ],
+  "fixture_layout": {
+    "columns_bbox": [
+      30,
+      88,
+      563,
+      146
+    ],
+    "split_x": 300
+  },
+  "degradation": "downsample to 446x631; blur 0.7; upsample; skew 5 degrees; white occlusion",
+  "files": {
+    "degraded.pdf": "589f4db3406df70ca4e3e15937cc4137e70e4452ba868e5ec8ef57b71cbc917c",
+    "digital.pdf": "01f0a3f4de1d0993f18d4c9e1f413ab9114244a946cf97518d90776583a1f866",
+    "mixed.pdf": "9625d177d2958f0c328aaa36b6c4978f4e8e417711629650ac960f8b36227ccb",
+    "scan.pdf": "697f552c870d3d3e420e99120d0ab781553da05330fe78396775b4ae37a42e4b"
+  }
+}

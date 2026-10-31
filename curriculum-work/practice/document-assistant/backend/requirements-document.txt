@@ -1,0 +1,7 @@
+# Python 3.12, system pdftoppm + Tesseract 5.3.4, external kor/eng traineddata.
+pdfplumber==0.11.9
+pypdf==6.10.0
+Pillow==12.3.0
+reportlab==4.4.9
+fonttools==4.61.1
+pytest==9.2.0

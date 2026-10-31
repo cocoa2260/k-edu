@@ -1,0 +1,28 @@
+{
+  "batch": "KEDU-PRODUCTION-012",
+  "status": "READY_TO_PUBLISH",
+  "branch": "work/curriculum-production-001",
+  "parent_commit": "c39e1cdb0ca0322439f455e0964844d94f4904d7",
+  "authored_units": 48,
+  "pdf_ocr_executed": true,
+  "targeted_tests_passed": 44,
+  "quality_accepted": false,
+  "publication": null,
+  "execution_attempts": [
+    {
+      "id": 1,
+      "status": "failed",
+      "cause": "custom tessdata directory lacked named TSV config; explicit TSV output variable and header validation added"
+    },
+    {
+      "id": 2,
+      "status": "failed",
+      "cause": "BM25 exact eojeol query mismatch; did not change existing search implementation"
+    },
+    {
+      "id": 3,
+      "status": "complete",
+      "cause": "actual parsing/OCR and source roundtrip; final 44 targeted tests passed"
+    }
+  ]
+}
