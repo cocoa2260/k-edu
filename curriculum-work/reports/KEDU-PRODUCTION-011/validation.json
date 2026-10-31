@@ -1,0 +1,29 @@
+{
+  "status": "ALL_TRAIN_ROWS_AND_54_AGENT_CASES_EXECUTED_QUALITY_NOT_ACCEPTED",
+  "optimizer_steps": 56,
+  "training_rows": {
+    "seed": 20,
+    "augmented": 28
+  },
+  "regression_cases_per_condition": 18,
+  "conditions": [
+    "base",
+    "seed",
+    "augmented"
+  ],
+  "tests_passed": 278,
+  "selection_before_test": true,
+  "fresh_process_reload_verified": [
+    "seed",
+    "augmented"
+  ],
+  "quality_accepted": false,
+  "training_convergence_assessed": false,
+  "independent_review": false,
+  "QLoRA_executed": false,
+  "code_provenance": "See exact executed-runner.py and configuration hash; published checkpoint serialization improved separately",
+  "sources": [
+    "https://huggingface.co/docs/transformers/v4.57.1/cache_explanation",
+    "https://huggingface.co/docs/peft/v0.17.0/en/tutorial/peft_model_config"
+  ]
+}

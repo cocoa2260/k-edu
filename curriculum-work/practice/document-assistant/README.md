@@ -18,3 +18,5 @@
 baseline-source-map.json은 L0 원문 이동 당시의 해시 기록이다. 이후 누적 기능의 변경 기록은 milestones와 각 제작 보고서에서 읽는다. 현재 소스 전체가 L0 당시와 같다는 뜻이 아니다. L7 데이터 준비를 확인했다. LoRA 소규모 훈련·저장/재로드를 확인했고 전체 훈련·품질·QLoRA는 남아 있다.
 
 [실제 LoRA 소규모 훈련 결과](../../reports/KEDU-PRODUCTION-010/RESULT.md)를 함께 본다.
+
+[전체 Train 포함 학습·18개 Agent 회귀 결과](../../reports/KEDU-PRODUCTION-011/RESULT.md): 모든 예제를 학습에 포함했으며 품질 채택은 미완료다.

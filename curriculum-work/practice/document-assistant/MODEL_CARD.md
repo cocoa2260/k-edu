@@ -1,5 +1,5 @@
-# Model Card — LoRA 소규모 실험 v1
+# Model Card — 전체 Train 포함 LoRA 실험
 
-Qwen/Qwen3-0.6B Revision c1899de289a04d12100db370d81485cdf75e47ca. CPU float32·PEFT 0.17.1. Base 이용 조건은 원 Model Card에서 확인한다. 운영 모델로 채택하지 않았다.
+Qwen/Qwen3-0.6B Revision c1899de289a04d12100db370d81485cdf75e47ca. 원본 20개/증강 28개를 포함한 조건별 28 Step, Seed 37, rank 4·alpha 8·dropout 0·q_proj/v_proj·CPU float32·AdamW 0.0002. Base 모델 이용 조건은 원 Card에서 확인한다.
 
-[실제 결과와 한계](../../reports/KEDU-PRODUCTION-010/RESULT.md). finetuning-v1의 고정 AI 작성 예제 중 조건별 4개만 학습했다. rank 4·alpha 8·q_proj/v_proj·dropout 0·AdamW 0.0002·4 Step·Seed 37. 전체 훈련/독립 품질·18개 회귀·QLoRA·병합/변환은 미검증이다. Base Weight는 포함하지 않고 Manifest의 정확한 Revision으로 불러온다.
+[실제 학습·회귀·선택·재로드 결과](../../reports/KEDU-PRODUCTION-011/RESULT.md). Validation으로 후보를 고정한 뒤 Test·18개 Agent 회귀를 실행했다. 공개 소규모 자료·단일 Seed·다른 Token 노출량이라는 한계가 있다. 품질·독립 수업·QLoRA·병합/Runtime 변환은 미검증이며 공통 운영 모델로 교체하지 않았다. 이전 4 Step 실험은 reports/KEDU-PRODUCTION-010에 보존한다.

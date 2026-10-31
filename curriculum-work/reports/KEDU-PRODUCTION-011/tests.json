@@ -1,0 +1,6 @@
+{
+  "command": "python -m pytest -q",
+  "exit_code": 0,
+  "stdout": "........................................................................ [ 25%]\n........................................................................ [ 51%]\n........................................................................ [ 77%]\n..............................................................           [100%]\n=============================== warnings summary ===============================\ntests/test_lora_full_lab.py::test_resume_ignores_uncommitted_step_and_matches_uninterrupted_weights\ntests/test_lora_roundtrip.py::test_tiny_real_peft_update_frozen_base_and_saved_reload\n  /workspace/scratch/2eedeaf0c30d/l5-work/venv/lib/python3.12/site-packages/peft/utils/save_and_load.py:286: UserWarning: Could not find a config file in  - will assume that the vocabulary was not modified.\n    warnings.warn(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n278 passed, 2 warnings in 8.16s\n",
+  "stderr": ""
+}

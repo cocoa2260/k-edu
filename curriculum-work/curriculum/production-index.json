@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-010",
+  "current_batch": "KEDU-PRODUCTION-011",
   "units": [
     {
       "id": "K2-00.U01",
@@ -656,9 +656,9 @@
       "material_status": "authored",
       "material_path": "curriculum-work/lessons/fine-tuning/training.md",
       "review_status": "same_session_reviewed",
-      "runtime_status": "real_LoRA_smoke_only_QLoRA_full_quality_pending",
+      "runtime_status": "all_training_rows_regression_reload_verified_quality_pending",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-010/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-011/validation.json"
     },
     {
       "id": "K2-12.U06",
@@ -668,7 +668,7 @@
       "material_status": "authored",
       "material_path": "curriculum-work/lessons/fine-tuning/training.md",
       "review_status": "same_session_reviewed",
-      "runtime_status": "real_LoRA_smoke_only_QLoRA_full_quality_pending",
+      "runtime_status": "material_authored_QLoRA_execution_unverified",
       "classroom_trial": "not_run",
       "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-010/validation.json"
     },
@@ -680,9 +680,9 @@
       "material_status": "authored",
       "material_path": "curriculum-work/lessons/fine-tuning/training.md",
       "review_status": "same_session_reviewed",
-      "runtime_status": "real_LoRA_smoke_only_QLoRA_full_quality_pending",
+      "runtime_status": "all_training_rows_regression_reload_verified_quality_pending",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-010/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-011/validation.json"
     },
     {
       "id": "K2-12.U08",
@@ -692,9 +692,9 @@
       "material_status": "authored",
       "material_path": "curriculum-work/lessons/fine-tuning/training.md",
       "review_status": "same_session_reviewed",
-      "runtime_status": "real_LoRA_smoke_only_QLoRA_full_quality_pending",
+      "runtime_status": "all_training_rows_regression_reload_verified_quality_pending",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-010/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-011/validation.json"
     },
     {
       "id": "K2-13.U01",
@@ -816,18 +816,24 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-011",
+    "id": "KEDU-PRODUCTION-012",
     "proposed_scope": [
-      "L7 full-training and regression follow-up"
+      "K2-13",
+      "L8"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "REAL_LORA_SMOKE_VERIFIED_FULL_TRAINING_QUALITY_PENDING",
+  "batch_status": "ALL_ROWS_TRAINED_AND_AGENT_REGRESSION_EXECUTED_QUALITY_PENDING",
   "first_unfinished_gate": {
-    "id": "G-TRAIN-FULL-EVALUATION",
+    "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
-    "recommended_reasoning_effort": "high"
+    "independent_pending": [
+      "QLoRA actual backend",
+      "independent quality/classroom",
+      "full framework/MCP",
+      "foundations/orientation unwritten"
+    ]
   },
   "milestones": {
     "L0": {
@@ -871,13 +877,15 @@
       "quality_accepted": false
     },
     "L7": {
-      "status": "REAL_LORA_SMOKE_VERIFIED_FULL_QUALITY_PENDING",
+      "status": "ALL_ROWS_TRAINED_AND_AGENT_REGRESSION_EXECUTED_QUALITY_PENDING",
       "path": "curriculum-work/practice/document-assistant/milestones/L7.json",
       "preparation_verified": true,
       "training_verified": true,
       "new_process_reload_verified": true,
       "quality_accepted": false,
-      "full_training_verified": false
+      "full_training_verified": false,
+      "all_training_rows_seen": true,
+      "regression_18_executed": true
     }
   }
 }

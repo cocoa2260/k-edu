@@ -2,7 +2,7 @@
 
 K2-12.U05~U08 · 제작본 v0.1 · 2026-10-31
 
-[데이터·입력 준비](lesson.md) 다음 강의다. [실제 실행 검토](../../reports/KEDU-PRODUCTION-010/RESULT.md)에서 실행한 것과 남은 것을 구분한다. 실행 코드는 Backend tools/lora_lab.py에 있다.
+[데이터·입력 준비](lesson.md) 다음 강의다. [최신 전체 예제 포함 실행](../../reports/KEDU-PRODUCTION-011/RESULT.md)과 [최초 소규모 실행](../../reports/KEDU-PRODUCTION-010/RESULT.md)에서 실행한 것과 남은 것을 구분한다. 실행 코드는 Backend tools/lora_lab.py에 있다.
 
 ## K2-12.U05 LoRA 원리·설정·실제 훈련
 
@@ -22,7 +22,7 @@ LoRA는 Base Weight를 고정하고 작은 두 행렬의 곱으로 갱신을 더
 
 첫 LoRA 행렬 중 하나가 0으로 초기화되면 첫 Step에서 모든 추가 행렬의 Gradient가 동시에 0이 아니어야 한다고 요구하는 것은 잘못이다. 실제 갱신과 이후 Gradient를 함께 본다. Base 표본 불변 검사는 전체 Weight 해시 검사를 대체하지 않는다.
 
-이번에는 원본과 증강 조건 각각 4개 예제·4 Step만 사용한다. 전체 Train 20/28개를 충분히 학습한 비교가 아니다. **활동/제출:** Layer·Parameter·Gradient·실제 갱신 로그와 한 설정을 바꿀 때의 가설. **확인 질문:** trainable Parameter 수가 작으면 활성값 메모리도 항상 작을까?
+최초 소규모 실행은 원본과 증강 조건 각각 4개 예제·4 Step만 사용했다. 전체 Train 20/28개를 충분히 학습한 비교가 아니다. **활동/제출:** Layer·Parameter·Gradient·실제 갱신 로그와 한 설정을 바꿀 때의 가설. **확인 질문:** trainable Parameter 수가 작으면 활성값 메모리도 항상 작을까?
 
 ## K2-12.U06 QLoRA·양자화와 자원 조건
 
@@ -47,7 +47,7 @@ Validation으로 설정을 고른 뒤 고정 Test를 확인한다. Base·원본 
 
 이번에는 Validation/Test 각 10개의 예제별 평균 Loss와 Test 10개의 생성 원문을 기록한다. 예제별 평균을 다시 평균한 값이므로 긴 응답의 Token 수로 가중한 전체 Loss와도 다르다. JSON/인용 검사를 통과해도 숫자·조건·예외의 의미적 정답까지 증명되지 않는다. 잘린 응답은 출력 길이 상한과 함께 본다.
 
-원본 조건의 4개와 증강 조건의 4개는 행동 비율과 질문 구성이 다르다. 같은 Step 수라도 정답 Token 노출량이 다르므로 이번 결과로 증강의 인과적 효과를 주장하지 않는다. 이후 전체 20/28개 학습·여러 Seed·노출량 통제·기존 18개 회귀·독립 검수를 추가해야 한다. Test를 보고 설정을 고르면 새 Test가 필요하다.
+최초 소규모 실행의 원본 조건 4개와 증강 조건 4개는 행동 비율과 질문 구성이 다르다. 같은 Step 수라도 정답 Token 노출량이 다르므로 이번 결과로 증강의 인과적 효과를 주장하지 않는다. 이후 전체 20/28개 학습·여러 Seed·노출량 통제·기존 18개 회귀·독립 검수를 추가해야 한다. Test를 보고 설정을 고르면 새 Test가 필요하다.
 
 IA3나 DoRA는 선택 비교 후보이지 필수 전수 실험이 아니다. 비교한다면 Base·데이터·Token·Step·Seed·평가를 고정하고 추가 Parameter·메모리·시간 차이를 같이 남긴다. 이번에는 해당 대안을 훈련하지 않았다.
 
@@ -71,3 +71,7 @@ Adapter 파일에는 보통 전체 Base Weight가 들어 있지 않다. 같은 B
 **활동/제출:** 저장 Manifest·새 프로세스 비교·Model Card. **확인 질문:** Adapter 파일만 보관하고 Base Revision을 잃으면 무엇을 재현하기 어려울까?
 
 공식 참고: [PEFT 구성·저장/로드](https://huggingface.co/docs/peft/v0.17.0/en/tutorial/peft_model_config), [LoRA](https://huggingface.co/docs/peft/en/package_reference/lora), [양자화·backend](https://huggingface.co/docs/transformers/v4.57.1/quantization/bitsandbytes). 실습은 설치 버전을 고정하며 최신 문서의 모든 옵션을 실행한 것은 아니다.
+
+## 전체 예제 포함 후속 검증
+
+원본 20개와 증강 28개를 각각 포함한 28 Step·Seed 37 비교와 세 조건의 기존 18개 Agent 회귀를 실제 실행했다. 전체 예제 노출과 수렴·품질 채택은 다르다. 같은 Step 수에서도 정답 Token 노출량과 행동 분포가 달랐다. Validation으로 후보를 고정한 뒤 Test를 확인했으며 QLoRA·독립 수업 검증은 남아 있다. [실제 결과](../../reports/KEDU-PRODUCTION-011/RESULT.md)를 본다.

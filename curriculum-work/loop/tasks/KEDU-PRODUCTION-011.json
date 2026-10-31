@@ -1,0 +1,12 @@
+{
+  "task_id": "KEDU-PRODUCTION-011",
+  "scope": [
+    "L7 all training rows",
+    "same L5 18-case regression across three weights"
+  ],
+  "new_units_authored": 0,
+  "total_authored_units": 44,
+  "optimizer_steps": 56,
+  "quality_accepted": false,
+  "recommended_reasoning_effort": "high"
+}

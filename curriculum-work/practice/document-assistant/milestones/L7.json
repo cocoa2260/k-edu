@@ -1,11 +1,13 @@
 {
   "stage": "L7",
-  "status": "REAL_LORA_SMOKE_VERIFIED_FULL_QUALITY_PENDING",
+  "status": "ALL_ROWS_TRAINED_AND_AGENT_REGRESSION_EXECUTED_QUALITY_PENDING",
   "smoke_training_verified": true,
-  "optimizer_steps": 8,
+  "optimizer_steps": 56,
   "new_process_reload_verified": true,
   "full_training_verified": false,
   "QLoRA_verified": false,
   "quality_accepted": false,
-  "evidence": "curriculum-work/reports/KEDU-PRODUCTION-010/validation.json"
+  "evidence": "curriculum-work/reports/KEDU-PRODUCTION-011/validation.json",
+  "all_training_rows_seen": true,
+  "regression_18_executed": true
 }

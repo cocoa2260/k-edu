@@ -81,3 +81,7 @@ app/training_data.py는 원문 가족·검수 해시·Train 부모의 고정 바
 ## L7 실제 LoRA 소규모 훈련
 
 requirements-lora.txt와 tools.lora_lab를 사용한다. CPU 일반 정밀도 조건별 4 Step·고정 Test 생성·Adapter 저장/별도 프로세스 재로드를 확인했다. 전체 데이터 학습·18개 회귀·QLoRA는 미완료다. [실제 결과](../../../reports/KEDU-PRODUCTION-010/RESULT.md)를 본다.
+
+## L7 전체 Train 포함 학습과 회귀
+
+tools.lora_full_lab는 같은 초기 Adapter와 조건별 28 Step을 사용하고 원본 20개/증강 28개 전체를 학습에 포함한다. Validation 선택을 고정한 뒤 Test와 기존 L5 18개 회귀를 세 조건에서 실행한다. 완료 기록은 사례별로 저장하며 코드/자료/환경이 다르면 재개를 거부한다. tools.lora_full_reload로 별도 프로세스 재로드를 확인한다. [실제 결과](../../../reports/KEDU-PRODUCTION-011/RESULT.md)를 본다.
