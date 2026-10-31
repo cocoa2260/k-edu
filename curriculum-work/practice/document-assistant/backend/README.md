@@ -77,3 +77,7 @@ tools.multi_lab는 같은 18개를 체크포인트로 저장한다. role-probes 
 app/training_data.py는 원문 가족·검수 해시·Train 부모의 고정 바꿔쓰기, 한 턴 Qwen Template/Token 경계와 assistant 정답~EOS label을 검사한다. tools.training_data_lab는 로컬 JSONL·Datasets Features/filter/map·Arrow 저장/재로드·실제 Padding·가짜 Logit Mask 검사를 실행한다. 의미적 정답과 실제 Optimizer Step의 검증은 별개다. 원본/검수 파일은 data/finetuning-v1의 Card에서 읽는다.
 
 엄격한 캐시 실행에는 프로세스 시작 전 HF_HUB_OFFLINE/HF_DATASETS_OFFLINE/HF_HUB_DISABLE_TELEMETRY를 지정한다. 로컬 JSON 사용 통계용 HEAD 시도와 차단 후 동일성은 제작 보고서에 보존했다. 기존 웹 API는 바꾸지 않았다.
+
+## L7 실제 LoRA 소규모 훈련
+
+requirements-lora.txt와 tools.lora_lab를 사용한다. CPU 일반 정밀도 조건별 4 Step·고정 Test 생성·Adapter 저장/별도 프로세스 재로드를 확인했다. 전체 데이터 학습·18개 회귀·QLoRA는 미완료다. [실제 결과](../../../reports/KEDU-PRODUCTION-010/RESULT.md)를 본다.

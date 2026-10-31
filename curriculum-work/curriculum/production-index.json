@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-009",
+  "current_batch": "KEDU-PRODUCTION-010",
   "units": [
     {
       "id": "K2-00.U01",
@@ -652,45 +652,49 @@
       "id": "K2-12.U05",
       "course": "K2-12",
       "title": "LoRA 원리·설정·실제 훈련",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-010",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/fine-tuning/training.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "real_LoRA_smoke_only_QLoRA_full_quality_pending",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-010/validation.json"
     },
     {
       "id": "K2-12.U06",
       "course": "K2-12",
       "title": "QLoRA·양자화와 자원 조건",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-010",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/fine-tuning/training.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "real_LoRA_smoke_only_QLoRA_full_quality_pending",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-010/validation.json"
     },
     {
       "id": "K2-12.U07",
       "course": "K2-12",
       "title": "동일 기준 평가·실패 진단·선택 기법 비교",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-010",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/fine-tuning/training.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "real_LoRA_smoke_only_QLoRA_full_quality_pending",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-010/validation.json"
     },
     {
       "id": "K2-12.U08",
       "course": "K2-12",
       "title": "Adapter 저장·새 프로세스 Reload·결과 Card",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-010",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/fine-tuning/training.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "real_LoRA_smoke_only_QLoRA_full_quality_pending",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-010/validation.json"
     },
     {
       "id": "K2-13.U01",
@@ -812,28 +816,18 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-010",
+    "id": "KEDU-PRODUCTION-011",
     "proposed_scope": [
-      "K2-12.U05",
-      "K2-12.U06",
-      "K2-12.U07",
-      "K2-12.U08",
-      "L7 training"
+      "L7 full-training and regression follow-up"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "DATASET_AND_TOKEN_LABEL_PREPARATION_VERIFIED_TRAINING_NOT_RUN",
+  "batch_status": "REAL_LORA_SMOKE_VERIFIED_FULL_TRAINING_QUALITY_PENDING",
   "first_unfinished_gate": {
-    "id": "G-TRAIN-ACTUAL-STEP-RELOAD",
-    "status": "not_started",
-    "recommended_reasoning_effort": "high",
-    "independent_pending": [
-      "L4/L5/L6 actual task quality",
-      "foundations/orientation unwritten",
-      "full framework/MCP",
-      "classroom/UI"
-    ]
+    "id": "G-TRAIN-FULL-EVALUATION",
+    "status": "pending",
+    "recommended_reasoning_effort": "high"
   },
   "milestones": {
     "L0": {
@@ -877,10 +871,13 @@
       "quality_accepted": false
     },
     "L7": {
-      "status": "DATASET_AND_TOKEN_LABEL_PREPARATION_VERIFIED_TRAINING_NOT_RUN",
+      "status": "REAL_LORA_SMOKE_VERIFIED_FULL_QUALITY_PENDING",
       "path": "curriculum-work/practice/document-assistant/milestones/L7.json",
       "preparation_verified": true,
-      "training_verified": false
+      "training_verified": true,
+      "new_process_reload_verified": true,
+      "quality_accepted": false,
+      "full_training_verified": false
     }
   }
 }

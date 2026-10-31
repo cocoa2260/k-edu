@@ -1,0 +1,12 @@
+{
+  "task_id": "KEDU-PRODUCTION-010",
+  "scope": [
+    "K2-12.U05-U08",
+    "L7 smoke training/save/reload"
+  ],
+  "optimizer_steps": 8,
+  "quality_accepted": false,
+  "QLoRA_executed": false,
+  "recommended_reasoning_effort": "high",
+  "next_task": "L7 full training and regression follow-up"
+}

@@ -1,0 +1,39 @@
+{
+  "task_id": "KEDU-PRODUCTION-010",
+  "parent_commit": "cbe84030cee54bb060f2a1aba7ceb614bb2c2970",
+  "branch": "work/curriculum-production-001",
+  "recorded_at_utc": "2026-10-31T01:52:46.421331+00:00",
+  "status": "VERIFIED_SMOKE_PREPARED_FOR_PUBLICATION",
+  "optimizer_steps": 8,
+  "new_units_authored": 4,
+  "total_authored_units": 44,
+  "tests_passed": 272,
+  "quality_accepted": false,
+  "QLoRA_executed": false,
+  "internal_reasoning_tokens": null,
+  "outputs": [
+    "curriculum-work/lessons/fine-tuning/training.md",
+    "curriculum-work/practice/document-assistant/backend/tools/lora_lab.py",
+    "curriculum-work/practice/document-assistant/backend/tests/test_lora_roundtrip.py",
+    "curriculum-work/practice/document-assistant/backend/requirements-lora.txt",
+    "curriculum-work/practice/document-assistant/backend/requirements-lora-tested.txt",
+    "curriculum-work/practice/document-assistant/L7.md",
+    "curriculum-work/practice/document-assistant/MODEL_CARD.md",
+    "curriculum-work/practice/document-assistant/milestones/L7.json",
+    "curriculum-work/curriculum/production-index.json",
+    "curriculum-work/README.md",
+    "curriculum-work/PROGRESS.md",
+    "curriculum-work/reports/KEDU-PRODUCTION-010/RESULT.md",
+    "curriculum-work/reports/KEDU-PRODUCTION-010/observed.json",
+    "curriculum-work/reports/KEDU-PRODUCTION-010/tests.json",
+    "curriculum-work/reports/KEDU-PRODUCTION-010/validation.json",
+    "curriculum-work/reports/KEDU-PRODUCTION-010/run.json",
+    "curriculum-work/practice/document-assistant/README.md",
+    "curriculum-work/practice/document-assistant/backend/README.md",
+    "curriculum-work/loop/tasks/KEDU-PRODUCTION-010.json"
+  ],
+  "adapter_archive_library_id": "libfile_ec817b856d408191922c9892bea3c527",
+  "publication": {
+    "status": "prepared"
+  }
+}

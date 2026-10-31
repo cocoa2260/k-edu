@@ -1,0 +1,16 @@
+{
+  "status": "REAL_LORA_SMOKE_TRAIN_SAVE_RELOAD_VERIFIED_QUALITY_NOT_ACCEPTED",
+  "optimizer_steps": 8,
+  "tests_passed": 272,
+  "new_process_reload_equal": true,
+  "full_training_20_28": false,
+  "regression_18_run": false,
+  "QLoRA_run": false,
+  "independent_review": false,
+  "quality_accepted": false,
+  "paid_api_calls": 0,
+  "sources": [
+    "https://huggingface.co/docs/peft/v0.17.0/en/tutorial/peft_model_config",
+    "https://huggingface.co/docs/transformers/v4.57.1/quantization/bitsandbytes"
+  ]
+}

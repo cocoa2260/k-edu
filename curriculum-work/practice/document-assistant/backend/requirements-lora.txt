@@ -1,0 +1,4 @@
+# Install CPU torch as described in L3/L7. No QLoRA backend installed by this file.
+-r requirements-agent.txt
+peft==0.17.1
+accelerate==1.10.1
