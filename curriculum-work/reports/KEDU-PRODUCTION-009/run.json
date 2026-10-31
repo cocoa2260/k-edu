@@ -3,7 +3,7 @@
   "recorded_at_utc": "2026-10-31T00:51:06.947195+00:00",
   "parent_commit": "2c073ca4b9b7dd2788d99ba288111ea159d3c6a1",
   "branch": "work/curriculum-production-001",
-  "status": "LOCAL_PREPARATION_VERIFIED_PUBLICATION_PREPARED",
+  "status": "PUBLISHED_PREPARATION_VERIFIED_TRAINING_NOT_RUN",
   "recommended_reasoning_effort": "high",
   "new_units_authored": 4,
   "total_authored_units": 40,
@@ -51,6 +51,14 @@
   ],
   "next_task": "KEDU-PRODUCTION-010 K2-12.U05-U08 / L7 actual training",
   "publication": {
-    "status": "prepared"
+    "status": "verified",
+    "content_commit": "b076cf5262db5ab54e55370f13b05a733d3cf2a3",
+    "tree_sha": "74ffca229e6771cf3f4420f6499e9d076199a51d",
+    "uploaded_files": 29,
+    "all_uploaded_blob_hashes_match": true,
+    "all_other_original_files_preserved": true,
+    "branch_head_checked": true,
+    "verified_at_utc": "2026-10-31T00:52:10.636Z",
+    "note": "Follow-up metadata commit. Content commit identifies verified lessons/data/code/observations. Actual model training and independent human review remain pending."
   }
 }
