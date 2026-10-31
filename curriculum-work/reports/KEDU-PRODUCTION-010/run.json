@@ -3,7 +3,7 @@
   "parent_commit": "cbe84030cee54bb060f2a1aba7ceb614bb2c2970",
   "branch": "work/curriculum-production-001",
   "recorded_at_utc": "2026-10-31T01:52:46.421331+00:00",
-  "status": "VERIFIED_SMOKE_PREPARED_FOR_PUBLICATION",
+  "status": "PUBLISHED_REAL_LORA_SMOKE_VERIFIED_FULL_QUALITY_PENDING",
   "optimizer_steps": 8,
   "new_units_authored": 4,
   "total_authored_units": 44,
@@ -34,6 +34,16 @@
   ],
   "adapter_archive_library_id": "libfile_ec817b856d408191922c9892bea3c527",
   "publication": {
-    "status": "prepared"
-  }
+    "status": "verified",
+    "content_commit": "0bd1447bbeb7d181abb5e9f38cbe5f1ebf399650",
+    "tree_sha": "f6902ec97a6111c8111f0e4362e1e4730817156e",
+    "uploaded_files": 19,
+    "all_uploaded_blob_hashes_match": true,
+    "all_other_original_files_preserved": true,
+    "verified_at_utc": "2026-10-31T01:54:59.103Z"
+  },
+  "recommended_reasoning_effort": "high",
+  "reasoning_setting_automatically_changed": false,
+  "actual_model_generations": 31,
+  "total_tool_count": null
 }
