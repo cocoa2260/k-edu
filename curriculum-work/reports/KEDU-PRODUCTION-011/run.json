@@ -3,7 +3,7 @@
   "branch": "work/curriculum-production-001",
   "parent_commit": "2a186d942122a4eece04e19f3ba2587e8636f162",
   "recorded_at_utc": "2026-10-31T02:41:59.885113+00:00",
-  "status": "LOCAL_VERIFIED_PUBLICATION_PREPARED",
+  "status": "PUBLISHED_ALL_TRAIN_ROWS_AND_AGENT_REGRESSION_VERIFIED_QUALITY_NOT_ACCEPTED",
   "new_units_authored": 0,
   "total_authored_units": 44,
   "total_units": 70,
@@ -42,7 +42,17 @@
   "archive_evaluation_complete": true,
   "archive_sha256": "fdc0a0d7b5014b98bcbc6c2761a0b89e1026e087238cf7f0fd1f2b4c912e71ec",
   "publication": {
-    "status": "prepared"
+    "status": "verified",
+    "content_commit": "4f9969708f4795eb514afbb30094956ec56b6714",
+    "tree_sha": "8a8df5b2f1c7406757027dc448c56b6d80de128f",
+    "uploaded_files": 20,
+    "all_uploaded_blob_hashes_match": true,
+    "all_other_original_files_preserved": true,
+    "branch_head_checked": true,
+    "verified_at_utc": "2026-10-31T02:45:11.812Z"
   },
-  "reasoning_setting_automatically_changed": false
+  "reasoning_setting_automatically_changed": false,
+  "independent_reviewer": false,
+  "elapsed_work_seconds": null,
+  "next_task": "KEDU-PRODUCTION-012 K2-13/L8 PDF parsing and OCR"
 }
