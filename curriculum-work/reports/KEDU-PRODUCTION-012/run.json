@@ -1,13 +1,24 @@
 {
   "batch": "KEDU-PRODUCTION-012",
-  "status": "READY_TO_PUBLISH",
+  "status": "PUBLISHED",
   "branch": "work/curriculum-production-001",
   "parent_commit": "c39e1cdb0ca0322439f455e0964844d94f4904d7",
   "authored_units": 48,
   "pdf_ocr_executed": true,
   "targeted_tests_passed": 44,
   "quality_accepted": false,
-  "publication": null,
+  "publication": {
+    "content_commit": "e256cbda48d09d8c2415ef81def4e2a6ad3dfc01",
+    "content_tree": "6dbbc240c8bd6e9d689470d30bb9fbc4d2ce4c76",
+    "verification": {
+      "uploaded": 37,
+      "unchanged": 457,
+      "total_blobs": 494
+    },
+    "all_other_prior_blobs_preserved": true,
+    "binary_blobs_sha_verified": 7,
+    "branch": "work/curriculum-production-001"
+  },
   "execution_attempts": [
     {
       "id": 1,
