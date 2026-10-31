@@ -1,0 +1,306 @@
+{
+  "version": "finetuning-v1",
+  "origin": "assistant_authored_fixed_fixtures_NOT_runtime_model_synthesis",
+  "examples": [
+    {
+      "id": "FT-T01-S01-P1",
+      "group_id": "FT-T01",
+      "split": "train",
+      "task": "answer",
+      "parent_id": "FT-T01-S01",
+      "method": "manual_paraphrase",
+      "permitted": true,
+      "question": "연구실 회의실을 쓰려는데, 최대 이용량과 미리 할 일 및 제외 조건을 정리해줘.",
+      "sources": [
+        {
+          "source_id": "FT-T01@v1:L1",
+          "text": "연구실 회의실의 이용 한도는 2시간이다. 사전 예약이 필요하며 음식 반입 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "연구실 회의실 한도는 2시간이며 사전 예약이 필요합니다. 음식 반입 금지입니다.",
+        "claims": [
+          {
+            "text": "연구실 회의실의 한도와 조건",
+            "source_id": "FT-T01@v1:L1",
+            "quote": "연구실 회의실의 이용 한도는 2시간이다. 사전 예약이 필요하며 음식 반입 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-T01-S04-P1",
+      "group_id": "FT-T01",
+      "split": "train",
+      "task": "abstain",
+      "parent_id": "FT-T01-S04",
+      "method": "manual_paraphrase",
+      "permitted": true,
+      "question": "연구실 회의실 이용 중 물건을 분실했을 때 받을 수 있는 보상 금액 규정이 있어?",
+      "sources": [
+        {
+          "source_id": "FT-T01@v1:L1",
+          "text": "연구실 회의실의 이용 한도는 2시간이다. 사전 예약이 필요하며 음식 반입 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "abstain",
+        "answer": "제공된 연구실 회의실 자료에는 분실 보상금 기준이 없어 금액을 답할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-T02-S01-P1",
+      "group_id": "FT-T02",
+      "split": "train",
+      "task": "answer",
+      "parent_id": "FT-T02-S01",
+      "method": "manual_paraphrase",
+      "permitted": true,
+      "question": "실험 장비 대여을 쓰려는데, 최대 이용량과 미리 할 일 및 제외 조건을 정리해줘.",
+      "sources": [
+        {
+          "source_id": "FT-T02@v1:L1",
+          "text": "실험 장비 대여의 이용 한도는 3일이다. 대여 등록이 필요하며 재대여 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "실험 장비 대여 한도는 3일이며 대여 등록이 필요합니다. 재대여 금지입니다.",
+        "claims": [
+          {
+            "text": "실험 장비 대여의 한도와 조건",
+            "source_id": "FT-T02@v1:L1",
+            "quote": "실험 장비 대여의 이용 한도는 3일이다. 대여 등록이 필요하며 재대여 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-T02-S04-P1",
+      "group_id": "FT-T02",
+      "split": "train",
+      "task": "abstain",
+      "parent_id": "FT-T02-S04",
+      "method": "manual_paraphrase",
+      "permitted": true,
+      "question": "실험 장비 대여 이용 중 물건을 분실했을 때 받을 수 있는 보상 금액 규정이 있어?",
+      "sources": [
+        {
+          "source_id": "FT-T02@v1:L1",
+          "text": "실험 장비 대여의 이용 한도는 3일이다. 대여 등록이 필요하며 재대여 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "abstain",
+        "answer": "제공된 실험 장비 대여 자료에는 분실 보상금 기준이 없어 금액을 답할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-T03-S01-P1",
+      "group_id": "FT-T03",
+      "split": "train",
+      "task": "answer",
+      "parent_id": "FT-T03-S01",
+      "method": "manual_paraphrase",
+      "permitted": true,
+      "question": "도서관 인쇄을 쓰려는데, 최대 이용량과 미리 할 일 및 제외 조건을 정리해줘.",
+      "sources": [
+        {
+          "source_id": "FT-T03@v1:L1",
+          "text": "도서관 인쇄의 이용 한도는 40장이다. 학생증 제시가 필요하며 컬러 인쇄 제외 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "도서관 인쇄 한도는 40장이며 학생증 제시가 필요합니다. 컬러 인쇄 제외입니다.",
+        "claims": [
+          {
+            "text": "도서관 인쇄의 한도와 조건",
+            "source_id": "FT-T03@v1:L1",
+            "quote": "도서관 인쇄의 이용 한도는 40장이다. 학생증 제시가 필요하며 컬러 인쇄 제외 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-T03-S04-P1",
+      "group_id": "FT-T03",
+      "split": "train",
+      "task": "abstain",
+      "parent_id": "FT-T03-S04",
+      "method": "manual_paraphrase",
+      "permitted": true,
+      "question": "도서관 인쇄 이용 중 물건을 분실했을 때 받을 수 있는 보상 금액 규정이 있어?",
+      "sources": [
+        {
+          "source_id": "FT-T03@v1:L1",
+          "text": "도서관 인쇄의 이용 한도는 40장이다. 학생증 제시가 필요하며 컬러 인쇄 제외 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "abstain",
+        "answer": "제공된 도서관 인쇄 자료에는 분실 보상금 기준이 없어 금액을 답할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-T04-S01-P1",
+      "group_id": "FT-T04",
+      "split": "train",
+      "task": "answer",
+      "parent_id": "FT-T04-S01",
+      "method": "manual_paraphrase",
+      "permitted": true,
+      "question": "현장 보관함을 쓰려는데, 최대 이용량과 미리 할 일 및 제외 조건을 정리해줘.",
+      "sources": [
+        {
+          "source_id": "FT-T04@v1:L1",
+          "text": "현장 보관함의 이용 한도는 2주이다. 사용 신청이 필요하며 다른 사람과 공유 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "현장 보관함 한도는 2주이며 사용 신청이 필요합니다. 다른 사람과 공유 금지입니다.",
+        "claims": [
+          {
+            "text": "현장 보관함의 한도와 조건",
+            "source_id": "FT-T04@v1:L1",
+            "quote": "현장 보관함의 이용 한도는 2주이다. 사용 신청이 필요하며 다른 사람과 공유 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-T04-S04-P1",
+      "group_id": "FT-T04",
+      "split": "train",
+      "task": "abstain",
+      "parent_id": "FT-T04-S04",
+      "method": "manual_paraphrase",
+      "permitted": true,
+      "question": "현장 보관함 이용 중 물건을 분실했을 때 받을 수 있는 보상 금액 규정이 있어?",
+      "sources": [
+        {
+          "source_id": "FT-T04@v1:L1",
+          "text": "현장 보관함의 이용 한도는 2주이다. 사용 신청이 필요하며 다른 사람과 공유 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "abstain",
+        "answer": "제공된 현장 보관함 자료에는 분실 보상금 기준이 없어 금액을 답할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-BAD-NUMBER",
+      "group_id": "FT-T01",
+      "split": "train",
+      "task": "answer",
+      "parent_id": "FT-T01-S01",
+      "method": "manual_paraphrase",
+      "permitted": true,
+      "question": "연구실 회의실의 최대 이용 시간과 조건은?",
+      "sources": [
+        {
+          "source_id": "FT-T01@v1:L1",
+          "text": "연구실 회의실의 이용 한도는 2시간이다. 사전 예약이 필요하며 음식 반입 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "연구실 회의실 한도는 20시간이며 사전 예약이 필요합니다. 음식 반입 금지입니다.",
+        "claims": [
+          {
+            "text": "연구실 회의실의 한도와 조건",
+            "source_id": "FT-T01@v1:L1",
+            "quote": "연구실 회의실의 이용 한도는 2시간이다. 사전 예약이 필요하며 음식 반입 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-BAD-VALIDATION",
+      "group_id": "FT-V01",
+      "split": "validation",
+      "task": "answer",
+      "parent_id": "FT-V01-S01",
+      "method": "manual_paraphrase",
+      "permitted": true,
+      "question": "검증 문항도 증강해서 훈련에 넣자.",
+      "sources": [
+        {
+          "source_id": "FT-V01@v1:L1",
+          "text": "영상 스튜디오의 이용 한도는 90분이다. 사전 예약이 필요하며 야간 이용 제외 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "영상 스튜디오 한도는 90분이며 사전 예약이 필요합니다. 야간 이용 제외입니다.",
+        "claims": [
+          {
+            "text": "영상 스튜디오의 한도와 조건",
+            "source_id": "FT-V01@v1:L1",
+            "quote": "영상 스튜디오의 이용 한도는 90분이다. 사전 예약이 필요하며 야간 이용 제외 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-BAD-DUPLICATE",
+      "group_id": "FT-T01",
+      "split": "train",
+      "task": "answer",
+      "parent_id": "FT-T01-S01",
+      "method": "manual_paraphrase",
+      "permitted": true,
+      "question": "연구실 회의실의 이용 한도와 조건을 알려줘.",
+      "sources": [
+        {
+          "source_id": "FT-T01@v1:L1",
+          "text": "연구실 회의실의 이용 한도는 2시간이다. 사전 예약이 필요하며 음식 반입 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "연구실 회의실 한도는 2시간이며 사전 예약이 필요합니다. 음식 반입 금지입니다.",
+        "claims": [
+          {
+            "text": "연구실 회의실의 한도와 조건",
+            "source_id": "FT-T01@v1:L1",
+            "quote": "연구실 회의실의 이용 한도는 2시간이다. 사전 예약이 필요하며 음식 반입 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-BAD-QUOTE",
+      "group_id": "FT-T01",
+      "split": "train",
+      "task": "answer",
+      "parent_id": "FT-T01-S01",
+      "method": "manual_paraphrase",
+      "permitted": true,
+      "question": "회의실 사용 기준을 원문으로 확인해줘.",
+      "sources": [
+        {
+          "source_id": "FT-T01@v1:L1",
+          "text": "연구실 회의실의 이용 한도는 2시간이다. 사전 예약이 필요하며 음식 반입 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "연구실 회의실 한도는 2시간이며 사전 예약이 필요합니다. 음식 반입 금지입니다.",
+        "claims": [
+          {
+            "text": "연구실 회의실의 한도와 조건",
+            "source_id": "FT-T01@v1:L1",
+            "quote": "원문에 없는 허위 인용"
+          }
+        ]
+      }
+    }
+  ]
+}

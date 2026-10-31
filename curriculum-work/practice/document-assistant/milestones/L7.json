@@ -1,0 +1,14 @@
+{
+  "stage": "L7",
+  "status": "DATASET_AND_TOKEN_LABEL_PREPARATION_VERIFIED_TRAINING_NOT_RUN",
+  "preparation_verified": true,
+  "training_verified": false,
+  "optimizer_steps": 0,
+  "adapter_save_verified": false,
+  "new_process_reload_verified": false,
+  "QLoRA_verified": false,
+  "dataset_version": "finetuning-v1",
+  "prepared_rows": 48,
+  "evidence": "curriculum-work/reports/KEDU-PRODUCTION-009/validation.json",
+  "next": "K2-12.U05-U08 real training/evaluation/save/reload and QLoRA resource gate"
+}

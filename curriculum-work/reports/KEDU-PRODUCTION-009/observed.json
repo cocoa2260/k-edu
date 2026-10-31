@@ -1,0 +1,256 @@
+{
+  "evidence_kind": "ACTUAL_DATASETS_AND_PINNED_TOKENIZER_PREPARATION_NO_TRAINING",
+  "versions": {
+    "datasets": "4.4.1",
+    "pyarrow": "26.0.0",
+    "pandas": "3.1.0",
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.1",
+    "torch": "2.15.0+cpu",
+    "pydantic": "2.14.2"
+  },
+  "python": "3.12.14",
+  "tokenizer": {
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "native_generation_tags_present": false,
+    "mask_method": "verified single-turn token prefix, assistant target through EOS, trailing newline ignored",
+    "enable_thinking": false,
+    "max_length": 512,
+    "no_truncation": true,
+    "eos_token_id": 151645
+  },
+  "input_hashes": {
+    "augmentation-candidates.json": "858762db9ff48febcfa9475eaff303d8252dad5ac857285cc72f176b42c4910c",
+    "review-manifest.json": "4511268e7bc0641b66f9aa0b908e0f4a8472231050a117e1ce1345e684d67b53",
+    "seeds.json": "9f6fd7add33d1fffe421a98b3251e7c3fc3e0e9eb6801c11ff80866bfa14cf60",
+    "split-manifest.json": "e80534484fd91669148aec38510892ce9ed2bf836e12ab4970d9640117f793a1"
+  },
+  "code_hashes": {
+    "app/training_data.py": "6f9b5cdac17959c8244e35cadb02ffcdc2a5548601d546a39baf97e4afa608b6",
+    "tools/training_data_lab.py": "086bdd522e1e53524d62eeae44bcb219dbc79fd1de911c05c32bbd0e0d2b6371",
+    "app/rag.py": "0bd7f48e56a70fc7742e281ece25748583f1794d734762d66bf578c2d0f5beab"
+  },
+  "seed_examples": 40,
+  "seed_train_examples": 20,
+  "augmentation_candidates": 12,
+  "accepted_augmentations": 8,
+  "augmentation_decisions": [
+    {
+      "id": "FT-T01-S01-P1",
+      "accepted": true,
+      "rejection_id": null,
+      "review_reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님."
+    },
+    {
+      "id": "FT-T01-S04-P1",
+      "accepted": true,
+      "rejection_id": null,
+      "review_reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님."
+    },
+    {
+      "id": "FT-T02-S01-P1",
+      "accepted": true,
+      "rejection_id": null,
+      "review_reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님."
+    },
+    {
+      "id": "FT-T02-S04-P1",
+      "accepted": true,
+      "rejection_id": null,
+      "review_reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님."
+    },
+    {
+      "id": "FT-T03-S01-P1",
+      "accepted": true,
+      "rejection_id": null,
+      "review_reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님."
+    },
+    {
+      "id": "FT-T03-S04-P1",
+      "accepted": true,
+      "rejection_id": null,
+      "review_reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님."
+    },
+    {
+      "id": "FT-T04-S01-P1",
+      "accepted": true,
+      "rejection_id": null,
+      "review_reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님."
+    },
+    {
+      "id": "FT-T04-S04-P1",
+      "accepted": true,
+      "rejection_id": null,
+      "review_reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님."
+    },
+    {
+      "id": "FT-BAD-NUMBER",
+      "accepted": false,
+      "rejection_id": "TARGET_CHANGED_REANNOTATION_REQUIRED",
+      "review_reason": "질문 바꿔쓰기인데 정답의 2시간을 20시간으로 바꿔 기각. 인용이 그대로 있어도 답이 틀릴 수 있다."
+    },
+    {
+      "id": "FT-BAD-VALIDATION",
+      "accepted": false,
+      "rejection_id": "TRAIN_ONLY_AUGMENTATION",
+      "review_reason": "Validation 부모의 파생 예제이므로 Train 증강 대상이 아니다."
+    },
+    {
+      "id": "FT-BAD-DUPLICATE",
+      "accepted": false,
+      "rejection_id": "DUPLICATE",
+      "review_reason": "원본과 질문·Context가 동일해 새 정보가 없는 중복이다."
+    },
+    {
+      "id": "FT-BAD-QUOTE",
+      "accepted": false,
+      "rejection_id": "QUOTE_NOT_IN_SOURCE",
+      "review_reason": "인용문이 원문에 없어 기각한다."
+    }
+  ],
+  "dataset_features": {
+    "id": "Value('string')",
+    "group_id": "Value('string')",
+    "split": "Value('string')",
+    "task": "Value('string')",
+    "parent_id": "Value('string')",
+    "method": "Value('string')",
+    "question": "Value('string')",
+    "sources_json": "Value('string')",
+    "target_json": "Value('string')",
+    "permitted": "Value('bool')"
+  },
+  "loaded_counts": {
+    "train": 28,
+    "validation": 10,
+    "test": 10
+  },
+  "filter_removed": {
+    "train": 0,
+    "validation": 0,
+    "test": 0
+  },
+  "filter_note": "Rows already reviewed before export; filter removes blank questions only, not a semantic quality judge.",
+  "map_added_fields": [
+    "input_ids",
+    "attention_mask",
+    "labels",
+    "prompt_tokens",
+    "supervised_tokens",
+    "total_tokens"
+  ],
+  "splits": {
+    "train": {
+      "rows": 28,
+      "min_tokens": 233,
+      "max_tokens": 382,
+      "supervised_tokens": 1947,
+      "ids": [
+        "FT-T01-S01",
+        "FT-T01-S02",
+        "FT-T01-S03",
+        "FT-T01-S04",
+        "FT-T01-S05",
+        "FT-T02-S01",
+        "FT-T02-S02",
+        "FT-T02-S03",
+        "FT-T02-S04",
+        "FT-T02-S05",
+        "FT-T03-S01",
+        "FT-T03-S02",
+        "FT-T03-S03",
+        "FT-T03-S04",
+        "FT-T03-S05",
+        "FT-T04-S01",
+        "FT-T04-S02",
+        "FT-T04-S03",
+        "FT-T04-S04",
+        "FT-T04-S05",
+        "FT-T01-S01-P1",
+        "FT-T01-S04-P1",
+        "FT-T02-S01-P1",
+        "FT-T02-S04-P1",
+        "FT-T03-S01-P1",
+        "FT-T03-S04-P1",
+        "FT-T04-S01-P1",
+        "FT-T04-S04-P1"
+      ],
+      "groups": [
+        "FT-T01",
+        "FT-T02",
+        "FT-T03",
+        "FT-T04"
+      ]
+    },
+    "validation": {
+      "rows": 10,
+      "min_tokens": 233,
+      "max_tokens": 382,
+      "supervised_tokens": 676,
+      "ids": [
+        "FT-V01-S01",
+        "FT-V01-S02",
+        "FT-V01-S03",
+        "FT-V01-S04",
+        "FT-V01-S05",
+        "FT-V02-S01",
+        "FT-V02-S02",
+        "FT-V02-S03",
+        "FT-V02-S04",
+        "FT-V02-S05"
+      ],
+      "groups": [
+        "FT-V01",
+        "FT-V02"
+      ]
+    },
+    "test": {
+      "rows": 10,
+      "min_tokens": 233,
+      "max_tokens": 375,
+      "supervised_tokens": 668,
+      "ids": [
+        "FT-E01-S01",
+        "FT-E01-S02",
+        "FT-E01-S03",
+        "FT-E01-S04",
+        "FT-E01-S05",
+        "FT-E02-S01",
+        "FT-E02-S02",
+        "FT-E02-S03",
+        "FT-E02-S04",
+        "FT-E02-S05"
+      ],
+      "groups": [
+        "FT-E01",
+        "FT-E02"
+      ]
+    }
+  },
+  "export_hashes": {
+    "train.jsonl": "427914eddaae3f38bbef8548778f0d247b17985695bb7c12e7161f6336c10805",
+    "validation.jsonl": "60c9050783239c000aea85c08f1c8ab28d2952237c6483baed09b39d4c252c1c",
+    "test.jsonl": "f35423ceba229bc58e8a2a5998721c2c2bf20e667eb61d0bfc73e4bda0de3133"
+  },
+  "arrow_save_reload_equal": true,
+  "reloaded_content_sha256": "38ec8e727bb43b0f05f3ca59c90cfcfb5b84300d40ec3fefcb4514ca4a77036b",
+  "total_prepared_rows": 48,
+  "loss_probe": {
+    "evidence_kind": "SYNTHETIC_LOGITS_MASK_PROBE_NOT_MODEL_LOSS",
+    "toy_loss": 3.265509605407715,
+    "direct_logit_gradient_at_ignored_targets": 0,
+    "supervised_positions_have_gradient": true,
+    "padding_labels_ignored": true,
+    "causal_shift_once": true,
+    "optimizer_steps": 0,
+    "note": "Ignored target positions have no direct loss; this does NOT stop indirect gradients through prompt context in a real Transformer."
+  },
+  "actual_model_generations": 0,
+  "optimizer_steps": 0,
+  "paid_api_calls": 0,
+  "quality_accepted": false,
+  "independent_review": false,
+  "elapsed_seconds": 0.7852
+}

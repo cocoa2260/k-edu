@@ -1,4 +1,4 @@
-# 문서 답변 누적 실습 — Backend L0~L6
+# 문서 답변 누적 실습 — Backend L0~L7 준비
 
 Day3 7~8교시의 코드와 CORS에서 출발해 L1 입력 준비, L2 Harness, L3 실제 Embedding·검색·Index를 같은 프로젝트에 추가했다. 기존 대화 API는 유지하고 L4 CLI에서 실제 검색·로컬 생성·출력 검사를 연결했다. 답변 품질은 채택 보류다. 처음 시작하는 학생은 [L0 본문](../../../lessons/baseline/lesson.md)을 읽는다.
 
@@ -69,3 +69,11 @@ HFCpuProvider의 신규 출력 상한을 선택 인자로 추가했다. 기본 5
 tools.multi_lab는 같은 18개를 체크포인트로 저장한다. role-probes 옵션은 Runtime이 실제 E5로 근거를 준비한 별도 역할 호출이며 통합 성공이 아니다. tools.multi_fixture_lab의 Control/M01~M04는 고정 응답 검사다. 기존 웹 API를 새 Runtime에 연결하지 않았고 새 의존성도 추가하지 않았다. 의미적 품질은 미통과다.
 
 응답 전체의 단일 JSON 코드 블록만 transport 포장으로 제거한다. Markdown 안의 Python을 실행하거나 앞뒤 문장에서 JSON을 추출하지 않는다. 모델 원응답은 observed.json의 생성 관찰에 보존한다.
+
+## L7 준비
+
+[L7 안내](../L7.md)에서 별도 환경에 requirements-training-data.txt를 설치한다. Datasets 4.4.1과 기존 고정 Tokenizer를 사용하며 모델 가중치·PEFT 훈련 API는 호출하지 않는다. requirements-training-data-tested.txt는 실제 설치 스냅샷이다.
+
+app/training_data.py는 원문 가족·검수 해시·Train 부모의 고정 바꿔쓰기, 한 턴 Qwen Template/Token 경계와 assistant 정답~EOS label을 검사한다. tools.training_data_lab는 로컬 JSONL·Datasets Features/filter/map·Arrow 저장/재로드·실제 Padding·가짜 Logit Mask 검사를 실행한다. 의미적 정답과 실제 Optimizer Step의 검증은 별개다. 원본/검수 파일은 data/finetuning-v1의 Card에서 읽는다.
+
+엄격한 캐시 실행에는 프로세스 시작 전 HF_HUB_OFFLINE/HF_DATASETS_OFFLINE/HF_HUB_DISABLE_TELEMETRY를 지정한다. 로컬 JSON 사용 통계용 HEAD 시도와 차단 후 동일성은 제작 보고서에 보존했다. 기존 웹 API는 바꾸지 않았다.

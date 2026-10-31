@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-008",
+  "current_batch": "KEDU-PRODUCTION-009",
   "units": [
     {
       "id": "K2-00.U01",
@@ -604,45 +604,49 @@
       "id": "K2-12.U01",
       "course": "K2-12",
       "title": "학습 목표·PEFT 계열과 전략 선택",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-009",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/fine-tuning/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_dataset_and_token_label_preparation_verified_training_pending",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-009/validation.json"
     },
     {
       "id": "K2-12.U02",
       "course": "K2-12",
       "title": "Dataset 설계·제작·검수·분리",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-009",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/fine-tuning/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_dataset_and_token_label_preparation_verified_training_pending",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-009/validation.json"
     },
     {
       "id": "K2-12.U03",
       "course": "K2-12",
       "title": "Train 데이터 증강·합성·품질 관리",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-009",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/fine-tuning/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_dataset_and_token_label_preparation_verified_training_pending",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-009/validation.json"
     },
     {
       "id": "K2-12.U04",
       "course": "K2-12",
       "title": "학습 입력·Chat Template·Loss 범위",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-009",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/fine-tuning/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_dataset_and_token_label_preparation_verified_training_pending",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-009/validation.json"
     },
     {
       "id": "K2-12.U05",
@@ -808,25 +812,26 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-009",
+    "id": "KEDU-PRODUCTION-010",
     "proposed_scope": [
-      "K2-12.U01",
-      "K2-12.U02",
-      "K2-12.U03",
-      "K2-12.U04"
+      "K2-12.U05",
+      "K2-12.U06",
+      "K2-12.U07",
+      "K2-12.U08",
+      "L7 training"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "ROLE_HANDOFF_RUNTIME_VERIFIED_ACTUAL_ROLES_EXECUTED_TASK_QUALITY_NOT_ACCEPTED",
+  "batch_status": "DATASET_AND_TOKEN_LABEL_PREPARATION_VERIFIED_TRAINING_NOT_RUN",
   "first_unfinished_gate": {
-    "id": "L7-DATASET-PREPARATION",
+    "id": "G-TRAIN-ACTUAL-STEP-RELOAD",
     "status": "not_started",
     "recommended_reasoning_effort": "high",
     "independent_pending": [
-      "L4/L5/L6 actual task and answer quality",
-      "full Framework/MCP",
+      "L4/L5/L6 actual task quality",
       "foundations/orientation unwritten",
+      "full framework/MCP",
       "classroom/UI"
     ]
   },
@@ -870,6 +875,12 @@
       "path": "curriculum-work/practice/document-assistant/milestones/L6.json",
       "actual_roles_verified": true,
       "quality_accepted": false
+    },
+    "L7": {
+      "status": "DATASET_AND_TOKEN_LABEL_PREPARATION_VERIFIED_TRAINING_NOT_RUN",
+      "path": "curriculum-work/practice/document-assistant/milestones/L7.json",
+      "preparation_verified": true,
+      "training_verified": false
     }
   }
 }

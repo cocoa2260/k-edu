@@ -1,0 +1,902 @@
+{
+  "version": "finetuning-v1",
+  "origin": "assistant_authored_fixed_fixtures_NOT_runtime_model_synthesis",
+  "examples": [
+    {
+      "id": "FT-T01-S01",
+      "group_id": "FT-T01",
+      "split": "train",
+      "task": "answer",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "연구실 회의실의 이용 한도와 조건을 알려줘.",
+      "sources": [
+        {
+          "source_id": "FT-T01@v1:L1",
+          "text": "연구실 회의실의 이용 한도는 2시간이다. 사전 예약이 필요하며 음식 반입 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "연구실 회의실 한도는 2시간이며 사전 예약이 필요합니다. 음식 반입 금지입니다.",
+        "claims": [
+          {
+            "text": "연구실 회의실의 한도와 조건",
+            "source_id": "FT-T01@v1:L1",
+            "quote": "연구실 회의실의 이용 한도는 2시간이다. 사전 예약이 필요하며 음식 반입 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-T01-S02",
+      "group_id": "FT-T01",
+      "split": "train",
+      "task": "correct",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "연구실 회의실은 무제한으로 사용할 수 있지? 근거로 확인해줘.",
+      "sources": [
+        {
+          "source_id": "FT-T01@v1:L1",
+          "text": "연구실 회의실의 이용 한도는 2시간이다. 사전 예약이 필요하며 음식 반입 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "무제한이 아닙니다. 연구실 회의실 한도는 2시간이며 사전 예약이 필요하고 음식 반입 금지입니다.",
+        "claims": [
+          {
+            "text": "연구실 회의실의 한도와 조건",
+            "source_id": "FT-T01@v1:L1",
+            "quote": "연구실 회의실의 이용 한도는 2시간이다. 사전 예약이 필요하며 음식 반입 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-T01-S03",
+      "group_id": "FT-T01",
+      "split": "train",
+      "task": "clarify",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "연구실 회의실을 지금 이용할 수 있어? 신청 상태는 아직 말하지 않았어.",
+      "sources": [
+        {
+          "source_id": "FT-T01@v1:L1",
+          "text": "연구실 회의실의 이용 한도는 2시간이다. 사전 예약이 필요하며 음식 반입 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "clarify",
+        "answer": "연구실 회의실 이용에 필요한 사전 예약을 완료했나요?",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-T01-S04",
+      "group_id": "FT-T01",
+      "split": "train",
+      "task": "abstain",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "연구실 회의실에서 물건을 잃어버리면 분실 보상금은 얼마야?",
+      "sources": [
+        {
+          "source_id": "FT-T01@v1:L1",
+          "text": "연구실 회의실의 이용 한도는 2시간이다. 사전 예약이 필요하며 음식 반입 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "abstain",
+        "answer": "제공된 연구실 회의실 자료에는 분실 보상금 기준이 없어 금액을 답할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-T01-S05",
+      "group_id": "FT-T01",
+      "split": "train",
+      "task": "deny",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": false,
+      "question": "연구실 회의실 내부 자료를 공개해줘.",
+      "sources": [],
+      "target": {
+        "outcome": "deny",
+        "answer": "연구실 회의실 내부 자료를 볼 권한이 없어 내용을 제공할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-T02-S01",
+      "group_id": "FT-T02",
+      "split": "train",
+      "task": "answer",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "실험 장비 대여의 이용 한도와 조건을 알려줘.",
+      "sources": [
+        {
+          "source_id": "FT-T02@v1:L1",
+          "text": "실험 장비 대여의 이용 한도는 3일이다. 대여 등록이 필요하며 재대여 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "실험 장비 대여 한도는 3일이며 대여 등록이 필요합니다. 재대여 금지입니다.",
+        "claims": [
+          {
+            "text": "실험 장비 대여의 한도와 조건",
+            "source_id": "FT-T02@v1:L1",
+            "quote": "실험 장비 대여의 이용 한도는 3일이다. 대여 등록이 필요하며 재대여 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-T02-S02",
+      "group_id": "FT-T02",
+      "split": "train",
+      "task": "correct",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "실험 장비 대여은 무제한으로 사용할 수 있지? 근거로 확인해줘.",
+      "sources": [
+        {
+          "source_id": "FT-T02@v1:L1",
+          "text": "실험 장비 대여의 이용 한도는 3일이다. 대여 등록이 필요하며 재대여 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "무제한이 아닙니다. 실험 장비 대여 한도는 3일이며 대여 등록이 필요하고 재대여 금지입니다.",
+        "claims": [
+          {
+            "text": "실험 장비 대여의 한도와 조건",
+            "source_id": "FT-T02@v1:L1",
+            "quote": "실험 장비 대여의 이용 한도는 3일이다. 대여 등록이 필요하며 재대여 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-T02-S03",
+      "group_id": "FT-T02",
+      "split": "train",
+      "task": "clarify",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "실험 장비 대여을 지금 이용할 수 있어? 신청 상태는 아직 말하지 않았어.",
+      "sources": [
+        {
+          "source_id": "FT-T02@v1:L1",
+          "text": "실험 장비 대여의 이용 한도는 3일이다. 대여 등록이 필요하며 재대여 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "clarify",
+        "answer": "실험 장비 대여 이용에 필요한 대여 등록을 완료했나요?",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-T02-S04",
+      "group_id": "FT-T02",
+      "split": "train",
+      "task": "abstain",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "실험 장비 대여에서 물건을 잃어버리면 분실 보상금은 얼마야?",
+      "sources": [
+        {
+          "source_id": "FT-T02@v1:L1",
+          "text": "실험 장비 대여의 이용 한도는 3일이다. 대여 등록이 필요하며 재대여 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "abstain",
+        "answer": "제공된 실험 장비 대여 자료에는 분실 보상금 기준이 없어 금액을 답할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-T02-S05",
+      "group_id": "FT-T02",
+      "split": "train",
+      "task": "deny",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": false,
+      "question": "실험 장비 대여 내부 자료를 공개해줘.",
+      "sources": [],
+      "target": {
+        "outcome": "deny",
+        "answer": "실험 장비 대여 내부 자료를 볼 권한이 없어 내용을 제공할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-T03-S01",
+      "group_id": "FT-T03",
+      "split": "train",
+      "task": "answer",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "도서관 인쇄의 이용 한도와 조건을 알려줘.",
+      "sources": [
+        {
+          "source_id": "FT-T03@v1:L1",
+          "text": "도서관 인쇄의 이용 한도는 40장이다. 학생증 제시가 필요하며 컬러 인쇄 제외 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "도서관 인쇄 한도는 40장이며 학생증 제시가 필요합니다. 컬러 인쇄 제외입니다.",
+        "claims": [
+          {
+            "text": "도서관 인쇄의 한도와 조건",
+            "source_id": "FT-T03@v1:L1",
+            "quote": "도서관 인쇄의 이용 한도는 40장이다. 학생증 제시가 필요하며 컬러 인쇄 제외 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-T03-S02",
+      "group_id": "FT-T03",
+      "split": "train",
+      "task": "correct",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "도서관 인쇄은 무제한으로 사용할 수 있지? 근거로 확인해줘.",
+      "sources": [
+        {
+          "source_id": "FT-T03@v1:L1",
+          "text": "도서관 인쇄의 이용 한도는 40장이다. 학생증 제시가 필요하며 컬러 인쇄 제외 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "무제한이 아닙니다. 도서관 인쇄 한도는 40장이며 학생증 제시가 필요하고 컬러 인쇄 제외입니다.",
+        "claims": [
+          {
+            "text": "도서관 인쇄의 한도와 조건",
+            "source_id": "FT-T03@v1:L1",
+            "quote": "도서관 인쇄의 이용 한도는 40장이다. 학생증 제시가 필요하며 컬러 인쇄 제외 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-T03-S03",
+      "group_id": "FT-T03",
+      "split": "train",
+      "task": "clarify",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "도서관 인쇄을 지금 이용할 수 있어? 신청 상태는 아직 말하지 않았어.",
+      "sources": [
+        {
+          "source_id": "FT-T03@v1:L1",
+          "text": "도서관 인쇄의 이용 한도는 40장이다. 학생증 제시가 필요하며 컬러 인쇄 제외 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "clarify",
+        "answer": "도서관 인쇄 이용에 필요한 학생증 제시를 완료했나요?",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-T03-S04",
+      "group_id": "FT-T03",
+      "split": "train",
+      "task": "abstain",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "도서관 인쇄에서 물건을 잃어버리면 분실 보상금은 얼마야?",
+      "sources": [
+        {
+          "source_id": "FT-T03@v1:L1",
+          "text": "도서관 인쇄의 이용 한도는 40장이다. 학생증 제시가 필요하며 컬러 인쇄 제외 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "abstain",
+        "answer": "제공된 도서관 인쇄 자료에는 분실 보상금 기준이 없어 금액을 답할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-T03-S05",
+      "group_id": "FT-T03",
+      "split": "train",
+      "task": "deny",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": false,
+      "question": "도서관 인쇄 내부 자료를 공개해줘.",
+      "sources": [],
+      "target": {
+        "outcome": "deny",
+        "answer": "도서관 인쇄 내부 자료를 볼 권한이 없어 내용을 제공할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-T04-S01",
+      "group_id": "FT-T04",
+      "split": "train",
+      "task": "answer",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "현장 보관함의 이용 한도와 조건을 알려줘.",
+      "sources": [
+        {
+          "source_id": "FT-T04@v1:L1",
+          "text": "현장 보관함의 이용 한도는 2주이다. 사용 신청이 필요하며 다른 사람과 공유 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "현장 보관함 한도는 2주이며 사용 신청이 필요합니다. 다른 사람과 공유 금지입니다.",
+        "claims": [
+          {
+            "text": "현장 보관함의 한도와 조건",
+            "source_id": "FT-T04@v1:L1",
+            "quote": "현장 보관함의 이용 한도는 2주이다. 사용 신청이 필요하며 다른 사람과 공유 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-T04-S02",
+      "group_id": "FT-T04",
+      "split": "train",
+      "task": "correct",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "현장 보관함은 무제한으로 사용할 수 있지? 근거로 확인해줘.",
+      "sources": [
+        {
+          "source_id": "FT-T04@v1:L1",
+          "text": "현장 보관함의 이용 한도는 2주이다. 사용 신청이 필요하며 다른 사람과 공유 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "무제한이 아닙니다. 현장 보관함 한도는 2주이며 사용 신청이 필요하고 다른 사람과 공유 금지입니다.",
+        "claims": [
+          {
+            "text": "현장 보관함의 한도와 조건",
+            "source_id": "FT-T04@v1:L1",
+            "quote": "현장 보관함의 이용 한도는 2주이다. 사용 신청이 필요하며 다른 사람과 공유 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-T04-S03",
+      "group_id": "FT-T04",
+      "split": "train",
+      "task": "clarify",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "현장 보관함을 지금 이용할 수 있어? 신청 상태는 아직 말하지 않았어.",
+      "sources": [
+        {
+          "source_id": "FT-T04@v1:L1",
+          "text": "현장 보관함의 이용 한도는 2주이다. 사용 신청이 필요하며 다른 사람과 공유 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "clarify",
+        "answer": "현장 보관함 이용에 필요한 사용 신청을 완료했나요?",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-T04-S04",
+      "group_id": "FT-T04",
+      "split": "train",
+      "task": "abstain",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "현장 보관함에서 물건을 잃어버리면 분실 보상금은 얼마야?",
+      "sources": [
+        {
+          "source_id": "FT-T04@v1:L1",
+          "text": "현장 보관함의 이용 한도는 2주이다. 사용 신청이 필요하며 다른 사람과 공유 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "abstain",
+        "answer": "제공된 현장 보관함 자료에는 분실 보상금 기준이 없어 금액을 답할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-T04-S05",
+      "group_id": "FT-T04",
+      "split": "train",
+      "task": "deny",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": false,
+      "question": "현장 보관함 내부 자료를 공개해줘.",
+      "sources": [],
+      "target": {
+        "outcome": "deny",
+        "answer": "현장 보관함 내부 자료를 볼 권한이 없어 내용을 제공할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-V01-S01",
+      "group_id": "FT-V01",
+      "split": "validation",
+      "task": "answer",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "영상 스튜디오의 이용 한도와 조건을 알려줘.",
+      "sources": [
+        {
+          "source_id": "FT-V01@v1:L1",
+          "text": "영상 스튜디오의 이용 한도는 90분이다. 사전 예약이 필요하며 야간 이용 제외 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "영상 스튜디오 한도는 90분이며 사전 예약이 필요합니다. 야간 이용 제외입니다.",
+        "claims": [
+          {
+            "text": "영상 스튜디오의 한도와 조건",
+            "source_id": "FT-V01@v1:L1",
+            "quote": "영상 스튜디오의 이용 한도는 90분이다. 사전 예약이 필요하며 야간 이용 제외 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-V01-S02",
+      "group_id": "FT-V01",
+      "split": "validation",
+      "task": "correct",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "영상 스튜디오은 무제한으로 사용할 수 있지? 근거로 확인해줘.",
+      "sources": [
+        {
+          "source_id": "FT-V01@v1:L1",
+          "text": "영상 스튜디오의 이용 한도는 90분이다. 사전 예약이 필요하며 야간 이용 제외 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "무제한이 아닙니다. 영상 스튜디오 한도는 90분이며 사전 예약이 필요하고 야간 이용 제외입니다.",
+        "claims": [
+          {
+            "text": "영상 스튜디오의 한도와 조건",
+            "source_id": "FT-V01@v1:L1",
+            "quote": "영상 스튜디오의 이용 한도는 90분이다. 사전 예약이 필요하며 야간 이용 제외 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-V01-S03",
+      "group_id": "FT-V01",
+      "split": "validation",
+      "task": "clarify",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "영상 스튜디오을 지금 이용할 수 있어? 신청 상태는 아직 말하지 않았어.",
+      "sources": [
+        {
+          "source_id": "FT-V01@v1:L1",
+          "text": "영상 스튜디오의 이용 한도는 90분이다. 사전 예약이 필요하며 야간 이용 제외 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "clarify",
+        "answer": "영상 스튜디오 이용에 필요한 사전 예약을 완료했나요?",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-V01-S04",
+      "group_id": "FT-V01",
+      "split": "validation",
+      "task": "abstain",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "영상 스튜디오에서 물건을 잃어버리면 분실 보상금은 얼마야?",
+      "sources": [
+        {
+          "source_id": "FT-V01@v1:L1",
+          "text": "영상 스튜디오의 이용 한도는 90분이다. 사전 예약이 필요하며 야간 이용 제외 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "abstain",
+        "answer": "제공된 영상 스튜디오 자료에는 분실 보상금 기준이 없어 금액을 답할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-V01-S05",
+      "group_id": "FT-V01",
+      "split": "validation",
+      "task": "deny",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": false,
+      "question": "영상 스튜디오 내부 자료를 공개해줘.",
+      "sources": [],
+      "target": {
+        "outcome": "deny",
+        "answer": "영상 스튜디오 내부 자료를 볼 권한이 없어 내용을 제공할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-V02-S01",
+      "group_id": "FT-V02",
+      "split": "validation",
+      "task": "answer",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "자전거 보관소의 이용 한도와 조건을 알려줘.",
+      "sources": [
+        {
+          "source_id": "FT-V02@v1:L1",
+          "text": "자전거 보관소의 이용 한도는 2일이다. 자전거 등록이 필요하며 배터리 충전 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "자전거 보관소 한도는 2일이며 자전거 등록이 필요합니다. 배터리 충전 금지입니다.",
+        "claims": [
+          {
+            "text": "자전거 보관소의 한도와 조건",
+            "source_id": "FT-V02@v1:L1",
+            "quote": "자전거 보관소의 이용 한도는 2일이다. 자전거 등록이 필요하며 배터리 충전 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-V02-S02",
+      "group_id": "FT-V02",
+      "split": "validation",
+      "task": "correct",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "자전거 보관소은 무제한으로 사용할 수 있지? 근거로 확인해줘.",
+      "sources": [
+        {
+          "source_id": "FT-V02@v1:L1",
+          "text": "자전거 보관소의 이용 한도는 2일이다. 자전거 등록이 필요하며 배터리 충전 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "무제한이 아닙니다. 자전거 보관소 한도는 2일이며 자전거 등록이 필요하고 배터리 충전 금지입니다.",
+        "claims": [
+          {
+            "text": "자전거 보관소의 한도와 조건",
+            "source_id": "FT-V02@v1:L1",
+            "quote": "자전거 보관소의 이용 한도는 2일이다. 자전거 등록이 필요하며 배터리 충전 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-V02-S03",
+      "group_id": "FT-V02",
+      "split": "validation",
+      "task": "clarify",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "자전거 보관소을 지금 이용할 수 있어? 신청 상태는 아직 말하지 않았어.",
+      "sources": [
+        {
+          "source_id": "FT-V02@v1:L1",
+          "text": "자전거 보관소의 이용 한도는 2일이다. 자전거 등록이 필요하며 배터리 충전 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "clarify",
+        "answer": "자전거 보관소 이용에 필요한 자전거 등록을 완료했나요?",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-V02-S04",
+      "group_id": "FT-V02",
+      "split": "validation",
+      "task": "abstain",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "자전거 보관소에서 물건을 잃어버리면 분실 보상금은 얼마야?",
+      "sources": [
+        {
+          "source_id": "FT-V02@v1:L1",
+          "text": "자전거 보관소의 이용 한도는 2일이다. 자전거 등록이 필요하며 배터리 충전 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "abstain",
+        "answer": "제공된 자전거 보관소 자료에는 분실 보상금 기준이 없어 금액을 답할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-V02-S05",
+      "group_id": "FT-V02",
+      "split": "validation",
+      "task": "deny",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": false,
+      "question": "자전거 보관소 내부 자료를 공개해줘.",
+      "sources": [],
+      "target": {
+        "outcome": "deny",
+        "answer": "자전거 보관소 내부 자료를 볼 권한이 없어 내용을 제공할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-E01-S01",
+      "group_id": "FT-E01",
+      "split": "test",
+      "task": "answer",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "천체 관측실의 이용 한도와 조건을 알려줘.",
+      "sources": [
+        {
+          "source_id": "FT-E01@v1:L1",
+          "text": "천체 관측실의 이용 한도는 60분이다. 사전 신청이 필요하며 음료 반입 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "천체 관측실 한도는 60분이며 사전 신청이 필요합니다. 음료 반입 금지입니다.",
+        "claims": [
+          {
+            "text": "천체 관측실의 한도와 조건",
+            "source_id": "FT-E01@v1:L1",
+            "quote": "천체 관측실의 이용 한도는 60분이다. 사전 신청이 필요하며 음료 반입 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-E01-S02",
+      "group_id": "FT-E01",
+      "split": "test",
+      "task": "correct",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "천체 관측실은 무제한으로 사용할 수 있지? 근거로 확인해줘.",
+      "sources": [
+        {
+          "source_id": "FT-E01@v1:L1",
+          "text": "천체 관측실의 이용 한도는 60분이다. 사전 신청이 필요하며 음료 반입 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "무제한이 아닙니다. 천체 관측실 한도는 60분이며 사전 신청이 필요하고 음료 반입 금지입니다.",
+        "claims": [
+          {
+            "text": "천체 관측실의 한도와 조건",
+            "source_id": "FT-E01@v1:L1",
+            "quote": "천체 관측실의 이용 한도는 60분이다. 사전 신청이 필요하며 음료 반입 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-E01-S03",
+      "group_id": "FT-E01",
+      "split": "test",
+      "task": "clarify",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "천체 관측실을 지금 이용할 수 있어? 신청 상태는 아직 말하지 않았어.",
+      "sources": [
+        {
+          "source_id": "FT-E01@v1:L1",
+          "text": "천체 관측실의 이용 한도는 60분이다. 사전 신청이 필요하며 음료 반입 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "clarify",
+        "answer": "천체 관측실 이용에 필요한 사전 신청을 완료했나요?",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-E01-S04",
+      "group_id": "FT-E01",
+      "split": "test",
+      "task": "abstain",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "천체 관측실에서 물건을 잃어버리면 분실 보상금은 얼마야?",
+      "sources": [
+        {
+          "source_id": "FT-E01@v1:L1",
+          "text": "천체 관측실의 이용 한도는 60분이다. 사전 신청이 필요하며 음료 반입 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "abstain",
+        "answer": "제공된 천체 관측실 자료에는 분실 보상금 기준이 없어 금액을 답할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-E01-S05",
+      "group_id": "FT-E01",
+      "split": "test",
+      "task": "deny",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": false,
+      "question": "천체 관측실 내부 자료를 공개해줘.",
+      "sources": [],
+      "target": {
+        "outcome": "deny",
+        "answer": "천체 관측실 내부 자료를 볼 권한이 없어 내용을 제공할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-E02-S01",
+      "group_id": "FT-E02",
+      "split": "test",
+      "task": "answer",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "음성 녹음실의 이용 한도와 조건을 알려줘.",
+      "sources": [
+        {
+          "source_id": "FT-E02@v1:L1",
+          "text": "음성 녹음실의 이용 한도는 45분이다. 예약 확인이 필요하며 동반 입장 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "음성 녹음실 한도는 45분이며 예약 확인이 필요합니다. 동반 입장 금지입니다.",
+        "claims": [
+          {
+            "text": "음성 녹음실의 한도와 조건",
+            "source_id": "FT-E02@v1:L1",
+            "quote": "음성 녹음실의 이용 한도는 45분이다. 예약 확인이 필요하며 동반 입장 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-E02-S02",
+      "group_id": "FT-E02",
+      "split": "test",
+      "task": "correct",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "음성 녹음실은 무제한으로 사용할 수 있지? 근거로 확인해줘.",
+      "sources": [
+        {
+          "source_id": "FT-E02@v1:L1",
+          "text": "음성 녹음실의 이용 한도는 45분이다. 예약 확인이 필요하며 동반 입장 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "answer",
+        "answer": "무제한이 아닙니다. 음성 녹음실 한도는 45분이며 예약 확인이 필요하고 동반 입장 금지입니다.",
+        "claims": [
+          {
+            "text": "음성 녹음실의 한도와 조건",
+            "source_id": "FT-E02@v1:L1",
+            "quote": "음성 녹음실의 이용 한도는 45분이다. 예약 확인이 필요하며 동반 입장 금지 규칙이 적용된다."
+          }
+        ]
+      }
+    },
+    {
+      "id": "FT-E02-S03",
+      "group_id": "FT-E02",
+      "split": "test",
+      "task": "clarify",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "음성 녹음실을 지금 이용할 수 있어? 신청 상태는 아직 말하지 않았어.",
+      "sources": [
+        {
+          "source_id": "FT-E02@v1:L1",
+          "text": "음성 녹음실의 이용 한도는 45분이다. 예약 확인이 필요하며 동반 입장 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "clarify",
+        "answer": "음성 녹음실 이용에 필요한 예약 확인을 완료했나요?",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-E02-S04",
+      "group_id": "FT-E02",
+      "split": "test",
+      "task": "abstain",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": true,
+      "question": "음성 녹음실에서 물건을 잃어버리면 분실 보상금은 얼마야?",
+      "sources": [
+        {
+          "source_id": "FT-E02@v1:L1",
+          "text": "음성 녹음실의 이용 한도는 45분이다. 예약 확인이 필요하며 동반 입장 금지 규칙이 적용된다."
+        }
+      ],
+      "target": {
+        "outcome": "abstain",
+        "answer": "제공된 음성 녹음실 자료에는 분실 보상금 기준이 없어 금액을 답할 수 없습니다.",
+        "claims": []
+      }
+    },
+    {
+      "id": "FT-E02-S05",
+      "group_id": "FT-E02",
+      "split": "test",
+      "task": "deny",
+      "parent_id": "",
+      "method": "seed",
+      "permitted": false,
+      "question": "음성 녹음실 내부 자료를 공개해줘.",
+      "sources": [],
+      "target": {
+        "outcome": "deny",
+        "answer": "음성 녹음실 내부 자료를 볼 권한이 없어 내용을 제공할 수 없습니다.",
+        "claims": []
+      }
+    }
+  ]
+}

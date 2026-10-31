@@ -1,8 +1,8 @@
 # K-Edu 교육과정 개편 — 현재 위치와 읽을 파일
 
-**현재: Multi-Agent 네 단원·L6 역할 실행과 전달 경계를 확인했다. 자료는 70개 중 36개 작성. 실제 과제 완료·답변 품질은 채택 보류다.**
+**현재: Fine-tuning 준비 네 단원·실제 Dataset/Token/label 검증. 자료는 70개 중 40개 작성. 실제 훈련·품질 개선은 미검증이다.**
 
-[Multi-Agent 강의](lessons/multi-agent/lesson.md) · [실제 비교 검토](reports/KEDU-PRODUCTION-008/REVIEW.md) · [L6 실습](practice/document-assistant/L6.md) · [검증 범위](reports/KEDU-PRODUCTION-008/RESULT.md)
+[Fine-tuning 준비 강의](lessons/fine-tuning/lesson.md) · [데이터·입력 검토](reports/KEDU-PRODUCTION-009/REVIEW.md) · [L7 준비 실습](practice/document-assistant/L7.md) · [검증 범위](reports/KEDU-PRODUCTION-009/RESULT.md)
 
 
 ## 전체 구성안
@@ -19,9 +19,9 @@
 | 2 | 결과를 보고 분석 방식 보완 | 완료 |
 | 3 | 전체 강의 비교·분석 | 결과 보존 |
 | 4 | 전체 목차·누적 실습 구성 결정 | v0.3을 첫 제작 묶음의 기준으로 사용 |
-| 5 | 확정한 강의·실습 제작 및 검증 | 36개 단원 자료·실제 역할/전달 실행. 과제 완료·품질 보류, 다음 Dataset 준비/L7 |
+| 5 | 확정한 강의·실습 제작 및 검증 | 40개 단원 자료·실제 Dataset/학습 입력 준비. 훈련·품질 개선 미검증, 다음 LoRA 훈련/L7 |
 
-구성안은 과목명·배치·범위의 추천이다. 기존 academy 원문·파일명은 유지한다. 새 강의와 누적 앱 L0~L6와 실제 검색·로컬 생성·도구 Runtime을 작성했다. RAG 답변 품질은 채택 보류이며 실제 훈련은 제작 전이다. 실제 모델·훈련·교육장 성능은 검증 게이트를 둔 후속 작업이다.
+구성안은 과목명·배치·범위의 추천이다. 기존 academy 원문·파일명은 유지한다. 새 강의와 누적 앱 L0~L6와 L7 데이터 준비와 L7 데이터 준비와 실제 검색·로컬 생성·도구 Runtime을 작성했다. RAG 답변 품질은 채택 보류이며 실제 훈련은 제작 전이다. 실제 모델·훈련·교육장 성능은 검증 게이트를 둔 후속 작업이다.
 
 ## 분석 근거와 과거 시범
 

@@ -1,0 +1,80 @@
+{
+  "version": "finetuning-v1",
+  "split_rule": "Explicit document-family split BEFORE any augmentation; derivatives retain parent family/split",
+  "groups": {
+    "FT-T01": {
+      "split": "train",
+      "source_id": "FT-T01@v1:L1",
+      "text_sha256": "8596cc809a6d6870508f97a33de4df2d6040d78db084299374869a0f75e4c6a8",
+      "family_title": "연구실 회의실",
+      "provenance": "New fictional teaching policy authored in this Work; not an institutional policy",
+      "use_scope": "Local educational preparation and later bounded training experiment",
+      "version": "v1"
+    },
+    "FT-T02": {
+      "split": "train",
+      "source_id": "FT-T02@v1:L1",
+      "text_sha256": "b87e10c1795afd83b00947f00259cc7fe403a007422e38be8faf5169730e932c",
+      "family_title": "실험 장비 대여",
+      "provenance": "New fictional teaching policy authored in this Work; not an institutional policy",
+      "use_scope": "Local educational preparation and later bounded training experiment",
+      "version": "v1"
+    },
+    "FT-T03": {
+      "split": "train",
+      "source_id": "FT-T03@v1:L1",
+      "text_sha256": "41344db31c81bde41ac8bd40d1335a74626e38e72e9ed802f46fb206c3bd8219",
+      "family_title": "도서관 인쇄",
+      "provenance": "New fictional teaching policy authored in this Work; not an institutional policy",
+      "use_scope": "Local educational preparation and later bounded training experiment",
+      "version": "v1"
+    },
+    "FT-T04": {
+      "split": "train",
+      "source_id": "FT-T04@v1:L1",
+      "text_sha256": "3f178ce0c1a00c14bea879896440fbca80d5da6c3ec51668da59c35164caeaab",
+      "family_title": "현장 보관함",
+      "provenance": "New fictional teaching policy authored in this Work; not an institutional policy",
+      "use_scope": "Local educational preparation and later bounded training experiment",
+      "version": "v1"
+    },
+    "FT-V01": {
+      "split": "validation",
+      "source_id": "FT-V01@v1:L1",
+      "text_sha256": "caf47419647e4f7270c58642267edde0b7ca618d64719e4682d43370336ac7dd",
+      "family_title": "영상 스튜디오",
+      "provenance": "New fictional teaching policy authored in this Work; not an institutional policy",
+      "use_scope": "Local educational preparation and later bounded training experiment",
+      "version": "v1"
+    },
+    "FT-V02": {
+      "split": "validation",
+      "source_id": "FT-V02@v1:L1",
+      "text_sha256": "2a8289190093dd0683dba1f6ee1324a5f5c11ab88e51776a51bda5df126b7abb",
+      "family_title": "자전거 보관소",
+      "provenance": "New fictional teaching policy authored in this Work; not an institutional policy",
+      "use_scope": "Local educational preparation and later bounded training experiment",
+      "version": "v1"
+    },
+    "FT-E01": {
+      "split": "test",
+      "source_id": "FT-E01@v1:L1",
+      "text_sha256": "a57c429141dfb5c9a47f965b3fdf87bb0beac6e958a8ef406608f375e4caf8a8",
+      "family_title": "천체 관측실",
+      "provenance": "New fictional teaching policy authored in this Work; not an institutional policy",
+      "use_scope": "Local educational preparation and later bounded training experiment",
+      "version": "v1"
+    },
+    "FT-E02": {
+      "split": "test",
+      "source_id": "FT-E02@v1:L1",
+      "text_sha256": "3160ae4ade1884fefeaa39e4bf6b3d9579ff010b58ddb49d533ab651554aff14",
+      "family_title": "음성 녹음실",
+      "provenance": "New fictional teaching policy authored in this Work; not an institutional policy",
+      "use_scope": "Local educational preparation and later bounded training experiment",
+      "version": "v1"
+    }
+  },
+  "regression_set": "existing core-v1/agent-v1 excluded from training; public, repeatedly inspected, not blind test",
+  "limitations": "Same author and shared pedagogical templates across groups; NOT proof against semantic leakage or a production generalization benchmark"
+}

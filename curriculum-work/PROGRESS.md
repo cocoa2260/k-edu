@@ -1,8 +1,8 @@
 # 5단계 제작 현황과 이어서 할 일
 
-**현재: K2-11 네 단원·L6 역할 실행/전달 경계 검증. 자료 70개 중 36개 작성. 실제 모델 과제 완료·답변 품질은 미통과다.**
+**현재: K2-12.U01~U04 네 단원과 L7 Dataset·Token/label 준비 검증. 자료 70개 중 40개 작성. 실제 훈련·품질 개선은 미검증이다.**
 
-[강의](lessons/multi-agent/lesson.md) · [실제 비교 검토](reports/KEDU-PRODUCTION-008/REVIEW.md) · [실습](practice/document-assistant/L6.md) · [결과](reports/KEDU-PRODUCTION-008/RESULT.md)
+[강의](lessons/fine-tuning/lesson.md) · [실제 검토](reports/KEDU-PRODUCTION-009/REVIEW.md) · [실습](practice/document-assistant/L7.md) · [결과](reports/KEDU-PRODUCTION-009/RESULT.md)
 
 ## 작업 전 추론 강도 안내 — 사용자 요청
 
@@ -10,23 +10,25 @@
 
 이 안내는 설정 변경을 수행했다는 뜻이 아니다. 실제 추론 설정은 사용자가 선택한다. 강도 안내만을 이유로 매 작업마다 승인 질문을 반복하지 않는다. 일반적인 작업 묶음은 이미 정한 강도와 범위 안에서 계속 진행하며, 상위 강도 적용이 꼭 필요한 작업은 필요한 이유와 다음 행동을 명확히 알린다.
 
-**바로 다음 작업:** KEDU-PRODUCTION-009, K2-12.U01~U04 PEFT 전략·Dataset 설계/검수/분리·증강·학습 입력. **추천: High.** 원본/파생 자료의 누수와 Chat Template·Loss 범위를 실제 입력으로 검증해야 한다.
+**바로 다음 작업:** KEDU-PRODUCTION-010, K2-12.U05~U08 실제 LoRA 훈련·QLoRA 자원 조건·평가·Adapter 저장/새 프로세스 Reload. **추천: High.** Parameter/Gradient·메모리·평가·Reload를 연결해 확인해야 한다.
 
 ## 다음에 바로 할 일
 
-K2-12는 총 8개 단원이다. 먼저 U01~U04 자료와 L7 훈련 준비를 만들고, U05~U08의 LoRA 실제 훈련·QLoRA 자원 검사·동일 기준 평가·Adapter 저장/새 프로세스 Reload를 별도 작업으로 이어간다. Fine-tuning이 기존 Agent 실패를 자동 해결한다는 전제를 두지 않는다.
+같은 Base Revision과 새 finetuning-v1 Dataset을 고정해 G-TRAIN을 검사한다. Train 원본 20개와 증강 28개를 구분하고 Validation으로 설정을 고른 뒤 Test를 확인한다. 문장 틀·공개 평가 자료·동일 AI 작성/검수라는 제한을 유지한다. 데이터/Tokenizer 준비를 실제 훈련으로 표시하지 않는다. 실제 Optimizer Step·학습/검증 Loss·메모리/시간·저장/새 프로세스 Reload가 필요하다.
 
-L6은 같은 18개를 실행했다. 생성 42회·함수 진입 14회, 최종 초안 0개다. 실제 작성/검토 도달은 C07, C11, A02, A03, A04, A05이며 기각으로 끝났다. Probe·준비·캐시 재실행 포함 로컬 생성 48회, 유료 API 0회. 243개 테스트와 별도 M01~M04 고정 응답 검사를 통과했다. 역할 실행 성공을 답변 품질로 표시하지 않는다.
+QLoRA는 호환 장비/백엔드 확인 후 실제 실행 여부를 기록한다. 추론 API·이론·가짜 로그로 훈련 완료를 대체하지 않는다. GTX 1060 3GB에서 된다고 가정하지 않는다. IA3/DoRA 선택 비교는 시간·환경이 허용할 때 같은 평가로 별도 기록한다.
+
+## 이번 검증
+
+원문 8가족·Seed 40개, 변형 후보 12개 중 8개 채택·4개 기각. 실제 Datasets 로드/filter/map·Arrow 저장/재로드·고정 Qwen Template/label 준비는 28/10/10 총 48개다. 271개 테스트 통과. 가짜 Logit의 Mask 검사는 실제 Qwen Loss가 아니다. Optimizer Step·모델 가중치 로드/생성·유료 API는 모두 0회다.
 
 ## 중단 후 재개
 
-1. 이 파일과 [단원별 기록](curriculum/production-index.json), work/curriculum-production-001 최신 커밋을 확인한다.
-2. 전체 분석을 다시 시작하지 않는다. 저장된 관찰을 보존하고 모델 캐시가 있으면 재사용한다.
-3. 실제 모델·고정 응답·미실행을 분리하고 바뀐 기능의 영향 범위만 검사한다.
-4. 같은 브랜치에 작업 묶음별 커밋. 모델·SQLite 바이너리는 Git에 넣지 않는다.
+1. 이 파일과 [단원별 기록](curriculum/production-index.json), 같은 제작 브랜치의 최신 커밋을 확인한다.
+2. 이전 결과·원문·평가 자료를 보존하고 완료한 준비를 전부 재분석하지 않는다.
+3. finetuning-v1 내용/검수/코드/Tokenizer 해시와 환경을 먼저 맞춘다. 캐시가 없으면 고정 리비전만 다시 받는다.
+4. 실제 실행·고정 검사·미실행을 분리하고 바뀐 범위만 검증한다. 바이너리 캐시/모델/Arrow는 Git에 넣지 않는다.
 
-## 남은 제작·검증
+## 독립 미완료
 
-L4/L5/L6 실제 과제/답변 품질은 독립 미완료다. 호출 전후 시간 검사는 강제 중단이 아니다. LangChain StructuredTool 연결 외 Framework Agent 전체·MCP·실제 인증/지속 승인·외부 효과는 미구현이다.
-
-L0 실제 웹 생성·L1 다섯 조건 전체 비교·독립 수업/UI·교육생 장비/동시 실행 검증도 미완료다. L7 → L8 OCR → L9 통합을 이어가며 기초/안내 미작성 단원을 완료한다. 36/70은 자료 작성 수이고 품질·수업 완료 수가 아니다.
+L4/L5/L6 실제 과제·답변 품질, L0 실제 웹 생성·L1 다섯 조건 전체 비교, Framework Agent/MCP·실제 인증/지속 승인·강제 중단, 남은 기초/안내 단원, L8 OCR·L9 통합, 독립 수업/UI·교육생 장비/동시 실행은 미완료다. 40/70은 자료 작성 수이고 수업·품질 완료 수가 아니다.

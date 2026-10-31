@@ -1,0 +1,318 @@
+{
+  "version": "finetuning-v1",
+  "scope": "AI author assertions within this Work, bound to hashes; no independent human review or automatic semantic judge",
+  "records": {
+    "FT-T01-S01": {
+      "decision": "accept",
+      "content_sha256": "8efc63833c6accd3476a9089089dcdb12675889331086fbb4eed5d0549c6eced",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T01-S02": {
+      "decision": "accept",
+      "content_sha256": "3f05cc2495a0143bd7c28e36ca71cbb4f49037a202d068e1b7c86e904b8d005c",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T01-S03": {
+      "decision": "accept",
+      "content_sha256": "1c0602cc2fc9c9c882a94dd5bf8af4cf9ac04b8c20d1fe92be4c39d4c632a0d4",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T01-S04": {
+      "decision": "accept",
+      "content_sha256": "8260a8b27dcc5304abf70b0f974889ba4fc81cf076ccfb0ce8e0f630364df709",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T01-S05": {
+      "decision": "accept",
+      "content_sha256": "574f0383f8f5b1cd893d347ebc3726a011e744e739fad648c835548acc6ae645",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T02-S01": {
+      "decision": "accept",
+      "content_sha256": "f33743721d5e47f1f6ba60a4c0f6512f6f2c50cca67f5139512420857d061f1c",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T02-S02": {
+      "decision": "accept",
+      "content_sha256": "16eb8a709c350a1e36d79e9480e2c42c9b30abcb7b65bf01dd8b91230e895c9b",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T02-S03": {
+      "decision": "accept",
+      "content_sha256": "9611a49815bb01824a8336cddeab7bd94d8c97f71a3302ea0d33ca9babf3904c",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T02-S04": {
+      "decision": "accept",
+      "content_sha256": "279c093b626e4068d9d222fc4f61273eb183bf9332d9677fbcc443586d8e5545",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T02-S05": {
+      "decision": "accept",
+      "content_sha256": "e224c0fcabc3d05827c41f07592ff259be70abeab5f0ddb146ee79a39a4aeb90",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T03-S01": {
+      "decision": "accept",
+      "content_sha256": "8ca745cee270d475558843bf298102a7f90e7b2e437222e8d3d5c8c30d8b01bf",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T03-S02": {
+      "decision": "accept",
+      "content_sha256": "aae5b354c573dea458223a63dd2162d212e423cb283f2d908948137203b09b55",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T03-S03": {
+      "decision": "accept",
+      "content_sha256": "84e6c4bf255ceca58479845e43e1447f6e6f5c22b6e50458bf26cc10efdf38c3",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T03-S04": {
+      "decision": "accept",
+      "content_sha256": "b3ef3af6cb6c155118d344506098ed247d3a30d10c8c325dbc935dd6d0d254d5",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T03-S05": {
+      "decision": "accept",
+      "content_sha256": "830fac2352bc4b18aa845542a9ec6656950f44f8ba152378a88f05be9f34f3e6",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T04-S01": {
+      "decision": "accept",
+      "content_sha256": "02a99c2849d5ebb5b73af74579087d0b9ee41b85ddc212d85251e3321f316362",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T04-S02": {
+      "decision": "accept",
+      "content_sha256": "9d507d7f6ba4201d373316fcb1b5a1ae11d548118b2c79702be83e45eb0c2dc0",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T04-S03": {
+      "decision": "accept",
+      "content_sha256": "0f8dd7d0ea4a74f1ec5d3799a307acea7b665c61a5320a3d1762c7a8e6b18cfe",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T04-S04": {
+      "decision": "accept",
+      "content_sha256": "46c1c5ad341aebf1b2021566f3ffb2a4198d720aa158411a2ecfe2f3ec72bde2",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T04-S05": {
+      "decision": "accept",
+      "content_sha256": "885d290682d82ff25a1a3c325c78351b93e3cf87b71bbe468214837e2fd1df4c",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-V01-S01": {
+      "decision": "accept",
+      "content_sha256": "cca7f171761bbb64d1159fbbf834b367d965fc3b27bbd57e6dbb49ed6ae0ab05",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-V01-S02": {
+      "decision": "accept",
+      "content_sha256": "324e4b065ab5f30bc21108e79da0b3f8cd87699258c47d1a86bbd16f12d2fd61",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-V01-S03": {
+      "decision": "accept",
+      "content_sha256": "0d000d6220ba561eb20592a5c9323bc826bd6f14644b6c372c74751d89f3d8e2",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-V01-S04": {
+      "decision": "accept",
+      "content_sha256": "344418f04920d5a4e28473cdaf70b885c245aac08c864664ab28405197741e00",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-V01-S05": {
+      "decision": "accept",
+      "content_sha256": "32a1c7c3ae24ca11efc762776a9c87c25dd6b973c0802d5fd3728c632cf85540",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-V02-S01": {
+      "decision": "accept",
+      "content_sha256": "37f7a119ef53b7218735282270a652c3f11690808297a410cf7264493eeb0076",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-V02-S02": {
+      "decision": "accept",
+      "content_sha256": "4c660fd46239c7d1b81d5881a552c221dd6076b09f4b3cbb7effd04d95ea2014",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-V02-S03": {
+      "decision": "accept",
+      "content_sha256": "ef890cb8cf512313cdde4d7ff9685979ddc69ad961393dd3dc8231a8c31baa53",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-V02-S04": {
+      "decision": "accept",
+      "content_sha256": "997f9f05c899200fa234913c03276970c41acc1bbdf05e71ac58e089d16077ad",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-V02-S05": {
+      "decision": "accept",
+      "content_sha256": "f17f87777fff146e03f1a0af31d54126fddf254ba692aa803a2b7795c5623983",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-E01-S01": {
+      "decision": "accept",
+      "content_sha256": "5cecb16a335b306909deb4bd6f604cc1d29d2b33483f48508cace3a7f5e98c9b",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-E01-S02": {
+      "decision": "accept",
+      "content_sha256": "218974791e48457a826bc836052fe34a90bf4966c9a9b28331d516ee7fe86ffa",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-E01-S03": {
+      "decision": "accept",
+      "content_sha256": "b4e06bbb6e43371ece3c8e7449740c114ec8f4c25c3d8f5e5b402d263f26a8b2",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-E01-S04": {
+      "decision": "accept",
+      "content_sha256": "78ae1352b5fad9cccbbd5b0fd1970ede6780ebdef2f4da54ab3f3c3c69af381e",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-E01-S05": {
+      "decision": "accept",
+      "content_sha256": "d76ef69d30b5071fde2373c19b97199ebd10d7f6d825f4ccdd4786ce8497aba8",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-E02-S01": {
+      "decision": "accept",
+      "content_sha256": "bd794e0d3b9dbd88f2359175e172c55ff92aa1b8dca336843541563a692ef52e",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-E02-S02": {
+      "decision": "accept",
+      "content_sha256": "4efc7a2112a3d433ddd1c65f94982bf82b7300cf17e2ba3e1c6d969aa83670c2",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-E02-S03": {
+      "decision": "accept",
+      "content_sha256": "d82f0ca7d10dba01b0987843824dbe3ecd00821d689a84cafa6efcaa2bd513ea",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-E02-S04": {
+      "decision": "accept",
+      "content_sha256": "0c16152431db882dc0e1ee426f4f1fe56fbee12a5e6dc398a3927020c443fbc3",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-E02-S05": {
+      "decision": "accept",
+      "content_sha256": "c88fb9679568ec9e65e4ea5aca179e1374460c9debb550577a981dbac0a8f1a0",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T01-S01-P1": {
+      "decision": "accept",
+      "content_sha256": "cb22a575a031260fa34c3fad8ead12a61e825508b79d9cd6e2e6162b82ce4547",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T01-S04-P1": {
+      "decision": "accept",
+      "content_sha256": "b9bafa3388ae0208fd05b1851547515062f015c850f95af9f45730030274116a",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T02-S01-P1": {
+      "decision": "accept",
+      "content_sha256": "c6cbcd8fc6bf761cd9ab70599b1ad797586166822c494b6b6bee23829d59570f",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T02-S04-P1": {
+      "decision": "accept",
+      "content_sha256": "137007c0a8654060693e2f7bdb76d204eb7a5234792ca84881cbcbc51ad3c4ab",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T03-S01-P1": {
+      "decision": "accept",
+      "content_sha256": "805f79334df51b26da885f6a9190b5cad840ad4861e511da787d2fc33548c8a2",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T03-S04-P1": {
+      "decision": "accept",
+      "content_sha256": "fb9eaf75b0503507b130dc8818ea814d8578535cd36a186de916fdaaeb4683d2",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T04-S01-P1": {
+      "decision": "accept",
+      "content_sha256": "ee02fd22bb7ed3fb26ba78b6acfd5f5c7037d1816d9e1c3bea42675ed6937b1e",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-T04-S04-P1": {
+      "decision": "accept",
+      "content_sha256": "97a49d8cedaf9ae2e9bd1699f163d0776267d4d788fa4971688c38de262dce04",
+      "reason": "같은 Work 작성자가 원문 한도·조건·예외와 질문 의도·라벨·인용을 대조한 교육용 예제. 독립 검수 아님.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-BAD-NUMBER": {
+      "decision": "reject",
+      "content_sha256": "92dc0a7678782514d4c5b0f4338d8c985e36d854c23cb879b28d754aa34999de",
+      "reason": "질문 바꿔쓰기인데 정답의 2시간을 20시간으로 바꿔 기각. 인용이 그대로 있어도 답이 틀릴 수 있다.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-BAD-VALIDATION": {
+      "decision": "reject",
+      "content_sha256": "a01a6847996040a4a3ecdc786e4bf2e1f064119be28578b7bf9bb1dc2d8c941e",
+      "reason": "Validation 부모의 파생 예제이므로 Train 증강 대상이 아니다.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-BAD-DUPLICATE": {
+      "decision": "reject",
+      "content_sha256": "b9f521b1909b55397b640c11558143c4768501074f702090f7b1bb947247246a",
+      "reason": "원본과 질문·Context가 동일해 새 정보가 없는 중복이다.",
+      "reviewer": "same_Work_author_NOT_independent"
+    },
+    "FT-BAD-QUOTE": {
+      "decision": "reject",
+      "content_sha256": "66351dfa34655278090b9a2cc2ffafabb3c24bc8207b7eb3a798964f0bbf13c2",
+      "reason": "인용문이 원문에 없어 기각한다.",
+      "reviewer": "same_Work_author_NOT_independent"
+    }
+  }
+}

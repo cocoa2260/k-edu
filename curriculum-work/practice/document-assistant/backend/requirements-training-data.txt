@@ -1,0 +1,3 @@
+# L7 preparation only. CPU torch installation follows the L3/L5 guide.
+-r requirements-agent.txt
+datasets==4.4.1

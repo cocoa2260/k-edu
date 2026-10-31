@@ -1,0 +1,51 @@
+{
+  "evidence_kind": "actual_cached_Datasets_and_tokenizer_replay_NOT_OS_isolation",
+  "http_attempts": 0,
+  "export_hashes_equal": true,
+  "tokenized_arrow_content_equal": true,
+  "model_generations": 0,
+  "optimizer_steps": 0,
+  "paid_api_calls": 0,
+  "guards": [
+    "requests.Session.request",
+    "httpx.Client.request"
+  ],
+  "scope": "Local JSON, Datasets load/map/filter/save/reload, pinned tokenizer and synthetic-logit mask probe. No model weights.",
+  "explicit_environment": {
+    "HF_HUB_OFFLINE": "1",
+    "HF_DATASETS_OFFLINE": "1",
+    "HF_HUB_DISABLE_TELEMETRY": "1"
+  },
+  "earlier_no_explicit_flags_diagnostic": [
+    {
+      "host": "s3.amazonaws.com",
+      "path": "/datasets.huggingface.co/datasets/datasets/json/json.py",
+      "frames": [
+        {
+          "file": "load.py",
+          "function": "load_dataset"
+        },
+        {
+          "file": "load.py",
+          "function": "load_dataset_builder"
+        },
+        {
+          "file": "load.py",
+          "function": "dataset_module_factory"
+        },
+        {
+          "file": "load.py",
+          "function": "__init__"
+        },
+        {
+          "file": "load.py",
+          "function": "increase_load_count"
+        },
+        {
+          "file": "sessions.py",
+          "function": "head"
+        }
+      ]
+    }
+  ]
+}

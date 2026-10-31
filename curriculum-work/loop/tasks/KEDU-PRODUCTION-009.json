@@ -1,0 +1,23 @@
+{
+  "task_id": "KEDU-PRODUCTION-009",
+  "scope": [
+    "K2-12.U01",
+    "K2-12.U02",
+    "K2-12.U03",
+    "K2-12.U04",
+    "L7 preparation"
+  ],
+  "parent_commit": "2c073ca4b9b7dd2788d99ba288111ea159d3c6a1",
+  "branch": "work/curriculum-production-001",
+  "recommended_reasoning_effort": "high",
+  "new_units_authored": 4,
+  "protected": [
+    "academy/**",
+    "past reports",
+    "existing core/agent/document fixtures",
+    "existing web APIs"
+  ],
+  "optimizer_steps": 0,
+  "quality_accepted": false,
+  "next_task": "KEDU-PRODUCTION-010 K2-12.U05-U08 / L7 actual training"
+}

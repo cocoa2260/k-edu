@@ -1,0 +1,74 @@
+{
+  "task_id": "KEDU-PRODUCTION-009",
+  "status": "DATASET_AND_TOKEN_LABEL_PREPARATION_VERIFIED_TRAINING_NOT_RUN",
+  "observed_at_utc": "2026-10-31T00:51:06.947195+00:00",
+  "units": [
+    "K2-12.U01",
+    "K2-12.U02",
+    "K2-12.U03",
+    "K2-12.U04"
+  ],
+  "tests_passed": 271,
+  "actual_prepared_rows": 48,
+  "split_counts": {
+    "train": 28,
+    "validation": 10,
+    "test": 10
+  },
+  "verified": [
+    "strict example/label/source-version checks",
+    "same-family and derivative split boundaries",
+    "existing regression question exclusion and exact normalized duplicate checks",
+    "content-bound author review, changed paraphrase target rejected",
+    "local HF Datasets Features/load/filter/map/save/reload",
+    "actual pinned Qwen single-turn template/token-prefix and target-through-EOS labels",
+    "no double special tokens, overflow rejection, control-token rejection",
+    "EOS and padding labels distinguished even at the same token ID",
+    "synthetic causal-shift/direct-logit-gradient mask probe",
+    "explicit offline flags plus requests/httpx request guards"
+  ],
+  "limitations": [
+    "AI-authored fixed teaching records, no independent human annotation/review",
+    "group split and exact duplicate checks do not prove semantic leakage absence",
+    "public/shared-template test set is not a blind production benchmark",
+    "fixed single-turn pinned-template mask, not arbitrary models/chats",
+    "synthetic logits are not Qwen train/validation loss",
+    "standalone new-environment install recipe not clean-room rerun; isolated layer reused pinned L5 packages"
+  ],
+  "unverified": [
+    "real LoRA optimizer steps and trainable parameter counts",
+    "QLoRA hardware/backend compatibility",
+    "Base/Seed/Augmented quality comparison",
+    "adapter save/new-process reload",
+    "classroom/UI and independent student execution"
+  ],
+  "optimizer_steps": 0,
+  "model_weights_loaded": false,
+  "actual_local_model_generations": 0,
+  "paid_api_calls": 0,
+  "quality_accepted": false,
+  "independent_reviewer": false,
+  "reasoning_setting_automatically_changed": false,
+  "artifact_checks": {
+    "changed_files": 29,
+    "markdown_files": 9,
+    "json_files": 15,
+    "markdown_code_fences": 0,
+    "broken_relative_links": 0,
+    "remote_only_links_verified_in_base_tree": [
+      "curriculum-work/loop/checks/check_analysis.py",
+      "curriculum-work/loop/loop-spec.md",
+      "curriculum-work/loop/prompts.md",
+      "curriculum-work/reports/KEDU-PILOT-001/20261030T064535Z-r2/RESULT.md"
+    ],
+    "other_available_local_base_blobs_match": true,
+    "known_stale_local_publication_metadata_excluded_from_writes": [
+      "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/run.json",
+      "curriculum-work/reports/KEDU-PRODUCTION-003/run.json"
+    ],
+    "stale_metadata_note": "Remote pinned copies checked: published; local prepared copies retained, not uploaded. Final remote tree preservation checked separately.",
+    "authored_units": 40,
+    "total_units": 70,
+    "protected_old_reports_and_academy_not_in_write_set": true
+  }
+}

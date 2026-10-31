@@ -1,0 +1,63 @@
+{
+  "checked_at_utc": "2026-10-31T00:51:06.947195+00:00",
+  "sources": [
+    {
+      "topic": "LoRA",
+      "url": "https://huggingface.co/docs/peft/v0.21.0/package_reference/lora",
+      "scope": "Opened official documentation; conceptual, PEFT not installed/executed in this batch"
+    },
+    {
+      "topic": "Soft prompts",
+      "url": "https://huggingface.co/docs/peft/main/conceptual_guides/prompting",
+      "scope": "Main conceptual page; stable conceptual URL unavailable, not an installed API claim"
+    },
+    {
+      "topic": "IA3",
+      "url": "https://huggingface.co/docs/peft/v0.21.0/package_reference/ia3",
+      "scope": "Opened official documentation"
+    },
+    {
+      "topic": "Quantized PEFT",
+      "url": "https://huggingface.co/docs/peft/developer_guides/quantization",
+      "scope": "Opened official documentation; QLoRA not executed"
+    },
+    {
+      "topic": "Datasets process",
+      "url": "https://huggingface.co/docs/datasets/process",
+      "scope": "Official API guide; actual load/map/filter/save/reload executed on pinned 4.4.1"
+    },
+    {
+      "topic": "Chat template",
+      "url": "https://huggingface.co/docs/transformers/v4.57.0/chat_templating",
+      "scope": "Official versioned search result and current guide; 4.57.1 page blocked by robot check; installed 4.57.1 API actually verified"
+    },
+    {
+      "topic": "Pinned Qwen template",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B/blob/c1899de289a04d12100db370d81485cdf75e47ca/tokenizer_config.json",
+      "scope": "Opened pinned official file; downloaded tokenizer, runtime template hash in observed.json"
+    },
+    {
+      "topic": "Hub offline flags",
+      "url": "https://huggingface.co/docs/huggingface_hub/v0.36.0/package_reference/environment_variables",
+      "scope": "Opened official installed-version guide; explicit offline guards verified"
+    },
+    {
+      "topic": "Cross entropy",
+      "url": "https://docs.pytorch.org/docs/main/generated/torch.nn.functional.cross_entropy.html",
+      "scope": "Official search result; installed torch 2.15.0+cpu signature and synthetic-logit gradient behavior verified"
+    }
+  ],
+  "installed_versions": {
+    "datasets": "4.4.1",
+    "pyarrow": "26.0.0",
+    "pandas": "3.1.0",
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.1",
+    "torch": "2.15.0+cpu",
+    "pydantic": "2.14.2"
+  },
+  "no_claim_latest_versions": true,
+  "PEFT_training_API_executed": false,
+  "native_generation_tags_present": false,
+  "template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8"
+}
