@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-012",
+  "current_batch": "KEDU-PRODUCTION-013",
   "units": [
     {
       "id": "K2-00.U01",
@@ -748,23 +748,25 @@
       "id": "K2-14.U01",
       "course": "K2-14",
       "title": "형식·원본·공통 문서 구조",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-013",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/document-ai/intake.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "pdf_txt_local_registry_verified_authentication_and_concurrency_not_run",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-013/validation.json"
     },
     {
       "id": "K2-14.U02",
       "course": "K2-14",
       "title": "문서 상태·권한·삭제",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-013",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/document-ai/intake.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "pdf_txt_local_registry_verified_authentication_and_concurrency_not_run",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-013/validation.json"
     },
     {
       "id": "K2-14.U03",
@@ -820,15 +822,15 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-013",
+    "id": "KEDU-PRODUCTION-014",
     "proposed_scope": [
-      "K2-14",
-      "L9"
+      "K2-14.U03",
+      "L9 report generation"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "PDF_OCR_AND_SOURCE_BOUNDARIES_VERIFIED_QUALITY_REVIEW_PENDING",
+  "batch_status": "L9_INTAKE_IR_LIFECYCLE_VERIFIED_INTEGRATION_PARTIAL",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -897,6 +899,14 @@
       "pdf_ocr_verified": true,
       "vision_verified": false,
       "quality_accepted": false
+    },
+    "L9": {
+      "status": "PARTIAL_INTAKE_IR_LIFECYCLE_VERIFIED",
+      "path": "curriculum-work/practice/document-assistant/milestones/L9.json",
+      "generation_verified": false,
+      "quality_accepted": false,
+      "report_verified": false,
+      "web_ui_verified": false
     }
   }
 }

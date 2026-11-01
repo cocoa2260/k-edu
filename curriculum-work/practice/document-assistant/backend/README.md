@@ -89,3 +89,7 @@ tools.lora_full_lab는 같은 초기 Adapter와 조건별 28 Step을 사용하�
 ## L8 문서 입력
 
 [L8 안내](../L8.md)는 requirements-document.txt의 별도 CPU 환경에서 tools.document_assets와 tools.document_lab를 사용한다. 기존 data/document-v1에 저장한 PDF와 새 output 폴더를 지정한다. document_tests만 실행해 기존 FastAPI/Torch 의존 환경과 분리한다. 실제 PDF/OCR·BM25/물리 출처 연결을 검사하며 Encoder는 비의미적 상수 Fixture다. 기존 Index 코드·문서/Agent/훈련 데이터·모델·웹 API는 변경하지 않았다. [이번 결과](../../../reports/KEDU-PRODUCTION-012/RESULT.md)를 본다.
+
+## L9 첫 묶음
+
+[L9 안내](../L9.md)는 tools.registry_lab와 registry_tests의 표준 unittest를 사용한다. app/document_registry.py는 PDF/TXT의 원본 사본·IR·현재 버전·요청 키·상태·무효화를 별도 SQLite에서 검사한다. 문자열 포함 검색이며 기존 LocalIndex나 웹 API의 대체 구현이 아니다. DOCX/HWPX/HWP·보고서·Provider/SSE/React 연결은 미완료다.

@@ -1,0 +1,8 @@
+{
+  "command": "python -m unittest discover -s registry_tests -v",
+  "tests": 25,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 0.435,
+  "scope": "registry_tests only"
+}

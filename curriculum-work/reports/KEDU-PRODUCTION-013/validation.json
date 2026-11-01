@@ -1,0 +1,32 @@
+{
+  "batch": "KEDU-PRODUCTION-013",
+  "authored_units": 50,
+  "total_units": 70,
+  "review": "same_session_not_independent",
+  "formats_executed": [
+    "PDF digital",
+    "UTF8 TXT"
+  ],
+  "tests_passed": 25,
+  "previous_44_and_278_tests_rerun": false,
+  "actual_model_calls": 0,
+  "quality_accepted": false,
+  "concurrent_workers_verified": false,
+  "source_sha256": {
+    "curriculum-work/practice/document-assistant/backend/app/document_registry.py": "bcf64965f9febc1a526829fe825b641fdb0e21b9453d044a84b160426a449565",
+    "curriculum-work/practice/document-assistant/backend/tools/registry_lab.py": "896e6718fb4cf4b1ef567906fe484ccb95f1d4189ff2f2fade1aa35512dffa39",
+    "curriculum-work/practice/document-assistant/backend/registry_tests/test_registry.py": "8adab7a2e0a9a9947c686f3cd970b8d279afde614b95795b6b0849bfd4cfdb52"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "pdfplumber": "0.11.9",
+    "pypdf": "6.10.0"
+  },
+  "pending": [
+    "DOCX/HWPX/HWP",
+    "U03-U06",
+    "real authentication",
+    "backup/secure erasure",
+    "independent classroom"
+  ]
+}

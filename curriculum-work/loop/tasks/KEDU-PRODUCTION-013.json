@@ -1,0 +1,20 @@
+{
+  "id": "KEDU-PRODUCTION-013",
+  "scope": [
+    "K2-14.U01",
+    "K2-14.U02"
+  ],
+  "reasoning_effort": "high",
+  "protected": [
+    "academy",
+    "prior reports",
+    "existing retrieval/LLM/provider/web APIs",
+    "existing datasets"
+  ],
+  "remaining": [
+    "K2-14.U03",
+    "K2-14.U04",
+    "K2-14.U05",
+    "K2-14.U06"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "L9",
+  "status": "PARTIAL_INTAKE_IR_LIFECYCLE_VERIFIED",
+  "batch": "KEDU-PRODUCTION-013",
+  "authored_units": [
+    "K2-14.U01",
+    "K2-14.U02"
+  ],
+  "remaining_units": [
+    "K2-14.U03",
+    "K2-14.U04",
+    "K2-14.U05",
+    "K2-14.U06"
+  ],
+  "formats_executed": [
+    "PDF digital",
+    "UTF8 TXT"
+  ],
+  "report_verified": false,
+  "web_ui_verified": false,
+  "quality_accepted": false,
+  "classroom_trial": "not_run"
+}

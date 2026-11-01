@@ -1,4 +1,4 @@
-# 문서 답변 누적 실습 — L0에서 L8 문서 입력까지
+# 문서 답변 누적 실습 — L0에서 L9 문서 등록까지
 
 같은 Backend를 단계별로 확장한다. 강의 설명과 실행 코드는 파일을 나눠 두었다.
 
@@ -23,3 +23,5 @@ baseline-source-map.json은 L0 원문 이동 당시의 해시 기록이다. 이�
 [전체 Train 포함 학습·18개 Agent 회귀 결과](../../reports/KEDU-PRODUCTION-011/RESULT.md): 모든 예제를 학습에 포함했으며 품질 채택은 미완료다.
 
 [L8 PDF/OCR 실제 결과](../../reports/KEDU-PRODUCTION-012/RESULT.md): 합성 문서 네 개와 변경 범위 검사만 실행했다. 일반 문서 품질·LLM/Vision·실제 업로드 UI는 미검증이다.
+
+[L9 첫 묶음](L9.md): PDF/TXT 공통 구조와 등록·상태·권한·삭제를 실행했다. [결과](../../reports/KEDU-PRODUCTION-013/RESULT.md)를 본다. L9 보고서/UI/최종 평가는 미완료다.

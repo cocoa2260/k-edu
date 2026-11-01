@@ -1,0 +1,12 @@
+{
+  "batch": "KEDU-PRODUCTION-013",
+  "status": "READY_TO_PUBLISH",
+  "parent": "aeac427e40088d5a72e1c6b67dfeeb5a898718dd",
+  "scope": [
+    "K2-14.U01",
+    "K2-14.U02"
+  ],
+  "authored_units": 50,
+  "partial_milestone": true,
+  "publication": null
+}

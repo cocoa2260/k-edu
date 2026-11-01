@@ -1,8 +1,8 @@
 # K-Edu 교육과정 개편 — 현재 위치와 읽을 파일
 
-**현재: K2-13 네 단원·L8 PDF/OCR 실습 작성과 합성 문서 실행 완료. 자료 48/70개 작성. 일반 문서 품질·Vision·독립 수업 검증은 미완료다.**
+**현재: K2-14.U01~U02·L9 첫 묶음의 문서 공통 구조/등록·상태·권한·삭제 실행 완료. 자료 50/70개 작성. L9 보고서·Provider·UI·최종 평가와 독립 수업 검증은 미완료다.**
 
-[PDF/OCR 강의](lessons/document-parsing/lesson.md) · [이번 결과](reports/KEDU-PRODUCTION-012/RESULT.md) · [이전 학습/회귀 결과](reports/KEDU-PRODUCTION-011/RESULT.md)
+[문서 등록 강의](lessons/document-ai/intake.md) · [이번 결과](reports/KEDU-PRODUCTION-013/RESULT.md) · [이전 PDF/OCR 결과](reports/KEDU-PRODUCTION-012/RESULT.md)
 
 ## 전체 구성안
 
@@ -18,7 +18,7 @@
 | 2 | 결과를 보고 분석 방식 보완 | 완료 |
 | 3 | 전체 강의 비교·분석 | 결과 보존 |
 | 4 | 전체 목차·누적 실습 구성 결정 | v0.3을 첫 제작 묶음의 기준으로 사용 |
-| 5 | 확정한 강의·실습 제작 및 검증 | 48개 단원 자료·PDF/OCR 실습과 원문 연결 실행. 품질·수업 검증 미완료 |
+| 5 | 확정한 강의·실습 제작 및 검증 | 50개 단원 자료·PDF/TXT 등록과 상태/권한/삭제 검사. 품질·수업 검증 미완료 |
 
 구성안은 과목명·배치·범위의 추천이다. 기존 academy 원문·파일명은 유지한다. 새 강의와 누적 앱 L0~L8의 자료·검색·로컬 생성·도구 Runtime·LoRA 실험·PDF/OCR 실습을 작성했다. RAG 답변 품질은 채택 보류이며 전체 Train을 포함한 제한된 Step 학습과 회귀를 실행했으며 품질 채택은 남아 있다. 실제 모델·훈련·교육장 성능은 검증 게이트를 둔 후속 작업이다.
 
