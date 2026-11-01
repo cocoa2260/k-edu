@@ -27,3 +27,5 @@ baseline-source-map.json은 L0 원문 이동 당시의 해시 기록이다. 이�
 [L9 첫 묶음](L9.md): PDF/TXT 공통 구조와 등록·상태·권한·삭제를 실행했다. [결과](../../reports/KEDU-PRODUCTION-013/RESULT.md)를 본다. L9 보고서/UI/최종 평가는 미완료다.
 
 [L9 보고서 확장](../../lessons/document-ai/report.md): Claim별 근거·검토 해시를 DOCX/PDF에 연결했다. [실제 결과](../../reports/KEDU-PRODUCTION-014/RESULT.md)를 본다. Provider/UI/최종 평가는 남아 있다.
+
+[L9 Provider 제어](../../lessons/document-ai/provider.md): 로컬 HTTP 고정 응답으로 기능·준비 상태·공유 예산·Fallback·Trace를 검사했다. [실제 결과](../../reports/KEDU-PRODUCTION-015/RESULT.md)를 본다. 실제 모델/웹/Streaming 연결은 미완료다.

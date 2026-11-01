@@ -1,0 +1,162 @@
+{
+  "batch": "KEDU-PRODUCTION-015",
+  "cases": {
+    "temporary_to_backup": {
+      "status": "completed",
+      "answer": "고정 응답",
+      "endpoint": "backup",
+      "calls": 2,
+      "reserved_tokens": 42,
+      "elapsed_seconds": 0.002267,
+      "request_sha256": "b227b87f6642dda1f53234e703ba08dde4e05da69220adbd5dbca9786eb29236",
+      "trace": [
+        {
+          "endpoint": "primary",
+          "scope": "local",
+          "tokenizer_profile": "unicode-codepoint-fixture-NOT-model-tokenizer",
+          "input_tokens": 5,
+          "max_output_tokens": 16,
+          "reservation": 21,
+          "attempt": 1,
+          "remaining_seconds": 4.999977,
+          "decision": "temporary_failure"
+        },
+        {
+          "endpoint": "backup",
+          "scope": "local",
+          "tokenizer_profile": "unicode-codepoint-fixture-NOT-model-tokenizer",
+          "input_tokens": 5,
+          "max_output_tokens": 16,
+          "reservation": 21,
+          "attempt": 2,
+          "remaining_seconds": 4.998422,
+          "decision": "completed",
+          "reported_input_tokens": 5,
+          "reported_output_tokens": 5
+        }
+      ],
+      "deadline_enforcement": "synchronous pre/post checks; no forced cancellation",
+      "reservation_policy": "sum(input + max_output) for every attempted generation, no refund"
+    },
+    "feature_refused": {
+      "status": "all_unavailable",
+      "answer": null,
+      "endpoint": null,
+      "calls": 0,
+      "reserved_tokens": 0,
+      "elapsed_seconds": 3e-06,
+      "request_sha256": "b227b87f6642dda1f53234e703ba08dde4e05da69220adbd5dbca9786eb29236",
+      "trace": [
+        {
+          "endpoint": "primary",
+          "scope": "local",
+          "tokenizer_profile": "unicode-codepoint-fixture-NOT-model-tokenizer",
+          "decision": "capability_mismatch"
+        },
+        {
+          "endpoint": "backup",
+          "scope": "local",
+          "tokenizer_profile": "unicode-codepoint-fixture-NOT-model-tokenizer",
+          "decision": "capability_mismatch"
+        }
+      ],
+      "deadline_enforcement": "synchronous pre/post checks; no forced cancellation",
+      "reservation_policy": "sum(input + max_output) for every attempted generation, no refund"
+    },
+    "shared_call_limit": {
+      "status": "budget_exhausted",
+      "answer": null,
+      "endpoint": null,
+      "calls": 1,
+      "reserved_tokens": 21,
+      "elapsed_seconds": 0.000804,
+      "request_sha256": "b227b87f6642dda1f53234e703ba08dde4e05da69220adbd5dbca9786eb29236",
+      "trace": [
+        {
+          "endpoint": "primary",
+          "scope": "local",
+          "tokenizer_profile": "unicode-codepoint-fixture-NOT-model-tokenizer",
+          "input_tokens": 5,
+          "max_output_tokens": 16,
+          "reservation": 21,
+          "attempt": 1,
+          "remaining_seconds": 4.999995,
+          "decision": "temporary_failure"
+        },
+        {
+          "endpoint": "backup",
+          "scope": "local",
+          "tokenizer_profile": "unicode-codepoint-fixture-NOT-model-tokenizer",
+          "input_tokens": 5,
+          "max_output_tokens": 16,
+          "reservation": 21,
+          "decision": "budget_exhausted"
+        }
+      ],
+      "deadline_enforcement": "synchronous pre/post checks; no forced cancellation",
+      "reservation_policy": "sum(input + max_output) for every attempted generation, no refund"
+    },
+    "shared_reservation_limit": {
+      "status": "budget_exhausted",
+      "answer": null,
+      "endpoint": null,
+      "calls": 1,
+      "reserved_tokens": 21,
+      "elapsed_seconds": 0.000606,
+      "request_sha256": "b227b87f6642dda1f53234e703ba08dde4e05da69220adbd5dbca9786eb29236",
+      "trace": [
+        {
+          "endpoint": "primary",
+          "scope": "local",
+          "tokenizer_profile": "unicode-codepoint-fixture-NOT-model-tokenizer",
+          "input_tokens": 5,
+          "max_output_tokens": 16,
+          "reservation": 21,
+          "attempt": 1,
+          "remaining_seconds": 4.999996,
+          "decision": "temporary_failure"
+        },
+        {
+          "endpoint": "backup",
+          "scope": "local",
+          "tokenizer_profile": "unicode-codepoint-fixture-NOT-model-tokenizer",
+          "input_tokens": 5,
+          "max_output_tokens": 16,
+          "reservation": 21,
+          "decision": "budget_exhausted"
+        }
+      ],
+      "deadline_enforcement": "synchronous pre/post checks; no forced cancellation",
+      "reservation_policy": "sum(input + max_output) for every attempted generation, no refund"
+    }
+  },
+  "actual_loopback_http_requests": [
+    {
+      "path": "/primary",
+      "input_units": 5,
+      "max_output": 16
+    },
+    {
+      "path": "/backup",
+      "input_units": 5,
+      "max_output": 16
+    },
+    {
+      "path": "/primary",
+      "input_units": 5,
+      "max_output": 16
+    },
+    {
+      "path": "/primary",
+      "input_units": 5,
+      "max_output": 16
+    }
+  ],
+  "loopback_request_count": 4,
+  "real_model_calls": 0,
+  "external_requests": 0,
+  "token_counts": "Unicode codepoints fixture units, not model Tokenizer or billed usage",
+  "quality_accepted": false,
+  "web_factory_changed": false,
+  "hard_deadline_verified": false
+}

@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-014",
+  "current_batch": "KEDU-PRODUCTION-015",
   "units": [
     {
       "id": "K2-00.U01",
@@ -784,12 +784,13 @@
       "id": "K2-14.U04",
       "course": "K2-14",
       "title": "Provider 기능과 운영 예산",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-015",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/document-ai/provider.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "loopback_http_and_fixture_control_verified_real_model_and_hard_cancel_not_run",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-015/validation.json"
     },
     {
       "id": "K2-14.U05",
@@ -823,15 +824,15 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-015",
+    "id": "KEDU-PRODUCTION-016",
     "proposed_scope": [
-      "K2-14.U04",
-      "L9 provider capability and budgets"
+      "K2-14.U05",
+      "L9 React and Streaming"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "L9_REPORT_OUTPUT_AND_RENDER_VERIFIED_FIXTURE_REVIEW_ONLY",
+  "batch_status": "L9_PROVIDER_CONTROL_LOOPBACK_HTTP_VERIFIED_REAL_MODEL_INTEGRATION_PENDING",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -902,12 +903,13 @@
       "quality_accepted": false
     },
     "L9": {
-      "status": "PARTIAL_IR_LIFECYCLE_REPORT_OUTPUT_VERIFIED",
+      "status": "PARTIAL_IR_REPORT_PROVIDER_CONTROL_VERIFIED",
       "path": "curriculum-work/practice/document-assistant/milestones/L9.json",
       "generation_verified": false,
       "quality_accepted": false,
       "report_verified": true,
-      "web_ui_verified": false
+      "web_ui_verified": false,
+      "provider_control_verified": true
     }
   }
 }

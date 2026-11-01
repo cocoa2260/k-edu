@@ -97,3 +97,7 @@ tools.lora_full_lab는 같은 초기 Adapter와 조건별 28 Step을 사용하�
 ## L9 보고서 출력
 
 requirements-report.txt와 tools.report_lab를 사용한다. [강의](../../../lessons/document-ai/report.md)와 [결과](../../../reports/KEDU-PRODUCTION-014/RESULT.md)를 본다. 실제 DOCX/PDF·내용·렌더링을 확인했다. 고정 검토자 시연이며 기존 Registry/Provider/웹 API를 바꾸지 않았다.
+
+## L9 Provider 제어
+
+[U04 강의](../../../lessons/document-ai/provider.md)와 [결과](../../../reports/KEDU-PRODUCTION-015/RESULT.md)를 본다. tools.provider_lab는 표준 라이브러리 loopback HTTP 고정 서버, router_tests는 unittest를 사용한다. 기존 Provider/Factory/API를 변경하지 않았다. 기능/범위/준비 상태/Context/공유 예산/Trace와 동기 전후 시간·취소를 검사하며 실제 모델 품질·강제 중단 검증은 아니다.

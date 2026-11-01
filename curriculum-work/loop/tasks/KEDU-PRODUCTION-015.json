@@ -1,0 +1,20 @@
+{
+  "id": "KEDU-PRODUCTION-015",
+  "scope": [
+    "K2-14.U04",
+    "L9 provider control"
+  ],
+  "recommended_reasoning_effort": "high",
+  "protected": [
+    "academy",
+    "prior reports",
+    "existing Provider/Factory/API/retrieval/Registry",
+    "model/training data"
+  ],
+  "constraints": [
+    "no paid model API",
+    "no silent feature downgrade",
+    "no fallback beyond shared budget",
+    "no hard-cancel or real-model quality claim"
+  ]
+}

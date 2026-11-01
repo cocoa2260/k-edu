@@ -1,0 +1,11 @@
+{
+  "batch": "KEDU-PRODUCTION-015",
+  "status": "READY_TO_PUBLISH",
+  "parent": "b7a5ba37bd16d50b78b51b7deb895b7b4c01cbcb",
+  "scope": [
+    "K2-14.U04",
+    "L9 provider control"
+  ],
+  "authored_units": 52,
+  "publication": null
+}

@@ -1,14 +1,14 @@
 {
   "id": "L9",
-  "status": "PARTIAL_IR_LIFECYCLE_REPORT_OUTPUT_VERIFIED",
-  "batch": "KEDU-PRODUCTION-014",
+  "status": "PARTIAL_IR_REPORT_PROVIDER_CONTROL_VERIFIED",
+  "batch": "KEDU-PRODUCTION-015",
   "authored_units": [
     "K2-14.U01",
     "K2-14.U02",
-    "K2-14.U03"
+    "K2-14.U03",
+    "K2-14.U04"
   ],
   "remaining_units": [
-    "K2-14.U04",
     "K2-14.U05",
     "K2-14.U06"
   ],
@@ -20,5 +20,8 @@
   "web_ui_verified": false,
   "quality_accepted": false,
   "classroom_trial": "not_run",
-  "independent_review": false
+  "independent_review": false,
+  "provider_control_verified": true,
+  "real_model_router_verified": false,
+  "hard_cancel_verified": false
 }

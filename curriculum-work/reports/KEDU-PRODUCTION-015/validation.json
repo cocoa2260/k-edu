@@ -1,0 +1,28 @@
+{
+  "batch": "KEDU-PRODUCTION-015",
+  "authored_units": 52,
+  "total_units": 70,
+  "review": "same_session_not_independent",
+  "new_tests": 32,
+  "regression_tests": 45,
+  "total_tests": 77,
+  "actual_loopback_http_requests": 4,
+  "real_model_calls": 0,
+  "external_generation_calls": 0,
+  "token_count_profile": "unicode-codepoint-fixture, NOT model Tokenizer or billed usage",
+  "hf_adapter_check": "fake Tokenizer/Provider contract only",
+  "web_factory_changed": false,
+  "hard_deadline_verified": false,
+  "quality_accepted": false,
+  "classroom_trial": "not_run",
+  "environment": {
+    "python": "3.12.14",
+    "dependencies": "stdlib only for router/lab; existing PDF libs for regression"
+  },
+  "source_sha256": {
+    "curriculum-work/practice/document-assistant/backend/app/provider_router.py": "168fe509bbeb935458cb90cd333652440c2530469ff3b783ed4a9d3f04d1d8ea",
+    "curriculum-work/practice/document-assistant/backend/tools/provider_lab.py": "a1cbb21267d7514429a7b5d0061f0cdaf5973ae8387ae6979fa43f09353634bf",
+    "curriculum-work/practice/document-assistant/backend/router_tests/test_router.py": "10e30e56aa7ffbf427344854759e846d7b018a41a9a9c2453b9bfef6cbce088d"
+  },
+  "output_limit_handling": "partial answer discarded; no fallback"
+}

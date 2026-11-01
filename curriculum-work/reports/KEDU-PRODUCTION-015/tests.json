@@ -1,0 +1,10 @@
+{
+  "new_router_tests": 32,
+  "registry_regression_tests": 25,
+  "report_regression_tests": 20,
+  "total": 77,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 0.654909,
+  "scope": "unittest router_tests + registry_tests + report_tests; old web/ML/L8 suites not rerun"
+}
