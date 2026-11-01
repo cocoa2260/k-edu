@@ -101,3 +101,7 @@ requirements-report.txt와 tools.report_lab를 사용한다. [강의](../../../l
 ## L9 Provider 제어
 
 [U04 강의](../../../lessons/document-ai/provider.md)와 [결과](../../../reports/KEDU-PRODUCTION-015/RESULT.md)를 본다. tools.provider_lab는 표준 라이브러리 loopback HTTP 고정 서버, router_tests는 unittest를 사용한다. 기존 Provider/Factory/API를 변경하지 않았다. 기능/범위/준비 상태/Context/공유 예산/Trace와 동기 전후 시간·취소를 검사하며 실제 모델 품질·강제 중단 검증은 아니다.
+
+## L9 Streaming 화면
+
+[U05 강의](../../../lessons/document-ai/streaming.md)와 [결과](../../../reports/KEDU-PRODUCTION-016/RESULT.md)를 본다. ../stream-ui를 빌드한 뒤 tools.stream_lab에서 ui 디렉터리를 지정한다. Python 표준 HTTP 서버이며 기존 FastAPI 앱은 보존했다. stream_tests는 HTTP/SSE 계약, tools.stream_browser_lab는 같은 실행 트리의 실제 Chromium UI를 검사한다. 모델 생성 스트리밍이 아닌 고정 답변의 분할 전송이다.

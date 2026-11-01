@@ -1,0 +1,25 @@
+{
+  "batch": "KEDU-PRODUCTION-016",
+  "status": "READY_TO_PUBLISH",
+  "parent": "71ea736f20359b3e9d7681c86fe507bd2b088dd1",
+  "scope": [
+    "K2-14.U05",
+    "L9 React and SSE"
+  ],
+  "authored_units": 53,
+  "publication": null,
+  "attempts": [
+    {
+      "step": "default browser download",
+      "result": "truncated ZIP; used official Chrome for Testing binary"
+    },
+    {
+      "step": "initial race test",
+      "result": "test route removed before delayed acknowledgement completed; fixed harness sequencing"
+    },
+    {
+      "step": "final browser build",
+      "result": "9 scenarios pass, 9 real server runs, 0 page errors"
+    }
+  ]
+}

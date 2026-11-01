@@ -1,15 +1,15 @@
 {
   "id": "L9",
-  "status": "PARTIAL_IR_REPORT_PROVIDER_CONTROL_VERIFIED",
-  "batch": "KEDU-PRODUCTION-015",
+  "status": "PARTIAL_IR_REPORT_PROVIDER_REACT_SSE_FIXTURE_VERIFIED",
+  "batch": "KEDU-PRODUCTION-016",
   "authored_units": [
     "K2-14.U01",
     "K2-14.U02",
     "K2-14.U03",
-    "K2-14.U04"
+    "K2-14.U04",
+    "K2-14.U05"
   ],
   "remaining_units": [
-    "K2-14.U05",
     "K2-14.U06"
   ],
   "formats_executed": [
@@ -17,11 +17,13 @@
     "UTF8 TXT"
   ],
   "report_verified": true,
-  "web_ui_verified": false,
+  "web_ui_verified": true,
   "quality_accepted": false,
   "classroom_trial": "not_run",
   "independent_review": false,
   "provider_control_verified": true,
   "real_model_router_verified": false,
-  "hard_cancel_verified": false
+  "hard_cancel_verified": false,
+  "web_ui_scope": "Chromium loopback fixture; separate from existing FastAPI app",
+  "real_model_streaming_verified": false
 }

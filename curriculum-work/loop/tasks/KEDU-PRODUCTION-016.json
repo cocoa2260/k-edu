@@ -1,0 +1,21 @@
+{
+  "id": "KEDU-PRODUCTION-016",
+  "scope": [
+    "K2-14.U05",
+    "L9 React and SSE"
+  ],
+  "recommended_reasoning_effort": "high",
+  "protected": [
+    "academy",
+    "prior reports",
+    "existing FastAPI/Factory/Providers/Router/Registry",
+    "model/training data"
+  ],
+  "constraints": [
+    "no paid model API",
+    "shared parser in Node and React",
+    "no success without final event",
+    "cancel/late events cannot overwrite new run",
+    "buffered fixture delivery distinct from model streaming"
+  ]
+}

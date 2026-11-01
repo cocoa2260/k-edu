@@ -1,0 +1,64 @@
+{
+  "batch": "KEDU-PRODUCTION-016",
+  "authored_units": 53,
+  "total_units": 70,
+  "review": "same_session_not_independent",
+  "node_tests": 34,
+  "python_new_tests": 11,
+  "python_regression_tests": 77,
+  "total_nonbrowser_tests": 122,
+  "browser_scenarios": 9,
+  "browser_actual_server_runs": 9,
+  "browser_intercepted_html_fixture": true,
+  "browser_page_errors": 0,
+  "real_model_calls": 0,
+  "model_token_streaming_verified": false,
+  "existing_fastapi_factory_changed": false,
+  "quality_accepted": false,
+  "classroom_trial": "not_run",
+  "environment": {
+    "python": "3.12.14",
+    "react": "19.2.0",
+    "react_dom": "19.2.0",
+    "esbuild": "0.25.10",
+    "playwright": "1.62.1",
+    "chromium": "156.0.8078.80"
+  },
+  "visual_qa": {
+    "desktop": [
+      1120,
+      900
+    ],
+    "mobile_emulation": [
+      390,
+      844
+    ],
+    "images_opened": [
+      "desktop-completed",
+      "desktop-cancelled",
+      "mobile-completed"
+    ],
+    "assessment": "Korean text, state and cancel notice legible; 390px no horizontal overflow",
+    "screenshots": "internal QA only, not committed"
+  },
+  "source_sha256": {
+    "curriculum-work/practice/document-assistant/backend/tools/stream_lab.py": "f17bef54e61693b27d5fdd80fac8920cf8bc153cbd0bf881599798273c2cda97",
+    "curriculum-work/practice/document-assistant/backend/tools/stream_browser_lab.py": "d237c9bb22e2e7fe510348166f75ee711950bc4a420815467469b537ef972fef",
+    "curriculum-work/practice/document-assistant/backend/stream_tests/test_stream_server.py": "716af85a586c77fe052ee174deb2f12061f1b329522a68bbbd27ff3f403f2d64",
+    "curriculum-work/practice/document-assistant/stream-ui/package.json": "0a815f06cf686521c11fa7745231ae8653c011a2c11e7ef5c0197ec97594e20f",
+    "curriculum-work/practice/document-assistant/stream-ui/package-lock.json": "7a0fd73dde12cb60c51065e61f4ba4c0ad69cdc5ed6e017ce461e25ca44221ec",
+    "curriculum-work/practice/document-assistant/stream-ui/build.mjs": "164a672f500666ea363873757514fc3fc13b4b92de39ed49e3660f7cb4ada1e2",
+    "curriculum-work/practice/document-assistant/stream-ui/index.html": "96ea39312ac289a6e7bee36fa3f0b124ba6cc9851449dfb97fb5009e9badcf9d",
+    "curriculum-work/practice/document-assistant/stream-ui/src/App.jsx": "2fe85f0ebce502e629be71dd2755fa71e89bb501129a8e685d936507bdfe5689",
+    "curriculum-work/practice/document-assistant/stream-ui/src/style.css": "cd9e15c6cf8c1d84f3978c2ceefb8006abcd322818714e997c277bc59420d92f",
+    "curriculum-work/practice/document-assistant/stream-ui/src/stream.mjs": "1672850e7acf3c9c9c989bdb4f687745d529b21e9ee927561990ce649e76be9e",
+    "curriculum-work/practice/document-assistant/stream-ui/tests/stream.test.mjs": "f23cbb7540cc84c825ac9dfc47cb847d7d56e052f871a696e6d51c945a6854ff",
+    "curriculum-work/practice/document-assistant/stream-ui/tests/browser-check.mjs": "2da1ef886409b75f01423751399dc5bf135501f2c5014ceb34b30fff056a3aa3"
+  },
+  "build_sha256": {
+    "app.js": "11d7e8c62f899a0c2076a07b13924ada2cb07569e3fed867a9751eefd6d0e360",
+    "index.html": "96ea39312ac289a6e7bee36fa3f0b124ba6cc9851449dfb97fb5009e9badcf9d",
+    "app.js.LEGAL.txt": "573cc95a6417c69a6ca44804f440f00965283c8cdcc50025305a7a50f53940ac",
+    "app.css": "ae393aee5233ed7b4a927d1583e2be1b06aeace58dac11eb948c1946ee6a429d"
+  }
+}

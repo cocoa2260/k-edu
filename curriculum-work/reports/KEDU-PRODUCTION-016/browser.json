@@ -1,0 +1,126 @@
+{
+  "browser": "156.0.8078.80",
+  "cases": [
+    {
+      "case": "normal",
+      "ui": "completed"
+    },
+    {
+      "case": "error",
+      "ui": "failed",
+      "detail": "실습 서버에서 오류"
+    },
+    {
+      "case": "truncated",
+      "ui": "failed",
+      "detail": "최종 판정을 받기 전에"
+    },
+    {
+      "case": "refusal",
+      "ui": "failed",
+      "detail": "지원하는 경로가 없습니다"
+    },
+    {
+      "case": "deadline",
+      "ui": "failed",
+      "detail": "시간 한도를 초과"
+    },
+    {
+      "case": "cancel",
+      "ui": "cancelled",
+      "server": "cancelled",
+      "ack": true
+    },
+    {
+      "case": "restart_after_cancel_late_ack",
+      "ui": "completed"
+    },
+    {
+      "case": "literal_html",
+      "ui": "completed",
+      "html_executed": false
+    },
+    {
+      "case": "mobile_390px",
+      "ui": "completed",
+      "horizontal_overflow": false
+    }
+  ],
+  "server_runs": [
+    {
+      "id": "2c1e65a0-c2ac-484a-85ee-d5df9444d6f6",
+      "scenario": "normal",
+      "status": "completed",
+      "events": 8,
+      "cancel_requested": false,
+      "router_status": "completed"
+    },
+    {
+      "id": "816e821d-63c0-40ac-9b91-2b030ddff290",
+      "scenario": "error",
+      "status": "failed",
+      "events": 4,
+      "cancel_requested": false,
+      "router_status": "completed"
+    },
+    {
+      "id": "f5d6752c-8c36-4173-b3aa-a2bd0d7ab29a",
+      "scenario": "truncated",
+      "status": "truncated",
+      "events": 2,
+      "cancel_requested": false,
+      "router_status": "completed"
+    },
+    {
+      "id": "facfaa9d-bcb0-4f28-8dcb-92825139666d",
+      "scenario": "refusal",
+      "status": "all_unavailable",
+      "events": 2,
+      "cancel_requested": false,
+      "router_status": "all_unavailable"
+    },
+    {
+      "id": "1cbff1bc-645c-4239-a189-9d145eceb226",
+      "scenario": "deadline",
+      "status": "deadline_exceeded",
+      "events": 14,
+      "cancel_requested": false,
+      "router_status": "completed"
+    },
+    {
+      "id": "e07ec9a9-0f20-4438-adf7-a6af3c6fc31b",
+      "scenario": "slow",
+      "status": "cancelled",
+      "events": 3,
+      "cancel_requested": true,
+      "router_status": "completed"
+    },
+    {
+      "id": "3d814e8d-086c-442b-8fe4-ffb462dd03fe",
+      "scenario": "slow",
+      "status": "cancelled",
+      "events": 2,
+      "cancel_requested": true,
+      "router_status": "completed"
+    },
+    {
+      "id": "6cdcf771-1935-4b4e-8bc7-381c4e6f1e84",
+      "scenario": "normal",
+      "status": "completed",
+      "events": 8,
+      "cancel_requested": false,
+      "router_status": "completed"
+    },
+    {
+      "id": "7dba55e1-eeaa-40a2-ae00-271d01bf2869",
+      "scenario": "normal",
+      "status": "completed",
+      "events": 8,
+      "cancel_requested": false,
+      "router_status": "completed"
+    }
+  ],
+  "page_errors": [],
+  "actual_model_calls": 0,
+  "buffered_fixture_delivery": true
+}

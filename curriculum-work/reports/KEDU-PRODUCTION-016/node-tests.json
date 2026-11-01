@@ -1,0 +1,7 @@
+{
+  "tests": 34,
+  "pass": 34,
+  "fail": 0,
+  "duration_ms": 115.680277,
+  "scope": "shared decoder/state/consumer in Node; browser integration recorded separately"
+}
