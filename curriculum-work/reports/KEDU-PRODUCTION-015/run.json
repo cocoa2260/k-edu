@@ -1,11 +1,20 @@
 {
   "batch": "KEDU-PRODUCTION-015",
-  "status": "READY_TO_PUBLISH",
+  "status": "PUBLISHED",
   "parent": "b7a5ba37bd16d50b78b51b7deb895b7b4c01cbcb",
   "scope": [
     "K2-14.U04",
     "L9 provider control"
   ],
   "authored_units": 52,
-  "publication": null
+  "publication": {
+    "content_commit": "c21c69014d146c279b3c3a636b39daf2ab80b687",
+    "tree": "9678e99e2a8f6eb32647798428a831653ce4bc68",
+    "verification": {
+      "uploaded": 17,
+      "preserved": 517,
+      "total_blobs": 534,
+      "relative_links_verified": 84
+    }
+  }
 }
