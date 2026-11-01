@@ -1,13 +1,22 @@
 {
   "batch": "KEDU-PRODUCTION-016",
-  "status": "READY_TO_PUBLISH",
+  "status": "PUBLISHED",
   "parent": "71ea736f20359b3e9d7681c86fe507bd2b088dd1",
   "scope": [
     "K2-14.U05",
     "L9 React and SSE"
   ],
   "authored_units": 53,
-  "publication": null,
+  "publication": {
+    "content_commit": "37c12d4f747e0b0e1f611d59e6ae3b636d888782",
+    "tree": "f5f95638a15aa3d3fb2fca1451b790ce56ad6c26",
+    "verification": {
+      "uploaded": 29,
+      "preserved": 527,
+      "total_blobs": 556,
+      "relative_links_verified": 98
+    }
+  },
   "attempts": [
     {
       "step": "default browser download",
