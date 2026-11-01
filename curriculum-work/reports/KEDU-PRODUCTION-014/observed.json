@@ -1,0 +1,68 @@
+{
+  "batch": "KEDU-PRODUCTION-014",
+  "claim_count": 2,
+  "citation_count": 2,
+  "pending_blocked": true,
+  "review": "trusted same-session fixture; no independent human authentication",
+  "llm_calls": 0,
+  "semantic_quality_accepted": false,
+  "output_formats": [
+    "DOCX",
+    "PDF"
+  ],
+  "document_spec": {
+    "schema": "l9-document-spec-v1",
+    "template": "kedu-evidence-report-v1",
+    "title": "환불 안내의 제출 자료와 신청 기한",
+    "generation": 8,
+    "claims": [
+      {
+        "id": "C1",
+        "statement": "합성 안내에는 영수증을 함께 제출하도록 적혀 있다.",
+        "citations": [
+          {
+            "doc": "pdf-policy",
+            "version": 1,
+            "title": "가상 환불 안내",
+            "source_sha256": "01f0a3f4de1d0993f18d4c9e1f413ab9114244a946cf97518d90776583a1f866",
+            "parser": "l8-local-v1",
+            "element": "p1-b3",
+            "locator": {
+              "kind": "pdf_region",
+              "page": 1,
+              "bbox": [
+                42.0,
+                123.44000000000005,
+                459.0320000000001,
+                135.44000000000005
+              ],
+              "coordinates": "rendered_page_points_top_left_xyxy"
+            },
+            "quote": "영수증을 함께 제출"
+          }
+        ]
+      },
+      {
+        "id": "C2",
+        "statement": "합성 텍스트의 신청 기한은 7일이다.",
+        "citations": [
+          {
+            "doc": "txt-policy",
+            "version": 1,
+            "title": "가상 환불 안내",
+            "source_sha256": "8e8f23ee7784e0f766f7eb3d804bcf574a869b442c09aa320cb371f182009a42",
+            "parser": "l9-utf8-v1",
+            "element": "line-1",
+            "locator": {
+              "kind": "text_line",
+              "line": 1
+            },
+            "quote": "신청 기한 7일"
+          }
+        ]
+      }
+    ],
+    "semantic_validation": "requires_reviewer; citation presence is not entailment",
+    "review_mode": "trusted_local_fixture_not_authenticated_human"
+  }
+}

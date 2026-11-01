@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-013",
+  "current_batch": "KEDU-PRODUCTION-014",
   "units": [
     {
       "id": "K2-00.U01",
@@ -772,12 +772,13 @@
       "id": "K2-14.U03",
       "course": "K2-14",
       "title": "근거·검토·문서 생성",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-014",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/document-ai/report.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "actual_docx_pdf_and_render_verified_fixture_review_not_independent",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-014/validation.json"
     },
     {
       "id": "K2-14.U04",
@@ -822,15 +823,15 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-014",
+    "id": "KEDU-PRODUCTION-015",
     "proposed_scope": [
-      "K2-14.U03",
-      "L9 report generation"
+      "K2-14.U04",
+      "L9 provider capability and budgets"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "L9_INTAKE_IR_LIFECYCLE_VERIFIED_INTEGRATION_PARTIAL",
+  "batch_status": "L9_REPORT_OUTPUT_AND_RENDER_VERIFIED_FIXTURE_REVIEW_ONLY",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -901,11 +902,11 @@
       "quality_accepted": false
     },
     "L9": {
-      "status": "PARTIAL_INTAKE_IR_LIFECYCLE_VERIFIED",
+      "status": "PARTIAL_IR_LIFECYCLE_REPORT_OUTPUT_VERIFIED",
       "path": "curriculum-work/practice/document-assistant/milestones/L9.json",
       "generation_verified": false,
       "quality_accepted": false,
-      "report_verified": false,
+      "report_verified": true,
       "web_ui_verified": false
     }
   }

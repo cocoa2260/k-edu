@@ -1,0 +1,54 @@
+{
+  "batch": "KEDU-PRODUCTION-014",
+  "authored_units": 51,
+  "total_units": 70,
+  "review": "same_session_fixture_not_independent",
+  "new_tests": 20,
+  "registry_regression": 25,
+  "tests_passed": 45,
+  "old_l8_ml_tests_rerun": false,
+  "claim_count": 2,
+  "citation_count": 2,
+  "visual_qa": {
+    "docx_pages": 1,
+    "pdf_pages": 1,
+    "all_pages_opened": true,
+    "docx_renderer": "render_docx.py + LibreOffice",
+    "pdf_renderer": "pdftoppm",
+    "final_result": "Korean text legible; no clipping/overlap; title border removed"
+  },
+  "text_check": {
+    "direct_pdf": {
+      "pages": 1,
+      "all_16_paragraphs_found": true
+    },
+    "docx_render": {
+      "pages": 1,
+      "all_16_paragraphs_found": true
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "python-docx": "1.2.0",
+      "reportlab": "4.4.9",
+      "pypdf": "6.10.0",
+      "pdfplumber": "0.11.9"
+    }
+  },
+  "quality_accepted": false,
+  "independent_human_review": false,
+  "real_authentication": false,
+  "concurrent_publication_verified": false,
+  "source_sha256": {
+    "curriculum-work/practice/document-assistant/backend/app/report_spec.py": "7dc69bb7162027550b84e20d80e30e1f1e0eefb50152364fa69519da66a3d28c",
+    "curriculum-work/practice/document-assistant/backend/tools/report_export.py": "a2bc0287fef83ce7f286ef2731c096530f4fcaffe6e8d9c69b294199e9b97e77",
+    "curriculum-work/practice/document-assistant/backend/tools/report_lab.py": "5f03e656052b2496caa71af3ecc6ffd07b6f3709fa21943a2218a5a56e60520f",
+    "curriculum-work/practice/document-assistant/backend/report_tests/test_report_spec.py": "d0a4856c07b7315801adf40ca7c8c355a2566e8b3ff1084cd760198e0abfcb9a",
+    "curriculum-work/practice/document-assistant/backend/requirements-report.txt": "32281f92e0ee80b1ab38df2b969d2575be09ef08e6bb3f18a9f1ba5cb6a89289"
+  },
+  "artifacts_sha256": {
+    "evidence-report.pdf": "ca26aa0b918e1ee36b007e22c0055edafda0ea820d0f6f3ca56678cdcb86bff2",
+    "evidence-report.docx": "1027c7b7ae362cb55a4df5bcaedb9a2e4c5442209d670df6bc3578dadb4138dd"
+  }
+}

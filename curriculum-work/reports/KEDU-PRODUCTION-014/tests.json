@@ -1,0 +1,12 @@
+{
+  "commands": [
+    "unittest discover report_tests",
+    "unittest discover registry_tests"
+  ],
+  "new_tests": 20,
+  "regression_tests": 25,
+  "total": 45,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 0.5747
+}

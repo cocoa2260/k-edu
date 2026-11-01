@@ -1,0 +1,21 @@
+{
+  "batch": "KEDU-PRODUCTION-014",
+  "status": "READY_TO_PUBLISH",
+  "parent": "707b6908e022273c468addfa6801e4fd91e43fc9",
+  "scope": [
+    "K2-14.U03",
+    "L9 reports"
+  ],
+  "authored_units": 51,
+  "publication": null,
+  "render_attempts": [
+    {
+      "attempt": 1,
+      "result": "Korean glyphs missing in DOCX render; theme border visible"
+    },
+    {
+      "attempt": 2,
+      "result": "system-visible font and explicit run fonts; border removed; both one-page outputs inspected"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "direct_pdf": {
+    "pages": 1,
+    "all_16_paragraphs_found": true
+  },
+  "docx_render": {
+    "pages": 1,
+    "all_16_paragraphs_found": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "KEDU-PRODUCTION-014",
+  "scope": [
+    "K2-14.U03",
+    "L9 reports"
+  ],
+  "recommended_reasoning_effort": "high",
+  "protected": [
+    "academy",
+    "prior reports",
+    "existing Registry/retrieval/provider/web APIs",
+    "model and training data"
+  ],
+  "remaining": [
+    "U04-U06",
+    "independent quality/classroom"
+  ]
+}

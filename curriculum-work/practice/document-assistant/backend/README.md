@@ -93,3 +93,7 @@ tools.lora_full_lab는 같은 초기 Adapter와 조건별 28 Step을 사용하�
 ## L9 첫 묶음
 
 [L9 안내](../L9.md)는 tools.registry_lab와 registry_tests의 표준 unittest를 사용한다. app/document_registry.py는 PDF/TXT의 원본 사본·IR·현재 버전·요청 키·상태·무효화를 별도 SQLite에서 검사한다. 문자열 포함 검색이며 기존 LocalIndex나 웹 API의 대체 구현이 아니다. DOCX/HWPX/HWP·보고서·Provider/SSE/React 연결은 미완료다.
+
+## L9 보고서 출력
+
+requirements-report.txt와 tools.report_lab를 사용한다. [강의](../../../lessons/document-ai/report.md)와 [결과](../../../reports/KEDU-PRODUCTION-014/RESULT.md)를 본다. 실제 DOCX/PDF·내용·렌더링을 확인했다. 고정 검토자 시연이며 기존 Registry/Provider/웹 API를 바꾸지 않았다.
