@@ -1,0 +1,829 @@
+{
+  "schema_version": "teaching-revision-v1",
+  "batch": "KEDU-TEACHING-REPAIR-008",
+  "date": "2026-11-02",
+  "repository": "cocoa2260/k-edu",
+  "branch": "work/curriculum-production-001",
+  "source_commit": "830dc76caa0c7b6054fa78fd040fce53a7477a18",
+  "criteria": "curriculum-work/loop/prompts.md",
+  "reviewer": "same_author_not_independent",
+  "scope": {
+    "units": [
+      "K2-09.U01",
+      "K2-09.U02",
+      "K2-09.U03",
+      "K2-09.U04"
+    ],
+    "practice": "curriculum-work/practice/document-assistant/L4.md",
+    "other_unit_revisions": 0
+  },
+  "source_versions": {
+    "curriculum-work/lessons/rag/lesson.md": "f5d29f3df92126b4927accac409b2739b216ac6b",
+    "curriculum-work/practice/document-assistant/L4.md": "588c1ea3899e600de32ebd76e14e806e140ac219",
+    "curriculum-work/practice/document-assistant/backend/README.md": "03201fefff8547803cdac4abf1479d9f32eb38b3",
+    "curriculum-work/README.md": "99069fa0be87a4c4b47541b94f51826980f1f2fc",
+    "curriculum-work/PROGRESS.md": "69559fdedcda25a0d181ce621f7bb2497f453a5c",
+    "curriculum-work/curriculum/production-index.json": "0f944021ed969a64048cd94e93318b5335fe6f2a",
+    "curriculum-work/loop/prompts.md": "1a7fc88795b737413817bd7425f61ad97d5cf665",
+    "curriculum-work/practice/document-assistant/backend/app/rag.py": "6832261ff99ef2fdbfb1152dfa5379b7d045e177",
+    "curriculum-work/practice/document-assistant/backend/app/harness.py": "e06eba285222963e16ac52c2fb99f3c71dcf3fcd",
+    "curriculum-work/practice/document-assistant/backend/app/providers/hf_cpu_provider.py": "4bfd5b047ae63339f739ac6a1158fe55c5ac50e3",
+    "curriculum-work/practice/document-assistant/backend/tools/rag_lab.py": "75370d40702c20cca1adc21da34a130676f2e186",
+    "curriculum-work/practice/document-assistant/backend/tests/test_rag.py": "637de9f2ca45177c3f259b83a753f9923e154175",
+    "curriculum-work/practice/document-assistant/backend/retrieval/index.py": "f9cfedbbf19eb76fd2f3d5933b81f35db28a5408",
+    "curriculum-work/practice/document-assistant/backend/retrieval/encoder.py": "34bc2b95299afa6d571c41e76b5a8d1f527d3b52",
+    "curriculum-work/practice/document-assistant/data/core-v1.json": "95f5827bd876f8b5109aca7cdf41953dd24c98f6",
+    "curriculum-work/practice/document-assistant/data/documents-v1.json": "25d0553f26321434a9a8c7f386261505bca2fda3",
+    "curriculum-work/practice/document-assistant/data/retrieval-v1.json": "0127d97def42f73a4d6a37a10c325ca2c885c41c",
+    "curriculum-work/lessons/embedding/lesson.md": "2bbe1493a647c038bc7d85c3ff159d915e2cdb13",
+    "curriculum-work/lessons/vector-index/lesson.md": "7848b5a6f9bd08c2e7444b8c031b068451e189dd",
+    "curriculum-work/practice/document-assistant/L3.md": "ba1b4b13e0251eba6d5be37cc385a64c5cc348c3",
+    "curriculum-work/reports/KEDU-PRODUCTION-006/observed.json": "b0a0a854291a5bdad661cfa22890bf2b4382e6c0",
+    "curriculum-work/reports/KEDU-PRODUCTION-006/evaluation.json": "43b13e8a059911df3c9c315648ace6e18f73dc2b",
+    "curriculum-work/reports/KEDU-PRODUCTION-006/REVIEW.md": "a7e1dd804ac649c19092bca2ba8283630d7ac9ae",
+    "curriculum-work/reports/KEDU-PRODUCTION-006/RESULT.md": "3f758c48b22e5eb7ab698a6e2d8c0dafb72ac74a"
+  },
+  "explanation_review": [
+    {
+      "criterion": "학습 맥락·선수 연결",
+      "verdict": "설명 검수 통과",
+      "evidence": "식비 질문의 실제 규정과 이전 검색/Harness 기능에서 생성·근거 검토로 연결; 사전/요청 처리와 네트워크 분리"
+    },
+    {
+      "criterion": "개념의 최초 설명",
+      "verdict": "설명 검수 통과",
+      "evidence": "입력의 지시/자료/원질문/출력역할, 검색어 재작성/인접 줄, 주장/출처/인용, 보류/거부와 실패 원인을 구체적 대상으로 설명"
+    },
+    {
+      "criterion": "풀어쓴 예제",
+      "verdict": "설명 검수 통과",
+      "evidence": "C01 첫/보완 실제JSON·Token·누락, C07 질의/자료·원질문·잘못된금액, C09 누락줄/추가/순서·길이/금액·인용, 50000원 교사반례"
+    },
+    {
+      "criterion": "실습 연결",
+      "verdict": "설명 검수 통과",
+      "evidence": "다섯 활동의 준비/위치/명령·관찰/해석과 별도 실제 모델 준비·재개/개별사례·오류 안내"
+    },
+    {
+      "criterion": "설명/자료 일치",
+      "verdict": "설명 검수 통과",
+      "evidence": "28조건/29해시·원응답 검사/저장선택입력재생, 실제 제어·반례·두전체코드·JSON/소스 발췌 대조; 모델/Tokenizer환경 차이 공개"
+    },
+    {
+      "criterion": "개념별 질문/해설",
+      "verdict": "설명 검수 통과",
+      "evidence": "네 장3문항씩12문항과 강사 판정 이유, 다섯 활동의 충분/보완 근거"
+    },
+    {
+      "criterion": "학생/관리 구분",
+      "verdict": "설명 검수 통과",
+      "evidence": "학생 자연어 제목과 실제 필드·사례/실패키의 의미 안내, 단원ID는 교사용 매핑"
+    },
+    {
+      "criterion": "근거 수준·기술 정확성",
+      "verdict": "설명 검수 통과",
+      "evidence": "과거실제생성/현재고정응답·검사/교사반례/새실행, 문자/Token·구조/의미·후보/Context·제어종료/정상보류·자체/독립수업 구분"
+    }
+  ],
+  "execution": {
+    "python": "3.12.14",
+    "pydantic": "2.14.1",
+    "required_pydantic": "2.14.2",
+    "checks": "passed",
+    "record_cases_rechecked": [
+      {
+        "version": "v1",
+        "case": "C01",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v1",
+        "case": "C02",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v1",
+        "case": "C03",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v1",
+        "case": "C04",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v1",
+        "case": "C05",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v1",
+        "case": "C06",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v1",
+        "case": "C07-rewrite",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v1",
+        "case": "C07",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v1",
+        "case": "C08",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v1",
+        "case": "C09-neighbors",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v1",
+        "case": "C09",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v1",
+        "case": "C10",
+        "calls": 0,
+        "stop": "input_rejected"
+      },
+      {
+        "version": "v1",
+        "case": "C11",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v1",
+        "case": "C12",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v2",
+        "case": "C01",
+        "calls": 2,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v2",
+        "case": "C02",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v2",
+        "case": "C03",
+        "calls": 2,
+        "stop": "repair_limit"
+      },
+      {
+        "version": "v2",
+        "case": "C04",
+        "calls": 2,
+        "stop": "repair_limit"
+      },
+      {
+        "version": "v2",
+        "case": "C05",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v2",
+        "case": "C06",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v2",
+        "case": "C07-rewrite",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v2",
+        "case": "C07",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v2",
+        "case": "C08",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v2",
+        "case": "C09-neighbors",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v2",
+        "case": "C09",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v2",
+        "case": "C10",
+        "calls": 0,
+        "stop": "input_rejected"
+      },
+      {
+        "version": "v2",
+        "case": "C11",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      },
+      {
+        "version": "v2",
+        "case": "C12",
+        "calls": 1,
+        "stop": "structure_passed_review_required"
+      }
+    ],
+    "saved_actual_generation_observations": 29,
+    "stored_call_inputs_hash_verified": 29,
+    "prepared_message_builder_checked_with_saved_selection_replay_not_new_search": true,
+    "raw_outputs_rechecked_against_current_structural_citation_quote_checker": 29,
+    "structural_summary_recomputed": {
+      "v1": {
+        "core_structural_drafts": 11,
+        "first_attempt_core_structural_drafts": 11
+      },
+      "v2": {
+        "core_structural_drafts": 9,
+        "first_attempt_core_structural_drafts": 8
+      }
+    },
+    "semantic_scores": "preserved old same-session manual evaluation, not newly automated or independently graded",
+    "current_control_checks": [
+      "fixed-encoder/response actual LocalIndex and run_rag path",
+      "retry+repair shares3calls and identical retry input",
+      "invalid input0calls; empty context can abstain but cannot invent sources",
+      "bounded invalid quote repair",
+      "neighbors/filter and rewrite/original question separation",
+      "Index mutation during generation discards draft",
+      "long fixture character budget stops before generation"
+    ],
+    "counterexample_passed_current_checker": true,
+    "cli": [
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v1",
+          "--case",
+          "C01"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "531aef443c0c1cb8966923dd2639edc1a1034b8726e277a0b79a8107e2fc3cca"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v1",
+          "--case",
+          "C02"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "7f889ec1eb422c928610bf056bf108517551c3aada6d9b40594c08910420f2b0"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v1",
+          "--case",
+          "C03"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "2baf3553a71af30bb3606c73c007335c28b71a5dc7e8899b09eff1974886bdcb"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v1",
+          "--case",
+          "C04"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "203926509a94b5f21f7048da55d8fa84d281d87e02fc779f236a1a4678b42df8"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v1",
+          "--case",
+          "C05"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "c027471e6552865f6b2b506c9baa8aaac689d78405d45fbb9ea3dba34f8a66a0"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v1",
+          "--case",
+          "C06"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "28c8e1a2d0321a1d0109e2834b2f8548abcefdfe70f2959ad2b2e054fc2c0c18"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v1",
+          "--case",
+          "C07-rewrite"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "0fde59eda88daab9e575f8034584be2b2ea96633a0c14d2100a8cd8e2a292b03"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v1",
+          "--case",
+          "C07"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "97f41d7a13b5fb496183b740301b204a0a15147e675b232acf452ab5139be7c3"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v1",
+          "--case",
+          "C08"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "8be320e2db226491c7a1e34ffb4cebf4c09dd5293d8e55e0f78a6edf7d686345"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v1",
+          "--case",
+          "C09-neighbors"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "b67fa476c6aff00eefa8ef3617a162c6c24d77f7538bb526721cd3c825fd4a92"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v1",
+          "--case",
+          "C09"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "c8cc2a651eb345fabe9107d50dd8976b3257b24200cad299c269607e80bd36f8"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v1",
+          "--case",
+          "C10"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "e4eee32aa6ff28e20d74e904d3706abcd912abee78692b1a3349b6b96c433983"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v1",
+          "--case",
+          "C11"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "8d008709f204a0cf6cabf482d28f8464a932bb100bdd917259a29c092d3580e1"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v1",
+          "--case",
+          "C12"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "e6c332c5ee6db6673e76b05493f05d3c0ee3effee96644f47a36af53d3ea0f3b"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v2",
+          "--case",
+          "C01"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "b06ae8753cf5973d353875dd98cbcc28576f7b28ca5201bd49210521a050a3f0"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v2",
+          "--case",
+          "C02"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "18522bd568c3a27ad1ff7ec09c19ea1736579a53939946168fc4f088f426e3b6"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v2",
+          "--case",
+          "C03"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "17f69f0f2f2bde0928bc3f5e0344df38ac9f74430f4a39f8f3e8604167ede6f9"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v2",
+          "--case",
+          "C04"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "2094d95707d8b57c896c015f61ecb906fc0a245e46241bcf9ff797e5df63d956"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v2",
+          "--case",
+          "C05"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "b955db804946e7c1b12a5fef2ac3d9724e0dc53135a0e8242f600d7b5f41d32a"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v2",
+          "--case",
+          "C06"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "29ed7ebdc193afa1aeba6b6403bd39ffd89da96932bb60e47c5b374aa78d9109"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v2",
+          "--case",
+          "C07-rewrite"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "5b0467b703eb0a445cbb9c2ea16e8fb18d6732a0b1340fa0de914e3671cc1e77"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v2",
+          "--case",
+          "C07"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "3ea3c8e5e1f003c5ecd65df6beae05e7ddc099521517bd83c5492a988324eceb"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v2",
+          "--case",
+          "C08"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "bf382fce8e8271f6c0c91363e90aaf74fea7e83d3e7e80b0a1d5cf269475a94d"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v2",
+          "--case",
+          "C09-neighbors"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "899b8f373eb12e9d832156e8250811fe17e9bb039306b79861e1bae9253f7831"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v2",
+          "--case",
+          "C09"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "750cb6de5a696de229437a47e222505597f0a5d035aba07b26e3a92a2bb7e3a4"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v2",
+          "--case",
+          "C10"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "5508bc05d5cd83862f76990f5baefe11b93fcf05fc83769f78f5b0d83aeb9950"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v2",
+          "--case",
+          "C11"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "d362530908b6383021a2a614cb0637c6fbbb6245a4ff7e302d8301cb20ec22bd"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--version",
+          "v2",
+          "--case",
+          "C12"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "72ef65723bce3912d7a15573529321b57315e53830321f299f5e4dccac60c553"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--compare",
+          "prompt"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "75f64655a32a981aaa923c0145ef80ba7235ebcfb4959b6508995d4399981d9e"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--compare",
+          "rewrite"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "e3bf49ce81557c076dff7db9063e61c200dd6e8857e06480cf143cf5d9c1005c"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--compare",
+          "neighbors"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "f7a79c1005137892ec2497aae7b0f59f8f0c542ef7004f0fd525fb53c232bad0"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--input"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "c3e06020d15b2cadc12a9686c950917a9d9e61b84967c793630c35764da9d54a"
+      },
+      {
+        "args": [
+          "--counterexample"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "ab525168efd52952f74a1b15553ed3cc3744a069d6236b4529b64cda804e1fad"
+      },
+      {
+        "args": [],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--record",
+          "missing.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--case",
+          "missing"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--counterexample",
+          "--input"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--compare",
+          "rewrite",
+          "--input"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+          "--compare",
+          "rewrite",
+          "--case",
+          "C09"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--record",
+          "/tmp/tmpdbd14low/wrong.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--record",
+          "/tmp/tmpdbd14low/wrong.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--record",
+          "/tmp/tmpdbd14low/wrong.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--record",
+          "/tmp/tmpdbd14low/wrong.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "new_runnable_blocks": [
+      "자동 검사 통과 True 실패 ID None\n자동 검사 통과 False 실패 ID QUOTE_NOT_IN_SOURCE\n자동 검사 통과 False 실패 ID CITATION_NOT_SUPPLIED\n",
+      "질문 국내 당일 출장 식비 상한과 필요한 자료는?\n종료 structure_passed_review_required 호출 2\n초안 {'outcome': 'answer', 'answer': '국내 당일 출장 식비 상한은 30000원이며, 영수증이 필요합니다.', 'claims': [{'text': '국내 당일 출장 식비 상한은 30000원이다.', 'source_id': 'DOC-A@v1:L1', 'quote': '1. 사전 승인을 받은 국내 당일 출장의 식비 상한은 30000원이다.'}]}\n자료 DOC-A@v1:L1 1. 사전 승인을 받은 국내 당일 출장의 식비 상한은 30000원이다. 영수증이 필요하며 식사가 제공되면 식비를 지급하지 않는다.\n자료 DOC-T@v1:L2 출장 식비 | 영수증\n자료 DOC-A@v1:L2 2. 교통비는 승인된 대중교통 영수증의 실비를 지급한다. 숙박·해외 출장 기준은 이 문서에 없다.\n호출 1 입력/출력 Token 524 46\n{\n  \"outcome\": \"answer\",\n  \"answer\": \"국내 당일 출장 식비 상한은 30000원이며, 필요한 자료는 영수증이다.\"\n}\n호출 2 입력/출력 Token 552 133\n{\n  \"outcome\": \"answer\",\n  \"answer\": \"국내 당일 출장 식비 상한은 30000원이며, 영수증이 필요합니다.\",\n  \"claims\": [\n    {\n      \"text\": \"국내 당일 출장 식비 상한은 30000원이다.\",\n      \"source_id\": \"DOC-A@v1:L1\",\n      \"quote\": \"1. 사전 승인을 받은 국내 당일 출장의 식비 상한은 30000원이다.\"\n    }\n  ]\n}\n"
+    ],
+    "json_excerpts_match_stored_actual_outputs": true,
+    "source_excerpt_matches": true,
+    "protected_paths": [
+      "curriculum-work/loop/prompts.md",
+      "curriculum-work/practice/document-assistant/backend/app/rag.py",
+      "curriculum-work/practice/document-assistant/backend/app/harness.py",
+      "curriculum-work/practice/document-assistant/backend/app/providers/hf_cpu_provider.py",
+      "curriculum-work/practice/document-assistant/backend/tools/rag_lab.py",
+      "curriculum-work/practice/document-assistant/backend/tests/test_rag.py",
+      "curriculum-work/practice/document-assistant/backend/retrieval/index.py",
+      "curriculum-work/practice/document-assistant/backend/retrieval/encoder.py",
+      "curriculum-work/practice/document-assistant/data/core-v1.json",
+      "curriculum-work/practice/document-assistant/data/documents-v1.json",
+      "curriculum-work/practice/document-assistant/data/retrieval-v1.json",
+      "curriculum-work/lessons/embedding/lesson.md",
+      "curriculum-work/lessons/vector-index/lesson.md",
+      "curriculum-work/practice/document-assistant/L3.md",
+      "curriculum-work/reports/KEDU-PRODUCTION-006/observed.json",
+      "curriculum-work/reports/KEDU-PRODUCTION-006/evaluation.json",
+      "curriculum-work/reports/KEDU-PRODUCTION-006/REVIEW.md",
+      "curriculum-work/reports/KEDU-PRODUCTION-006/RESULT.md"
+    ],
+    "network_attempts": [],
+    "new_actual_E5_or_Qwen_inferences": 0,
+    "new_Tokenizer_runs": 0,
+    "full_pytest_HTTP_environment_rerun": false,
+    "independent_classroom": false
+  },
+  "limitations": [
+    "same-author explanation review; no independent classroom",
+    "supplemental Pydantic2.14.1 differs from pinned2.14.2; full pytest/HTTP environment not rerun",
+    "no new actual E5/Qwen/Tokenizer inference or cache verification",
+    "saved-selection replay validates builder/sources, not new semantic retrieval",
+    "old semantic grading remains same-session manual source review, not new automated/independent scoring",
+    "no production authentication/approval or in-flight hard cancellation/classroom workload verification"
+  ],
+  "progress": {
+    "revised_and_same_author_explanation_reviewed": 25,
+    "other_units_pending_revision": 45,
+    "classroom_acceptance": false
+  },
+  "next_batch": {
+    "id": "KEDU-TEACHING-REPAIR-009",
+    "proposed_scope": [
+      "Revise Single-Agent four units and connected L5 practice",
+      "Explain one request across model tool selection, executor argument/permission validation, state/observation and stopping",
+      "Separate Workflow/Agent/Tool/MCP/Framework roles and actual execution limits; preserve existing Runtime/data/evidence and repaired teaching"
+    ],
+    "status": "not_started",
+    "recommended_reasoning_effort": "high"
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "static_checks": {
+    "markdown_fences_balanced": true,
+    "student_internal_unit_ids_absent_in_prose": true,
+    "unit_status_counts": {
+      "needs_revision": 45,
+      "explanation_review_passed_same_author": 25
+    },
+    "historical_runtime_milestone_gate_fields_preserved": true,
+    "relative_targets_to_verify": 72,
+    "latest_revision_paths_exist": true,
+    "relative_targets_checked": 72,
+    "all_relative_targets_exist": true
+  }
+}

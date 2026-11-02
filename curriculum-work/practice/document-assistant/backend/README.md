@@ -64,6 +64,8 @@ Index 수업은 `python -m tools.index_steps --toy`로 좌표/단순 탐색을 �
 
 구조·Source ID·부분 인용 검사는 의미적 근거 검증이 아니다. 실제 두 지시 버전 모두 서비스 채택을 보류했다. 사례별 결과는 [읽기용 검토본](../../../reports/KEDU-PRODUCTION-006/REVIEW.md)에 있다.
 
+RAG 수업의 `python -m tools.rag_steps --record <합본 observed.json> --case C01`은 저장된 실제 E5/Qwen 사례를 읽는다. `--compare prompt`, `--compare rewrite`, `--compare neighbors`는 각각 저장된 비교를, `--input`은 해시가 일치하는 Template 전 호출 문자열 재구성을 보여 준다. `--counterexample`만 현재 Pydantic 검사기에 교사가 만든 틀린 주장을 넣으며 모델을 실행하지 않는다. [L4 활동](../L4.md)은 합본 읽기와 새 rag_lab의 개별 사례 파일/모델 실행을 구분한다. 기존 검색·생성·검사 구현은 이번 교안 수정에서 변경하지 않았다.
+
 ## L5 확장
 
 [L5 안내](../L5.md)에서 별도 CPU 환경·LangChain Core 1.7.3과 같은 모델 캐시를 사용한다. 실제 모델 행동과 Registry의 이름/인수/권한·발견한 출처·종료 상한을 연결했다. StructuredTool 연결은 도구 API만 확인했으며 Framework Agent/MCP 실행은 아니다.
