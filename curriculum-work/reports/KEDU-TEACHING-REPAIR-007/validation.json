@@ -902,7 +902,45 @@
     "recommended_reasoning_effort": "high"
   },
   "publication": {
-    "status": "pending"
+    "status": "published",
+    "branch": "work/curriculum-production-001",
+    "parent_commit": "b965ffe12f6d70ce617be546102b3cdf61a91d68",
+    "revision_commit": "2d6f3a623d4d8c421c5916d631fcb8ba82213512",
+    "revision_tree": "75fe61894880133e014b55a466a1aeb2b8d2a2d5",
+    "changed_paths": [
+      "curriculum-work/lessons/vector-index/lesson.md",
+      "curriculum-work/lessons/vector-index/teacher-guide.md",
+      "curriculum-work/practice/document-assistant/L3.md",
+      "curriculum-work/practice/document-assistant/backend/tools/index_steps.py",
+      "curriculum-work/practice/document-assistant/backend/README.md",
+      "curriculum-work/README.md",
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/curriculum/production-index.json",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-007/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-007/validation.json"
+    ],
+    "verification": {
+      "complete_candidate_tree_read": true,
+      "whitelisted_changes_match": true,
+      "previous_blobs": 635,
+      "candidate_blobs": 639,
+      "protected_existing_blobs_unchanged": 629,
+      "deleted_paths": 0,
+      "all_candidate_written_content_hashes_match": true,
+      "original_index_encoder_ranking_data_api_and_tests_preserved": true,
+      "original_retrieval_ann_tools_and_past_reports_preserved": true,
+      "prompt_context_harness_embedding_materials_preserved": true,
+      "l3_embedding_model_preparation_prefix_preserved": true,
+      "previous_manifest_deepcopy_fix_preserved": true,
+      "historical_runtime_milestone_gate_fields_preserved": true,
+      "branch_updated_with_expected_parent_no_force": true
+    },
+    "destination": {
+      "repository": "cocoa2260/k-edu",
+      "visibility": "public",
+      "matches_user_project_repository": true
+    },
+    "note": "A following documentation-only commit records publication checks; revision_commit identifies teaching/observation-tool changes."
   },
   "static_checks": {
     "markdown_fences_balanced": true,
