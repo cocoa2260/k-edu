@@ -1,6 +1,6 @@
 {
   "batch": "KEDU-PRODUCTION-021",
-  "status": "READY_TO_PUBLISH",
+  "status": "PUBLISHED",
   "parent": "d42bd94d6b47cb7fc6714bb794f85e54f50418b8",
   "scope": [
     "K2-03.U01",
@@ -10,7 +10,16 @@
   ],
   "authored_units": 70,
   "full_curriculum_complete": false,
-  "publication": null,
+  "publication": {
+    "content_commit": "dbe85417ec45b661b865644883e26f0287dedc90",
+    "tree": "6a0fd747bab6fd04668a97529194cb5527bef79b",
+    "verification": {
+      "uploaded": 12,
+      "preserved": 600,
+      "total_blobs": 612,
+      "relative_links_verified": 37
+    }
+  },
   "runtime": {
     "synthetic_decoding_and_annotated_evaluation_checks": "passed",
     "rejected_invalid_inputs": 8,
