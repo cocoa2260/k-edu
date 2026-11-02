@@ -1,0 +1,457 @@
+{
+  "schema_version": "teaching-revision-v1",
+  "batch": "KEDU-TEACHING-REPAIR-005",
+  "date": "2026-11-02",
+  "repository": "cocoa2260/k-edu",
+  "branch": "work/curriculum-production-001",
+  "source_commit": "9862c78a3bd76e236c0c688376cd575d5f78089f",
+  "criteria": "curriculum-work/loop/prompts.md",
+  "reviewer": "same_author_not_independent",
+  "scope": {
+    "units": [
+      "K2-06.U01",
+      "K2-06.U02",
+      "K2-06.U03",
+      "K2-06.U04",
+      "K2-06.U05"
+    ],
+    "practice": "curriculum-work/practice/document-assistant/L2.md",
+    "other_unit_revisions": 0
+  },
+  "source_versions": {
+    "curriculum-work/loop/prompts.md": "1a7fc88795b737413817bd7425f61ad97d5cf665",
+    "curriculum-work/README.md": "0b652ed0f7e802ce9e364ea41c5d2b9fd9ce0d23",
+    "curriculum-work/PROGRESS.md": "2450c0dd9f7e88133d468ed51c84dfd65c73ab7d",
+    "curriculum-work/curriculum/production-index.json": "46e234f890f8730a34e00ec09734fedfcf50a89c",
+    "curriculum-work/lessons/harness/lesson.md": "c51938bae650c3fa2177d14dc72fb77292349539",
+    "curriculum-work/practice/document-assistant/L2.md": "59fedbd63ec03fff4257ec3673a526bcc2e27248",
+    "curriculum-work/practice/document-assistant/backend/README.md": "6b07aef30bb76cb5d113aec3071f5670a359f721",
+    "curriculum-work/practice/document-assistant/backend/app/harness.py": "e06eba285222963e16ac52c2fb99f3c71dcf3fcd",
+    "curriculum-work/practice/document-assistant/backend/app/experiments.py": "7d763c765623326cb2cd80a60f087cbeaa1aa942",
+    "curriculum-work/practice/document-assistant/backend/app/schemas.py": "9fdc783b84b321db32331e2ef919bd63e0c77117",
+    "curriculum-work/practice/document-assistant/backend/app/providers/base.py": "053ed712705019f3718949c50bd5a1a4c3eb8136",
+    "curriculum-work/practice/document-assistant/backend/app/providers/errors.py": "fb1334e37b46b1aca8cbc17040b44be35e9670a8",
+    "curriculum-work/practice/document-assistant/backend/tools/harness_demo.py": "856042692b7c4a098add587ae3de7e07869c726c",
+    "curriculum-work/practice/document-assistant/backend/tests/test_harness.py": "31489c4beaae5ea2eeea8610e007014dc020b3de",
+    "curriculum-work/practice/document-assistant/backend/requirements-dev.txt": "34f9f1e0402b11fd29b77ba7ec058d8d3063b34f",
+    "curriculum-work/practice/document-assistant/backend/requirements.txt": "c73183c037cd453dffe3eea772e9b2a52a0f7f7b",
+    "curriculum-work/practice/document-assistant/data/core-v1.json": "95f5827bd876f8b5109aca7cdf41953dd24c98f6",
+    "curriculum-work/practice/document-assistant/data/documents-v1.json": "25d0553f26321434a9a8c7f386261505bca2fda3",
+    "curriculum-work/practice/document-assistant/data/shots-v1.json": "fe4f2a65c53532b7ee4c46cd26d5d4c55220efdc",
+    "curriculum-work/lessons/prompt/lesson.md": "77f4a2081e087773e0d4c4e52c66a16d1316d63e",
+    "curriculum-work/lessons/context/lesson.md": "2373b593eee6ffd7affa9109653a6f4ad0bf1f4f",
+    "curriculum-work/reports/KEDU-PRODUCTION-004/RESULT.md": "8aba4d4728933d8aa7e2547f02c2bacd228a3792"
+  },
+  "source_manifest_note": "Pinned related source versions; no full Phase1/whole-curriculum repeat audit.",
+  "phase1_reference": "reuse fixed excerpts and explanatory progression documented in active prompts",
+  "explanation_review": [
+    {
+      "criterion": "학습 맥락·선수 연결",
+      "verdict": "설명 검수 통과",
+      "evidence": "도입과 1장: 같은 식비 질문의 요청/응답 이후 문제를 제시하고 Prompt/Context 입력 준비에서 호출 실행기로 연결"
+    },
+    {
+      "criterion": "최초 개념 설명",
+      "verdict": "설명 검수 통과",
+      "evidence": "Provider/Harness 책임, 통신 실패와 출력 계약 실패, 실행 전체 예산, 구조/출처/의미, 비교/승인/시간/취소를 상황과 이유로 설명"
+    },
+    {
+      "criterion": "풀어쓴 예제",
+      "verdict": "설명 검수 통과",
+      "evidence": "충실한 식비 고정 답안→JSON→준비/호출/검사/초안, not-json 보완 입력·7사건, 틀린999999원, A/B 회귀, 가짜91초 폐기 사례"
+    },
+    {
+      "criterion": "실습·관찰·해석",
+      "verdict": "설명 검수 통과",
+      "evidence": "L2 첫 실행과 활동1~6의 정확한 실행 위치/명령/출력/판단 표, 기록 읽기와 현재 시연·원문 의미 검토를 분리"
+    },
+    {
+      "criterion": "실제 자료와 일치",
+      "verdict": "이번 확인 범위 통과",
+      "evidence": "원래10실험/12사례A-B 실행, 재시도/보완 입력 및 상한·검사·시계/취소 검증, runnable3블록과JSON 실행값/발췌2개 대조; 고정 Pytest/HTTP/모델은 미실행"
+    },
+    {
+      "criterion": "개념별 질문·해설",
+      "verdict": "설명 검수 통과",
+      "evidence": "다섯 장의 질문3개씩과 teacher-guide 장별 해설, 여섯 활동의 충족/보완 근거 대응"
+    },
+    {
+      "criterion": "학생/관리 기록 분리",
+      "verdict": "설명 검수 통과",
+      "evidence": "학생 제목은 상황/개념 중심; 실제 필드/실험/실패 이름에는 뜻을 설명; 기존 단원ID는 교사/인덱스 매핑"
+    },
+    {
+      "criterion": "근거 수준·기술 정확성",
+      "verdict": "설명 검수 통과",
+      "evidence": "교사 고정 응답과 실제 실행/모델 생성, 구조와 의미, 시도와추론, None과0, 가짜시계와벽시계, 전후검사와강제중단, 자체검수와수업을 구분"
+    }
+  ],
+  "execution": {
+    "python": "3.12.14",
+    "pydantic": "2.14.1",
+    "required_pydantic": "2.14.2",
+    "full_pinned_environment_verified": false,
+    "original_pytest_suite_rerun": false,
+    "checks": [
+      "original demo command executed and exclusive output protection verified",
+      "default worked example, all ten recorded scenarios, comparison and boundaries displayed; invalid/read-nonfixture options rejected",
+      "all documented counts/stop reasons and fixed A/B changes match actual controller observations; no semantic or approval score invented",
+      "retry input equality, repair suffix/no hostile echo, shared budget and repair-then-retry ordering, configured stops and programming-error propagation verified",
+      "structure/provided-ID failures versus deliberately wrong fact separated; usage remains unknown",
+      "fake-clock late response and during-call cancellation discarded; pre-call cancellation prevents request; no sleep or real preemption claim",
+      "all three runnable teaching blocks executed, two source excerpts matched, and JSON example equals actual worked draft"
+    ],
+    "scenario_observations": {
+      "valid_shape": {
+        "calls": 1,
+        "retries": 0,
+        "repairs": 0,
+        "stop_reason": "structure_passed_review_required",
+        "structural_validation_passed": true,
+        "factuality_verified": false
+      },
+      "timeout_then_success": {
+        "calls": 2,
+        "retries": 1,
+        "repairs": 0,
+        "stop_reason": "structure_passed_review_required",
+        "structural_validation_passed": true,
+        "factuality_verified": false
+      },
+      "repair_then_success": {
+        "calls": 2,
+        "retries": 0,
+        "repairs": 1,
+        "stop_reason": "structure_passed_review_required",
+        "structural_validation_passed": true,
+        "factuality_verified": false
+      },
+      "repeated_invalid": {
+        "calls": 2,
+        "retries": 0,
+        "repairs": 1,
+        "stop_reason": "repair_limit",
+        "structural_validation_passed": false,
+        "factuality_verified": false
+      },
+      "global_three_calls": {
+        "calls": 3,
+        "retries": 1,
+        "repairs": 1,
+        "stop_reason": "structure_passed_review_required",
+        "structural_validation_passed": true,
+        "factuality_verified": false
+      },
+      "retry_exhausted": {
+        "calls": 2,
+        "retries": 1,
+        "repairs": 0,
+        "stop_reason": "retry_limit",
+        "structural_validation_passed": false,
+        "factuality_verified": false
+      },
+      "upstream_terminal": {
+        "calls": 1,
+        "retries": 0,
+        "repairs": 0,
+        "stop_reason": "provider_error",
+        "structural_validation_passed": false,
+        "factuality_verified": false
+      },
+      "restricted_citation": {
+        "calls": 2,
+        "retries": 0,
+        "repairs": 1,
+        "stop_reason": "repair_limit",
+        "structural_validation_passed": false,
+        "factuality_verified": false
+      },
+      "forged_approval": {
+        "calls": 2,
+        "retries": 0,
+        "repairs": 1,
+        "stop_reason": "repair_limit",
+        "structural_validation_passed": false,
+        "factuality_verified": false
+      },
+      "wrong_fact_shape_passes": {
+        "calls": 1,
+        "retries": 0,
+        "repairs": 0,
+        "stop_reason": "structure_passed_review_required",
+        "structural_validation_passed": true,
+        "factuality_verified": false
+      }
+    },
+    "cli": [
+      {
+        "args": [],
+        "exit_code": 0,
+        "stdout_sha256": "884ab955ba45e3494dae95b3bdb3280f3bdf1601a1ee18acc714e3abe58778ca",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/demo.json",
+          "--scenario",
+          "valid_shape"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "899f8946f99153522a833b6b513e31e93f7f963a52bec756c84f2ae894a6279a",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/demo.json",
+          "--scenario",
+          "timeout_then_success"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "e6d0952d9933c7951de6d3898cd173efa0b345a929fbbc681e5476637d1f35c5",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/demo.json",
+          "--scenario",
+          "repair_then_success"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "839e80833dd196b95437079bd2cbb223d554166e2492617cf3ced0decfab47ee",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/demo.json",
+          "--scenario",
+          "repeated_invalid"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "9be601420b81437684c54f28d65b2a8e89553d3def625ae63ad5f01d4175709d",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/demo.json",
+          "--scenario",
+          "global_three_calls"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "e54edaaaba18ae15e15d6c7ca6ab3c89df1fdbb47a03a434659925548b52a0e9",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/demo.json",
+          "--scenario",
+          "retry_exhausted"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "7d9c023645929f07b18d559031e6bad0eb9660f32560781d6684bd08a60c63d1",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/demo.json",
+          "--scenario",
+          "upstream_terminal"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "5524e3a677fc954379f0ac14b43bf89da34e3b760839609ff8dae5423a654428",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/demo.json",
+          "--scenario",
+          "restricted_citation"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "f98121e104762223199814f3d0feb04410512ab13e0a3714d9550eee0db93b30",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/demo.json",
+          "--scenario",
+          "forged_approval"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "9be601420b81437684c54f28d65b2a8e89553d3def625ae63ad5f01d4175709d",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/demo.json",
+          "--scenario",
+          "wrong_fact_shape_passes"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "cd4e89c9edb182cde990c02841cf795ae5eaa2f6abc0746bb1519b5bc10e2b9a",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/demo.json",
+          "--compare"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "64822b25221754fffd322982cd09d460267193a6166c6c891538facec94ed3fa",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--boundaries"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "036448251ae13b0b8d38eb9c6ed2207e56182aed1013c0b373ce18399b134783",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--scenario",
+          "valid_shape"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "4a57017a607c1f3df1ae32155b484b72aef1d5bfb6cdaa094229c8faa283d1be"
+      },
+      {
+        "args": [
+          "--compare"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "4a57017a607c1f3df1ae32155b484b72aef1d5bfb6cdaa094229c8faa283d1be"
+      },
+      {
+        "args": [
+          "--boundaries",
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/demo.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "560c1d1960dabefcaa83a0fc4b3cd2cce26a45ec80974a83311532e6725bd501"
+      },
+      {
+        "args": [
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/demo.json",
+          "--scenario",
+          "missing"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "850ed323079a8e1d2068de081172e326bb3b1e151b4e4812a16c5d6cb7b3d45c"
+      },
+      {
+        "args": [
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/missing.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "f91908a2d996499f05b4942d7610f42c9877cadc1432f086033e3c1d4d0f3801"
+      },
+      {
+        "args": [
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/demo.json",
+          "--scenario",
+          "valid_shape",
+          "--compare"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "3e3f3d948ec27a54873e1d47f8be2b041f44d380fa2fd2a61801debb0a201382"
+      },
+      {
+        "args": [
+          "--input",
+          "/workspace/scratch/2eedeaf0c30d/tmp/r5-runtime/not-fixture.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "76cc09a78fc88023e22d926d2bfdc79b829881cc6834e12024cd674881a77bae"
+      }
+    ],
+    "original_demo_file_sha256": "b5e7635a54d5e2cf589f2d2fd0fbb99998b52b012f06f9c9b6758ab7dbda74bf",
+    "new_model_generations": 0,
+    "paid_api_calls": 0,
+    "network_attempts": [],
+    "fake_clock_elapsed_seconds": 91.0,
+    "real_91_second_wait": false,
+    "inflight_cancellation_implemented": false,
+    "independent_classroom_trial": false
+  },
+  "runtime_limits": [
+    "current supplemental Pydantic2.14.1 differs from pinned2.14.2",
+    "original full pytest/HTTP environment not rerun",
+    "no new actual model generation or paid API",
+    "fake clock/cancellation signals are not real wait, in-flight preemption or real authorization validation",
+    "no independent classroom trial"
+  ],
+  "preserved": {
+    "original_harness": true,
+    "original_demo_and_tests": true,
+    "original_data_and_input_generator": true,
+    "original_api": true,
+    "prompt_context_materials": true,
+    "old_reports": true,
+    "historical_runtime_milestone_gate_records": true
+  },
+  "progress": {
+    "revised_and_same_author_explanation_reviewed": 13,
+    "other_units_pending_revision": 57,
+    "classroom_acceptance": false
+  },
+  "next_batch": {
+    "id": "KEDU-TEACHING-REPAIR-006",
+    "proposed_scope": [
+      "Revise Embedding four units and directly connected representation/similarity/hybrid activities in L3",
+      "Explain a worked sentence/representation example, preserve useful vector arithmetic and actual retrieval observations",
+      "Preserve index-operation sections and existing encoder/data/contracts; validate only affected paths"
+    ],
+    "status": "not_started",
+    "recommended_reasoning_effort": "high"
+  },
+  "publication": {
+    "status": "prepared_locally",
+    "parent_commit": "9862c78a3bd76e236c0c688376cd575d5f78089f",
+    "changed_paths": [
+      "curriculum-work/lessons/harness/lesson.md",
+      "curriculum-work/lessons/harness/teacher-guide.md",
+      "curriculum-work/practice/document-assistant/L2.md",
+      "curriculum-work/practice/document-assistant/backend/tools/harness_steps.py",
+      "curriculum-work/practice/document-assistant/backend/README.md",
+      "curriculum-work/README.md",
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/curriculum/production-index.json",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-005/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-005/validation.json"
+    ]
+  },
+  "static_checks": {
+    "relative_targets_checked": 73,
+    "all_relative_targets_exist": true,
+    "code_fences_balanced": true,
+    "student_internal_unit_ids_absent": true,
+    "unit_status_counts": {
+      "needs_revision": 57,
+      "explanation_review_passed_same_author": 13
+    },
+    "protected_local_blobs_match": true
+  }
+}

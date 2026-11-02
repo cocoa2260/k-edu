@@ -44,6 +44,8 @@ POST /ai/prepare는 사례 ID와 조건으로 입력만 준비한다. 실제 생
 
 [L2 안내](../L2.md)의 고정 응답 실험은 같은 Provider 인터페이스에 Harness를 붙인다. 실제 모델 선택 옵션이나 새 API는 추가하지 않았다. 입력 준비·출력 구조/인용 ID 검사·공통 호출 상한·Trace·회귀 비교를 실행한다. 입력할 명령은 `python -m tools.harness_demo --output l2-observed.json`이며 기존 파일은 덮어쓰지 않는다.
 
+`python -m tools.harness_steps`는 작성한 식비 답안을 고정 반환해 요청 하나의 전체 흐름을 보여준다. 기존 기록을 읽을 때는 `--input l2-observed.json --scenario repair_then_success`, 전체 고정 출력 비교는 `--input l2-observed.json --compare`를 사용한다. `--boundaries`는 별도로 가짜 시계·취소 신호를 주입한다. 원래 Harness/데모/데이터/API는 보존하며 실제 모델·인증·강제 중단을 구현한 도구가 아니다.
+
 총 Provider 시도 3회·재시도 1회·보완 1회는 실행 전체의 상한이다. 90초는 호출 전후 검사이며 요청을 진행 중에 끊지 않는다. 구조 통과는 사실성·승인·Token 예산 검증이 아니다. 실제 모델 Gate는 여전히 미완료다.
 
 ## L3 확장
