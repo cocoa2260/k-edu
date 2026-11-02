@@ -1,0 +1,21 @@
+{
+  "batch": "KEDU-PRODUCTION-019",
+  "status": "READY_TO_PUBLISH",
+  "parent": "41352cb4381effca307e85cb786643d94318aeea",
+  "scope": [
+    "K2-01.U01",
+    "K2-01.U02",
+    "K2-01.U03",
+    "K2-01.U04"
+  ],
+  "authored_units": 61,
+  "publication": null,
+  "runtime": {
+    "fixture_and_arithmetic_verification": "passed",
+    "rejected_mutations": 8,
+    "model_calls": 0,
+    "training_executed": false,
+    "test_performance_evaluated": false
+  },
+  "release_status": "BLOCKED_PREVIOUS_QUALITY_AND_CLASSROOM_GATES_PENDING"
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "0.1",
+  "id": "KEDU-PRODUCTION-019",
+  "stage": 5,
+  "scope": ["K2-01.U01", "K2-01.U02", "K2-01.U03", "K2-01.U04"],
+  "recommended_reasoning_effort": "high",
+  "new_material_directories": [
+    "curriculum-work/lessons/data-evaluation/",
+    "curriculum-work/practice/data-evaluation/",
+    "curriculum-work/reports/KEDU-PRODUCTION-019/"
+  ],
+  "allowed_metadata_updates": [
+    "curriculum-work/README.md",
+    "curriculum-work/PROGRESS.md",
+    "curriculum-work/curriculum/production-index.json"
+  ],
+  "protected": ["academy/", "previous reports", "previous data fixtures", "existing app/model/training code", "existing milestone statuses"],
+  "constraints": [
+    "human Markdown uses prose and tables; no executable fenced code or JSON",
+    "synthetic data only; no private documents or customer data",
+    "actual fixture and metric calculations, no model/paid API calls",
+    "known lineage separation does not prove semantic independence or generalization",
+    "keep independent quality/classroom and previous acceptance gates pending"
+  ]
+}

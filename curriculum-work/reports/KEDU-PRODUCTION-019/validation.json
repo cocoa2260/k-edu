@@ -1,0 +1,364 @@
+{
+  "batch": "KEDU-PRODUCTION-019",
+  "checked_on": "2026-11-02",
+  "timezone": "Asia/Seoul",
+  "scope": "material, authored fixture lineage and arithmetic; no trained model",
+  "static_checks": {
+    "status": "passed",
+    "scope_unit_ids": [
+      "K2-01.U01",
+      "K2-01.U02",
+      "K2-01.U03",
+      "K2-01.U04"
+    ],
+    "authored_units": 61,
+    "total_units": 70,
+    "remaining_unwritten_units": 9,
+    "relative_link_checks": 39,
+    "relative_links": [
+      {
+        "source": "curriculum-work/lessons/data-evaluation/dataset-card.md",
+        "target": "curriculum-work/lessons/data-evaluation/lesson.md"
+      },
+      {
+        "source": "curriculum-work/lessons/data-evaluation/dataset-card.md",
+        "target": "curriculum-work/practice/data-evaluation/data/split-examples.csv"
+      },
+      {
+        "source": "curriculum-work/lessons/data-evaluation/dataset-card.md",
+        "target": "curriculum-work/practice/data-evaluation/data/metric-examples.csv"
+      },
+      {
+        "source": "curriculum-work/lessons/data-evaluation/lesson.md",
+        "target": "curriculum-work/lessons/orientation/lesson.md"
+      },
+      {
+        "source": "curriculum-work/lessons/data-evaluation/lesson.md",
+        "target": "curriculum-work/lessons/data-evaluation/worksheet.md"
+      },
+      {
+        "source": "curriculum-work/lessons/data-evaluation/lesson.md",
+        "target": "curriculum-work/lessons/data-evaluation/teacher-guide.md"
+      },
+      {
+        "source": "curriculum-work/lessons/data-evaluation/lesson.md",
+        "target": "curriculum-work/lessons/data-evaluation/dataset-card.md"
+      },
+      {
+        "source": "curriculum-work/lessons/data-evaluation/lesson.md",
+        "target": "curriculum-work/practice/data-evaluation/data/split-examples.csv"
+      },
+      {
+        "source": "curriculum-work/lessons/data-evaluation/lesson.md",
+        "target": "curriculum-work/lessons/data-evaluation/dataset-card.md"
+      },
+      {
+        "source": "curriculum-work/lessons/data-evaluation/lesson.md",
+        "target": "curriculum-work/practice/data-evaluation/data/metric-examples.csv"
+      },
+      {
+        "source": "curriculum-work/lessons/data-evaluation/lesson.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-019/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/lessons/data-evaluation/teacher-guide.md",
+        "target": "curriculum-work/lessons/data-evaluation/lesson.md"
+      },
+      {
+        "source": "curriculum-work/lessons/data-evaluation/teacher-guide.md",
+        "target": "curriculum-work/lessons/data-evaluation/worksheet.md"
+      },
+      {
+        "source": "curriculum-work/lessons/data-evaluation/worksheet.md",
+        "target": "curriculum-work/lessons/data-evaluation/lesson.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-019/RESULT.md",
+        "target": "curriculum-work/lessons/data-evaluation/lesson.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-019/RESULT.md",
+        "target": "curriculum-work/lessons/data-evaluation/worksheet.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-019/RESULT.md",
+        "target": "curriculum-work/lessons/data-evaluation/teacher-guide.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-019/RESULT.md",
+        "target": "curriculum-work/lessons/data-evaluation/dataset-card.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-019/RESULT.md",
+        "target": "curriculum-work/practice/data-evaluation/check_examples.py"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-019/RESULT.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-019/validation.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/lessons/data-evaluation/lesson.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-019/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-018/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/CURRICULUM_PLAN.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-ANALYSIS-001/20261030T080144Z/REVIEW.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-PILOT-001/20261030T064535Z-r2/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/curriculum.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/validation.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/run.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/tasks/KEDU-DESIGN-001.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/checks/check_design.py"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/checks/check_curriculum.py"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/checks/check_analysis.py"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/loop-spec.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/prompts.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/lessons/data-evaluation/lesson.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-019/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-018/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/curriculum/production-index.json"
+      }
+    ],
+    "human_markdown_files_checked": 7,
+    "fenced_code_blocks": 0,
+    "json_parse": "passed"
+  },
+  "design_alignment": [
+    {
+      "unit": "K2-01.U01",
+      "outcome": "Sample/Feature/Label at actual prediction time",
+      "evidence": "feature availability table and future/target leakage counterexample",
+      "location": "lesson U01, worksheet A, teacher A"
+    },
+    {
+      "unit": "K2-01.U02",
+      "outcome": "provenance/usage/labels/QA/card, group separation and leakage",
+      "evidence": "label and uncertainty guidance, source/group split counterexamples, train-only augmentation plan, Dataset Card",
+      "location": "lesson U02, worksheet B, teacher B, dataset-card"
+    },
+    {
+      "unit": "K2-01.U03",
+      "outcome": "Training Loss vs real goal and controlled changes",
+      "evidence": "hypothetical loss interpretation and fixed/changed-condition table",
+      "location": "lesson U03, worksheet C, teacher C"
+    },
+    {
+      "unit": "K2-01.U04",
+      "outcome": "accuracy/precision/recall/F1 selected with business error consequences",
+      "evidence": "confusion matrices, explicit positive class, undefined denominator policy, weighted error example and prohibited-action gates",
+      "location": "lesson U04, worksheet D, teacher D"
+    }
+  ],
+  "execution": {
+    "command": "python curriculum-work/practice/data-evaluation/check_examples.py --output <scratch-check-record>",
+    "exit_code": 0,
+    "dependencies": "Python standard library only",
+    "checker_sha256": "a518ca04399160b4620d3a99af8129acefa8893a710c069676234714e59d5285",
+    "fixture_verification": {
+      "status": "passed",
+      "scope": "authored fixture structure, lineage and arithmetic only",
+      "data_sha256": {
+        "metric-examples.csv": "9624d82079f34a236f5e525e3328bbff35e7bfa68b1eb74a49f9ba80ff39ab92",
+        "split-examples.csv": "aa4c491c8544c442f85ef4bd34096aa316e55f1230c76a3b73ebca2617c5cd55"
+      },
+      "split_fixture": {
+        "rows": 24,
+        "original_groups": 12,
+        "split_rows": {
+          "train": 12,
+          "dev": 6,
+          "test": 6
+        },
+        "label_counts": {
+          "train": {
+            "0": 4,
+            "1": 8
+          },
+          "dev": {
+            "0": 2,
+            "1": 4
+          },
+          "test": {
+            "1": 4,
+            "0": 2
+          }
+        },
+        "known_lineage_overlap": false,
+        "semantic_deduplication_verified": false,
+        "known_similar_intents": [
+          "G05",
+          "G11"
+        ],
+        "new_document_generalization_evaluated": false
+      },
+      "arithmetic_fixture_rows": 20,
+      "positive_label": "needs_escalation=1",
+      "threshold_rule": "score >= threshold",
+      "score_provenance": "authored_not_model_output",
+      "arithmetic_results": {
+        "always_0": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 4,
+          "TN": 16,
+          "accuracy": 0.8,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "illustrative_error_weight_10FN_plus_FP": 40
+        },
+        "0.70": {
+          "TP": 2,
+          "FP": 1,
+          "FN": 2,
+          "TN": 15,
+          "accuracy": 0.85,
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1": 0.5714285714285714,
+          "illustrative_error_weight_10FN_plus_FP": 21
+        },
+        "0.30": {
+          "TP": 4,
+          "FP": 4,
+          "FN": 0,
+          "TN": 12,
+          "accuracy": 0.8,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "illustrative_error_weight_10FN_plus_FP": 4
+        }
+      },
+      "rejected_mutations": [
+        "same-parent paraphrase moved to Test",
+        "contradictory paraphrase label",
+        "duplicate sample ID",
+        "nonbinary label",
+        "score above range",
+        "nonfinite score",
+        "Dev relabeled as Test",
+        "wrong score provenance"
+      ],
+      "zero_denominator_example": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "TN": 2,
+        "accuracy": 1.0,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "illustrative_error_weight_10FN_plus_FP": 0
+      },
+      "model_calls": 0,
+      "training_executed": false,
+      "test_performance_evaluated": false,
+      "independent_label_review": "not_run",
+      "classroom_trial": "not_run"
+    }
+  },
+  "same_session_content_review": {
+    "reviewer": "same author; not independent",
+    "status": "completed",
+    "observations": [
+      "Target is specialist escalation, never refund approval; class 0 still requires draft review and does not authorize sending/payment.",
+      "Future final outcomes, label explanations and split/ID metadata are excluded from prediction inputs; missing facts are not invented.",
+      "Label guide and all 12 original/paraphrase pairs were read against the synthetic A v2 scope; semantic truth was not independently labeled.",
+      "Known parent grouping is mechanically checked; cross-root similar intents G05/G11 are explicitly retained as a limitation and redesign exercise, not certified independent Test data.",
+      "Shared A v2 context is appropriate to the stated known-policy task and is explicitly not new-document generalization.",
+      "Dataset origin/license scope, label uncertainty, split roles, train-only additional augmentation and parent lineage are covered in prose, card and worksheet.",
+      "Hypothetical loss trajectory does not assert executed training, convergence or a uniquely established overfitting cause.",
+      "All lesson/teacher confusion matrices, metrics and 10FN+FP values match recalculated fixed scores; >= includes D04 at 0.30.",
+      "Always-zero precision is undefined while F1 is 0 with four actual positive cases in the ground-truth population; all-negative truth/prediction makes precision/recall/F1 undefined.",
+      "Dev threshold selection, real Test performance and prohibited security/business actions are separate; score is authored and not a calibrated probability.",
+      "Human reading path is lesson plus worksheet; instructor/card/raw CSV/checker/JSON remain optional support."
+    ]
+  },
+  "primary_sources_checked_on": "2026-11-02",
+  "primary_sources": [
+    {
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "supports": "prediction-time leakage and train-only fitted preprocessing"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/cross_validation.html",
+      "supports": "train/validation/test purpose, group and time dependence"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+      "supports": "binary confusion-matrix metrics and denominator policies"
+    },
+    {
+      "url": "https://huggingface.co/docs/hub/en/datasets-cards",
+      "supports": "Dataset Card context and dataset README representation"
+    }
+  ],
+  "runtime_limits": {
+    "model_calls": 0,
+    "training_executed": false,
+    "model_augmentation_executed": false,
+    "test_performance_evaluated": false,
+    "previous_app_regressions": "not_rerun; previous app/model/training code unchanged"
+  },
+  "independent_label_agreement": "not_measured",
+  "independent_quality_review": "not_run",
+  "classroom_trial": "not_run",
+  "student_time_measurement": "not_run",
+  "release_acceptance": false,
+  "previous_quality_gates": "unchanged_pending"
+}

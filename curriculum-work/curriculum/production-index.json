@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-018",
+  "current_batch": "KEDU-PRODUCTION-019",
   "units": [
     {
       "id": "K2-00.U01",
@@ -44,45 +44,49 @@
       "id": "K2-01.U01",
       "course": "K2-01",
       "title": "예측 시점과 데이터의 역할",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-019",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/data-evaluation/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "discussion_material_no_model_execution",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-019/validation.json"
     },
     {
       "id": "K2-01.U02",
       "course": "K2-01",
       "title": "데이터 제작 원칙·분리와 누수",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-019",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/data-evaluation/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "synthetic_lineage_checks_verified_no_model_training",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-019/validation.json"
     },
     {
       "id": "K2-01.U03",
       "course": "K2-01",
       "title": "일반화·과적합과 실험 통제",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-019",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/data-evaluation/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "hypothetical_loss_review_no_training",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-019/validation.json"
     },
     {
       "id": "K2-01.U04",
       "course": "K2-01",
       "title": "평가 지표와 오류의 영향",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-019",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/data-evaluation/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "synthetic_metric_arithmetic_verified_no_model_inference",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-019/validation.json"
     },
     {
       "id": "K2-02.U01",
@@ -826,17 +830,18 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-019",
+    "id": "KEDU-PRODUCTION-020",
     "proposed_scope": [
-      "K2-01.U01",
-      "K2-01.U02",
-      "K2-01.U03",
-      "K2-01.U04"
+      "K2-02.U01",
+      "K2-02.U02",
+      "K2-02.U03",
+      "K2-02.U04",
+      "K2-02.U05"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "ORIENTATION_MATERIAL_AND_SCENARIO_REVIEW_COMPLETE_CLASSROOM_PENDING",
+  "batch_status": "DATA_EVALUATION_MATERIAL_AND_SYNTHETIC_ARITHMETIC_VERIFIED_CLASSROOM_PENDING",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -844,7 +849,7 @@
       "QLoRA actual backend",
       "independent quality/classroom",
       "full framework/MCP",
-      "13 foundation units unwritten"
+      "9 foundation units unwritten"
     ]
   },
   "milestones": {

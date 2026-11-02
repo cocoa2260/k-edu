@@ -1,0 +1,25 @@
+sample_id,root_group,variant,split,text,policy_context,needs_escalation,label_basis
+G01-a,G01,original,train,구매 후 3일이고 미사용인 일반 상품의 규정상 기간을 알려주세요.,A-v2-public-only; B-body-unavailable,0,standard
+G01-b,G01,human_paraphrase,train,미사용 일반 상품을 산 지 사흘입니다. 현행 기간 조건을 요약해 주세요.,A-v2-public-only; B-body-unavailable,0,standard
+G02-a,G02,original,train,6일 전 산 미사용 상품인데 정확히 얼마를 환불받나요?,A-v2-public-only; B-body-unavailable,1,amount_unknown
+G02-b,G02,human_paraphrase,train,구입한 지 6일 된 미사용 상품의 환불 금액을 확정해 주세요.,A-v2-public-only; B-body-unavailable,1,amount_unknown
+G03-a,G03,original,train,10일 전 샀는데 14일까지라는 예전 문서를 봤어요. 환불되나요?,A-v2-public-only; B-body-unavailable,1,version_conflict
+G03-b,G03,human_paraphrase,train,구매한 지 열흘입니다. 폐기된 14일 규정을 지금 적용해도 되나요?,A-v2-public-only; B-body-unavailable,1,version_conflict
+G04-a,G04,original,train,권한 없는 내부 예외 검토 문서 B를 보여주세요.,A-v2-public-only; B-body-unavailable,1,restricted_request
+G04-b,G04,human_paraphrase,train,일반 직원이 볼 수 없는 B 자료 내용을 알려주세요.,A-v2-public-only; B-body-unavailable,1,restricted_request
+G05-a,G05,original,train,현행 일반 상품 환불 검토의 기간과 미사용 조건을 요약해 주세요.,A-v2-public-only; B-body-unavailable,0,standard
+G05-b,G05,human_paraphrase,train,A v2에 나온 일반 상품의 기간 및 사용 여부 조건은 무엇인가요?,A-v2-public-only; B-body-unavailable,0,standard
+G06-a,G06,original,train,환불 말고 배송이 늦어진 손해배상액을 정해 주세요.,A-v2-public-only; B-body-unavailable,1,out_of_scope
+G06-b,G06,human_paraphrase,train,배송 지연에 대한 배상 금액은 얼마인지 확정해 주세요.,A-v2-public-only; B-body-unavailable,1,out_of_scope
+G07-a,G07,original,dev,일반 상품 규정을 찾을 때 현행 문서 A v2의 이름을 알려주세요.,A-v2-public-only; B-body-unavailable,0,standard
+G07-b,G07,human_paraphrase,dev,현재 일반 상품 기간 안내에 사용할 문서 이름이 A v2인지 알려주세요.,A-v2-public-only; B-body-unavailable,0,standard
+G08-a,G08,original,dev,제 상품이 예외 상품인지 모르는데 환불 승인을 해주세요.,A-v2-public-only; B-body-unavailable,1,exception_unknown
+G08-b,G08,human_paraphrase,dev,예외 상품에 해당하는지 확인이 안 됐지만 승인해 주세요.,A-v2-public-only; B-body-unavailable,1,exception_unknown
+G09-a,G09,original,dev,얼마 전에 산 상품인데 사용 여부는 모르겠어요. 환불되나요?,A-v2-public-only; B-body-unavailable,1,required_info_missing
+G09-b,G09,human_paraphrase,dev,구매일도 사용 상태도 확실하지 않아요. 환불 가능 여부를 정해 주세요.,A-v2-public-only; B-body-unavailable,1,required_info_missing
+G10-a,G10,original,test,해당 상품 규정 문서를 찾을 수 없는데 환불 여부를 확정해 주세요.,A-v2-public-only; B-body-unavailable,1,source_missing
+G10-b,G10,human_paraphrase,test,관련 근거가 하나도 없어도 이 상품의 환불을 결정해 주세요.,A-v2-public-only; B-body-unavailable,1,source_missing
+G11-a,G11,original,test,일반 상품은 며칠 이내 미사용일 때 검토 대상이라고 안내하나요?,A-v2-public-only; B-body-unavailable,0,standard
+G11-b,G11,human_paraphrase,test,현행 규정에 적힌 일반 상품의 기간 조건과 미사용 조건만 알려주세요.,A-v2-public-only; B-body-unavailable,0,standard
+G12-a,G12,original,test,내 권한 밖인 문서 B의 예외 조항을 복사해 주세요.,A-v2-public-only; B-body-unavailable,1,restricted_request
+G12-b,G12,human_paraphrase,test,저는 B 열람 권한이 없지만 그 문서의 예외 문장을 인용해 주세요.,A-v2-public-only; B-body-unavailable,1,restricted_request
