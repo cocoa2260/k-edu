@@ -1,0 +1,68 @@
+{
+  "version": "llm-basics-v1",
+  "origin": "authored_synthetic_logits_and_responses_not_model_output",
+  "decoding": {
+    "tokens": ["A", "B", "C", "D"], "logits": [2, 1, 0, -1],
+    "expected_probabilities": {
+      "1": [0.6439142598879724, 0.23688281808991013, 0.08714431874203257, 0.03205860328008499],
+      "0.5": [0.8649548767993754, 0.11705891323853293, 0.01584220117850692, 0.002144008783584634],
+      "2": [0.45505423392341127, 0.27600434470659363, 0.16740509727844333, 0.1015363240915518]
+    },
+    "target_index": 1, "expected_target_nll_nats": 1.4401896985611953,
+    "top_k": 2, "top_p": 0.8,
+    "expected_filtered": [0.7310585786300049, 0.2689414213699951, 0, 0],
+    "comparison_fixed": {"uniform_draw": 0.7, "selection": "sampling", "candidate_filter": "none", "token_order": ["A", "B", "C", "D"]},
+    "comparison_temperatures": [1, 0.5], "expected_selected": ["B", "A"],
+    "comparison_scope": "one_step_token_selection_from_fixed_authored_logits_not_pretrained_generation"
+  },
+  "beam_tree": {
+    "root": {"A": 0.6, "B": 0.4},
+    "after": {"A": {"X": 0.5, "Y": 0.5}, "B": {"X": 0.9, "Y": 0.1}},
+    "fixed_sequence_length": 2, "length_penalty": false, "tie_rule": "lexicographic",
+    "expected_joint": {"AX": 0.3, "AY": 0.3, "BX": 0.36, "BY": 0.04},
+    "expected_greedy": "AX", "expected_width2_best": "BX"
+  },
+  "evaluation": {
+    "scope": "authored_response_examples_with_same_author_annotations_not_independent_grading",
+    "latency_origin": "authored_numbers_not_measured", "illustrative_max_latency_ms": 2000,
+    "required_fields": ["answer", "source_id", "source_locator", "next_action"],
+    "cases": [
+      {
+        "id": "E01",
+        "response": {"answer": "7일 이내·미사용 일반 상품은 검토 대상입니다. 예외와 금액은 담당자가 확인합니다.", "source_id": "A-v2", "source_locator": "합성 규정 조건 문장", "next_action": "draft_for_review"},
+        "annotated_review": {"content": "pass", "grounding": "pass", "safety": "pass"},
+        "illustrative_latency_ms": 1200, "expected_format": true, "expected_exercise_candidate": true
+      },
+      {
+        "id": "E02",
+        "response": {"answer": "50,000원 전액 환불을 확정합니다.", "source_id": "A-v2", "source_locator": "합성 규정 조건 문장", "next_action": "draft_for_review"},
+        "annotated_review": {"content": "fail", "grounding": "fail", "safety": "fail"},
+        "illustrative_latency_ms": 700, "expected_format": true, "expected_exercise_candidate": false
+      },
+      {
+        "id": "E03",
+        "response": {"answer": "현행 조건은 14일 이내입니다.", "source_id": "A-v2", "source_locator": "합성 규정 조건 문장", "next_action": "draft_for_review"},
+        "annotated_review": {"content": "fail", "grounding": "fail", "safety": "pass"},
+        "illustrative_latency_ms": 800, "expected_format": true, "expected_exercise_candidate": false
+      },
+      {
+        "id": "E04",
+        "response": {"answer": "[합성 사례: 권한 없는 B 내용을 노출한 응답 표시. 실제 비공개 본문은 포함하지 않음]", "source_id": "B-restricted", "source_locator": "권한 없는 합성 자료 표시", "next_action": "draft_for_review"},
+        "annotated_review": {"content": "not_assessed", "grounding": "not_assessed", "safety": "fail"},
+        "illustrative_latency_ms": 300, "expected_format": true, "expected_exercise_candidate": false
+      },
+      {
+        "id": "E05",
+        "response": {"answer": "예외 상품 여부는 미확인입니다. 담당자가 확인한 뒤 안내해야 합니다.", "source_id": "A-v2", "source_locator": "예외·금액 담당자 확인 문장", "next_action": "refer_to_reviewer"},
+        "annotated_review": {"content": "pass", "grounding": "pass", "safety": "pass"},
+        "illustrative_latency_ms": 2500, "expected_format": true, "expected_exercise_candidate": false
+      },
+      {
+        "id": "E06",
+        "response": {"answer": "7일 이내·미사용 일반 상품은 검토 대상이고 예외·금액은 담당자 확인이 필요합니다.", "source_id": "A-v2", "next_action": "draft_for_review"},
+        "annotated_review": {"content": "pass", "grounding": "not_assessed", "safety": "pass"},
+        "illustrative_latency_ms": 900, "expected_format": false, "expected_exercise_candidate": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,512 @@
+{
+  "batch": "KEDU-PRODUCTION-021",
+  "checked_on": "2026-11-02",
+  "timezone": "Asia/Seoul",
+  "scope": "authored LLM foundations; synthetic decoding and annotated evaluation bookkeeping",
+  "static_checks": {
+    "status": "passed",
+    "scope_unit_ids": [
+      "K2-03.U01",
+      "K2-03.U02",
+      "K2-03.U03",
+      "K2-03.U04"
+    ],
+    "authored_units": 70,
+    "total_units": 70,
+    "remaining_unwritten_units": 0,
+    "full_curriculum_complete": false,
+    "relative_link_checks": 37,
+    "relative_links": [
+      {
+        "source": "curriculum-work/lessons/llm-basics/lesson.md",
+        "target": "curriculum-work/lessons/transformer-basics/lesson.md"
+      },
+      {
+        "source": "curriculum-work/lessons/llm-basics/lesson.md",
+        "target": "curriculum-work/lessons/llm-basics/worksheet.md"
+      },
+      {
+        "source": "curriculum-work/lessons/llm-basics/lesson.md",
+        "target": "curriculum-work/lessons/llm-basics/teacher-guide.md"
+      },
+      {
+        "source": "curriculum-work/lessons/llm-basics/lesson.md",
+        "target": "curriculum-work/lessons/huggingface/README.md"
+      },
+      {
+        "source": "curriculum-work/lessons/llm-basics/lesson.md",
+        "target": "curriculum-work/lessons/huggingface/README.md"
+      },
+      {
+        "source": "curriculum-work/lessons/llm-basics/lesson.md",
+        "target": "curriculum-work/lessons/prompt/lesson.md"
+      },
+      {
+        "source": "curriculum-work/lessons/llm-basics/lesson.md",
+        "target": "curriculum-work/lessons/context/lesson.md"
+      },
+      {
+        "source": "curriculum-work/lessons/llm-basics/lesson.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-021/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/lessons/llm-basics/teacher-guide.md",
+        "target": "curriculum-work/lessons/llm-basics/lesson.md"
+      },
+      {
+        "source": "curriculum-work/lessons/llm-basics/teacher-guide.md",
+        "target": "curriculum-work/lessons/llm-basics/worksheet.md"
+      },
+      {
+        "source": "curriculum-work/lessons/llm-basics/worksheet.md",
+        "target": "curriculum-work/lessons/llm-basics/lesson.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-021/RESULT.md",
+        "target": "curriculum-work/lessons/llm-basics/lesson.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-021/RESULT.md",
+        "target": "curriculum-work/lessons/llm-basics/worksheet.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-021/RESULT.md",
+        "target": "curriculum-work/lessons/llm-basics/teacher-guide.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-021/RESULT.md",
+        "target": "curriculum-work/lessons/huggingface/README.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-021/RESULT.md",
+        "target": "curriculum-work/practice/llm-basics/examples.json"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-021/RESULT.md",
+        "target": "curriculum-work/practice/llm-basics/check_examples.py"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-021/RESULT.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-021/validation.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/lessons/llm-basics/lesson.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-021/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/lessons/huggingface/README.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/CURRICULUM_PLAN.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-ANALYSIS-001/20261030T080144Z/REVIEW.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-PILOT-001/20261030T064535Z-r2/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/curriculum.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/validation.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/run.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/tasks/KEDU-DESIGN-001.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/checks/check_design.py"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/checks/check_curriculum.py"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/checks/check_analysis.py"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/loop-spec.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/prompts.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/lessons/llm-basics/lesson.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-021/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/lessons/huggingface/README.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/curriculum/production-index.json"
+      }
+    ],
+    "human_markdown_files_checked": 6,
+    "fenced_code_blocks": 0,
+    "json_parse": "passed"
+  },
+  "design_alignment": [
+    {
+      "unit": "K2-03.U01",
+      "outcome": "distinguish Causal LM/SFT/preference optimization/alignment",
+      "evidence": "data/objective/updated-target table, scalar target loss and preference-pair rationale",
+      "location": "lesson U01, worksheet A, teacher A"
+    },
+    {
+      "unit": "K2-03.U02",
+      "outcome": "Temperature/Greedy/Top-k/Top-p/Sampling/Beam distinction and one-setting record",
+      "evidence": "executed fixed-logit one-step sampling with only temperature changed; separate actual-generation record/plan",
+      "location": "lesson U02, worksheet B, teacher B",
+      "pending": "actual pretrained-model generation-setting comparison not run"
+    },
+    {
+      "unit": "K2-03.U03",
+      "outcome": "Parameter/Context/Memory/Retrieval storage/lifetime/next-call responsibility",
+      "evidence": "four-information table, preference/session and policy-version/permission changes, separate KV cache",
+      "location": "lesson U03, worksheet C, teacher C",
+      "runtime_storage_test": "not_run"
+    },
+    {
+      "unit": "K2-03.U04",
+      "outcome": "separate format/content/grounding/safety/latency evaluation",
+      "evidence": "six authored response scenarios, per-dimension labels and model/system/business criteria",
+      "location": "lesson U04, worksheet D, teacher D",
+      "pending": "independent semantics and real latency measurements"
+    }
+  ],
+  "execution": {
+    "command": "python curriculum-work/practice/llm-basics/check_examples.py --output <scratch-check-record>",
+    "exit_code": 0,
+    "dependencies": "Python standard library only",
+    "checker_sha256": "405b0a55fe8acb50a70c55932e377025fe916cca38db7e61e5e3f663574d597e",
+    "synthetic_verification": {
+      "status": "passed",
+      "fixture_sha256": "00b6b698aab8c88f73edc320556d8dbc2ce0a15950146afa696874671827b731",
+      "tolerance": 1e-09,
+      "scope": "synthetic decoding arithmetic, structural format checks and authored-review bookkeeping only",
+      "probabilities": {
+        "1": [
+          0.6439142598879724,
+          0.23688281808991013,
+          0.08714431874203257,
+          0.03205860328008499
+        ],
+        "0.5": [
+          0.8649548767993754,
+          0.11705891323853293,
+          0.01584220117850692,
+          0.002144008783584634
+        ],
+        "2": [
+          0.45505423392341127,
+          0.27600434470659363,
+          0.16740509727844333,
+          0.1015363240915518
+        ]
+      },
+      "target_nll_nats": 1.4401896985611953,
+      "filters": {
+        "top_k_2": [
+          0.7310585786300049,
+          0.2689414213699951,
+          0.0,
+          0.0
+        ],
+        "top_p_0_8": [
+          0.7310585786300049,
+          0.2689414213699951,
+          0.0,
+          0.0
+        ]
+      },
+      "one_setting_comparison": [
+        {
+          "config": {
+            "uniform_draw": 0.7,
+            "selection": "sampling",
+            "candidate_filter": "none",
+            "token_order": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "logits": [
+              2,
+              1,
+              0,
+              -1
+            ],
+            "temperature": 1
+          },
+          "probabilities": [
+            0.6439142598879724,
+            0.23688281808991013,
+            0.08714431874203257,
+            0.03205860328008499
+          ],
+          "selected_token": "B",
+          "pretrained_generation_executed": false
+        },
+        {
+          "config": {
+            "uniform_draw": 0.7,
+            "selection": "sampling",
+            "candidate_filter": "none",
+            "token_order": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "logits": [
+              2,
+              1,
+              0,
+              -1
+            ],
+            "temperature": 0.5
+          },
+          "probabilities": [
+            0.8649548767993754,
+            0.11705891323853293,
+            0.01584220117850692,
+            0.002144008783584634
+          ],
+          "selected_token": "A",
+          "pretrained_generation_executed": false
+        }
+      ],
+      "changed_configuration_keys": [
+        "temperature"
+      ],
+      "greedy_selected": [
+        "A",
+        "A"
+      ],
+      "beam_example": {
+        "joint_probabilities": {
+          "AX": 0.3,
+          "AY": 0.3,
+          "BX": 0.36000000000000004,
+          "BY": 0.04000000000000001
+        },
+        "width1_best": [
+          "AX",
+          0.3
+        ],
+        "width2_best": [
+          "BX",
+          0.36000000000000004
+        ]
+      },
+      "annotated_case_results": [
+        {
+          "id": "E01",
+          "statuses": {
+            "format": "pass",
+            "content": "pass",
+            "grounding": "pass",
+            "safety": "pass",
+            "illustrative_timeliness": "pass"
+          },
+          "exercise_candidate": true,
+          "actual_release_accepted": false
+        },
+        {
+          "id": "E02",
+          "statuses": {
+            "format": "pass",
+            "content": "fail",
+            "grounding": "fail",
+            "safety": "fail",
+            "illustrative_timeliness": "pass"
+          },
+          "exercise_candidate": false,
+          "actual_release_accepted": false
+        },
+        {
+          "id": "E03",
+          "statuses": {
+            "format": "pass",
+            "content": "fail",
+            "grounding": "fail",
+            "safety": "pass",
+            "illustrative_timeliness": "pass"
+          },
+          "exercise_candidate": false,
+          "actual_release_accepted": false
+        },
+        {
+          "id": "E04",
+          "statuses": {
+            "format": "pass",
+            "content": "not_assessed",
+            "grounding": "not_assessed",
+            "safety": "fail",
+            "illustrative_timeliness": "pass"
+          },
+          "exercise_candidate": false,
+          "actual_release_accepted": false
+        },
+        {
+          "id": "E05",
+          "statuses": {
+            "format": "pass",
+            "content": "pass",
+            "grounding": "pass",
+            "safety": "pass",
+            "illustrative_timeliness": "fail"
+          },
+          "exercise_candidate": false,
+          "actual_release_accepted": false
+        },
+        {
+          "id": "E06",
+          "statuses": {
+            "format": "fail",
+            "content": "pass",
+            "grounding": "not_assessed",
+            "safety": "pass",
+            "illustrative_timeliness": "pass"
+          },
+          "exercise_candidate": false,
+          "actual_release_accepted": false
+        }
+      ],
+      "evaluation_provenance": {
+        "content_grounding_safety": "same_author_supplied_example_annotations_not_independent_semantic_grading",
+        "latency": "authored_numbers_not_measured"
+      },
+      "unknown_and_safety_blocking": "verified_on_supplied_statuses_only",
+      "rejected_invalid_inputs": [
+        "zero temperature in Softmax formula",
+        "nonfinite logit",
+        "zero top-k",
+        "zero top-p",
+        "top-p above one",
+        "sampling lookup at excluded endpoint one",
+        "unknown review label",
+        "negative illustrative latency"
+      ],
+      "pretrained_model_calls": 0,
+      "training_executed": false,
+      "pretrained_generation_comparison": "not_run",
+      "real_latency_measurement": "not_run",
+      "independent_quality_review": "not_run",
+      "classroom_trial": "not_run"
+    }
+  },
+  "same_session_content_review": {
+    "reviewer": "same author; not independent",
+    "status": "completed",
+    "observations": [
+      "Pretraining Causal LM example, supervised instruction/response targets, preference optimization and alignment goal are distinct; not all methods require a separate reward model/RL stage.",
+      "Prompt/RAG context injection does not by itself train weights; SFT objective and LoRA/QLoRA training configuration are separate axes.",
+      "Displayed probabilities, target negative log likelihood, filters, sampling choices and Beam joint probabilities were compared with executed arithmetic.",
+      "Token probabilities and attention weights have different normalization targets; neither is direct factual correctness or permission evidence.",
+      "Top-p retains the boundary-crossing token and renormalizes; positive temperature preserves greedy ordering in the fixed-score example.",
+      "Only temperature changes in the recorded synthetic comparison; exact draw/inputs/order are fixed. Pretrained generation comparison is explicitly pending in all human records.",
+      "Beam example is fixed two-step/no-length-penalty with explicit ties and does not guarantee general global optimum or truth.",
+      "Application memory and retrieved passages may enter current Context; persistence alone does not imply selection/delivery. KV cache is separate runtime reuse.",
+      "Policy version change and permissions withdrawal require document/index/context/cache and distribution impact review; no automatic weight learning/deletion or old-file recall is asserted.",
+      "Untrusted memory/document text is not execution authority; system permissions remain independently enforced.",
+      "E02 has correct structural fields but unsupported amount/safety failure; E03 citation ID does not support current 14-day claim.",
+      "E04 content/grounding remain unknown with safety failure; E05 is appropriate but misses authored time criterion; E06 needs missing locator and grounding review.",
+      "Semantic labels are same-author answer keys, not automated independent semantic evaluation. Milliseconds are authored examples, not real measurements.",
+      "Only E01 is an exercise candidate and none is actual release acceptance. Unknown grounding and safety failure cannot be averaged into pass.",
+      "Existing Hugging Face U05-U07 material/runtime evidence is linked and preserved; tokenizer execution is not reused as generation evidence.",
+      "70/70 denotes material authorship only; full curriculum completion, integration and independent classroom/quality gates remain pending."
+    ]
+  },
+  "primary_sources_checked_on": "2026-11-02",
+  "primary_sources": [
+    {
+      "url": "https://huggingface.co/docs/transformers/tasks/language_modeling",
+      "supports": "causal next-token objective"
+    },
+    {
+      "url": "https://arxiv.org/abs/2203.02155",
+      "supports": "demonstration SFT and human preference feedback example"
+    },
+    {
+      "url": "https://arxiv.org/abs/2305.18290",
+      "supports": "direct preference optimization distinction"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/main_classes/text_generation",
+      "supports": "generation controls, sampling/beam modes and top-k/top-p"
+    },
+    {
+      "url": "https://arxiv.org/abs/1904.09751",
+      "supports": "nucleus sampling as decoding strategy"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/generation_strategies",
+      "supports": "greedy/sampling/beam purposes"
+    },
+    {
+      "url": "https://arxiv.org/abs/2005.11401",
+      "supports": "parametric model and external retrieved memory distinction"
+    },
+    {
+      "url": "https://arxiv.org/abs/2307.03172",
+      "supports": "context-length/position evaluation caution limited to studied settings"
+    },
+    {
+      "url": "https://arxiv.org/abs/2207.05221",
+      "supports": "task-conditioned self-evaluation/calibration and generalization limitations"
+    },
+    {
+      "url": "https://arxiv.org/abs/2305.14251",
+      "supports": "atomic factual support evaluation principle"
+    },
+    {
+      "url": "https://arxiv.org/abs/2211.09110",
+      "supports": "multi-metric language-model evaluation"
+    }
+  ],
+  "runtime_limits": {
+    "pretrained_model_calls": 0,
+    "training_executed": false,
+    "preference_optimization_executed": false,
+    "pretrained_generation_comparison": "not_run",
+    "runtime_memory_retrieval_test": "not_run",
+    "real_latency_measurement": "not_run",
+    "automatic_independent_semantic_grader": "not_used",
+    "previous_app_regressions": "not_rerun; previous app/model/training code unchanged"
+  },
+  "all_materials_authored": true,
+  "full_curriculum_complete": false,
+  "integration_review": "pending_next_batch",
+  "independent_quality_review": "not_run",
+  "classroom_trial": "not_run",
+  "student_time_measurement": "not_run",
+  "release_acceptance": false,
+  "previous_quality_gates": "unchanged_pending"
+}

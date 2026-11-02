@@ -1,0 +1,22 @@
+{
+  "batch": "KEDU-PRODUCTION-021",
+  "status": "READY_TO_PUBLISH",
+  "parent": "d42bd94d6b47cb7fc6714bb794f85e54f50418b8",
+  "scope": [
+    "K2-03.U01",
+    "K2-03.U02",
+    "K2-03.U03",
+    "K2-03.U04"
+  ],
+  "authored_units": 70,
+  "full_curriculum_complete": false,
+  "publication": null,
+  "runtime": {
+    "synthetic_decoding_and_annotated_evaluation_checks": "passed",
+    "rejected_invalid_inputs": 8,
+    "pretrained_model_calls": 0,
+    "training_executed": false,
+    "pretrained_generation_comparison": "not_run"
+  },
+  "release_status": "BLOCKED_INTEGRATION_PREVIOUS_QUALITY_AND_CLASSROOM_GATES_PENDING"
+}

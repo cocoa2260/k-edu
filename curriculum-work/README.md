@@ -1,8 +1,8 @@
 # K-Edu 교육과정 개편 — 현재 위치와 읽을 파일
 
-**현재: K2-02 Transformer 내부 원리 5개 단원 자료 작성과 합성 Forward·Attention·위치/Mask·KV Cache 계산 검증 완료. 자료 66/70개 작성. 남은 기초 4개와 독립 품질·실제 모델/수업·운영 채택은 미완료다.**
+**현재: K2-03 기초 4개 단원 자료와 합성 Token 선택/평가 기록 검증 완료. 자료 70/70개 작성. 전체 연결 점검·미완료 실습·독립 품질/수업·운영 채택은 남아 있다.**
 
-[Transformer 강의](lessons/transformer-basics/lesson.md) · [이번 결과](reports/KEDU-PRODUCTION-020/RESULT.md) · [이전 데이터·평가 결과](reports/KEDU-PRODUCTION-019/RESULT.md)
+[LLM 기초 강의](lessons/llm-basics/lesson.md) · [이번 결과](reports/KEDU-PRODUCTION-021/RESULT.md) · [Hugging Face 후속 강의](lessons/huggingface/README.md)
 
 ## 전체 구성안
 
@@ -18,7 +18,7 @@
 | 2 | 결과를 보고 분석 방식 보완 | 완료 |
 | 3 | 전체 강의 비교·분석 | 결과 보존 |
 | 4 | 전체 목차·누적 실습 구성 결정 | v0.3을 첫 제작 묶음의 기준으로 사용 |
-| 5 | 확정한 강의·실습 제작 및 검증 | 66개 단원 자료 작성·검토. 독립 품질·수업 채택 보류 |
+| 5 | 확정한 강의·실습 제작 및 검증 | 70개 단원 자료 작성. 통합 점검·독립 품질·수업 채택 미완료 |
 
 구성안은 과목명·배치·범위의 추천이다. 기존 academy 원문·파일명은 유지한다. 시작 안내는 업무 정의·책임·기술 분류를 다루는 교육생용 강의다. 제작 순서와 수강 순서는 다르며 수강은 K2-00부터 시작한다. 새 강의와 누적 앱 L0~L8의 자료·검색·로컬 생성·도구 Runtime·LoRA 실험·PDF/OCR 실습을 작성했다. RAG 답변 품질은 채택 보류이며 전체 Train을 포함한 제한된 Step 학습과 회귀를 실행했으며 품질 채택은 남아 있다. 실제 모델·훈련·교육장 성능은 검증 게이트를 둔 후속 작업이다.
 

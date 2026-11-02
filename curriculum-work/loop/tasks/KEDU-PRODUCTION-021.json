@@ -1,0 +1,25 @@
+{
+  "schema_version": "0.1",
+  "id": "KEDU-PRODUCTION-021",
+  "stage": 5,
+  "scope": ["K2-03.U01", "K2-03.U02", "K2-03.U03", "K2-03.U04"],
+  "recommended_reasoning_effort": "high",
+  "new_material_directories": [
+    "curriculum-work/lessons/llm-basics/",
+    "curriculum-work/practice/llm-basics/",
+    "curriculum-work/reports/KEDU-PRODUCTION-021/"
+  ],
+  "allowed_metadata_updates": [
+    "curriculum-work/README.md",
+    "curriculum-work/PROGRESS.md",
+    "curriculum-work/curriculum/production-index.json"
+  ],
+  "protected": ["academy/", "previous reports", "previous data fixtures", "existing app/model/training code", "existing milestone statuses", "Hugging Face U05-U07 material and runtime evidence"],
+  "constraints": [
+    "human Markdown uses prose and tables; code and JSON stay separate",
+    "synthetic probability/decoding exercise only; no pretrained model/paid API calls",
+    "actual model generation comparison remains pending and has a recording template",
+    "same-author semantic annotations and authored latency are not independent grading or measurements",
+    "70/70 authored materials must not set full_curriculum_complete or release acceptance true"
+  ]
+}

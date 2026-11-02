@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-020",
+  "current_batch": "KEDU-PRODUCTION-021",
   "units": [
     {
       "id": "K2-00.U01",
@@ -152,45 +152,49 @@
       "id": "K2-03.U01",
       "course": "K2-03",
       "title": "학습 목표와 Post-training",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-021",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/llm-basics/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "synthetic_next_token_loss_verified_training_not_run",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-021/validation.json"
     },
     {
       "id": "K2-03.U02",
       "course": "K2-03",
       "title": "Logit에서 Token 선택까지",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-021",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/llm-basics/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "synthetic_one_setting_selection_verified_pretrained_generation_comparison_pending",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-021/validation.json"
     },
     {
       "id": "K2-03.U03",
       "course": "K2-03",
       "title": "Parameter·Context·Memory·Retrieval",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-021",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/llm-basics/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "same_session_information_lifecycle_review_no_runtime_storage_test",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-021/validation.json"
     },
     {
       "id": "K2-03.U04",
       "course": "K2-03",
       "title": "환각·불확실성과 시스템 평가",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-021",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/llm-basics/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "synthetic_format_and_annotated_review_bookkeeping_verified_independent_semantics_latency_pending",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-021/validation.json"
     },
     {
       "id": "K2-03.U05",
@@ -835,17 +839,16 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-021",
+    "id": "KEDU-PRODUCTION-022",
     "proposed_scope": [
-      "K2-03.U01",
-      "K2-03.U02",
-      "K2-03.U03",
-      "K2-03.U04"
+      "70-unit reading route and prerequisites",
+      "lesson/worksheet/runtime evidence consistency",
+      "pending practical and independent quality/classroom validation preparation"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "TRANSFORMER_MATERIAL_AND_SYNTHETIC_NUMERICS_VERIFIED_CLASSROOM_PENDING",
+  "batch_status": "ALL_70_MATERIALS_AUTHORED_LLM_SYNTHETIC_CHECKS_VERIFIED_INTEGRATION_CLASSROOM_PENDING",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -853,7 +856,7 @@
       "QLoRA actual backend",
       "independent quality/classroom",
       "full framework/MCP",
-      "4 foundation units unwritten"
+      "full curriculum integration review and pending practical validation"
     ]
   },
   "milestones": {
