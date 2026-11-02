@@ -1,0 +1,18 @@
+{
+  "batch": "KEDU-PRODUCTION-018",
+  "status": "READY_TO_PUBLISH",
+  "parent": "eaee535ba93f7343ced58b2b9e3228618576fd8d",
+  "scope": [
+    "K2-00.U01",
+    "K2-00.U02",
+    "K2-00.U03"
+  ],
+  "authored_units": 57,
+  "publication": null,
+  "runtime": {
+    "model_calls": 0,
+    "software_tests": "not_run_content_only_change",
+    "student_exercise_execution": "not_run"
+  },
+  "release_status": "BLOCKED_PREVIOUS_QUALITY_AND_CLASSROOM_GATES_PENDING"
+}

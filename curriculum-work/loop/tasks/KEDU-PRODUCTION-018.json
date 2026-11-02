@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1",
+  "id": "KEDU-PRODUCTION-018",
+  "stage": 5,
+  "scope": ["K2-00.U01", "K2-00.U02", "K2-00.U03"],
+  "recommended_reasoning_effort": "high",
+  "outputs": [
+    "curriculum-work/lessons/orientation/lesson.md",
+    "curriculum-work/lessons/orientation/worksheet.md",
+    "curriculum-work/lessons/orientation/teacher-guide.md",
+    "curriculum-work/reports/KEDU-PRODUCTION-018/RESULT.md",
+    "curriculum-work/reports/KEDU-PRODUCTION-018/validation.json",
+    "curriculum-work/reports/KEDU-PRODUCTION-018/run.json"
+  ],
+  "allowed_metadata_updates": [
+    "curriculum-work/README.md",
+    "curriculum-work/PROGRESS.md",
+    "curriculum-work/curriculum/production-index.json"
+  ],
+  "protected": ["academy/", "previous reports", "previous data fixtures", "existing practice code", "existing milestone status"],
+  "constraints": [
+    "beginner-first prose and tables; no fenced executable code or JSON in human Markdown",
+    "synthetic refund-policy scenario; no real personal or confidential data",
+    "separate authorship, same-session review, runtime, independent quality and classroom acceptance",
+    "no model or paid API calls",
+    "do not count sample acceptance criteria as observed test results"
+  ]
+}

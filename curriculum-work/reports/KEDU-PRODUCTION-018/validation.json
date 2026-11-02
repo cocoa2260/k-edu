@@ -1,0 +1,218 @@
+{
+  "batch": "KEDU-PRODUCTION-018",
+  "checked_on": "2026-11-02",
+  "timezone": "Asia/Seoul",
+  "scope": "content-only orientation material",
+  "static_checks": {
+    "status": "passed",
+    "scope_unit_ids": [
+      "K2-00.U01",
+      "K2-00.U02",
+      "K2-00.U03"
+    ],
+    "authored_units": 57,
+    "total_units": 70,
+    "remaining_unwritten_units": 13,
+    "relative_link_checks": 29,
+    "relative_links": [
+      {
+        "source": "curriculum-work/lessons/orientation/lesson.md",
+        "target": "curriculum-work/lessons/orientation/worksheet.md"
+      },
+      {
+        "source": "curriculum-work/lessons/orientation/lesson.md",
+        "target": "curriculum-work/lessons/orientation/teacher-guide.md"
+      },
+      {
+        "source": "curriculum-work/lessons/orientation/lesson.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-018/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/lessons/orientation/worksheet.md",
+        "target": "curriculum-work/lessons/orientation/lesson.md"
+      },
+      {
+        "source": "curriculum-work/lessons/orientation/teacher-guide.md",
+        "target": "curriculum-work/lessons/orientation/lesson.md"
+      },
+      {
+        "source": "curriculum-work/lessons/orientation/teacher-guide.md",
+        "target": "curriculum-work/lessons/orientation/worksheet.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-018/RESULT.md",
+        "target": "curriculum-work/lessons/orientation/lesson.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-018/RESULT.md",
+        "target": "curriculum-work/lessons/orientation/worksheet.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-018/RESULT.md",
+        "target": "curriculum-work/lessons/orientation/teacher-guide.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-018/RESULT.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-018/validation.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/lessons/orientation/lesson.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-018/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-017/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/CURRICULUM_PLAN.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-ANALYSIS-001/20261030T080144Z/REVIEW.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-PILOT-001/20261030T064535Z-r2/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/curriculum.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/validation.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/run.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/tasks/KEDU-DESIGN-001.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/checks/check_design.py"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/checks/check_curriculum.py"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/checks/check_analysis.py"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/loop-spec.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/prompts.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/lessons/orientation/lesson.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-018/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-017/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/curriculum/production-index.json"
+      }
+    ],
+    "human_markdown_files_checked": 6,
+    "fenced_code_blocks": 0,
+    "json_parse": "passed"
+  },
+  "design_alignment": [
+    {
+      "unit": "K2-00.U01",
+      "outcome": "input/user/output/risk problem definition",
+      "evidence": "one-page definition plus exactly three distinct failure cases",
+      "location": "lesson U01 / worksheet A / teacher U01 and rubric"
+    },
+    {
+      "unit": "K2-00.U02",
+      "outcome": "data preparation/model choice/validation/deployment/monitoring/improvement or retirement with owners",
+      "evidence": "lifecycle owner/evidence/checkpoint table and two change scenarios",
+      "location": "lesson U02 / worksheet B / teacher U02 and rubric"
+    },
+    {
+      "unit": "K2-00.U03",
+      "outcome": "dated examples vs principles; generation approach separate from architecture/model/product",
+      "evidence": "generation comparison, dated primary sources and at least three unknowns with plans",
+      "location": "lesson U03 / worksheet C / teacher U03 and rubric"
+    }
+  ],
+  "same_session_editorial_review": {
+    "reviewer": "same author in same session; not independent",
+    "status": "completed",
+    "observations": [
+      "F1: A v2 has no refund amount; expected answer defers amount without losing the 7-day eligibility condition.",
+      "F2: restricted B must be blocked before unauthorized content reaches the model; prompt-only caution is insufficient.",
+      "F3: retired A v1 cannot support a current 14-day conclusion; A v2 does not justify denying every possible exception.",
+      "A v3 update has document/data/developer/reviewer/service-owner responsibilities and re-evaluation before resume.",
+      "B disclosure has stop/investigate/re-evaluate/resume ownership and does not claim recall of already delivered files.",
+      "LLM category, Transformer architecture, autoregression/diffusion approach, software, artifacts and system composition remain distinct; DiT is a primary-source counterexample to an exclusive split.",
+      "Paper first-submission dates, document access dates and selected-model revision are separated; missing dates and unselected models remain unknown.",
+      "Student has lesson and worksheet; teacher material is optional; no prior report/code/JSON reading is required.",
+      "Rubric admits alternate work contexts and requires human review; synthetic 12-question criterion is explicitly not an executed result."
+    ]
+  },
+  "primary_sources_checked": [
+    {
+      "url": "https://arxiv.org/abs/1706.03762",
+      "first_submitted": "2017-06-12",
+      "supports": "Transformer architecture proposal"
+    },
+    {
+      "url": "https://arxiv.org/abs/2006.11239",
+      "first_submitted": "2020-06-19",
+      "supports": "DDPM image generation example"
+    },
+    {
+      "url": "https://arxiv.org/abs/2212.09748",
+      "first_submitted": "2022-12-19",
+      "supports": "Transformer-based diffusion example"
+    },
+    {
+      "url": "https://huggingface.co/docs/hub/en/model-cards",
+      "supports": "Model Card purpose and README representation"
+    },
+    {
+      "url": "https://docs.ollama.com/",
+      "supports": "local and cloud usage paths; brand alone does not establish data locality"
+    },
+    {
+      "url": "https://huggingface.co/docs/peft/index",
+      "supports": "parameter-efficient fine-tuning library"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/index",
+      "supports": "model definition/inference/training development library"
+    }
+  ],
+  "runtime": {
+    "model_calls": 0,
+    "code_changes": 0,
+    "software_regression_tests": "not_run; prose-only change",
+    "synthetic_12_question_exercise": "criterion_example_only_not_executed"
+  },
+  "independent_quality_review": "not_run",
+  "classroom_trial": "not_run",
+  "student_time_measurement": "not_run",
+  "release_acceptance": false,
+  "previous_quality_gates": "unchanged_pending"
+}
