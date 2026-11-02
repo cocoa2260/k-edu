@@ -38,6 +38,8 @@ POST /ai/prepare는 사례 ID와 조건으로 입력만 준비한다. 실제 생
 
 학생은 안내의 `python -m tools.prompt_inputs`로 지시·예시 수·자료 수·문자 수를 먼저 읽을 수 있다. `--variant instruction` 등으로 실제 전체 입력도 표시한다. 기존 준비 함수를 재사용하는 읽기 도구이며 모델·API·Token 계산을 실행하지 않는다. 지시에 한 문장을 추가하고 자료·질문 유지 여부를 확인하는 활동은 같은 안내에 있다. 전체 준비 도구와 기존 API/자료는 유지한다.
 
+[Context 활동](../CONTEXT.md)은 `python -m tools.context_steps`로 자료 선택을 읽는다. `--part order`, `--part budget`, `--part handoff`로 각각 순서·기존 관찰 예산 계산·일회성 현재 전달 자료를 확인한다. 기존 입력/자료/API는 보존하며 실제 검색·지속 Memory·새 Tokenizer 실행이나 모델 생성을 구현한 도구가 아니다.
+
 ## L2 확장
 
 [L2 안내](../L2.md)의 고정 응답 실험은 같은 Provider 인터페이스에 Harness를 붙인다. 실제 모델 선택 옵션이나 새 API는 추가하지 않았다. 입력 준비·출력 구조/인용 ID 검사·공통 호출 상한·Trace·회귀 비교를 실행한다. 입력할 명령은 `python -m tools.harness_demo --output l2-observed.json`이며 기존 파일은 덮어쓰지 않는다.

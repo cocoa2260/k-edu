@@ -1,0 +1,331 @@
+{
+  "schema_version": "teaching-revision-v1",
+  "batch": "KEDU-TEACHING-REPAIR-004",
+  "date": "2026-11-02",
+  "repository": "cocoa2260/k-edu",
+  "branch": "work/curriculum-production-001",
+  "source_commit": "e7b35fe57329811e475ba1357283fd3038182ea3",
+  "criteria": "curriculum-work/loop/prompts.md",
+  "reviewer": "same_author_not_independent",
+  "scope": {
+    "units": [
+      "K2-05.U01",
+      "K2-05.U02",
+      "K2-05.U03",
+      "K2-05.U04"
+    ],
+    "practice": "curriculum-work/practice/document-assistant/CONTEXT.md",
+    "shared_practice_change": "Context footer only; Prompt activities and API note preserved",
+    "other_unit_revisions": 0
+  },
+  "source_versions": {
+    "curriculum-work/loop/prompts.md": "1a7fc88795b737413817bd7425f61ad97d5cf665",
+    "curriculum-work/README.md": "aee33e315c5a53bc155525c848299e975612d319",
+    "curriculum-work/PROGRESS.md": "0202414905353d97556d739786c0cb8705486f1b",
+    "curriculum-work/curriculum/production-index.json": "9e24ba101d64384b5d420999ad1285c2f52c8fa0",
+    "curriculum-work/lessons/context/lesson.md": "9e34583207a87a8abaf2604174c19b8ec55f31d7",
+    "curriculum-work/lessons/prompt/lesson.md": "77f4a2081e087773e0d4c4e52c66a16d1316d63e",
+    "curriculum-work/lessons/prompt/teacher-guide.md": "b352645c094cc404f7b7bf05acf6528a73320920",
+    "curriculum-work/practice/document-assistant/L1.md": "51bb012e47c1adc16e835daca2ff61969228e557",
+    "curriculum-work/practice/document-assistant/backend/README.md": "1fe83dd8caa59503512e52fe355607b8feb04785",
+    "curriculum-work/practice/document-assistant/backend/app/experiments.py": "7d763c765623326cb2cd80a60f087cbeaa1aa942",
+    "curriculum-work/practice/document-assistant/backend/app/schemas.py": "9fdc783b84b321db32331e2ef919bd63e0c77117",
+    "curriculum-work/practice/document-assistant/backend/tools/count_l1_tokens.py": "f71b3d8241bab9c2dc8e21084ba37a1bea1190c1",
+    "curriculum-work/practice/document-assistant/backend/tools/prompt_inputs.py": "54412701a64a2237b52d445861aaa8588e634de1",
+    "curriculum-work/practice/document-assistant/backend/tools/prepare_l1.py": "2ba475e09cbd2621aaae2a084449f8cf74f50044",
+    "curriculum-work/practice/document-assistant/data/core-v1.json": "95f5827bd876f8b5109aca7cdf41953dd24c98f6",
+    "curriculum-work/practice/document-assistant/data/documents-v1.json": "25d0553f26321434a9a8c7f386261505bca2fda3",
+    "curriculum-work/practice/document-assistant/data/shots-v1.json": "fe4f2a65c53532b7ee4c46cd26d5d4c55220efdc",
+    "curriculum-work/practice/huggingface-tokenizer/models.json": "ea7f7913feb1d7bab2a3a5b8c226f3cb89fbce34",
+    "curriculum-work/practice/huggingface-tokenizer/requirements.txt": "ea5129e318f789e830f38e1c0357800d0d6d2141",
+    "curriculum-work/reports/KEDU-PRODUCTION-003/token-counts.json": "600117426fa152fe53bbe3fadf5733f109696601",
+    "curriculum-work/reports/KEDU-TEACHING-REPAIR-003/validation.json": "55181b7d3c382edc706d92e0ee671b989637c4cc"
+  },
+  "source_manifest_note": "Pinned related source versions; no full Phase1/whole-curriculum repeat audit.",
+  "phase1_reference": "reuse fixed excerpts and explanatory progression documented in active prompts",
+  "primary_references": [
+    {
+      "url": "https://huggingface.co/docs/transformers/v4.57.1/chat_templating",
+      "checked": "2026-11-02"
+    }
+  ],
+  "explanation_review": [
+    {
+      "criterion": "학습 맥락·선수 연결",
+      "verdict": "설명 검수 통과",
+      "evidence": "본문 도입: Prompt의 같은 지시를 유지하고 같은 식비 문의에서 제공 정보를 바꾸는 이유; 기존 LLM/Tokenizer/앱 환경으로 연결"
+    },
+    {
+      "criterion": "최초 개념 설명",
+      "verdict": "설명 검수 통과",
+      "evidence": "1장 접근/현행/문서 지시, 2장 선택/순서/형식, 3장 문자/Token/출력 여유, 4장 저장/선택/현재 전달을 사례로 설명"
+    },
+    {
+      "criterion": "풀어쓴 예제",
+      "verdict": "설명 검수 통과",
+      "evidence": "다섯 문서에서 현행 출장 규정 하나 선택, 식비/교육비 두 문서 비교, 913/520 합계와 1135/1528 잔여, 가상108 초과, 과거/현재 가용 문서 사례"
+    },
+    {
+      "criterion": "실습·해석 연결",
+      "verdict": "설명 검수 통과",
+      "evidence": "CONTEXT 활동1~5: 시작 위치/실제 명령/관찰/질문별 작성 표; 순서 변화와 내용 보존, 과거 값의 재계산과 새 측정 구분"
+    },
+    {
+      "criterion": "실제 자료와 일치",
+      "verdict": "이번 확인 범위 통과",
+      "evidence": "선택/공격/제한/가용성·순서/현재 문서 버전 실제 실행, runnable 세 코드 실행·발췌 소스 대조, 과거 관찰 입력 SHA256 일치와 변경 입력 거부; 전체 HTTP/Tokenizer/모델 재검증은 미실행"
+    },
+    {
+      "criterion": "개념별 질문·해설",
+      "verdict": "설명 검수 통과",
+      "evidence": "본문 각 장 세 질문과 teacher-guide 각 장 세 해설, 다섯 활동의 충족/보완 판단 연결"
+    },
+    {
+      "criterion": "학생/관리 기록 분리",
+      "verdict": "설명 검수 통과",
+      "evidence": "학생 제목에서 내부 단원 코드 제거; 실제 문서/사례/필드는 뜻과 함께 사용; 기존 단원 매핑은 teacher-guide/인덱스에 유지"
+    },
+    {
+      "criterion": "근거 수준",
+      "verdict": "설명 검수 통과",
+      "evidence": "실제 준비/새 순서, 기존 고정 Token 관찰/산술, 가상1900·과거 상태, 새 Tokenizer/모델/지속 Memory/수업 미구현·미실행 분리"
+    }
+  ],
+  "execution": {
+    "python": "3.12.14",
+    "pydantic": "2.14.1",
+    "required_pydantic": "2.14.2",
+    "full_pinned_environment_verified": false,
+    "checks": [
+      "documented CLI selection/order/budget/handoff and meaningful invalid/blank/nonreference-case rejection",
+      "trust/activity sources: attack text really present, restricted body absent, unavailable source excluded; no model-resistance claim",
+      "actual reordered message changes sequence only; same complete records/instruction/question and character contract",
+      "handoff demo uses current empty sources instead of old answer; available case displays actual document v1",
+      "historical reference input fingerprint matches; arithmetic exact; changed input rejected before old numbers are emitted",
+      "lesson source excerpt matched and all three runnable Python blocks executed against real teaching data",
+      "Prompt lesson/teacher guide and shared practice outside Context footer preserved; original data/input/code/API schema untouched"
+    ],
+    "cli": [
+      {
+        "module": "tools.context_steps",
+        "args": [],
+        "exit_code": 0,
+        "stdout_sha256": "2d6ecfb5c142a313ca6af9cfe8751672be45f871b2aa3a260a83bac2f722e10c",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "tools.context_steps",
+        "args": [
+          "--case",
+          "C09"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "3d9b6b3bdd2dcaaf1f8304544de65eb449d90e67da50960570ac333a58280123",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "tools.context_steps",
+        "args": [
+          "--case",
+          "C06"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "d16e7299893a961bd1bcb54ad8c9a18f8480a74290dd1b623b491033489b9730",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "tools.context_steps",
+        "args": [
+          "--case",
+          "C03"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "8cb34bc9df01c8a79ad030de5737245e80b30e812c2f3cff8d67ae7ec9024377",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "tools.context_steps",
+        "args": [
+          "--part",
+          "order"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "39226c62381d712855ab40289af87ae21f00a36834c294be10036ede9b64e355",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "tools.context_steps",
+        "args": [
+          "--part",
+          "budget"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "fc7b6491de847c2a9a365801a7dbaca717c46523d46e566a4c590752081d08cd",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "tools.context_steps",
+        "args": [
+          "--part",
+          "handoff"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "5cd035b53c8f9419c807b1fcacf404b5b30c5fbcfd3e753f5742c4d2d25d0bd6",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "tools.context_steps",
+        "args": [
+          "--part",
+          "handoff",
+          "--case",
+          "C01"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "a2aa401f537c815f4eb2bce93ac12bb67d60836ee987aa7e0c002807251e4257",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "tools.context_steps",
+        "args": [
+          "--case",
+          "C10"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "00368a896082318e05246c6e9b01277a097a71114d6cf63751edf022cd05c5e0"
+      },
+      {
+        "module": "tools.context_steps",
+        "args": [
+          "--case",
+          "missing"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "ce7225e41073ca8365cbb89aae75c2cb6a2ae306a5fe82333a2e6258a0cd0775"
+      },
+      {
+        "module": "tools.context_steps",
+        "args": [
+          "--part",
+          "missing"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "c69333ec27ca2d14429d69cb77859046b71e0b85d37c997c3020fe3514df35b9"
+      },
+      {
+        "module": "tools.context_steps",
+        "args": [
+          "--part",
+          "budget",
+          "--case",
+          "C09"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "63aba03a6731ecf34e61127db4ce04dbcec0467943da7234954bc6d22c66b4bc"
+      },
+      {
+        "module": "tools.prompt_inputs",
+        "args": [
+          "--case",
+          "C07",
+          "--variant",
+          "focused"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "4b2ef3ffdb026c5915d81b134604145c25f828f056847f94fcdf7219a4c42631",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "tools.context_steps",
+        "args": [
+          "--part",
+          "budget"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "c47465ebf7b05eb1cf9e8e35e85ade3620d39f5aa55f51d47bdd7f8ad41cebcd"
+      }
+    ],
+    "reference_input_sha256": "555b8ff2ae99e0b882a80d0377c74d96e2e8a17969ae72eb1acd6acb12ac5720",
+    "order_before_sha256": "a4632020032f170102104b43a29fd5317e5e647807c97981378c721b31f38477",
+    "order_after_sha256": "1ae445f6b9acbf1319f1b3f70e7c0f0c039f822eb9773cc8f0a638321a23640a",
+    "new_order_token_count": null,
+    "historical_token_counts_reused": {
+      "instruction": 657,
+      "focused": 264
+    },
+    "budget_totals": [
+      913,
+      520
+    ],
+    "budget_remaining": [
+      1135,
+      1528
+    ],
+    "hypothetical_overflow": 108,
+    "network_attempts": [],
+    "new_tokenizer_execution": false,
+    "new_model_generations": 0,
+    "original_http_tests_rerun": false,
+    "persistent_memory_implemented": false,
+    "independent_classroom_trial": false
+  },
+  "runtime_limits": [
+    "current supplemental Pydantic2.14.1 differs from pinned2.14.2",
+    "Tokenizer package/cache not prepared; no new Tokenizer measurement",
+    "original HTTP/pytest environment not rerun",
+    "no actual model generation or semantic quality/classroom validation"
+  ],
+  "preserved": {
+    "prompt_representative": true,
+    "original_input_generator": true,
+    "original_data": true,
+    "original_api": true,
+    "old_reports": true,
+    "historical_runtime_milestone_and_gate_records": true
+  },
+  "progress": {
+    "revised_and_same_author_explanation_reviewed": 8,
+    "other_units_pending_revision": 62,
+    "classroom_acceptance": false
+  },
+  "next_batch": {
+    "id": "KEDU-TEACHING-REPAIR-005",
+    "proposed_scope": [
+      "Revise Harness five units and connected L2 practice against active teaching criteria",
+      "Explain one complete call/check/retry-or-repair/stop trace and topic-specific questions with instructor rationale",
+      "Preserve Prompt/Context inputs and existing controller/data/contracts; validate affected paths only"
+    ],
+    "status": "not_started",
+    "recommended_reasoning_effort": "high"
+  },
+  "publication": {
+    "status": "prepared_locally",
+    "parent_commit": "e7b35fe57329811e475ba1357283fd3038182ea3",
+    "changed_paths": [
+      "curriculum-work/lessons/context/lesson.md",
+      "curriculum-work/lessons/context/teacher-guide.md",
+      "curriculum-work/practice/document-assistant/CONTEXT.md",
+      "curriculum-work/practice/document-assistant/backend/tools/context_steps.py",
+      "curriculum-work/practice/document-assistant/L1.md",
+      "curriculum-work/practice/document-assistant/backend/README.md",
+      "curriculum-work/README.md",
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/curriculum/production-index.json",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-004/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-004/validation.json"
+    ]
+  },
+  "static_checks": {
+    "relative_targets_checked": 74,
+    "all_relative_targets_exist": true,
+    "code_fences_balanced": true,
+    "student_lesson_internal_unit_ids_absent": true,
+    "shared_prompt_activity_prefix_and_api_note_preserved": true,
+    "protected_local_blobs_match": true
+  }
+}
