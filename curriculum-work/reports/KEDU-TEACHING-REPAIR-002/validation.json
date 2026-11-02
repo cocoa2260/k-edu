@@ -983,15 +983,34 @@
     "recommended_reasoning_effort": "high"
   },
   "publication": {
-    "status": "prepared_locally",
+    "status": "published",
+    "branch": "work/curriculum-production-001",
     "parent_commit": "7c3171182f67be818980a94afebab437b9858030",
+    "audit_commit": "5ea35bd22062c84407a7dfbe92b2caba6fa4438d",
+    "audit_tree": "6d40e97408b08c5da5eaf9a2078ea68e45b4f232",
     "changed_paths": [
-      "curriculum-work/PROGRESS.md",
-      "curriculum-work/README.md",
-      "curriculum-work/curriculum/production-index.json",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-002/RESULT.md",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-002/REVIEW.md",
+      "curriculum-work/README.md",
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/curriculum/production-index.json",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-002/validation.json"
-    ]
+    ],
+    "verification": {
+      "complete_candidate_tree_read": true,
+      "expected_six_files_match": true,
+      "previous_blob_count": 614,
+      "candidate_blob_count": 617,
+      "protected_existing_blobs_unchanged": 611,
+      "historical_review_runtime_milestone_and_gate_fields_preserved": true,
+      "no_lesson_or_practice_content_modified": true,
+      "branch_update_used_expected_parent_and_no_force": true
+    },
+    "destination_verification": {
+      "repository": "cocoa2260/k-edu",
+      "visibility": "public",
+      "matches_user_supplied_repository": true
+    },
+    "note": "This record identifies the audit commit; a subsequent documentation-only commit records these publication checks."
   }
 }
