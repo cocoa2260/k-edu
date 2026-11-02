@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-019",
+  "current_batch": "KEDU-PRODUCTION-020",
   "units": [
     {
       "id": "K2-00.U01",
@@ -92,56 +92,61 @@
       "id": "K2-02.U01",
       "course": "K2-02",
       "title": "신경망 한 층과 Activation",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-020",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/transformer-basics/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "synthetic_affine_activation_verified_no_training",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json"
     },
     {
       "id": "K2-02.U02",
       "course": "K2-02",
       "title": "Self-Attention의 계산",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-020",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/transformer-basics/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "synthetic_attention_arithmetic_verified",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json"
     },
     {
       "id": "K2-02.U03",
       "course": "K2-02",
       "title": "Transformer Block",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-020",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/transformer-basics/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "synthetic_component_shapes_arithmetic_verified_full_block_not_executed",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json"
     },
     {
       "id": "K2-02.U04",
       "course": "K2-02",
       "title": "위치 정보·구조·Mask",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-020",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/transformer-basics/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "synthetic_positions_masks_verified_deployed_model_spec_not_assessed",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json"
     },
     {
       "id": "K2-02.U05",
       "course": "K2-02",
       "title": "생성과 KV Cache",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-020",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/transformer-basics/lesson.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "single_layer_cache_equivalence_payload_arithmetic_verified_no_language_generation",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json"
     },
     {
       "id": "K2-03.U01",
@@ -830,18 +835,17 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-020",
+    "id": "KEDU-PRODUCTION-021",
     "proposed_scope": [
-      "K2-02.U01",
-      "K2-02.U02",
-      "K2-02.U03",
-      "K2-02.U04",
-      "K2-02.U05"
+      "K2-03.U01",
+      "K2-03.U02",
+      "K2-03.U03",
+      "K2-03.U04"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "DATA_EVALUATION_MATERIAL_AND_SYNTHETIC_ARITHMETIC_VERIFIED_CLASSROOM_PENDING",
+  "batch_status": "TRANSFORMER_MATERIAL_AND_SYNTHETIC_NUMERICS_VERIFIED_CLASSROOM_PENDING",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -849,7 +853,7 @@
       "QLoRA actual backend",
       "independent quality/classroom",
       "full framework/MCP",
-      "9 foundation units unwritten"
+      "4 foundation units unwritten"
     ]
   },
   "milestones": {

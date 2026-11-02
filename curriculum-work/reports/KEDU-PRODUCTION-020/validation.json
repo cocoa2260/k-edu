@@ -1,0 +1,418 @@
+{
+  "batch": "KEDU-PRODUCTION-020",
+  "checked_on": "2026-11-02",
+  "timezone": "Asia/Seoul",
+  "scope": "authored material and synthetic component/single-layer arithmetic; no trained model",
+  "static_checks": {
+    "status": "passed",
+    "scope_unit_ids": [
+      "K2-02.U01",
+      "K2-02.U02",
+      "K2-02.U03",
+      "K2-02.U04",
+      "K2-02.U05"
+    ],
+    "authored_units": 66,
+    "total_units": 70,
+    "remaining_unwritten_units": 4,
+    "relative_link_checks": 32,
+    "relative_links": [
+      {
+        "source": "curriculum-work/lessons/transformer-basics/lesson.md",
+        "target": "curriculum-work/lessons/data-evaluation/lesson.md"
+      },
+      {
+        "source": "curriculum-work/lessons/transformer-basics/lesson.md",
+        "target": "curriculum-work/lessons/transformer-basics/worksheet.md"
+      },
+      {
+        "source": "curriculum-work/lessons/transformer-basics/lesson.md",
+        "target": "curriculum-work/lessons/transformer-basics/teacher-guide.md"
+      },
+      {
+        "source": "curriculum-work/lessons/transformer-basics/lesson.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-020/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/lessons/transformer-basics/teacher-guide.md",
+        "target": "curriculum-work/lessons/transformer-basics/lesson.md"
+      },
+      {
+        "source": "curriculum-work/lessons/transformer-basics/teacher-guide.md",
+        "target": "curriculum-work/lessons/transformer-basics/worksheet.md"
+      },
+      {
+        "source": "curriculum-work/lessons/transformer-basics/worksheet.md",
+        "target": "curriculum-work/lessons/transformer-basics/lesson.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-020/RESULT.md",
+        "target": "curriculum-work/lessons/transformer-basics/lesson.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-020/RESULT.md",
+        "target": "curriculum-work/lessons/transformer-basics/worksheet.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-020/RESULT.md",
+        "target": "curriculum-work/lessons/transformer-basics/teacher-guide.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-020/RESULT.md",
+        "target": "curriculum-work/practice/transformer-basics/check_examples.py"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-020/RESULT.md",
+        "target": "curriculum-work/practice/transformer-basics/examples.json"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-PRODUCTION-020/RESULT.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/lessons/transformer-basics/lesson.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-020/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-019/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/CURRICULUM_PLAN.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-ANALYSIS-001/20261030T080144Z/REVIEW.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-PILOT-001/20261030T064535Z-r2/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/curriculum.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/validation.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/run.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/tasks/KEDU-DESIGN-001.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/checks/check_design.py"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/checks/check_curriculum.py"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/checks/check_analysis.py"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/loop-spec.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/prompts.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/lessons/transformer-basics/lesson.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-020/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/reports/KEDU-PRODUCTION-019/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/curriculum/production-index.json"
+      }
+    ],
+    "human_markdown_files_checked": 6,
+    "fenced_code_blocks": 0,
+    "json_parse": "passed"
+  },
+  "design_alignment": [
+    {
+      "unit": "K2-02.U01",
+      "outcome": "Weight/Bias/Activation concrete computation",
+      "evidence": "row-vector affine, bias change, ReLU and dimension mismatch",
+      "location": "lesson U01, worksheet A, teacher A"
+    },
+    {
+      "unit": "K2-02.U02",
+      "outcome": "Q/K/V dot/scale/Softmax/weighted sum and shapes",
+      "evidence": "explicit projections and T3 query trace, row-wise normalization",
+      "location": "lesson U02, worksheet B, teacher B"
+    },
+    {
+      "unit": "K2-02.U03",
+      "outcome": "Multi-head/Residual/LayerNorm/FFN roles and input/output",
+      "evidence": "dimension table, concatenation/projection/residual, feature-axis LayerNorm, FFN and Pre/Post-LN distinction",
+      "location": "lesson U03, worksheet C, teacher C"
+    },
+    {
+      "unit": "K2-02.U04",
+      "outcome": "position information, Encoder/Decoder/Cross-Attention and Padding/Causal masks",
+      "evidence": "sinusoidal and rotation example, permutation property, allowed-token table, future/PAD boundaries, exact-model verification checklist",
+      "location": "lesson U04, worksheet D, teacher D"
+    },
+    {
+      "unit": "K2-02.U05",
+      "outcome": "parallel training, sequential decode, Prefill and KV memory",
+      "evidence": "shifted teacher-forcing targets, cache timing, single-layer incremental/full equivalence, KV payload formula with distinct query/KV heads",
+      "location": "lesson U05, worksheet E, teacher E"
+    }
+  ],
+  "execution": {
+    "command": "python curriculum-work/practice/transformer-basics/check_examples.py --output <scratch-check-record>",
+    "exit_code": 0,
+    "dependencies": "Python standard library only",
+    "checker_sha256": "93ed442db501721b42146858071a46530422ebcc81e8880d4cb7b37794ebea02",
+    "synthetic_verification": {
+      "status": "passed",
+      "fixture_sha256": "f298b9032091d8b7e60bfefbe865ebf1cde769e1b5e03d2d2e90d1c06872614c",
+      "tolerance": 1e-09,
+      "scope": "synthetic component and single-layer attention arithmetic only",
+      "affine": {
+        "pre_activation": [
+          3,
+          -1
+        ],
+        "relu": [
+          3,
+          0.0
+        ]
+      },
+      "attention": {
+        "row3_weights": [
+          0.2482550782577231,
+          0.2482550782577231,
+          0.5034898434845538
+        ],
+        "row3_output": [
+          1.5034898434845538,
+          3.0069796869691077
+        ],
+        "row2_causal_weights": [
+          0.3302384506733431,
+          0.6697615493266569,
+          0.0
+        ],
+        "row2_causal_output": [
+          0.6604769013466862,
+          2.6790461973066275
+        ],
+        "masked_pad_weights": [
+          0.0,
+          0.0
+        ]
+      },
+      "components": {
+        "projection": [
+          4,
+          6,
+          3,
+          4
+        ],
+        "residual": [
+          5,
+          6,
+          4,
+          4
+        ],
+        "layernorm": [
+          -0.9999950000374997,
+          0.9999950000374997
+        ],
+        "ffn_output": [
+          4.0,
+          -3.0
+        ]
+      },
+      "position_checks": {
+        "sinusoidal_0_1": "passed",
+        "same_rotation_dot_product": "passed",
+        "unmasked_no_position_permutation_equivariance": "passed",
+        "mean_pooling_permutation_invariance": "passed"
+      },
+      "boundary_counterexamples": {
+        "missing_sqrt_scale_changes_weights": true,
+        "post_softmax_zero_without_renormalization_sum": 0.5988879073202141,
+        "future_token_changes_unmasked_but_not_causal_prefix": true
+      },
+      "cache_prefix_comparisons": [
+        {
+          "processed_prefix_length": 3,
+          "full_last": [
+            1.5034898434845538,
+            3.0069796869691077
+          ],
+          "incremental_last": [
+            1.5034898434845538,
+            3.0069796869691077
+          ],
+          "max_absolute_difference": 0.0
+        },
+        {
+          "processed_prefix_length": 4,
+          "full_last": [
+            3.65187340881368,
+            -3.1056295301197907
+          ],
+          "incremental_last": [
+            3.65187340881368,
+            -3.1056295301197907
+          ],
+          "max_absolute_difference": 0.0
+        },
+        {
+          "processed_prefix_length": 5,
+          "full_last": [
+            -1.5448111484828737,
+            7.287454025729945
+          ],
+          "incremental_last": [
+            -1.5448111484828737,
+            7.287454025729945
+          ],
+          "max_absolute_difference": 0.0
+        }
+      ],
+      "cache_includes_position_or_full_block": false,
+      "kv_memory_payload": [
+        {
+          "name": "base",
+          "bytes": 65536,
+          "KiB": 64.0
+        },
+        {
+          "name": "double_context",
+          "bytes": 131072,
+          "KiB": 128.0
+        },
+        {
+          "name": "double_batch",
+          "bytes": 131072,
+          "KiB": 128.0
+        },
+        {
+          "name": "fewer_kv_heads",
+          "bytes": 16384,
+          "KiB": 16.0
+        }
+      ],
+      "rejected_invalid_inputs": [
+        "matrix inner-dimension mismatch",
+        "ragged matrix",
+        "all keys masked",
+        "mask length mismatch",
+        "cache K/V length mismatch",
+        "residual shape mismatch",
+        "nonfinite attention score",
+        "invalid zero cache dimension"
+      ],
+      "pretrained_model_calls": 0,
+      "training_executed": false,
+      "token_generation_executed": false,
+      "performance_benchmark": "not_run",
+      "independent_quality_review": "not_run",
+      "classroom_trial": "not_run"
+    }
+  },
+  "same_session_content_review": {
+    "reviewer": "same author; not independent",
+    "status": "completed",
+    "observations": [
+      "Row-vector xW+b convention, model/head dimensions and independent examples are explicit; PyTorch stored-weight transpose convention is not confused with lesson notation.",
+      "All displayed affine/attention/component/sinusoidal/rotation/memory numbers were compared with executed arithmetic; displayed precision is distinguished from internal precision.",
+      "Q=K only follows the illustrative identity projections; attention row weights are not next-token vocabulary probabilities or verified explanations.",
+      "The multi-head example checks shape and given head-output concatenation/projection only; residual, LayerNorm and FFN are separate component examples, not a complete block execution.",
+      "LayerNorm uses feature-axis population variance plus epsilon, with gamma=1/beta=0 in this example; actual models may use other norms/activations.",
+      "No-position permutation equivariance and pooled invariance are limited to unmasked attention; causal structure may supply order cues.",
+      "Additive pre-Softmax exclusion, all-keys-masked behavior, PAD key versus PAD query/loss handling and library-specific mask semantics remain explicit.",
+      "Encoder/Decoder/Cross-Attention Q/K/V sources differ; prompt documents in decoder-only models do not automatically imply cross-attention.",
+      "Causal Mask does not implement document access rights; unauthorized content must be blocked by the system boundary.",
+      "Teacher-forcing targets are shifted; choosing the final token is distinct from consuming it and writing its K/V.",
+      "Cache comparisons cover processed prefixes 3/4/5 for single-head attention without positions/norm/FFN/language head, not real token generation or speed.",
+      "KV payload uses Hkv, not Hq; memory examples exclude model weights/activations/workspace/allocator and do not establish device feasibility.",
+      "Human path is lesson plus worksheet; no code or JSON prerequisite. Open-ended explanations require instructor review."
+    ]
+  },
+  "primary_sources_checked_on": "2026-11-02",
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/html/1706.03762v7",
+      "supports": "original attention/Transformer architecture and positional encoding"
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.Linear.html",
+      "supports": "affine transform and stored-weight convention"
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.ReLU.html",
+      "supports": "ReLU definition"
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.LayerNorm.html",
+      "supports": "feature-axis variance, epsilon and affine parameters"
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.MultiheadAttention.html",
+      "supports": "multi-head concatenation and output projection"
+    },
+    {
+      "url": "https://arxiv.org/abs/2002.04745",
+      "supports": "Pre/Post-LN distinction"
+    },
+    {
+      "url": "https://arxiv.org/abs/2104.09864",
+      "supports": "rotary position representation"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/tasks/language_modeling",
+      "supports": "causal next-token objective"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/cache_explanation",
+      "supports": "per-layer KV reuse and incremental inference"
+    },
+    {
+      "url": "https://arxiv.org/abs/2305.13245",
+      "supports": "query heads and grouped KV heads"
+    }
+  ],
+  "runtime_limits": {
+    "pretrained_model_calls": 0,
+    "training_executed": false,
+    "full_transformer_block_executed": false,
+    "token_generation_executed": false,
+    "position_aware_cache_equivalence": "not_run",
+    "actual_model_position_spec": "not_assessed",
+    "speed_vram_benchmark": "not_run",
+    "previous_app_regressions": "not_rerun; previous app/model/training code unchanged"
+  },
+  "independent_quality_review": "not_run",
+  "classroom_trial": "not_run",
+  "student_time_measurement": "not_run",
+  "release_acceptance": false,
+  "previous_quality_gates": "unchanged_pending"
+}

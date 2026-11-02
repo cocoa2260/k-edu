@@ -1,0 +1,51 @@
+{
+  "version": "transformer-basics-v1",
+  "origin": "authored_synthetic_numbers_not_trained_model",
+  "affine": {
+    "x": [2, 1], "W": [[1, -1], [2, 1]], "b": [-1, 0],
+    "expected_z": [3, -1], "expected_relu": [3, 0], "expected_no_bias_relu": [4, 0]
+  },
+  "attention": {
+    "X": [[1, 0], [0, 1], [1, 1]],
+    "WQ": [[1, 0], [0, 1]], "WK": [[1, 0], [0, 1]], "WV": [[2, 0], [0, 4]],
+    "expected_Q": [[1, 0], [0, 1], [1, 1]],
+    "expected_K": [[1, 0], [0, 1], [1, 1]],
+    "expected_V": [[2, 0], [0, 4], [2, 4]],
+    "row3_dots": [1, 1, 2],
+    "row3_weights": [0.2482550782577231, 0.2482550782577231, 0.5034898434845538],
+    "row3_output": [1.5034898434845538, 3.0069796869691077],
+    "row2_unmasked_weights": [0.1977758146404282, 0.4011120926797859, 0.4011120926797859],
+    "row2_unmasked_output": [1.1977758146404283, 3.2088967414382874],
+    "row2_causal_weights": [0.3302384506733431, 0.6697615493266569, 0.0],
+    "row2_causal_output": [0.6604769013466862, 2.6790461973066275]
+  },
+  "components": {
+    "heads": [[1, 2], [3, 4]],
+    "WO": [[1, 0, 0, 0], [0, 1, 0, 0], [1, 0, 1, 0], [0, 1, 0, 1]],
+    "expected_projection": [4, 6, 3, 4],
+    "residual_input": [1, 0, 1, 0], "expected_residual": [5, 6, 4, 4],
+    "layernorm_x": [1, 3], "epsilon": 0.00001,
+    "expected_layernorm": [-0.9999950000374997, 0.9999950000374997],
+    "ffn_x": [1, 2], "W1": [[1, -1, 0], [0, 0, 2]], "b1": [0, 0, -1],
+    "W2": [[1, 0], [0, 1], [1, -1]],
+    "expected_ffn_z": [1, -1, 3], "expected_ffn_hidden": [1, 0, 3], "expected_ffn_output": [4, -3]
+  },
+  "positions": {
+    "sinusoidal_dimension": 4,
+    "position_0": [0, 1, 0, 1],
+    "position_1": [0.8414709848078965, 0.5403023058681398, 0.009999833334166664, 0.9999500004166653],
+    "rotation_input": [1, 0], "rotation_radians": 1.5707963267948966,
+    "expected_rotated": [0, 1]
+  },
+  "cache": {
+    "additional_inputs": [[2, -1], [-1, 2]], "expected_processed_prefix_lengths": [3, 4, 5],
+    "has_position_encoding": false, "has_normalization_ffn_or_lm_head": false,
+    "token_selection_executed": false
+  },
+  "memory": [
+    {"name": "base", "B": 1, "L": 4, "T": 128, "Hq": 4, "Hkv": 4, "D": 8, "S": 2, "expected_bytes": 65536},
+    {"name": "double_context", "B": 1, "L": 4, "T": 256, "Hq": 4, "Hkv": 4, "D": 8, "S": 2, "expected_bytes": 131072},
+    {"name": "double_batch", "B": 2, "L": 4, "T": 128, "Hq": 4, "Hkv": 4, "D": 8, "S": 2, "expected_bytes": 131072},
+    {"name": "fewer_kv_heads", "B": 1, "L": 4, "T": 128, "Hq": 4, "Hkv": 1, "D": 8, "S": 2, "expected_bytes": 16384}
+  ]
+}

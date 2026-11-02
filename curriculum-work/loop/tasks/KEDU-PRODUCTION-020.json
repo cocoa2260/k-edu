@@ -1,0 +1,25 @@
+{
+  "schema_version": "0.1",
+  "id": "KEDU-PRODUCTION-020",
+  "stage": 5,
+  "scope": ["K2-02.U01", "K2-02.U02", "K2-02.U03", "K2-02.U04", "K2-02.U05"],
+  "recommended_reasoning_effort": "high",
+  "new_material_directories": [
+    "curriculum-work/lessons/transformer-basics/",
+    "curriculum-work/practice/transformer-basics/",
+    "curriculum-work/reports/KEDU-PRODUCTION-020/"
+  ],
+  "allowed_metadata_updates": [
+    "curriculum-work/README.md",
+    "curriculum-work/PROGRESS.md",
+    "curriculum-work/curriculum/production-index.json"
+  ],
+  "protected": ["academy/", "previous reports", "previous data fixtures", "existing app/model/training code", "existing milestone statuses", "existing Hugging Face units"],
+  "constraints": [
+    "human Markdown uses prose and tables; no executable fenced code or JSON",
+    "hand-authored synthetic arithmetic, no pretrained model/paid API calls",
+    "component examples have explicit dimensions and are not one complete trained model",
+    "cache equivalence is single-layer attention without positions/full block/language head",
+    "separate arithmetic, actual model performance, hardware feasibility and independent classroom acceptance"
+  ]
+}
