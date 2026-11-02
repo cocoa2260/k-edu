@@ -1,0 +1,997 @@
+{
+  "schema_version": "teaching-audit-v1",
+  "batch": "KEDU-TEACHING-REPAIR-002",
+  "date": "2026-11-02",
+  "repository": "cocoa2260/k-edu",
+  "branch": "work/curriculum-production-001",
+  "source_commit": "7c3171182f67be818980a94afebab437b9858030",
+  "criteria": "curriculum-work/loop/prompts.md",
+  "phase1_reference": {
+    "mode": "reuse_prior_fixed_source_reading_from_repair_001",
+    "commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+    "scope": "two lesson excerpts documented in active prompts; not full Phase1 reanalysis"
+  },
+  "reviewer": "same_author_followup_review_not_independent",
+  "coverage": {
+    "unit_count": 70,
+    "canonical_body_files": 21,
+    "connected_teaching_documents": 25,
+    "historical_result_documents": 1,
+    "targeted_code_files": 4,
+    "full_code_audit": false,
+    "all_commands_executed": false
+  },
+  "units": [
+    {
+      "id": "K2-00.U01",
+      "title": "업무와 허용할 수 없는 실패",
+      "path": "curriculum-work/lessons/orientation/lesson.md",
+      "line": 13,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-00.U02",
+      "title": "AI Lifecycle와 책임",
+      "path": "curriculum-work/lessons/orientation/lesson.md",
+      "line": 58,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-00.U03",
+      "title": "동향·제품·생성 방식의 구분",
+      "path": "curriculum-work/lessons/orientation/lesson.md",
+      "line": 95,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-01.U01",
+      "title": "예측 시점과 데이터의 역할",
+      "path": "curriculum-work/lessons/data-evaluation/lesson.md",
+      "line": 25,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-01.U02",
+      "title": "데이터 제작 원칙·분리와 누수",
+      "path": "curriculum-work/lessons/data-evaluation/lesson.md",
+      "line": 48,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-01.U03",
+      "title": "일반화·과적합과 실험 통제",
+      "path": "curriculum-work/lessons/data-evaluation/lesson.md",
+      "line": 128,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-01.U04",
+      "title": "평가 지표와 오류의 영향",
+      "path": "curriculum-work/lessons/data-evaluation/lesson.md",
+      "line": 165,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-02.U01",
+      "title": "신경망 한 층과 Activation",
+      "path": "curriculum-work/lessons/transformer-basics/lesson.md",
+      "line": 21,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-02.U02",
+      "title": "Self-Attention의 계산",
+      "path": "curriculum-work/lessons/transformer-basics/lesson.md",
+      "line": 51,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-02.U03",
+      "title": "Transformer Block",
+      "path": "curriculum-work/lessons/transformer-basics/lesson.md",
+      "line": 91,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-02.U04",
+      "title": "위치 정보·구조·Mask",
+      "path": "curriculum-work/lessons/transformer-basics/lesson.md",
+      "line": 137,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-02.U05",
+      "title": "생성과 KV Cache",
+      "path": "curriculum-work/lessons/transformer-basics/lesson.md",
+      "line": 187,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-03.U01",
+      "title": "학습 목표와 Post-training",
+      "path": "curriculum-work/lessons/llm-basics/lesson.md",
+      "line": 14,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-03.U02",
+      "title": "Logit에서 Token 선택까지",
+      "path": "curriculum-work/lessons/llm-basics/lesson.md",
+      "line": 51,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-03.U03",
+      "title": "Parameter·Context·Memory·Retrieval",
+      "path": "curriculum-work/lessons/llm-basics/lesson.md",
+      "line": 109,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-03.U04",
+      "title": "환각·불확실성과 시스템 평가",
+      "path": "curriculum-work/lessons/llm-basics/lesson.md",
+      "line": 141,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-03.U05",
+      "title": "Hugging Face 첫 방문과 공식 예제 찾기",
+      "path": "curriculum-work/lessons/huggingface/README.md",
+      "line": 17,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-03.U06",
+      "title": "Model Card·파일·실행 경로 읽기",
+      "path": "curriculum-work/lessons/huggingface/README.md",
+      "line": 54,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-03.U07",
+      "title": "Tokenizer·Chat Template 관찰",
+      "path": "curriculum-work/lessons/huggingface/README.md",
+      "line": 111,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-04.U01",
+      "title": "지시·요청·제약·출력 계약",
+      "path": "curriculum-work/lessons/prompt/lesson.md",
+      "line": 9,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-04.U02",
+      "title": "Zero/One/Few-shot의 비교",
+      "path": "curriculum-work/lessons/prompt/lesson.md",
+      "line": 19,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-04.U03",
+      "title": "추론 기법과 실행 전략의 경계",
+      "path": "curriculum-work/lessons/prompt/lesson.md",
+      "line": 29,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-04.U04",
+      "title": "Golden Dataset과 회귀",
+      "path": "curriculum-work/lessons/prompt/lesson.md",
+      "line": 39,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-05.U01",
+      "title": "정보의 출처와 신뢰 경계",
+      "path": "curriculum-work/lessons/context/lesson.md",
+      "line": 9,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-05.U02",
+      "title": "선택·순서·형식",
+      "path": "curriculum-work/lessons/context/lesson.md",
+      "line": 19,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-05.U03",
+      "title": "Token 예산과 답변 여유",
+      "path": "curriculum-work/lessons/context/lesson.md",
+      "line": 29,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-05.U04",
+      "title": "State·Memory에서 현재 Context로",
+      "path": "curriculum-work/lessons/context/lesson.md",
+      "line": 39,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-06.U01",
+      "title": "Harness의 최소 책임",
+      "path": "curriculum-work/lessons/harness/lesson.md",
+      "line": 9,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-06.U02",
+      "title": "오류·재시도·반복의 다른 목적",
+      "path": "curriculum-work/lessons/harness/lesson.md",
+      "line": 30,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-06.U03",
+      "title": "검증 실패와 제한된 보완",
+      "path": "curriculum-work/lessons/harness/lesson.md",
+      "line": 49,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-06.U04",
+      "title": "버전 간 개선과 회귀",
+      "path": "curriculum-work/lessons/harness/lesson.md",
+      "line": 69,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-06.U05",
+      "title": "승인·중단·관찰의 신뢰 경계",
+      "path": "curriculum-work/lessons/harness/lesson.md",
+      "line": 81,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-07.U01",
+      "title": "ID·내부 표현·검색 표현",
+      "path": "curriculum-work/lessons/embedding/lesson.md",
+      "line": 9,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-07.U02",
+      "title": "Dense·Sparse·BM25",
+      "path": "curriculum-work/lessons/embedding/lesson.md",
+      "line": 28,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-07.U03",
+      "title": "유사도·정규화·차원",
+      "path": "curriculum-work/lessons/embedding/lesson.md",
+      "line": 48,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-07.U04",
+      "title": "Hybrid·Reranking·모델 교체",
+      "path": "curriculum-work/lessons/embedding/lesson.md",
+      "line": 62,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-08.U01",
+      "title": "문서·Vector·Metadata의 계약",
+      "path": "curriculum-work/lessons/vector-index/lesson.md",
+      "line": 9,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-08.U02",
+      "title": "Exact Search와 ANN",
+      "path": "curriculum-work/lessons/vector-index/lesson.md",
+      "line": 30,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-08.U03",
+      "title": "HNSW·IVF의 탐색",
+      "path": "curriculum-work/lessons/vector-index/lesson.md",
+      "line": 42,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-08.U04",
+      "title": "Filter·갱신·삭제·재색인",
+      "path": "curriculum-work/lessons/vector-index/lesson.md",
+      "line": 61,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-09.U01",
+      "title": "Offline과 Online의 연결",
+      "path": "curriculum-work/lessons/rag/lesson.md",
+      "line": 9,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-09.U02",
+      "title": "Chunk 구조와 Query Rewrite",
+      "path": "curriculum-work/lessons/rag/lesson.md",
+      "line": 31,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-09.U03",
+      "title": "Grounding·Citation·응답 보류",
+      "path": "curriculum-work/lessons/rag/lesson.md",
+      "line": 51,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-09.U04",
+      "title": "검색 실패와 생성 실패의 평가",
+      "path": "curriculum-work/lessons/rag/lesson.md",
+      "line": 73,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-10.U01",
+      "title": "Agent·Workflow·Tool·MCP",
+      "path": "curriculum-work/lessons/single-agent/lesson.md",
+      "line": 9,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-10.U02",
+      "title": "Tool Schema·Registry·검증",
+      "path": "curriculum-work/lessons/single-agent/lesson.md",
+      "line": 31,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-10.U03",
+      "title": "State·Observation·종료",
+      "path": "curriculum-work/lessons/single-agent/lesson.md",
+      "line": 51,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-10.U04",
+      "title": "Single-Agent 평가와 Framework 포팅",
+      "path": "curriculum-work/lessons/single-agent/lesson.md",
+      "line": 73,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-11.U01",
+      "title": "역할 분리가 필요한 문제",
+      "path": "curriculum-work/lessons/multi-agent/lesson.md",
+      "line": 9,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-11.U02",
+      "title": "역할별 상태·Tool·입출력",
+      "path": "curriculum-work/lessons/multi-agent/lesson.md",
+      "line": 27,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-11.U03",
+      "title": "검토와 한 번의 보완",
+      "path": "curriculum-work/lessons/multi-agent/lesson.md",
+      "line": 47,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-11.U04",
+      "title": "실패 전파와 동일 조건 비교",
+      "path": "curriculum-work/lessons/multi-agent/lesson.md",
+      "line": 68,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-12.U01",
+      "title": "학습 목표·PEFT 계열과 전략 선택",
+      "path": "curriculum-work/lessons/fine-tuning/lesson.md",
+      "line": 7,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-12.U02",
+      "title": "Dataset 설계·제작·검수·분리",
+      "path": "curriculum-work/lessons/fine-tuning/lesson.md",
+      "line": 39,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-12.U03",
+      "title": "Train 데이터 증강·합성·품질 관리",
+      "path": "curriculum-work/lessons/fine-tuning/lesson.md",
+      "line": 64,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-12.U04",
+      "title": "학습 입력·Chat Template·Loss 범위",
+      "path": "curriculum-work/lessons/fine-tuning/lesson.md",
+      "line": 84,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-12.U05",
+      "title": "LoRA 원리·설정·실제 훈련",
+      "path": "curriculum-work/lessons/fine-tuning/training.md",
+      "line": 7,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-12.U06",
+      "title": "QLoRA·양자화와 자원 조건",
+      "path": "curriculum-work/lessons/fine-tuning/training.md",
+      "line": 27,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-12.U07",
+      "title": "동일 기준 평가·실패 진단·선택 기법 비교",
+      "path": "curriculum-work/lessons/fine-tuning/training.md",
+      "line": 44,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-12.U08",
+      "title": "Adapter 저장·새 프로세스 Reload·결과 Card",
+      "path": "curriculum-work/lessons/fine-tuning/training.md",
+      "line": 56,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-13.U01",
+      "title": "PDF 유형·Parsing·OCR 선택",
+      "path": "curriculum-work/lessons/document-parsing/lesson.md",
+      "line": 7,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-13.U02",
+      "title": "Layout·표·Reading Order",
+      "path": "curriculum-work/lessons/document-parsing/lesson.md",
+      "line": 24,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-13.U03",
+      "title": "OCR와 Vision의 품질·한계",
+      "path": "curriculum-work/lessons/document-parsing/lesson.md",
+      "line": 47,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-13.U04",
+      "title": "문서 안의 지시·권한·원문 추적",
+      "path": "curriculum-work/lessons/document-parsing/lesson.md",
+      "line": 82,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-14.U01",
+      "title": "형식·원본·공통 문서 구조",
+      "path": "curriculum-work/lessons/document-ai/intake.md",
+      "line": 7,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-14.U02",
+      "title": "문서 상태·권한·삭제",
+      "path": "curriculum-work/lessons/document-ai/intake.md",
+      "line": 46,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-14.U03",
+      "title": "근거·검토·문서 생성",
+      "path": "curriculum-work/lessons/document-ai/report.md",
+      "line": 5,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-14.U04",
+      "title": "Provider 기능과 운영 예산",
+      "path": "curriculum-work/lessons/document-ai/provider.md",
+      "line": 5,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-14.U05",
+      "title": "React와 Streaming 통합",
+      "path": "curriculum-work/lessons/document-ai/streaming.md",
+      "line": 7,
+      "verdict": "보완 필요"
+    },
+    {
+      "id": "K2-14.U06",
+      "title": "다중 형식 확장과 최종 평가",
+      "path": "curriculum-work/lessons/document-ai/evaluation.md",
+      "line": 7,
+      "verdict": "보완 필요"
+    }
+  ],
+  "sources": [
+    {
+      "path": "curriculum-work/lessons/baseline/lesson.md",
+      "git_blob_sha1": "120464a2944ae72020511cf89439562cbc2fd331",
+      "sha256": "643af817789617d378b13172ff44296f686b1d741a5c17aa88ea05f9cc2b6384",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/context/lesson.md",
+      "git_blob_sha1": "9e34583207a87a8abaf2604174c19b8ec55f31d7",
+      "sha256": "f282c9ded6f8b4191ee7ba28ad658c52b25a0dab53608f19455fe0f05ecd539b",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/data-evaluation/dataset-card.md",
+      "git_blob_sha1": "24afc4663dbb6163a2aa0748e9c9f97caa4f9888",
+      "sha256": "fa521bd83479c377301ee10b86811932cbb24e24a46e2e7ea021d427592d379a",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/data-evaluation/lesson.md",
+      "git_blob_sha1": "6188832cba994d7a0d50225dc952e2e0bf0d93a8",
+      "sha256": "b471b83521b80986fb211a28c903fe595cd7dc2f3b3cb1f03ab77b44edc36b58",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/data-evaluation/teacher-guide.md",
+      "git_blob_sha1": "3760489db43ec06d4daa50ed215a519b4bb51036",
+      "sha256": "625cf8cd8e3f7a375d8ab4b9e6417156680c7d34a177ca1ec251e4577f543de2",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/data-evaluation/worksheet.md",
+      "git_blob_sha1": "0c41a0c64daff1f0d2135772eb2b21453bf9df43",
+      "sha256": "4cefab0b8c027b046b9facad31e5309efbd3ea46cd7c434ffe3bc84d6de5fb1c",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/document-ai/evaluation.md",
+      "git_blob_sha1": "bf37bee447edf172b3125cf81dedf673c9ade4de",
+      "sha256": "fb68b38babeb4bc4b91d4dc15192de2919e0d2a3a651802b5fbc35fcabbc87ff",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/document-ai/intake.md",
+      "git_blob_sha1": "bbcd70749694a9ef6fb4d2926539b0e1b6514e4e",
+      "sha256": "20535cfd3fefa016b94933b543a1c95512afa64ebbf2b34897f545e1d21d73cc",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/document-ai/provider.md",
+      "git_blob_sha1": "f2ec2c97dcd85d1537df545de27beb2800984618",
+      "sha256": "193e6775f8d63f9350f2bf51bd41b43d1842fe248267196ee0f3a764a28ad6e7",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/document-ai/report.md",
+      "git_blob_sha1": "d74803b1357c50219f8d78cc7cd1347fc4b97e83",
+      "sha256": "9ce13f3a6556adcebafa040f9783112f25b64f8d51a3921b674ca99babeb105d",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/document-ai/streaming.md",
+      "git_blob_sha1": "a8aadba42b2c37c52730afd333d004970a7a5c75",
+      "sha256": "1c0890333c4775f55be32042c15612fb472341a4e3e50c5f8a86079cc5b28e8b",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/document-parsing/lesson.md",
+      "git_blob_sha1": "da88526bdfc06d08bf8b67a5389091aa609a821b",
+      "sha256": "2ee71c5f47fc75d9b7431800b40b504754e9d6e6c5045878742e0bab4d733bf1",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/embedding/lesson.md",
+      "git_blob_sha1": "92a6ba31a647cbb263440b4bd1ed4b1f400b0857",
+      "sha256": "4a496496e8f006b82975fd92ecd3e54cc3526376ed5060cbffcb091d06e4556f",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/fine-tuning/lesson.md",
+      "git_blob_sha1": "be3548f2d756da062dfcf522ad26cbb02417d435",
+      "sha256": "b536adc24b815db69b9c85e50dbe7c4fa7be071eca448036319a5fb9a1c0671c",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/fine-tuning/training.md",
+      "git_blob_sha1": "5bec65ed52a94b2928c0b3f819f4739aa27e216b",
+      "sha256": "f93b2ce3441a5796e15fc3847e9ceccc8493e6eff3884f619587729d757d3f98",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/harness/lesson.md",
+      "git_blob_sha1": "c51938bae650c3fa2177d14dc72fb77292349539",
+      "sha256": "80fd324a1dd7969146c9340d8645531d53dff2fca4d1bffd79afdc8dd64acb17",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/huggingface/INSTRUCTOR.md",
+      "git_blob_sha1": "5c0ebac6c97955b65a172fb0f41317a27803ce65",
+      "sha256": "571d21b6ab083ed21360a4d191bee073783794ee4ffe98eb0f00e0d306e22459",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/huggingface/README.md",
+      "git_blob_sha1": "eee0424cf5011cb5e867e2142212141256dac175",
+      "sha256": "fef2002593d7776950f2238102566408dd10552b8331911c4eb3b02fbb9c7145",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/llm-basics/lesson.md",
+      "git_blob_sha1": "a22950cf145026e5f610ea0a1fbf9282ac6615df",
+      "sha256": "7dc2c00eba17a0af66ac6c0b2a5e94de9e9bbc977532eaa9c9ef5d8f591edc97",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/llm-basics/teacher-guide.md",
+      "git_blob_sha1": "58c11f3e25e515c031c756448f63c6ffacf7d390",
+      "sha256": "ad78c93276fa2d3c839ab2d6c49417ecb491cd7de830eb29a927d9fe8dc04114",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/llm-basics/worksheet.md",
+      "git_blob_sha1": "a1400b8335b251c6e711381380c712f43208e86a",
+      "sha256": "7c0850ed55ce52569bc0a6d422fda94aa36183d7c061e38540ca056ff751f172",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/multi-agent/lesson.md",
+      "git_blob_sha1": "fce8b9e1c5f77d3a979718f8a1eb6eaa6e794dfc",
+      "sha256": "9228c300383c72c2d69921876daaa902d68b735b126af4995c45ead571ac8936",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/orientation/lesson.md",
+      "git_blob_sha1": "ee71bd84912aab6c6dc176a50b335ca2e439e5fc",
+      "sha256": "dbda29f42464c7553cf90dd2fff3918f7eb32706f184e214a6dcc95efd0067e9",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/orientation/teacher-guide.md",
+      "git_blob_sha1": "300a86c89c23f5ba5e95f94c0d5a412aaed3ffc9",
+      "sha256": "dc546bf59f16e2a10c2ea388b2dc2574141741469b4ce46c8384b9a3d9fef8a2",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/orientation/worksheet.md",
+      "git_blob_sha1": "d43f75823a6be1e7b773eb7e86c2a8d4fe05943d",
+      "sha256": "2748ea10ad7f402191b718be11598911b4a7445f1b9d16146e126c7ea6c9c354",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/prompt/lesson.md",
+      "git_blob_sha1": "b34d3a47a0fdc7da22b1d4850e3ea67077ec8264",
+      "sha256": "0d07dde8a9a9b85eb462c2cbe2eac0a52120cf1999e5a591227334820f8bcae1",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/rag/lesson.md",
+      "git_blob_sha1": "f5d29f3df92126b4927accac409b2739b216ac6b",
+      "sha256": "62169e147ef5bf4efb84fb8d8ca2779e30d7199bc33795d8ed74831ce34f9a6b",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/single-agent/lesson.md",
+      "git_blob_sha1": "8d9c47a9cea882ef259a2436bd3fae85f5cf06b5",
+      "sha256": "1ad58f14c12eb9663d0f6b06e0e630dfa525254a3f3fe2571f11b5e604d36bd4",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/transformer-basics/lesson.md",
+      "git_blob_sha1": "2037f6f06e6b59a9d7389598335dedab499df410",
+      "sha256": "85f7448f4abf65db14659232994bf283919b866f9ed35884f57308f3efc74a52",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/transformer-basics/teacher-guide.md",
+      "git_blob_sha1": "4fc8ca5d9535fa43fee795116500305842fe54f3",
+      "sha256": "3b93717506b377ee63573412a81e61808bbe6bcbda9c424f41efa21face0a1c8",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/transformer-basics/worksheet.md",
+      "git_blob_sha1": "fdb126eb677b0672dce5e9fed46fa1e897384e54",
+      "sha256": "fbb03f72438b2c8f9f48b8d54ceb6173cbfdec0c2cf5b0275f3d3009043f59ee",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/lessons/vector-index/lesson.md",
+      "git_blob_sha1": "e13461b01d67dbcf08a09f172f80d241e04b2946",
+      "sha256": "4237e77ad507c1fe691b23db77f42ced2557ef674d8bbe95a141fab4353e8cb1",
+      "role": "unit_body",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/L1.md",
+      "git_blob_sha1": "0937161b40a8b454f46a6ac6c0812cd62c6b3b65",
+      "sha256": "2dbbb01db2eadc72433d783a67abc79111455fb055e142447bd42ec65faf11ef",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/L2.md",
+      "git_blob_sha1": "59fedbd63ec03fff4257ec3673a526bcc2e27248",
+      "sha256": "df624614f22762b2aef57faa6f4d8e2c6969ec79cfda48676e76bd7afbcd14d0",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/L3.md",
+      "git_blob_sha1": "146b38af1575d7ef31a094d2ea0ae102f8327cd7",
+      "sha256": "7c05a729fa320909d2d60cc3c4fd7c35e1a8ab6a8033d2a93d472cac96d694f1",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/L4.md",
+      "git_blob_sha1": "588c1ea3899e600de32ebd76e14e806e140ac219",
+      "sha256": "6719aca4bd1e4a78416bda5e0ff880e32e1c2bb3ce9aca4508f149a8eb336d51",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/L5.md",
+      "git_blob_sha1": "e77d56b0360d10003d350219cf2b9ab014c7813b",
+      "sha256": "1e6db3f9fb03e0bacb9d604ab4e95ecc89d1a6e0e71bccfb2adbd57a09f1ce21",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/L6.md",
+      "git_blob_sha1": "b779c5982ea48ac2786bc8e70bedec27fefdcc73",
+      "sha256": "143cd4301cfc9ee6747875092fb62b9086e99c24ae0bdff48ffe2ac13d4a39a7",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/L7.md",
+      "git_blob_sha1": "f24c73a077075474ea4ebf278593fa2e74e8619f",
+      "sha256": "6c41bd9611c902a969dc369b2a8d11a57487563f9a4a0884c7ec0458ba5d2891",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/L8.md",
+      "git_blob_sha1": "c5c12dcb3dadc2a6d4aabd8e2a4c99cc7e610214",
+      "sha256": "b27ef2b615916a920814df3244f8566f9b807fa5d732aeae1d31458c8b04bdfd",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/L9.md",
+      "git_blob_sha1": "1d3fe785419b9fc42d17545bee1f30579d52320e",
+      "sha256": "67a1d32bbc02957b7841b9bcd8c3909c175ff69da420cc9485eee91e4d062d13",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/README.md",
+      "git_blob_sha1": "d73f4e9e06f2282a0274aef9f1ea1bfbd8f5501b",
+      "sha256": "2e0e6014164ead78852972c4e1ded14afc97a75d384b4572042ee6711d6054b2",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/document_registry.py",
+      "git_blob_sha1": "abae93165708d813af5605174190a69c393b3f22",
+      "sha256": "ae09aac3393318ba48be3c4d8d6d6cc6eb0817bcaebfaaa1731b7c59b3d9f427",
+      "role": "selected_code",
+      "read_scope": "targeted_sections_only",
+      "visual_inspection": "not_applicable"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/tools/document_lab.py",
+      "git_blob_sha1": "24c439f885c666c5b8310111db7356c2b962b58e",
+      "sha256": "0ba8717a515317c40a835a428343e253222a1edbf646a597f00c501843652abc",
+      "role": "selected_code",
+      "read_scope": "targeted_sections_only",
+      "visual_inspection": "not_applicable"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/tools/lora_full_lab.py",
+      "git_blob_sha1": "ff91d28e672f52a708f9c502f642177dfa6fedc9",
+      "sha256": "1ada4f183cb102292939c0d2d9a1cc92aad87b57c3cadbb6fbec67e5c5023259",
+      "role": "selected_code",
+      "read_scope": "targeted_sections_only",
+      "visual_inspection": "not_applicable"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/tools/lora_lab.py",
+      "git_blob_sha1": "b7b51feffae442b1c777799b1ac26d0d29f728dc",
+      "sha256": "c7f73d5f0c0255925389e4de8d014c177b6b5bc414be31c8bee8f5cdf4ecd92a",
+      "role": "selected_code",
+      "read_scope": "targeted_sections_only",
+      "visual_inspection": "not_applicable"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/data/finetuning-v1/README.md",
+      "git_blob_sha1": "0e1e0e7baa0f79a04d2a3e3047e378d3a4717fbe",
+      "sha256": "a5da9b27090de7990435770e3d5d5190c12e4449f83da257e23260b29c777adc",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/stream-ui/README.md",
+      "git_blob_sha1": "bf0f2b1acab32fad96462cfd7e6c6f9f89357fc0",
+      "sha256": "342c856f0dc449373aca9ea0f52eec76c1c2b7238acc2c218bebb67d3dd10868",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/practice/huggingface-tokenizer/README.md",
+      "git_blob_sha1": "00280c793937b5a069bbad1fc74136c4faa3f3b3",
+      "sha256": "9e75a665cc5020dd2d5bf062af56eed4d265ebc724a4f705a173bf1500269444",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/practice/huggingface-tokenizer/WORKSHEET.md",
+      "git_blob_sha1": "5ffd7491eb6587f70d384fab5d300382592c9dae",
+      "sha256": "afc6b3d6a649e92c5a84da5cb7a44defd6366d92ef7ee6d1b594f165a98d11f2",
+      "role": "connected_teaching_material",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    },
+    {
+      "path": "curriculum-work/reports/KEDU-PRODUCTION-011/RESULT.md",
+      "git_blob_sha1": "81ea63cefb4848dabf32f4aab20543dc349744ea",
+      "sha256": "ae8c7060444396c9d526623d84b925af87dcd9778331e6813ee372173a2306b3",
+      "role": "historical_evidence",
+      "read_scope": "complete_text",
+      "visual_inspection": "not_repeated"
+    }
+  ],
+  "document_consistency_findings": [
+    {
+      "kind": "current_code_vs_stage_documentation",
+      "path": "curriculum-work/lessons/document-ai/intake.md",
+      "line": 30,
+      "corroboration": "document_registry.py parse_bytes docx branch and upload accepted formats; L9 later U06 documentation",
+      "action": "clarify stage baseline/current support; preserve DOCX implementation"
+    },
+    {
+      "kind": "initial_vs_later_training_status",
+      "path": "curriculum-work/lessons/fine-tuning/training.md",
+      "line": 50,
+      "corroboration": "same file line77; production011 RESULT; lora_lab 4 steps vs lora_full_lab 28 steps",
+      "action": "separate initial smoke/current full-data paths; retain unfinished quality/QLoRA/multiseed"
+    },
+    {
+      "kind": "production_chronology_in_learner_flow",
+      "path": "curriculum-work/lessons/document-ai/evaluation.md",
+      "line": 61,
+      "corroboration": "current production index 70 authored units; source text 54/70 and next orientation production",
+      "action": "move historical production counts to management; use final learner task"
+    },
+    {
+      "kind": "first_command_discoverability",
+      "path": "curriculum-work/practice/document-assistant/L8.md",
+      "line": 18,
+      "corroboration": "document_lab docstring and argparse require specimens,tessdata-dir,output",
+      "action": "provide explicit command/input/output in practice; no assertion of broken argparse"
+    }
+  ],
+  "static_checks": {
+    "source_blob_matches": 51,
+    "unit_mapping_unique": true,
+    "unit_rows": 70,
+    "required_source_sections_present": true,
+    "relative_link_targets_checked": 197,
+    "missing_relative_targets": [],
+    "fragment_validation": "not_performed",
+    "external_links_current_availability": "not_rechecked"
+  },
+  "execution": {
+    "new_model_runs": 0,
+    "new_training_runs": 0,
+    "new_browser_runs": 0,
+    "runtime_tests_rerun": false,
+    "visual_artifacts_rerendered": false
+  },
+  "decision": {
+    "document_audit": "completed_with_stated_limits",
+    "unit_verdict": "needs_revision",
+    "material_revision": "not_started",
+    "classroom_acceptance": false,
+    "independent_semantic_review": false
+  },
+  "next_batch": {
+    "id": "KEDU-TEACHING-REPAIR-003",
+    "scope": "Revise Prompt four units and connected L1 practice; recheck against current teaching criteria; validate only affected execution paths",
+    "recommended_reasoning_effort": "high"
+  },
+  "publication": {
+    "status": "prepared_locally",
+    "parent_commit": "7c3171182f67be818980a94afebab437b9858030",
+    "changed_paths": [
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/README.md",
+      "curriculum-work/curriculum/production-index.json",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-002/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-002/REVIEW.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-002/validation.json"
+    ]
+  }
+}

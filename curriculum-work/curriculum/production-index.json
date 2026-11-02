@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-TEACHING-REPAIR-001",
+  "current_batch": "KEDU-TEACHING-REPAIR-002",
   "units": [
     {
       "id": "K2-00.U01",
@@ -16,7 +16,8 @@
       "material_path": "curriculum-work/lessons/orientation/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "discussion_material_no_model_execution",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-00.U02",
@@ -27,7 +28,8 @@
       "material_path": "curriculum-work/lessons/orientation/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "discussion_material_no_model_execution",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-00.U03",
@@ -38,7 +40,8 @@
       "material_path": "curriculum-work/lessons/orientation/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "discussion_material_no_model_execution",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-01.U01",
@@ -50,7 +53,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "discussion_material_no_model_execution",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-019/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-019/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-01.U02",
@@ -62,7 +66,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "synthetic_lineage_checks_verified_no_model_training",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-019/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-019/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-01.U03",
@@ -74,7 +79,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "hypothetical_loss_review_no_training",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-019/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-019/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-01.U04",
@@ -86,7 +92,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "synthetic_metric_arithmetic_verified_no_model_inference",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-019/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-019/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-02.U01",
@@ -98,7 +105,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "synthetic_affine_activation_verified_no_training",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-02.U02",
@@ -110,7 +118,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "synthetic_attention_arithmetic_verified",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-02.U03",
@@ -122,7 +131,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "synthetic_component_shapes_arithmetic_verified_full_block_not_executed",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-02.U04",
@@ -134,7 +144,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "synthetic_positions_masks_verified_deployed_model_spec_not_assessed",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-02.U05",
@@ -146,7 +157,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "single_layer_cache_equivalence_payload_arithmetic_verified_no_language_generation",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-03.U01",
@@ -158,7 +170,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "synthetic_next_token_loss_verified_training_not_run",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-021/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-021/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-03.U02",
@@ -170,7 +183,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "synthetic_one_setting_selection_verified_pretrained_generation_comparison_pending",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-021/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-021/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-03.U03",
@@ -182,7 +196,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "same_session_information_lifecycle_review_no_runtime_storage_test",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-021/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-021/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-03.U04",
@@ -194,7 +209,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "synthetic_format_and_annotated_review_bookkeeping_verified_independent_semantics_latency_pending",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-021/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-021/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-03.U05",
@@ -205,7 +221,8 @@
       "material_path": "curriculum-work/lessons/huggingface/README.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "not_applicable_for_screen_reading",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-03.U06",
@@ -216,7 +233,8 @@
       "material_path": "curriculum-work/lessons/huggingface/README.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "not_applicable_for_screen_reading",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-03.U07",
@@ -228,7 +246,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "verified_linux_cpu",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-001/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-001/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-04.U01",
@@ -239,7 +258,8 @@
       "material_path": "curriculum-work/lessons/prompt/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "preparation_verified_generation_pending",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-04.U02",
@@ -250,7 +270,8 @@
       "material_path": "curriculum-work/lessons/prompt/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "preparation_verified_generation_pending",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-04.U03",
@@ -261,7 +282,8 @@
       "material_path": "curriculum-work/lessons/prompt/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "preparation_verified_generation_pending",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-04.U04",
@@ -272,7 +294,8 @@
       "material_path": "curriculum-work/lessons/prompt/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "preparation_verified_generation_pending",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-05.U01",
@@ -283,7 +306,8 @@
       "material_path": "curriculum-work/lessons/context/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "preparation_verified_generation_pending",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-05.U02",
@@ -294,7 +318,8 @@
       "material_path": "curriculum-work/lessons/context/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "preparation_verified_generation_pending",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-05.U03",
@@ -305,7 +330,8 @@
       "material_path": "curriculum-work/lessons/context/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "preparation_verified_generation_pending",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-05.U04",
@@ -316,7 +342,8 @@
       "material_path": "curriculum-work/lessons/context/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "preparation_verified_generation_pending",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-06.U01",
@@ -327,7 +354,8 @@
       "material_path": "curriculum-work/lessons/harness/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "fixture_control_verified_real_model_pending",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-06.U02",
@@ -338,7 +366,8 @@
       "material_path": "curriculum-work/lessons/harness/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "fixture_control_verified_real_model_pending",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-06.U03",
@@ -349,7 +378,8 @@
       "material_path": "curriculum-work/lessons/harness/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "fixture_control_verified_real_model_pending",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-06.U04",
@@ -360,7 +390,8 @@
       "material_path": "curriculum-work/lessons/harness/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "fixture_control_verified_real_model_pending",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-06.U05",
@@ -371,7 +402,8 @@
       "material_path": "curriculum-work/lessons/harness/lesson.md",
       "review_status": "same_session_reviewed",
       "runtime_status": "fixture_control_verified_real_model_pending",
-      "classroom_trial": "not_run"
+      "classroom_trial": "not_run",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-07.U01",
@@ -383,7 +415,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_cpu_embedding_and_index_verified",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-07.U02",
@@ -395,7 +428,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_cpu_embedding_and_index_verified",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-07.U03",
@@ -407,7 +441,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_cpu_embedding_and_index_verified",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-07.U04",
@@ -419,7 +454,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_hybrid_and_profile_rebuild_verified_learned_reranker_not_run",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-08.U01",
@@ -431,7 +467,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_cpu_embedding_and_index_verified",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-08.U02",
@@ -443,7 +480,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_faiss_synthetic_ann_verified_separate_from_text_corpus",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-08.U03",
@@ -455,7 +493,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_faiss_synthetic_ann_verified_separate_from_text_corpus",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-08.U04",
@@ -467,7 +506,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_cpu_embedding_and_index_verified",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-09.U01",
@@ -479,7 +519,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "real_RAG_executed_quality_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-006/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-006/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-09.U02",
@@ -491,7 +532,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "real_RAG_executed_quality_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-006/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-006/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-09.U03",
@@ -503,7 +545,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "real_RAG_executed_quality_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-006/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-006/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-09.U04",
@@ -515,7 +558,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "real_RAG_executed_quality_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-006/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-006/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-10.U01",
@@ -527,7 +571,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "guided_actual_tool_dispatch_verified_task_completion_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-007/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-007/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-10.U02",
@@ -539,7 +584,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "guided_actual_tool_dispatch_verified_task_completion_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-007/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-007/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-10.U03",
@@ -551,7 +597,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "guided_actual_tool_dispatch_verified_task_completion_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-007/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-007/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-10.U04",
@@ -563,7 +610,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "StructuredTool_bridge_verified_full_framework_agent_pending",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-007/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-007/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-11.U01",
@@ -575,7 +623,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_roles_and_handoff_verified_quality_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-008/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-008/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-11.U02",
@@ -587,7 +636,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_roles_and_handoff_verified_quality_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-008/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-008/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-11.U03",
@@ -599,7 +649,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_roles_and_handoff_verified_quality_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-008/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-008/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-11.U04",
@@ -611,7 +662,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_roles_and_handoff_verified_quality_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-008/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-008/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-12.U01",
@@ -623,7 +675,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_dataset_and_token_label_preparation_verified_training_pending",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-009/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-009/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-12.U02",
@@ -635,7 +688,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_dataset_and_token_label_preparation_verified_training_pending",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-009/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-009/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-12.U03",
@@ -647,7 +701,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_dataset_and_token_label_preparation_verified_training_pending",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-009/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-009/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-12.U04",
@@ -659,7 +714,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_dataset_and_token_label_preparation_verified_training_pending",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-009/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-009/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-12.U05",
@@ -671,7 +727,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "all_training_rows_regression_reload_verified_quality_pending",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-011/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-011/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-12.U06",
@@ -683,7 +740,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "material_authored_QLoRA_execution_unverified",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-010/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-010/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-12.U07",
@@ -695,7 +753,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "all_training_rows_regression_reload_verified_quality_pending",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-011/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-011/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-12.U08",
@@ -707,7 +766,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "all_training_rows_regression_reload_verified_quality_pending",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-011/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-011/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-13.U01",
@@ -719,7 +779,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "synthetic_pdf_ocr_executed_vision_not_run_quality_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-012/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-012/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-13.U02",
@@ -731,7 +792,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "synthetic_pdf_ocr_executed_vision_not_run_quality_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-012/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-012/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-13.U03",
@@ -743,7 +805,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "synthetic_pdf_ocr_executed_vision_not_run_quality_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-012/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-012/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-13.U04",
@@ -755,7 +818,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "synthetic_pdf_ocr_executed_vision_not_run_quality_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-012/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-012/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-14.U01",
@@ -767,7 +831,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "pdf_txt_local_registry_verified_authentication_and_concurrency_not_run",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-013/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-013/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-14.U02",
@@ -779,7 +844,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "pdf_txt_local_registry_verified_authentication_and_concurrency_not_run",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-013/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-013/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-14.U03",
@@ -791,7 +857,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_docx_pdf_and_render_verified_fixture_review_not_independent",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-014/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-014/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-14.U04",
@@ -803,7 +870,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "loopback_http_and_fixture_control_verified_real_model_and_hard_cancel_not_run",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-015/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-015/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-14.U05",
@@ -815,7 +883,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "actual_react_sse_chromium_fixture_delivery_verified_real_model_streaming_not_run",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-016/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-016/validation.json",
+      "teaching_audit_status": "needs_revision"
     },
     {
       "id": "K2-14.U06",
@@ -827,7 +896,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "pdf_txt_docx_synthetic_contracts_verified_release_quality_not_accepted",
       "classroom_trial": "not_run",
-      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-017/validation.json"
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-017/validation.json",
+      "teaching_audit_status": "needs_revision"
     }
   ],
   "entry_guide": {
@@ -839,16 +909,12 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-TEACHING-REPAIR-002",
-    "proposed_scope": [
-      "inspect 70 lesson units and connected practical material against revised teaching criteria",
-      "record explanation gaps, practice mismatches, reusable assets and required validation",
-      "select representative lesson for subsequent revision based on findings"
-    ],
+    "id": "KEDU-TEACHING-REPAIR-003",
+    "proposed_scope": "Revise Prompt four units and connected L1 practice; recheck against current teaching criteria; validate only affected execution paths",
     "status": "not_started",
-    "recommended_reasoning_effort": "xhigh"
+    "recommended_reasoning_effort": "high"
   },
-  "batch_status": "TEACHING_PROMPTS_REVISED_EXISTING_MATERIALS_AUDIT_AND_REVISION_PENDING",
+  "batch_status": "TEACHING_MATERIAL_DOCUMENT_AUDIT_COMPLETE_REPRESENTATIVE_REVISION_PENDING",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -935,11 +1001,17 @@
     "active_prompts_path": "curriculum-work/loop/prompts.md",
     "phase1_role": "reference for explanatory depth, progression, examples and practice interpretation; not permission to arbitrarily summarize Phase2",
     "prompt_revision": "completed_same_session_review",
-    "existing_material_audit": "pending_except_narrow_criteria_calibration_examples",
+    "existing_material_audit": "completed_70_unit_text_and_connected_teaching_document_review_with_targeted_static_code_checks",
     "material_revision": "not_started",
     "applies_to": "all 70 units and connected practical material",
     "previous_review_status_interpretation": "historical review records preserved; not acceptance against current teaching criteria",
     "current_classroom_acceptance": false,
-    "recommended_reasoning_effort_for_current_repair": "xhigh"
+    "recommended_reasoning_effort_for_current_repair": "xhigh",
+    "audit_report_path": "curriculum-work/reports/KEDU-TEACHING-REPAIR-002/RESULT.md",
+    "audit_batch": "KEDU-TEACHING-REPAIR-002",
+    "audit_details_path": "curriculum-work/reports/KEDU-TEACHING-REPAIR-002/REVIEW.md",
+    "audit_validation_path": "curriculum-work/reports/KEDU-TEACHING-REPAIR-002/validation.json",
+    "audit_scope_limits": "not a full code audit or all-command/runtime/visual/classroom revalidation; same-author review",
+    "recommended_reasoning_effort_for_next_repair": "high"
   }
 }
