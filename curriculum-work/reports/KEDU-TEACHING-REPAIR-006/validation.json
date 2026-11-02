@@ -427,7 +427,47 @@
     "recommended_reasoning_effort": "high"
   },
   "publication": {
-    "status": "pending"
+    "status": "published",
+    "branch": "work/curriculum-production-001",
+    "parent_commit": "2055be4c2f3fe3e1ac1eb4c243e609b59d452b5d",
+    "revision_commit": "8393d517bfd4966ebcccca3ee06a6b219bd1fdc2",
+    "revision_tree": "055cec1dd19579e4c1853f9ac1ed294be4dd2ab0",
+    "changed_paths": [
+      "curriculum-work/lessons/embedding/lesson.md",
+      "curriculum-work/lessons/embedding/teacher-guide.md",
+      "curriculum-work/practice/document-assistant/L3.md",
+      "curriculum-work/practice/document-assistant/backend/tools/embedding_steps.py",
+      "curriculum-work/practice/document-assistant/backend/retrieval/index.py",
+      "curriculum-work/practice/document-assistant/backend/embedding_tests/test_manifest_snapshot.py",
+      "curriculum-work/practice/document-assistant/backend/README.md",
+      "curriculum-work/README.md",
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/curriculum/production-index.json",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-006/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-006/validation.json"
+    ],
+    "verification": {
+      "complete_candidate_tree_read": true,
+      "whitelisted_changes_match": true,
+      "previous_blobs": 630,
+      "candidate_blobs": 635,
+      "protected_existing_blobs_unchanged": 623,
+      "deleted_paths": 0,
+      "all_candidate_written_content_hashes_match": true,
+      "original_encoder_data_questions_labels_and_retrieval_lab_preserved": true,
+      "original_ranking_api_and_previous_reports_preserved": true,
+      "index_change_limited_to_manifest_deepcopy": true,
+      "prompt_context_harness_and_index_lesson_preserved": true,
+      "l3_index_sections_preserved": true,
+      "historical_runtime_milestone_gate_fields_preserved": true,
+      "branch_updated_with_expected_parent_no_force": true
+    },
+    "destination": {
+      "repository": "cocoa2260/k-edu",
+      "visibility": "public",
+      "matches_user_project_repository": true
+    },
+    "note": "A following documentation-only commit records publication checks; revision_commit identifies teaching/code changes."
   },
   "source_versions": {
     "curriculum-work/lessons/embedding/lesson.md": "92a6ba31a647cbb263440b4bd1ed4b1f400b0857",
