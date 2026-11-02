@@ -28,6 +28,10 @@ def parse_bytes(data, fmt, metadata):
         elements = [dict(id=f"line-{n}",kind="paragraph",text=t,
             locator=dict(kind="text_line",line=n)) for n,t in enumerate(text.splitlines(),1) if t.strip()]
         parser = "l9-utf8-v1"
+    elif fmt == "docx":
+        from app.docx_ingest import read_docx, PARSER
+        elements=read_docx(data)
+        parser=PARSER
     elif fmt == "pdf":
         if not data.startswith(b"%PDF-"): raise RegistryError("PDF signature mismatch")
         # Immutable snapshot avoids using the caller's mutable path during parsing.
@@ -74,7 +78,7 @@ class Registry:
         authorize(metadata)  # before file read; registered metadata is trusted.
         if not isinstance(key,str) or not 1<=len(key)<=100: raise RegistryError("Invalid request key")
         fmt=Path(path).suffix.lower().lstrip(".")
-        if fmt not in ("pdf","txt"): raise RegistryError("Unsupported format")
+        if fmt not in ("pdf","txt","docx"): raise RegistryError("Unsupported format")
         if Path(path).stat().st_size>8_000_000: raise RegistryError("Byte limit")
         data=Path(path).read_bytes()
         if not data or len(data)>8_000_000: raise RegistryError("Byte limit/empty source")

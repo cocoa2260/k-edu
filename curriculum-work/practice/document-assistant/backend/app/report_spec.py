@@ -6,7 +6,7 @@ Review rows are not document approval; Registry review state remains distinct.
 import hashlib
 import json
 
-TEMPLATE = "kedu-evidence-report-v1"
+TEMPLATE = "kedu-evidence-report-v2"
 
 
 class ReportRejected(ValueError):

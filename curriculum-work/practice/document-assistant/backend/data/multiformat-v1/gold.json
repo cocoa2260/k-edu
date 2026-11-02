@@ -1,0 +1,29 @@
+{
+  "synthetic": true,
+  "docx_table": [
+    [
+      "구분",
+      "기한",
+      "부담금"
+    ],
+    [
+      "미사용",
+      "7일",
+      "0원"
+    ],
+    [
+      "사용 이력",
+      "개별 검토",
+      "15000원"
+    ]
+  ],
+  "docx_header_rows": [
+    1
+  ],
+  "docx_paragraph": "신청 기한은 7일입니다.",
+  "txt_line2": "신청 기한은 7일입니다.",
+  "source_sha256": {
+    "policy.docx": "06d05fd922f381ffbfdc141da94409ccb955021b3ec099516ae2b5a414235f83",
+    "policy.txt": "5235e0892ac81586ec570654693ae0b781f9df6a1e15591831964f7aee1b1487"
+  }
+}

@@ -105,3 +105,7 @@ requirements-report.txt와 tools.report_lab를 사용한다. [강의](../../../l
 ## L9 Streaming 화면
 
 [U05 강의](../../../lessons/document-ai/streaming.md)와 [결과](../../../reports/KEDU-PRODUCTION-016/RESULT.md)를 본다. ../stream-ui를 빌드한 뒤 tools.stream_lab에서 ui 디렉터리를 지정한다. Python 표준 HTTP 서버이며 기존 FastAPI 앱은 보존했다. stream_tests는 HTTP/SSE 계약, tools.stream_browser_lab는 같은 실행 트리의 실제 Chromium UI를 검사한다. 모델 생성 스트리밍이 아닌 고정 답변의 분할 전송이다.
+
+## L9 다중 형식
+
+[U06 강의](../../../lessons/document-ai/evaluation.md)와 [결과](../../../reports/KEDU-PRODUCTION-017/RESULT.md)를 본다. app/docx_ingest.py의 좁은 DOCX 입력을 Registry에 연결했다. tools.multiformat_lab는 PDF/TXT/DOCX와 고정 검토·DOCX/PDF 출력을 실행한다. 보고서 템플릿 v2는 DOCX 구조적 위치를 설명한다. 이전 출력/보고서는 보존한다. multiformat_tests와 관련 회귀를 사용하며 HWP/HWPX·실제 모델/인증·독립 품질/수업은 미검증이다.

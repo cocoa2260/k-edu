@@ -10,6 +10,14 @@ from xml.sax.saxutils import escape
 from app.report_spec import fingerprint
 
 
+def format_location(locator):
+    if locator['kind']=='pdf_region':return '물리 페이지 '+str(locator['page'])+' 영역 '+', '.join(f'{x:.2f}' for x in locator['bbox'])+' point'
+    if locator['kind']=='text_line':return '원본 줄 '+str(locator['line'])
+    if locator['kind']=='docx_paragraph':return 'DOCX 본문 블록 '+str(locator['body_block'])+' 문단'
+    if locator['kind']=='docx_cell':return 'DOCX 표 '+str(locator['table'])+' 행 '+str(locator['row'])+' 열 '+str(locator['column'])
+    raise ValueError('Unsupported citation locator')
+
+
 def paragraphs(spec):
     yield '합성 문서 근거 검토 시연'
     yield spec['title']
@@ -20,7 +28,7 @@ def paragraphs(spec):
         for n,source in enumerate(claim['citations'],1):
             yield '근거 '+str(n)+' '+source['quote']
             locator=source['locator']
-            position=('물리 페이지 '+str(locator['page'])+' 영역 '+', '.join(f'{x:.2f}' for x in locator['bbox'])+' point') if locator['kind']=='pdf_region' else '원본 줄 '+str(locator['line'])
+            position=format_location(locator)
             yield source['doc']+' 내부 버전 '+str(source['version'])+' '+position
             yield '원본 SHA256 '+source['source_sha256']
     yield '검토와 출력의 범위'
@@ -46,6 +54,12 @@ def write_docx(spec,path):
     doc.styles['Normal'].font.size=Pt(11)
     doc.styles['Title'].font.size=Pt(21)
     doc.styles['Heading 1'].font.size=Pt(14)
+    # Explicit readable leading prevents font metrics from doubling line height.
+    for name in ('Normal','Title','Heading 1','Heading 2'):
+        style=doc.styles[name]
+        style.paragraph_format.line_spacing=Pt(26 if name=='Title' else 20 if name.startswith('Heading') else 16)
+        style.paragraph_format.space_before=Pt(9 if name.startswith('Heading') else 0)
+        style.paragraph_format.space_after=Pt(6)
     for n,text in enumerate(paragraphs(spec)):
         if n==0:doc.add_paragraph(text,'Title')
         elif n==1 or text.endswith('검토할 주장') or text=='검토와 출력의 범위':doc.add_paragraph(text,'Heading 1')

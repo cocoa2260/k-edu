@@ -1,0 +1,78 @@
+{
+  "schema": "l9-document-spec-v1",
+  "template": "kedu-evidence-report-v2",
+  "title": "세 형식의 문단과 표 근거 비교",
+  "generation": 12,
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "합성 PDF는 영수증을 함께 제출하라고 안내한다.",
+      "citations": [
+        {
+          "doc": "pdf",
+          "version": 1,
+          "title": "가상 pdf 정책",
+          "source_sha256": "01f0a3f4de1d0993f18d4c9e1f413ab9114244a946cf97518d90776583a1f866",
+          "parser": "l8-local-v1",
+          "element": "p1-b3",
+          "locator": {
+            "kind": "pdf_region",
+            "page": 1,
+            "bbox": [
+              42.0,
+              123.44000000000005,
+              459.0320000000001,
+              135.44000000000005
+            ],
+            "coordinates": "rendered_page_points_top_left_xyxy"
+          },
+          "quote": "영수증을 함께 제출"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "statement": "합성 텍스트는 신청 기한을 7일로 안내한다.",
+      "citations": [
+        {
+          "doc": "txt",
+          "version": 1,
+          "title": "가상 txt 정책",
+          "source_sha256": "5235e0892ac81586ec570654693ae0b781f9df6a1e15591831964f7aee1b1487",
+          "parser": "l9-utf8-v1",
+          "element": "line-2",
+          "locator": {
+            "kind": "text_line",
+            "line": 2
+          },
+          "quote": "신청 기한은 7일입니다."
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "statement": "합성 DOCX의 사용 이력 행 부담금은 15000원으로 표시돼 있다.",
+      "citations": [
+        {
+          "doc": "docx",
+          "version": 1,
+          "title": "가상 docx 정책",
+          "source_sha256": "06d05fd922f381ffbfdc141da94409ccb955021b3ec099516ae2b5a414235f83",
+          "parser": "l9-docx-simple-v1",
+          "element": "docx-b6-r3-c3",
+          "locator": {
+            "part": "word/document.xml",
+            "body_block": 6,
+            "kind": "docx_cell",
+            "table": 1,
+            "row": 3,
+            "column": 3
+          },
+          "quote": "15000원"
+        }
+      ]
+    }
+  ],
+  "semantic_validation": "requires_reviewer; citation presence is not entailment",
+  "review_mode": "trusted_local_fixture_not_authenticated_human"
+}

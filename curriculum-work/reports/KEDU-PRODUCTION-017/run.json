@@ -1,0 +1,17 @@
+{
+  "batch": "KEDU-PRODUCTION-017",
+  "status": "READY_TO_PUBLISH",
+  "parent": "189a54ee366f2ba20efc7147972b83c669e61c15",
+  "scope": [
+    "K2-14.U06",
+    "L9 three-format contract evaluation"
+  ],
+  "authored_units": 54,
+  "publication": null,
+  "release_status": "BLOCKED",
+  "attempts": [
+    "default nonvisible custom XML metadata initially rejected; separated from unsupported body content",
+    "renderer font path reset; pinned workspace font configuration",
+    "explicit Word leading/spacing; final input and both report outputs visually checked"
+  ]
+}

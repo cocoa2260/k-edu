@@ -1,0 +1,25 @@
+{
+  "id": "KEDU-PRODUCTION-017",
+  "scope": [
+    "K2-14.U06",
+    "L9 three-format contract evaluation"
+  ],
+  "recommended_reasoning_effort": "high",
+  "protected": [
+    "academy",
+    "prior reports and prior data fixtures",
+    "existing web/Provider/Router/React/model/training data"
+  ],
+  "authorized_changes": [
+    "Registry DOCX format",
+    "ReportSpec template v2",
+    "DOCX locator and Word spacing in exporter",
+    "old Office-unsupported test updated to HWP/HWPX"
+  ],
+  "constraints": [
+    "narrow explicit DOCX subset",
+    "no paid/model API",
+    "actual output and visual checks",
+    "no general-document quality or classroom/release acceptance claim"
+  ]
+}

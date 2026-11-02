@@ -1,0 +1,70 @@
+{
+  "batch": "KEDU-PRODUCTION-017",
+  "authored_units": 54,
+  "total_units": 70,
+  "remaining_material_units": 16,
+  "review": "same_session_fixture_not_independent",
+  "new_docx_tests": 23,
+  "regression_tests": 88,
+  "total_tests": 111,
+  "unchanged_react_browser_ml_ocr_tests_rerun": false,
+  "real_model_calls": 0,
+  "formats": [
+    "pdf digital",
+    "txt utf8",
+    "docx simple body/unmerged table"
+  ],
+  "source_table_cells_exact": {
+    "pdf": 9,
+    "docx": 9
+  },
+  "hwpx_hwp_supported": false,
+  "release_accepted": false,
+  "quality_accepted": false,
+  "classroom_trial": "not_run",
+  "visual_qa": {
+    "input_docx_pages": 1,
+    "output_docx_pages": 1,
+    "output_pdf_pages": 1,
+    "all_final_pages_opened": true,
+    "font": "workspace FONTCONFIG_FILE + Noto Sans KR",
+    "assessment": "Korean glyphs/table/locators legible; no unintended overflow; Word spacing corrected"
+  },
+  "text_check": {
+    "direct_pdf": {
+      "pages": 1,
+      "all_paragraphs_found": true,
+      "paragraphs": 21
+    },
+    "docx_render": {
+      "pages": 1,
+      "all_paragraphs_found": true,
+      "paragraphs": 21
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "python-docx": "1.2.0",
+      "reportlab": "4.4.9",
+      "pdfplumber": "0.11.9",
+      "pypdf": "6.10.0"
+    }
+  },
+  "source_sha256": {
+    "curriculum-work/practice/document-assistant/backend/app/docx_ingest.py": "02549c70d58223ee455684e0fb052d106b9ce10121635db84f52facdaaf4e0d7",
+    "curriculum-work/practice/document-assistant/backend/app/document_registry.py": "ae09aac3393318ba48be3c4d8d6d6cc6eb0817bcaebfaaa1731b7c59b3d9f427",
+    "curriculum-work/practice/document-assistant/backend/app/report_spec.py": "89771f2eead32d15ee7fdd200074c13ad49f335d59fa68f60897738695c9bbbd",
+    "curriculum-work/practice/document-assistant/backend/tools/report_export.py": "469808d6e6927004f2e5fa4117b043ef75f75e440dfa0f3097d2fa8bb77849a8",
+    "curriculum-work/practice/document-assistant/backend/tools/multiformat_specimen.py": "b7a63a8ba720d30cc5c2ec77bd3a83c185b2fdade80581b3406779ff17bf38a7",
+    "curriculum-work/practice/document-assistant/backend/tools/multiformat_lab.py": "ae9dca6d660a080c30bc7f938c7d60763562787426aae5e7a84f942fd7aff354",
+    "curriculum-work/practice/document-assistant/backend/multiformat_tests/test_docx.py": "c555dfcf0340443d74be30980d50a1a3b0de914e443f88375cd8d91074a07518",
+    "curriculum-work/practice/document-assistant/backend/registry_tests/test_registry.py": "f0b0cd53f46353e56967ca68450eeaf07ac41f3c87877e2b5bbbaee5df52781b"
+  },
+  "artifact_sha256": {
+    "curriculum-work/practice/document-assistant/backend/data/multiformat-v1/policy.txt": "5235e0892ac81586ec570654693ae0b781f9df6a1e15591831964f7aee1b1487",
+    "curriculum-work/practice/document-assistant/backend/data/multiformat-v1/policy.docx": "06d05fd922f381ffbfdc141da94409ccb955021b3ec099516ae2b5a414235f83",
+    "curriculum-work/practice/document-assistant/backend/data/multiformat-v1/output/evidence-report.docx": "2674433f5133f777a2b5fe46696e073079538fdcf8bb01df19a5120e36a0e51c",
+    "curriculum-work/practice/document-assistant/backend/data/multiformat-v1/output/evidence-report.pdf": "2bc37b5f6f38023f7f1b24ab001026959959db400bde9be8ad56d372f9aa73fa"
+  }
+}

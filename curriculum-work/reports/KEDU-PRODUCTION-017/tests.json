@@ -1,0 +1,9 @@
+{
+  "new_docx_tests": 23,
+  "registry_report_router_stream_regression": 88,
+  "total": 111,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 3.450443,
+  "scope": "unittest multiformat_tests, registry_tests, report_tests, router_tests, stream_tests; old web/ML/L8 and unchanged React browser suites not rerun"
+}

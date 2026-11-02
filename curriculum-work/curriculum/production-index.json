@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-016",
+  "current_batch": "KEDU-PRODUCTION-017",
   "units": [
     {
       "id": "K2-00.U01",
@@ -808,12 +808,13 @@
       "id": "K2-14.U06",
       "course": "K2-14",
       "title": "다중 형식 확장과 최종 평가",
-      "batch": null,
-      "material_status": "not_started",
-      "material_path": null,
-      "review_status": "not_reviewed",
-      "runtime_status": "not_assessed",
-      "classroom_trial": "not_run"
+      "batch": "KEDU-PRODUCTION-017",
+      "material_status": "authored",
+      "material_path": "curriculum-work/lessons/document-ai/evaluation.md",
+      "review_status": "same_session_reviewed",
+      "runtime_status": "pdf_txt_docx_synthetic_contracts_verified_release_quality_not_accepted",
+      "classroom_trial": "not_run",
+      "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-017/validation.json"
     }
   ],
   "entry_guide": {
@@ -825,15 +826,16 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-017",
+    "id": "KEDU-PRODUCTION-018",
     "proposed_scope": [
-      "K2-14.U06",
-      "L9 multi-format and final evaluation"
+      "K2-00.U01",
+      "K2-00.U02",
+      "K2-00.U03"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "L9_REACT_SSE_LOOPBACK_AND_BROWSER_VERIFIED_REAL_MODEL_STREAMING_PENDING",
+  "batch_status": "L9_THREE_FORMAT_CONTRACTS_VERIFIED_RELEASE_AND_CLASSROOM_BLOCKED",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -904,14 +906,16 @@
       "quality_accepted": false
     },
     "L9": {
-      "status": "PARTIAL_IR_REPORT_PROVIDER_REACT_SSE_FIXTURE_VERIFIED",
+      "status": "SYNTHETIC_CONTRACT_EVALUATION_COMPLETE_RELEASE_BLOCKED",
       "path": "curriculum-work/practice/document-assistant/milestones/L9.json",
       "generation_verified": false,
       "quality_accepted": false,
       "report_verified": true,
       "web_ui_verified": true,
       "provider_control_verified": true,
-      "real_model_streaming_verified": false
+      "real_model_streaming_verified": false,
+      "three_formats_verified": true,
+      "release_accepted": false
     }
   }
 }

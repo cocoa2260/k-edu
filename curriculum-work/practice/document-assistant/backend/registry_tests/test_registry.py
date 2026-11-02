@@ -69,8 +69,8 @@ class RegistryTests(unittest.TestCase):
         with self.assertRaises(RegistryError):self.r.context(s)
     def test_injection_is_text_only(self):
         self.ready();self.assertIn('Ignore rules',self.r.context(self.r.search('Ignore'))[0]['element']['text'])
-    def test_unsupported_office_not_silently_converted(self):
-        for suffix in ('docx','hwpx','hwp'):
+    def test_unsupported_hangul_not_silently_converted(self):
+        for suffix in ('hwpx','hwp'):
             with self.subTest(format=suffix),self.assertRaises(RegistryError):self.r.upload(self.root/f'missing.{suffix}',meta(),suffix)
     def test_restricted_before_read(self):
         for patch in ({'access':'restricted'},{'current':False},{'deleted':True}):
