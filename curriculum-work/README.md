@@ -1,8 +1,8 @@
 # K-Edu 교육과정 개편 — 현재 위치와 읽을 파일
 
-**현재: Embedding 네 단원과 연결 실습을 수정·재검수했다. Prompt·Context·Harness를 포함해 동일 작성자의 설명 검수를 마친 범위는 17개 단원이다. 나머지 53개 단원 정비와 실제 모델 품질·독립 수업 검증은 남아 있다. 70/70은 파일 작성 수다.**
+**현재: Index 운영 네 단원과 연결 실습을 수정·재검수했다. Prompt·Context·Harness·Embedding을 포함해 동일 작성자의 설명 검수를 마친 범위는 21개 단원이다. 나머지 49개 단원 정비와 실제 모델 품질·독립 수업 검증은 남아 있다. 70/70은 파일 작성 수다.**
 
-[수정한 Embedding 강의](lessons/embedding/lesson.md) · [연결 실습](practice/document-assistant/L3.md#embedding-활동) · [이번 수정·검증 범위](reports/KEDU-TEACHING-REPAIR-006/RESULT.md)
+[수정한 Index 강의](lessons/vector-index/lesson.md) · [연결 실습](practice/document-assistant/L3.md#index-활동) · [이번 수정·검증 범위](reports/KEDU-TEACHING-REPAIR-007/RESULT.md)
 
 ## 전체 구성안
 
@@ -18,7 +18,7 @@
 | 2 | 결과를 보고 분석 방식 보완 | 완료 |
 | 3 | 전체 강의 비교·분석 | 결과 보존 |
 | 4 | 전체 목차·누적 실습 구성 결정 | v0.3을 첫 제작 묶음의 기준으로 사용 |
-| 5 | 확정한 강의·실습 제작 및 검증 | 70개 초안 검사·Prompt/Context/Harness/Embedding 17개 수정. 나머지 정비·모델 품질/수업 검증 필요 |
+| 5 | 확정한 강의·실습 제작 및 검증 | 70개 초안 검사·Prompt/Context/Harness/Embedding/Index 21개 수정. 나머지 정비·모델 품질/수업 검증 필요 |
 
 구성안은 과목명·배치·범위의 추천이다. 기존 academy 원문·파일명은 유지한다. 시작 안내는 업무 정의·책임·기술 분류를 다루는 교육생용 강의다. 제작 순서와 수강 순서는 다르며 수강은 K2-00부터 시작한다. 새 강의와 누적 앱 L0~L9의 자료·검색·로컬 생성·도구 Runtime·LoRA 실험·PDF/OCR 실습을 작성했다. RAG 답변 품질은 채택 보류이며 전체 Train을 포함한 제한된 Step 학습과 회귀를 실행했으며 품질 채택은 남아 있다. 실제 모델·훈련·교육장 성능은 검증 게이트를 둔 후속 작업이다.
 

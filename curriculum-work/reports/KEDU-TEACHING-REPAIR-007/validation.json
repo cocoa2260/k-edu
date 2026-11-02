@@ -1,0 +1,920 @@
+{
+  "schema_version": "teaching-revision-v1",
+  "batch": "KEDU-TEACHING-REPAIR-007",
+  "date": "2026-11-02",
+  "repository": "cocoa2260/k-edu",
+  "branch": "work/curriculum-production-001",
+  "source_commit": "b965ffe12f6d70ce617be546102b3cdf61a91d68",
+  "criteria": "curriculum-work/loop/prompts.md",
+  "reviewer": "same_author_not_independent",
+  "scope": {
+    "units": [
+      "K2-08.U01",
+      "K2-08.U02",
+      "K2-08.U03",
+      "K2-08.U04"
+    ],
+    "practice": "curriculum-work/practice/document-assistant/L3.md Index/ANN sections and added submission guidance",
+    "other_unit_revisions": 0
+  },
+  "source_versions": {
+    "curriculum-work/lessons/vector-index/lesson.md": "e13461b01d67dbcf08a09f172f80d241e04b2946",
+    "curriculum-work/practice/document-assistant/L3.md": "2456d2b3250fe368c755221932d61bb62d85135b",
+    "curriculum-work/practice/document-assistant/backend/README.md": "f56c7c7f9cc2d5d3744972bfa3bf58437cac738b",
+    "curriculum-work/README.md": "d715c79e37cbc6eb30e788fa02fc3d636ec60cb6",
+    "curriculum-work/PROGRESS.md": "32bf6696e37f51237c880ca30536ef1565c2fcd8",
+    "curriculum-work/curriculum/production-index.json": "5708292b7b389d55c69df880e3234c8c58de51c4",
+    "curriculum-work/loop/prompts.md": "1a7fc88795b737413817bd7425f61ad97d5cf665",
+    "curriculum-work/lessons/embedding/lesson.md": "2bbe1493a647c038bc7d85c3ff159d915e2cdb13",
+    "curriculum-work/lessons/embedding/teacher-guide.md": "188baaf17dc761e6b6c170705e051939fd569065",
+    "curriculum-work/practice/document-assistant/backend/tools/embedding_steps.py": "312a2843db1657eeb57f1f6f772f900651fe38af",
+    "curriculum-work/practice/document-assistant/backend/retrieval/index.py": "f9cfedbbf19eb76fd2f3d5933b81f35db28a5408",
+    "curriculum-work/practice/document-assistant/backend/retrieval/encoder.py": "34bc2b95299afa6d571c41e76b5a8d1f527d3b52",
+    "curriculum-work/practice/document-assistant/backend/tools/retrieval_lab.py": "3c2ba0af7c320fd5bbfac5a76f3780d58b3fe01e",
+    "curriculum-work/practice/document-assistant/backend/tools/ann_lab.py": "017b8bb8289fff2a04f388a63fa1cadc3ec8fda2",
+    "curriculum-work/practice/document-assistant/data/core-v1.json": "95f5827bd876f8b5109aca7cdf41953dd24c98f6",
+    "curriculum-work/practice/document-assistant/data/documents-v1.json": "25d0553f26321434a9a8c7f386261505bca2fda3",
+    "curriculum-work/practice/document-assistant/data/retrieval-v1.json": "0127d97def42f73a4d6a37a10c325ca2c885c41c",
+    "curriculum-work/reports/KEDU-PRODUCTION-005/ann-observed.json": "82737c3afd854f54a108bf218e5a996ba87d7b19",
+    "curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json": "17ddc8867a98a41248b18df9eacbaee8f094abd1",
+    "curriculum-work/practice/document-assistant/backend/tests/test_retrieval.py": "8ff9110a5f102c4fd2f9a2ba145927b7b7bb87d0"
+  },
+  "explanation_review": [
+    {
+      "criterion": "학습 맥락·선수 연결",
+      "verdict": "설명 검수 통과",
+      "evidence": "식비 검색 뒤 원문/버전 질문으로 시작해 Embedding 표현에서 저장·탐색·변경으로 연결"
+    },
+    {
+      "criterion": "개념의 최초 설명",
+      "verdict": "설명 검수 통과",
+      "evidence": "1장 본문/벡터/Metadata·실제 테이블;2장 Exact/ANN 분모;3장 그래프/구역의 선택과 누락;4장 필터/변경/재구축"
+    },
+    {
+      "criterion": "풀어쓴 예제",
+      "verdict": "설명 검수 통과",
+      "evidence": "실제 C01 JSON과 원문/전체해시, 다섯 점 거리순위, A/B막힘·E경로·윗층연결, U/V거리와 C누락, SQLite 시간순 상태"
+    },
+    {
+      "criterion": "실습 연결",
+      "verdict": "설명 검수 통과",
+      "evidence": "다섯 Index 활동과 선택 FAISS 활동의 시작위치·근거종류·정확한 명령·관찰/해석·오류 확인"
+    },
+    {
+      "criterion": "설명/자료 일치",
+      "verdict": "설명 검수 통과",
+      "evidence": "두 전체 코드 실행·JSON8필드/실제 발췌 일치, 현재 SQLite 경계·가상계산·과거 E5/FAISS 읽기, 이전 원본/Embedding 보존"
+    },
+    {
+      "criterion": "개념별 질문/해설",
+      "verdict": "설명 검수 통과",
+      "evidence": "네 장별3문항/총12문항의 판정 이유와 활동별 충분/보완 근거를 강사 해설에 연결"
+    },
+    {
+      "criterion": "학생/관리 구분",
+      "verdict": "설명 검수 통과",
+      "evidence": "자연어 제목·상황을 우선하고 실제 ID/필드/파일에 의미 설명;K2단원은 교사용 매핑"
+    },
+    {
+      "criterion": "근거 수준·기술 정확성",
+      "verdict": "설명 검수 통과",
+      "evidence": "가상/현재고정벡터SQLite/과거실제E5·FAISS/새실행 구분, 첫질의/전체평균·의미품질·삭제/재구축/안전삭제·자체/수업을 구분"
+    }
+  ],
+  "execution": {
+    "python": "3.12.14",
+    "checks": "passed",
+    "toy": {
+      "evidence_kind": "toy_L2_graph_and_cells_not_HNSW_or_FAISS",
+      "query": [
+        0,
+        0
+      ],
+      "points": {
+        "A": [
+          4,
+          0
+        ],
+        "B": [
+          3,
+          0
+        ],
+        "C": [
+          0,
+          1
+        ],
+        "D": [
+          2,
+          2
+        ],
+        "E": [
+          6,
+          0
+        ]
+      },
+      "distances": {
+        "A": 4.0,
+        "B": 3.0,
+        "C": 1.0,
+        "D": 2.8284271247461903,
+        "E": 6.0
+      },
+      "exact_order": [
+        "C",
+        "D",
+        "B",
+        "A",
+        "E"
+      ],
+      "graph": {
+        "A": [
+          "B",
+          "E"
+        ],
+        "B": [
+          "A"
+        ],
+        "E": [
+          "A",
+          "D"
+        ],
+        "D": [
+          "E",
+          "C"
+        ],
+        "C": [
+          "D"
+        ]
+      },
+      "greedy_path": [
+        "A",
+        "B"
+      ],
+      "frontier_expansion_order": [
+        "A",
+        "B",
+        "E",
+        "D",
+        "C"
+      ],
+      "upper_greedy_path": [
+        "A",
+        "D"
+      ],
+      "lower_path_from_D": [
+        "D",
+        "C"
+      ],
+      "centers": {
+        "U": [
+          3,
+          0
+        ],
+        "V": [
+          0,
+          4
+        ]
+      },
+      "cells": {
+        "U": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ],
+        "V": [
+          "C"
+        ]
+      },
+      "ivf": [
+        {
+          "probed_cells": [
+            "U"
+          ],
+          "candidates": [
+            "A",
+            "B",
+            "D",
+            "E"
+          ],
+          "top2": [
+            "D",
+            "B"
+          ],
+          "recall_vs_exact_top2": 0.5
+        },
+        {
+          "probed_cells": [
+            "U",
+            "V"
+          ],
+          "candidates": [
+            "A",
+            "B",
+            "D",
+            "E",
+            "C"
+          ],
+          "top2": [
+            "C",
+            "D"
+          ],
+          "recall_vs_exact_top2": 1.0
+        }
+      ]
+    },
+    "lifecycle": {
+      "evidence_kind": "current_sqlite_lifecycle_with_nonsemantic_fixed_vectors",
+      "model_inference_calls": 0,
+      "original_source_unchanged": true,
+      "manifest_before": {
+        "profile": {
+          "model_id": "index-teaching-nonsemantic-fixture",
+          "revision": "v1",
+          "dimension": 2,
+          "normalized": true,
+          "max_tokens": 512
+        },
+        "profile_sha256": "d84edf157e628b907680459d7d0ef07406e981d39a660b63b83a7a0c52f78fef",
+        "generation": 6,
+        "chunk_policy": "nonempty_line_v1_no_overlap",
+        "documents": [
+          {
+            "id": "DOC-A",
+            "version": "v1",
+            "access": "staff",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "0604aeacf48c57829a2873dcdd8d3dac963aa089e0f9b5f6cb0fd1f6de4728f7"
+          },
+          {
+            "id": "DOC-A-OLD",
+            "version": "v0",
+            "access": "staff",
+            "current": 0,
+            "deleted": 0,
+            "content_sha": "be0a83924444107fab3aaef4c9a15fdf5c71517621b19e82ba1fbeec4d696df7"
+          },
+          {
+            "id": "DOC-B",
+            "version": "v1",
+            "access": "staff",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "45af326d5caffd4d29529a83bf08825a57e37e9d1a15e345819264d8538409da"
+          },
+          {
+            "id": "DOC-I",
+            "version": "v1",
+            "access": "staff",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "c6f7866356e7b0494c81e31ca039634fef16b2a1b2db226effe625d7d0b20b2b"
+          },
+          {
+            "id": "DOC-R",
+            "version": "v1",
+            "access": "restricted",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "86408ee7430ce4a00c49efb401fae773804d34b13f5f4f645006a81b76c5b1f4"
+          },
+          {
+            "id": "DOC-T",
+            "version": "v1",
+            "access": "staff",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "22845a9921cbf5e736bad4c6fd46cdd25eab8eedfe39e7222f8dea9c80c34ce7"
+          }
+        ],
+        "total_chunks": 11
+      },
+      "eligible_before": 9,
+      "permitted_document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "selected_before": {
+        "method": "dense",
+        "k": 10,
+        "query_sha256": "f187b6768493b28e2325a1e1e5c9e9e6f9315acf5ec37344ea772e2133607c71",
+        "generation": 6,
+        "profile_sha256": "d84edf157e628b907680459d7d0ef07406e981d39a660b63b83a7a0c52f78fef",
+        "eligible_chunks": 2,
+        "hits": [
+          {
+            "chunk_id": "DOC-A@v1:L1",
+            "doc_id": "DOC-A",
+            "version": "v1",
+            "line": 1,
+            "text": "1. 사전 승인을 받은 국내 당일 출장의 식비 상한은 30000원이다. 영수증이 필요하며 식사가 제공되면 식비를 지급하지 않는다.",
+            "content_sha": "0604aeacf48c57829a2873dcdd8d3dac963aa089e0f9b5f6cb0fd1f6de4728f7",
+            "score": 1.0,
+            "origin_path": "data/documents-v1.json",
+            "source_locator": "sqlite:documents/DOC-A@v1:L1"
+          },
+          {
+            "chunk_id": "DOC-A@v1:L2",
+            "doc_id": "DOC-A",
+            "version": "v1",
+            "line": 2,
+            "text": "2. 교통비는 승인된 대중교통 영수증의 실비를 지급한다. 숙박·해외 출장 기준은 이 문서에 없다.",
+            "content_sha": "0604aeacf48c57829a2873dcdd8d3dac963aa089e0f9b5f6cb0fd1f6de4728f7",
+            "score": 1.0,
+            "origin_path": "data/documents-v1.json",
+            "source_locator": "sqlite:documents/DOC-A@v1:L2"
+          }
+        ],
+        "actor": "staff_teaching_fixture_not_authentication"
+      },
+      "context_before": [
+        {
+          "doc_id": "DOC-A",
+          "version": "v1",
+          "line": 1,
+          "text": "1. 사전 승인을 받은 국내 당일 출장의 식비 상한은 30000원이다. 영수증이 필요하며 식사가 제공되면 식비를 지급하지 않는다.",
+          "origin_path": "data/documents-v1.json",
+          "source_locator": "sqlite:documents/DOC-A@v1:L1"
+        },
+        {
+          "doc_id": "DOC-A",
+          "version": "v1",
+          "line": 2,
+          "text": "2. 교통비는 승인된 대중교통 영수증의 실비를 지급한다. 숙박·해외 출장 기준은 이 문서에 없다.",
+          "origin_path": "data/documents-v1.json",
+          "source_locator": "sqlite:documents/DOC-A@v1:L2"
+        }
+      ],
+      "context_after_text_forgery": [
+        {
+          "doc_id": "DOC-A",
+          "version": "v1",
+          "line": 1,
+          "text": "1. 사전 승인을 받은 국내 당일 출장의 식비 상한은 30000원이다. 영수증이 필요하며 식사가 제공되면 식비를 지급하지 않는다.",
+          "origin_path": "data/documents-v1.json",
+          "source_locator": "sqlite:documents/DOC-A@v1:L1"
+        },
+        {
+          "doc_id": "DOC-A",
+          "version": "v1",
+          "line": 2,
+          "text": "2. 교통비는 승인된 대중교통 영수증의 실비를 지급한다. 숙박·해외 출장 기준은 이 문서에 없다.",
+          "origin_path": "data/documents-v1.json",
+          "source_locator": "sqlite:documents/DOC-A@v1:L2"
+        }
+      ],
+      "stale_after_update_rejected": true,
+      "manifest_after_update": {
+        "profile": {
+          "model_id": "index-teaching-nonsemantic-fixture",
+          "revision": "v1",
+          "dimension": 2,
+          "normalized": true,
+          "max_tokens": 512
+        },
+        "profile_sha256": "d84edf157e628b907680459d7d0ef07406e981d39a660b63b83a7a0c52f78fef",
+        "generation": 7,
+        "chunk_policy": "nonempty_line_v1_no_overlap",
+        "documents": [
+          {
+            "id": "DOC-A",
+            "version": "v2-teaching-override",
+            "access": "staff",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "58f45f3b54b09de686014e806290da4a84c03ffcab660c1b699254ab1aa06cf8"
+          },
+          {
+            "id": "DOC-A-OLD",
+            "version": "v0",
+            "access": "staff",
+            "current": 0,
+            "deleted": 0,
+            "content_sha": "be0a83924444107fab3aaef4c9a15fdf5c71517621b19e82ba1fbeec4d696df7"
+          },
+          {
+            "id": "DOC-B",
+            "version": "v1",
+            "access": "staff",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "45af326d5caffd4d29529a83bf08825a57e37e9d1a15e345819264d8538409da"
+          },
+          {
+            "id": "DOC-I",
+            "version": "v1",
+            "access": "staff",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "c6f7866356e7b0494c81e31ca039634fef16b2a1b2db226effe625d7d0b20b2b"
+          },
+          {
+            "id": "DOC-R",
+            "version": "v1",
+            "access": "restricted",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "86408ee7430ce4a00c49efb401fae773804d34b13f5f4f645006a81b76c5b1f4"
+          },
+          {
+            "id": "DOC-T",
+            "version": "v1",
+            "access": "staff",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "22845a9921cbf5e736bad4c6fd46cdd25eab8eedfe39e7222f8dea9c80c34ce7"
+          }
+        ],
+        "total_chunks": 10
+      },
+      "selected_after_update": {
+        "method": "dense",
+        "k": 10,
+        "query_sha256": "f187b6768493b28e2325a1e1e5c9e9e6f9315acf5ec37344ea772e2133607c71",
+        "generation": 7,
+        "profile_sha256": "d84edf157e628b907680459d7d0ef07406e981d39a660b63b83a7a0c52f78fef",
+        "eligible_chunks": 1,
+        "hits": [
+          {
+            "chunk_id": "DOC-A@v2-teaching-override:L1",
+            "doc_id": "DOC-A",
+            "version": "v2-teaching-override",
+            "line": 1,
+            "text": "1. 갱신 시험용 가상 국내 당일 출장 식비 상한은 35000원이다. 사전 승인·영수증이 필요하다.",
+            "content_sha": "58f45f3b54b09de686014e806290da4a84c03ffcab660c1b699254ab1aa06cf8",
+            "score": 1.0,
+            "origin_path": "data/documents-v1.json",
+            "source_locator": "sqlite:documents/DOC-A@v2-teaching-override:L1"
+          }
+        ],
+        "actor": "staff_teaching_fixture_not_authentication"
+      },
+      "context_after_update": [
+        {
+          "doc_id": "DOC-A",
+          "version": "v2-teaching-override",
+          "line": 1,
+          "text": "1. 갱신 시험용 가상 국내 당일 출장 식비 상한은 35000원이다. 사전 승인·영수증이 필요하다.",
+          "origin_path": "data/documents-v1.json",
+          "source_locator": "sqlite:documents/DOC-A@v2-teaching-override:L1"
+        }
+      ],
+      "stale_after_delete_rejected": true,
+      "manifest_after_delete": {
+        "profile": {
+          "model_id": "index-teaching-nonsemantic-fixture",
+          "revision": "v1",
+          "dimension": 2,
+          "normalized": true,
+          "max_tokens": 512
+        },
+        "profile_sha256": "d84edf157e628b907680459d7d0ef07406e981d39a660b63b83a7a0c52f78fef",
+        "generation": 8,
+        "chunk_policy": "nonempty_line_v1_no_overlap",
+        "documents": [
+          {
+            "id": "DOC-A",
+            "version": "v2-teaching-override",
+            "access": "staff",
+            "current": 1,
+            "deleted": 1,
+            "content_sha": ""
+          },
+          {
+            "id": "DOC-A-OLD",
+            "version": "v0",
+            "access": "staff",
+            "current": 0,
+            "deleted": 0,
+            "content_sha": "be0a83924444107fab3aaef4c9a15fdf5c71517621b19e82ba1fbeec4d696df7"
+          },
+          {
+            "id": "DOC-B",
+            "version": "v1",
+            "access": "staff",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "45af326d5caffd4d29529a83bf08825a57e37e9d1a15e345819264d8538409da"
+          },
+          {
+            "id": "DOC-I",
+            "version": "v1",
+            "access": "staff",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "c6f7866356e7b0494c81e31ca039634fef16b2a1b2db226effe625d7d0b20b2b"
+          },
+          {
+            "id": "DOC-R",
+            "version": "v1",
+            "access": "restricted",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "86408ee7430ce4a00c49efb401fae773804d34b13f5f4f645006a81b76c5b1f4"
+          },
+          {
+            "id": "DOC-T",
+            "version": "v1",
+            "access": "staff",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "22845a9921cbf5e736bad4c6fd46cdd25eab8eedfe39e7222f8dea9c80c34ce7"
+          }
+        ],
+        "total_chunks": 9
+      },
+      "after_delete_document_ids": [
+        "DOC-B",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "tombstone": {
+        "id": "DOC-A",
+        "version": "v2-teaching-override",
+        "access": "staff",
+        "current": 1,
+        "deleted": 1,
+        "title": "",
+        "text": "",
+        "content_sha": ""
+      },
+      "remaining_DOC_A_vectors": 0,
+      "profile_mismatch_rejected": true,
+      "rebuild_manifest": {
+        "profile": {
+          "model_id": "index-teaching-nonsemantic-fixture",
+          "revision": "v1",
+          "dimension": 2,
+          "normalized": true,
+          "max_tokens": 128
+        },
+        "profile_sha256": "f80bdc90a8ea6ee89a802a4d281d30f28452bbdcff4339db14a209736a308397",
+        "generation": 6,
+        "chunk_policy": "nonempty_line_v1_no_overlap",
+        "documents": [
+          {
+            "id": "DOC-A",
+            "version": "v1",
+            "access": "staff",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "0604aeacf48c57829a2873dcdd8d3dac963aa089e0f9b5f6cb0fd1f6de4728f7"
+          },
+          {
+            "id": "DOC-A-OLD",
+            "version": "v0",
+            "access": "staff",
+            "current": 0,
+            "deleted": 0,
+            "content_sha": "be0a83924444107fab3aaef4c9a15fdf5c71517621b19e82ba1fbeec4d696df7"
+          },
+          {
+            "id": "DOC-B",
+            "version": "v1",
+            "access": "staff",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "45af326d5caffd4d29529a83bf08825a57e37e9d1a15e345819264d8538409da"
+          },
+          {
+            "id": "DOC-I",
+            "version": "v1",
+            "access": "staff",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "c6f7866356e7b0494c81e31ca039634fef16b2a1b2db226effe625d7d0b20b2b"
+          },
+          {
+            "id": "DOC-R",
+            "version": "v1",
+            "access": "restricted",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "86408ee7430ce4a00c49efb401fae773804d34b13f5f4f645006a81b76c5b1f4"
+          },
+          {
+            "id": "DOC-T",
+            "version": "v1",
+            "access": "staff",
+            "current": 1,
+            "deleted": 0,
+            "content_sha": "22845a9921cbf5e736bad4c6fd46cdd25eab8eedfe39e7222f8dea9c80c34ce7"
+          }
+        ],
+        "total_chunks": 11
+      },
+      "rebuilt_context": [
+        {
+          "doc_id": "DOC-A",
+          "version": "v1",
+          "line": 1,
+          "text": "1. 사전 승인을 받은 국내 당일 출장의 식비 상한은 30000원이다. 영수증이 필요하며 식사가 제공되면 식비를 지급하지 않는다.",
+          "origin_path": "data/documents-v1.json",
+          "source_locator": "sqlite:documents/DOC-A@v1:L1"
+        },
+        {
+          "doc_id": "DOC-A",
+          "version": "v1",
+          "line": 2,
+          "text": "2. 교통비는 승인된 대중교통 영수증의 실비를 지급한다. 숙박·해외 출장 기준은 이 문서에 없다.",
+          "origin_path": "data/documents-v1.json",
+          "source_locator": "sqlite:documents/DOC-A@v1:L2"
+        }
+      ],
+      "note": "Temporary SQLite removed after observation. Fixed vectors do not test relevance or E5; rebuild restores original v1 data."
+    },
+    "saved_ann_observations": {
+      "evidence_kind": "reading_saved_FAISS_results_not_rerunning_FAISS",
+      "source": "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/ann-observed.json",
+      "vectors": 4096,
+      "dimension": 32,
+      "queries": 128,
+      "k": 10,
+      "timing": "warm search; median of 5 batches; excludes encoding/training/build",
+      "semantic_quality": null,
+      "rows": [
+        {
+          "index": "exact",
+          "efSearch": null,
+          "nprobe": null,
+          "saved_mean_recall": 1.0,
+          "saved_median_batch_ms": 2.302398999745492,
+          "first_query_recall": 1.0,
+          "first_query_missing_ids": []
+        },
+        {
+          "index": "hnsw",
+          "efSearch": 8,
+          "nprobe": null,
+          "saved_mean_recall": 0.44921875,
+          "saved_median_batch_ms": 0.5076740008007619,
+          "first_query_recall": 0.6,
+          "first_query_missing_ids": [
+            312,
+            1049,
+            2524,
+            2750
+          ]
+        },
+        {
+          "index": "hnsw",
+          "efSearch": 64,
+          "nprobe": null,
+          "saved_mean_recall": 0.928125,
+          "saved_median_batch_ms": 3.074575999562512,
+          "first_query_recall": 1.0,
+          "first_query_missing_ids": []
+        },
+        {
+          "index": "ivf",
+          "efSearch": null,
+          "nprobe": 1,
+          "saved_mean_recall": 0.16640625,
+          "saved_median_batch_ms": 0.14913199993316084,
+          "first_query_recall": 0.2,
+          "first_query_missing_ids": [
+            312,
+            576,
+            1049,
+            2292,
+            2524,
+            2749,
+            2750,
+            3788
+          ]
+        },
+        {
+          "index": "ivf",
+          "efSearch": null,
+          "nprobe": 16,
+          "saved_mean_recall": 0.8171875,
+          "saved_median_batch_ms": 1.1246610001762747,
+          "first_query_recall": 0.8,
+          "first_query_missing_ids": [
+            576,
+            2524
+          ]
+        },
+        {
+          "index": "ivf",
+          "efSearch": null,
+          "nprobe": 64,
+          "saved_mean_recall": 1.0,
+          "saved_median_batch_ms": 3.867334000460687,
+          "first_query_recall": 1.0,
+          "first_query_missing_ids": []
+        }
+      ],
+      "note": "이 파일의 ID로 재계산한 것은 첫 질의의 교집합입니다. 전체 평균은 기존 128질의의 저장값입니다."
+    },
+    "original_fixed_sources_preserved": [
+      "curriculum-work/loop/prompts.md",
+      "curriculum-work/lessons/embedding/lesson.md",
+      "curriculum-work/lessons/embedding/teacher-guide.md",
+      "curriculum-work/practice/document-assistant/backend/tools/embedding_steps.py",
+      "curriculum-work/practice/document-assistant/backend/retrieval/index.py",
+      "curriculum-work/practice/document-assistant/backend/retrieval/encoder.py",
+      "curriculum-work/practice/document-assistant/backend/tools/retrieval_lab.py",
+      "curriculum-work/practice/document-assistant/backend/tools/ann_lab.py",
+      "curriculum-work/practice/document-assistant/data/core-v1.json",
+      "curriculum-work/practice/document-assistant/data/documents-v1.json",
+      "curriculum-work/practice/document-assistant/data/retrieval-v1.json",
+      "curriculum-work/reports/KEDU-PRODUCTION-005/ann-observed.json",
+      "curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json",
+      "curriculum-work/practice/document-assistant/backend/tests/test_retrieval.py"
+    ],
+    "embedding_prefix_preserved": true,
+    "cli": [
+      {
+        "args": [
+          "--toy"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "47899cfc5c32cc13ce3e56666cc6297aa19952e2cf9bf6e0369e4d45e6af84b3"
+      },
+      {
+        "args": [
+          "--lifecycle"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "dcfe2c51c3a744fab1fb4c624ab943a54cfe9ee8781582a04d7d13bfd96fa76e"
+      },
+      {
+        "args": [
+          "--ann-record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/ann-observed.json"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "31d79988400a699a1acfdd5c8ed53d9585aa3b68096f2a86e640c74f9f7a8497"
+      },
+      {
+        "args": [
+          "--stored-record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "7d5cf2f3668c3db350ab264427ee327a2bc2d2ee49244493a7dcd5f96379d823"
+      },
+      {
+        "args": [
+          "--toy",
+          "--output",
+          "/tmp/tmpyujmgala/toy.json"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "66c23f350baec95839b374d3118f9634608a03c7fdc92ad8dfd52232359cf0d1"
+      },
+      {
+        "args": [
+          "--toy",
+          "--output",
+          "/tmp/tmpyujmgala/toy.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--lifecycle",
+          "--output",
+          "/tmp/tmpyujmgala/lifecycle.json"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "af5929a184f6068e37d0fb864c90777220651f8a57206159e8f198780460df28"
+      },
+      {
+        "args": [
+          "--lifecycle",
+          "--output",
+          "/tmp/tmpyujmgala/lifecycle.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--toy",
+          "--lifecycle"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--ann-record",
+          "/tmp/tmpyujmgala/missing.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--stored-record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/ann-observed.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--ann-record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--ann-record",
+          "/tmp/tmpyujmgala/wrong.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--stored-record",
+          "/tmp/tmpyujmgala/malformed.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "args": [
+          "--ann-record",
+          "/tmp/tmpyujmgala/wrong.json"
+        ],
+        "exit_code": 2,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "new_runnable_blocks": [
+      "문서 DOC-A 버전 v1\n전체 본문 해시 0604aeacf48c57829a2873dcdd8d3dac963aa089e0f9b5f6cb0fd1f6de4728f7\n내부 줄 1 1. 사전 승인을 받은 국내 당일 출장의 식비 상한은 30000원이다. 영수증이 필요하며 식사가 제공되면 식비를 지급하지 않는다.\n내부 줄 2 2. 교통비는 승인된 대중교통 영수증의 실비를 지급한다. 숙박·해외 출장 기준은 이 문서에 없다.\n",
+      "manifest_before 변경 번호 6 조각 수 11\nmanifest_after_update 변경 번호 7 조각 수 10\nmanifest_after_delete 변경 번호 8 조각 수 9\n삭제 표식 1\n남은 출장 규정 벡터 0\n원본 파일 보존 True\n"
+    ],
+    "source_excerpt_matches": true,
+    "json_excerpt_matches": true,
+    "direct_boundaries": [
+      "manifest/existing profile independent",
+      "pre-ranking access/current/manifest exclusion",
+      "forged restricted chunk rejected",
+      "invalid new vector leaves original body/generation intact",
+      "any document mutation invalidates previous selection",
+      "update/delete/refetch/rebuild and deletion resurrection observed"
+    ],
+    "network_attempts": [],
+    "new_E5_inference_calls": 0,
+    "new_FAISS_runs": 0,
+    "full_pytest_suite_rerun": false,
+    "saved_E5_lifecycle_read": true,
+    "stored_ann_first_query_overlap_recalculated": true,
+    "stored_ann_128_query_average_recalculated": false
+  },
+  "limitations": [
+    "same-author explanation review; independent classroom not run",
+    "no new actual E5/Tokenizer/cache/FAISS/full pytest/HTTP/paid generation run",
+    "handmade graph/frontier not HNSW/FAISS implementation or observed internal trace",
+    "nonsemantic fixed-vector SQLite is not relevance quality or actual Token-limit validation",
+    "past FAISS record has only first-query neighbor IDs; aggregate recall not independently recalculated",
+    "no production authentication, concurrent/distributed consistency, safe disk/backup deletion or production workload validation"
+  ],
+  "progress": {
+    "revised_and_same_author_explanation_reviewed": 21,
+    "other_units_pending_revision": 49,
+    "classroom_acceptance": false
+  },
+  "next_batch": {
+    "id": "KEDU-TEACHING-REPAIR-008",
+    "proposed_scope": [
+      "Revise RAG four units and connected L4 practice",
+      "Explain one question through retrieval, Context, generation and claim/citation review; show rewrite/neighbors inputs and observed failures",
+      "Preserve existing search/generation code/data/evidence and previously repaired teaching; validate only affected scope"
+    ],
+    "status": "not_started",
+    "recommended_reasoning_effort": "high"
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "static_checks": {
+    "markdown_fences_balanced": true,
+    "student_internal_unit_ids_absent_in_prose": true,
+    "unit_status_counts": {
+      "needs_revision": 49,
+      "explanation_review_passed_same_author": 21
+    },
+    "historical_runtime_milestone_gate_fields_preserved": true,
+    "embedding_prefix_unchanged": true,
+    "relative_targets_to_verify": 75,
+    "relative_targets_checked": 75,
+    "all_relative_targets_exist": true
+  }
+}

@@ -56,6 +56,8 @@ POST /ai/prepare는 사례 ID와 조건으로 입력만 준비한다. 실제 생
 
 Embedding 수업의 계산·현재 분절·저장된 실제 검색 기록 읽기는 `python -m tools.embedding_steps --math`, `--lexical`, `--record <observed.json>`으로 진행한다. 이 도구는 모델을 실행하지 않는다. [학습 흐름과 실제 모델 재실행](../L3.md#embedding-활동)을 구분해 따른다. Manifest는 현재 설정의 독립 복사본을 반환한다. 과거 기록의 128/512 표시값·해시 불일치는 원본을 보존한 채 교안과 이번 보고서에 설명했다. 새 회귀 검사는 `python -m unittest discover -s embedding_tests -v`이며 기존 Pytest/모델 전체 검증을 대신하지 않는다.
 
+Index 수업은 `python -m tools.index_steps --toy`로 좌표/단순 탐색을 계산하고, `--lifecycle`로 고정 비의미 벡터를 넣은 실제 임시 SQLite 동작을 관찰한다. `--ann-record <json>`과 `--stored-record <json>`은 저장된 FAISS/E5 결과를 읽으며 모델을 새로 실행하지 않는다. 기본 출력은 요약이고 `--output <new.json>`은 전체 관찰을 새 파일에만 저장한다. [Index 활동](../L3.md#index-활동)에서 원문 추적·갱신/삭제·원본 재구축 후 복귀와 실제 실행 준비를 구분한다. 기존 Index와 인코더는 이번 수업 수정에서 변경하지 않았다.
+
 ## L4 확장
 
 [L4 안내](../L4.md)는 같은 L3 CPU 환경에서 Qwen3-0.6B 가중치를 추가해 실제 RAG를 실행한다. 기존 웹 API Factory는 자동 전환하지 않으며 HFCpuProvider는 CLI에서 명시적으로 주입한다. 공통 Harness에 입력 준비·출력 계약·검사기를 주입하는 선택 인자를 추가했고 기존 L2 동작은 유지한다.

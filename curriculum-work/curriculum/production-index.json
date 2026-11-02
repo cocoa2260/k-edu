@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-TEACHING-REPAIR-006",
+  "current_batch": "KEDU-TEACHING-REPAIR-007",
   "units": [
     {
       "id": "K2-00.U01",
@@ -485,7 +485,8 @@
       "runtime_status": "actual_cpu_embedding_and_index_verified",
       "classroom_trial": "not_run",
       "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json",
-      "teaching_audit_status": "needs_revision"
+      "teaching_audit_status": "explanation_review_passed_same_author",
+      "teaching_revision_batch": "KEDU-TEACHING-REPAIR-007"
     },
     {
       "id": "K2-08.U02",
@@ -498,7 +499,8 @@
       "runtime_status": "actual_faiss_synthetic_ann_verified_separate_from_text_corpus",
       "classroom_trial": "not_run",
       "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json",
-      "teaching_audit_status": "needs_revision"
+      "teaching_audit_status": "explanation_review_passed_same_author",
+      "teaching_revision_batch": "KEDU-TEACHING-REPAIR-007"
     },
     {
       "id": "K2-08.U03",
@@ -511,7 +513,8 @@
       "runtime_status": "actual_faiss_synthetic_ann_verified_separate_from_text_corpus",
       "classroom_trial": "not_run",
       "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json",
-      "teaching_audit_status": "needs_revision"
+      "teaching_audit_status": "explanation_review_passed_same_author",
+      "teaching_revision_batch": "KEDU-TEACHING-REPAIR-007"
     },
     {
       "id": "K2-08.U04",
@@ -524,7 +527,8 @@
       "runtime_status": "actual_cpu_embedding_and_index_verified",
       "classroom_trial": "not_run",
       "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-005/validation.json",
-      "teaching_audit_status": "needs_revision"
+      "teaching_audit_status": "explanation_review_passed_same_author",
+      "teaching_revision_batch": "KEDU-TEACHING-REPAIR-007"
     },
     {
       "id": "K2-09.U01",
@@ -926,16 +930,16 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-TEACHING-REPAIR-007",
+    "id": "KEDU-TEACHING-REPAIR-008",
     "proposed_scope": [
-      "Revise Vector Search/Index four units and connected L3 origin tracking, Exact/ANN, HNSW/IVF and lifecycle activities",
-      "Explain small record, neighbor/cluster search and update/stale-selection/delete examples before preserved actual observations",
-      "Preserve repaired Embedding material and original encoder/data/ranking; validate only affected scope"
+      "Revise RAG four units and connected L4 practice",
+      "Explain one question through retrieval, Context, generation and claim/citation review; show rewrite/neighbors inputs and observed failures",
+      "Preserve existing search/generation code/data/evidence and previously repaired teaching; validate only affected scope"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "EMBEDDING_REVISED_SAME_AUTHOR_EXPLANATION_REVIEWED_REMAINING_MATERIALS_PENDING",
+  "batch_status": "INDEX_REVISED_SAME_AUTHOR_EXPLANATION_REVIEWED_REMAINING_MATERIALS_PENDING",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -1023,7 +1027,7 @@
     "phase1_role": "reference for explanatory depth, progression, examples and practice interpretation; not permission to arbitrarily summarize Phase2",
     "prompt_revision": "completed_same_session_review",
     "existing_material_audit": "completed_70_unit_text_and_connected_teaching_document_review_with_targeted_static_code_checks",
-    "material_revision": "prompt_context_harness_embedding_17_units_revised_same_author_explanation_reviewed_53_other_units_pending",
+    "material_revision": "prompt_context_harness_embedding_index_21_units_revised_same_author_explanation_reviewed_49_other_units_pending",
     "applies_to": "all 70 units and connected practical material",
     "previous_review_status_interpretation": "historical review records preserved; not acceptance against current teaching criteria",
     "current_classroom_acceptance": false,
@@ -1050,28 +1054,29 @@
       "execution_scope": "supplemental input/CLI/excerpt validation; full pinned HTTP environment, tokenizer/generation/classroom not rerun",
       "classroom_trial": "not_run"
     },
-    "revised_unit_count": 17,
+    "revised_unit_count": 21,
     "latest_revision": {
-      "batch": "KEDU-TEACHING-REPAIR-006",
+      "batch": "KEDU-TEACHING-REPAIR-007",
       "units": [
-        "K2-07.U01",
-        "K2-07.U02",
-        "K2-07.U03",
-        "K2-07.U04"
+        "K2-08.U01",
+        "K2-08.U02",
+        "K2-08.U03",
+        "K2-08.U04"
       ],
-      "lesson": "curriculum-work/lessons/embedding/lesson.md",
+      "lesson": "curriculum-work/lessons/vector-index/lesson.md",
       "practice": "curriculum-work/practice/document-assistant/L3.md",
-      "teacher_guide": "curriculum-work/lessons/embedding/teacher-guide.md",
-      "report": "curriculum-work/reports/KEDU-TEACHING-REPAIR-006/RESULT.md",
+      "teacher_guide": "curriculum-work/lessons/vector-index/teacher-guide.md",
+      "report": "curriculum-work/reports/KEDU-TEACHING-REPAIR-007/RESULT.md",
       "explanation_verdict": "passed_same_author_document_review",
-      "execution_scope": "stdlib arithmetic/lexical/record reader, past metric recomputation and actual manifest snapshot regression; model/pytest/HTTP/classroom not rerun",
+      "execution_scope": "stdlib toy distances/traversal, real SQLite with nonsemantic vectors, saved E5/FAISS record reading and excerpt/CLI/boundary validation; actual E5/FAISS/full pytest/HTTP/classroom not rerun",
       "classroom_trial": "not_run"
     },
     "revision_reports": [
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-003/RESULT.md",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-004/RESULT.md",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-005/RESULT.md",
-      "curriculum-work/reports/KEDU-TEACHING-REPAIR-006/RESULT.md"
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-006/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-007/RESULT.md"
     ]
   }
 }
