@@ -1,0 +1,281 @@
+{
+  "task": "KEDU-TEACHING-REPAIR-001",
+  "checked_on": "2026-11-02",
+  "timezone": "Asia/Seoul",
+  "parent_commit": "3079985cc8d053f7cf78a01c26f306e1cf0332c5",
+  "scope": "step 1 teaching production/review/revision prompts only, with narrow manual calibration",
+  "source_references": [
+    {
+      "path": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day1/Day1_03_일반_프로그램과_AI의_차이_강의용_v0.2.md",
+      "commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+      "blob_sha": "89b94bceaa54cbc165fe994b51ec495043573d00",
+      "fetched_text_matches_blob": true,
+      "read_ranges": [
+        [
+          1,
+          633
+        ]
+      ],
+      "purpose": "explanatory progression, worked example, practice observation and interpretation; not technical runtime verification"
+    },
+    {
+      "path": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day2/Day2_05_Transformers로_Pretrained_Model_직접_실행하기_강의용_v0.2.md",
+      "commit": "bc58756866cd6bdee20c102fb54340f21e65ad56",
+      "blob_sha": "5547236c8828ecfddb64e36017b03d92d1875d24",
+      "fetched_text_matches_blob": true,
+      "read_ranges": [
+        [
+          54,
+          69
+        ],
+        [
+          307,
+          445
+        ],
+        [
+          570,
+          660
+        ],
+        [
+          759,
+          897
+        ]
+      ],
+      "purpose": "explanatory progression, worked example, practice observation and interpretation; not technical runtime verification"
+    }
+  ],
+  "prior_instruction_and_sample_review": {
+    "initial_loop_spec": "analysis-only pilot scope; preserved",
+    "design_plan_reference": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/CURRICULUM_PLAN.md lines 670-701",
+    "original_production_task": "curriculum-work/loop/tasks/KEDU-PRODUCTION-003.json; preserved",
+    "sample_lesson": "curriculum-work/lessons/prompt/lesson.md; read all four units; not edited",
+    "linked_practice": "curriculum-work/practice/document-assistant/L1.md; read; not edited"
+  },
+  "same_author_calibration": {
+    "reviewer": "same author in same session; not independent",
+    "cases": [
+      {
+        "target": "Prompt first unit plus linked L1 practice",
+        "verdict": "revise",
+        "reason": "case/variant comparisons and expected behaviors exist, but no worked question and before/after instruction explanation before requiring the comparison",
+        "criteria": [
+          "learning context",
+          "worked example",
+          "student vs management information"
+        ]
+      },
+      {
+        "target": "Prompt reasoning strategies unit and repeated confirmation questions",
+        "verdict": "revise",
+        "reason": "brief mentions jump to execution/call responsibility classification without a worked strategy trace; same generic question is sole confirmation in all four units",
+        "criteria": [
+          "first explanation",
+          "example",
+          "concept-specific assessment"
+        ]
+      },
+      {
+        "target": "Phase1 Day1-03 lines 278-336 with earlier house-price table",
+        "verdict": "observed explanation/example/practice connection meets selected criteria",
+        "reason": "data to fit/predict code, key-line explanations, result interpretation and predict/change/observe activity",
+        "scope_limit": "not whole lesson/classroom/runtime acceptance"
+      },
+      {
+        "target": "rename IDs only then claim complete",
+        "verdict": "insufficient",
+        "reason": "missing conceptual and practice interpretation remains; not a complete revised sample"
+      },
+      {
+        "target": "use successful code tests as educational acceptance",
+        "verdict": "insufficient",
+        "reason": "execution evidence does not establish explanation quality or independent classroom readiness"
+      }
+    ],
+    "automated_pedagogical_grader_used": false,
+    "all_70_lessons_audited": false,
+    "sample_lesson_rewritten": false
+  },
+  "instruction_review": {
+    "phase1_reference_not_arbitrary_abbreviation": true,
+    "concepts_examples_practice_interpretation_required": true,
+    "no_fixed_word_count_or_identical_lesson_template": true,
+    "management_ids_not_student_explanation": true,
+    "necessary_programming_code_allowed_with_context": true,
+    "practical_pedagogical_and_execution_consistency_both_included": true,
+    "same_failed_revision_stops_blind_repetition_and_expansion": true,
+    "representative_rewrite_review_precedes_wider_revision": true,
+    "prior_runtime_evidence_reused_only_with_matching_scope": true,
+    "authorship_execution_pedagogy_independent_classroom_separate": true,
+    "no_claim_of_automatic_runner_or_reasoning_setting_change": true
+  },
+  "static_checks": {
+    "status": "passed",
+    "relative_link_checks": 23,
+    "relative_links": [
+      {
+        "source": "curriculum-work/reports/KEDU-TEACHING-REPAIR-001/RESULT.md",
+        "target": "curriculum-work/loop/prompts.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-TEACHING-REPAIR-001/RESULT.md",
+        "target": "curriculum-work/loop/prompts.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-TEACHING-REPAIR-001/RESULT.md",
+        "target": "curriculum-work/lessons/prompt/lesson.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-TEACHING-REPAIR-001/RESULT.md",
+        "target": "curriculum-work/practice/document-assistant/L1.md"
+      },
+      {
+        "source": "curriculum-work/reports/KEDU-TEACHING-REPAIR-001/RESULT.md",
+        "target": "curriculum-work/reports/KEDU-TEACHING-REPAIR-001/validation.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/prompts.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-TEACHING-REPAIR-001/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/CURRICULUM_PLAN.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-ANALYSIS-001/20261030T080144Z/REVIEW.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-PILOT-001/20261030T064535Z-r2/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/curriculum.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/validation.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/reports/KEDU-DESIGN-001/20261030T101518Z/run.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/tasks/KEDU-DESIGN-001.json"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/checks/check_design.py"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/checks/check_curriculum.py"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/checks/check_analysis.py"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/loop-spec.md"
+      },
+      {
+        "source": "curriculum-work/README.md",
+        "target": "curriculum-work/loop/prompts.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/loop/prompts.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/reports/KEDU-TEACHING-REPAIR-001/RESULT.md"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/curriculum/production-index.json"
+      },
+      {
+        "source": "curriculum-work/PROGRESS.md",
+        "target": "curriculum-work/loop/prompts.md"
+      }
+    ],
+    "pinned_phase1_link_checks": 4,
+    "pinned_phase1_links": [
+      {
+        "source": "curriculum-work/loop/prompts.md",
+        "reference_path": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day1/Day1_03_일반_프로그램과_AI의_차이_강의용_v0.2.md",
+        "range": [
+          28,
+          165
+        ],
+        "blob_sha": "89b94bceaa54cbc165fe994b51ec495043573d00"
+      },
+      {
+        "source": "curriculum-work/loop/prompts.md",
+        "reference_path": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day1/Day1_03_일반_프로그램과_AI의_차이_강의용_v0.2.md",
+        "range": [
+          278,
+          336
+        ],
+        "blob_sha": "89b94bceaa54cbc165fe994b51ec495043573d00"
+      },
+      {
+        "source": "curriculum-work/loop/prompts.md",
+        "reference_path": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day2/Day2_05_Transformers로_Pretrained_Model_직접_실행하기_강의용_v0.2.md",
+        "range": [
+          307,
+          443
+        ],
+        "blob_sha": "5547236c8828ecfddb64e36017b03d92d1875d24"
+      },
+      {
+        "source": "curriculum-work/loop/prompts.md",
+        "reference_path": "academy/00. 교육과정(curriculum)/00. Phase1_Theoretical/04. GPT, Ollama, Gemma/Day2/Day2_05_Transformers로_Pretrained_Model_직접_실행하기_강의용_v0.2.md",
+        "range": [
+          596,
+          897
+        ],
+        "blob_sha": "5547236c8828ecfddb64e36017b03d92d1875d24"
+      }
+    ],
+    "json_parse": "passed",
+    "archived_pilot_instruction_text_exactly_preserved": true,
+    "existing_unit_records_unchanged": true,
+    "existing_milestones_unchanged": true,
+    "previous_runtime_gate_unchanged": true,
+    "authored_units": 70,
+    "authored_count_is_pedagogical_acceptance": false,
+    "full_curriculum_complete": false
+  },
+  "execution": {
+    "changes": "instructions and recovery metadata only",
+    "model_calls": 0,
+    "code_changes": 0,
+    "prior_runtime_tests": "not_rerun; no practice code/data/config changes",
+    "classroom_trial": "not_run",
+    "independent_educational_review": "not_run"
+  },
+  "next_step": {
+    "name": "existing lesson and connected practice audit",
+    "recommended_reasoning_effort": "xhigh",
+    "status": "pending_except_narrow_calibration"
+  },
+  "publication": {
+    "status": "ready_to_publish",
+    "changed_files": [
+      "curriculum-work/loop/prompts.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-001/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-001/validation.json",
+      "curriculum-work/README.md",
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/curriculum/production-index.json"
+    ],
+    "protected_scope": "all other tracked files including academy, lesson/practice sources and prior reports"
+  }
+}

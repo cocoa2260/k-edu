@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-PRODUCTION-021",
+  "current_batch": "KEDU-TEACHING-REPAIR-001",
   "units": [
     {
       "id": "K2-00.U01",
@@ -839,16 +839,16 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-PRODUCTION-022",
+    "id": "KEDU-TEACHING-REPAIR-002",
     "proposed_scope": [
-      "70-unit reading route and prerequisites",
-      "lesson/worksheet/runtime evidence consistency",
-      "pending practical and independent quality/classroom validation preparation"
+      "inspect 70 lesson units and connected practical material against revised teaching criteria",
+      "record explanation gaps, practice mismatches, reusable assets and required validation",
+      "select representative lesson for subsequent revision based on findings"
     ],
     "status": "not_started",
-    "recommended_reasoning_effort": "high"
+    "recommended_reasoning_effort": "xhigh"
   },
-  "batch_status": "ALL_70_MATERIALS_AUTHORED_LLM_SYNTHETIC_CHECKS_VERIFIED_INTEGRATION_CLASSROOM_PENDING",
+  "batch_status": "TEACHING_PROMPTS_REVISED_EXISTING_MATERIALS_AUDIT_AND_REVISION_PENDING",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -930,5 +930,16 @@
       "three_formats_verified": true,
       "release_accepted": false
     }
+  },
+  "teaching_quality_recovery": {
+    "active_prompts_path": "curriculum-work/loop/prompts.md",
+    "phase1_role": "reference for explanatory depth, progression, examples and practice interpretation; not permission to arbitrarily summarize Phase2",
+    "prompt_revision": "completed_same_session_review",
+    "existing_material_audit": "pending_except_narrow_criteria_calibration_examples",
+    "material_revision": "not_started",
+    "applies_to": "all 70 units and connected practical material",
+    "previous_review_status_interpretation": "historical review records preserved; not acceptance against current teaching criteria",
+    "current_classroom_acceptance": false,
+    "recommended_reasoning_effort_for_current_repair": "xhigh"
   }
 }
