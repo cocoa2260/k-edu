@@ -811,7 +811,44 @@
     "recommended_reasoning_effort": "high"
   },
   "publication": {
-    "status": "pending"
+    "status": "published",
+    "branch": "work/curriculum-production-001",
+    "parent_commit": "830dc76caa0c7b6054fa78fd040fce53a7477a18",
+    "revision_commit": "9af5b8dfbde9aa8eb599a32acdc980ecb2fd1c8d",
+    "revision_tree": "6c16993a5e5b700ca145b50c9c30e646d74341ed",
+    "changed_paths": [
+      "curriculum-work/lessons/rag/lesson.md",
+      "curriculum-work/lessons/rag/teacher-guide.md",
+      "curriculum-work/practice/document-assistant/L4.md",
+      "curriculum-work/practice/document-assistant/backend/tools/rag_steps.py",
+      "curriculum-work/practice/document-assistant/backend/README.md",
+      "curriculum-work/README.md",
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/curriculum/production-index.json",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-008/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-008/validation.json"
+    ],
+    "verification": {
+      "complete_candidate_tree_read": true,
+      "whitelisted_changes_match": true,
+      "previous_blobs": 639,
+      "candidate_blobs": 643,
+      "protected_existing_blobs_unchanged": 633,
+      "deleted_paths": 0,
+      "all_candidate_written_content_hashes_match": true,
+      "original_rag_harness_index_provider_data_api_and_tests_preserved": true,
+      "original_experiment_tools_and_past_reports_preserved": true,
+      "previous_repaired_teaching_and_L3_preserved": true,
+      "previous_manifest_deepcopy_fix_preserved": true,
+      "historical_runtime_milestone_gate_fields_preserved": true,
+      "branch_updated_with_expected_parent_no_force": true
+    },
+    "destination": {
+      "repository": "cocoa2260/k-edu",
+      "visibility": "public",
+      "matches_user_project_repository": true
+    },
+    "note": "A following documentation-only commit records publication checks; revision_commit identifies teaching/reader-tool changes."
   },
   "static_checks": {
     "markdown_fences_balanced": true,
