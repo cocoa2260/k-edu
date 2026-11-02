@@ -267,7 +267,7 @@
     "status": "pending_except_narrow_calibration"
   },
   "publication": {
-    "status": "ready_to_publish",
+    "status": "published",
     "changed_files": [
       "curriculum-work/loop/prompts.md",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-001/RESULT.md",
@@ -276,6 +276,15 @@
       "curriculum-work/PROGRESS.md",
       "curriculum-work/curriculum/production-index.json"
     ],
-    "protected_scope": "all other tracked files including academy, lesson/practice sources and prior reports"
+    "protected_scope": "all other tracked files including academy, lesson/practice sources and prior reports",
+    "content_commit": "e69a1717fc783fd354fb351085a387f98cd914d0",
+    "tree": "d359d779cae99e286ac5d410a019d1961d8a9e84",
+    "verification": {
+      "updated_or_added": 6,
+      "preserved": 608,
+      "total_blobs": 614,
+      "relative_links_verified": 23,
+      "pinned_phase1_links_verified": 4
+    }
   }
 }
