@@ -391,7 +391,7 @@
     "new_model_generations": 0,
     "paid_api_calls": 0,
     "network_attempts": [],
-    "fake_clock_elapsed_seconds": 91.0,
+    "fake_clock_elapsed_seconds": 91,
     "real_91_second_wait": false,
     "inflight_cancellation_implemented": false,
     "independent_classroom_trial": false
@@ -428,8 +428,11 @@
     "recommended_reasoning_effort": "high"
   },
   "publication": {
-    "status": "prepared_locally",
+    "status": "published",
+    "branch": "work/curriculum-production-001",
     "parent_commit": "9862c78a3bd76e236c0c688376cd575d5f78089f",
+    "revision_commit": "abc6fa049698aa2eb8b9dc7a93ae0db7e1bc50c6",
+    "revision_tree": "59b5a85fcd5083e2d0049984cdf9ba80e6376de5",
     "changed_paths": [
       "curriculum-work/lessons/harness/lesson.md",
       "curriculum-work/lessons/harness/teacher-guide.md",
@@ -441,7 +444,26 @@
       "curriculum-work/curriculum/production-index.json",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-005/RESULT.md",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-005/validation.json"
-    ]
+    ],
+    "verification": {
+      "complete_candidate_tree_read": true,
+      "whitelisted_changes_match": true,
+      "previous_blobs": 626,
+      "candidate_blobs": 630,
+      "protected_existing_blobs_unchanged": 620,
+      "original_harness_demo_and_tests_unchanged": true,
+      "original_input_data_and_api_unchanged": true,
+      "prompt_context_materials_unchanged": true,
+      "old_reports_unchanged": true,
+      "historical_runtime_and_gate_fields_preserved": true,
+      "branch_updated_with_expected_parent_no_force": true
+    },
+    "destination": {
+      "repository": "cocoa2260/k-edu",
+      "visibility": "public",
+      "matches_user_project_repository": true
+    },
+    "note": "A following documentation-only commit records these publication checks; revision_commit identifies teaching/code changes."
   },
   "static_checks": {
     "relative_targets_checked": 73,
