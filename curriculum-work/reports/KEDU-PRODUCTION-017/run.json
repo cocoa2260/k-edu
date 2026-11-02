@@ -1,13 +1,23 @@
 {
   "batch": "KEDU-PRODUCTION-017",
-  "status": "READY_TO_PUBLISH",
+  "status": "PUBLISHED",
   "parent": "189a54ee366f2ba20efc7147972b83c669e61c15",
   "scope": [
     "K2-14.U06",
     "L9 three-format contract evaluation"
   ],
   "authored_units": 54,
-  "publication": null,
+  "publication": {
+    "content_commit": "9afe2ea7e8a91f99022963664aec6631cfb72834",
+    "tree": "613d4c58db38cd1cbf65a184233e36d0636c91f7",
+    "verification": {
+      "uploaded": 31,
+      "preserved": 545,
+      "total_blobs": 576,
+      "relative_links_verified": 115,
+      "binary_blobs_verified": 3
+    }
+  },
   "release_status": "BLOCKED",
   "attempts": [
     "default nonvisible custom XML metadata initially rejected; separated from unsupported body content",
