@@ -1,6 +1,6 @@
 {
   "batch": "KEDU-PRODUCTION-019",
-  "status": "READY_TO_PUBLISH",
+  "status": "PUBLISHED",
   "parent": "41352cb4381effca307e85cb786643d94318aeea",
   "scope": [
     "K2-01.U01",
@@ -9,7 +9,16 @@
     "K2-01.U04"
   ],
   "authored_units": 61,
-  "publication": null,
+  "publication": {
+    "content_commit": "76c72c4c71252321e49408d1a4dd42102bf20edb",
+    "tree": "f749494dcb41470f344ec897095bce3e787a3572",
+    "verification": {
+      "uploaded": 14,
+      "preserved": 580,
+      "total_blobs": 594,
+      "relative_links_verified": 39
+    }
+  },
   "runtime": {
     "fixture_and_arithmetic_verification": "passed",
     "rejected_mutations": 8,
