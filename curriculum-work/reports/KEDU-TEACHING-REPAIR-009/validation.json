@@ -1,0 +1,126 @@
+{
+  "batch": "KEDU-TEACHING-REPAIR-009",
+  "date": "2026-11-03",
+  "source_commit": "2d63fca1c5ae569fbf4d72771226a2a004e2bf56",
+  "reviewer": "same_author_not_independent",
+  "units": [
+    "K2-10.U01",
+    "K2-10.U02",
+    "K2-10.U03",
+    "K2-10.U04"
+  ],
+  "explanation_review": [
+    {
+      "criterion": "맥락/선수",
+      "evidence": "RAG 고정 순서에서 다음 행동 요청으로 연결",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "개념 설명",
+      "evidence": "Workflow/Agent/Tool/Registry/Runtime/MCP 책임과 구체적 처리",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "풀어쓴 예제",
+      "evidence": "고정 검색/읽기/제출과 실제4선택/3처리, 거부 위치 표",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "실습 연결",
+      "evidence": "다섯 활동의 준비/명령/관찰/해석·실제 실행 별도",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "자료 일치",
+      "evidence": "직접 코드·18출력 제어 재생·저장 수치 대조",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "질문/해설",
+      "evidence": "장별3개/총12개와 판정 이유",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "관리 분리",
+      "evidence": "학생 자연어 제목과 실제 필드 의미, 교사용 ID 연결",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "증거 수준",
+      "evidence": "고정/과거모델/현재제어·invoke/전체Loop/MCP·자체/수업 구분",
+      "verdict": "설명 검수 통과"
+    }
+  ],
+  "execution": {
+    "python": "3.12.14",
+    "pydantic": "2.14.1",
+    "checks": "passed",
+    "saved_model_output_replays_with_fixed_encoder": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "C10",
+      "C11",
+      "C12",
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A05",
+      "A06"
+    ],
+    "replay_scope": "current controller/counters only, not new model or semantic search",
+    "reader_cases": 26,
+    "runnable_block_output": "검색-읽기-제출 final_review_required 결정/처리/함수 진입 3 2 2 읽은 원문 1\n잘못된 정수 repeated_failure 결정/처리/함수 진입 2 2 0 읽은 원문 0\n미발견 출처 repeated_failure 결정/처리/함수 진입 2 2 2 읽은 원문 0\n",
+    "current_guards": [
+      "strict integer",
+      "extra approval field",
+      "missing grant",
+      "unknown tool",
+      "undiscovered source",
+      "argument-bound one-use in-memory grant"
+    ],
+    "network_attempts": [],
+    "new_model_runs": 0,
+    "new_framework_runs": 0,
+    "full_pytest_HTTP_rerun": false
+  },
+  "source_versions": {
+    "curriculum-work/lessons/single-agent/lesson.md": "8d9c47a9cea882ef259a2436bd3fae85f5cf06b5",
+    "curriculum-work/practice/document-assistant/L5.md": "e77d56b0360d10003d350219cf2b9ab014c7813b",
+    "curriculum-work/README.md": "6b631812d20356f8525fcd391e586383ecc9af19",
+    "curriculum-work/PROGRESS.md": "5e85d4ed52843081c8f1dd19ae6dc6d78c31c106",
+    "curriculum-work/curriculum/production-index.json": "f6f4cff5986f85dd719361a35af14a5231e5c5f9",
+    "curriculum-work/practice/document-assistant/backend/README.md": "d8020e78760febe654aaa68a0eb3b63620c56719",
+    "curriculum-work/practice/document-assistant/backend/app/agent.py": "4b74385546cfdbf52aadb32cb20f747a2a6340cf",
+    "curriculum-work/practice/document-assistant/backend/tools/agent_lab.py": "10f38063be5a4d22a23b088f283b2cce09dd0c0b",
+    "curriculum-work/practice/document-assistant/data/agent-v1.json": "ed96ac3a98911fd1ad9baaba603d1ee8810d50d3",
+    "curriculum-work/reports/KEDU-PRODUCTION-007/observed.json": "195b95005a69426ebc77064b1341735530d1c0f6",
+    "curriculum-work/reports/KEDU-PRODUCTION-007/fixture-observed.json": "b8489b7286b1bfc4757d5821280e6e7aedacb26b"
+  },
+  "next_batch": {
+    "id": "KEDU-TEACHING-REPAIR-010",
+    "proposed_scope": [
+      "Revise Multi-Agent four units and L6 practice",
+      "Explain role handoffs, source/state preservation, global budgets and failure propagation using same-task observations",
+      "Preserve existing implementation/data/evidence; separate role count from quality improvement"
+    ],
+    "status": "not_started",
+    "recommended_reasoning_effort": "high"
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "static_checks": {
+    "relative_targets_exist": 70,
+    "protected_runtime_gates_preserved": true,
+    "reviewed_units": 29,
+    "pending_units": 41
+  }
+}
