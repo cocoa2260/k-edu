@@ -1,0 +1,461 @@
+{
+  "schema_version": "teaching-revision-v1",
+  "batch": "KEDU-TEACHING-REPAIR-006",
+  "date": "2026-11-02",
+  "repository": "cocoa2260/k-edu",
+  "branch": "work/curriculum-production-001",
+  "source_commit": "2055be4c2f3fe3e1ac1eb4c243e609b59d452b5d",
+  "criteria": "curriculum-work/loop/prompts.md",
+  "reviewer": "same_author_not_independent",
+  "scope": {
+    "units": [
+      "K2-07.U01",
+      "K2-07.U02",
+      "K2-07.U03",
+      "K2-07.U04"
+    ],
+    "practice": "curriculum-work/practice/document-assistant/L3.md Embedding-related sections",
+    "other_unit_revisions": 0
+  },
+  "explanation_review": [
+    {
+      "criterion": "학습 맥락·선수 연결",
+      "verdict": "설명 검수 통과",
+      "evidence": "도입의 밥값 질문/가상 규정과 기존 수동 Context 선택에서 자동 검색으로 연결"
+    },
+    {
+      "criterion": "개념의 최초 설명",
+      "verdict": "설명 검수 통과",
+      "evidence": "1장 네 표현/입력/패딩 평균; 2장 희소/어휘 점수 원리; 3장 길이/방향; 4장 순위 합/재평가/전환"
+    },
+    {
+      "criterion": "예제 이해",
+      "verdict": "설명 검수 통과",
+      "evidence": "가상 ID/평균과 실제 접두어 문자열을 구분; 같은 질문의 실제 어휘/조각/원문; 기존 A/B 중간 계산; 세 후보 RRF 합"
+    },
+    {
+      "criterion": "실습 연결",
+      "verdict": "설명 검수 통과",
+      "evidence": "backend 시작위치/근거 종류, 다섯 활동의 예상·실행·관찰·해석·실패 확인과 별도 실제 모델 준비"
+    },
+    {
+      "criterion": "설명/자료 일치",
+      "verdict": "설명 검수 통과",
+      "evidence": "두 실행블록/실제 발췌/현재 분절/저장36조건·지표 대조, 당시 기록 불일치 공개와 독립 복사 수정"
+    },
+    {
+      "criterion": "질문/해설",
+      "verdict": "설명 검수 통과",
+      "evidence": "네 장별 3개 질문과 해설12개, 다섯 활동의 충족/보완 근거"
+    },
+    {
+      "criterion": "학생/관리 구분",
+      "verdict": "설명 검수 통과",
+      "evidence": "학생 자연어 제목과 실제 파일/변수/사례키 의미, 단원ID는 교사용 매핑"
+    },
+    {
+      "criterion": "근거 수준",
+      "verdict": "설명 검수 통과",
+      "evidence": "가상 수치/현재 분절/저장 모델 결과/새 실행·같은 모델길이/다른 가중치·문서/문장/답 품질·자체/수업 구분"
+    }
+  ],
+  "execution": {
+    "python": "3.12.14",
+    "original_bug": {
+      "tests_run": 2,
+      "reproduced_failures": [
+        "test_manifest_snapshot.ManifestSnapshotTests.test_later_profile_change_cannot_rewrite_earlier_evidence",
+        "test_manifest_snapshot.ManifestSnapshotTests.test_reader_modifying_snapshot_cannot_change_live_encoder"
+      ]
+    },
+    "new_regression_tests": 3,
+    "checks": "passed",
+    "metrics_recalculated_from_all_36_rows": {
+      "bm25": {
+        "scored_cases": 8,
+        "mean_document_recall_at_3_chunks": 0.9375,
+        "relevant_hit_at_1": 0.5
+      },
+      "dense": {
+        "scored_cases": 8,
+        "mean_document_recall_at_3_chunks": 0.875,
+        "relevant_hit_at_1": 0.75
+      },
+      "hybrid": {
+        "scored_cases": 8,
+        "mean_document_recall_at_3_chunks": 1.0,
+        "relevant_hit_at_1": 0.75
+      }
+    },
+    "lexical_observation": {
+      "evidence_kind": "current_lexical_inspection_not_dense_inference",
+      "question": "회사 일로 당일 다녀오고 밥값 돌려받는 한도는?",
+      "query_terms": [
+        "회사",
+        "일로",
+        "당일",
+        "다녀오고",
+        "밥값",
+        "돌려받는",
+        "한도는"
+      ],
+      "chunks": [
+        {
+          "chunk_id": "DOC-A@v1:L1",
+          "matching_terms": [
+            "당일"
+          ]
+        },
+        {
+          "chunk_id": "DOC-A@v1:L2",
+          "matching_terms": []
+        },
+        {
+          "chunk_id": "DOC-B@v1:L1",
+          "matching_terms": []
+        },
+        {
+          "chunk_id": "DOC-B@v1:L2",
+          "matching_terms": []
+        },
+        {
+          "chunk_id": "DOC-I@v1:L1",
+          "matching_terms": []
+        },
+        {
+          "chunk_id": "DOC-T@v1:L1",
+          "matching_terms": []
+        },
+        {
+          "chunk_id": "DOC-T@v1:L2",
+          "matching_terms": []
+        },
+        {
+          "chunk_id": "DOC-T@v1:L3",
+          "matching_terms": []
+        },
+        {
+          "chunk_id": "DOC-T@v1:L4",
+          "matching_terms": []
+        }
+      ]
+    },
+    "math": {
+      "evidence_kind": "toy_arithmetic_not_model_output",
+      "vectors": [
+        {
+          "candidate": "A",
+          "norm": 1.0,
+          "dot": 0.8,
+          "cosine": 0.8,
+          "l2": 0.6324555320336759,
+          "normalized": [
+            0.8,
+            0.6
+          ],
+          "unit_l2_squared": 0.39999999999999997
+        },
+        {
+          "candidate": "B",
+          "norm": 2.8284271247461903,
+          "dot": 2.0,
+          "cosine": 0.7071067811865475,
+          "l2": 2.23606797749979,
+          "normalized": [
+            0.7071067811865475,
+            0.7071067811865475
+          ],
+          "unit_l2_squared": 0.5857864376269049
+        }
+      ],
+      "masked_mean": [
+        0.5,
+        1.0
+      ],
+      "masked_mean_unit": [
+        0.4472135954999579,
+        0.8944271909999159
+      ],
+      "rrf_scores": {
+        "A": 0.032266458495966696,
+        "B": 0.03252247488101534,
+        "C": 0.03200204813108039
+      },
+      "rrf_order": [
+        "B",
+        "A",
+        "C"
+      ]
+    },
+    "cli": [
+      {
+        "args": [
+          "--math"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "48f814ba34901b599cd0cffab89bd8f4234480fc9d3dfd37f4754bfcc77a4a53"
+      },
+      {
+        "args": [
+          "--lexical"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "e7443d890a698c85f59848a837a7dcf7a72d30fc559cc6c0b8f3af1b69b99e91"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "477f1ce77d7041da743697cdc1113ddcf61b15d53064d4bd27a72aad5038908e"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json",
+          "--case",
+          "C01"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "9164b1a1f67a9e6226a84b531c2ff03e996661385600a7c8a48991d2dad9eea0"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json",
+          "--case",
+          "C02"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "b944529ef1bac96599655122a1e2334d9619500ef302a2178e83dec3738c8d07"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json",
+          "--case",
+          "C03"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "87fa06cbc2f6ab892827a66d92bb35302617265730dc82964896db9074e6feec"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json",
+          "--case",
+          "C04"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "d498ec8af0e1033993c907c6361ecee7920a432291b55c6df937f480eabd8001"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json",
+          "--case",
+          "C05"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "8d7d88dd0e2fea0a450db2924e5b4789e79ddf6f21868727e79560723287fbbc"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json",
+          "--case",
+          "C06"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "0a52adf97ae0ceb8cfe4a6c2f7698c939f9b25f9836751deb9d52c6d3de09469"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json",
+          "--case",
+          "C07"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "41d82c07bd479a93ad5f5435e866f050d5b712ad6fcf423c282f1b504aaeb18a"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json",
+          "--case",
+          "C08"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "601e16db38aa6ff7afb142d10be5ffba4a3aca9f0ede252306399d83b82469d8"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json",
+          "--case",
+          "C09"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "442f9df69d8978647daebd4e8c67ef7591d6e1167f6dd63d7976fb61699cd8c5"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json",
+          "--case",
+          "C10"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "1e363edad8a1c2d07e34156770fd86007f9deed3316d290548097b849eea06d3"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json",
+          "--case",
+          "C11"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "df034848f3817cf93f07b3eec9b49866c66ab4be240726bc7f0354c00afb02b4"
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json",
+          "--case",
+          "C12"
+        ],
+        "exit_code": 0,
+        "stdout_sha256": "51f0e0459e29a21d66cfb5f701c73c8a69e0117d2fa36c4e37632ffa6eedd489"
+      },
+      {
+        "args": [],
+        "exit_code": 2
+      },
+      {
+        "args": [
+          "--math",
+          "--case",
+          "C08"
+        ],
+        "exit_code": 2
+      },
+      {
+        "args": [
+          "--math",
+          "--lexical"
+        ],
+        "exit_code": 2
+      },
+      {
+        "args": [
+          "--record",
+          "missing.json"
+        ],
+        "exit_code": 2
+      },
+      {
+        "args": [
+          "--record",
+          "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json",
+          "--case",
+          "missing"
+        ],
+        "exit_code": 2
+      }
+    ],
+    "runnable_blocks": [
+      {
+        "path": "curriculum-work/lessons/embedding/lesson.md",
+        "stdout": "A dot=0.8000 cosine=0.8000 unit_L2_squared=0.4000\nB dot=2.0000 cosine=0.7071 unit_L2_squared=0.5858\n"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/L3.md",
+        "stdout": "밥값 ['밥값'] [0.0, 0.0]\n당일 밥값 ['당일', '밥값'] [0.5658, 0.0]\n교육비 ['교육비'] [0.0, 0.0]\n교육비를 ['교육비를'] [0.0, 0.8944]\n"
+      }
+    ],
+    "source_excerpt_matches": true,
+    "preserved_paths": [
+      "curriculum-work/lessons/vector-index/lesson.md",
+      "curriculum-work/practice/document-assistant/backend/retrieval/encoder.py",
+      "curriculum-work/practice/document-assistant/backend/tools/retrieval_lab.py",
+      "curriculum-work/practice/document-assistant/data/core-v1.json",
+      "curriculum-work/practice/document-assistant/data/documents-v1.json",
+      "curriculum-work/practice/document-assistant/data/retrieval-v1.json",
+      "curriculum-work/loop/prompts.md",
+      "curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json"
+    ],
+    "preserved_l3_index_sections": true,
+    "network_attempts": [],
+    "new_model_inference_calls": 0,
+    "original_pytest_suite_rerun": false,
+    "actual_model_retrieval_rerun": false
+  },
+  "technical_fix": {
+    "location": "retrieval/index.py LocalIndex.manifest",
+    "cause": "shared mutable encoder.profile rewrote earlier profile displays after the later max_tokens change",
+    "change": "deepcopy profile at manifest capture only",
+    "old_artifact_preserved": true,
+    "old_manifest_hash_matches_max_tokens": 512,
+    "old_manifest_displayed_max_tokens": 128,
+    "old_source_failure_reproduced": true,
+    "current_dependency_free_regressions_passed": true,
+    "actual_model_rerun": false
+  },
+  "limitations": [
+    "same-author explanation review; no independent classroom",
+    "no actual E5/Tokenizer/Transformers/PyTorch/cache/FAISS/full pytest/HTTP rerun",
+    "no actual answer generation, learned Reranker or different-weight model migration",
+    "CPU and classroom platform limitations of past evidence remain",
+    "new model run should independently observe before512/after128 manifest consistency"
+  ],
+  "progress": {
+    "revised_and_same_author_explanation_reviewed": 17,
+    "other_units_pending_revision": 53,
+    "classroom_acceptance": false
+  },
+  "next_batch": {
+    "id": "KEDU-TEACHING-REPAIR-007",
+    "proposed_scope": [
+      "Revise Vector Search/Index four units and connected L3 origin tracking, Exact/ANN, HNSW/IVF and lifecycle activities",
+      "Explain small record, neighbor/cluster search and update/stale-selection/delete examples before preserved actual observations",
+      "Preserve repaired Embedding material and original encoder/data/ranking; validate only affected scope"
+    ],
+    "status": "not_started",
+    "recommended_reasoning_effort": "high"
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "source_versions": {
+    "curriculum-work/lessons/embedding/lesson.md": "92a6ba31a647cbb263440b4bd1ed4b1f400b0857",
+    "curriculum-work/lessons/vector-index/lesson.md": "e13461b01d67dbcf08a09f172f80d241e04b2946",
+    "curriculum-work/practice/document-assistant/L3.md": "146b38af1575d7ef31a094d2ea0ae102f8327cd7",
+    "curriculum-work/README.md": "d2ec211d73aa9df23921f3776be18d07ddb07472",
+    "curriculum-work/PROGRESS.md": "2592b20905fbe6528b30348c8597ac2275210ec5",
+    "curriculum-work/curriculum/production-index.json": "a02607fd5da16a87155275a4057951664bd2da27",
+    "curriculum-work/practice/document-assistant/backend/README.md": "c9df074e5944890809d5c18c892899647b84b6ac",
+    "curriculum-work/practice/document-assistant/backend/retrieval/index.py": "f99bdff6536b35237287820ca500abff3f4a13e3",
+    "curriculum-work/practice/document-assistant/backend/retrieval/encoder.py": "34bc2b95299afa6d571c41e76b5a8d1f527d3b52",
+    "curriculum-work/practice/document-assistant/backend/tools/retrieval_lab.py": "3c2ba0af7c320fd5bbfac5a76f3780d58b3fe01e",
+    "curriculum-work/practice/document-assistant/data/core-v1.json": "95f5827bd876f8b5109aca7cdf41953dd24c98f6",
+    "curriculum-work/practice/document-assistant/data/documents-v1.json": "25d0553f26321434a9a8c7f386261505bca2fda3",
+    "curriculum-work/practice/document-assistant/data/retrieval-v1.json": "0127d97def42f73a4d6a37a10c325ca2c885c41c",
+    "curriculum-work/loop/prompts.md": "1a7fc88795b737413817bd7425f61ad97d5cf665",
+    "curriculum-work/reports/KEDU-PRODUCTION-005/retrieval-observed.json": "17ddc8867a98a41248b18df9eacbaee8f094abd1"
+  },
+  "static_checks": {
+    "markdown_fences_balanced": true,
+    "student_internal_unit_ids_absent_in_prose": true,
+    "unit_status_counts": {
+      "needs_revision": 53,
+      "explanation_review_passed_same_author": 17
+    },
+    "historical_runtime_milestone_gate_fields_preserved": true,
+    "relative_targets_to_verify": 70,
+    "relative_targets_checked": 70,
+    "all_relative_targets_exist": true
+  }
+}

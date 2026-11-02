@@ -54,6 +54,8 @@ POST /ai/prepare는 사례 ID와 조건으로 입력만 준비한다. 실제 생
 
 실제 답변 생성이나 새 웹 API는 추가하지 않았다. requirements-retrieval-tested.txt는 이번 ML 추가 환경 전체 스냅샷이며 플랫폼 공통 Lock이 아니다. 기존 L0의 requirements-tested.txt와 과거 보고서는 보존한다. 모델 파일·SQLite 실행 파일은 Git에 넣지 않으며 새 출력 폴더로 재현한다.
 
+Embedding 수업의 계산·현재 분절·저장된 실제 검색 기록 읽기는 `python -m tools.embedding_steps --math`, `--lexical`, `--record <observed.json>`으로 진행한다. 이 도구는 모델을 실행하지 않는다. [학습 흐름과 실제 모델 재실행](../L3.md#embedding-활동)을 구분해 따른다. Manifest는 현재 설정의 독립 복사본을 반환한다. 과거 기록의 128/512 표시값·해시 불일치는 원본을 보존한 채 교안과 이번 보고서에 설명했다. 새 회귀 검사는 `python -m unittest discover -s embedding_tests -v`이며 기존 Pytest/모델 전체 검증을 대신하지 않는다.
+
 ## L4 확장
 
 [L4 안내](../L4.md)는 같은 L3 CPU 환경에서 Qwen3-0.6B 가중치를 추가해 실제 RAG를 실행한다. 기존 웹 API Factory는 자동 전환하지 않으며 HFCpuProvider는 CLI에서 명시적으로 주입한다. 공통 Harness에 입력 준비·출력 계약·검사기를 주입하는 선택 인자를 추가했고 기존 L2 동작은 유지한다.

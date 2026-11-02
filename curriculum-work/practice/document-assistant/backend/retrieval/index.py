@@ -5,6 +5,7 @@ document line is a chunk; history/restricted records can be stored but are
 filtered before ranking and checked again when preparing Context.
 """
 import hashlib
+from copy import deepcopy
 import json
 import math
 from pathlib import Path
@@ -210,7 +211,7 @@ class LocalIndex:
 
     def manifest(self):
         self.check_profile()
-        return dict(profile=self.encoder.profile,profile_sha256=profile_hash(self.encoder.profile),
+        return dict(profile=deepcopy(self.encoder.profile),profile_sha256=profile_hash(self.encoder.profile),
             generation=self.generation,chunk_policy='nonempty_line_v1_no_overlap',
             documents=[dict(r) for r in self.db.execute('SELECT id,version,access,current,deleted,content_sha FROM documents ORDER BY id')],
             total_chunks=self.db.execute('SELECT COUNT(*) FROM chunks').fetchone()[0])
