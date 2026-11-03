@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-TEACHING-REPAIR-015",
+  "current_batch": "KEDU-TEACHING-REPAIR-016",
   "units": [
     {
       "id": "K2-00.U01",
@@ -17,7 +17,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "discussion_material_no_model_execution",
       "classroom_trial": "not_run",
-      "teaching_audit_status": "needs_revision"
+      "teaching_audit_status": "explanation_review_passed_same_author",
+      "teaching_revision_batch": "KEDU-TEACHING-REPAIR-016"
     },
     {
       "id": "K2-00.U02",
@@ -29,7 +30,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "discussion_material_no_model_execution",
       "classroom_trial": "not_run",
-      "teaching_audit_status": "needs_revision"
+      "teaching_audit_status": "explanation_review_passed_same_author",
+      "teaching_revision_batch": "KEDU-TEACHING-REPAIR-016"
     },
     {
       "id": "K2-00.U03",
@@ -41,7 +43,8 @@
       "review_status": "same_session_reviewed",
       "runtime_status": "discussion_material_no_model_execution",
       "classroom_trial": "not_run",
-      "teaching_audit_status": "needs_revision"
+      "teaching_audit_status": "explanation_review_passed_same_author",
+      "teaching_revision_batch": "KEDU-TEACHING-REPAIR-016"
     },
     {
       "id": "K2-01.U01",
@@ -960,16 +963,16 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-TEACHING-REPAIR-016",
+    "id": "KEDU-TEACHING-REPAIR-017",
     "proposed_scope": [
-      "Revise three orientation units: unacceptable task failures, AI lifecycle/responsibility, trends/products/generation methods",
-      "Connect the bounded introduction to concrete existing exercises, learner objectives and responsibility decisions",
-      "Preserve execution, model quality and independent classroom distinctions"
+      "Revise four data/evaluation units and connected activities/teacher explanations",
+      "Explain prediction time, dataset roles/lineage/splits/leakage, generalization/overfitting/control, metrics and error impact with concrete examples",
+      "Check relevant existing synthetic data/arithmetic evidence; preserve runtime and independent quality/classroom gates"
     ],
     "status": "not_started",
-    "recommended_reasoning_effort": "medium"
+    "recommended_reasoning_effort": "high"
   },
-  "batch_status": "DOCUMENT_AI_DELIVERY_EVALUATION_REVISED_SAME_AUTHOR_EXPLANATION_REVIEWED_REMAINING_PENDING",
+  "batch_status": "ORIENTATION_REVISED_SAME_AUTHOR_EXPLANATION_REVIEWED_REMAINING_PENDING",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -1057,11 +1060,11 @@
     "phase1_role": "reference for explanatory depth, progression, examples and practice interpretation; not permission to arbitrarily summarize Phase2",
     "prompt_revision": "completed_same_session_review",
     "existing_material_audit": "completed_70_unit_text_and_connected_teaching_document_review_with_targeted_static_code_checks",
-    "material_revision": "51_units_revised_same_author_explanation_reviewed_19_other_units_pending",
+    "material_revision": "54_units_revised_same_author_explanation_reviewed_16_other_units_pending",
     "applies_to": "all 70 units and connected practical material",
     "previous_review_status_interpretation": "historical review records preserved; not acceptance against current teaching criteria",
     "current_classroom_acceptance": false,
-    "recommended_reasoning_effort_for_current_repair": "high",
+    "recommended_reasoning_effort_for_current_repair": "medium",
     "audit_report_path": "curriculum-work/reports/KEDU-TEACHING-REPAIR-002/RESULT.md",
     "audit_batch": "KEDU-TEACHING-REPAIR-002",
     "audit_details_path": "curriculum-work/reports/KEDU-TEACHING-REPAIR-002/REVIEW.md",
@@ -1084,24 +1087,20 @@
       "execution_scope": "supplemental input/CLI/excerpt validation; full pinned HTTP environment, tokenizer/generation/classroom not rerun",
       "classroom_trial": "not_run"
     },
-    "revised_unit_count": 51,
+    "revised_unit_count": 54,
     "latest_revision": {
-      "batch": "KEDU-TEACHING-REPAIR-015",
+      "batch": "KEDU-TEACHING-REPAIR-016",
       "units": [
-        "K2-14.U04",
-        "K2-14.U05",
-        "K2-14.U06"
+        "K2-00.U01",
+        "K2-00.U02",
+        "K2-00.U03"
       ],
-      "lessons": [
-        "curriculum-work/lessons/document-ai/provider.md",
-        "curriculum-work/lessons/document-ai/streaming.md",
-        "curriculum-work/lessons/document-ai/evaluation.md"
-      ],
-      "practice": "curriculum-work/practice/document-assistant/L9.md",
-      "teacher_guide": "curriculum-work/lessons/document-ai/delivery-teacher-guide.md",
-      "report": "curriculum-work/reports/KEDU-TEACHING-REPAIR-015/RESULT.md",
+      "lesson": "curriculum-work/lessons/orientation/lesson.md",
+      "practice": "curriculum-work/lessons/orientation/worksheet.md",
+      "teacher_guide": "curriculum-work/lessons/orientation/teacher-guide.md",
+      "report": "curriculum-work/reports/KEDU-TEACHING-REPAIR-016/RESULT.md",
       "explanation_verdict": "passed_same_author_document_review",
-      "execution_scope": "current 66Python+34Node tests/build,loopback HTTP/SSE,9browser scenarios with verified-font visual pass,teaching code and3format/spec checks;no actual model/new report/independent classroom",
+      "execution_scope": "document/activity/answer/source/link review only; no new program/model/API/training/browser/classroom execution",
       "classroom_trial": "not_run"
     },
     "revision_reports": [
@@ -1117,7 +1116,8 @@
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-012/RESULT.md",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-013/RESULT.md",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-014/RESULT.md",
-      "curriculum-work/reports/KEDU-TEACHING-REPAIR-015/RESULT.md"
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-015/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-016/RESULT.md"
     ]
   }
 }
