@@ -898,6 +898,27 @@
     "recommended_reasoning_effort": "medium"
   },
   "publication": {
-    "status": "pending"
+    "status": "main_commit_published_and_verified",
+    "branch": "work/curriculum-production-001",
+    "parent_commit": "cfc5a4adba62c4b7a7c0637567cbfdcbe15ab405",
+    "published_commit": "4265561fd3c96723624847c6c3ba9190ff3fc703",
+    "tree_sha": "441cd8637cb9f6da54f8a5a493068d82740e2ee3",
+    "changed_paths": [
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/README.md",
+      "curriculum-work/curriculum/production-index.json",
+      "curriculum-work/lessons/baseline/lesson.md",
+      "curriculum-work/practice/document-assistant/README.md",
+      "curriculum-work/practice/document-assistant/backend/README.md",
+      "curriculum-work/practice/document-assistant/stream-ui/README.md",
+      "curriculum-work/STUDY_GUIDE.md",
+      "curriculum-work/reports/KEDU-TEACHING-INTEGRATION-001/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-INTEGRATION-001/validation.json"
+    ],
+    "candidate_blob_hashes_match_local": true,
+    "unexpected_changes": [],
+    "removed_paths": [],
+    "units_milestones_first_unfinished_gate_preserved": true,
+    "verification_record_commit": "This file is updated by a following validation-only commit; it does not contain its own future commit SHA."
   }
 }
