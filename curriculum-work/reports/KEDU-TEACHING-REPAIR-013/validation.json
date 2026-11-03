@@ -1,0 +1,357 @@
+{
+  "batch": "KEDU-TEACHING-REPAIR-013",
+  "date": "2026-11-03",
+  "reviewer": "same_author_not_independent",
+  "units": [
+    "K2-13.U01",
+    "K2-13.U02",
+    "K2-13.U03",
+    "K2-13.U04"
+  ],
+  "explanation_review": [
+    {
+      "criterion": "맥락/선수",
+      "evidence": "RAG 텍스트 앞단과 환불 금액/조건 오류에서 시작",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "개념 설명",
+      "evidence": "Parsing/OCR·페이지/영역 분기·순서/표·CER/필드/시각 경로·권한/Locator 설명",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "풀어쓴 예제",
+      "evidence": "미사용 0원/사용 이력15000, 합쳐진 줄, 같은 CER 다른 영향, 실제 bbox와 좌표 산술",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "실습 연결",
+      "evidence": "네 활동·정확한 필수 코드·예상/관찰/제출과 선택적 실제 OCR 환경/명령",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "자료 일치",
+      "evidence": "현재 네 PDF5쪽/표9셀·10Locator·거부/BM25와 저장OCR3조건·Git/SHA대조",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "질문/해설",
+      "evidence": "장별3개/총12개 질문·개념별 해설·활동 피드백",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "관리 분리",
+      "evidence": "자연어 제목·실제 ID/변수 뜻과 교사용 매핑, 설명용/실행 코드 구분",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "근거 수준",
+      "evidence": "과거 실제OCR/현재 직접추출/저장계산·Vision/인증/LLM/독립수업 미검증 분리",
+      "verdict": "설명 검수 통과"
+    }
+  ],
+  "execution": {
+    "python": "3.12.14",
+    "packages": {
+      "pdfplumber": "0.11.9",
+      "pypdf": "6.10.0",
+      "Pillow": "12.3.0",
+      "reportlab": "4.4.9",
+      "pydantic": "2.14.1"
+    },
+    "pinned_pydantic": "2.14.2",
+    "tesseract": "tesseract 5.3.4",
+    "available_system_ocr_languages": [
+      "eng",
+      "osd"
+    ],
+    "current_execution": {
+      "native_layer_checks": {
+        "digital": [
+          {
+            "text_objects": true,
+            "images": false,
+            "direct_empty": false
+          }
+        ],
+        "scan": [
+          {
+            "text_objects": false,
+            "images": true,
+            "direct_empty": true
+          }
+        ],
+        "degraded": [
+          {
+            "text_objects": false,
+            "images": true,
+            "direct_empty": true
+          }
+        ],
+        "mixed": [
+          {
+            "text_objects": true,
+            "images": false,
+            "direct_empty": false
+          },
+          {
+            "text_objects": false,
+            "images": true,
+            "direct_empty": true
+          }
+        ]
+      },
+      "digital_extraction_exactly_matches_stored": true,
+      "digital_table_cells": 9,
+      "raw_and_manual_columns_equal_stored": true,
+      "current_normalized_locators_roundtripped": 10,
+      "bm25_physical_location_equal_stored": true,
+      "bm25_word_form_mismatch_returns_empty": true,
+      "index_delete_invalidates_selection": true,
+      "rejections": [
+        {
+          "case": "before_file_read_0",
+          "error": "Source not eligible before file access"
+        },
+        {
+          "case": "before_file_read_1",
+          "error": "Source not eligible before file access"
+        },
+        {
+          "case": "before_file_read_2",
+          "error": "Source not eligible before file access"
+        },
+        {
+          "case": "before_file_read_3",
+          "error": "Source not eligible before file access"
+        },
+        {
+          "case": "before_file_read_4",
+          "error": "Source not eligible before file access"
+        },
+        {
+          "case": "before_file_read_5",
+          "error": "Source not eligible before file access"
+        },
+        {
+          "case": "caller_line_0",
+          "error": "Unknown source/line/version"
+        },
+        {
+          "case": "caller_line_True",
+          "error": "Unknown source/line/version"
+        },
+        {
+          "case": "caller_line_999",
+          "error": "Unknown source/line/version"
+        },
+        {
+          "case": "caller_doc_id_unknown",
+          "error": "Unknown source/line/version"
+        },
+        {
+          "case": "caller_version_9",
+          "error": "Unknown source/line/version"
+        },
+        {
+          "case": "caller_text_forged",
+          "error": "Context text does not match extracted block"
+        },
+        {
+          "case": "changed_access",
+          "error": "Source not eligible before file access"
+        },
+        {
+          "case": "changed_current",
+          "error": "Source not eligible before file access"
+        },
+        {
+          "case": "changed_deleted",
+          "error": "Source not eligible before file access"
+        },
+        {
+          "case": "changed_version",
+          "error": "Source metadata changed"
+        },
+        {
+          "case": "changed_parser",
+          "error": "Stale source/parser; extract and index again"
+        },
+        {
+          "case": "changed_source",
+          "error": "Stale source/parser; extract and index again"
+        },
+        {
+          "case": "missing_kor_asset",
+          "error": "OCR language unavailable"
+        },
+        {
+          "case": "invalid_language",
+          "error": "Invalid OCR language"
+        }
+      ],
+      "teaching_required_shell_blocks": 6,
+      "reader_modes_checked": 4,
+      "reader_invalid_mode_checked": true
+    },
+    "stored_ocr_checks": {
+      "metric_conditions": 3,
+      "reference_compact_characters": 40,
+      "reference_whitespace_tokens": 14,
+      "clean_scan_edit_count": 1,
+      "clean_scan_word_edit_count": 6,
+      "metrics": {
+        "scan": {
+          "cer_whitespace_excluded": 0.025,
+          "wer_whitespace_tokens": 0.42857142857142855,
+          "critical_fields": {
+            "7일": true,
+            "15000원": true,
+            "RF-1048": true
+          },
+          "field_check": "substring presence only; not correct row/semantic association",
+          "prediction": "완 불 신청 안내 신청 기한: 결제 후 7 일 고객 부담금: 15000 원 접수 번호: RF-1048"
+        },
+        "degraded": {
+          "cer_whitespace_excluded": 0.0,
+          "wer_whitespace_tokens": 0.2857142857142857,
+          "critical_fields": {
+            "7일": true,
+            "15000원": true,
+            "RF-1048": true
+          },
+          "field_check": "substring presence only; not correct row/semantic association",
+          "prediction": "환불 신청 안내 신청 기한: 결제 후 7 일 고객 부담금: 15000 원 접수 번호: RF-1048"
+        },
+        "degraded_threshold175": {
+          "cer_whitespace_excluded": 0.0,
+          "wer_whitespace_tokens": 0.2857142857142857,
+          "critical_fields": {
+            "7일": true,
+            "15000원": true,
+            "RF-1048": true
+          },
+          "field_check": "substring presence only; not correct row/semantic association",
+          "prediction": "환불 신청 안내 신청 기한: 결제 후 7 일 고객 부담금: 15000 원 접수 번호: RF-1048"
+        }
+      },
+      "same_cer_title_vs_amount": 0.025,
+      "field_presence_not_semantic_association": true,
+      "stored_bbox_ranges_checked": true
+    },
+    "visual_review": {
+      "repository_previews": [
+        "digital",
+        "scan",
+        "degraded"
+      ],
+      "fresh_rendered_mixed_pages": [
+        1,
+        2
+      ],
+      "note": "Read-only existing synthetic PDFs; no regenerated or modified PDF artifacts."
+    },
+    "preservation": {
+      "protected_files": [
+        "curriculum-work/practice/document-assistant/backend/data/document-v1/gold.json",
+        "curriculum-work/practice/document-assistant/backend/tools/document_assets.py",
+        "curriculum-work/practice/document-assistant/backend/document_tests/test_document_ingest.py",
+        "curriculum-work/reports/KEDU-PRODUCTION-012/observed.json",
+        "curriculum-work/reports/KEDU-PRODUCTION-012/REVIEW.md",
+        "curriculum-work/reports/KEDU-PRODUCTION-012/details/mixed-extraction.json",
+        "curriculum-work/reports/KEDU-PRODUCTION-012/details/digital-extraction.json",
+        "curriculum-work/practice/document-assistant/backend/requirements-document.txt",
+        "curriculum-work/reports/KEDU-PRODUCTION-012/details/degraded-extraction.json",
+        "curriculum-work/reports/KEDU-PRODUCTION-012/details/scan-extraction.json",
+        "curriculum-work/practice/document-assistant/backend/tools/document_lab.py",
+        "curriculum-work/practice/document-assistant/backend/data/document-v1/README.md",
+        "curriculum-work/practice/document-assistant/backend/tools/document_specimens.py",
+        "curriculum-work/loop/prompts.md",
+        "curriculum-work/reports/KEDU-PRODUCTION-012/details/degraded-preprocessed-extraction.json",
+        "curriculum-work/practice/document-assistant/backend/app/document_ingest.py",
+        "curriculum-work/reports/KEDU-PRODUCTION-012/RESULT.md"
+      ],
+      "pdf_png_gold_license_sha256": {
+        "mixed.pdf": "9625d177d2958f0c328aaa36b6c4978f4e8e417711629650ac960f8b36227ccb",
+        "README.md": "a1614e4ae52cecc2317a51803e759f96312458f685164dd7bab1651552eb2f6b",
+        "degraded.pdf": "589f4db3406df70ca4e3e15937cc4137e70e4452ba868e5ec8ef57b71cbc917c",
+        "gold.json": "ee7995b9346b7e4920734dc96fb91f76717db253062c265b24788ad724915921",
+        "scan.pdf": "697f552c870d3d3e420e99120d0ab781553da05330fe78396775b4ae37a42e4b",
+        "digital-preview-1.png": "4bf01fdde713b5367f0807bb3f7431c66917fee0e5912ad13dace74be121e891",
+        "FONT-OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+        "TESSDATA-LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "digital.pdf": "01f0a3f4de1d0993f18d4c9e1f413ab9114244a946cf97518d90776583a1f866",
+        "degraded-preview-1.png": "605a4aad7947dd70f1497ae10fa4e362f86c78801218574318c3fe7907161840",
+        "scan-preview-1.png": "4bf7026c11d990223427d36efc25969085904ea45f596895cfba2c331097f0b7"
+      }
+    },
+    "network": {
+      "direct_validation_process_attempts": [],
+      "note": "Not OS isolation proof; required CLI child code uses local-only reads/extraction/temp index by inspection."
+    },
+    "not_run": [
+      "new Korean OCR or preprocessing pipeline",
+      "full document_tests/legacy pytest suites",
+      "new fixture generation or asset download",
+      "CLIP/VLM/OCR-free/Layout-aware models",
+      "RAG answer/model calls",
+      "general document benchmark",
+      "independent classroom, quality scoring and student device trial"
+    ]
+  },
+  "source_versions": {
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/gold.json": "4409ac38c17a0f91016cd7030985f9c9d3483688",
+    "curriculum-work/practice/document-assistant/backend/tools/document_assets.py": "17b7445bd8d13d0b9d8159d13e900b452bdd64ba",
+    "curriculum-work/practice/document-assistant/backend/document_tests/test_document_ingest.py": "a17715e6f8ee8798827b16f195e47bc62aafc3f3",
+    "curriculum-work/reports/KEDU-PRODUCTION-012/observed.json": "32003dcd70853110973d3078013b53c7db8f01bc",
+    "curriculum-work/reports/KEDU-PRODUCTION-012/REVIEW.md": "6e1137cb08123425f250985c8ca623cc0c28f3cc",
+    "curriculum-work/reports/KEDU-PRODUCTION-012/details/mixed-extraction.json": "61b300f682e44f5e10c6633579622482645b5121",
+    "curriculum-work/practice/document-assistant/backend/README.md": "eff3c10b78edf96fcfb33e28f970941dc0f3f7bd",
+    "curriculum-work/reports/KEDU-PRODUCTION-012/details/digital-extraction.json": "c14dea859f13eb9e8a4cc4390010b62dcc699129",
+    "curriculum-work/practice/document-assistant/backend/requirements-document.txt": "996f89060c4ec2b17fac3bdce10e2a439869a8b9",
+    "curriculum-work/lessons/document-parsing/lesson.md": "da88526bdfc06d08bf8b67a5389091aa609a821b",
+    "curriculum-work/reports/KEDU-PRODUCTION-012/details/degraded-extraction.json": "c3c229de050ade44013bd7eab540845ccb90bd7c",
+    "curriculum-work/PROGRESS.md": "89cd4755d677a86e17b956ad3743b5e01b567708",
+    "curriculum-work/curriculum/production-index.json": "6a58c16d3d21f5640c0dc6ed3a2ee93b0632fb05",
+    "curriculum-work/practice/document-assistant/L8.md": "c5c12dcb3dadc2a6d4aabd8e2a4c99cc7e610214",
+    "curriculum-work/reports/KEDU-PRODUCTION-012/details/scan-extraction.json": "035467b727c989ef6dedd9e653f406fcb7c46e48",
+    "curriculum-work/practice/document-assistant/backend/tools/document_lab.py": "24c439f885c666c5b8310111db7356c2b962b58e",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/README.md": "461e39ef64aa9b9279841b8238c5648a55985b50",
+    "curriculum-work/README.md": "81b8dedf42d347a7a172f8d2f798f7b0d9be18af",
+    "curriculum-work/practice/document-assistant/backend/tools/document_specimens.py": "783de88f6cc93fb929892bc270633da1bf590c4d",
+    "curriculum-work/loop/prompts.md": "1a7fc88795b737413817bd7425f61ad97d5cf665",
+    "curriculum-work/reports/KEDU-PRODUCTION-012/details/degraded-preprocessed-extraction.json": "6076d7057ab86575d93070d0a36555c2f187aede",
+    "curriculum-work/practice/document-assistant/backend/app/document_ingest.py": "c6252fd941ae3925cccc3f8741292fefe504bc5e",
+    "curriculum-work/reports/KEDU-PRODUCTION-012/RESULT.md": "7091c8d1302df144d42079ccec5c67117dc0bb55",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/mixed.pdf": "c16ad7b537a7ce78fc8bc9020aff25aed22d7a57",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/degraded.pdf": "ba4f3bd49003327f5c7047ec6726b6ed5b609743",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/scan.pdf": "c6cb080d8fed9e86c4598c541f659799d43545bc",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/digital-preview-1.png": "458c57f5071a2d42c4cec3294dd43756c69e2d50",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/FONT-OFL.txt": "1c9f43281b8f216c5461fe9ac729afbade7724e4",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/TESSDATA-LICENSE.txt": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/digital.pdf": "7eaf8b068243e9e8528ad1dd60af9a33f571bab0",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/degraded-preview-1.png": "7282024194cb2b50be6d77b4180a48fee7e2b0d4",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/scan-preview-1.png": "86586fccf9254c5d452affdc34af7793f2c58ae2",
+    "curriculum-work/practice/document-assistant/backend/retrieval/index.py": "f9cfedbbf19eb76fd2f3d5933b81f35db28a5408",
+    "curriculum-work/practice/document-assistant/backend/retrieval/encoder.py": "34bc2b95299afa6d571c41e76b5a8d1f527d3b52"
+  },
+  "next_batch": {
+    "id": "KEDU-TEACHING-REPAIR-014",
+    "proposed_scope": [
+      "Revise first three Document AI units: format/original/common structure, document state/permissions/deletion, evidence/review/document generation",
+      "Connect matching L9 activities to a worked original/version/evidence/review/export flow",
+      "Preserve existing execution and quality gates; leave Provider, React/Streaming and final evaluation for the following three units"
+    ],
+    "status": "not_started",
+    "recommended_reasoning_effort": "high"
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "static_checks": {
+    "relative_targets_exist": 87,
+    "protected_runtime_gates_preserved": true,
+    "reviewed_units": 45,
+    "pending_units": 25
+  }
+}

@@ -129,3 +129,5 @@ Multi-Agent 저장 기록은 `python -m tools.multi_steps --record ../../../repo
 데이터 준비 수업에서는 `python -m tools.training_data_steps --example FT-T01-S01`로 회의실 원본·교사 정답·파생 후보를 읽고, `python -m tools.training_data_steps --mode labels`로 과거 실제 Tokenizer의 저장 정답 범위를 읽는다. 읽기 도구는 표준 라이브러리만 사용하며 Tokenizer·학습을 실행하지 않는다. [실습 안내](../L7.md)의 현재 검수 코드와 가상 Padding 활동, 선택적 실제 변환/후속 훈련을 구분한다.
 
 훈련 수업의 `python -m tools.lora_steps --mode math`는 가상 스칼라/SGD 계산이고, `--mode training`, `evaluation`, `case --example FT-E01-S04`, `regression`, `reload`는 기존 전체 LoRA JSON 기록을 읽는다. 표준 라이브러리만 사용하며 새 모델·훈련·바이너리 재로드/해시 검사를 실행하지 않는다. [실습 안내](../L7.md)의 새 프로세스 모델 재로드 명령과 구분한다.
+
+PDF 수업의 `python -m tools.document_steps --mode routes`와 `layout`, `ocr`, `source` 모드는 기존 합성 PDF/OCR JSON 기록만 읽는다. 표준 라이브러리를 사용하며 현재 PDF 추출·OCR·모델 호출을 실행하지 않는다. [연결 실습](../L8.md)의 별도 코드로 직접 추출·지표 재계산·BM25/원문 거부를 확인하고, 실제 한글 OCR는 고정 엔진/언어 데이터를 준비한 선택 실행으로 구분한다.
