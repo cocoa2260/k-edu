@@ -1,0 +1,9 @@
+{
+  "python": "3.12.14",
+  "machine": "x86_64",
+  "memory_available_initial": "9.1 GiB; total 9.7 GiB; no swap",
+  "pip_check": "No broken requirements found",
+  "torch": "2.15.0+cpu",
+  "paid_api_calls": 0,
+  "ollama_executable_present": false
+}

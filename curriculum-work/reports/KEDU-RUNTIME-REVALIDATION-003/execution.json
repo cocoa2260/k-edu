@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/workspace/scratch/2eedeaf0c30d/.venv-generation-r3/bin/python",
+    "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-003/probe.py",
+    "--output",
+    "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-003/observed.json"
+  ],
+  "cwd": "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/practice/document-assistant/backend",
+  "environment_overrides": {
+    "HF_HOME": "/workspace/scratch/2eedeaf0c30d/tmp/tokenizer-r1-cache",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "PYTHONPATH": "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/practice/document-assistant/backend"
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 61.147,
+  "stdout": "",
+  "stderr": ""
+}

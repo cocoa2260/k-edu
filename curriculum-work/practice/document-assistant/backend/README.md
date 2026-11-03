@@ -137,3 +137,7 @@ PDF 수업의 `python -m tools.document_steps --mode routes`와 `layout`, `ocr`,
 문서 등록·검토 수업은 `python -m tools.document_ai_steps --mode intake`, `lifecycle`, `review`로 임시 SQLite/TXT와 현재 고정 자료를 처리한다. `history`는 기존 보고서 JSON을 읽는다. 새 도구는 모델·실제 인증/독립 승인·DOCX/PDF 생성을 수행하지 않는다. [L9 활동](../L9.md)에서 현재 좁은 DOCX/템플릿 v2와 과거 두 형식/v1 출력, 선택적 실제 문서 출력·화면 검사를 구분한다.
 
 전송·채택 수업의 `python -m tools.delivery_steps --mode provider`는 임시 loopback HTTP 고정 응답 네 사례, `formats`는 현재 세 형식의 원본/IR/근거·고정 검토와 권한 변경 거부를 실행한다. `history`는 과거 브라우저 JSON을 읽는다. 새 보고서·실제 모델/Token/청구 API를 실행하지 않는다. [L9 활동](../L9.md)에서 메모리 SSE 코드와 실제 React 화면, 최종 채택 보류를 구분한다.
+
+## 실제 CPU 모델을 API에 명시적으로 연결한 검증
+
+[실행 결과](../../../reports/KEDU-RUNTIME-REVALIDATION-003/RESULT.md)에서 기존 create_app(provider)에 HFCpuProvider를 주입해 실제 loopback 생성 2회를 확인했다. 기본 Factory는 계속 Ollama/OpenAI이며 서버 명령만으로 HF로 자동 전환되지 않는다. 생성은 실행됐지만 허구 금액·조건/예외 누락으로 답변 품질은 채택 보류다. 재현에는 해당 결과의 고정 CPU 환경과 모델 Weight·캐시가 필요하다.

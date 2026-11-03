@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-RUNTIME-REVALIDATION-002",
+  "current_batch": "KEDU-RUNTIME-REVALIDATION-003",
   "units": [
     {
       "id": "K2-00.U01",
@@ -979,15 +979,15 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-RUNTIME-REVALIDATION-003",
+    "id": "KEDU-RUNTIME-REVALIDATION-004",
     "status": "not_started",
     "recommended_reasoning_effort": "high",
     "proposed_scope": [
-      "Verify a no-paid-API local CPU actual generation Provider preparation path and resource conditions",
-      "Distinguish existing Ollama/OpenAI web API from Hugging Face CLI and validate a real baseline question when ready"
+      "Controlled actual Prompt five-condition and separate Context comparison",
+      "Evaluate original question, boundaries and regression against source; preserve input/output/budget evidence"
     ]
   },
-  "batch_status": "BACKEND_CONTRACTS_REVALIDATED_ACTUAL_PROVIDER_NOT_READY",
+  "batch_status": "EXPLICIT_CPU_API_GENERATION_VERIFIED_TASK_QUALITY_NOT_ACCEPTED",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -1159,6 +1159,13 @@
       "contract_tests_passed": 70,
       "real_fixed_loopback_checks": 8,
       "actual_generation": "not_run_provider_not_ready"
+    },
+    "actual_baseline_generation": {
+      "report": "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-003/RESULT.md",
+      "actual_model_calls": 2,
+      "route": "explicit existing HFCpuProvider injection into unchanged create_app",
+      "task_quality": "not_accepted",
+      "default_factory_changed": false
     }
   }
 }
