@@ -127,3 +127,5 @@ Single-Agent 기록 읽기는 `python -m tools.agent_steps --record ../../../rep
 Multi-Agent 저장 기록은 `python -m tools.multi_steps --record ../../../reports/KEDU-PRODUCTION-008/observed.json --case A02`로 읽는다. fixture-observed.json의 control/M01/M02/M03/M04 하위 키는 고정 제어 실험이며 실제 모델 품질이 아니다. [L6 활동](../L6.md)에서 직접 경계 코드·과거 통합·별도 역할Probe·본인의 새 실행을 구분한다.
 
 데이터 준비 수업에서는 `python -m tools.training_data_steps --example FT-T01-S01`로 회의실 원본·교사 정답·파생 후보를 읽고, `python -m tools.training_data_steps --mode labels`로 과거 실제 Tokenizer의 저장 정답 범위를 읽는다. 읽기 도구는 표준 라이브러리만 사용하며 Tokenizer·학습을 실행하지 않는다. [실습 안내](../L7.md)의 현재 검수 코드와 가상 Padding 활동, 선택적 실제 변환/후속 훈련을 구분한다.
+
+훈련 수업의 `python -m tools.lora_steps --mode math`는 가상 스칼라/SGD 계산이고, `--mode training`, `evaluation`, `case --example FT-E01-S04`, `regression`, `reload`는 기존 전체 LoRA JSON 기록을 읽는다. 표준 라이브러리만 사용하며 새 모델·훈련·바이너리 재로드/해시 검사를 실행하지 않는다. [실습 안내](../L7.md)의 새 프로세스 모델 재로드 명령과 구분한다.

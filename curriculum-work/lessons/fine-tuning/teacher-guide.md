@@ -47,4 +47,4 @@
 | K2-12.U03 | 3. 증강은 같은 뜻과 바뀐 뜻 구분 | 실습 3 |
 | K2-12.U04 | 4. 대화 예제를 Token과 label로 | 실습 4·선택 실행 |
 
-[학생용 본문](lesson.md) · [실습 안내](../../practice/document-assistant/L7.md). 후반 네 단원·훈련 설명은 다음 정비 범위다. 기존 훈련 결과를 없었던 것으로 바꾸지 않는다.
+[학생용 본문](lesson.md) · [실습 안내](../../practice/document-assistant/L7.md). 후반 네 단원은 [훈련 수업 해설](training-teacher-guide.md)에서 이어 간다. 기존 훈련 결과와 현재 설명 정비를 구분한다.

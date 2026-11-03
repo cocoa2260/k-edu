@@ -1,0 +1,252 @@
+{
+  "batch": "KEDU-TEACHING-REPAIR-012",
+  "date": "2026-11-03",
+  "reviewer": "same_author_not_independent",
+  "units": [
+    "K2-12.U05",
+    "K2-12.U06",
+    "K2-12.U07",
+    "K2-12.U08"
+  ],
+  "explanation_review": [
+    {
+      "criterion": "맥락/선수",
+      "evidence": "회의실 정답/Mask 준비→실제 갱신과 낮은 Loss에도 남은 실패",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "개념 설명",
+      "evidence": "LoRA W/A/B·Step, QLoRA 저장/계산/메모리, 평가와 재현/재개를 풀어 설명",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "풀어쓴 예제",
+      "evidence": "2×2 출력·스칼라 첫 Gradient, 실제 28 Step/노출, answer=0·빈 claims·동일 실패 재현",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "실습 연결",
+      "evidence": "네 활동의 예상·실행·관찰·해석과 정확한 실행 위치/환경/선택 훈련 명령",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "자료 일치",
+      "evidence": "현재 순서/설정 함수, 저장 30생성 계약·54회귀·Token열, 구/현행 소스 차이 대조",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "질문/해설",
+      "evidence": "각 장 3개 총 12개 질문·정답 근거·활동별 충분/보완 피드백",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "관리 분리",
+      "evidence": "자연어 제목·상황 먼저, 실제 ID/필드 뜻·교사용 단원 매핑",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "근거 수준",
+      "evidence": "가상 계산·현재 순수함수·과거 실제 모델·바이너리 재실행/독립 수업을 구분",
+      "verdict": "설명 검수 통과"
+    }
+  ],
+  "execution": {
+    "python": "3.12.14",
+    "pydantic": "2.14.1",
+    "pinned_pydantic": "2.14.2",
+    "heavy_packages_available": {
+      "torch": false,
+      "peft": false,
+      "transformers": false
+    },
+    "current_code_checks": {
+      "pure_functions_executed_from_exact_ast": [
+        "schedule_ids",
+        "verify_config",
+        "read",
+        "save"
+      ],
+      "schedule_full_coverage_and_rejections": true,
+      "config_same_allowed_changed_rejected": true,
+      "toy_scalar_sgd_and_forward_math": true,
+      "teaching_shell_blocks_executed": 3,
+      "reader_test_cases": 10,
+      "reader_bad_arguments": 2
+    },
+    "stored_record_checks": {
+      "current_grounding_rechecked_generations": 30,
+      "metrics": {
+        "base": {
+          "validation_loss": 1.7072241067886353,
+          "test_loss": 1.70662978887558,
+          "contract_pass": 0,
+          "contract_and_outcome_match": 0,
+          "denominator": 10
+        },
+        "seed": {
+          "validation_loss": 0.37513935267925264,
+          "test_loss": 0.34966494143009186,
+          "contract_pass": 8,
+          "contract_and_outcome_match": 4,
+          "denominator": 10
+        },
+        "augmented": {
+          "validation_loss": 0.4593475967645645,
+          "test_loss": 0.4441987931728363,
+          "contract_pass": 8,
+          "contract_and_outcome_match": 3,
+          "denominator": 10
+        }
+      },
+      "training": {
+        "seed": {
+          "schedule_matches_current_code": true,
+          "unique_rows": 20,
+          "steps": 28,
+          "supervised_token_exposures": 1727,
+          "stored_reload_tokens_equal": true,
+          "reload_case": "FT-E01-S01",
+          "reload_contract_failure": "OUTPUT_CONTRACT"
+        },
+        "augmented": {
+          "schedule_matches_current_code": true,
+          "unique_rows": 28,
+          "steps": 28,
+          "supervised_token_exposures": 1947,
+          "stored_reload_tokens_equal": true,
+          "reload_case": "FT-E01-S01",
+          "reload_contract_failure": null
+        }
+      },
+      "regression": {
+        "base": {
+          "cases": 18,
+          "generations": 60,
+          "handler_entries": 46,
+          "final_drafts": 0
+        },
+        "seed": {
+          "cases": 18,
+          "generations": 42,
+          "handler_entries": 22,
+          "final_drafts": 0
+        },
+        "augmented": {
+          "cases": 18,
+          "generations": 40,
+          "handler_entries": 33,
+          "final_drafts": 0
+        }
+      },
+      "matching_initial_adapter_digest": true,
+      "total_optimizer_steps_recorded": 56,
+      "total_generations_recorded_including_reload": 174,
+      "source_hashes": {
+        "data/finetuning-v1/augmentation-candidates.json": "858762db9ff48febcfa9475eaff303d8252dad5ac857285cc72f176b42c4910c",
+        "data/finetuning-v1/review-manifest.json": "4511268e7bc0641b66f9aa0b908e0f4a8472231050a117e1ce1345e684d67b53",
+        "data/finetuning-v1/seeds.json": "9f6fd7add33d1fffe421a98b3251e7c3fc3e0e9eb6801c11ff80866bfa14cf60",
+        "data/finetuning-v1/split-manifest.json": "e80534484fd91669148aec38510892ce9ed2bf836e12ab4970d9640117f793a1",
+        "data/core-v1.json": "652bdbe1d6fbfd171dad6333aeea1bf2c776f051ba8d08ae522ca46f1d0e4052",
+        "data/agent-v1.json": "5002b78a7f6c8f523355d38381c9ff92403ce346e1e7a0088465f2fc85893424",
+        "data/documents-v1.json": "7d36affce1b403cd9b19dcab6181aa006236a4eee8ee477c21d13ef7d97b4196",
+        "tools/lora_full_lab.py": "1ada4f183cb102292939c0d2d9a1cc92aad87b57c3cadbb6fbec67e5c5023259",
+        "tools/lora_lab.py": "c7f73d5f0c0255925389e4de8d014c177b6b5bc414be31c8bee8f5cdf4ecd92a",
+        "app/training_data.py": "6f9b5cdac17959c8244e35cadb02ffcdc2a5548601d546a39baf97e4afa608b6",
+        "app/agent.py": "a082a0b258302d7b7f9a4dcb03a7d6cb2a215eda9e6220e3d5c057acdef86089",
+        "app/rag.py": "0bd7f48e56a70fc7742e281ece25748583f1794d734762d66bf578c2d0f5beab",
+        "app/providers/hf_cpu_provider.py": "427ef7c6b8b167a27389e794fb0ef3f30327d2a5f9a53c31a09da59a44c0ec24",
+        "retrieval/index.py": "77ed31c023ecbeccac7c5e97dd303f0a4a085bca0a83083f7c1bcf33a69d7ab5",
+        "retrieval/encoder.py": "25cfafce7d6f954952947101aef95215aa0165818233dffaf241da25f0efb0fd"
+      },
+      "archived_vs_published_runner_hashes_verified": true,
+      "index_snapshot_copy_change_since_execution_verified": true,
+      "actual_adapter_binary_rehashed": false
+    },
+    "preservation": {
+      "data_and_code_exact": true,
+      "protected_files": [
+        "curriculum-work/loop/prompts.md",
+        "curriculum-work/practice/document-assistant/backend/requirements-lora.txt",
+        "curriculum-work/reports/KEDU-PRODUCTION-011/RESULT.md",
+        "curriculum-work/practice/document-assistant/backend/tools/lora_full_reload.py",
+        "curriculum-work/reports/KEDU-PRODUCTION-011/REVIEW.md",
+        "curriculum-work/reports/KEDU-PRODUCTION-010/observed.json",
+        "curriculum-work/practice/document-assistant/backend/tools/lora_lab.py",
+        "curriculum-work/lessons/fine-tuning/lesson.md",
+        "curriculum-work/practice/document-assistant/backend/tools/lora_full_lab.py",
+        "curriculum-work/reports/KEDU-PRODUCTION-011/observed.json"
+      ],
+      "previous_preparation_practice_prefix_exact": true
+    },
+    "network": {
+      "direct_validation_process_attempts": [],
+      "note": "Not OS network isolation; CLI reader children are local-only by inspection"
+    },
+    "not_run": [
+      "new Qwen/Tokenizer inference or training",
+      "new real Adapter binary reload",
+      "Torch/PEFT training and checkpoint resume test",
+      "QLoRA/IA3/DoRA",
+      "full pytest/HTTP suite",
+      "independent quality/classroom and student device trial"
+    ]
+  },
+  "source_versions": {
+    "curriculum-work/loop/prompts.md": "1a7fc88795b737413817bd7425f61ad97d5cf665",
+    "curriculum-work/practice/document-assistant/backend/README.md": "3177f8a557d07fbc9e5473c7ddbf56200b8f64c8",
+    "curriculum-work/lessons/fine-tuning/training.md": "5bec65ed52a94b2928c0b3f819f4739aa27e216b",
+    "curriculum-work/PROGRESS.md": "8b29f0a582a8217711417809b4b061eeed088897",
+    "curriculum-work/practice/document-assistant/L7.md": "d9beb627dd7c2891b0052efa79574df982f7db02",
+    "curriculum-work/practice/document-assistant/backend/requirements-lora.txt": "2533a374b0b07ba436d3100f74a811b5f013ec7d",
+    "curriculum-work/reports/KEDU-PRODUCTION-011/RESULT.md": "81ea63cefb4848dabf32f4aab20543dc349744ea",
+    "curriculum-work/README.md": "f02d12066a2fe95851685ebec78a3e1b8aaf2039",
+    "curriculum-work/lessons/fine-tuning/teacher-guide.md": "aa724e7ee2773923bee30d934ffd67080a95dc5a",
+    "curriculum-work/practice/document-assistant/backend/tools/lora_full_reload.py": "cf1db6339f325fd5e42549a227ea8d9449c27f9d",
+    "curriculum-work/reports/KEDU-PRODUCTION-011/REVIEW.md": "2729cc507a1597d443d4dfcd03c4290819631065",
+    "curriculum-work/reports/KEDU-PRODUCTION-010/observed.json": "33c8afe34d5d2302a70429772cd31a3dfd902bf0",
+    "curriculum-work/practice/document-assistant/backend/tools/lora_lab.py": "b7b51feffae442b1c777799b1ac26d0d29f728dc",
+    "curriculum-work/curriculum/production-index.json": "36ed389bf58ab485afe82d8934ff2b34f9e6d3ab",
+    "curriculum-work/lessons/fine-tuning/lesson.md": "83fcdd9d19287c409213bb50a4a6276f46ad19fe",
+    "curriculum-work/practice/document-assistant/backend/tools/lora_full_lab.py": "ff91d28e672f52a708f9c502f642177dfa6fedc9",
+    "curriculum-work/reports/KEDU-PRODUCTION-011/observed.json": "4b8805207d01fe8a62541a5c19ee792d6faf4152",
+    "curriculum-work/practice/document-assistant/data/finetuning-v1/split-manifest.json": "188634972c1a33dd263483fe91488d2a2fdc821c",
+    "curriculum-work/practice/document-assistant/data/finetuning-v1/review-manifest.json": "882259b484445379533781eed49990a807d53b17",
+    "curriculum-work/practice/document-assistant/backend/retrieval/encoder.py": "34bc2b95299afa6d571c41e76b5a8d1f527d3b52",
+    "curriculum-work/practice/document-assistant/backend/app/agent.py": "4b74385546cfdbf52aadb32cb20f747a2a6340cf",
+    "curriculum-work/practice/document-assistant/backend/app/providers/hf_cpu_provider.py": "4bfd5b047ae63339f739ac6a1158fe55c5ac50e3",
+    "curriculum-work/practice/document-assistant/backend/retrieval/index.py": "f9cfedbbf19eb76fd2f3d5933b81f35db28a5408",
+    "curriculum-work/practice/document-assistant/data/finetuning-v1/augmentation-candidates.json": "691fc18ba7033aa3d77b20ae13aacf74d75c56d0",
+    "curriculum-work/practice/document-assistant/backend/app/rag.py": "6832261ff99ef2fdbfb1152dfa5379b7d045e177",
+    "curriculum-work/reports/KEDU-PRODUCTION-011/executed-runner.py": "35b33d7beda62e160879644476390b200cf0718e",
+    "curriculum-work/practice/document-assistant/backend/app/training_data.py": "7731f675838c1683478b4f3e22240ccb1f43e02e",
+    "curriculum-work/practice/document-assistant/data/finetuning-v1/seeds.json": "a7315db57f895939b785d950257b5e6f77f56e6d",
+    "curriculum-work/practice/document-assistant/data/agent-v1.json": "ed96ac3a98911fd1ad9baaba603d1ee8810d50d3",
+    "curriculum-work/practice/document-assistant/data/core-v1.json": "95f5827bd876f8b5109aca7cdf41953dd24c98f6",
+    "curriculum-work/practice/document-assistant/data/documents-v1.json": "25d0553f26321434a9a8c7f386261505bca2fda3"
+  },
+  "historical_index_reference": {
+    "commit": "a7444d0a14544cc25785db3ffffd3deb29af9374",
+    "change_commit": "8393d517bfd4966ebcccca3ee06a6b219bd1fdc2",
+    "difference": "Only import deepcopy and snapshot copy of manifest profile"
+  },
+  "next_batch": {
+    "id": "KEDU-TEACHING-REPAIR-013",
+    "proposed_scope": [
+      "Revise four PDF/OCR units and L8 practice: document type and extraction choice, layout/table/reading order, OCR/Vision quality, embedded instructions/permissions/source tracking",
+      "Use preserved synthetic PDF/OCR observations with worked examples and interpretation",
+      "Keep untested general documents, Vision and independent quality/classroom validation explicit"
+    ],
+    "status": "not_started",
+    "recommended_reasoning_effort": "high"
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "static_checks": {
+    "relative_targets_exist": 83,
+    "protected_runtime_gates_preserved": true,
+    "reviewed_units": 41,
+    "pending_units": 29,
+    "preparation_prefix_preserved": true
+  }
+}
