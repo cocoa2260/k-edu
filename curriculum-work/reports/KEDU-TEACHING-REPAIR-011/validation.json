@@ -164,7 +164,28 @@
     "recommended_reasoning_effort": "high"
   },
   "publication": {
-    "status": "pending"
+    "status": "main_commit_published_and_verified",
+    "branch": "work/curriculum-production-001",
+    "parent_commit": "65c400467b859156ebc4f81f4fc7af2ab5b2ab04",
+    "main_commit": "841a729b2fbf70c128673211bd0af2e1caeaf601",
+    "main_tree": "c7c72b527ffcb3ff71a33c62cfff510b7299751d",
+    "changed_files": [
+      "curriculum-work/lessons/fine-tuning/lesson.md",
+      "curriculum-work/lessons/fine-tuning/teacher-guide.md",
+      "curriculum-work/practice/document-assistant/L7.md",
+      "curriculum-work/practice/document-assistant/backend/tools/training_data_steps.py",
+      "curriculum-work/practice/document-assistant/backend/README.md",
+      "curriculum-work/README.md",
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/curriculum/production-index.json",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-011/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-011/validation.json"
+    ],
+    "main_tree_all_content_hashes_match": true,
+    "main_tree_only_whitelisted_blobs_changed": true,
+    "no_removals": true,
+    "branch_head_verified_before_proof_commit": true,
+    "note": "This publication record is saved in a subsequent commit; the subsequent commit only updates this JSON."
   },
   "static_checks": {
     "relative_targets_exist": 76,
