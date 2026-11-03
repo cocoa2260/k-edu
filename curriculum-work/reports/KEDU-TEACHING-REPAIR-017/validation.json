@@ -1,0 +1,227 @@
+{
+  "batch": "KEDU-TEACHING-REPAIR-017",
+  "date": "2026-11-03",
+  "reviewer": "same_author_not_independent",
+  "units": [
+    "K2-01.U01",
+    "K2-01.U02",
+    "K2-01.U03",
+    "K2-01.U04"
+  ],
+  "explanation_review": [
+    {
+      "criterion": "학습 맥락·선수 연결",
+      "evidence": "시작 안내의 업무/실패를 추가 확인 분류라는 목표로 옮기고, 한 금액 질문의 입력과 목표를 먼저 읽는다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "개념의 최초 설명",
+      "evidence": "Sample/Feature/Label의 행별 역할,원본/사흘 변형 가족,Loss 양쪽 변화,두 행의 TP/FN/FP와 지표 분모를 풀었다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "예제의 이해 가능성",
+      "evidence": "원래24행/20행/가상 Loss를 유지하며 실제 CSV발췌와3→8검토량·경계 오독의 중간 판단을 확인했다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "실습의 교육적 연결",
+      "evidence": "활동A~D에 준비·행동·관찰과 피드백,단원별3문항/해설을 연결하고 선택 실행에 위치/목적/예상/한계를 둔다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "설명과 실제 자료의 일치",
+      "evidence": "고정 원문11개 일치,24행/20행 기존 검사·8오류 거부,실제 선택 명령과 새 경계/CSV발췌/손계산 일치를 확인했다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "개념별 확인과 해설",
+      "evidence": "네 단원 각각3문항/총12문항과 이유,시점/그룹/선택/분모·경계의 반례를 교사용 해설로 대조했다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "교육생과 관리 기록의 구분",
+      "evidence": "단원/실행 관리 코드는 자연어로,실제 CSV열·ID는 의미 후 찾기용으로 안내하고 교사용 매핑을 둔다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "근거 수준·기술 정확성",
+      "evidence": "24행 계보 검사와 의미 독립/일반화,20행 산술과 모델 성능,가상Loss와 훈련,자체 설명과 독립수업을 구분했다.",
+      "verdict": "설명 검수 통과"
+    }
+  ],
+  "source_versions": {
+    "curriculum-work/README.md": "bda98720aeb527d45adb911a9eb177ccb367a1df",
+    "curriculum-work/PROGRESS.md": "e2daef5e4af9937443385972b81b49ba56c1724b",
+    "curriculum-work/curriculum/production-index.json": "87eda759386e2537387d583e67a196da4ebb68b9",
+    "curriculum-work/loop/prompts.md": "1a7fc88795b737413817bd7425f61ad97d5cf665",
+    "curriculum-work/lessons/data-evaluation/lesson.md": "6188832cba994d7a0d50225dc952e2e0bf0d93a8",
+    "curriculum-work/lessons/data-evaluation/worksheet.md": "0c41a0c64daff1f0d2135772eb2b21453bf9df43",
+    "curriculum-work/lessons/data-evaluation/teacher-guide.md": "3760489db43ec06d4daa50ed215a519b4bb51036",
+    "curriculum-work/lessons/data-evaluation/dataset-card.md": "24afc4663dbb6163a2aa0748e9c9f97caa4f9888",
+    "curriculum-work/practice/data-evaluation/check_examples.py": "606e265e7902e74ac31ed3cdaaaad18fc6a2f7a2",
+    "curriculum-work/practice/data-evaluation/data/split-examples.csv": "a4df83e20e6bdabd441359b2be6d168f20771145",
+    "curriculum-work/practice/data-evaluation/data/metric-examples.csv": "4d9734544e1793cadd8475f1b8729735db1a303c"
+  },
+  "execution": {
+    "status": "passed",
+    "scope": "authored fixture structure, lineage and arithmetic only",
+    "data_sha256": {
+      "metric-examples.csv": "9624d82079f34a236f5e525e3328bbff35e7bfa68b1eb74a49f9ba80ff39ab92",
+      "split-examples.csv": "aa4c491c8544c442f85ef4bd34096aa316e55f1230c76a3b73ebca2617c5cd55"
+    },
+    "split_fixture": {
+      "rows": 24,
+      "original_groups": 12,
+      "split_rows": {
+        "train": 12,
+        "dev": 6,
+        "test": 6
+      },
+      "label_counts": {
+        "train": {
+          "0": 4,
+          "1": 8
+        },
+        "dev": {
+          "0": 2,
+          "1": 4
+        },
+        "test": {
+          "1": 4,
+          "0": 2
+        }
+      },
+      "known_lineage_overlap": false,
+      "semantic_deduplication_verified": false,
+      "known_similar_intents": [
+        "G05",
+        "G11"
+      ],
+      "new_document_generalization_evaluated": false
+    },
+    "arithmetic_fixture_rows": 20,
+    "positive_label": "needs_escalation=1",
+    "threshold_rule": "score >= threshold",
+    "score_provenance": "authored_not_model_output",
+    "arithmetic_results": {
+      "always_0": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 4,
+        "TN": 16,
+        "accuracy": 0.8,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "illustrative_error_weight_10FN_plus_FP": 40
+      },
+      "0.70": {
+        "TP": 2,
+        "FP": 1,
+        "FN": 2,
+        "TN": 15,
+        "accuracy": 0.85,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285714,
+        "illustrative_error_weight_10FN_plus_FP": 21
+      },
+      "0.30": {
+        "TP": 4,
+        "FP": 4,
+        "FN": 0,
+        "TN": 12,
+        "accuracy": 0.8,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "illustrative_error_weight_10FN_plus_FP": 4
+      }
+    },
+    "rejected_mutations": [
+      "same-parent paraphrase moved to Test",
+      "contradictory paraphrase label",
+      "duplicate sample ID",
+      "nonbinary label",
+      "score above range",
+      "nonfinite score",
+      "Dev relabeled as Test",
+      "wrong score provenance"
+    ],
+    "zero_denominator_example": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 2,
+      "accuracy": 1.0,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "illustrative_error_weight_10FN_plus_FP": 0
+    },
+    "model_calls": 0,
+    "training_executed": false,
+    "test_performance_evaluated": false,
+    "independent_label_review": "not_run",
+    "classroom_trial": "not_run",
+    "python_version": "3.12.14",
+    "new_explanation_checks": {
+      "strict_greater_than_boundary": {
+        "TP": 3,
+        "FP": 4,
+        "FN": 1,
+        "TN": 12
+      },
+      "strict_greater_recall": 0.75,
+      "strict_greater_error_weight": 14,
+      "escalation_workload_by_threshold": {
+        "0.70": 3,
+        "0.30": 8
+      },
+      "increase": {
+        "TP": 2,
+        "FP": 3,
+        "total": 5
+      },
+      "loss_changes": {
+        "train_decrease": "0.18",
+        "dev_increase": "0.23"
+      },
+      "two_question_excerpts_match_csv": true
+    },
+    "exact_student_command": "python check_examples.py",
+    "student_command_cwd": "curriculum-work/practice/data-evaluation",
+    "student_command_exit_code": 0
+  },
+  "primary_sources_checked_date": "2026-11-03",
+  "primary_sources": [
+    "https://scikit-learn.org/stable/common_pitfalls.html#data-leakage",
+    "https://scikit-learn.org/stable/modules/cross_validation.html",
+    "https://scikit-learn.org/stable/modules/model_evaluation.html",
+    "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html",
+    "https://huggingface.co/docs/hub/en/datasets-cards"
+  ],
+  "next_batch": {
+    "id": "KEDU-TEACHING-REPAIR-018",
+    "proposed_scope": [
+      "Revise first three Transformer-basics units: affine layer/activation, self-attention arithmetic, Transformer block",
+      "Connect numeric examples, shapes and learned weights to activity/teacher explanations",
+      "Preserve remaining position/mask/generation/KV-cache scope and all runtime/quality gates"
+    ],
+    "status": "not_started",
+    "recommended_reasoning_effort": "high"
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "static_checks": {
+    "relative_file_links": 59,
+    "table_columns_match": true,
+    "question_answer_pairs": 12,
+    "reviewed_units": 58,
+    "pending_units": 12,
+    "other_units_runtime_and_all_quality_gates_unchanged": true,
+    "original_csv_and_checker_unchanged": true
+  }
+}
