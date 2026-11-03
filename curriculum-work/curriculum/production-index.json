@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-TEACHING-REPAIR-018",
+  "current_batch": "KEDU-TEACHING-REPAIR-019",
   "units": [
     {
       "id": "K2-00.U01",
@@ -155,7 +155,8 @@
       "runtime_status": "synthetic_positions_masks_verified_deployed_model_spec_not_assessed",
       "classroom_trial": "not_run",
       "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json",
-      "teaching_audit_status": "needs_revision"
+      "teaching_audit_status": "explanation_review_passed_same_author",
+      "teaching_revision_batch": "KEDU-TEACHING-REPAIR-019"
     },
     {
       "id": "K2-02.U05",
@@ -168,7 +169,8 @@
       "runtime_status": "single_layer_cache_equivalence_payload_arithmetic_verified_no_language_generation",
       "classroom_trial": "not_run",
       "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-020/validation.json",
-      "teaching_audit_status": "needs_revision"
+      "teaching_audit_status": "explanation_review_passed_same_author",
+      "teaching_revision_batch": "KEDU-TEACHING-REPAIR-019"
     },
     {
       "id": "K2-03.U01",
@@ -970,16 +972,16 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-TEACHING-REPAIR-019",
+    "id": "KEDU-TEACHING-REPAIR-020",
     "proposed_scope": [
-      "Revise remaining Transformer-basics units: positions/structure/masks and generation/KV cache",
-      "Connect visibility, shifted training targets, prefill/decode/cache timing and memory payload to activities/answers",
-      "Preserve first-three-unit repair, synthetic arithmetic and model/independent classroom distinctions"
+      "Revise first four LLM-basics units: learning/post-training, logits/token choice, parameter/context/memory/retrieval, hallucination/uncertainty/system evaluation",
+      "Connect existing concrete examples and activities/teacher explanations",
+      "Preserve existing runtime proofs and pending generation/independent quality/classroom gates; HF first visit/cards/tokenizer follow next"
     ],
     "status": "not_started",
     "recommended_reasoning_effort": "high"
   },
-  "batch_status": "TRANSFORMER_FIRST_THREE_UNITS_REVISED_SAME_AUTHOR_EXPLANATION_REVIEWED_REMAINING_PENDING",
+  "batch_status": "TRANSFORMER_POSITIONS_MASKS_CACHE_REVISED_SAME_AUTHOR_EXPLANATION_REVIEWED_REMAINING_PENDING",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -1067,7 +1069,7 @@
     "phase1_role": "reference for explanatory depth, progression, examples and practice interpretation; not permission to arbitrarily summarize Phase2",
     "prompt_revision": "completed_same_session_review",
     "existing_material_audit": "completed_70_unit_text_and_connected_teaching_document_review_with_targeted_static_code_checks",
-    "material_revision": "61_units_revised_same_author_explanation_reviewed_9_other_units_pending",
+    "material_revision": "63_units_revised_same_author_explanation_reviewed_7_other_units_pending",
     "applies_to": "all 70 units and connected practical material",
     "previous_review_status_interpretation": "historical review records preserved; not acceptance against current teaching criteria",
     "current_classroom_acceptance": false,
@@ -1094,20 +1096,19 @@
       "execution_scope": "supplemental input/CLI/excerpt validation; full pinned HTTP environment, tokenizer/generation/classroom not rerun",
       "classroom_trial": "not_run"
     },
-    "revised_unit_count": 61,
+    "revised_unit_count": 63,
     "latest_revision": {
-      "batch": "KEDU-TEACHING-REPAIR-018",
+      "batch": "KEDU-TEACHING-REPAIR-019",
       "units": [
-        "K2-02.U01",
-        "K2-02.U02",
-        "K2-02.U03"
+        "K2-02.U04",
+        "K2-02.U05"
       ],
       "lesson": "curriculum-work/lessons/transformer-basics/lesson.md",
       "practice": "curriculum-work/lessons/transformer-basics/worksheet.md",
       "teacher_guide": "curriculum-work/lessons/transformer-basics/teacher-guide.md",
-      "report": "curriculum-work/reports/KEDU-TEACHING-REPAIR-018/RESULT.md",
+      "report": "curriculum-work/reports/KEDU-TEACHING-REPAIR-019/RESULT.md",
       "explanation_verdict": "passed_same_author_document_review",
-      "execution_scope": "existing standard-library synthetic arithmetic/boundary/cache checker and exact student command; supplemental Softmax intermediate/rounding; later two unit text preserved; no full block/model/training/classroom",
+      "execution_scope": "existing stdlib synthetic arithmetic: position/mask boundaries, cache3/4/5 equality, payload4configs/8rejections and exact command; no real model/token choice/benchmark/classroom",
       "classroom_trial": "not_run"
     },
     "revision_reports": [
@@ -1126,7 +1127,8 @@
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-015/RESULT.md",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-016/RESULT.md",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-017/RESULT.md",
-      "curriculum-work/reports/KEDU-TEACHING-REPAIR-018/RESULT.md"
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-018/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-019/RESULT.md"
     ]
   }
 }
