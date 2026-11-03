@@ -1,0 +1,261 @@
+{
+  "batch": "KEDU-TEACHING-REPAIR-018",
+  "date": "2026-11-03",
+  "reviewer": "same_author_not_independent",
+  "units": [
+    "K2-02.U01",
+    "K2-02.U02",
+    "K2-02.U03"
+  ],
+  "explanation_review": [
+    {
+      "criterion": "학습 맥락·선수 연결",
+      "evidence": "이전 데이터/평가에서 모델 내부숫자로 연결하고 한위치 변환→다른위치혼합→Block책임을 잇는다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "개념의 최초 설명",
+      "evidence": "열별 가중합·고정Forward,Q/K비율과V내용,Head연결/투영과Residual/정규화축/FFN을 풀었다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "예제의 이해 가능성",
+      "evidence": "기존T3점수→안정화지수/합→가중치→출력,기존W_O표와FFN가중치/중간값을 표시하며 별도예제를 구분한다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "실습의 교육적 연결",
+      "evidence": "활동A~C의 준비·변경/관찰·Shape·해석과 선택명령의위치/예상/실패확인을 연결했다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "설명과 실제 자료의 일치",
+      "evidence": "고정9원문일치·기존공유계산기/실제명령실행·Softmax중간값과반올림·뒤단원원문보존을 확인했다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "개념별 확인과 해설",
+      "evidence": "세단원각3개/총9개질문과개념별이유/피드백을 대조했다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "교육생과 관리 기록의 구분",
+      "evidence": "앞세단원은 자연어제목/의미를먼저쓰고T3/Q/K/실제출력키는계산대상으로설명하며매핑은교사용으로분리했다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "근거 수준·기술 정확성",
+      "evidence": "합성Forward와학습/모델품질,구성요소와전체Block,공유계산검사와뒤단원설명검수/독립수업을구분한다.",
+      "verdict": "설명 검수 통과"
+    }
+  ],
+  "source_versions": {
+    "curriculum-work/README.md": "2976073b49725d8631549860c40b2b5624b62101",
+    "curriculum-work/PROGRESS.md": "fc18ccc3a839f8ab1fa5663bfd7ac16d9226edf8",
+    "curriculum-work/curriculum/production-index.json": "cb69dd0338ced226c7bd0a3218ea29051dd388b2",
+    "curriculum-work/loop/prompts.md": "1a7fc88795b737413817bd7425f61ad97d5cf665",
+    "curriculum-work/lessons/transformer-basics/lesson.md": "2037f6f06e6b59a9d7389598335dedab499df410",
+    "curriculum-work/lessons/transformer-basics/worksheet.md": "fdb126eb677b0672dce5e9fed46fa1e897384e54",
+    "curriculum-work/lessons/transformer-basics/teacher-guide.md": "4fc8ca5d9535fa43fee795116500305842fe54f3",
+    "curriculum-work/practice/transformer-basics/check_examples.py": "380e388c0405818bae18940b5717416839ce346a",
+    "curriculum-work/practice/transformer-basics/examples.json": "39dd6b40064bb26865748c5f65060d6ba3f12bbf"
+  },
+  "execution": {
+    "status": "passed",
+    "fixture_sha256": "f298b9032091d8b7e60bfefbe865ebf1cde769e1b5e03d2d2e90d1c06872614c",
+    "tolerance": 1e-09,
+    "scope": "synthetic component and single-layer attention arithmetic only",
+    "affine": {
+      "pre_activation": [
+        3,
+        -1
+      ],
+      "relu": [
+        3,
+        0.0
+      ]
+    },
+    "attention": {
+      "row3_weights": [
+        0.2482550782577231,
+        0.2482550782577231,
+        0.5034898434845538
+      ],
+      "row3_output": [
+        1.5034898434845538,
+        3.0069796869691077
+      ],
+      "row2_causal_weights": [
+        0.3302384506733431,
+        0.6697615493266569,
+        0.0
+      ],
+      "row2_causal_output": [
+        0.6604769013466862,
+        2.6790461973066275
+      ],
+      "masked_pad_weights": [
+        0.0,
+        0.0
+      ]
+    },
+    "components": {
+      "projection": [
+        4,
+        6,
+        3,
+        4
+      ],
+      "residual": [
+        5,
+        6,
+        4,
+        4
+      ],
+      "layernorm": [
+        -0.9999950000374997,
+        0.9999950000374997
+      ],
+      "ffn_output": [
+        4.0,
+        -3.0
+      ]
+    },
+    "position_checks": {
+      "sinusoidal_0_1": "passed",
+      "same_rotation_dot_product": "passed",
+      "unmasked_no_position_permutation_equivariance": "passed",
+      "mean_pooling_permutation_invariance": "passed"
+    },
+    "boundary_counterexamples": {
+      "missing_sqrt_scale_changes_weights": true,
+      "post_softmax_zero_without_renormalization_sum": 0.5988879073202141,
+      "future_token_changes_unmasked_but_not_causal_prefix": true
+    },
+    "cache_prefix_comparisons": [
+      {
+        "processed_prefix_length": 3,
+        "full_last": [
+          1.5034898434845538,
+          3.0069796869691077
+        ],
+        "incremental_last": [
+          1.5034898434845538,
+          3.0069796869691077
+        ],
+        "max_absolute_difference": 0.0
+      },
+      {
+        "processed_prefix_length": 4,
+        "full_last": [
+          3.65187340881368,
+          -3.1056295301197907
+        ],
+        "incremental_last": [
+          3.65187340881368,
+          -3.1056295301197907
+        ],
+        "max_absolute_difference": 0.0
+      },
+      {
+        "processed_prefix_length": 5,
+        "full_last": [
+          -1.5448111484828737,
+          7.287454025729945
+        ],
+        "incremental_last": [
+          -1.5448111484828737,
+          7.287454025729945
+        ],
+        "max_absolute_difference": 0.0
+      }
+    ],
+    "cache_includes_position_or_full_block": false,
+    "kv_memory_payload": [
+      {
+        "name": "base",
+        "bytes": 65536,
+        "KiB": 64.0
+      },
+      {
+        "name": "double_context",
+        "bytes": 131072,
+        "KiB": 128.0
+      },
+      {
+        "name": "double_batch",
+        "bytes": 131072,
+        "KiB": 128.0
+      },
+      {
+        "name": "fewer_kv_heads",
+        "bytes": 16384,
+        "KiB": 16.0
+      }
+    ],
+    "rejected_invalid_inputs": [
+      "matrix inner-dimension mismatch",
+      "ragged matrix",
+      "all keys masked",
+      "mask length mismatch",
+      "cache K/V length mismatch",
+      "residual shape mismatch",
+      "nonfinite attention score",
+      "invalid zero cache dimension"
+    ],
+    "pretrained_model_calls": 0,
+    "training_executed": false,
+    "token_generation_executed": false,
+    "performance_benchmark": "not_run",
+    "independent_quality_review": "not_run",
+    "classroom_trial": "not_run",
+    "python_version": "3.12.14",
+    "student_command": {
+      "command": "python check_examples.py",
+      "cwd": "curriculum-work/practice/transformer-basics",
+      "exit_code": 0
+    },
+    "additional_explanation_checks": {
+      "stabilized_exponents": [
+        0.49306869139523984,
+        0.49306869139523984,
+        1.0
+      ],
+      "exponent_sum": 1.9861373827904796,
+      "rounded_weight_sum": 1.0001,
+      "matches_existing_row3_weights": true
+    },
+    "scope_note": "Shared checker includes unchanged later position/mask/cache arithmetic. Only first three unit explanations are newly reviewed; no full-block/model execution."
+  },
+  "primary_sources_checked_date": "2026-11-03",
+  "primary_sources": [
+    "https://arxiv.org/html/1706.03762v7",
+    "https://docs.pytorch.org/docs/2.15/generated/torch.nn.Linear.html",
+    "https://docs.pytorch.org/docs/2.15/generated/torch.nn.ReLU.html",
+    "https://docs.pytorch.org/docs/2.15/generated/torch.nn.LayerNorm.html",
+    "https://docs.pytorch.org/docs/2.15/generated/torch.nn.MultiheadAttention.html",
+    "https://arxiv.org/abs/2002.04745"
+  ],
+  "next_batch": {
+    "id": "KEDU-TEACHING-REPAIR-019",
+    "proposed_scope": [
+      "Revise remaining Transformer-basics units: positions/structure/masks and generation/KV cache",
+      "Connect visibility, shifted training targets, prefill/decode/cache timing and memory payload to activities/answers",
+      "Preserve first-three-unit repair, synthetic arithmetic and model/independent classroom distinctions"
+    ],
+    "status": "not_started",
+    "recommended_reasoning_effort": "high"
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "static_checks": {
+    "relative_file_links": 53,
+    "table_columns_match": true,
+    "question_answer_pairs": 9,
+    "reviewed_units": 61,
+    "pending_units": 9,
+    "later_two_unit_text_activity_answers_preserved_verbatim": true,
+    "original_code_fixture_and_all_quality_gates_unchanged": true
+  }
+}
