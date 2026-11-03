@@ -112,7 +112,26 @@
     "recommended_reasoning_effort": "high"
   },
   "publication": {
-    "status": "pending"
+    "status": "published",
+    "branch": "work/curriculum-production-001",
+    "revision_commit": "58b8693ea1bd25a2f4f66923f605ef2cdbab6b41",
+    "revision_tree": "9bf0471d5703fb0bc040cd3800248282d7f0a4d9",
+    "parent_commit": "a10edf846bdb2bd36fe22eeae18921060be45321",
+    "changed_paths": [
+      "curriculum-work/lessons/multi-agent/lesson.md",
+      "curriculum-work/lessons/multi-agent/teacher-guide.md",
+      "curriculum-work/practice/document-assistant/L6.md",
+      "curriculum-work/practice/document-assistant/backend/tools/multi_steps.py",
+      "curriculum-work/practice/document-assistant/backend/README.md",
+      "curriculum-work/README.md",
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/curriculum/production-index.json",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-010/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-010/validation.json"
+    ],
+    "protected_existing_blobs_unchanged": 641,
+    "expected_parent_update_no_force": true,
+    "note": "Following documentation-only commit records publication checks."
   },
   "static_checks": {
     "relative_targets_exist": 71,
