@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/workspace/scratch/2eedeaf0c30d/.venv-tokenizer-r1/bin/python",
+    "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/practice/huggingface-tokenizer/tokenizer_steps.py"
+  ],
+  "cwd": "/workspace/scratch/2eedeaf0c30d",
+  "exit_code": 0,
+  "elapsed_seconds": 1.439,
+  "stdout": "입력: 안녕하세요. 모델의 입력을 확인합니다.\n문자 수 / Token 수: 21 12\nIDs: [126246, 144370, 91145, 13, 54070, 142713, 20401, 42349, 17877, 73859, 60838, 13]\n복원: 안녕하세요. 모델의 입력을 확인합니다.\n패딩된 IDs: [[126246, 144370, 91145, 13, 54070, 142713, 20401, 42349, 17877, 73859, 60838, 13], [13048, 0, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643]]\nAttention mask: [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]\n대화 입력 문자열: <|im_start|>user\nWhat is a tokenizer?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n\n",
+  "stderr": "None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.\n",
+  "environment_overrides": {
+    "HF_HOME": "/workspace/scratch/2eedeaf0c30d/tmp/tokenizer-r1-cache",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  }
+}

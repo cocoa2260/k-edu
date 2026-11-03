@@ -1,8 +1,8 @@
 # K-Edu 교육과정 개편 — 현재 위치와 읽을 파일
 
-**현재: 70개 단원의 설명 수정·동일 작성자 검수에 이어, 전체 수강 순서와 교안·준비·실습·제출물·해설 연결을 문서 기준으로 점검했다. 미완료 실제 실행·모델/과제 품질·독립 수업 검증은 남아 있다. 교육과정 채택 완료는 아니다.**
+**현재: 70개 단원의 설명 수정·동일 작성자 검수와 문서 연결 점검 후, Linux의 Qwen/Smol 실제 Tokenizer·캐시 재현을 다시 확인했다. Backend/실제 생성·모델/과제 품질·독립 수업 등 남은 검증을 진행 중이다. 교육과정 채택 완료는 아니다.**
 
-[교육생 수강 안내](STUDY_GUIDE.md) · [누적 실습](practice/document-assistant/README.md) · [연결 점검과 남은 검증 순서](reports/KEDU-TEACHING-INTEGRATION-001/RESULT.md)
+[교육생 수강 안내](STUDY_GUIDE.md) · [이번 Tokenizer 실행 결과](reports/KEDU-RUNTIME-REVALIDATION-001/RESULT.md) · [전체 검증 순서](reports/KEDU-TEACHING-INTEGRATION-001/RESULT.md)
 
 ## 전체 구성안
 

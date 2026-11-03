@@ -1,0 +1,11 @@
+{
+  "lab_exit_code": 0,
+  "attempts": {
+    "requests_session_request": 0,
+    "socket_connect": 0,
+    "socket_connect_ex": 0
+  },
+  "offline_environment": true,
+  "download_permission": false,
+  "scope": "Python requests and socket.connect/connect_ex guards, not OS-wide network isolation"
+}

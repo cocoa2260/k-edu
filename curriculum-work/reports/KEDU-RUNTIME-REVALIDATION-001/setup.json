@@ -1,0 +1,23 @@
+{
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "python": "3.12.14",
+  "direct_install_command": [
+    "/workspace/scratch/2eedeaf0c30d/.venv-tokenizer-r1/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--disable-pip-version-check",
+    "--retries",
+    "0",
+    "--timeout",
+    "20",
+    "-r",
+    "k-edu/curriculum-work/practice/huggingface-tokenizer/requirements.txt"
+  ],
+  "install_exit_code": 0,
+  "install_stdout_scope": "success observed in tool output; full transcript not saved; environment.json captures resulting freeze",
+  "new_venv": true,
+  "new_HF_HOME": "/workspace/scratch/2eedeaf0c30d/tmp/tokenizer-r1-cache",
+  "network_policy_file": "/etc/codex/network-policy.json unavailable; no environment_status tool exposed; normal inherited networking/TLS used without overrides"
+}

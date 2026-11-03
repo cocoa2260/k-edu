@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/workspace/scratch/2eedeaf0c30d/.venv-tokenizer-r1/bin/python",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "cwd": "/workspace/scratch/2eedeaf0c30d",
+  "exit_code": 0,
+  "elapsed_seconds": 0.263,
+  "stdout": "No broken requirements found.\n",
+  "stderr": ""
+}

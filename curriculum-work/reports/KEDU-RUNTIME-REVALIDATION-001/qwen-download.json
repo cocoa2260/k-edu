@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/workspace/scratch/2eedeaf0c30d/.venv-tokenizer-r1/bin/python",
+    "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/practice/huggingface-tokenizer/inspect_tokenizer.py",
+    "--profile",
+    "qwen",
+    "--allow-download",
+    "--output",
+    "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-001/runtime/qwen-8"
+  ],
+  "cwd": "/workspace/scratch/2eedeaf0c30d",
+  "exit_code": 0,
+  "elapsed_seconds": 25.263,
+  "stdout": "{\"status\": \"actual_tokenizer_observed\", \"checks_passed\": true, \"report\": \"/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-001/runtime/qwen-8/observations.md\"}\n",
+  "stderr": "None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.\n",
+  "environment_overrides": {
+    "HF_HOME": "/workspace/scratch/2eedeaf0c30d/tmp/tokenizer-r1-cache",
+    "HF_HUB_DISABLE_PROGRESS_BARS": "1",
+    "HF_HUB_DOWNLOAD_TIMEOUT": "20",
+    "HF_HUB_ETAG_TIMEOUT": "20"
+  }
+}

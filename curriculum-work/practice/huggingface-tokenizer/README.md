@@ -6,6 +6,8 @@
 
 Python 3.12, 인터넷으로 준비한 Python 의존성, 선택한 리비전의 Tokenizer 파일이 필요하다. GPU·PyTorch·생성 모델 가중치는 이 실습의 필요 조건이 아니다. Linux x86_64 / Python 3.12.14에서 직접 의존성 설치와 실제 Qwen·Smol Tokenizer 실행을 검증했다. requirements-tested.txt에는 전체 설치 버전을 기록했다. 다른 운영체제와 교육장 호환성은 별도 확인이 필요하다. 실제 확인 결과는 [제작 기록](../../reports/KEDU-PRODUCTION-001/RESULT.md)을 확인한다.
 
+2026-11-04에는 새 Linux 가상환경에서 같은 고정 입력/revision으로 실제 관찰 6회와 캐시·과거 결과 대조를 다시 통과했다. [최신 실행 결과](../../reports/KEDU-RUNTIME-REVALIDATION-001/RESULT.md)와 그 안의 설치 버전 스냅샷을 참고한다. 과거 requirements-tested.txt는 당시 기록으로 보존한다. 다른 장비와 실제 모델 생성 검증은 별도다.
+
 ## 실행 순서
 
 터미널에서 이 폴더로 이동한다. 저장소 루트에서 명령을 실행하려면 inputs·requirements 상대경로가 달라지므로, 처음에는 이 폴더에서 실행한다.
