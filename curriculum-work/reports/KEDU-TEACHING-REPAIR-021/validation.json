@@ -1,0 +1,238 @@
+{
+  "batch": "KEDU-TEACHING-REPAIR-021",
+  "date": "2026-11-03",
+  "reviewer": "same_author_not_independent",
+  "units": [
+    "K2-03.U05",
+    "K2-03.U06",
+    "K2-03.U07"
+  ],
+  "explanation_review": [
+    {
+      "criterion": "학습 맥락·선수 연결",
+      "evidence": "첫방문목적과메뉴/모델후보/Card/Files/실행/Docs동선을설명하고화면활동과Python선수준비를구분한다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "개념의 최초 설명",
+      "evidence": "Card의근거→업무판단→추가시험,원문/ID/복원·패딩·Template역할을기존입력/관찰로풀었다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "예제의 이해 가능성",
+      "evidence": "Smol고정Card의영어한계와선택판단,실제저장KO30/16·첫세ID·SHORT2/14를범위와함께설명한다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "실습의 교육적 연결",
+      "evidence": "기존명령/오류/관찰흐름유지·부분코드종류명시·구간별9질문/해설·답안근거칸을연결했다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "설명과 실제 자료의 일치",
+      "evidence": "원문21개·17계약/저장회귀·3기록의입력해시/revision/값대조·현재preflight미준비·현행공식텍스트확인범위를나눴다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "개념별 확인과 해설",
+      "evidence": "세구간각3개총9개와이유를메뉴/파일/리비전/관찰/준비·실행구분의해설로대조했다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "교육생과 관리 기록의 구분",
+      "evidence": "상단관리표기를교사용으로분리하고실제파일/API/모델ID는뜻과함께안내한다.",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "근거 수준·기술 정확성",
+      "evidence": "현재문서텍스트/과거화면/과거실행/현재회귀와preflight·새Token실행/생성/수업을구분한다.이미지시각재검토는미수행으로남긴다.",
+      "verdict": "설명 검수 통과"
+    }
+  ],
+  "source_versions": {
+    "curriculum-work/README.md": "11b087f66419c6934b3c96544e6a2cb9f9bdc304",
+    "curriculum-work/PROGRESS.md": "b9b92e888824f2f59d94952bf0b66222c1800cf6",
+    "curriculum-work/curriculum/production-index.json": "77d7c3fff5d0682ccd32f4ac4d4ed532ab624a93",
+    "curriculum-work/loop/prompts.md": "1a7fc88795b737413817bd7425f61ad97d5cf665",
+    "curriculum-work/lessons/huggingface/README.md": "eee0424cf5011cb5e867e2142212141256dac175",
+    "curriculum-work/lessons/huggingface/INSTRUCTOR.md": "5c0ebac6c97955b65a172fb0f41317a27803ce65",
+    "curriculum-work/practice/huggingface-tokenizer/README.md": "00280c793937b5a069bbad1fc74136c4faa3f3b3",
+    "curriculum-work/practice/huggingface-tokenizer/WORKSHEET.md": "5ffd7491eb6587f70d384fab5d300382592c9dae",
+    "curriculum-work/practice/huggingface-tokenizer/models.json": "ea7f7913feb1d7bab2a3a5b8c226f3cb89fbce34",
+    "curriculum-work/practice/huggingface-tokenizer/inputs.json": "f2c9471318c211db4da97f21babe2b4d32a16a95",
+    "curriculum-work/practice/huggingface-tokenizer/inspect_tokenizer.py": "953092e4159ba7ced2235e287c93b6b1b8c7b3de",
+    "curriculum-work/practice/huggingface-tokenizer/tokenizer_steps.py": "aa155aa18e484c4f24ea62759946a365cac11657",
+    "curriculum-work/practice/huggingface-tokenizer/requirements.txt": "ea5129e318f789e830f38e1c0357800d0d6d2141",
+    "curriculum-work/practice/huggingface-tokenizer/requirements-tested.txt": "98baf23069db21dbedf686838fa17b9e9e70565d",
+    "curriculum-work/practice/huggingface-tokenizer/tests/test_contracts.py": "238eaeeb3dfafa96809b37ef57dcb0c523bb5af7",
+    "curriculum-work/reports/KEDU-PRODUCTION-001/runtime/qwen-01/observations.json": "39b66ad5b80970d6fdc33394cc5d9249aa36a1ab",
+    "curriculum-work/reports/KEDU-PRODUCTION-001/runtime/qwen-01/observations.md": "98a29b83f337078cd06ed39ba5f51ea1c8f7eaa6",
+    "curriculum-work/reports/KEDU-PRODUCTION-001/runtime/qwen-length16-fixed/observations.json": "857dfc38c2e9fb1dc5fe3b5c0f422b7bc5a73e1c",
+    "curriculum-work/reports/KEDU-PRODUCTION-001/runtime/qwen-length16-fixed/observations.md": "5ab9cbbfbcfb135f9f1cdbf063f25b9cca887cae",
+    "curriculum-work/reports/KEDU-PRODUCTION-001/runtime/smol-01/observations.json": "9ec3472b570d4a4735b6e59c90139bb6186d1e7b",
+    "curriculum-work/reports/KEDU-PRODUCTION-001/runtime/smol-01/observations.md": "16bf3e4cdbc8b06a670510f74174fbc3bc6e71cb"
+  },
+  "preserved_screens": {
+    "curriculum-work/assets/huggingface-20261030/docs-libraries.jpg": "f25ff76635ba64d1754113b94f6aba448dedff9a",
+    "curriculum-work/assets/huggingface-20261030/model-page.jpg": "8510c5fe43c55139e02cc11f888d30cdc3aed918"
+  },
+  "execution": {
+    "python_version": "3.12.14",
+    "current_preflight": {
+      "status": "setup_required",
+      "exit_code": 2,
+      "dependencies": {
+        "transformers": {
+          "expected": "4.57.1",
+          "installed": null,
+          "matches": false
+        },
+        "tokenizers": {
+          "expected": "0.22.1",
+          "installed": null,
+          "matches": false
+        },
+        "huggingface-hub": {
+          "expected": "0.36.0",
+          "installed": null,
+          "matches": false
+        },
+        "jinja2": {
+          "expected": "3.1.6",
+          "installed": null,
+          "matches": false
+        }
+      },
+      "tokenizer_executed": false,
+      "network_used": false
+    },
+    "contract_and_saved_observation_tests": {
+      "command": "python -m unittest discover -s curriculum-work/practice/huggingface-tokenizer/tests -v",
+      "cwd": "repository_root",
+      "passed": 17,
+      "skipped": 0,
+      "scope": "input/error/artifact contracts with mocks where declared, and historical-observation regression; no live tokenizer"
+    },
+    "stored_observation_review": [
+      {
+        "path": "curriculum-work/reports/KEDU-PRODUCTION-001/runtime/qwen-01/observations.json",
+        "model": "Qwen/Qwen3-0.6B",
+        "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+        "max_length": 8,
+        "counts": [
+          16,
+          13,
+          2
+        ],
+        "truncated_counts": [
+          8,
+          8,
+          2
+        ],
+        "input_sha256_matches": true,
+        "current_consistency_errors": [],
+        "artifact_git_blob": "39b66ad5b80970d6fdc33394cc5d9249aa36a1ab",
+        "source": "historical_actual_observation_not_new_runtime"
+      },
+      {
+        "path": "curriculum-work/reports/KEDU-PRODUCTION-001/runtime/qwen-length16-fixed/observations.json",
+        "model": "Qwen/Qwen3-0.6B",
+        "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+        "max_length": 16,
+        "counts": [
+          16,
+          13,
+          2
+        ],
+        "truncated_counts": [
+          16,
+          13,
+          2
+        ],
+        "input_sha256_matches": true,
+        "current_consistency_errors": [],
+        "artifact_git_blob": "857dfc38c2e9fb1dc5fe3b5c0f422b7bc5a73e1c",
+        "source": "historical_actual_observation_not_new_runtime"
+      },
+      {
+        "path": "curriculum-work/reports/KEDU-PRODUCTION-001/runtime/smol-01/observations.json",
+        "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+        "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+        "max_length": 8,
+        "counts": [
+          64,
+          13,
+          2
+        ],
+        "truncated_counts": [
+          8,
+          8,
+          2
+        ],
+        "input_sha256_matches": true,
+        "current_consistency_errors": [],
+        "artifact_git_blob": "9ec3472b570d4a4735b6e59c90139bb6186d1e7b",
+        "source": "historical_actual_observation_not_new_runtime"
+      }
+    ],
+    "explanation_values": {
+      "qwen_KO_characters": 30,
+      "qwen_KO_tokens": 16,
+      "qwen_KO_first_three_ids": [
+        126246,
+        144370,
+        91145
+      ],
+      "qwen_SHORT_padding": {
+        "content_positions": 2,
+        "pad_positions": 14,
+        "total": 16
+      }
+    },
+    "not_run": [
+      "fresh tokenizer/cache execution: dependencies missing",
+      "new screenshot capture or binary visual re-review",
+      "generation/training/performance/real classroom"
+    ],
+    "screens": {
+      "paths": [
+        "curriculum-work/assets/huggingface-20261030/docs-libraries.jpg",
+        "curriculum-work/assets/huggingface-20261030/model-page.jpg"
+      ],
+      "preserved": true,
+      "current_scope": "official page text/roles and file listings compared; no fresh rendered layout verification"
+    }
+  },
+  "primary_sources_checked_date": "2026-11-03",
+  "primary_sources": [
+    "https://huggingface.co/docs",
+    "https://huggingface.co/Qwen/Qwen3-0.6B",
+    "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+    "https://huggingface.co/docs/hub/en/model-cards",
+    "https://huggingface.co/docs/transformers/v4.57.1/chat_templating",
+    "https://huggingface.co/docs/transformers/v4.57.1/main_classes/tokenizer",
+    "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/blob/12fd25f77366fa6b3b4b768ec3050bf629380bac/README.md"
+  ],
+  "next_batch": {
+    "id": "KEDU-TEACHING-INTEGRATION-001",
+    "proposed_scope": [
+      "Review full learner sequence and connections among lessons, prerequisites, cumulative practice, submissions and teacher guidance",
+      "Prioritize remaining runtime/model/task-quality/classroom checks with explicit evidence/preparation scope",
+      "Preserve reviewed material and historical evidence; do not equate 70 unit explanation reviews with curriculum acceptance"
+    ],
+    "status": "not_started",
+    "recommended_reasoning_effort": "high"
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "static_checks": {
+    "relative_file_links": 68,
+    "table_columns_match": true,
+    "question_answer_pairs": 9,
+    "reviewed_units": 70,
+    "pending_unit_repairs": 0,
+    "integration_runtime_quality_classroom_still_pending": true,
+    "original_code_config_observations_screens_and_all_quality_gates_unchanged": true
+  }
+}

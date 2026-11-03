@@ -57,3 +57,7 @@ runs는 실행할 때 생성한다. 이 폴더에 정상 결과 예시를 미리
 저장소 루트에서 `python -m unittest discover -s curriculum-work/practice/huggingface-tokenizer/tests -v`를 실행한다. 이 검사는 고정 리비전 요구·입력 오류·의존성 미준비·기존 결과 덮어쓰기 방지를 확인한다. 기록된 실제 관찰을 읽는 회귀 검사는 보고서의 runtime 폴더가 있으면 함께 실행한다. 실제 Tokenizer의 새 실행 증거는 위의 관찰 명령으로 별도 확보한다.
 
 </details>
+
+## 관찰을 교안과 대조하기
+
+[강의](../../lessons/huggingface/README.md)의 부분 코드는 inputs.json의 KO 원문을 설명하고, tokenizer_steps.py는 별도의 더 짧은 문장으로 API를 보여 준다. 두 문장의 문자/Token 수를 같은 예상값으로 채우지 않는다. 과거 observations를 읽었으면 저장 기록 대조, 새 명령을 실행했으면 현재 실제 관찰로 구분한다. 명령이 준비 필요로 끝났다면 성공 observations를 만들거나 과거 값을 자기 실행 결과로 복사하지 않는다.
