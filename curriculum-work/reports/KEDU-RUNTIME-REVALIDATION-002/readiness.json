@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/workspace/scratch/2eedeaf0c30d/.venv-backend-r2/bin/python",
+    "-m",
+    "tools.check_readiness"
+  ],
+  "cwd": "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/practice/document-assistant/backend",
+  "exit_code": 0,
+  "elapsed_seconds": 0.138,
+  "stdout": "{\n  \"scope\": \"local_ollama_inventory_only_no_generation\",\n  \"base_url\": \"http://localhost:11434\",\n  \"ollama_model_configured\": false,\n  \"openai_key_configured\": false,\n  \"openai_api_called\": false,\n  \"generation_executed\": false,\n  \"model_download_attempted\": false,\n  \"service_status\": \"connection_failed\",\n  \"gate\": \"G_MODEL_PENDING\"\n}\n",
+  "stderr": ""
+}

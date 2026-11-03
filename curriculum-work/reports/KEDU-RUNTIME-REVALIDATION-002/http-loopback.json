@@ -1,0 +1,106 @@
+{
+  "command": [
+    "/workspace/scratch/2eedeaf0c30d/.venv-backend-r2/bin/python",
+    "-m",
+    "uvicorn",
+    "tools.contract_demo:create_contract_app",
+    "--factory",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "36667"
+  ],
+  "environment_overrides": {
+    "FRONTEND_ORIGINS": "http://localhost:5173"
+  },
+  "scope": "real loopback HTTP fixed provider; no model generation",
+  "cases": [
+    {
+      "case": "health",
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Tue, 03 Nov 2026 23:15:46 GMT",
+          "server": "uvicorn",
+          "content-length": "70",
+          "content-type": "application/json",
+          "vary": "Origin"
+        },
+        "body": {
+          "status": "ok",
+          "provider": "contract-demo",
+          "model": "no-model-executed"
+        }
+      }
+    },
+    {
+      "case": "trim",
+      "status": 200,
+      "provider": "contract-demo",
+      "answer_length": 22
+    },
+    {
+      "case": "blank",
+      "status": 422,
+      "provider": null,
+      "answer_length": 0
+    },
+    {
+      "case": "max",
+      "status": 200,
+      "provider": "contract-demo",
+      "answer_length": 2020
+    },
+    {
+      "case": "over",
+      "status": 422,
+      "provider": null,
+      "answer_length": 0
+    },
+    {
+      "case": "extra",
+      "status": 200,
+      "provider": "contract-demo",
+      "answer_length": 22
+    },
+    {
+      "case": "cors",
+      "origin": "http://localhost:5173",
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Tue, 03 Nov 2026 23:15:46 GMT",
+          "server": "uvicorn",
+          "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers, Access-Control-Request-Private-Network",
+          "access-control-allow-methods": "GET, POST",
+          "access-control-max-age": "600",
+          "access-control-allow-headers": "Accept, Accept-Language, Content-Language, Content-Type",
+          "access-control-allow-origin": "http://localhost:5173",
+          "content-length": "2",
+          "content-type": "text/plain; charset=utf-8"
+        },
+        "body": "OK"
+      }
+    },
+    {
+      "case": "cors",
+      "origin": "http://unlisted.example",
+      "response": {
+        "status": 400,
+        "headers": {
+          "date": "Tue, 03 Nov 2026 23:15:46 GMT",
+          "server": "uvicorn",
+          "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers, Access-Control-Request-Private-Network",
+          "access-control-allow-methods": "GET, POST",
+          "access-control-max-age": "600",
+          "access-control-allow-headers": "Accept, Accept-Language, Content-Language, Content-Type",
+          "content-length": "22",
+          "content-type": "text/plain; charset=utf-8"
+        },
+        "body": "Disallowed CORS origin"
+      }
+    }
+  ],
+  "server_stdout": "INFO:     127.0.0.1:50676 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:50686 - \"POST /ai/chat HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:50692 - \"POST /ai/chat HTTP/1.1\" 422 Unprocessable Entity\nINFO:     127.0.0.1:50708 - \"POST /ai/chat HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:50714 - \"POST /ai/chat HTTP/1.1\" 422 Unprocessable Entity\nINFO:     127.0.0.1:50724 - \"POST /ai/chat HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:50740 - \"OPTIONS /ai/chat HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:50754 - \"OPTIONS /ai/chat HTTP/1.1\" 400 Bad Request\n",
+  "server_stderr": "INFO:     Started server process [5]\nINFO:     Waiting for application startup.\nINFO:     Application startup complete.\nINFO:     Uvicorn running on http://127.0.0.1:36667 (Press CTRL+C to quit)\nINFO:     Shutting down\nINFO:     Waiting for application shutdown.\nINFO:     Application shutdown complete.\nINFO:     Finished server process [5]\n"
+}

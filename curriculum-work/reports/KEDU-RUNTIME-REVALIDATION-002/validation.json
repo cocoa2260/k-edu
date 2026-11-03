@@ -1,0 +1,184 @@
+{
+  "batch": "KEDU-RUNTIME-REVALIDATION-002",
+  "source_commit": "7b3b96376ab55189335f2bd810ba2dae45ab6ccf",
+  "source_files": [
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/agent.py",
+      "blob_sha": "4b74385546cfdbf52aadb32cb20f747a2a6340cf"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/document_ingest.py",
+      "blob_sha": "c6252fd941ae3925cccc3f8741292fefe504bc5e"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/document_registry.py",
+      "blob_sha": "abae93165708d813af5605174190a69c393b3f22"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/docx_ingest.py",
+      "blob_sha": "da192d3023acebc5d8875032f769220360d00023"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/experiments.py",
+      "blob_sha": "7d763c765623326cb2cd80a60f087cbeaa1aa942"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/harness.py",
+      "blob_sha": "e06eba285222963e16ac52c2fb99f3c71dcf3fcd"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/main.py",
+      "blob_sha": "e156a092144c7882c52e34f16a15a82da3ac2ede"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/multi_agent.py",
+      "blob_sha": "6bc05afd5e15d834a64938665d9c5f569d2faaa8"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/provider_router.py",
+      "blob_sha": "8ff1cbca877d37f70a6555212bdff32800a35772"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/providers/base.py",
+      "blob_sha": "053ed712705019f3718949c50bd5a1a4c3eb8136"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/providers/errors.py",
+      "blob_sha": "fb1334e37b46b1aca8cbc17040b44be35e9670a8"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/providers/factory.py",
+      "blob_sha": "8983c1783ba3d4673b9bfd557b78a4ebfabe12b8"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/providers/hf_cpu_provider.py",
+      "blob_sha": "4bfd5b047ae63339f739ac6a1158fe55c5ac50e3"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/providers/ollama_provider.py",
+      "blob_sha": "e8ad66cb45cef784f6b13dcb05855dd9c5102cbf"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/providers/openai_provider.py",
+      "blob_sha": "a8bc8932a7898325f194b3a095253a4396c48af3"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/rag.py",
+      "blob_sha": "6832261ff99ef2fdbfb1152dfa5379b7d045e177"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/report_spec.py",
+      "blob_sha": "716881b7c0371b131e33bf244b3f5f709a62237a"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/schemas.py",
+      "blob_sha": "9fdc783b84b321db32331e2ef919bd63e0c77117"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/service.py",
+      "blob_sha": "04a21fc6207a0387b04a0e28fe0a20a9ecb39200"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/requirements-dev.txt",
+      "blob_sha": "34f9f1e0402b11fd29b77ba7ec058d8d3063b34f"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/requirements.txt",
+      "blob_sha": "c73183c037cd453dffe3eea772e9b2a52a0f7f7b"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/tests/conftest.py",
+      "blob_sha": "42d0b05d76f4a214e1b575dc7ab2ecbb044db1ce"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/tests/test_provider.py",
+      "blob_sha": "c6503c071c56e2140d8247fae817e61231598267"
+    },
+    {
+      "path": "curriculum-work/PROGRESS.md",
+      "blob_sha": "bd83f57c2a2d2eda1b08bb18c0255d6b0c4c0db4"
+    },
+    {
+      "path": "curriculum-work/curriculum/production-index.json",
+      "blob_sha": "5fce7fe6054af91c77f86b015d1619aad82e8705"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/__init__.py",
+      "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/agent_bridge.py",
+      "blob_sha": "8fe1654f14bc082a9df3c946a60566f4746b1ef9"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/config.py",
+      "blob_sha": "236d5cb9f792c8fd950c4cb09d8b928e32ce240a"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/providers/__init__.py",
+      "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/app/training_data.py",
+      "blob_sha": "7731f675838c1683478b4f3e22240ccb1f43e02e"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/tools/check_readiness.py",
+      "blob_sha": "d595d577b9f99441929e9e047b9ba08e00a6d2f2"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/tools/contract_demo.py",
+      "blob_sha": "6fc38be35949752784a5e72dbee75cae0c91ce18"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/backend/tests/test_l1.py",
+      "blob_sha": "eebdf78820800da3486412beae55f64e32060eb2"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/data/core-v1.json",
+      "blob_sha": "95f5827bd876f8b5109aca7cdf41953dd24c98f6"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/data/documents-v1.json",
+      "blob_sha": "25d0553f26321434a9a8c7f386261505bca2fda3"
+    },
+    {
+      "path": "curriculum-work/practice/document-assistant/data/shots-v1.json",
+      "blob_sha": "fe4f2a65c53532b7ee4c46cd26d5d4c55220efdc"
+    },
+    {
+      "path": "curriculum-work/reports/KEDU-PRODUCTION-002/openapi.json",
+      "blob_sha": "e36cd188a7e98500430d8e7e4881635ebed1cc65"
+    }
+  ],
+  "contract_tests": 70,
+  "loopback_checks": 8,
+  "initial_failure": "missing historical openapi in partial local checkout; restored identical pinned blob then passed",
+  "actual_generation": false,
+  "provider_readiness": {
+    "scope": "local_ollama_inventory_only_no_generation",
+    "base_url": "http://localhost:11434",
+    "ollama_model_configured": false,
+    "openai_key_configured": false,
+    "openai_api_called": false,
+    "generation_executed": false,
+    "model_download_attempted": false,
+    "service_status": "connection_failed",
+    "gate": "G_MODEL_PENDING"
+  },
+  "units_milestones_gate_preserved": true,
+  "full_curriculum_complete": false,
+  "classroom_trial": "not_run",
+  "changed_paths": [
+    "curriculum-work/PROGRESS.md",
+    "curriculum-work/curriculum/production-index.json",
+    "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-002/http-loopback.json",
+    "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-002/versions.json",
+    "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-002/contracts-complete-source.json",
+    "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-002/pip-check.json",
+    "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-002/readiness.json",
+    "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-002/contracts.json",
+    "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-002/RESULT.md",
+    "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-002/validation.json"
+  ]
+}

@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-RUNTIME-REVALIDATION-001",
+  "current_batch": "KEDU-RUNTIME-REVALIDATION-002",
   "units": [
     {
       "id": "K2-00.U01",
@@ -979,16 +979,15 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-RUNTIME-REVALIDATION-002",
-    "proposed_scope": [
-      "Prepare isolated pinned Backend Python/package environment",
-      "Revalidate existing API/Provider contracts and inspect actual Provider readiness",
-      "Record actual generation separately if a configured Provider is available; do not substitute fixed demo for unprepared Provider"
-    ],
+    "id": "KEDU-RUNTIME-REVALIDATION-003",
     "status": "not_started",
-    "recommended_reasoning_effort": "medium"
+    "recommended_reasoning_effort": "high",
+    "proposed_scope": [
+      "Verify a no-paid-API local CPU actual generation Provider preparation path and resource conditions",
+      "Distinguish existing Ollama/OpenAI web API from Hugging Face CLI and validate a real baseline question when ready"
+    ]
   },
-  "batch_status": "TOKENIZER_ACTUAL_REVALIDATED_FULL_CURRICULUM_RUNTIME_QUALITY_CLASSROOM_PENDING",
+  "batch_status": "BACKEND_CONTRACTS_REVALIDATED_ACTUAL_PROVIDER_NOT_READY",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -1154,6 +1153,12 @@
       "actual_observation_runs": 6,
       "model_generation_training_classroom": "not_run",
       "dependency_drift": "filelock 4.2.4 historical -> 4.2.7 current; four direct requirements matched"
+    },
+    "backend_revalidation": {
+      "report": "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-002/RESULT.md",
+      "contract_tests_passed": 70,
+      "real_fixed_loopback_checks": 8,
+      "actual_generation": "not_run_provider_not_ready"
     }
   }
 }

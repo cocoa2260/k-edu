@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/workspace/scratch/2eedeaf0c30d/.venv-backend-r2/bin/python",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "cwd": "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/practice/document-assistant/backend",
+  "exit_code": 0,
+  "elapsed_seconds": 0.244,
+  "stdout": "No broken requirements found.\n",
+  "stderr": ""
+}

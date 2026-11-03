@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/workspace/scratch/2eedeaf0c30d/.venv-backend-r2/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_provider.py",
+    "tests/test_l1.py",
+    "-q"
+  ],
+  "cwd": "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/practice/document-assistant/backend",
+  "exit_code": 0,
+  "elapsed_seconds": 1.364,
+  "stdout": "......................................................................   [100%]\n70 passed in 0.74s\n",
+  "stderr": ""
+}

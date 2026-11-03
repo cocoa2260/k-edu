@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/workspace/scratch/2eedeaf0c30d/.venv-backend-r2/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_provider.py",
+    "tests/test_l1.py",
+    "-q"
+  ],
+  "cwd": "/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/practice/document-assistant/backend",
+  "exit_code": 1,
+  "elapsed_seconds": 1.242,
+  "stdout": ".....................................................................F   [100%]\n=================================== FAILURES ===================================\n____________________ test_l0_chat_schema_remains_unchanged _____________________\n\n    def test_l0_chat_schema_remains_unchanged():\n        from pathlib import Path\n>       old = json.loads((Path(__file__).resolve().parents[4] / 'reports/KEDU-PRODUCTION-002/openapi.json').read_text())\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\ntests/test_l1.py:49: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1027: in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-002/openapi.json')\nmode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed to by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/2eedeaf0c30d/k-edu/curriculum-work/reports/KEDU-PRODUCTION-002/openapi.json'\n\n/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError\n=========================== short test summary info ============================\nFAILED tests/test_l1.py::test_l0_chat_schema_remains_unchanged - FileNotFound...\n1 failed, 69 passed in 0.73s\n",
+  "stderr": ""
+}
