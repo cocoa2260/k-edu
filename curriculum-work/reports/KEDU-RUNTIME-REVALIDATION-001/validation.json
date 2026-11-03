@@ -402,6 +402,15 @@
     "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-001/validation.json"
   ],
   "publication": {
-    "status": "pending"
+    "status": "main_commit_published_and_verified",
+    "branch": "work/curriculum-production-001",
+    "parent_commit": "0ad5c3b0aa356655ba8dfbd740f4f1b5857fed32",
+    "published_commit": "8d32f49f14a09fd41cac56188124bc1c93e82329",
+    "tree_sha": "21991bdb03604c1f40705cef8405c95eefd62894",
+    "changed_file_count": 41,
+    "candidate_blob_hashes_match_local": true,
+    "unexpected_changes": [],
+    "removed_paths": [],
+    "validation_record_note": "Publication verification is recorded by a following validation-only commit; this record does not contain its own future SHA."
   }
 }
