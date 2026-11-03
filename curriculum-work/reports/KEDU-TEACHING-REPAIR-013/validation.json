@@ -213,7 +213,7 @@
           "prediction": "완 불 신청 안내 신청 기한: 결제 후 7 일 고객 부담금: 15000 원 접수 번호: RF-1048"
         },
         "degraded": {
-          "cer_whitespace_excluded": 0.0,
+          "cer_whitespace_excluded": 0,
           "wer_whitespace_tokens": 0.2857142857142857,
           "critical_fields": {
             "7일": true,
@@ -224,7 +224,7 @@
           "prediction": "환불 신청 안내 신청 기한: 결제 후 7 일 고객 부담금: 15000 원 접수 번호: RF-1048"
         },
         "degraded_threshold175": {
-          "cer_whitespace_excluded": 0.0,
+          "cer_whitespace_excluded": 0,
           "wer_whitespace_tokens": 0.2857142857142857,
           "critical_fields": {
             "7일": true,
@@ -346,7 +346,28 @@
     "recommended_reasoning_effort": "high"
   },
   "publication": {
-    "status": "pending"
+    "status": "main_commit_published_and_verified",
+    "branch": "work/curriculum-production-001",
+    "parent_commit": "f8e3e5b857f5dd34be8e37ee2c4cc6004e4eefa4",
+    "main_commit": "8c3779872ebf7920503637bca74fa64529040933",
+    "main_tree": "11ef7d22df8b08bb764b9d2b1a2ab67d15485524",
+    "changed_files": [
+      "curriculum-work/lessons/document-parsing/lesson.md",
+      "curriculum-work/lessons/document-parsing/teacher-guide.md",
+      "curriculum-work/practice/document-assistant/L8.md",
+      "curriculum-work/practice/document-assistant/backend/tools/document_steps.py",
+      "curriculum-work/practice/document-assistant/backend/README.md",
+      "curriculum-work/README.md",
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/curriculum/production-index.json",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-013/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-013/validation.json"
+    ],
+    "main_tree_all_content_hashes_match": true,
+    "main_tree_only_whitelisted_blobs_changed": true,
+    "no_removals": true,
+    "branch_head_verified_before_proof_commit": true,
+    "note": "This publication record is saved in a subsequent commit that only updates this JSON."
   },
   "static_checks": {
     "relative_targets_exist": 87,
