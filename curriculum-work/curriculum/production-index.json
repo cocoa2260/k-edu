@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-TEACHING-REPAIR-014",
+  "current_batch": "KEDU-TEACHING-REPAIR-015",
   "units": [
     {
       "id": "K2-00.U01",
@@ -919,7 +919,8 @@
       "runtime_status": "loopback_http_and_fixture_control_verified_real_model_and_hard_cancel_not_run",
       "classroom_trial": "not_run",
       "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-015/validation.json",
-      "teaching_audit_status": "needs_revision"
+      "teaching_audit_status": "explanation_review_passed_same_author",
+      "teaching_revision_batch": "KEDU-TEACHING-REPAIR-015"
     },
     {
       "id": "K2-14.U05",
@@ -932,7 +933,8 @@
       "runtime_status": "actual_react_sse_chromium_fixture_delivery_verified_real_model_streaming_not_run",
       "classroom_trial": "not_run",
       "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-016/validation.json",
-      "teaching_audit_status": "needs_revision"
+      "teaching_audit_status": "explanation_review_passed_same_author",
+      "teaching_revision_batch": "KEDU-TEACHING-REPAIR-015"
     },
     {
       "id": "K2-14.U06",
@@ -945,7 +947,8 @@
       "runtime_status": "pdf_txt_docx_synthetic_contracts_verified_release_quality_not_accepted",
       "classroom_trial": "not_run",
       "runtime_evidence": "curriculum-work/reports/KEDU-PRODUCTION-017/validation.json",
-      "teaching_audit_status": "needs_revision"
+      "teaching_audit_status": "explanation_review_passed_same_author",
+      "teaching_revision_batch": "KEDU-TEACHING-REPAIR-015"
     }
   ],
   "entry_guide": {
@@ -957,16 +960,16 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-TEACHING-REPAIR-015",
+    "id": "KEDU-TEACHING-REPAIR-016",
     "proposed_scope": [
-      "Revise last three Document AI units: Provider capabilities/budgets, React/Streaming, multiformat/final evaluation",
-      "Connect matching L9 activities to readiness/capability checks, trace/cancellation and partial/final UI results, source/review-based acceptance",
-      "Preserve fixture-vs-real model/operations distinctions and independent quality/classroom gates"
+      "Revise three orientation units: unacceptable task failures, AI lifecycle/responsibility, trends/products/generation methods",
+      "Connect the bounded introduction to concrete existing exercises, learner objectives and responsibility decisions",
+      "Preserve execution, model quality and independent classroom distinctions"
     ],
     "status": "not_started",
-    "recommended_reasoning_effort": "high"
+    "recommended_reasoning_effort": "medium"
   },
-  "batch_status": "DOCUMENT_AI_INTAKE_REPORT_REVISED_SAME_AUTHOR_EXPLANATION_REVIEWED_REMAINING_PENDING",
+  "batch_status": "DOCUMENT_AI_DELIVERY_EVALUATION_REVISED_SAME_AUTHOR_EXPLANATION_REVIEWED_REMAINING_PENDING",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -1054,7 +1057,7 @@
     "phase1_role": "reference for explanatory depth, progression, examples and practice interpretation; not permission to arbitrarily summarize Phase2",
     "prompt_revision": "completed_same_session_review",
     "existing_material_audit": "completed_70_unit_text_and_connected_teaching_document_review_with_targeted_static_code_checks",
-    "material_revision": "48_units_revised_same_author_explanation_reviewed_22_other_units_pending",
+    "material_revision": "51_units_revised_same_author_explanation_reviewed_19_other_units_pending",
     "applies_to": "all 70 units and connected practical material",
     "previous_review_status_interpretation": "historical review records preserved; not acceptance against current teaching criteria",
     "current_classroom_acceptance": false,
@@ -1081,23 +1084,24 @@
       "execution_scope": "supplemental input/CLI/excerpt validation; full pinned HTTP environment, tokenizer/generation/classroom not rerun",
       "classroom_trial": "not_run"
     },
-    "revised_unit_count": 48,
+    "revised_unit_count": 51,
     "latest_revision": {
-      "batch": "KEDU-TEACHING-REPAIR-014",
+      "batch": "KEDU-TEACHING-REPAIR-015",
       "units": [
-        "K2-14.U01",
-        "K2-14.U02",
-        "K2-14.U03"
+        "K2-14.U04",
+        "K2-14.U05",
+        "K2-14.U06"
       ],
       "lessons": [
-        "curriculum-work/lessons/document-ai/intake.md",
-        "curriculum-work/lessons/document-ai/report.md"
+        "curriculum-work/lessons/document-ai/provider.md",
+        "curriculum-work/lessons/document-ai/streaming.md",
+        "curriculum-work/lessons/document-ai/evaluation.md"
       ],
       "practice": "curriculum-work/practice/document-assistant/L9.md",
-      "teacher_guide": "curriculum-work/lessons/document-ai/teacher-guide.md",
-      "report": "curriculum-work/reports/KEDU-TEACHING-REPAIR-014/RESULT.md",
+      "teacher_guide": "curriculum-work/lessons/document-ai/delivery-teacher-guide.md",
+      "report": "curriculum-work/reports/KEDU-TEACHING-REPAIR-015/RESULT.md",
       "explanation_verdict": "passed_same_author_document_review",
-      "execution_scope": "current temporary PDF/TXT/bounded DOCX Registry and review examples;25registry+20report tests;stored16paragraph/spec/review checks and stored PDF visual;no new report/model/DOCX render/independent classroom",
+      "execution_scope": "current 66Python+34Node tests/build,loopback HTTP/SSE,9browser scenarios with verified-font visual pass,teaching code and3format/spec checks;no actual model/new report/independent classroom",
       "classroom_trial": "not_run"
     },
     "revision_reports": [
@@ -1112,7 +1116,8 @@
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-011/RESULT.md",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-012/RESULT.md",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-013/RESULT.md",
-      "curriculum-work/reports/KEDU-TEACHING-REPAIR-014/RESULT.md"
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-014/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-015/RESULT.md"
     ]
   }
 }

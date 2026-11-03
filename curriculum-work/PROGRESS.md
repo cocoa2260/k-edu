@@ -1,8 +1,8 @@
 # 5단계 제작 현황과 이어서 할 일
 
-**현재: Document AI 앞 세 단원과 문서 등록·검토 연결 실습을 수정·재검수했다. 동일 작성자의 설명 검수 범위는 48개 단원이며 나머지 22개 정비와 실제 모델 품질·독립 수업 검증은 남아 있다. 70/70은 파일 작성 수다.**
+**현재: Document AI 후반 세 단원과 Provider·Streaming·최종 평가 실습을 수정·재검수했다. 동일 작성자의 설명 검수 범위는 51개 단원이며 나머지 19개 정비와 실제 모델 품질·독립 수업 검증은 남아 있다. 70/70은 파일 작성 수다.**
 
-[문서 입력·상태](lessons/document-ai/intake.md) · [근거 보고서](lessons/document-ai/report.md) · [연결 실습](practice/document-assistant/L9.md) · [이번 검증](reports/KEDU-TEACHING-REPAIR-014/RESULT.md)
+[Provider](lessons/document-ai/provider.md) · [Streaming](lessons/document-ai/streaming.md) · [최종 평가](lessons/document-ai/evaluation.md) · [연결 실습](practice/document-assistant/L9.md) · [이번 검증](reports/KEDU-TEACHING-REPAIR-015/RESULT.md)
 
 ## 작업 전 추론 강도 안내 — 사용자 요청
 
@@ -10,7 +10,7 @@
 
 이 안내는 설정 변경을 수행했다는 뜻이 아니다. 실제 추론 설정은 사용자가 선택한다. 강도 안내만을 이유로 매 작업마다 승인 질문을 반복하지 않는다. 일반적인 작업 묶음은 이미 정한 강도와 범위 안에서 계속 진행하며, 상위 강도 적용이 꼭 필요한 작업은 필요한 이유와 다음 행동을 명확히 알린다.
 
-**바로 다음 작업:** Document AI 후반 세 단원(Provider 기능/예산, React·Streaming, 다중 형식·최종 평가)과 L9 해당 활동을 수정·재검수한다. **추천: High.** 준비/기능/예산 거부와 응답·취소·부분/최종 표시, 형식별 근거·최종 채택의 관계를 풀어야 한다. 고정 Provider/SSE 시연과 실제 모델·운영/독립 수업 미검증을 구분한다.
+**바로 다음 작업:** 시작 안내 세 단원(업무와 허용할 수 없는 실패, AI Lifecycle와 책임, 동향·제품·생성 방식 구분)과 연결 활동을 수정·재검수한다. **추천: Medium.** 범위가 정해진 안내를 기존 실습의 구체적 상황·학습 목표·책임 판단과 연결하는 설명 정비다. 이후 데이터/모델 평가·Transformer·LLM/Hugging Face 기초 정비를 이어 간다.
 
 QLoRA·독립 의미/수업 검증과 기존 품질 게이트는 별도 미완료로 유지한다. 전체 예제를 봤다는 사실을 수렴·운영 품질로 표시하지 않는다.
 
@@ -76,3 +76,7 @@ LoRA의 작은 갱신 수치 예제→Parameter/한 Step→QLoRA 자원 판단�
 ## Document AI 문서 등록·검토 수정 결과
 
 원본/IR/형식별 Locator·검색 준비→같은 요청/새 버전·권한/삭제→주장/인용/특정 명세 검토·출력 경계를 7일/14일 예제로 연결했다. 현재 좁은 DOCX 지원과 과거 PDF/TXT 실험, 현재 템플릿 v2와 저장 v1 보고서를 구분했다. 등록 25/보고서 20개 기존 검사와 새 실습 네 모드를 실행하고 저장 두 파일의 16문단·검토 해시를 대조했다. 기존 PDF 화면은 확인했지만 새 보고서 생성/DOCX 렌더링·모델·독립 승인/수업은 미실행이다. 후반 Provider/Streaming/최종 평가 안내 원문을 보존했다. [이번 결과](reports/KEDU-TEACHING-REPAIR-014/RESULT.md)를 참고한다.
+
+## Document AI Provider·Streaming·최종 평가 수정 결과
+
+기능/전송 범위·준비·21/42 예약과 대체 호출→UTF-8/SSE/실행별 draft·answer→세 형식/현재성·채택 보류를 설명·9문항·해설·활동으로 연결했다. Python 66개·Node 34개와 React 빌드, 실제 loopback 고정 HTTP/SSE·브라우저 9사례를 확인했다. 첫 브라우저는 DOM 검사는 통과했지만 한글 글꼴 누락으로 화면 보완이 필요했다. 기존 글꼴 해시를 확인해 임시 Fontconfig에 연결하고 재실행한 데스크톱 완료/취소·모바일 화면을 확인했다. 원본/기존 제어·UI 코드와 앞 세 단원 실습은 보존했다. 실제 모델/Token Streaming·강제 중단·새 보고서 생성·일반 문서/독립 수업 채택은 미실행이다. [이번 결과](reports/KEDU-TEACHING-REPAIR-015/RESULT.md)를 참고한다.

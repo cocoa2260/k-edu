@@ -133,3 +133,5 @@ Multi-Agent 저장 기록은 `python -m tools.multi_steps --record ../../../repo
 PDF 수업의 `python -m tools.document_steps --mode routes`와 `layout`, `ocr`, `source` 모드는 기존 합성 PDF/OCR JSON 기록만 읽는다. 표준 라이브러리를 사용하며 현재 PDF 추출·OCR·모델 호출을 실행하지 않는다. [연결 실습](../L8.md)의 별도 코드로 직접 추출·지표 재계산·BM25/원문 거부를 확인하고, 실제 한글 OCR는 고정 엔진/언어 데이터를 준비한 선택 실행으로 구분한다.
 
 문서 등록·검토 수업은 `python -m tools.document_ai_steps --mode intake`, `lifecycle`, `review`로 임시 SQLite/TXT와 현재 고정 자료를 처리한다. `history`는 기존 보고서 JSON을 읽는다. 새 도구는 모델·실제 인증/독립 승인·DOCX/PDF 생성을 수행하지 않는다. [L9 활동](../L9.md)에서 현재 좁은 DOCX/템플릿 v2와 과거 두 형식/v1 출력, 선택적 실제 문서 출력·화면 검사를 구분한다.
+
+전송·채택 수업의 `python -m tools.delivery_steps --mode provider`는 임시 loopback HTTP 고정 응답 네 사례, `formats`는 현재 세 형식의 원본/IR/근거·고정 검토와 권한 변경 거부를 실행한다. `history`는 과거 브라우저 JSON을 읽는다. 새 보고서·실제 모델/Token/청구 API를 실행하지 않는다. [L9 활동](../L9.md)에서 메모리 SSE 코드와 실제 React 화면, 최종 채택 보류를 구분한다.
