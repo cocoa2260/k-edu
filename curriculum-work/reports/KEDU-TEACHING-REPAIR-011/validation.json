@@ -1,0 +1,175 @@
+{
+  "batch": "KEDU-TEACHING-REPAIR-011",
+  "date": "2026-11-03",
+  "reviewer": "same_author_not_independent",
+  "units": [
+    "K2-12.U01",
+    "K2-12.U02",
+    "K2-12.U03",
+    "K2-12.U04"
+  ],
+  "explanation_review": [
+    {
+      "criterion": "맥락/선수",
+      "evidence": "문서 도우미의 근거가 있어도 보류하는 실패→자료/실행기/학습 판단",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "개념 설명",
+      "evidence": "SFT/LoRA의 다른 축·PEFT 지도, 다섯 행동·가족 분리·Train 증강·Template/정답 범위",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "풀어쓴 예제",
+      "evidence": "같은 회의실 규정의 다섯 질문, 바꿔쓰기와 20시간/평가부모/중복/없는인용 반례",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "실습 연결",
+      "evidence": "원인 선택→예제 읽기→현재 검수→저장 Token/가상 Padding, 선택 변환/후속 훈련",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "자료 일치",
+      "evidence": "현재 40+8행·기각 4·18회귀, 실제 저장 357/250/106·EOS/Pad와 코드 대조",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "질문/해설",
+      "evidence": "각 장 3개 총 12개 개념 질문과 근거 해설·활동별 피드백",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "관리 분리",
+      "evidence": "자연어 제목·교사용 단원 매핑, 실제 필요한 ID/필드의 의미 설명",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "근거 수준",
+      "evidence": "교사 고정 예제/현재 검수/과거 실제 Tokenizer/가상 값/후속 훈련·독립 수업 구분",
+      "verdict": "설명 검수 통과"
+    }
+  ],
+  "execution": {
+    "python": "3.12.14",
+    "pydantic": "2.14.1",
+    "pinned_pydantic": "2.14.2",
+    "environment_scope": "auxiliary_environment_not_pinned_full_environment",
+    "current_validation": {
+      "seed_rows": 40,
+      "regression_questions": 18,
+      "accepted": 8,
+      "rejected": {
+        "FT-BAD-NUMBER": "TARGET_CHANGED_REANNOTATION_REQUIRED",
+        "FT-BAD-VALIDATION": "TRAIN_ONLY_AUGMENTATION",
+        "FT-BAD-DUPLICATE": "DUPLICATE",
+        "FT-BAD-QUOTE": "QUOTE_NOT_IN_SOURCE"
+      },
+      "prepared_counts": {
+        "train": 28,
+        "validation": 10,
+        "test": 10
+      },
+      "family_counts": {
+        "train": 4,
+        "validation": 2,
+        "test": 2
+      },
+      "review_boundaries": [
+        "changed_review_hash",
+        "family_split_mismatch",
+        "source_version_changed",
+        "denied_context_leak",
+        "regression_question_in_train",
+        "changed_target_review"
+      ],
+      "all48_message_roles_and_metadata_checked": true,
+      "valid_quote_does_not_certify_answer_truth": true
+    },
+    "stored_record_checks": {
+      "actual_tokenizer_rerun": false,
+      "first_example_message_equal": true,
+      "total": 357,
+      "prefix": 250,
+      "supervised": 106,
+      "positions": [
+        250,
+        355
+      ],
+      "stored_decoded_equals_target_plus_eos": true,
+      "batch_padding_positions": 149,
+      "supervised_eos_count": 2
+    },
+    "current_teaching_code": {
+      "shell_blocks_executed": 4,
+      "reader_examples_executed": 40,
+      "reader_invalid_arguments": 2,
+      "synthetic_padding_checked": true
+    },
+    "preservation": {
+      "protected_files": [
+        "curriculum-work/practice/document-assistant/backend/app/training_data.py",
+        "curriculum-work/practice/document-assistant/backend/tools/training_data_lab.py",
+        "curriculum-work/practice/document-assistant/data/finetuning-v1/seeds.json",
+        "curriculum-work/practice/document-assistant/data/finetuning-v1/augmentation-candidates.json",
+        "curriculum-work/practice/document-assistant/data/finetuning-v1/split-manifest.json",
+        "curriculum-work/practice/document-assistant/data/finetuning-v1/review-manifest.json",
+        "curriculum-work/practice/document-assistant/data/finetuning-v1/README.md",
+        "curriculum-work/reports/KEDU-PRODUCTION-009/token-example.json",
+        "curriculum-work/reports/KEDU-PRODUCTION-009/batch-example.json",
+        "curriculum-work/reports/KEDU-PRODUCTION-009/REVIEW.md"
+      ],
+      "prior_lora_training_tail_exact": true
+    },
+    "network_scope": {
+      "direct_validation_process_connection_attempts": [],
+      "note": "Not an OS isolation proof; CLI children use local-only reader/code by inspection."
+    },
+    "not_run": [
+      "new Tokenizer conversion",
+      "Datasets/Arrow pipeline",
+      "new model inference or training",
+      "Torch synthetic loss probe",
+      "full pytest/HTTP suite",
+      "QLoRA",
+      "independent classroom/quality review"
+    ]
+  },
+  "source_versions": {
+    "curriculum-work/lessons/fine-tuning/lesson.md": "be3548f2d756da062dfcf522ad26cbb02417d435",
+    "curriculum-work/practice/document-assistant/L7.md": "f24c73a077075474ea4ebf278593fa2e74e8619f",
+    "curriculum-work/README.md": "3fdb92048bfde5e05aeede331990013958092b1e",
+    "curriculum-work/PROGRESS.md": "998a6ca16917dce4abae4b6646407d250a1220d3",
+    "curriculum-work/curriculum/production-index.json": "5598a08f1f9bf8a6b74a47de124f5449ff28b29e",
+    "curriculum-work/practice/document-assistant/backend/README.md": "04513477d4a5cd575bee3a026693c6cdce04730c",
+    "curriculum-work/practice/document-assistant/backend/app/training_data.py": "7731f675838c1683478b4f3e22240ccb1f43e02e",
+    "curriculum-work/practice/document-assistant/backend/tools/training_data_lab.py": "69194d81ec1160b081ca9ee807e5c79accd18b5c",
+    "curriculum-work/practice/document-assistant/data/finetuning-v1/seeds.json": "a7315db57f895939b785d950257b5e6f77f56e6d",
+    "curriculum-work/practice/document-assistant/data/finetuning-v1/augmentation-candidates.json": "691fc18ba7033aa3d77b20ae13aacf74d75c56d0",
+    "curriculum-work/practice/document-assistant/data/finetuning-v1/split-manifest.json": "188634972c1a33dd263483fe91488d2a2fdc821c",
+    "curriculum-work/practice/document-assistant/data/finetuning-v1/review-manifest.json": "882259b484445379533781eed49990a807d53b17",
+    "curriculum-work/practice/document-assistant/data/finetuning-v1/README.md": "0e1e0e7baa0f79a04d2a3e3047e378d3a4717fbe",
+    "curriculum-work/reports/KEDU-PRODUCTION-009/token-example.json": "33f2cd252eeabbc2642e301f57e51bc5cc592cdd",
+    "curriculum-work/reports/KEDU-PRODUCTION-009/batch-example.json": "a54ef0b21bc0686f22f523865cbfa3af0972f7ec",
+    "curriculum-work/reports/KEDU-PRODUCTION-009/REVIEW.md": "ae7b0e21db2a806a831fa6c41a1acfda1a181645"
+  },
+  "next_batch": {
+    "id": "KEDU-TEACHING-REPAIR-012",
+    "proposed_scope": [
+      "Revise last four Fine-tuning units: LoRA mechanics/configuration, QLoRA resource conditions, matched evaluation and Adapter save/reload",
+      "Connect L7 later training sections to actual Parameter/Gradient/Step and stored original/augmented results",
+      "Preserve prior training/reload/regression evidence; do not claim QLoRA or independent quality/classroom execution"
+    ],
+    "status": "not_started",
+    "recommended_reasoning_effort": "high"
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "static_checks": {
+    "relative_targets_exist": 76,
+    "protected_runtime_gates_preserved": true,
+    "reviewed_units": 37,
+    "pending_units": 33
+  }
+}
