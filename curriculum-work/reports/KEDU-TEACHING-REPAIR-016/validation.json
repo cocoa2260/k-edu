@@ -139,7 +139,25 @@
     "recommended_reasoning_effort": "high"
   },
   "publication": {
-    "status": "pending"
+    "status": "main_commit_published_and_verified",
+    "branch": "work/curriculum-production-001",
+    "main_commit": "655d4661ec3b3f00fae613c09d7b82e3cfd040d2",
+    "parent_commit": "ef0d2d84868e4015cb441e12ca3607e1a0b54df6",
+    "tree": "741f879ad1e686992e614e5200725184dca7c7cf",
+    "changed_paths": [
+      "curriculum-work/lessons/orientation/lesson.md",
+      "curriculum-work/lessons/orientation/worksheet.md",
+      "curriculum-work/lessons/orientation/teacher-guide.md",
+      "curriculum-work/README.md",
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/curriculum/production-index.json",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-016/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-016/validation.json"
+    ],
+    "candidate_blob_hashes_match_local": true,
+    "only_whitelisted_paths_changed": true,
+    "removed_paths": [],
+    "protected_runtime_code_data_historical_evidence_and_gates_unchanged": true
   },
   "static_checks": {
     "relative_file_links": 66,
