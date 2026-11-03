@@ -62,7 +62,7 @@
   "execution": {
     "status": "passed",
     "fixture_sha256": "f298b9032091d8b7e60bfefbe865ebf1cde769e1b5e03d2d2e90d1c06872614c",
-    "tolerance": 1e-09,
+    "tolerance": 1e-9,
     "scope": "synthetic component and single-layer attention arithmetic only",
     "affine": {
       "pre_activation": [
@@ -71,7 +71,7 @@
       ],
       "relu": [
         3,
-        0.0
+        0
       ]
     },
     "attention": {
@@ -87,15 +87,15 @@
       "row2_causal_weights": [
         0.3302384506733431,
         0.6697615493266569,
-        0.0
+        0
       ],
       "row2_causal_output": [
         0.6604769013466862,
         2.6790461973066275
       ],
       "masked_pad_weights": [
-        0.0,
-        0.0
+        0,
+        0
       ]
     },
     "components": {
@@ -116,8 +116,8 @@
         0.9999950000374997
       ],
       "ffn_output": [
-        4.0,
-        -3.0
+        4,
+        -3
       ]
     },
     "position_checks": {
@@ -142,7 +142,7 @@
           1.5034898434845538,
           3.0069796869691077
         ],
-        "max_absolute_difference": 0.0
+        "max_absolute_difference": 0
       },
       {
         "processed_prefix_length": 4,
@@ -154,7 +154,7 @@
           3.65187340881368,
           -3.1056295301197907
         ],
-        "max_absolute_difference": 0.0
+        "max_absolute_difference": 0
       },
       {
         "processed_prefix_length": 5,
@@ -166,7 +166,7 @@
           -1.5448111484828737,
           7.287454025729945
         ],
-        "max_absolute_difference": 0.0
+        "max_absolute_difference": 0
       }
     ],
     "cache_includes_position_or_full_block": false,
@@ -174,22 +174,22 @@
       {
         "name": "base",
         "bytes": 65536,
-        "KiB": 64.0
+        "KiB": 64
       },
       {
         "name": "double_context",
         "bytes": 131072,
-        "KiB": 128.0
+        "KiB": 128
       },
       {
         "name": "double_batch",
         "bytes": 131072,
-        "KiB": 128.0
+        "KiB": 128
       },
       {
         "name": "fewer_kv_heads",
         "bytes": 16384,
-        "KiB": 16.0
+        "KiB": 16
       }
     ],
     "rejected_invalid_inputs": [
@@ -249,7 +249,25 @@
     "recommended_reasoning_effort": "high"
   },
   "publication": {
-    "status": "pending"
+    "status": "main_commit_published_and_verified",
+    "branch": "work/curriculum-production-001",
+    "main_commit": "95e2c3ec77534c40b5b9c06fc79533347e4c5125",
+    "parent_commit": "fd94d00a2f806d49c55114aa34c14953a9c0cd4f",
+    "tree": "a3718e0ddf34c9fa798b20cc1a381142df0f4e5e",
+    "changed_paths": [
+      "curriculum-work/lessons/transformer-basics/lesson.md",
+      "curriculum-work/lessons/transformer-basics/worksheet.md",
+      "curriculum-work/lessons/transformer-basics/teacher-guide.md",
+      "curriculum-work/README.md",
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/curriculum/production-index.json",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-019/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-019/validation.json"
+    ],
+    "candidate_hashes_match_local": true,
+    "only_whitelisted_paths_changed": true,
+    "removed_paths": [],
+    "original_code_fixture_first_three_unit_teaching_and_quality_gates_preserved": true
   },
   "static_checks": {
     "relative_file_links": 56,
