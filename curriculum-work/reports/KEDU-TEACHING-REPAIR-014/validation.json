@@ -1,0 +1,226 @@
+{
+  "batch": "KEDU-TEACHING-REPAIR-014",
+  "date": "2026-11-03",
+  "reviewer": "same_author_not_independent",
+  "units": [
+    "K2-14.U01",
+    "K2-14.U02",
+    "K2-14.U03"
+  ],
+  "explanation_review": [
+    {
+      "criterion": "맥락/선수",
+      "evidence": "PDF 추출 다음에 7일→14일 변경과 옛 근거 문제를 제시",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "개념 설명",
+      "evidence": "원본/IR/Chunk/Locator·요청/버전/상태·특정 명세 검토/출력 원리를 설명",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "풀어쓴 예제",
+      "evidence": "빈 TXT 3줄/PDF 블록/DOCX 셀, 재전송/새 버전, 7일 인용/30일 모순과 v1/v2 차이",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "실습 연결",
+      "evidence": "네 모드의 예상·현재 실행/관찰·제출과 선택적 실제 문서 출력/화면 검사",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "자료 일치",
+      "evidence": "현재 세 형식·25+20검사·기존16문단/검토해시·원본/현재 명세/템플릿 대조",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "질문/해설",
+      "evidence": "입력/상태/보고서 각3개 총9문항과 해설·활동 피드백",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "관리 분리",
+      "evidence": "자연어 제목·실제 요청 키/Element·필드 뜻, 교사용 매핑",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "근거 수준",
+      "evidence": "현재 경계/임시 처리·과거 출력/화면·모의 staging·고정/독립 승인·회수 한계 구분",
+      "verdict": "설명 검수 통과"
+    }
+  ],
+  "execution": {
+    "python": "3.12.14",
+    "packages": {
+      "python-docx": "1.2.0",
+      "pdfplumber": "0.11.9",
+      "pypdf": "6.10.0",
+      "reportlab": "4.4.9",
+      "Pillow": "12.3.0",
+      "pydantic": "2.14.1"
+    },
+    "pinned_pydantic": "2.14.2",
+    "current_execution": {
+      "registry_unittests": 25,
+      "report_unittests": 20,
+      "unittest_passed": true,
+      "unittest_stage_render_functions_are_mocked": true,
+      "teaching_blocks_executed": 4,
+      "invalid_mode_refused": true,
+      "current_intake_formats": [
+        "digital PDF",
+        "UTF8 TXT",
+        "bounded DOCX"
+      ],
+      "current_element_counts": [
+        11,
+        2,
+        16
+      ],
+      "current_txt_empty_line_preserved_as_locator_line3": true,
+      "current_docx_structural_cell": [
+        6,
+        1,
+        3,
+        3
+      ],
+      "same_request_conflict_new_version_and_replay_blocking_checked": true,
+      "fixed_fixture_rejection_of_wrong_semantic_claim_checked": true,
+      "current_spec_equals_historical_except_template": true,
+      "historical_template_refused_by_current_check": true,
+      "approved_report_invalid_after_source_new_version": true
+    },
+    "stored_artifact_checks": {
+      "template": "kedu-evidence-report-v1",
+      "current_template": "kedu-evidence-report-v2",
+      "review_binding_matches": true,
+      "docx_paragraphs": 16,
+      "all_paragraphs_match_common_spec_and_stored_pdf": true,
+      "pdf_pages": 1,
+      "stored_pdf_rendered_and_visually_reviewed": true,
+      "docx_rendered_this_turn": false
+    },
+    "preservation": {
+      "protected_files": [
+        "curriculum-work/practice/document-assistant/backend/data/report-v1/document-spec.json",
+        "curriculum-work/practice/document-assistant/backend/app/report_spec.py",
+        "curriculum-work/practice/document-assistant/backend/tools/report_export.py",
+        "curriculum-work/practice/document-assistant/backend/app/document_registry.py",
+        "curriculum-work/practice/document-assistant/backend/registry_tests/test_registry.py",
+        "curriculum-work/practice/document-assistant/backend/app/docx_ingest.py",
+        "curriculum-work/practice/document-assistant/backend/tools/registry_lab.py",
+        "curriculum-work/reports/KEDU-PRODUCTION-019/RESULT.md",
+        "curriculum-work/practice/document-assistant/backend/tools/report_lab.py",
+        "curriculum-work/reports/KEDU-PRODUCTION-013/RESULT.md",
+        "curriculum-work/reports/KEDU-PRODUCTION-014/observed.json",
+        "curriculum-work/practice/document-assistant/backend/requirements-report.txt",
+        "curriculum-work/loop/prompts.md",
+        "curriculum-work/reports/KEDU-PRODUCTION-013/observed.json",
+        "curriculum-work/practice/document-assistant/backend/data/report-v1/review.json",
+        "curriculum-work/reports/KEDU-PRODUCTION-014/RESULT.md",
+        "curriculum-work/practice/document-assistant/backend/report_tests/test_report_spec.py"
+      ],
+      "provider_streaming_final_practice_tail_exact": true,
+      "artifact_sha256": {
+        "data/report-v1/evidence-report.pdf": "ca26aa0b918e1ee36b007e22c0055edafda0ea820d0f6f3ca56678cdcb86bff2",
+        "data/report-v1/review.json": "c51fa01d9f3b499d0ab832c860d0306bff7e470ea111b2df7f45393227f18c12",
+        "data/report-v1/document-spec.json": "2356e87658a1ffc97d29ef90eb8b1647b13a92d8b5d814569b6051830fb51b92",
+        "data/report-v1/evidence-report.docx": "1027c7b7ae362cb55a4df5bcaedb9a2e4c5442209d670df6bc3578dadb4138dd",
+        "data/report-v1/README.md": "e6ceb42931e3645fe7119186c4687ec043b4d08f5cdf6ca714021a7795f86e62",
+        "data/multiformat-v1/policy.txt": "5235e0892ac81586ec570654693ae0b781f9df6a1e15591831964f7aee1b1487",
+        "data/multiformat-v1/gold.json": "7f9fd6df9d95e0ae77fb6f6a8bafdb8eac8326ef412d37871d2cb9ff2f943867",
+        "data/multiformat-v1/README.md": "c6227f273748eda0e8c5b99a963d09b33915bf01cabeef021dbfd60107c0955a",
+        "data/multiformat-v1/policy.docx": "06d05fd922f381ffbfdc141da94409ccb955021b3ec099516ae2b5a414235f83",
+        "data/document-v1/digital.pdf": "01f0a3f4de1d0993f18d4c9e1f413ab9114244a946cf97518d90776583a1f866",
+        "data/document-v1/digital-preview-1.png": "4bf01fdde713b5367f0807bb3f7431c66917fee0e5912ad13dace74be121e891",
+        "data/document-v1/scan-preview-1.png": "4bf7026c11d990223427d36efc25969085904ea45f596895cfba2c331097f0b7",
+        "data/document-v1/degraded.pdf": "589f4db3406df70ca4e3e15937cc4137e70e4452ba868e5ec8ef57b71cbc917c",
+        "data/document-v1/gold.json": "ee7995b9346b7e4920734dc96fb91f76717db253062c265b24788ad724915921",
+        "data/document-v1/scan.pdf": "697f552c870d3d3e420e99120d0ab781553da05330fe78396775b4ae37a42e4b",
+        "data/document-v1/FONT-OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+        "data/document-v1/mixed.pdf": "9625d177d2958f0c328aaa36b6c4978f4e8e417711629650ac960f8b36227ccb",
+        "data/document-v1/degraded-preview-1.png": "605a4aad7947dd70f1497ae10fa4e362f86c78801218574318c3fe7907161840",
+        "data/document-v1/TESSDATA-LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "data/document-v1/README.md": "a1614e4ae52cecc2317a51803e759f96312458f685164dd7bab1651552eb2f6b"
+      }
+    },
+    "network": {
+      "direct_validation_process_attempts": [],
+      "note": "Not OS isolation proof; CLI children use local files/temp DB by inspection."
+    },
+    "not_run": [
+      "new DOCX/PDF report generation or DOCX visual rendering",
+      "Korean OCR",
+      "LLM/model/Provider/API execution",
+      "independent reviewer authentication or classroom/quality review",
+      "concurrent publication/cancellation and deployed-file recall",
+      "full legacy tests outside registry_tests/report_tests"
+    ]
+  },
+  "source_versions": {
+    "curriculum-work/PROGRESS.md": "980e56b6880527e3b269eb2ab944f7b7bb6b4d77",
+    "curriculum-work/practice/document-assistant/backend/data/report-v1/document-spec.json": "02fb0e6894996f37805f0fd27082ecbdd36ef957",
+    "curriculum-work/practice/document-assistant/backend/app/report_spec.py": "716881b7c0371b131e33bf244b3f5f709a62237a",
+    "curriculum-work/practice/document-assistant/backend/tools/report_export.py": "b49ec825a7bfd488eb49995342c0049f13b68056",
+    "curriculum-work/practice/document-assistant/backend/app/document_registry.py": "abae93165708d813af5605174190a69c393b3f22",
+    "curriculum-work/practice/document-assistant/backend/registry_tests/test_registry.py": "a3fca0d0966209e52737236deafedb0add595aa3",
+    "curriculum-work/README.md": "c4d2fe2ad25b9fe0a3700c47db6ac428271051c5",
+    "curriculum-work/practice/document-assistant/L9.md": "1d3fe785419b9fc42d17545bee1f30579d52320e",
+    "curriculum-work/practice/document-assistant/backend/app/docx_ingest.py": "da192d3023acebc5d8875032f769220360d00023",
+    "curriculum-work/practice/document-assistant/backend/tools/registry_lab.py": "7f950496033ed0306023968ab888a5dfbe470f63",
+    "curriculum-work/practice/document-assistant/backend/README.md": "f84d6598087181ec9cb699ee02050959a45f753b",
+    "curriculum-work/reports/KEDU-PRODUCTION-019/RESULT.md": "1c435f1e0182ff103009221cdbdd1eab07099507",
+    "curriculum-work/practice/document-assistant/backend/tools/report_lab.py": "deaab4e28aa82c62211ba04576705345a60cc155",
+    "curriculum-work/reports/KEDU-PRODUCTION-013/RESULT.md": "1ed55c632bf5732c0efe4dd3d00757b88bbe095f",
+    "curriculum-work/reports/KEDU-PRODUCTION-014/observed.json": "aa548e8774b39ddfd604416ed2bb52798bfd4807",
+    "curriculum-work/curriculum/production-index.json": "a9cafd5290e183da9714e10882b9e529523ae16e",
+    "curriculum-work/lessons/document-ai/intake.md": "bbcd70749694a9ef6fb4d2926539b0e1b6514e4e",
+    "curriculum-work/practice/document-assistant/backend/requirements-report.txt": "6979bca9ea4d3d2ed21ce58d11ff43bba40a1768",
+    "curriculum-work/loop/prompts.md": "1a7fc88795b737413817bd7425f61ad97d5cf665",
+    "curriculum-work/lessons/document-ai/report.md": "d74803b1357c50219f8d78cc7cd1347fc4b97e83",
+    "curriculum-work/reports/KEDU-PRODUCTION-013/observed.json": "7f4ecf43e1e077abd6276eacaf35a8eaed98ab8b",
+    "curriculum-work/practice/document-assistant/backend/data/report-v1/review.json": "0846c30dffaf75d9ea7ed4b3efbef298740b89c6",
+    "curriculum-work/reports/KEDU-PRODUCTION-014/RESULT.md": "25bf4d2bd0e5a0316b8ed5b3009545427bbd399d",
+    "curriculum-work/practice/document-assistant/backend/report_tests/test_report_spec.py": "138e0cc985dca3a43f91a528d6c89836cb9bb179",
+    "curriculum-work/practice/document-assistant/backend/data/report-v1/evidence-report.pdf": "04b25caa2c341a1b932867c3ab635e482e3fff80",
+    "curriculum-work/practice/document-assistant/backend/data/report-v1/evidence-report.docx": "65a38148a149f051fe3a88df393419fba17d83ab",
+    "curriculum-work/practice/document-assistant/backend/data/report-v1/README.md": "2b38b54e1a33d94849f2d5aa1bbaaa9d5dc09ee6",
+    "curriculum-work/practice/document-assistant/backend/data/multiformat-v1/policy.txt": "4fd93c6efc2a9f6113aac99fc9ad9f6d78dc9130",
+    "curriculum-work/practice/document-assistant/backend/data/multiformat-v1/gold.json": "862d69c7c2fc536744b50137a40798b0bade60d2",
+    "curriculum-work/practice/document-assistant/backend/data/multiformat-v1/README.md": "ee019ea151de08ec5677f64c3de9be8ff2815553",
+    "curriculum-work/practice/document-assistant/backend/data/multiformat-v1/policy.docx": "f87ae460c4ed808485bf11c9547a96fc75ea33e1",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/digital.pdf": "7eaf8b068243e9e8528ad1dd60af9a33f571bab0",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/digital-preview-1.png": "458c57f5071a2d42c4cec3294dd43756c69e2d50",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/scan-preview-1.png": "86586fccf9254c5d452affdc34af7793f2c58ae2",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/degraded.pdf": "ba4f3bd49003327f5c7047ec6726b6ed5b609743",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/gold.json": "4409ac38c17a0f91016cd7030985f9c9d3483688",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/scan.pdf": "c6cb080d8fed9e86c4598c541f659799d43545bc",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/FONT-OFL.txt": "1c9f43281b8f216c5461fe9ac729afbade7724e4",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/mixed.pdf": "c16ad7b537a7ce78fc8bc9020aff25aed22d7a57",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/degraded-preview-1.png": "7282024194cb2b50be6d77b4180a48fee7e2b0d4",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/TESSDATA-LICENSE.txt": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+    "curriculum-work/practice/document-assistant/backend/data/document-v1/README.md": "461e39ef64aa9b9279841b8238c5648a55985b50",
+    "curriculum-work/practice/document-assistant/backend/app/document_ingest.py": "c6252fd941ae3925cccc3f8741292fefe504bc5e",
+    "curriculum-work/practice/document-assistant/backend/retrieval/index.py": "f9cfedbbf19eb76fd2f3d5933b81f35db28a5408",
+    "curriculum-work/practice/document-assistant/backend/retrieval/encoder.py": "34bc2b95299afa6d571c41e76b5a8d1f527d3b52"
+  },
+  "next_batch": {
+    "id": "KEDU-TEACHING-REPAIR-015",
+    "proposed_scope": [
+      "Revise last three Document AI units: Provider capabilities/budgets, React/Streaming, multiformat/final evaluation",
+      "Connect matching L9 activities to readiness/capability checks, trace/cancellation and partial/final UI results, source/review-based acceptance",
+      "Preserve fixture-vs-real model/operations distinctions and independent quality/classroom gates"
+    ],
+    "status": "not_started",
+    "recommended_reasoning_effort": "high"
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "static_checks": {
+    "relative_targets_exist": 107,
+    "protected_runtime_gates_preserved": true,
+    "reviewed_units": 48,
+    "pending_units": 22
+  }
+}
