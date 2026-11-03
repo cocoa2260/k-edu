@@ -224,7 +224,26 @@
     "recommended_reasoning_effort": "high"
   },
   "publication": {
-    "status": "pending"
+    "status": "main_commit_published_and_verified",
+    "branch": "work/curriculum-production-001",
+    "main_commit": "7a86c9e9233f5d7159c900c72c017ee40e15b22f",
+    "parent_commit": "b7ead581c2a9e864806ff8143d3c048da010d586",
+    "tree": "860b8632fc450ade1078b3be4a7c601e395d4bfa",
+    "changed_paths": [
+      "curriculum-work/lessons/huggingface/README.md",
+      "curriculum-work/lessons/huggingface/INSTRUCTOR.md",
+      "curriculum-work/practice/huggingface-tokenizer/README.md",
+      "curriculum-work/practice/huggingface-tokenizer/WORKSHEET.md",
+      "curriculum-work/README.md",
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/curriculum/production-index.json",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-021/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-021/validation.json"
+    ],
+    "candidate_hashes_match_local": true,
+    "only_whitelisted_paths_changed": true,
+    "removed_paths": [],
+    "original_code_config_observations_screens_and_quality_gates_preserved": true
   },
   "static_checks": {
     "relative_file_links": 68,
