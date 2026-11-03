@@ -1,0 +1,132 @@
+{
+  "batch": "KEDU-TEACHING-REPAIR-010",
+  "date": "2026-11-03",
+  "reviewer": "same_author_not_independent",
+  "units": [
+    "K2-11.U01",
+    "K2-11.U02",
+    "K2-11.U03",
+    "K2-11.U04"
+  ],
+  "explanation_review": [
+    {
+      "criterion": "맥락/선수",
+      "evidence": "Single의 반복 검색에서 목표/정보/행동·전달 책임으로 연결",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "개념 설명",
+      "evidence": "Orchestrator와역할, Runtime Handoff/원문·수신범위, 공유예산/검토·부분결과 설명",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "풀어쓴 예제",
+      "evidence": "Control5/2, M01수신거부, M02누적7/1, M03반복실패, M04와실제C01/A02",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "실습 연결",
+      "evidence": "다섯활동·준비/정확한명령/관찰/해석·직접코드와별도모델준비",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "자료 일치",
+      "evidence": "현재probes/역할권한/파서,42저장입력해시·수치·직접코드/읽기25사례",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "질문/해설",
+      "evidence": "네장별3문항/총12개와판정이유·활동별충분/보완근거",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "관리 분리",
+      "evidence": "자연어학생제목·실제필드와ID의뜻, 교사용관리연결",
+      "verdict": "설명 검수 통과"
+    },
+    {
+      "criterion": "근거 수준",
+      "evidence": "고정/현재제어/과거실제/Probe·통합·부분/전달·가짜시계/성능·자체/수업구분",
+      "verdict": "설명 검수 통과"
+    }
+  ],
+  "execution": {
+    "checks": "passed",
+    "python": "3.12.14",
+    "pydantic": "2.14.1",
+    "required_pydantic": "2.14.2",
+    "current_fixed_probes": [
+      "control",
+      "M01",
+      "M02",
+      "M03",
+      "M04/model_budget",
+      "M04/transient_timeout",
+      "M04/deadline"
+    ],
+    "stored_role_input_hashes_checked": 42,
+    "stored_summary": {
+      "models": 42,
+      "roles": {
+        "researcher": 30,
+        "writer": 6,
+        "reviewer": 6
+      },
+      "handler_entries": {
+        "search_documents": 8,
+        "read_evidence": 6
+      },
+      "partial_drafts": 6,
+      "delivered_drafts": 0
+    },
+    "reader_cases": 25,
+    "runnable_code_output": "control model_review_passed_human_review_required 예산 {'models': 5, 'tools': 2, 'repairs': 0, 'retries': 0, 'roles': {'researcher': 3, 'writer': 1, 'reviewer': 1}} 전달 초안 True 부분 초안 True\nM01 repeated_failure 예산 {'models': 4, 'tools': 2, 'repairs': 1, 'retries': 0, 'roles': {'researcher': 4}} 전달 초안 False 부분 초안 False\nM02 model_review_passed_human_review_required 예산 {'models': 7, 'tools': 2, 'repairs': 1, 'retries': 0, 'roles': {'researcher': 4, 'writer': 2, 'reviewer': 1}} 전달 초안 True 부분 초안 True\nM03 repeated_failure 예산 {'models': 7, 'tools': 2, 'repairs': 1, 'retries': 0, 'roles': {'researcher': 3, 'writer': 2, 'reviewer': 2}} 전달 초안 False 부분 초안 True\nM04/model_budget model_budget 예산 {'models': 4, 'tools': 2, 'repairs': 0, 'retries': 0, 'roles': {'researcher': 3, 'writer': 1}} 전달 초안 False 부분 초안 True\nM04/transient_timeout transient_budget 예산 {'models': 2, 'tools': 0, 'repairs': 0, 'retries': 1, 'roles': {'researcher': 2}} 전달 초안 False 부분 초안 False\nM04/deadline deadline 예산 {'models': 1, 'tools': 0, 'repairs': 0, 'retries': 0, 'roles': {'researcher': 1}} 전달 초안 False 부분 초안 False\n",
+    "role_tool_denial_verified": true,
+    "json_only_fence_rules_verified": true,
+    "network_attempts_in_direct_process": [],
+    "new_actual_model_or_Tokenizer_runs": 0,
+    "full_pytest_HTTP_rerun": false,
+    "independent_classroom": false
+  },
+  "source_versions": {
+    "curriculum-work/lessons/multi-agent/lesson.md": "fce8b9e1c5f77d3a979718f8a1eb6eaa6e794dfc",
+    "curriculum-work/practice/document-assistant/L6.md": "b779c5982ea48ac2786bc8e70bedec27fefdcc73",
+    "curriculum-work/README.md": "eec5c5d51247e01d9c9e98ea693be2998df7f535",
+    "curriculum-work/PROGRESS.md": "ad3b6df35631090ecad4fc12d77d4c70aeaf44e9",
+    "curriculum-work/curriculum/production-index.json": "1ae5d7a2ec05b543ccb34556f117384937f3dfd1",
+    "curriculum-work/practice/document-assistant/backend/README.md": "2ffff53dc4df3d15f72905f33f6dd71a8cd6eef1",
+    "curriculum-work/practice/document-assistant/backend/app/multi_agent.py": "6bc05afd5e15d834a64938665d9c5f569d2faaa8",
+    "curriculum-work/practice/document-assistant/backend/tools/multi_fixture_lab.py": "a767caebbb113fb366948a94c5a6b13f6739e378",
+    "curriculum-work/practice/document-assistant/backend/tools/multi_lab.py": "b038ece8a25dc939d1bc1a8632d5b758b2e6d4f6",
+    "curriculum-work/reports/KEDU-PRODUCTION-008/observed.json": "9246af73696c03ae11cf04889c13eb1c9dea9935",
+    "curriculum-work/reports/KEDU-PRODUCTION-008/fixture-observed.json": "6e58863dcfc3f3e96fcb354932063bc736e30f0a"
+  },
+  "next_batch": {
+    "id": "KEDU-TEACHING-REPAIR-011",
+    "proposed_scope": [
+      "Revise first four Fine-tuning units: objectives/PEFT choice, dataset design/augmentation and training inputs",
+      "Connect L7 preparation with worked data splits, quality checks and supervised token/label scope",
+      "Preserve existing training/reload/regression evidence and separate later training units"
+    ],
+    "status": "not_started",
+    "recommended_reasoning_effort": "high"
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "static_checks": {
+    "relative_targets_exist": 71,
+    "protected_runtime_gates_preserved": true,
+    "reviewed_units": 33,
+    "pending_units": 37
+  },
+  "source_commit": "a10edf846bdb2bd36fe22eeae18921060be45321",
+  "criteria": "curriculum-work/loop/prompts.md",
+  "limitations": [
+    "same-author explanation review; no independent classroom",
+    "supplemental Pydantic2.14.1 differs from pinned2.14.2",
+    "no new E5/Qwen/Tokenizer/full pytest/HTTP run",
+    "stored integrated runs and isolated probes are separate evidence",
+    "fake-clock boundary is not real 240-second performance or in-flight cancellation"
+  ]
+}

@@ -123,3 +123,5 @@ requirements-report.txt와 tools.report_lab를 사용한다. [강의](../../../l
 [U06 강의](../../../lessons/document-ai/evaluation.md)와 [결과](../../../reports/KEDU-PRODUCTION-017/RESULT.md)를 본다. app/docx_ingest.py의 좁은 DOCX 입력을 Registry에 연결했다. tools.multiformat_lab는 PDF/TXT/DOCX와 고정 검토·DOCX/PDF 출력을 실행한다. 보고서 템플릿 v2는 DOCX 구조적 위치를 설명한다. 이전 출력/보고서는 보존한다. multiformat_tests와 관련 회귀를 사용하며 HWP/HWPX·실제 모델/인증·독립 품질/수업은 미검증이다.
 
 Single-Agent 기록 읽기는 `python -m tools.agent_steps --record ../../../reports/KEDU-PRODUCTION-007/observed.json --case A02`를 사용한다. fixture-observed.json을 선택하면 고정 응답 제어 기록이며 모델 품질 증거가 아니다. [L5 활동](../L5.md)은 직접 Runtime 코드와 별도 실제 모델/Framework 실행을 구분한다.
+
+Multi-Agent 저장 기록은 `python -m tools.multi_steps --record ../../../reports/KEDU-PRODUCTION-008/observed.json --case A02`로 읽는다. fixture-observed.json의 control/M01/M02/M03/M04 하위 키는 고정 제어 실험이며 실제 모델 품질이 아니다. [L6 활동](../L6.md)에서 직접 경계 코드·과거 통합·별도 역할Probe·본인의 새 실행을 구분한다.
