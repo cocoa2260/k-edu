@@ -240,7 +240,29 @@
     "recommended_reasoning_effort": "high"
   },
   "publication": {
-    "status": "pending"
+    "status": "main_commit_published_and_verified",
+    "branch": "work/curriculum-production-001",
+    "parent_commit": "1120605cec5ec644ea33090f62e56bc1ff4d2d66",
+    "main_commit": "35bca6857149440428c1623dd28ed4ecd0f7f137",
+    "main_tree": "749d946e39f404ed6826465a71d453bbded48262",
+    "changed_files": [
+      "curriculum-work/lessons/fine-tuning/training.md",
+      "curriculum-work/lessons/fine-tuning/training-teacher-guide.md",
+      "curriculum-work/lessons/fine-tuning/teacher-guide.md",
+      "curriculum-work/practice/document-assistant/L7.md",
+      "curriculum-work/practice/document-assistant/backend/tools/lora_steps.py",
+      "curriculum-work/practice/document-assistant/backend/README.md",
+      "curriculum-work/README.md",
+      "curriculum-work/PROGRESS.md",
+      "curriculum-work/curriculum/production-index.json",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-012/RESULT.md",
+      "curriculum-work/reports/KEDU-TEACHING-REPAIR-012/validation.json"
+    ],
+    "main_tree_all_content_hashes_match": true,
+    "main_tree_only_whitelisted_blobs_changed": true,
+    "no_removals": true,
+    "branch_head_verified_before_proof_commit": true,
+    "note": "This publication record is saved in a subsequent commit that only updates this JSON."
   },
   "static_checks": {
     "relative_targets_exist": 83,
