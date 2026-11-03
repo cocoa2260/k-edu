@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-TEACHING-REPAIR-021",
+  "current_batch": "KEDU-TEACHING-INTEGRATION-001",
   "units": [
     {
       "id": "K2-00.U01",
@@ -979,16 +979,16 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-TEACHING-INTEGRATION-001",
+    "id": "KEDU-RUNTIME-REVALIDATION-001",
     "proposed_scope": [
-      "Review full learner sequence and connections among lessons, prerequisites, cumulative practice, submissions and teacher guidance",
-      "Prioritize remaining runtime/model/task-quality/classroom checks with explicit evidence/preparation scope",
-      "Preserve reviewed material and historical evidence; do not equate 70 unit explanation reviews with curriculum acceptance"
+      "Prepare isolated pinned Tokenizer dependencies and revision files",
+      "Run fresh Qwen/Smol input observations and cache repeats without model generation; compare actual inputs/options with preserved evidence",
+      "Record setup failures and cross-platform/classroom limits without changing quality gates"
     ],
     "status": "not_started",
-    "recommended_reasoning_effort": "high"
+    "recommended_reasoning_effort": "medium"
   },
-  "batch_status": "ALL_70_UNITS_SAME_AUTHOR_EXPLANATION_REVIEWED_INTEGRATION_RUNTIME_QUALITY_CLASSROOM_PENDING",
+  "batch_status": "SAME_AUTHOR_DOCUMENT_CONNECTION_REVIEWED_RUNTIME_QUALITY_CLASSROOM_PENDING",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -1076,7 +1076,7 @@
     "phase1_role": "reference for explanatory depth, progression, examples and practice interpretation; not permission to arbitrarily summarize Phase2",
     "prompt_revision": "completed_same_session_review",
     "existing_material_audit": "completed_70_unit_text_and_connected_teaching_document_review_with_targeted_static_code_checks",
-    "material_revision": "70_units_revised_same_author_explanation_reviewed_integration_runtime_quality_classroom_pending",
+    "material_revision": "70_units_revised_same_author_explanation_reviewed_document_connections_reviewed_runtime_quality_classroom_pending",
     "applies_to": "all 70 units and connected practical material",
     "previous_review_status_interpretation": "historical review records preserved; not acceptance against current teaching criteria",
     "current_classroom_acceptance": false,
@@ -1086,7 +1086,7 @@
     "audit_details_path": "curriculum-work/reports/KEDU-TEACHING-REPAIR-002/REVIEW.md",
     "audit_validation_path": "curriculum-work/reports/KEDU-TEACHING-REPAIR-002/validation.json",
     "audit_scope_limits": "not a full code audit or all-command/runtime/visual/classroom revalidation; same-author review",
-    "recommended_reasoning_effort_for_next_repair": "high",
+    "recommended_reasoning_effort_for_next_repair": "medium",
     "representative_revision": {
       "batch": "KEDU-TEACHING-REPAIR-003",
       "units": [
@@ -1139,6 +1139,13 @@
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-019/RESULT.md",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-020/RESULT.md",
       "curriculum-work/reports/KEDU-TEACHING-REPAIR-021/RESULT.md"
-    ]
+    ],
+    "integration_review": {
+      "batch": "KEDU-TEACHING-INTEGRATION-001",
+      "guide": "curriculum-work/STUDY_GUIDE.md",
+      "report": "curriculum-work/reports/KEDU-TEACHING-INTEGRATION-001/RESULT.md",
+      "status": "passed_same_author_document_connection_review",
+      "scope": "lesson/prerequisite/practice/submission/teacher-guide connections; not all-command/runtime/visual/classroom acceptance"
+    }
   }
 }

@@ -1,35 +1,32 @@
-# 문서 답변 누적 실습 — L0에서 L9 문서 등록까지
+# 문서 도우미를 단계별로 확장하는 실습
 
-같은 Backend를 단계별로 확장한다. 강의 설명과 실행 코드는 파일을 나눠 두었다.
+교육생의 전체 시작점은 [수강 안내](../../STUDY_GUIDE.md)다. 이 폴더에서는 기준 대화 앱에 입력 준비·실행기·검색·도구 실행을 추가하고, 별도 학습 실험과 문서 처리로 넓힌다. 각 행의 **강의 → 연결 실습 → 관찰/해석 제출** 순서로 진행한다.
 
-| 단계 | 읽을 파일 | 현재 검증 범위 |
+## 읽을 순서와 현재 확인된 범위
+
+아래 ‘확인된 범위’는 저장소의 과거 실행과 후속 설명 정비에서 확인한 범위다. 지금 모든 모델/환경을 다시 실행했거나 독립 수업을 마쳤다는 뜻은 아니다. 본인의 실행 기록은 별도로 남긴다.
+
+| 순서 | 강의와 실습 | 확인된 범위와 남은 것 |
 |---|---|---|
-| L0 | [기준 앱 강의](../../lessons/baseline/lesson.md) | Provider/API 계약·로컬 HTTP 고정 응답 |
-| L1 | [공통 실습](L1.md) · [Prompt](../../lessons/prompt/lesson.md) · [Context](../../lessons/context/lesson.md) | 가상 자료·입력 준비·기준 Tokenizer 관찰 |
-| L2 | [실습 안내](L2.md) · [Harness 강의](../../lessons/harness/lesson.md) | 고정 응답 호출·검사·재시도·보완·상한·회귀 |
-| L3 | [실습 안내](L3.md) · [Embedding](../../lessons/embedding/lesson.md) · [Index](../../lessons/vector-index/lesson.md) | 실제 CPU Embedding·검색·Filter·갱신/삭제·설정 재구축 |
-| L4 | [실습](L4.md) · [RAG 강의](../../lessons/rag/lesson.md) | 실제 검색·Qwen 생성·출력 보완/종료, 품질 보류 |
-| L5 | [실습](L5.md) · [Single-Agent](../../lessons/single-agent/lesson.md) | 실제 모델 Tool 요청·Runtime·종료, 과제 품질 보류 |
-| L6 | [실습](L6.md) · [Multi-Agent](../../lessons/multi-agent/lesson.md) | 실제 역할·전달/공통 예산, 최종 답변 품질 보류 |
-| L7 | [실습](L7.md) · [훈련 강의](../../lessons/fine-tuning/training.md) | 전체 Train 포함 제한 Step 학습·18개 Agent 회귀, 품질 보류 |
-| L8 | [실습](L8.md) · [문서 입력 강의](../../lessons/document-parsing/lesson.md) | 실제 한글 PDF/OCR·표·물리 원문 연결, Vision 미실행 |
+| 기준 앱 준비 | [기준 대화 앱](../../lessons/baseline/lesson.md) · [Backend 시작](backend/README.md) | API/Provider 계약·고정 HTTP 응답. 실제 웹 생성은 별도 확인 |
+| 지시와 제공 자료 | [Prompt](../../lessons/prompt/lesson.md) → [지시 실습](L1.md) → [Context](../../lessons/context/lesson.md) → [자료 선택 실습](CONTEXT.md) | 입력 준비·자료/순서·기존 Token 관찰의 계산. 다섯 조건 실제 생성 비교는 남음 |
+| 호출·검사·종료 | [Harness](../../lessons/harness/lesson.md) → [실습](L2.md) | 고정 응답의 재시도·보완·상한·회귀·중단 경계. 실제 모델 비교와 다름 |
+| 검색과 Index | [Embedding](../../lessons/embedding/lesson.md) → [Index](../../lessons/vector-index/lesson.md) · [공통 실습](L3.md) | 과거 실제 CPU E5/검색/FAISS, 현재 작은 계산·SQLite 변경. 현재 모델 전체 재실행과 품질 채택은 별도 |
+| 근거로 답변 | [RAG](../../lessons/rag/lesson.md) → [실습](L4.md) | 실제 E5/Qwen 검색·생성·보완 기록. 조건 누락/잘못된 주장 등 답변 품질은 채택 보류 |
+| 도구 요청 | [Single-Agent](../../lessons/single-agent/lesson.md) → [실습](L5.md) | 실제 모델 요청·Runtime/종료 기록과 고정 완주 실험. 과제 품질·Framework/MCP는 별도 |
+| 역할 전달 | [Multi-Agent](../../lessons/multi-agent/lesson.md) → [실습](L6.md) | 실제 역할 호출·전달/공통 예산 기록. 최종 답변 품질은 채택 보류 |
+| 데이터와 학습 실험 | [데이터 준비](../../lessons/fine-tuning/lesson.md) → [훈련/평가](../../lessons/fine-tuning/training.md) · [실습](L7.md) | 전체 Train 포함 제한 Step LoRA·재로드/18개 Agent 회귀 기록. 수렴·의미 품질·QLoRA는 미완료 |
+| PDF/OCR 입력 | [문서 추출](../../lessons/document-parsing/lesson.md) → [실습](L8.md) | 합성 한글 PDF/OCR·표·물리 원문 연결. 일반 문서/Vision·실제 업로드 UI는 별도 |
+| 문서 등록부터 최종 평가 | [문서 등록](../../lessons/document-ai/intake.md)부터 [최종 평가](../../lessons/document-ai/evaluation.md)까지 → [통합 실습](L9.md) | 좁은 PDF/TXT/DOCX·근거 검토/출력·Provider 고정 HTTP·React/SSE 고정 화면. 실제 모델 Token Streaming/운영·독립 품질/수업 채택은 남음 |
 
-[Backend 실행 안내](backend/README.md)에서 실행한다. L4 CLI에서 실제 로컬 생성을 실행했다. 답변 품질은 채택 보류이고 React 화면·교육장 수업은 미검증이다. 고정 응답을 모델 결과로 기록하지 않는다.
+## 같은 프로젝트에서 실행 경로는 구분하기
 
-baseline-source-map.json은 L0 원문 이동 당시의 해시 기록이다. 이후 누적 기능의 변경 기록은 milestones와 각 제작 보고서에서 읽는다. 현재 소스 전체가 L0 당시와 같다는 뜻이 아니다. L7 데이터 준비를 확인했다. LoRA 소규모 훈련·저장/재로드를 확인했고 전체 훈련·품질·QLoRA는 남아 있다.
+[Backend 안내](backend/README.md)는 기존 대화 API와 누적 모듈/명령행 도구의 위치다. RAG·Agent를 CLI로 실행했다고 `/ai/chat`이 자동으로 그 기능을 사용하는 것은 아니다. [React/SSE 실습](stream-ui/README.md)은 같은 프로젝트 안의 **별도 화면과 로컬 서버**이며 기존 FastAPI API 전환이나 실제 모델 Token Streaming을 완료한 앱이 아니다.
 
-[실제 LoRA 소규모 훈련 결과](../../reports/KEDU-PRODUCTION-010/RESULT.md)를 함께 본다.
+고정 응답·작은 계산·저장된 모델 기록 읽기는 학습 활동이며, 본인의 새 모델 실행을 대신하지 않는다. 실제 실행을 요구하는 활동은 각 안내의 별도 환경/파일/자원 조건을 확인한다. LoRA 훈련과 PDF/OCR·보고서 확장은 따로 준비하고 원래 자료·기록을 덮어쓰지 않는다.
 
-[전체 Train 포함 학습·18개 Agent 회귀 결과](../../reports/KEDU-PRODUCTION-011/RESULT.md): 모든 예제를 학습에 포함했으며 품질 채택은 미완료다.
+## 강사와 재현 담당자
 
-[L8 PDF/OCR 실제 결과](../../reports/KEDU-PRODUCTION-012/RESULT.md): 합성 문서 네 개와 변경 범위 검사만 실행했다. 일반 문서 품질·LLM/Vision·실제 업로드 UI는 미검증이다.
+학생 제출은 각 실습의 작성 표와 관찰 근거를 사용한다. 강사용 해설은 [전체 연결 점검표](../../reports/KEDU-TEACHING-INTEGRATION-001/RESULT.md)에 모았다. 현재 미완료 작업은 [제작 현황](../../PROGRESS.md), 실행 당시 상세 근거는 해당 과목에서 연결한 제작/수정 보고서를 확인한다. 과거 보고서의 ‘미작성’이나 ‘다음 작업’을 현재 집계로 복사하지 않는다.
 
-[L9 첫 묶음](L9.md): PDF/TXT 공통 구조와 등록·상태·권한·삭제를 실행했다. [결과](../../reports/KEDU-PRODUCTION-013/RESULT.md)를 본다. L9 보고서/UI/최종 평가는 미완료다.
-
-[L9 보고서 확장](../../lessons/document-ai/report.md): Claim별 근거·검토 해시를 DOCX/PDF에 연결했다. [실제 결과](../../reports/KEDU-PRODUCTION-014/RESULT.md)를 본다. Provider/UI/최종 평가는 남아 있다.
-
-[L9 Provider 제어](../../lessons/document-ai/provider.md): 로컬 HTTP 고정 응답으로 기능·준비 상태·공유 예산·Fallback·Trace를 검사했다. [실제 결과](../../reports/KEDU-PRODUCTION-015/RESULT.md)를 본다. 실제 모델/웹/Streaming 연결은 미완료다.
-
-[L9 React·Streaming](../../lessons/document-ai/streaming.md): 실행 가능한 React 화면과 별도 Python SSE 서버를 추가했다. [실제 결과](../../reports/KEDU-PRODUCTION-016/RESULT.md)와 [화면 실행 안내](stream-ui/README.md)를 본다. 기존 API 전환·실제 모델 Streaming·최종 수업 평가는 남아 있다.
-
-[L9 다중 형식·평가](../../lessons/document-ai/evaluation.md): PDF/TXT에 좁은 DOCX 문단/표 입력을 연결했다. [실제 결과](../../reports/KEDU-PRODUCTION-017/RESULT.md)를 본다. K2-14 여섯 단원 자료는 작성했으나 L9 독립 품질·운영 채택은 보류다.
+[baseline-source-map.json](baseline-source-map.json)은 기준 앱으로 원문을 옮겼을 당시의 해시다. 이후 확장된 현재 소스 전체가 당시와 같다는 뜻이 아니다. 누적 실행의 역사와 게이트는 [단원/단계 기록](../../curriculum/production-index.json)에 보존한다. React 고정 화면은 실제 Chromium 상태/한글 화면을 검사한 기록이 있지만, 교육생 장비·독립 수업·실제 모델 연결까지 확인한 것은 아니다.

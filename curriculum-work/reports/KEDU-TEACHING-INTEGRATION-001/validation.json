@@ -1,0 +1,903 @@
+{
+  "batch": "KEDU-TEACHING-INTEGRATION-001",
+  "source_commit": "cfc5a4adba62c4b7a7c0637567cbfdcbe15ab405",
+  "verdict": "passed_same_author_document_connection_review",
+  "full_curriculum_complete": false,
+  "classroom_trial": "not_run",
+  "scope": {
+    "pinned_source_file_count": 64,
+    "source_files": [
+      {
+        "path": "curriculum-work/PROGRESS.md",
+        "blob_sha": "510fe2db76f477c3f2f34f2390cdae1e2b3872c1"
+      },
+      {
+        "path": "curriculum-work/README.md",
+        "blob_sha": "2f4fd9444a76c91519d0df02d14f812da0c11126"
+      },
+      {
+        "path": "curriculum-work/curriculum/production-index.json",
+        "blob_sha": "6d93c7fe460ecc4053908caa6433462a0f8b1190"
+      },
+      {
+        "path": "curriculum-work/lessons/baseline/lesson.md",
+        "blob_sha": "120464a2944ae72020511cf89439562cbc2fd331"
+      },
+      {
+        "path": "curriculum-work/lessons/context/lesson.md",
+        "blob_sha": "2373b593eee6ffd7affa9109653a6f4ad0bf1f4f"
+      },
+      {
+        "path": "curriculum-work/lessons/context/teacher-guide.md",
+        "blob_sha": "783283e8ae26171ee2bdf9508b670c2630264c81"
+      },
+      {
+        "path": "curriculum-work/lessons/data-evaluation/dataset-card.md",
+        "blob_sha": "84a0fc6661eeb12f70bf93250190c78e77f3a63a"
+      },
+      {
+        "path": "curriculum-work/lessons/data-evaluation/lesson.md",
+        "blob_sha": "038d54570503b995b1f8bf58b3344be6759d44f9"
+      },
+      {
+        "path": "curriculum-work/lessons/data-evaluation/teacher-guide.md",
+        "blob_sha": "47f65f7a94f04d3016dcfac1089437c832704831"
+      },
+      {
+        "path": "curriculum-work/lessons/data-evaluation/worksheet.md",
+        "blob_sha": "e3504bf41c82e13f019c770a1eca0c3dbb3d369f"
+      },
+      {
+        "path": "curriculum-work/lessons/document-ai/delivery-teacher-guide.md",
+        "blob_sha": "f3b39f09d8958bb2f0dbbd62f371192178a6070d"
+      },
+      {
+        "path": "curriculum-work/lessons/document-ai/evaluation.md",
+        "blob_sha": "b92e088a918c6f09f7a6ce6ae9ca112c6badf813"
+      },
+      {
+        "path": "curriculum-work/lessons/document-ai/intake.md",
+        "blob_sha": "69dba5cc9cc202e69893a58d307240cf7a431835"
+      },
+      {
+        "path": "curriculum-work/lessons/document-ai/provider.md",
+        "blob_sha": "0119380444e59fdf837335bfa38c05e1e3f2d57c"
+      },
+      {
+        "path": "curriculum-work/lessons/document-ai/report.md",
+        "blob_sha": "a4294e9f177435b902d1391c28fc698e3b9e533b"
+      },
+      {
+        "path": "curriculum-work/lessons/document-ai/streaming.md",
+        "blob_sha": "952875a0e63d5b78fd59c9e9f0c56d22b671dc75"
+      },
+      {
+        "path": "curriculum-work/lessons/document-ai/teacher-guide.md",
+        "blob_sha": "0f92c361cc9a03a80f611e921685051ffe4a370e"
+      },
+      {
+        "path": "curriculum-work/lessons/document-parsing/lesson.md",
+        "blob_sha": "f38e435f8e1df03e0aa5a090a167bed4e2544541"
+      },
+      {
+        "path": "curriculum-work/lessons/document-parsing/teacher-guide.md",
+        "blob_sha": "a46ab809768183376357bfe60042750cfa577788"
+      },
+      {
+        "path": "curriculum-work/lessons/embedding/lesson.md",
+        "blob_sha": "2bbe1493a647c038bc7d85c3ff159d915e2cdb13"
+      },
+      {
+        "path": "curriculum-work/lessons/embedding/teacher-guide.md",
+        "blob_sha": "188baaf17dc761e6b6c170705e051939fd569065"
+      },
+      {
+        "path": "curriculum-work/lessons/harness/lesson.md",
+        "blob_sha": "896055243e08acc4eeb9ef68920ff8f54180cc4f"
+      },
+      {
+        "path": "curriculum-work/lessons/harness/teacher-guide.md",
+        "blob_sha": "3a1ed3b5fd36dd8b67aa041c563637261e760979"
+      },
+      {
+        "path": "curriculum-work/lessons/huggingface/INSTRUCTOR.md",
+        "blob_sha": "930c8c64e6b2189abb2fa545c8eff9ebedf85a55"
+      },
+      {
+        "path": "curriculum-work/lessons/huggingface/README.md",
+        "blob_sha": "cb16db4a08af1d4273b7ec52368d8a0505f87c6c"
+      },
+      {
+        "path": "curriculum-work/lessons/llm-basics/lesson.md",
+        "blob_sha": "d7c41ce87c32107fbd0085393c1bb20a94b74529"
+      },
+      {
+        "path": "curriculum-work/lessons/llm-basics/teacher-guide.md",
+        "blob_sha": "09447d2bedff3fb587061cdd292835179f811017"
+      },
+      {
+        "path": "curriculum-work/lessons/llm-basics/worksheet.md",
+        "blob_sha": "651560c564cca8c0795ed992b76c8f850100e2f7"
+      },
+      {
+        "path": "curriculum-work/lessons/multi-agent/lesson.md",
+        "blob_sha": "045f0e21a0db35bab727d4aa50161843dd757cae"
+      },
+      {
+        "path": "curriculum-work/lessons/multi-agent/teacher-guide.md",
+        "blob_sha": "a2fd5f2fcc546f2eea06afd5f45b063d0b317320"
+      },
+      {
+        "path": "curriculum-work/lessons/orientation/lesson.md",
+        "blob_sha": "4df03115ca8ebe0f454bf9ba2e539afbef732530"
+      },
+      {
+        "path": "curriculum-work/lessons/orientation/teacher-guide.md",
+        "blob_sha": "f615ff0510943c1980d553281d3d7d0735d9a44a"
+      },
+      {
+        "path": "curriculum-work/lessons/orientation/worksheet.md",
+        "blob_sha": "48cdaa23f613313f2bac16789b2e24b5db392ca5"
+      },
+      {
+        "path": "curriculum-work/lessons/prompt/lesson.md",
+        "blob_sha": "77f4a2081e087773e0d4c4e52c66a16d1316d63e"
+      },
+      {
+        "path": "curriculum-work/lessons/prompt/teacher-guide.md",
+        "blob_sha": "b352645c094cc404f7b7bf05acf6528a73320920"
+      },
+      {
+        "path": "curriculum-work/lessons/rag/lesson.md",
+        "blob_sha": "4ddd10f8ee082ab74af2ef3474ffd0aabc24fe41"
+      },
+      {
+        "path": "curriculum-work/lessons/rag/teacher-guide.md",
+        "blob_sha": "937caeb363821860e2c659af8d38ddd025007c9c"
+      },
+      {
+        "path": "curriculum-work/lessons/single-agent/lesson.md",
+        "blob_sha": "295214bde62ba81afe95f013ae585bbfc92f3c7b"
+      },
+      {
+        "path": "curriculum-work/lessons/single-agent/teacher-guide.md",
+        "blob_sha": "35f19589ddde553d0a3809b77eeeb6b55607dd9b"
+      },
+      {
+        "path": "curriculum-work/lessons/transformer-basics/lesson.md",
+        "blob_sha": "8bca68357852bb44c4e4287bfe83bd2357476672"
+      },
+      {
+        "path": "curriculum-work/lessons/transformer-basics/teacher-guide.md",
+        "blob_sha": "524681809a1a3fb87aa7b855335515b6ca104a39"
+      },
+      {
+        "path": "curriculum-work/lessons/transformer-basics/worksheet.md",
+        "blob_sha": "d02e530177d81cf67b5e587a18b6bdb662e97ce1"
+      },
+      {
+        "path": "curriculum-work/lessons/vector-index/lesson.md",
+        "blob_sha": "7848b5a6f9bd08c2e7444b8c031b068451e189dd"
+      },
+      {
+        "path": "curriculum-work/lessons/vector-index/teacher-guide.md",
+        "blob_sha": "2de02901a34b77b865e38345d1f7c030ba0afbc4"
+      },
+      {
+        "path": "curriculum-work/loop/prompts.md",
+        "blob_sha": "1a7fc88795b737413817bd7425f61ad97d5cf665"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/L1.md",
+        "blob_sha": "a0875bb65b66b105e119757effb9cd6e5362f10a"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/L2.md",
+        "blob_sha": "1c532ca9e6938d61d7d307ba7e5248f28def9653"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/L3.md",
+        "blob_sha": "ba1b4b13e0251eba6d5be37cc385a64c5cc348c3"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/L4.md",
+        "blob_sha": "c3ce8f03cb65c929c13656dce250caf15228c923"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/L5.md",
+        "blob_sha": "7cc06b094a1bfb073772dc81998634f59c3c317e"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/L6.md",
+        "blob_sha": "03157fde3b63a7c70324280b5f1ba19472d5c439"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/L8.md",
+        "blob_sha": "59bfb8132ef8af3c3f19e91fb728c5a225902eba"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/L9.md",
+        "blob_sha": "d2a2b547e6629bdc6d4c804ab542db2c6faca864"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/README.md",
+        "blob_sha": "e8c2adf9bfb07a3c859e23efe92866cab7ae0ee0"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/backend/README.md",
+        "blob_sha": "8dae175f6a4fd57b3d106ee334347585987e73c7"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/stream-ui/README.md",
+        "blob_sha": "773cb4302ed2d2c9c6ddd6e3f70af09b6eb31a06"
+      },
+      {
+        "path": "curriculum-work/practice/huggingface-tokenizer/README.md",
+        "blob_sha": "a6c2c83454678c304258a8b10ff0843a4b52809e"
+      },
+      {
+        "path": "curriculum-work/practice/huggingface-tokenizer/WORKSHEET.md",
+        "blob_sha": "d1771a5c4f5b1944112492c7c7645209258e607f"
+      },
+      {
+        "path": "curriculum-work/lessons/fine-tuning/lesson.md",
+        "blob_sha": "83fcdd9d19287c409213bb50a4a6276f46ad19fe"
+      },
+      {
+        "path": "curriculum-work/lessons/fine-tuning/teacher-guide.md",
+        "blob_sha": "870d81d7176fb7822adeded9bbf7b36e7861b55a"
+      },
+      {
+        "path": "curriculum-work/lessons/fine-tuning/training-teacher-guide.md",
+        "blob_sha": "b9ecdb74e7bcc31e7635afb06408f4d070bfceca"
+      },
+      {
+        "path": "curriculum-work/lessons/fine-tuning/training.md",
+        "blob_sha": "f7495da3fe920d61695ef5857d0788662fbb17f2"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/L7.md",
+        "blob_sha": "b4c18b0240e73b2bc0a24cb7f4152f45be460a0a"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/CONTEXT.md",
+        "blob_sha": "72005592382f78e0e62aa9f70f679fcf632b82f4"
+      }
+    ],
+    "review": "navigation, prerequisites, connected activity/submission and teacher guidance passages; not all paragraphs or all code/commands",
+    "new_runtime_model_training_browser_ocr_rendering": false,
+    "external_url_live_check": false
+  },
+  "checks": {
+    "pinned_source_hashes": "passed",
+    "relative_file_links": {
+      "count": 524,
+      "missing": []
+    },
+    "local_heading_anchors": [
+      {
+        "path": "curriculum-work/lessons/embedding/lesson.md",
+        "dest": "../../practice/document-assistant/L3.md#embedding-활동",
+        "status": "passed"
+      },
+      {
+        "path": "curriculum-work/lessons/embedding/lesson.md",
+        "dest": "../../practice/document-assistant/L3.md#embedding-활동",
+        "status": "passed"
+      },
+      {
+        "path": "curriculum-work/lessons/embedding/teacher-guide.md",
+        "dest": "../../practice/document-assistant/L3.md#embedding-활동",
+        "status": "passed"
+      },
+      {
+        "path": "curriculum-work/lessons/orientation/lesson.md",
+        "dest": "worksheet.md#a--문제-정의-1장과-실패-세-개",
+        "status": "passed"
+      },
+      {
+        "path": "curriculum-work/lessons/orientation/lesson.md",
+        "dest": "worksheet.md#b--단계별-책임과-검토-지점",
+        "status": "passed"
+      },
+      {
+        "path": "curriculum-work/lessons/orientation/lesson.md",
+        "dest": "worksheet.md#c--분류생성-방식날짜-확인",
+        "status": "passed"
+      },
+      {
+        "path": "curriculum-work/lessons/transformer-basics/lesson.md",
+        "dest": "#손계산-뒤-선택-코드-확인",
+        "status": "passed"
+      },
+      {
+        "path": "curriculum-work/lessons/vector-index/lesson.md",
+        "dest": "../../practice/document-assistant/L3.md#index-활동",
+        "status": "passed"
+      },
+      {
+        "path": "curriculum-work/lessons/vector-index/lesson.md",
+        "dest": "../../practice/document-assistant/L3.md#index-활동",
+        "status": "passed"
+      },
+      {
+        "path": "curriculum-work/lessons/vector-index/teacher-guide.md",
+        "dest": "../../practice/document-assistant/L3.md#index-활동",
+        "status": "passed"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/L4.md",
+        "dest": "L3.md#실제-모델을-새로-실행하려면",
+        "status": "passed"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/backend/README.md",
+        "dest": "../L3.md#embedding-활동",
+        "status": "passed"
+      },
+      {
+        "path": "curriculum-work/practice/document-assistant/backend/README.md",
+        "dest": "../L3.md#index-활동",
+        "status": "passed"
+      }
+    ],
+    "external_link_occurrences_not_rechecked": 93,
+    "unit_count": 70,
+    "course_unit_counts": {
+      "K2-00": 3,
+      "K2-01": 4,
+      "K2-02": 5,
+      "K2-03": 7,
+      "K2-04": 4,
+      "K2-05": 4,
+      "K2-06": 5,
+      "K2-07": 4,
+      "K2-08": 4,
+      "K2-09": 4,
+      "K2-10": 4,
+      "K2-11": 4,
+      "K2-12": 8,
+      "K2-13": 4,
+      "K2-14": 6
+    },
+    "unit_teacher_mapping": [
+      {
+        "unit": "K2-00.U01",
+        "material": "curriculum-work/lessons/orientation/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/orientation/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-00.U02",
+        "material": "curriculum-work/lessons/orientation/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/orientation/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-00.U03",
+        "material": "curriculum-work/lessons/orientation/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/orientation/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-01.U01",
+        "material": "curriculum-work/lessons/data-evaluation/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/data-evaluation/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-01.U02",
+        "material": "curriculum-work/lessons/data-evaluation/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/data-evaluation/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-01.U03",
+        "material": "curriculum-work/lessons/data-evaluation/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/data-evaluation/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-01.U04",
+        "material": "curriculum-work/lessons/data-evaluation/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/data-evaluation/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-02.U01",
+        "material": "curriculum-work/lessons/transformer-basics/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/transformer-basics/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-02.U02",
+        "material": "curriculum-work/lessons/transformer-basics/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/transformer-basics/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-02.U03",
+        "material": "curriculum-work/lessons/transformer-basics/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/transformer-basics/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-02.U04",
+        "material": "curriculum-work/lessons/transformer-basics/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/transformer-basics/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-02.U05",
+        "material": "curriculum-work/lessons/transformer-basics/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/transformer-basics/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-03.U01",
+        "material": "curriculum-work/lessons/llm-basics/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/llm-basics/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-03.U02",
+        "material": "curriculum-work/lessons/llm-basics/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/llm-basics/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-03.U03",
+        "material": "curriculum-work/lessons/llm-basics/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/llm-basics/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-03.U04",
+        "material": "curriculum-work/lessons/llm-basics/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/llm-basics/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-03.U05",
+        "material": "curriculum-work/lessons/huggingface/README.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/huggingface/INSTRUCTOR.md"
+        ]
+      },
+      {
+        "unit": "K2-03.U06",
+        "material": "curriculum-work/lessons/huggingface/README.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/huggingface/INSTRUCTOR.md"
+        ]
+      },
+      {
+        "unit": "K2-03.U07",
+        "material": "curriculum-work/lessons/huggingface/README.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/huggingface/INSTRUCTOR.md"
+        ]
+      },
+      {
+        "unit": "K2-04.U01",
+        "material": "curriculum-work/lessons/prompt/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/prompt/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-04.U02",
+        "material": "curriculum-work/lessons/prompt/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/prompt/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-04.U03",
+        "material": "curriculum-work/lessons/prompt/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/prompt/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-04.U04",
+        "material": "curriculum-work/lessons/prompt/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/prompt/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-05.U01",
+        "material": "curriculum-work/lessons/context/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/context/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-05.U02",
+        "material": "curriculum-work/lessons/context/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/context/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-05.U03",
+        "material": "curriculum-work/lessons/context/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/context/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-05.U04",
+        "material": "curriculum-work/lessons/context/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/context/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-06.U01",
+        "material": "curriculum-work/lessons/harness/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/harness/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-06.U02",
+        "material": "curriculum-work/lessons/harness/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/harness/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-06.U03",
+        "material": "curriculum-work/lessons/harness/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/harness/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-06.U04",
+        "material": "curriculum-work/lessons/harness/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/harness/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-06.U05",
+        "material": "curriculum-work/lessons/harness/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/harness/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-07.U01",
+        "material": "curriculum-work/lessons/embedding/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/embedding/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-07.U02",
+        "material": "curriculum-work/lessons/embedding/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/embedding/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-07.U03",
+        "material": "curriculum-work/lessons/embedding/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/embedding/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-07.U04",
+        "material": "curriculum-work/lessons/embedding/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/embedding/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-08.U01",
+        "material": "curriculum-work/lessons/vector-index/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/vector-index/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-08.U02",
+        "material": "curriculum-work/lessons/vector-index/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/vector-index/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-08.U03",
+        "material": "curriculum-work/lessons/vector-index/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/vector-index/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-08.U04",
+        "material": "curriculum-work/lessons/vector-index/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/vector-index/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-09.U01",
+        "material": "curriculum-work/lessons/rag/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/rag/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-09.U02",
+        "material": "curriculum-work/lessons/rag/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/rag/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-09.U03",
+        "material": "curriculum-work/lessons/rag/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/rag/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-09.U04",
+        "material": "curriculum-work/lessons/rag/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/rag/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-10.U01",
+        "material": "curriculum-work/lessons/single-agent/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/single-agent/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-10.U02",
+        "material": "curriculum-work/lessons/single-agent/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/single-agent/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-10.U03",
+        "material": "curriculum-work/lessons/single-agent/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/single-agent/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-10.U04",
+        "material": "curriculum-work/lessons/single-agent/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/single-agent/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-11.U01",
+        "material": "curriculum-work/lessons/multi-agent/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/multi-agent/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-11.U02",
+        "material": "curriculum-work/lessons/multi-agent/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/multi-agent/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-11.U03",
+        "material": "curriculum-work/lessons/multi-agent/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/multi-agent/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-11.U04",
+        "material": "curriculum-work/lessons/multi-agent/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/multi-agent/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-12.U01",
+        "material": "curriculum-work/lessons/fine-tuning/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/fine-tuning/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-12.U02",
+        "material": "curriculum-work/lessons/fine-tuning/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/fine-tuning/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-12.U03",
+        "material": "curriculum-work/lessons/fine-tuning/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/fine-tuning/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-12.U04",
+        "material": "curriculum-work/lessons/fine-tuning/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/fine-tuning/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-12.U05",
+        "material": "curriculum-work/lessons/fine-tuning/training.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/fine-tuning/training-teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-12.U06",
+        "material": "curriculum-work/lessons/fine-tuning/training.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/fine-tuning/training-teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-12.U07",
+        "material": "curriculum-work/lessons/fine-tuning/training.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/fine-tuning/training-teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-12.U08",
+        "material": "curriculum-work/lessons/fine-tuning/training.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/fine-tuning/training-teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-13.U01",
+        "material": "curriculum-work/lessons/document-parsing/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/document-parsing/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-13.U02",
+        "material": "curriculum-work/lessons/document-parsing/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/document-parsing/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-13.U03",
+        "material": "curriculum-work/lessons/document-parsing/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/document-parsing/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-13.U04",
+        "material": "curriculum-work/lessons/document-parsing/lesson.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/document-parsing/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-14.U01",
+        "material": "curriculum-work/lessons/document-ai/intake.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/document-ai/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-14.U02",
+        "material": "curriculum-work/lessons/document-ai/intake.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/document-ai/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-14.U03",
+        "material": "curriculum-work/lessons/document-ai/report.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/document-ai/teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-14.U04",
+        "material": "curriculum-work/lessons/document-ai/provider.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/document-ai/delivery-teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-14.U05",
+        "material": "curriculum-work/lessons/document-ai/streaming.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/document-ai/delivery-teacher-guide.md"
+        ]
+      },
+      {
+        "unit": "K2-14.U06",
+        "material": "curriculum-work/lessons/document-ai/evaluation.md",
+        "teacher_mapping": [
+          "curriculum-work/lessons/document-ai/delivery-teacher-guide.md"
+        ]
+      }
+    ],
+    "units_exactly_preserved": true,
+    "milestones_exactly_preserved": true,
+    "first_unfinished_gate_exactly_preserved": true,
+    "full_curriculum_and_classroom_acceptance_false": true
+  },
+  "semantic_review": {
+    "reviewer": "same_author",
+    "criteria": [
+      "Natural course sequence with baseline preparation before coding",
+      "Activity and submission links for all 15 course groups including 3 HF units inside LLM course",
+      "Prerequisite tiers distinguish tokenizer, baseline, model, training, PDF/OCR/report and browser",
+      "Shared L1/L3/L7/L9 activities remain navigable with distinct purposes",
+      "API/CLI/separate SSE UI are not represented as automatically integrated",
+      "Historical observations and fresh runtime requirements remain separate",
+      "Missing L9 navigation and stale current status corrected; history preserved",
+      "Training/QLoRA/extensions and independent quality/classroom gates remain pending"
+    ],
+    "limitations": [
+      "No independent teacher/student trial",
+      "No new model generation/training/cache or browser/OCR/rendering execution",
+      "Static link and ID mappings do not prove teachability or task quality"
+    ]
+  },
+  "changes": [
+    "curriculum-work/PROGRESS.md",
+    "curriculum-work/README.md",
+    "curriculum-work/curriculum/production-index.json",
+    "curriculum-work/lessons/baseline/lesson.md",
+    "curriculum-work/practice/document-assistant/README.md",
+    "curriculum-work/practice/document-assistant/backend/README.md",
+    "curriculum-work/practice/document-assistant/stream-ui/README.md",
+    "curriculum-work/STUDY_GUIDE.md",
+    "curriculum-work/reports/KEDU-TEACHING-INTEGRATION-001/RESULT.md",
+    "curriculum-work/reports/KEDU-TEACHING-INTEGRATION-001/validation.json"
+  ],
+  "next_batch": {
+    "id": "KEDU-RUNTIME-REVALIDATION-001",
+    "proposed_scope": [
+      "Prepare isolated pinned Tokenizer dependencies and revision files",
+      "Run fresh Qwen/Smol input observations and cache repeats without model generation; compare actual inputs/options with preserved evidence",
+      "Record setup failures and cross-platform/classroom limits without changing quality gates"
+    ],
+    "status": "not_started",
+    "recommended_reasoning_effort": "medium"
+  },
+  "publication": {
+    "status": "pending"
+  }
+}

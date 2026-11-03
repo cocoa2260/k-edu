@@ -1,6 +1,8 @@
-# 문서 답변 누적 실습 — Backend L0~L7 준비
+# 문서 도우미 Backend 실행 안내
 
-Day3 7~8교시의 코드와 CORS에서 출발해 L1 입력 준비, L2 Harness, L3 실제 Embedding·검색·Index를 같은 프로젝트에 추가했다. 기존 대화 API는 유지하고 L4 CLI에서 실제 검색·로컬 생성·출력 검사를 연결했다. 답변 품질은 채택 보류다. 처음 시작하는 학생은 [L0 본문](../../../lessons/baseline/lesson.md)을 읽는다.
+Day3 7~8교시의 코드와 CORS에서 출발해 L1 입력 준비, L2 Harness, L3 실제 Embedding·검색·Index를 같은 프로젝트에 추가했다. 기존 대화 API는 유지하고 L4 CLI에서 실제 검색·로컬 생성·출력 검사를 연결했다. 답변 품질은 채택 보류다. 처음 시작하는 학생은 [기준 앱 강의](../../../lessons/baseline/lesson.md)을 읽는다.
+
+[전체 수강 순서](../../../STUDY_GUIDE.md)와 [단계별 실습](../README.md)을 먼저 확인한다. 이 폴더의 기존 API, 누적 CLI, 별도 React/SSE 서버는 서로 다른 실행 경로다. 뒤의 확장 절은 해당 기능이 모든 API에 자동 연결되었다는 뜻이 아니다.
 
 ## 시작하기
 
