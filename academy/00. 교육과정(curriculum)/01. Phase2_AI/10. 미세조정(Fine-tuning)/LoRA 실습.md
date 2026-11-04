@@ -1,8 +1,8 @@
 # 작은 갱신을 학습하고, 결과를 평가하고, 다시 불러오기
 
-회의실 예제의 질문·자료·교사 정답과 학습할 Token 범위를 [앞 수업](lesson.md)에서 준비했다. 이제 예제를 읽는 것에서 한 걸음 더 나아가 모델의 일부 Parameter를 실제로 바꾼다. 그런데 Loss가 줄었는데도 없는 보상금을 답한다면 성공이라고 할 수 있을까? 저장한 Adapter를 다시 불러와 같은 잘못된 답을 내면 무엇까지 확인한 것일까?
+회의실 예제의 질문·자료·교사 정답과 학습할 Token 범위를 [앞 수업](강의용.md)에서 준비했다. 이제 예제를 읽는 것에서 한 걸음 더 나아가 모델의 일부 Parameter를 실제로 바꾼다. 그런데 Loss가 줄었는데도 없는 보상금을 답한다면 성공이라고 할 수 있을까? 저장한 Adapter를 다시 불러와 같은 잘못된 답을 내면 무엇까지 확인한 것일까?
 
-이번 수업은 **갱신 원리 → 한 Step의 동작 → 자원 선택 → 답변 평가 → 저장과 재현**을 연결한다. 아래 ‘기존 실행’ 수치는 Qwen3-0.6B CPU LoRA의 과거 실제 기록이다. 이번 설명 정비에서 새 훈련을 돌린 수치는 아니다. [연결 실습](../../practice/document-assistant/L7.md)에는 작은 계산·저장 기록 관찰과 별도로 실제 재실행 경로가 있다. 처음 읽을 때 긴 JSON 전체를 열 필요는 없다.
+이번 수업은 **갱신 원리 → 한 Step의 동작 → 자원 선택 → 답변 평가 → 저장과 재현**을 연결한다. 아래 ‘기존 실행’ 수치는 Qwen3-0.6B CPU LoRA의 과거 실제 기록이다. 이번 설명 정비에서 새 훈련을 돌린 수치는 아니다. [연결 실습](<../../02. 실습/document-assistant/L7.md>)에는 작은 계산·저장 기록 관찰과 별도로 실제 재실행 경로가 있다. 처음 읽을 때 긴 JSON 전체를 열 필요는 없다.
 
 ## 1. LoRA는 원래 계산에 작은 갱신 경로를 더한다
 
@@ -184,6 +184,6 @@ Model Card를 읽던 사람이 이제 작성자가 된다. “학습 완료” �
 2. 새 프로세스에서 Token ID가 일치해도 왜 정답 품질을 보장하지 않는가? 이번 실제 반례는 무엇인가?
 3. Adapter만 읽고 새 Optimizer를 만들면 중단 직전 훈련을 같은 상태로 재개했다고 할 수 있는가?
 
-[연결 실습](../../practice/document-assistant/L7.md)에서 계산·저장 기록·실패 응답·재로드를 구분해 확인한다. [훈련 수업 해설](training-teacher-guide.md)은 질문별 판단 근거를 제공한다.
+[연결 실습](<../../02. 실습/document-assistant/L7.md>)에서 계산·저장 기록·실패 응답·재로드를 구분해 확인한다. [훈련 수업 해설](<LoRA 실습 강사용.md>)은 질문별 판단 근거를 제공한다.
 
 공식 참고: [고정 PEFT 계열의 LoRA 설정](https://huggingface.co/docs/peft/v0.17.0/package_reference/lora), [QLoRA 논문](https://arxiv.org/abs/2305.14314), [양자화 준비 절차](https://huggingface.co/docs/peft/v0.17.0/developer_guides/quantization), [Adapter 체크포인트](https://huggingface.co/docs/peft/v0.17.0/developer_guides/checkpoint), [bitsandbytes 장비/설치](https://huggingface.co/docs/bitsandbytes/main/en/installation). 장비 지원 문서는 확인 시점의 버전을 기록하며 최신 메뉴/API와 실습의 PEFT 0.17.1·Transformers 4.57.1을 혼용하지 않는다.
