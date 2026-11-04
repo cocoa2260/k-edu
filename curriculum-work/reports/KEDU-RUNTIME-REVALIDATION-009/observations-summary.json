@@ -1,0 +1,112 @@
+{
+  "stream": {
+    "model": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "max_tokens": 64,
+    "cases": {
+      "normal": {
+        "start_ns": 1588914376987,
+        "worker_generate_start_ns": 1598034110250,
+        "input_tokens": 40,
+        "worker_pid": 10,
+        "worker_exitcode": 0,
+        "worker_joined_ns": 1606589342332,
+        "generated_tokens": 38,
+        "worker_generate_end_ns": 1605408866804,
+        "cancel_observed": false,
+        "torch": "2.15.0+cpu",
+        "status": "completed",
+        "reason": "model_generated",
+        "emitted_characters": 37,
+        "client_delta_count": 12,
+        "client_first_delta_ns": 1599006790647,
+        "client_final_ns": 1606591429136,
+        "final_answer_present": true,
+        "final_answer_sha256": "aa129fac99061f994bd10548e931e018f5d2f3c2a69aefa2ca2f5b17337bd83b"
+      },
+      "cancel": {
+        "start_ns": 1606594256114,
+        "worker_generate_start_ns": 1616070915068,
+        "input_tokens": 54,
+        "stop_requested_ns": 1617116824771,
+        "stop_path": "/probe/cancel",
+        "worker_pid": 38,
+        "worker_exitcode": 0,
+        "worker_joined_ns": 1618470869203,
+        "generated_tokens": 4,
+        "worker_generate_end_ns": 1617294151177,
+        "cancel_observed": true,
+        "torch": "2.15.0+cpu",
+        "status": "cancelled",
+        "reason": "token_stopping_criteria",
+        "emitted_characters": 3,
+        "late_stop_ack": false,
+        "client_delta_count": 1,
+        "client_first_delta_ns": 1617114910056,
+        "client_final_ns": 1618471762849,
+        "final_answer_present": false
+      },
+      "hard": {
+        "start_ns": 1618474798948,
+        "worker_generate_start_ns": 1626775097562,
+        "input_tokens": 54,
+        "stop_requested_ns": 1627825328096,
+        "stop_path": "/probe/force",
+        "worker_pid": 68,
+        "worker_exitcode": -9,
+        "worker_joined_ns": 1627902247901,
+        "status": "failed",
+        "reason": "worker_sigkill",
+        "emitted_characters": 3,
+        "late_stop_ack": false,
+        "client_delta_count": 1,
+        "client_first_delta_ns": 1627823521019,
+        "client_final_ns": 1627902748593,
+        "final_answer_present": false
+      }
+    }
+  },
+  "elapsed": {
+    "normal_first_delta_from_request_s": 10.092,
+    "normal_first_delta_before_generation_end_s": 6.402,
+    "cancel_request_to_generation_end_ms": 177,
+    "cancel_request_to_worker_join_ms": 1354,
+    "hard_stop_request_to_worker_join_ms": 77
+  },
+  "boundaries": {
+    "loopback_identity": {
+      "bind": "127.0.0.1",
+      "distinct_http_clients": true,
+      "supplied_credentials": false,
+      "foreign_origin_cancel_http": 403,
+      "no_origin_run_list_http": 200,
+      "no_origin_peer_cancel_ack": true,
+      "observed_final": "cancelled"
+    },
+    "agent": {
+      "model_supplied_flag": "TOOL_ARGUMENTS",
+      "no_grant": "APPROVAL_REQUIRED",
+      "wrong_args": "APPROVAL_REQUIRED",
+      "wrong_run": "APPROVAL_REQUIRED",
+      "same_registry_reuse": "APPROVAL_REQUIRED",
+      "new_registry_same_policy_reuse_accepted": true
+    },
+    "report": {
+      "pending": "Matching approved review required",
+      "durable_after_reopen": true,
+      "decision_mode": "trusted_local_fixture_not_authenticated_human",
+      "changed_claim": "Matching approved review required",
+      "restricted_source": "Stale/restricted/deleted source"
+    }
+  },
+  "existing_ui": {
+    "fixture_start": "streaming",
+    "real_model_start": "invalid_start"
+  },
+  "tests": {
+    "python_passed": 118,
+    "python_subtests_passed": 35,
+    "node_passed": 34,
+    "react_build": "passed"
+  }
+}

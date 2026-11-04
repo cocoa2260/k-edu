@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-RUNTIME-REVALIDATION-008",
+  "current_batch": "KEDU-RUNTIME-REVALIDATION-009",
   "units": [
     {
       "id": "K2-00.U01",
@@ -979,15 +979,15 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-RUNTIME-REVALIDATION-009",
+    "id": "KEDU-RUNTIME-REVALIDATION-010",
     "status": "not_started",
     "recommended_reasoning_effort": "high",
     "proposed_scope": [
-      "L9 actual model connection and streaming/cancellation",
-      "Hard termination, authentication and approval boundary verification"
+      "Consolidate execution evidence and remaining quality/operational gaps",
+      "Prepare independent classroom validation criteria and teaching handoff"
     ]
   },
-  "batch_status": "DOCUMENT_PATHS_AND_REPORT_RENDER_VERIFIED_GENERAL_QUALITY_NOT_ACCEPTED",
+  "batch_status": "LOCAL_MODEL_SSE_CANCELLATION_AND_WORKER_STOP_VERIFIED_PRODUCTION_PENDING",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -1257,6 +1257,21 @@
       "v2_report_source_locations_verified": 3,
       "contract_tests_passed": 112,
       "general_document_quality": "not_accepted"
+    },
+    "stream_revalidation": {
+      "report": "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-009/RESULT.md",
+      "live_model_sse_cases": 3,
+      "streamed_before_generation_finished": true,
+      "token_boundary_cancellation": true,
+      "owned_linux_worker_force_stop_verified": true,
+      "existing_react_live_model_connection": "blocked_by_fixture_start_contract",
+      "existing_lab_caller_authentication": "not_implemented",
+      "durable_agent_approval_consumption": "not_implemented",
+      "local_report_review_persists": true,
+      "authenticated_report_review": "not_implemented",
+      "python_tests_passed": 118,
+      "node_tests_passed": 34,
+      "production_operational_acceptance": "pending"
     }
   }
 }
