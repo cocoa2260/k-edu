@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-RUNTIME-REVALIDATION-005",
+  "current_batch": "KEDU-RUNTIME-REVALIDATION-006",
   "units": [
     {
       "id": "K2-00.U01",
@@ -979,15 +979,15 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-RUNTIME-REVALIDATION-006",
+    "id": "KEDU-RUNTIME-REVALIDATION-007",
     "status": "not_started",
     "recommended_reasoning_effort": "high",
     "proposed_scope": [
-      "L4 RAG retrieval and grounded answer quality",
-      "L5 Single-Agent tool behavior and L6 Multi-Agent handoff and task quality"
+      "L7 LoRA learning and task quality, regression and adapter reload reproducibility",
+      "QLoRA execution readiness as a separate profile"
     ]
   },
-  "batch_status": "BROWSER_SETTINGS_HARNESS_ACTUAL_MODEL_VERIFIED_TASK_QUALITY_NOT_ACCEPTED",
+  "batch_status": "RAG_AGENT_REPRESENTATIVE_RUNTIME_VERIFIED_TASK_QUALITY_NOT_ACCEPTED",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -1196,6 +1196,18 @@
       "browser_generation": "verified",
       "harness_valid_drafts_without_repair": 0,
       "harness_valid_drafts_with_one_repair": 0,
+      "task_quality": "not_accepted"
+    },
+    "rag_agent_revalidation": {
+      "report": "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-006/RESULT.md",
+      "actual_model_calls": 37,
+      "representative_case_conditions": 14,
+      "isolated_role_probes": 2,
+      "contract_tests_passed": 106,
+      "contract_tests_skipped": 1,
+      "rag_quality_accepted_drafts": 0,
+      "single_agent_final_drafts": 0,
+      "multi_agent_final_drafts": 0,
       "task_quality": "not_accepted"
     }
   }
