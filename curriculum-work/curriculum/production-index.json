@@ -1281,7 +1281,10 @@
       "independent_instructor_pilot": "not_run",
       "learner_classroom_trial": "not_run",
       "classroom_acceptance": "pending",
-      "production_operational_acceptance": "pending"
+      "production_operational_acceptance": "pending",
+      "learner_worksheet": "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-010/PILOT_WORKSHEET.md",
+      "instructor_preflight_instructions": "ready",
+      "same_author_clean_environment_recheck_activities": 4
     }
   }
 }

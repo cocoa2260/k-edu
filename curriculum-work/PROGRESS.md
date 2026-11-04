@@ -150,3 +150,5 @@ Qwen CPU Provider를 기존 API에 명시적으로 주입해 실제 HTTP 생성 
 ## 수업 사용 범위와 독립 파일럿 준비
 
 001~009의 실행 근거를 직접 활동·기록 시연·별도 검증으로 구분했다. 대표 활동 네 개의 실행 경로를 동일 작성자가 확인하고 강사 진행안·판정표·교육생별 기록지를 만들었다. 독립 강사와 교육생 수업은 미실행이다. [실습별 종합](reports/KEDU-RUNTIME-REVALIDATION-010/RESULT.md) · [파일럿 진행안](reports/KEDU-RUNTIME-REVALIDATION-010/CLASSROOM_PILOT.md).
+
+독립 검증 준비로 강사용 사전 실행 절차와 [학생용 제출지](reports/KEDU-RUNTIME-REVALIDATION-010/PILOT_WORKSHEET.md)를 마련했다. 작성자가 새 Linux 가상환경에서 필수 활동 네 개를 재실행해 010의 사전 확인과 같은 출력을 확인했다. 독립 강사와 교육생의 실제 기록은 대기 중이다.
