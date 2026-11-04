@@ -1,6 +1,6 @@
 # 합성 근거 검토 예제
 
-[DOCX](evidence-report.docx)와 [PDF](evidence-report.pdf)는 같은 DocumentSpec에서 만든 1쪽 교육용 예제다. 실제 회사 정책이나 독립 업무 승인 자료가 아니다. [강의](../../../../../lessons/document-ai/report.md)에서 주장·근거·검토·내용/화면 검사를 설명한다.
+[DOCX](evidence-report.docx)와 [PDF](evidence-report.pdf)는 같은 DocumentSpec에서 만든 1쪽 교육용 예제다. 실제 회사 정책이나 독립 업무 승인 자료가 아니다. [강의](<../../../../../01. Phase2_AI/13. Document AI/02. 근거 보고서.md>)에서 주장·근거·검토·내용/화면 검사를 설명한다.
 
 document-spec.json은 두 Claim·두 Citation·템플릿·현재 버전/해시의 명세이며, review.json은 고정 검토자의 시연 결정이다. 사람이 기본 강의를 읽는 데 두 JSON을 열 필요는 없다.
 

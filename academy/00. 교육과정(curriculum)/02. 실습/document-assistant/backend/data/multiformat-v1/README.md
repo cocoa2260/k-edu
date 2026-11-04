@@ -1,6 +1,6 @@
 # 세 형식 비교 자료
 
-[강의](../../../../../lessons/document-ai/evaluation.md)와 [결과](../../../../../reports/KEDU-PRODUCTION-017/RESULT.md)에서 사용한다. 실제 회사 정책이 없는 교육용 합성 자료다.
+[강의](<../../../../../01. Phase2_AI/13. Document AI/05. 최종 평가.md>)와 [결과](https://github.com/cocoa2260/k-edu/blob/work/curriculum-production-001/curriculum-work/reports/KEDU-PRODUCTION-017/RESULT.md)에서 사용한다. 실제 회사 정책이 없는 교육용 합성 자료다.
 
 | 파일 | 용도 |
 |---|---|
