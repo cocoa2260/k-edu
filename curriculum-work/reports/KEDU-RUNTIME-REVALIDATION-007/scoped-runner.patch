@@ -1,0 +1,28 @@
+--- tools/lora_revalidation_007.py
++++ tools/lora_revalidation_007.py
+@@ -71,7 +71,7 @@
+ 
+ def main():
+     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,required=True);p.add_argument('--resume',action='store_true');p.add_argument('--download',action='store_true')
+-    p.add_argument('--reload-variant',choices=['seed','augmented']);a=p.parse_args();torch.set_num_threads(2);torch.manual_seed(37)
++    p.add_argument('--regression-cases', nargs='+', required=True);p.add_argument('--reload-variant',choices=['seed','augmented']);a=p.parse_args();torch.set_num_threads(2);torch.manual_seed(37)
+     if a.output.exists() and not a.resume:raise FileExistsError(a.output)
+     a.output.mkdir(parents=True,exist_ok=True)
+     config=dict(model_id=MODEL_ID,revision=REVISION,seed=37,steps=28,batch_size=1,r=4,alpha=8,dropout=0.,lr=.0002,
+@@ -80,8 +80,15 @@
+         versions={k:metadata.version(k) for k in ['torch','peft','transformers','accelerate','tokenizers']},
+         data_hashes={str(f.relative_to(ROOT)):hashlib.sha256(f.read_bytes()).hexdigest() for f in [*sorted(DATA.glob('*.json')),*[ROOT/'data'/n for n in ['core-v1.json','agent-v1.json','documents-v1.json']]]},
+         code_hashes={n:hashlib.sha256((BACK/n).read_bytes()).hexdigest() for n in ['tools/lora_full_lab.py','tools/lora_lab.py','app/training_data.py','app/agent.py','app/rag.py','app/providers/hf_cpu_provider.py','retrieval/index.py','retrieval/encoder.py']})
++    config['regression_cases'] = a.regression_cases
++    config['code_hashes'][Path(__file__).name] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+     verify_config(a.output/'configuration.json',config)
+-    regressions=all_cases();questions=[e['question'] for e in regressions]
++    cases = all_cases()
++    questions = [case['question'] for case in cases]
++    requested = set(a.regression_cases)
++    if requested - {case['id'] for case in cases}:
++        p.error('Unknown regression case')
++    regressions = [case for case in cases if case['id'] in requested]
+     manifest=read(DATA/'split-manifest.json');reviews=read(DATA/'review-manifest.json')
+     seeds=validate_seeds(read(DATA/'seeds.json')['examples'],manifest,reviews,questions)
+     aug,_=adopt_candidates(read(DATA/'augmentation-candidates.json')['examples'],seeds,manifest,reviews,questions)

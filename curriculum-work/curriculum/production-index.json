@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-RUNTIME-REVALIDATION-006",
+  "current_batch": "KEDU-RUNTIME-REVALIDATION-007",
   "units": [
     {
       "id": "K2-00.U01",
@@ -979,15 +979,15 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-RUNTIME-REVALIDATION-007",
+    "id": "KEDU-RUNTIME-REVALIDATION-008",
     "status": "not_started",
     "recommended_reasoning_effort": "high",
     "proposed_scope": [
-      "L7 LoRA learning and task quality, regression and adapter reload reproducibility",
-      "QLoRA execution readiness as a separate profile"
+      "L8 PDF/OCR/Vision quality on representative and complex-table documents",
+      "L9 render and inspect current evidence report"
     ]
   },
-  "batch_status": "RAG_AGENT_REPRESENTATIVE_RUNTIME_VERIFIED_TASK_QUALITY_NOT_ACCEPTED",
+  "batch_status": "LORA_REPLAY_RELOAD_AND_QLORA_CPU_STEP_VERIFIED_TASK_QUALITY_NOT_ACCEPTED",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -1208,6 +1208,35 @@
       "rag_quality_accepted_drafts": 0,
       "single_agent_final_drafts": 0,
       "multi_agent_final_drafts": 0,
+      "task_quality": "not_accepted"
+    },
+    "lora_revalidation": {
+      "report": "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-007/RESULT.md",
+      "training_rows_seed_augmented": [
+        20,
+        28
+      ],
+      "optimizer_steps_per_adapter": 28,
+      "test_cases_per_condition": 10,
+      "agent_cases_per_condition": 6,
+      "test_contract_pass_base_seed_augmented": [
+        0,
+        8,
+        8
+      ],
+      "test_complete_review_base_seed_augmented": [
+        0,
+        0,
+        2
+      ],
+      "agent_final_grounded_drafts_base_seed_augmented": [
+        0,
+        0,
+        0
+      ],
+      "fresh_process_reload_first_test_both_adapters": true,
+      "qlora_status": "linux_cpu_nf4_one_optimizer_step_verified_full_training_reload_not_run",
+      "contract_tests_passed": 35,
       "task_quality": "not_accepted"
     }
   }
