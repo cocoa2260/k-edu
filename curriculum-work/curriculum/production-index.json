@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-RUNTIME-REVALIDATION-007",
+  "current_batch": "KEDU-RUNTIME-REVALIDATION-008",
   "units": [
     {
       "id": "K2-00.U01",
@@ -979,15 +979,15 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-RUNTIME-REVALIDATION-008",
+    "id": "KEDU-RUNTIME-REVALIDATION-009",
     "status": "not_started",
     "recommended_reasoning_effort": "high",
     "proposed_scope": [
-      "L8 PDF/OCR/Vision quality on representative and complex-table documents",
-      "L9 render and inspect current evidence report"
+      "L9 actual model connection and streaming/cancellation",
+      "Hard termination, authentication and approval boundary verification"
     ]
   },
-  "batch_status": "LORA_REPLAY_RELOAD_AND_QLORA_CPU_STEP_VERIFIED_TASK_QUALITY_NOT_ACCEPTED",
+  "batch_status": "DOCUMENT_PATHS_AND_REPORT_RENDER_VERIFIED_GENERAL_QUALITY_NOT_ACCEPTED",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -1238,6 +1238,25 @@
       "qlora_status": "linux_cpu_nf4_one_optimizer_step_verified_full_training_reload_not_run",
       "contract_tests_passed": 35,
       "task_quality": "not_accepted"
+    },
+    "document_revalidation": {
+      "report": "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-008/RESULT.md",
+      "existing_pdf_specimens": 4,
+      "complex_table_amounts_in_correct_row_digital_ocr": [
+        4,
+        1
+      ],
+      "complex_table_amount_count": 4,
+      "vision_actual_model_calls": 3,
+      "vision_quality_accepted_cases": 0,
+      "v2_report_direct_pdf_docx_render_pages": [
+        1,
+        1
+      ],
+      "v2_report_verified_paragraphs_per_render": 21,
+      "v2_report_source_locations_verified": 3,
+      "contract_tests_passed": 112,
+      "general_document_quality": "not_accepted"
     }
   }
 }
