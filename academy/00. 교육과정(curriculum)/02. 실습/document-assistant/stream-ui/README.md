@@ -1,6 +1,6 @@
 # React와 SSE 실행 실습
 
-[강의](../../../lessons/document-ai/streaming.md) → 아래 실행 안내 → [연결 활동](../L9.md) 순서로 진행한다. 과거 [실행 결과](../../../reports/KEDU-PRODUCTION-016/RESULT.md)는 재현 근거가 필요할 때 참고한다. 이 폴더는 새 React 실행 프로젝트이며 academy의 강의 원문을 변경하지 않았다.
+[강의](<../../../01. Phase2_AI/13. Document AI/04. Streaming.md>) → 아래 실행 안내 → [연결 활동](../L9.md) 순서로 진행한다. 과거 [실행 결과](https://github.com/cocoa2260/k-edu/blob/work/curriculum-production-001/curriculum-work/reports/KEDU-PRODUCTION-016/RESULT.md)는 재현 근거가 필요할 때 참고한다. 이 폴더는 새 React 실행 프로젝트이며 academy의 강의 원문을 변경하지 않았다.
 
 | 순서 | 실행 담당자의 작업 |
 |---|---|

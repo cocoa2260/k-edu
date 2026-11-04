@@ -1,12 +1,12 @@
 # Tokenizer CPU 관찰 실습
 
-학생은 먼저 [강의 본문](../../lessons/huggingface/README.md)을 읽는다. 이 폴더는 실제 Python 실행 파일과 입력·설정·답안이다. 모델 생성/훈련 앱과 별도인 작은 도구이며, 이후 누적 프로젝트를 새 앱으로 복제한 것이 아니다.
+학생은 먼저 [강의 본문](<../../01. Phase2_AI/04. 대규모 언어 모델(LLM)/Hugging Face/강의용.md>)을 읽는다. 이 폴더는 실제 Python 실행 파일과 입력·설정·답안이다. 모델 생성/훈련 앱과 별도인 작은 도구이며, 이후 누적 프로젝트를 새 앱으로 복제한 것이 아니다.
 
 ## 준비 상태
 
-Python 3.12, 인터넷으로 준비한 Python 의존성, 선택한 리비전의 Tokenizer 파일이 필요하다. GPU·PyTorch·생성 모델 가중치는 이 실습의 필요 조건이 아니다. Linux x86_64 / Python 3.12.14에서 직접 의존성 설치와 실제 Qwen·Smol Tokenizer 실행을 검증했다. requirements-tested.txt에는 전체 설치 버전을 기록했다. 다른 운영체제와 교육장 호환성은 별도 확인이 필요하다. 실제 확인 결과는 [제작 기록](../../reports/KEDU-PRODUCTION-001/RESULT.md)을 확인한다.
+Python 3.12, 인터넷으로 준비한 Python 의존성, 선택한 리비전의 Tokenizer 파일이 필요하다. GPU·PyTorch·생성 모델 가중치는 이 실습의 필요 조건이 아니다. Linux x86_64 / Python 3.12.14에서 직접 의존성 설치와 실제 Qwen·Smol Tokenizer 실행을 검증했다. requirements-tested.txt에는 전체 설치 버전을 기록했다. 다른 운영체제와 교육장 호환성은 별도 확인이 필요하다. 실제 확인 결과는 [제작 기록](https://github.com/cocoa2260/k-edu/blob/work/curriculum-production-001/curriculum-work/reports/KEDU-PRODUCTION-001/RESULT.md)을 확인한다.
 
-2026-11-04에는 새 Linux 가상환경에서 같은 고정 입력/revision으로 실제 관찰 6회와 캐시·과거 결과 대조를 다시 통과했다. [최신 실행 결과](../../reports/KEDU-RUNTIME-REVALIDATION-001/RESULT.md)와 그 안의 설치 버전 스냅샷을 참고한다. 과거 requirements-tested.txt는 당시 기록으로 보존한다. 다른 장비와 실제 모델 생성 검증은 별도다.
+2026-11-04에는 새 Linux 가상환경에서 같은 고정 입력/revision으로 실제 관찰 6회와 캐시·과거 결과 대조를 다시 통과했다. [최신 실행 결과](https://github.com/cocoa2260/k-edu/blob/work/curriculum-production-001/curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-001/RESULT.md)와 그 안의 설치 버전 스냅샷을 참고한다. 과거 requirements-tested.txt는 당시 기록으로 보존한다. 다른 장비와 실제 모델 생성 검증은 별도다.
 
 ## 실행 순서
 
@@ -56,10 +56,10 @@ runs는 실행할 때 생성한다. 이 폴더에 정상 결과 예시를 미리
 <details>
 <summary>개발자용 계약 검사</summary>
 
-저장소 루트에서 `python -m unittest discover -s curriculum-work/practice/huggingface-tokenizer/tests -v`를 실행한다. 이 검사는 고정 리비전 요구·입력 오류·의존성 미준비·기존 결과 덮어쓰기 방지를 확인한다. 기록된 실제 관찰을 읽는 회귀 검사는 보고서의 runtime 폴더가 있으면 함께 실행한다. 실제 Tokenizer의 새 실행 증거는 위의 관찰 명령으로 별도 확보한다.
+저장소 루트에서 `python -m unittest discover -s academy/00. 교육과정(curriculum)/02. 실습/huggingface-tokenizer/tests -v`를 실행한다. 이 검사는 고정 리비전 요구·입력 오류·의존성 미준비·기존 결과 덮어쓰기 방지를 확인한다. 기록된 실제 관찰을 읽는 회귀 검사는 보고서의 runtime 폴더가 있으면 함께 실행한다. 실제 Tokenizer의 새 실행 증거는 위의 관찰 명령으로 별도 확보한다.
 
 </details>
 
 ## 관찰을 교안과 대조하기
 
-[강의](../../lessons/huggingface/README.md)의 부분 코드는 inputs.json의 KO 원문을 설명하고, tokenizer_steps.py는 별도의 더 짧은 문장으로 API를 보여 준다. 두 문장의 문자/Token 수를 같은 예상값으로 채우지 않는다. 과거 observations를 읽었으면 저장 기록 대조, 새 명령을 실행했으면 현재 실제 관찰로 구분한다. 명령이 준비 필요로 끝났다면 성공 observations를 만들거나 과거 값을 자기 실행 결과로 복사하지 않는다.
+[강의](<../../01. Phase2_AI/04. 대규모 언어 모델(LLM)/Hugging Face/강의용.md>)의 부분 코드는 inputs.json의 KO 원문을 설명하고, tokenizer_steps.py는 별도의 더 짧은 문장으로 API를 보여 준다. 두 문장의 문자/Token 수를 같은 예상값으로 채우지 않는다. 과거 observations를 읽었으면 저장 기록 대조, 새 명령을 실행했으면 현재 실제 관찰로 구분한다. 명령이 준비 필요로 끝났다면 성공 observations를 만들거나 과거 값을 자기 실행 결과로 복사하지 않는다.
