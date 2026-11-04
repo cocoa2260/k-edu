@@ -1,0 +1,86 @@
+{
+  "baseline_commit": "1c1fdb713dff2839eecf8a324a8fa0b080516312",
+  "evidence_reports": [
+    "KEDU-RUNTIME-REVALIDATION-001",
+    "KEDU-RUNTIME-REVALIDATION-002",
+    "KEDU-RUNTIME-REVALIDATION-003",
+    "KEDU-RUNTIME-REVALIDATION-004",
+    "KEDU-RUNTIME-REVALIDATION-005",
+    "KEDU-RUNTIME-REVALIDATION-006",
+    "KEDU-RUNTIME-REVALIDATION-007",
+    "KEDU-RUNTIME-REVALIDATION-008",
+    "KEDU-RUNTIME-REVALIDATION-009"
+  ],
+  "unit_counts": {
+    "material_status": {
+      "authored": 70
+    },
+    "review_status": {
+      "same_session_reviewed": 70
+    },
+    "teaching_audit_status": {
+      "explanation_review_passed_same_author": 70
+    },
+    "classroom_trial": {
+      "not_run": 70
+    }
+  },
+  "environment": {
+    "os": "Linux",
+    "arch": "x86_64",
+    "python": "3.12.14",
+    "node": "v24.22.1",
+    "python_packages": {
+      "pydantic": "2.14.2",
+      "Pillow": "12.3.0",
+      "pdfplumber": "0.11.9",
+      "pypdf": "6.10.0"
+    }
+  },
+  "pilot_dry_run": {
+    "performed_by": "same_session_author",
+    "activities": [
+      {
+        "id": "A",
+        "kind": "synthetic_math",
+        "observed_cosines": [
+          0.8,
+          0.7071067811865475
+        ]
+      },
+      {
+        "id": "B",
+        "kind": "fixed_harness",
+        "format_passed": true,
+        "wrong_amount": 999999,
+        "facts_verified": false
+      },
+      {
+        "id": "C",
+        "kind": "direct_digital_pdf",
+        "page": 1,
+        "fees_won": {
+          "unused": 0,
+          "used": 15000
+        },
+        "ocr_run": false
+      },
+      {
+        "id": "D",
+        "kind": "memory_sse",
+        "complete": "completed",
+        "missing_final": "missing_final",
+        "missing_final_confirmed_answer": null
+      }
+    ],
+    "stdout_sha256": {
+      "embedding": "48f814ba34901b599cd0cffab89bd8f4234480fc9d3dfd37f4754bfcc77a4a53",
+      "harness": "cd4e89c9edb182cde990c02841cf795ae5eaa2f6abc0746bb1519b5bc10e2b9a",
+      "pdf": "ffa1a482d9f67f6de56a332ca10d13af10cd136398e57828b7ef37669c27eb93",
+      "sse": "9716dde3d73a31e2c38bbdf00cc015e9a7853e8b0f041cc75d744f51c5fc6b5b"
+    },
+    "real_model_calls": 0,
+    "independent_instructors": 0,
+    "learners": 0
+  }
+}
