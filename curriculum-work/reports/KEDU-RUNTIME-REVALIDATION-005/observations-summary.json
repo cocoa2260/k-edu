@@ -1,0 +1,737 @@
+[
+  {
+    "event": "start",
+    "profile": {
+      "model_id": "Qwen/Qwen3-0.6B",
+      "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "device": "cpu",
+      "dtype": "float32",
+      "threads": 2,
+      "do_sample": false,
+      "enable_thinking": false,
+      "max_new_tokens": 192,
+      "input_token_limit": 1536,
+      "teaching_total_token_limit": 2048
+    },
+    "model_load_seconds": 13.1831
+  },
+  {
+    "event": "browser",
+    "case": "C01",
+    "condition": "focused",
+    "server_stopped": true,
+    "result": {
+      "browser": "153.0.8010.0",
+      "playwright": "1.62.1",
+      "swagger_ui": "5.34.1",
+      "asset_sha256": {
+        "swagger-ui.css": "c3cfe8248c4b0b89673600fb829924eafbac6de4bc4b2b06f5f5243483074d0a",
+        "swagger-ui-bundle.js": "36eeb4d5640b9c036b1d0f854499af1cceebbdb260b790a03a18be5e8488fbf5"
+      },
+      "docs_status": 200,
+      "success_status": 200,
+      "blank_status": 422,
+      "input_sha256": "7f876a17aa9f422a3fb878ee0eb4809deae3d6a305d9cf04d533bf15fb834157",
+      "displayed_answer_sha256": "e3cfd65f97a95946b8e4f12c66c84c5e936e0cae724398aee79cd5934b009ab4",
+      "success_rendered": true,
+      "blank_rendered": true,
+      "input_matches_004": true,
+      "displayed_answer_matches_004": true
+    },
+    "generation": [
+      {
+        "input_tokens": 264,
+        "output_tokens": 35,
+        "elapsed_seconds": 9.6259,
+        "hit_output_limit": false,
+        "output_sha256": "e3cfd65f97a95946b8e4f12c66c84c5e936e0cae724398aee79cd5934b009ab4"
+      }
+    ]
+  },
+  {
+    "event": "setting",
+    "case": "C02",
+    "limit": 192,
+    "input_sha256": "cce282e3c165bdb93bbcb9da77e113e825b240f83e12b145df718f6a4020ae45",
+    "generation": [
+      {
+        "input_tokens": 670,
+        "output_tokens": 192,
+        "elapsed_seconds": 42.5996,
+        "hit_output_limit": true,
+        "output_sha256": "5c3db9fede0bd7166ae75824c2faca6979083beb879bdfbb3ebac15efa87e634"
+      }
+    ],
+    "output_matches_004": true
+  },
+  {
+    "event": "setting",
+    "case": "C02",
+    "limit": 256,
+    "input_sha256": "cce282e3c165bdb93bbcb9da77e113e825b240f83e12b145df718f6a4020ae45",
+    "generation": [
+      {
+        "input_tokens": 670,
+        "output_tokens": 231,
+        "elapsed_seconds": 53.3158,
+        "hit_output_limit": false,
+        "output_sha256": "638b247cb8984a90c8241e678e2080670cc489310b81bae66494552ba7c4abbb"
+      }
+    ]
+  },
+  {
+    "event": "setting",
+    "case": "C07",
+    "limit": 192,
+    "input_sha256": "477063b43a58f3844849860769f971ea828d76718472f14ac2d30c8d882ad4b3",
+    "generation": [
+      {
+        "input_tokens": 678,
+        "output_tokens": 192,
+        "elapsed_seconds": 43.7864,
+        "hit_output_limit": true,
+        "output_sha256": "d4e9fd010fbfdc48dc8dc27f4d5fd649d2950d245c4d28b805c8f11192c5df65"
+      }
+    ],
+    "output_matches_004": true
+  },
+  {
+    "event": "setting",
+    "case": "C07",
+    "limit": 256,
+    "input_sha256": "477063b43a58f3844849860769f971ea828d76718472f14ac2d30c8d882ad4b3",
+    "generation": [
+      {
+        "input_tokens": 678,
+        "output_tokens": 199,
+        "elapsed_seconds": 43.2909,
+        "hit_output_limit": false,
+        "output_sha256": "23c08bd2230565a26f172b7c5f139e52eb6477c2614990df52e0641d7e8e40e9"
+      }
+    ]
+  },
+  {
+    "event": "harness",
+    "case": "C01",
+    "repair_limit": 0,
+    "result": {
+      "status": "stopped",
+      "stop_reason": "repair_limit",
+      "case_id": "C01",
+      "variant": "focused",
+      "calls": 1,
+      "retries": 0,
+      "repairs": 0,
+      "provider": "hf-cpu",
+      "model": "Qwen/Qwen3-0.6B",
+      "structural_validation_passed": false,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 13.592692,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 0,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [
+            "DOC-A"
+          ],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 3,
+          "event": "output_checked",
+          "calls": 1,
+          "failure_id": "OUTPUT_CONTRACT",
+          "output_sha256": "b30444b8829697edb24b7c10a600879a416a6edbf7e92245e46284ffb2928c69"
+        },
+        {
+          "seq": 4,
+          "event": "stopped",
+          "calls": 1,
+          "reason": "repair_limit"
+        }
+      ],
+      "draft": null
+    },
+    "generation": [
+      {
+        "input_tokens": 356,
+        "output_tokens": 59,
+        "elapsed_seconds": 13.5902,
+        "hit_output_limit": false,
+        "output_sha256": "b30444b8829697edb24b7c10a600879a416a6edbf7e92245e46284ffb2928c69"
+      }
+    ]
+  },
+  {
+    "event": "harness",
+    "case": "C01",
+    "repair_limit": 1,
+    "result": {
+      "status": "stopped",
+      "stop_reason": "repair_limit",
+      "case_id": "C01",
+      "variant": "focused",
+      "calls": 2,
+      "retries": 0,
+      "repairs": 1,
+      "provider": "hf-cpu",
+      "model": "Qwen/Qwen3-0.6B",
+      "structural_validation_passed": false,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 22.297322,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 1,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [
+            "DOC-A"
+          ],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "6f9e925a5cf56311257fb243d97a0e46473c67d2d74a7b60e936b2c7977d0ec3"
+        },
+        {
+          "seq": 3,
+          "event": "output_checked",
+          "calls": 1,
+          "failure_id": "OUTPUT_CONTRACT",
+          "output_sha256": "b30444b8829697edb24b7c10a600879a416a6edbf7e92245e46284ffb2928c69"
+        },
+        {
+          "seq": 4,
+          "event": "repair_scheduled",
+          "calls": 1,
+          "failure_id": "OUTPUT_CONTRACT"
+        },
+        {
+          "seq": 5,
+          "event": "call_started",
+          "calls": 2,
+          "prompt_sha256": "1104039fd5d954f268ab7cb445cd1b5fc69556357dbb2371c3a1ce46ed2e875e"
+        },
+        {
+          "seq": 6,
+          "event": "output_checked",
+          "calls": 2,
+          "failure_id": "OUTPUT_CONTRACT",
+          "output_sha256": "ac35a54ad357fde85394faf96016f77b8b3e5bdef9fb759c7f1ebe998ac07e18"
+        },
+        {
+          "seq": 7,
+          "event": "stopped",
+          "calls": 2,
+          "reason": "repair_limit"
+        }
+      ],
+      "draft": null
+    },
+    "generation": [
+      {
+        "input_tokens": 356,
+        "output_tokens": 59,
+        "elapsed_seconds": 13.9691,
+        "hit_output_limit": false,
+        "output_sha256": "b30444b8829697edb24b7c10a600879a416a6edbf7e92245e46284ffb2928c69"
+      },
+      {
+        "input_tokens": 384,
+        "output_tokens": 30,
+        "elapsed_seconds": 8.3199,
+        "hit_output_limit": false,
+        "output_sha256": "ac35a54ad357fde85394faf96016f77b8b3e5bdef9fb759c7f1ebe998ac07e18"
+      }
+    ],
+    "initial_output_matches_no_repair": true
+  },
+  {
+    "event": "harness",
+    "case": "C03",
+    "repair_limit": 0,
+    "result": {
+      "status": "stopped",
+      "stop_reason": "repair_limit",
+      "case_id": "C03",
+      "variant": "focused",
+      "calls": 1,
+      "retries": 0,
+      "repairs": 0,
+      "provider": "hf-cpu",
+      "model": "Qwen/Qwen3-0.6B",
+      "structural_validation_passed": false,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 5.878077,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 0,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "05d94732dd851a9b535a3751424d3c3bf1102d1aee563f3412fec0aeb88732ae"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "05d94732dd851a9b535a3751424d3c3bf1102d1aee563f3412fec0aeb88732ae"
+        },
+        {
+          "seq": 3,
+          "event": "output_checked",
+          "calls": 1,
+          "failure_id": "OUTPUT_CONTRACT",
+          "output_sha256": "e7eaac53ee4411e3b76823f386679251730eec36bfb16297ba7631261a308398"
+        },
+        {
+          "seq": 4,
+          "event": "stopped",
+          "calls": 1,
+          "reason": "repair_limit"
+        }
+      ],
+      "draft": null
+    },
+    "generation": [
+      {
+        "input_tokens": 215,
+        "output_tokens": 26,
+        "elapsed_seconds": 5.8766,
+        "hit_output_limit": false,
+        "output_sha256": "e7eaac53ee4411e3b76823f386679251730eec36bfb16297ba7631261a308398"
+      }
+    ]
+  },
+  {
+    "event": "harness",
+    "case": "C03",
+    "repair_limit": 1,
+    "result": {
+      "status": "stopped",
+      "stop_reason": "repair_limit",
+      "case_id": "C03",
+      "variant": "focused",
+      "calls": 2,
+      "retries": 0,
+      "repairs": 1,
+      "provider": "hf-cpu",
+      "model": "Qwen/Qwen3-0.6B",
+      "structural_validation_passed": false,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 12.643177,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 1,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "05d94732dd851a9b535a3751424d3c3bf1102d1aee563f3412fec0aeb88732ae"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "05d94732dd851a9b535a3751424d3c3bf1102d1aee563f3412fec0aeb88732ae"
+        },
+        {
+          "seq": 3,
+          "event": "output_checked",
+          "calls": 1,
+          "failure_id": "OUTPUT_CONTRACT",
+          "output_sha256": "e7eaac53ee4411e3b76823f386679251730eec36bfb16297ba7631261a308398"
+        },
+        {
+          "seq": 4,
+          "event": "repair_scheduled",
+          "calls": 1,
+          "failure_id": "OUTPUT_CONTRACT"
+        },
+        {
+          "seq": 5,
+          "event": "call_started",
+          "calls": 2,
+          "prompt_sha256": "d6f2c5df811b1ae83c3f7dd78a548d7db62c3cd74d17ce45264f1b1e9b3ef401"
+        },
+        {
+          "seq": 6,
+          "event": "output_checked",
+          "calls": 2,
+          "failure_id": "OUTPUT_CONTRACT",
+          "output_sha256": "e7eaac53ee4411e3b76823f386679251730eec36bfb16297ba7631261a308398"
+        },
+        {
+          "seq": 7,
+          "event": "stopped",
+          "calls": 2,
+          "reason": "repair_limit"
+        }
+      ],
+      "draft": null
+    },
+    "generation": [
+      {
+        "input_tokens": 215,
+        "output_tokens": 26,
+        "elapsed_seconds": 6.0807,
+        "hit_output_limit": false,
+        "output_sha256": "e7eaac53ee4411e3b76823f386679251730eec36bfb16297ba7631261a308398"
+      },
+      {
+        "input_tokens": 243,
+        "output_tokens": 26,
+        "elapsed_seconds": 6.5596,
+        "hit_output_limit": false,
+        "output_sha256": "e7eaac53ee4411e3b76823f386679251730eec36bfb16297ba7631261a308398"
+      }
+    ],
+    "initial_output_matches_no_repair": true
+  },
+  {
+    "event": "harness",
+    "case": "C07",
+    "repair_limit": 0,
+    "result": {
+      "status": "stopped",
+      "stop_reason": "repair_limit",
+      "case_id": "C07",
+      "variant": "focused",
+      "calls": 1,
+      "retries": 0,
+      "repairs": 0,
+      "provider": "hf-cpu",
+      "model": "Qwen/Qwen3-0.6B",
+      "structural_validation_passed": false,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 7.908121,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 0,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [
+            "DOC-A",
+            "DOC-I"
+          ],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "b796c7f8ce1876287562e9b456ecfee759ea1014f0e6e6e352ec88306c1b8a45"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "b796c7f8ce1876287562e9b456ecfee759ea1014f0e6e6e352ec88306c1b8a45"
+        },
+        {
+          "seq": 3,
+          "event": "output_checked",
+          "calls": 1,
+          "failure_id": "OUTPUT_CONTRACT",
+          "output_sha256": "9126804271cc46627cae3ffa147ec7b0fe5ed0bf90ab74bcdaa80ace3ec0300f"
+        },
+        {
+          "seq": 4,
+          "event": "stopped",
+          "calls": 1,
+          "reason": "repair_limit"
+        }
+      ],
+      "draft": null
+    },
+    "generation": [
+      {
+        "input_tokens": 460,
+        "output_tokens": 24,
+        "elapsed_seconds": 7.9049,
+        "hit_output_limit": false,
+        "output_sha256": "9126804271cc46627cae3ffa147ec7b0fe5ed0bf90ab74bcdaa80ace3ec0300f"
+      }
+    ]
+  },
+  {
+    "event": "harness",
+    "case": "C07",
+    "repair_limit": 1,
+    "result": {
+      "status": "stopped",
+      "stop_reason": "repair_limit",
+      "case_id": "C07",
+      "variant": "focused",
+      "calls": 2,
+      "retries": 0,
+      "repairs": 1,
+      "provider": "hf-cpu",
+      "model": "Qwen/Qwen3-0.6B",
+      "structural_validation_passed": false,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 17.044696,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 1,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "prepared",
+          "calls": 0,
+          "document_ids": [
+            "DOC-A",
+            "DOC-I"
+          ],
+          "dataset_version": "documents-v1/core-v1/shots-v1",
+          "prompt_sha256": "b796c7f8ce1876287562e9b456ecfee759ea1014f0e6e6e352ec88306c1b8a45"
+        },
+        {
+          "seq": 2,
+          "event": "call_started",
+          "calls": 1,
+          "prompt_sha256": "b796c7f8ce1876287562e9b456ecfee759ea1014f0e6e6e352ec88306c1b8a45"
+        },
+        {
+          "seq": 3,
+          "event": "output_checked",
+          "calls": 1,
+          "failure_id": "OUTPUT_CONTRACT",
+          "output_sha256": "9126804271cc46627cae3ffa147ec7b0fe5ed0bf90ab74bcdaa80ace3ec0300f"
+        },
+        {
+          "seq": 4,
+          "event": "repair_scheduled",
+          "calls": 1,
+          "failure_id": "OUTPUT_CONTRACT"
+        },
+        {
+          "seq": 5,
+          "event": "call_started",
+          "calls": 2,
+          "prompt_sha256": "f98cc4b6b2a79c5f167dfe9564b20f98580df50b7013c2c6fec0cf638a3315aa"
+        },
+        {
+          "seq": 6,
+          "event": "output_checked",
+          "calls": 2,
+          "failure_id": "OUTPUT_CONTRACT",
+          "output_sha256": "9126804271cc46627cae3ffa147ec7b0fe5ed0bf90ab74bcdaa80ace3ec0300f"
+        },
+        {
+          "seq": 7,
+          "event": "stopped",
+          "calls": 2,
+          "reason": "repair_limit"
+        }
+      ],
+      "draft": null
+    },
+    "generation": [
+      {
+        "input_tokens": 460,
+        "output_tokens": 24,
+        "elapsed_seconds": 8.3918,
+        "hit_output_limit": false,
+        "output_sha256": "9126804271cc46627cae3ffa147ec7b0fe5ed0bf90ab74bcdaa80ace3ec0300f"
+      },
+      {
+        "input_tokens": 488,
+        "output_tokens": 24,
+        "elapsed_seconds": 8.649,
+        "hit_output_limit": false,
+        "output_sha256": "9126804271cc46627cae3ffa147ec7b0fe5ed0bf90ab74bcdaa80ace3ec0300f"
+      }
+    ],
+    "initial_output_matches_no_repair": true
+  },
+  {
+    "event": "harness",
+    "case": "C10",
+    "repair_limit": 0,
+    "result": {
+      "status": "stopped",
+      "stop_reason": "input_rejected",
+      "case_id": "C10",
+      "variant": "focused",
+      "calls": 0,
+      "retries": 0,
+      "repairs": 0,
+      "provider": "hf-cpu",
+      "model": "Qwen/Qwen3-0.6B",
+      "structural_validation_passed": false,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 0.000264,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 0,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "input_rejected",
+          "calls": 0
+        },
+        {
+          "seq": 2,
+          "event": "stopped",
+          "calls": 0,
+          "reason": "input_rejected"
+        }
+      ],
+      "draft": null
+    },
+    "generation": []
+  },
+  {
+    "event": "harness",
+    "case": "C10",
+    "repair_limit": 1,
+    "result": {
+      "status": "stopped",
+      "stop_reason": "input_rejected",
+      "case_id": "C10",
+      "variant": "focused",
+      "calls": 0,
+      "retries": 0,
+      "repairs": 0,
+      "provider": "hf-cpu",
+      "model": "Qwen/Qwen3-0.6B",
+      "structural_validation_passed": false,
+      "factuality_verified": false,
+      "approval_granted": false,
+      "side_effects_executed": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null
+      },
+      "elapsed_seconds": 9.5e-05,
+      "deadline_mode": "between_calls_not_inflight_cancellation",
+      "limits": {
+        "max_calls": 3,
+        "max_retries": 1,
+        "max_repairs": 1,
+        "elapsed_seconds": 90.0
+      },
+      "trace": [
+        {
+          "seq": 1,
+          "event": "input_rejected",
+          "calls": 0
+        },
+        {
+          "seq": 2,
+          "event": "stopped",
+          "calls": 0,
+          "reason": "input_rejected"
+        }
+      ],
+      "draft": null
+    },
+    "generation": []
+  },
+  {
+    "event": "end",
+    "observations": 14,
+    "peak_rss_kib_linux": 4887012
+  }
+]
