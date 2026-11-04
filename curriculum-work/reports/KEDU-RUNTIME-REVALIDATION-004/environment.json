@@ -1,0 +1,26 @@
+{
+  "source_commit": "6907aaf5c34ecde9b6f02479142231adcaa50a1c",
+  "platform": "Linux x86_64",
+  "python": "3.12.14",
+  "model_artifacts_match_prior_run_by_sha256": true,
+  "resolved_package_versions_match_prior_lock": true,
+  "duplicate_distribution_metadata_seen_in_uv_freeze": {
+    "filelock": [
+      "4.2.4",
+      "4.2.7"
+    ],
+    "markupsafe": [
+      "3.0.3",
+      "3.0.4"
+    ]
+  },
+  "active_filelock_module_version": "4.2.7",
+  "active_markupsafe_module_version": "3.0.4",
+  "environment_overrides": {
+    "HF_HOME": "absolute cache root with the pinned snapshot",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "PYTHONPATH": "absolute backend directory at the source commit"
+  },
+  "scope": "Actual loopback API using explicitly injected HFCpuProvider. No paid API and no default configuration changes."
+}

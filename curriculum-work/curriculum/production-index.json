@@ -5,7 +5,7 @@
   "source_baseline": "bc58756866cd6bdee20c102fb54340f21e65ad56",
   "unit_count": 70,
   "full_curriculum_complete": false,
-  "current_batch": "KEDU-RUNTIME-REVALIDATION-003",
+  "current_batch": "KEDU-RUNTIME-REVALIDATION-004",
   "units": [
     {
       "id": "K2-00.U01",
@@ -979,15 +979,15 @@
     "counted_as_additional_unit": false
   },
   "next_batch": {
-    "id": "KEDU-RUNTIME-REVALIDATION-004",
+    "id": "KEDU-RUNTIME-REVALIDATION-005",
     "status": "not_started",
     "recommended_reasoning_effort": "high",
     "proposed_scope": [
-      "Controlled actual Prompt five-condition and separate Context comparison",
-      "Evaluate original question, boundaries and regression against source; preserve input/output/budget evidence"
+      "L0 browser-to-API real model generation and explicit Provider boundary",
+      "Controlled LLM generation setting comparison and L2 Harness actual model behavior and regression"
     ]
   },
-  "batch_status": "EXPLICIT_CPU_API_GENERATION_VERIFIED_TASK_QUALITY_NOT_ACCEPTED",
+  "batch_status": "CONTROLLED_PROMPT_CONTEXT_GENERATION_VERIFIED_TASK_QUALITY_NOT_ACCEPTED",
   "first_unfinished_gate": {
     "id": "G-TRAIN-QUALITY-ACCEPTANCE",
     "status": "pending",
@@ -1164,6 +1164,28 @@
       "report": "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-003/RESULT.md",
       "actual_model_calls": 2,
       "route": "explicit existing HFCpuProvider injection into unchanged create_app",
+      "task_quality": "not_accepted",
+      "default_factory_changed": false
+    },
+    "actual_prompt_context_generation": {
+      "report": "curriculum-work/reports/KEDU-RUNTIME-REVALIDATION-004/RESULT.md",
+      "actual_model_calls": 29,
+      "complete_case_condition_count": 1,
+      "output_limit_count": 2,
+      "prompt_cases": [
+        "C01",
+        "C02",
+        "C03",
+        "C07"
+      ],
+      "context_cases": [
+        "C01",
+        "C02",
+        "C03",
+        "C07",
+        "C08",
+        "C12"
+      ],
       "task_quality": "not_accepted",
       "default_factory_changed": false
     }

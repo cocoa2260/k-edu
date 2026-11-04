@@ -1,0 +1,17 @@
+{
+  "backend/app/experiments.py": "7d763c765623326cb2cd80a60f087cbeaa1aa942",
+  "backend/app/main.py": "e156a092144c7882c52e34f16a15a82da3ac2ede",
+  "backend/app/service.py": "04a21fc6207a0387b04a0e28fe0a20a9ecb39200",
+  "backend/app/schemas.py": "9fdc783b84b321db32331e2ef919bd63e0c77117",
+  "backend/app/providers/base.py": "053ed712705019f3718949c50bd5a1a4c3eb8136",
+  "backend/app/providers/errors.py": "fb1334e37b46b1aca8cbc17040b44be35e9670a8",
+  "backend/app/providers/factory.py": "8983c1783ba3d4673b9bfd557b78a4ebfabe12b8",
+  "backend/app/providers/hf_cpu_provider.py": "4bfd5b047ae63339f739ac6a1158fe55c5ac50e3",
+  "backend/app/providers/ollama_provider.py": "e8ad66cb45cef784f6b13dcb05855dd9c5102cbf",
+  "backend/app/providers/openai_provider.py": "a8bc8932a7898325f194b3a095253a4396c48af3",
+  "data/core-v1.json": "95f5827bd876f8b5109aca7cdf41953dd24c98f6",
+  "data/documents-v1.json": "25d0553f26321434a9a8c7f386261505bca2fda3",
+  "data/shots-v1.json": "fe4f2a65c53532b7ee4c46cd26d5d4c55220efdc",
+  "L1.md": "a0875bb65b66b105e119757effb9cd6e5362f10a",
+  "CONTEXT.md": "72005592382f78e0e62aa9f70f679fcf632b82f4"
+}

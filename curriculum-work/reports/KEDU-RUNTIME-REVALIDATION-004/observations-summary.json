@@ -1,0 +1,565 @@
+{
+  "raw_log_sha256": "23f0c4fe9fca42a9e5b67f130a03d49248daea03ebe58127895ab9a9947bb95d",
+  "profile": {
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 2,
+    "do_sample": false,
+    "enable_thinking": false,
+    "max_new_tokens": 192,
+    "input_token_limit": 1536,
+    "teaching_total_token_limit": 2048
+  },
+  "model_load_seconds": 19.4775,
+  "server_stopped": true,
+  "peak_rss_kib_linux": 4884108,
+  "runs": [
+    {
+      "case": "C01",
+      "condition": "baseline",
+      "input_tokens": 585,
+      "message_sha256": "3415f45fd3a3c5b92ff713a84d54bdacada1aefd6f832af1f8628ef875db9799",
+      "rendered_input_sha256": "f9f08f2996bbe06f2aaccff68b32de63f537ec25fcf1fd28020620f856523588",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 0,
+      "output_tokens": 35,
+      "elapsed_seconds": 8.935,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "ab292ea5bc5d38a26ac5c4eb349a070050af808c8842489474eef34be50f20ed"
+    },
+    {
+      "case": "C01",
+      "condition": "instruction",
+      "input_tokens": 657,
+      "message_sha256": "a4632020032f170102104b43a29fd5317e5e647807c97981378c721b31f38477",
+      "rendered_input_sha256": "c2e5e26e06a9dad427540d7472137bf43b5324bdc6ea6f6680aa3eaea33fa1ab",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 0,
+      "output_tokens": 35,
+      "elapsed_seconds": 23.9629,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "229fd871ffa0e3faa5818a5bf05c2f56c5e14c367196e3d482d2f80adb860fa9"
+    },
+    {
+      "case": "C01",
+      "condition": "one_shot",
+      "input_tokens": 723,
+      "message_sha256": "ce44ca420889942069fb9f27309f4dd26c10fd5ea87848719861038d2d9d5ce7",
+      "rendered_input_sha256": "d007829b54f2cd7ad66a5ac8eb70bf2b9854a514ce3ea226c7cba7e9cae0dfdc",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 1,
+      "output_tokens": 58,
+      "elapsed_seconds": 18.3962,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "06094ec3d68c49bc84c5174f16ea2fbfd125777ae977c8a203af4907dce95f27"
+    },
+    {
+      "case": "C01",
+      "condition": "few_shot",
+      "input_tokens": 793,
+      "message_sha256": "42ae6923920fdcab54a2f12e28fae97101eb0fe604bede42ba81a725ed0ac86b",
+      "rendered_input_sha256": "bebe1cb9a4cd4d82d0a727b95d718d7589e46be3df31a7b1a56f2cbed1cd5dab",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 2,
+      "output_tokens": 86,
+      "elapsed_seconds": 28.9167,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "4427cdc15767688eedad67bbdfcecbc118cc5a518e3068d53bcadcc3ef45bfe9"
+    },
+    {
+      "case": "C01",
+      "condition": "instruction_cap",
+      "input_tokens": 672,
+      "message_sha256": "55bc3d7de8706d8afdc6e0e3ba2527f523164e5f544b9efe7514a26f71b35b4d",
+      "rendered_input_sha256": "e63aab3dac1988242c74c28b2ae18687fd16f46116db0f427c6734dc3a1e4762",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 0,
+      "output_tokens": 44,
+      "elapsed_seconds": 15.8501,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "5e34b644a2498e96c66ad787b8b2a44b248e3dc0597c6eab68cd25b9ee52fc5f"
+    },
+    {
+      "case": "C01",
+      "condition": "focused",
+      "input_tokens": 264,
+      "message_sha256": "7f876a17aa9f422a3fb878ee0eb4809deae3d6a305d9cf04d533bf15fb834157",
+      "rendered_input_sha256": "87d434d6da3c38baa99b390cb9c74569e85319a50a51dee1b4be6e96d30efd5e",
+      "document_ids": [
+        "DOC-A"
+      ],
+      "shot_count": 0,
+      "output_tokens": 35,
+      "elapsed_seconds": 7.1953,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "e3cfd65f97a95946b8e4f12c66c84c5e936e0cae724398aee79cd5934b009ab4"
+    },
+    {
+      "case": "C01",
+      "condition": "empty",
+      "input_tokens": 126,
+      "message_sha256": "c5991199b0e43b92c459a19741fb37e943909c519390bd0583d44756a667e5a9",
+      "rendered_input_sha256": "a08f4ed96c74d0d72c3aa548a7bf5df3612a2e7e871f88aea2bc2ef2ea0d26de",
+      "document_ids": [],
+      "shot_count": 0,
+      "output_tokens": 126,
+      "elapsed_seconds": 18.2945,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "7966f76829c023af53d6dd8396a3d0621f73b7bcc02b8c161131f04094df03b5"
+    },
+    {
+      "case": "C02",
+      "condition": "baseline",
+      "input_tokens": 583,
+      "message_sha256": "6f18a5c3c48719d65cc75d0c8927a538dbe701edb5096358babd4444384d173c",
+      "rendered_input_sha256": "40ecea9aa9fe09d6a7421b2465870af641db37b8b6237de649c3aa6f35295eac",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 0,
+      "output_tokens": 112,
+      "elapsed_seconds": 21.8611,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "6a76135fcb9413bd07210da28bb67482f0ae243beaadf1cbe777e9e488298dee"
+    },
+    {
+      "case": "C02",
+      "condition": "instruction",
+      "input_tokens": 655,
+      "message_sha256": "1ae2a6d1cf84b487a3cb1d39876d79ce0ecc3b901a67cd5e82dee0a1547c696e",
+      "rendered_input_sha256": "c07935abb9c3333de4dc2294bf3474b2fb69c4b681a1d1da99cd6772873c7305",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 0,
+      "output_tokens": 96,
+      "elapsed_seconds": 26.6437,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "955cecb251cbc07c4f00e99b8d83e1fa0cfe42a0e3b52c4119a2ca8abd63a365"
+    },
+    {
+      "case": "C02",
+      "condition": "one_shot",
+      "input_tokens": 721,
+      "message_sha256": "cded60fbc6401484d94d6e73299c2045ecac6734989790f283f2180f4a9242ed",
+      "rendered_input_sha256": "60901bd582d3f4ce653d21a95db5ac0e70c439ecc084ea96248626f1fa5a25f4",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 1,
+      "output_tokens": 47,
+      "elapsed_seconds": 18.4856,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "bcf7d6af6d3d8e97f08cb235f24fea564fdb0a83a10dd183181353149b4da66b"
+    },
+    {
+      "case": "C02",
+      "condition": "few_shot",
+      "input_tokens": 791,
+      "message_sha256": "51caec2d0ff4b86b0f4edb966edf838fa44865a5fb9d0a8ffe95612e93e996cd",
+      "rendered_input_sha256": "c5dadb5370412abf786d8a340eb0d8b40b38e98b1ac660f1e4523da6b493db22",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 2,
+      "output_tokens": 77,
+      "elapsed_seconds": 22.8565,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "14206192eb13f06e056ef7d791268ee26906ff085e2cc769d71a85f051c08331"
+    },
+    {
+      "case": "C02",
+      "condition": "instruction_cap",
+      "input_tokens": 670,
+      "message_sha256": "cce282e3c165bdb93bbcb9da77e113e825b240f83e12b145df718f6a4020ae45",
+      "rendered_input_sha256": "d8bb1fa31cc14eea0422bf782d3993fca7908fe884fd5bc48c9aa3c2c083ee42",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 0,
+      "output_tokens": 192,
+      "elapsed_seconds": 100.8633,
+      "hit_output_limit": true,
+      "http_status": 200,
+      "output_sha256": "5c3db9fede0bd7166ae75824c2faca6979083beb879bdfbb3ebac15efa87e634"
+    },
+    {
+      "case": "C02",
+      "condition": "focused",
+      "input_tokens": 242,
+      "message_sha256": "fb18cef0f092b8153b77d1e01b3963a3bfbaf741d1727252ee516e1f24819d1b",
+      "rendered_input_sha256": "583358c9f9703ae1d192269065526b2e73d2f13fadaae0bfc7949aac5f77a679",
+      "document_ids": [
+        "DOC-B"
+      ],
+      "shot_count": 0,
+      "output_tokens": 103,
+      "elapsed_seconds": 18.061,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "39437f1de6751ed64c5300763c85ee97d83de9aac55dcd4dff0c17aecedef6dc"
+    },
+    {
+      "case": "C03",
+      "condition": "baseline",
+      "input_tokens": 582,
+      "message_sha256": "2f2ff82283033911bdc927c39e88af142f98be5d5b727f46a6646df23c81d337",
+      "rendered_input_sha256": "089019dba6c255d753c271071d92657160a60509ee94226aab4b2bd4d22408da",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 0,
+      "output_tokens": 62,
+      "elapsed_seconds": 15.7286,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "2a8fb5ca54522d87a6b961e74ec872147e8fd81078b9cef5e8b8a641a42a1361"
+    },
+    {
+      "case": "C03",
+      "condition": "instruction",
+      "input_tokens": 654,
+      "message_sha256": "14d1233e9df9e1e8ba3d677cef731808599efb63d6a570fd69eb4120e40f0711",
+      "rendered_input_sha256": "b104aff3764b8486e6d65ce4fdbd2cb2ffdd069a72ec2a2b945fffd5c9fe2086",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 0,
+      "output_tokens": 32,
+      "elapsed_seconds": 14.5876,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "cc648a33820fb6c7703cd15ee00859f65652076aa17a366249c9894038b09976"
+    },
+    {
+      "case": "C03",
+      "condition": "one_shot",
+      "input_tokens": 720,
+      "message_sha256": "64f59e0e88f744fcc48ae5fb630936972774f4f8d4733b7fcf8696346540e8c8",
+      "rendered_input_sha256": "9593fc39a99534512ca460c3643a7c9ffadb02e5f3f52c1f7d641a24f670b1f7",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 1,
+      "output_tokens": 45,
+      "elapsed_seconds": 49.0587,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "37b15c65ff4e5f9d7ff5a527c0144093a33d5d0c05e6330a7e5800d698ecb729"
+    },
+    {
+      "case": "C03",
+      "condition": "few_shot",
+      "input_tokens": 790,
+      "message_sha256": "3f1be881dc5f9b859a21ccc6fddeb61306311c8bdf71a58d5a04f620586d28b5",
+      "rendered_input_sha256": "982e3000654d3932581a4a0fad9c79abc70b2aaa873282083c7210ca023577c6",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 2,
+      "output_tokens": 60,
+      "elapsed_seconds": 17.5675,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "d111f357d24ad6dbc668adc65968a1936d948cde81b24f1de4cefcf4ea2257cc"
+    },
+    {
+      "case": "C03",
+      "condition": "instruction_cap",
+      "input_tokens": 669,
+      "message_sha256": "27602923bc55106e67584d32680c46fe70d0b581e8f9124354f3b6a2d455aa0d",
+      "rendered_input_sha256": "8cd6a5ec0525685659ca1c0ffacc3a8031e95c8779126cef830890dc5078e72a",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 0,
+      "output_tokens": 69,
+      "elapsed_seconds": 20.1191,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "fb789d56dbced3aefb508c56689dbf1c250335b4353c71d7ea0eb3bbd74619ea"
+    },
+    {
+      "case": "C03",
+      "condition": "focused",
+      "input_tokens": 123,
+      "message_sha256": "c706e9806657b9e73c5a9c8200c1084ab6f849b312b8d6bc78e8f2886829b7ce",
+      "rendered_input_sha256": "f76cac9f70de525bdfb3a3bfadfee59be4fe7b81dab7c20e141bfe87d2e09f1b",
+      "document_ids": [],
+      "shot_count": 0,
+      "output_tokens": 74,
+      "elapsed_seconds": 12.0426,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "2a227b8f5123fdfc2da639df155ae61903406017e63c0c82c6b279df4bf9eccb"
+    },
+    {
+      "case": "C07",
+      "condition": "baseline",
+      "input_tokens": 591,
+      "message_sha256": "e5f1e5b4c0bce8f6d9594d515aee1a6ac557f679565c20ce493cc79d9a22b8a4",
+      "rendered_input_sha256": "cae76a896eafb50629f1e75fddfd7fad98b54f3acbf7d317c721c41d655074fa",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 0,
+      "output_tokens": 35,
+      "elapsed_seconds": 10.1372,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "23041d1e26ecec2d4ed1e00d0c77c0a7c6fc899f84589453ffc89acf2b3cab72"
+    },
+    {
+      "case": "C07",
+      "condition": "instruction",
+      "input_tokens": 663,
+      "message_sha256": "039bcfeb008beda9b726d20628e785293c59cd90efa9b1f3916b2e1331fe4fce",
+      "rendered_input_sha256": "5c8f871dccee8b6a8970e2bf802ddbec04b717dcecbbfdcf015b082087f4e24a",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 0,
+      "output_tokens": 145,
+      "elapsed_seconds": 47.9396,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "e0920844140a4c8128b74b644c0bbdd97bb1ed2e4a5259bea36254a8ba0248d8"
+    },
+    {
+      "case": "C07",
+      "condition": "one_shot",
+      "input_tokens": 729,
+      "message_sha256": "73bb65ddf13b951950a63631bb11099bea2cd1c973fa5d817d813caf2c570d14",
+      "rendered_input_sha256": "b22ab58cd3891d39fe22529116093f3f8f05e2f4a92ca214eaa11882db444856",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 1,
+      "output_tokens": 96,
+      "elapsed_seconds": 27.7121,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "d6357a13b40f88032b0c4bf07e5605b84aa378d8dbbe080a964706a7134ced5d"
+    },
+    {
+      "case": "C07",
+      "condition": "few_shot",
+      "input_tokens": 799,
+      "message_sha256": "54a523635abfa047d4c6992b780235d507c2feaab82b6017afc3296e9888debe",
+      "rendered_input_sha256": "bd3f46df42e76101963b05a7172adb84371d704686a7e78d0d4019f5d0c2cefe",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 2,
+      "output_tokens": 96,
+      "elapsed_seconds": 25.2209,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "d95aaa967a7714b61cd8afb806051d550244fc070e4fe8d028df9e931115cbd1"
+    },
+    {
+      "case": "C07",
+      "condition": "instruction_cap",
+      "input_tokens": 678,
+      "message_sha256": "477063b43a58f3844849860769f971ea828d76718472f14ac2d30c8d882ad4b3",
+      "rendered_input_sha256": "f4d751fb0069bf769338e94513bf99570fdaf3591f010a7412baf92b2554dfaf",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 0,
+      "output_tokens": 192,
+      "elapsed_seconds": 42.7247,
+      "hit_output_limit": true,
+      "http_status": 200,
+      "output_sha256": "d4e9fd010fbfdc48dc8dc27f4d5fd649d2950d245c4d28b805c8f11192c5df65"
+    },
+    {
+      "case": "C07",
+      "condition": "focused",
+      "input_tokens": 368,
+      "message_sha256": "a1d2500aea5f96673ac0b584ab82d05eb195ffbc02d1e89a2cf56ba99b5f1178",
+      "rendered_input_sha256": "e8fca90083fd0483ee59aae4a1c2b27c6053de02358e0340616203521bc45475",
+      "document_ids": [
+        "DOC-A",
+        "DOC-I"
+      ],
+      "shot_count": 0,
+      "output_tokens": 87,
+      "elapsed_seconds": 15.9314,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "8fbd9dedcdc8689620343352bbec710b7d2ec8a48d62b856a38dfae44edf62fe"
+    },
+    {
+      "case": "C08",
+      "condition": "instruction",
+      "input_tokens": 659,
+      "message_sha256": "a4700caf8210026e6bedb3c83157f8f851db96710f74870b2a3a1535860e0b12",
+      "rendered_input_sha256": "702629218c73b29943b3b22f6fb999b805100a3a2004a882696319fda942c195",
+      "document_ids": [
+        "DOC-A",
+        "DOC-B",
+        "DOC-A-OLD",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 0,
+      "output_tokens": 119,
+      "elapsed_seconds": 37.0474,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "4cf2aaf553cc21911b545d4b24fba4810f08a4d2319b417d52a792fd8524d540"
+    },
+    {
+      "case": "C08",
+      "condition": "focused",
+      "input_tokens": 266,
+      "message_sha256": "fa5abd3b76938a3d8c2063ba5dce74818f84ce6a1e07496032acaa8c072b9feb",
+      "rendered_input_sha256": "87ffee41b5a3c2a0e4af22901df80d121da05313d1b953ff35e77164f12318b0",
+      "document_ids": [
+        "DOC-A"
+      ],
+      "shot_count": 0,
+      "output_tokens": 80,
+      "elapsed_seconds": 14.3438,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "914d667086533dd1d98632025ddc74ebf1eb81536ee56e985209eae47d9c75a4"
+    },
+    {
+      "case": "C12",
+      "condition": "instruction",
+      "input_tokens": 434,
+      "message_sha256": "b7369bcffc96ea73b7e888383976b5bc6abeb1d239f275665c287f76d0f601ae",
+      "rendered_input_sha256": "394dc0e96c78a5e60eed45150fca69e1a8eee6696daaf4b382de6084a9806621",
+      "document_ids": [
+        "DOC-B",
+        "DOC-I",
+        "DOC-T"
+      ],
+      "shot_count": 0,
+      "output_tokens": 120,
+      "elapsed_seconds": 23.2575,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "b092b9a04018eddbd8ae1cd65e56cbc7a97e295d456d41605aa02c3c205f3ee1"
+    },
+    {
+      "case": "C12",
+      "condition": "focused",
+      "input_tokens": 127,
+      "message_sha256": "0f090fb28530684641cf25fc406d73abbeca4954b9abd9b741428524babfc88d",
+      "rendered_input_sha256": "71544e71048b87d67520cd9b983f197344a471b174df84ff15a3346d74d11d31",
+      "document_ids": [],
+      "shot_count": 0,
+      "output_tokens": 77,
+      "elapsed_seconds": 14.1759,
+      "hit_output_limit": false,
+      "http_status": 200,
+      "output_sha256": "d520a2e738b65d0d796350dda3cc8ca492fc5b57610f5acbfd836f237dc1fa54"
+    }
+  ]
+}
