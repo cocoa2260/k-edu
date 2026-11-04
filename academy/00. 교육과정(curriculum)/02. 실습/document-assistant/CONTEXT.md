@@ -1,10 +1,10 @@
 # 자료를 고르고 현재 입력을 확인하는 실습
 
-[Context 강의](../../lessons/context/lesson.md)를 읽고 아래 활동을 진행한다. 같은 대화 앱과 같은 가상 규정·질문을 사용한다. 새 앱을 만들거나 모델을 다운로드하지 않는다. 이 안내의 작성 표를 복사해 관찰과 해석을 남긴다.
+[Context 강의](<../../01. Phase2_AI/05. 프롬프트 엔지니어링(Prompt Engineering)/Context Engineering/강의용.md>)를 읽고 아래 활동을 진행한다. 같은 대화 앱과 같은 가상 규정·질문을 사용한다. 새 앱을 만들거나 모델을 다운로드하지 않는다. 이 안내의 작성 표를 복사해 관찰과 해석을 남긴다.
 
 ## 준비와 실행 위치
 
-[기준 대화 앱](../../lessons/baseline/lesson.md)의 Python 3.12 가상환경과 `requirements-dev.txt` 설치를 준비한다. 터미널을 `curriculum-work/practice/document-assistant/backend` 폴더에서 연다. 아래 `python`은 그 가상환경의 실행기를 뜻한다. 가상환경을 활성화하지 않았다면 해당 실행기의 경로로 바꾸어 사용한다.
+[기준 대화 앱](<../../01. Phase2_AI/12. AI Integration/강의용.md>)의 Python 3.12 가상환경과 `requirements-dev.txt` 설치를 준비한다. 터미널을 `academy/00. 교육과정(curriculum)/02. 실습/document-assistant/backend` 폴더에서 연다. 아래 `python`은 그 가상환경의 실행기를 뜻한다. 가상환경을 활성화하지 않았다면 해당 실행기의 경로로 바꾸어 사용한다.
 
 이번 명령은 입력 준비·자료 순서·기존 관찰을 이용한 계산·일회성 전달 자료를 확인한다. 모델 가중치·API Key·GPU가 필요하지 않다. Tokenizer를 새로 실행하는 선택 활동은 뒤에서 따로 안내한다.
 

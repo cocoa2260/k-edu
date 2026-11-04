@@ -1,6 +1,6 @@
 # Dataset Card — 가상 시설 규정 응답 연습 v1
 
-**교육용 SFT 준비 자료이며 실제 기관 규정·운영 권한·성능 보증이 아니다.** [강의](../../../../lessons/fine-tuning/lesson.md)의 U02/U03과 [실제 검토](../../../../reports/KEDU-PRODUCTION-009/REVIEW.md)에서 필요한 예를 읽는다.
+**교육용 SFT 준비 자료이며 실제 기관 규정·운영 권한·성능 보증이 아니다.** [강의](<../../../../01. Phase2_AI/10. 미세조정(Fine-tuning)/강의용.md>)의 U02/U03과 [실제 검토](https://github.com/cocoa2260/k-edu/blob/work/curriculum-production-001/curriculum-work/reports/KEDU-PRODUCTION-009/REVIEW.md)에서 필요한 예를 읽는다.
 
 ## 목적·출처·사용 범위
 
