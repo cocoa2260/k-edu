@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+:root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f8fc; color: #1a2b42; }
+body { margin: 0; }
+button, textarea { font: inherit; }
+.page { max-width: 1150px; margin: 0 auto; padding: 42px 24px 60px; }
+.header { margin-bottom: 26px; }
+.header h1 { font-size: clamp(30px,4vw,44px); margin: 8px 0; letter-spacing: -.04em; }
+.header p, .caution { color: #697c90; line-height: 1.7; }
+.eyebrow { color: #146c84; font-size: 13px; font-weight: 800; letter-spacing: .04em; }
+.layout { display: grid; grid-template-columns: 1fr 1.08fr; gap: 18px; }
+.panel { background: white; border: 1px solid #e2e8f0; border-radius: 15px; padding: 24px; box-shadow: 0 8px 28px rgba(31,61,95,.04); min-width: 0; }
+h2 { font-size: 21px; margin: 0 0 18px; }
+label { display: block; font-size: 14px; font-weight: 700; margin-bottom: 10px; }
+textarea { width: 100%; resize: vertical; padding: 13px; border: 1px solid #cbd7e5; border-radius: 10px; color: inherit; }
+textarea:focus { outline: 2px solid #50a4bd; outline-offset: 2px; }
+.actions { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-top: 11px; }
+.count { font-size: 13px; color: #6f8092; }
+.invalid { color: #c03242; }
+.actions button { background: #126782; color: white; border: 0; padding: 12px 19px; border-radius: 9px; font-weight: 700; cursor: pointer; }
+.actions button:disabled { opacity: .55; cursor: not-allowed; }
+.reset { margin-top: 13px; padding: 0; border: 0; color: #126782; background: transparent; text-decoration: underline; cursor: pointer; }
+.answer { min-height: 250px; padding: 21px; background: #f7fafc; border: 1px solid #edf1f5; border-radius: 11px; }
+.muted { color: #8490a1; margin: 0; }
+.alert { background: #fff0f0; color: #b5263e; padding: 12px; border-radius: 8px; }
+.text-answer { white-space: pre-wrap; word-break: break-word; margin: 0; line-height: 1.7; }
+.info { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; padding-top: 18px; }
+.info strong { display: block; color: #7a8a9d; font-size: 12px; margin-bottom: 5px; }
+.info span { display: block; word-break: break-word; font-size: 13px; }
+.caution { margin: 17px 0 0; font-size: 12px; }
+.next { margin-top: 22px; padding: 23px 26px; border: 1px solid #d7e7ee; border-radius: 14px; background: #e8f4f6; }
+.next h2 { font-size: 19px; margin-bottom: 7px; }
+.next p { color: #335e6c; margin: 6px 0; line-height: 1.5; }
+@media (max-width:820px) { .page { padding: 25px 13px; } .layout { grid-template-columns: 1fr; } .panel { padding: 18px; } }

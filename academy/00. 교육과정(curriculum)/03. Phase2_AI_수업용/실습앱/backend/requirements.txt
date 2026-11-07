@@ -1,0 +1,7 @@
+# 본 제작 환경의 Python 3.13에서 계약 테스트한 버전.
+# 교육생 PC의 Python 3.11/3.12 조합은 별도로 실행 확인해야 합니다.
+fastapi==0.128.2
+pydantic==2.13.5
+httpx==0.28.1
+uvicorn==0.48.0
+python-dotenv==1.2.2

@@ -1,0 +1,17 @@
+# 개인 설정, 가상환경, 빌드·테스트 산출물
+.env
+**/.env
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+.pytest_cache/
+**/.pytest_cache/
+*.pyc
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+local_data/
+**/local_data/
+.DS_Store

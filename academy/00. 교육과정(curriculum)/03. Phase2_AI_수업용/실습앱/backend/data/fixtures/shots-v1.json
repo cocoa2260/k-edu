@@ -1,0 +1,16 @@
+{
+  "version": "shots-v1",
+  "separate_from_evaluation": true,
+  "examples": [
+    {
+      "question": "예시 규정에서 도서 대출 기한은?",
+      "evidence": "DOC-EX1: 대출 기간은 10일이다.",
+      "answer": "10일입니다. [DOC-EX1]"
+    },
+    {
+      "question": "예시 규정에서 도서 연체 벌금은?",
+      "evidence": "DOC-EX2: 예약은 1회 가능하다. 연체 벌금은 명시하지 않는다.",
+      "answer": "제공 자료에 벌금 기준이 없어 확인이 필요합니다."
+    }
+  ]
+}

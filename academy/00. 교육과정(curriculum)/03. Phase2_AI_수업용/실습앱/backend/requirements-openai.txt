@@ -1,0 +1,3 @@
+# OpenAI 선택 시에만 설치: 유료 API 사용료가 발생할 수 있습니다.
+-r requirements.txt
+openai>=1.50,<4
