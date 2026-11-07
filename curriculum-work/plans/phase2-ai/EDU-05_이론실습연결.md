@@ -124,21 +124,21 @@ AI 문서 도우미
 
 ## 2. 전체 누적 개발 작업 맵
 
-| 단원 | 단계 | 이번에 **직접 작성·수정**할 주요 파일 | UI/CLI에서 확인할 것 | 남겨야 할 누적 결과 |
+| 단원 | 이번에 구현할 기능 | 이번에 **직접 작성·수정**할 주요 파일 | UI/CLI에서 확인할 것 | 남겨야 할 누적 결과 |
 |---|---|---|---|---|
-| 01. LLM 심화·출발 | **기준 대화 앱** | 제공 시작본 실행; `App.jsx`, `main.py`, Provider 코드 위치 찾기 | Chat 답변/오류와 실제 네트워크 요청 | 기본 React·FastAPI·Provider 실행 상태 |
-| 02. Prompt·Context | **Prompt·Context** | `app/prompting.py` 신규, `assistant_service.py` 신규, `main.py`·`App.jsx` 확장 | 입력 지시/자료/질문이 실제 요청에 들어가는 과정 | 공통 입력 조립 함수 |
-| 03. Harness | **실행 관리** | `app/harness.py` 신규, `assistant_service.py`의 호출 경로 교체 | 정상/오류/재시도/종료 이유 | 한도 있는 실행기와 이력 |
-| 04. Document·Chunk | **문서 처리** | `app/documents.py` 신규, `data/sources/*`·`catalog.json` 준비, 문서 관찰 UI 추가 | TXT·MD → Chunk ID/순서/원문 위치 | 정규화된 문서·Chunk 데이터 |
-| 05. Embedding | **Embedding** | `retrieval/encoder.py` 신규, 관찰 endpoint/UI 추가 | 실제 벡터의 차원·길이·유사도 | 문서/질문 Embedding 호출 함수 |
-| 06. Vector DB·검색 | **벡터 검색** | `retrieval/index.py` 신규, 검색 API/UI 추가 | SQLite 저장, Top-k 검색, Metadata, 갱신 반영 | 검색 가능한 Index와 `search()` |
-| 07. RAG | **RAG** | `app/rag.py` 신규, `assistant_service.py`에 RAG 모드 연결 | 근거가 첨부된 답변, 근거 없는 질문 처리 | Chat/RAG 2개 모드 |
-| 08. Tool Calling | **Tool Calling** | `app/tools_registry.py` 신규, 요청 Schema/Dispatcher와 관찰 UI 추가 | 도구 요청 vs 실제 실행, 잘못된 인자 거부 | 안전한 검색/읽기 도구 |
-| 09. Single-Agent | **Single-Agent** | `app/agent.py` 신규, 공통 실행경로에 Single 모드 연결 | 모델의 도구 선택→실행→다음 행동→종료 | 제한된 Single-Agent |
-| 10. Multi-Agent | **Multi-Agent** | `app/multi_agent.py` 신규, 공통 실행경로에 Multi 모드 연결 | 검색/작성/검토 Handoff, 전체 한도 | 제한된 순차 Multi-Agent |
-| 11. 통합·평가 | **최종 통합** | `App.jsx`·`api.js` 정리, 공통 응답·테스트·README 최종화 | 동일 질문의 4개 모드·회귀·실제 모델 결과 | 최종 학생용 애플리케이션 |
+| 01. LLM 심화·출발 | **기존 대화 앱 실행·확인** | 제공 시작본 실행; `App.jsx`, `main.py`, Provider 코드 위치 찾기 | Chat 답변/오류와 실제 네트워크 요청 | 기본 React·FastAPI·Provider 실행 상태 |
+| 02. Prompt·Context | **모델 입력 구성 및 비교** | `app/prompting.py` 신규, `assistant_service.py` 신규, `main.py`·`App.jsx` 확장 | 입력 지시/자료/질문이 실제 요청에 들어가는 과정 | 공통 입력 조립 함수 |
+| 03. Harness | **응답 검사·재시도·종료 처리** | `app/harness.py` 신규, `assistant_service.py`의 호출 경로 교체 | 정상/오류/재시도/종료 이유 | 한도 있는 실행기와 이력 |
+| 04. Document·Chunk | **원문 정리와 단락 분할** | `app/documents.py` 신규, `data/sources/*`·`catalog.json` 준비, 문서 관찰 UI 추가 | TXT·MD → Chunk ID/순서/원문 위치 | 정규화된 문서·Chunk 데이터 |
+| 05. Embedding | **실제 벡터 생성·비교** | `retrieval/encoder.py` 신규, 관찰 endpoint/UI 추가 | 실제 벡터의 차원·길이·유사도 | 문서/질문 Embedding 호출 함수 |
+| 06. Vector DB·검색 | **벡터 저장과 유사도 검색** | `retrieval/index.py` 신규, 검색 API/UI 추가 | SQLite 저장, Top-k 검색, Metadata, 갱신 반영 | 검색 가능한 Index와 `search()` |
+| 07. RAG | **문서 근거를 사용하는 답변 생성** | `app/rag.py` 신규, `assistant_service.py`에 RAG 모드 연결 | 근거가 첨부된 답변, 근거 없는 질문 처리 | Chat/RAG 2개 모드 |
+| 08. Tool Calling | **도구 요청·검사·실행** | `app/tools_registry.py` 신규, 요청 Schema/Dispatcher와 관찰 UI 추가 | 도구 요청 vs 실제 실행, 잘못된 인자 거부 | 안전한 검색/읽기 도구 |
+| 09. Single-Agent | **도구를 선택하는 반복 실행** | `app/agent.py` 신규, 공통 실행경로에 Single 모드 연결 | 모델의 도구 선택→실행→다음 행동→종료 | 제한된 Single-Agent |
+| 10. Multi-Agent | **검색·작성·검토 역할 분담** | `app/multi_agent.py` 신규, 공통 실행경로에 Multi 모드 연결 | 검색/작성/검토 Handoff, 전체 한도 | 제한된 순차 Multi-Agent |
+| 11. 통합·평가 | **전체 기능 실행·비교·검증** | `App.jsx`·`api.js` 정리, 공통 응답·테스트·README 최종화 | 동일 질문의 4개 모드·회귀·실제 모델 결과 | 최종 학생용 애플리케이션 |
 
-**명칭 주의:** 실습 Embedding·검색를 05·06단원에서 **Embedding / 벡터 검색**로 나누고, 도구 호출·Agent를 08·09단원에서 **Tool Calling / Single-Agent**로 나눈 것은 EDU-03·04에서 승인된 단계 정의를 유지하기 위해서다. 새로운 독립 앱을 의미하지 않는다.
+**학습 흐름:** Embedding과 벡터 검색은 연속된 두 단원에서 구현한다. Tool Calling을 구현한 다음 Single-Agent 기능으로 확장한다. 어느 단원에서도 별도의 새 앱을 시작하지 않는다.
 
 ---
 
@@ -146,7 +146,7 @@ AI 문서 도우미
 
 이하 표에서 **`[기존]`은 현재 GitHub 참조 구현에서 확인한 개념/소스**, **`[신규]`는 앞으로 학생용 프로젝트에 작성할 파일·기능**, **`[제안]`은 EDU-05 승인 후 상세 구현 시 확정할 계약**을 뜻한다.
 
-### 01단원. LLM 심화와 AI 프로젝트 출발 — 기준 대화 앱
+### 01단원. LLM 심화와 AI 프로젝트 출발
 
 **새 이론:** 생성 결과와 검증된 사실의 차이, 현재 문서가 모델에 없는 경우, Chat·RAG·Agent·Multi-Agent의 최종 기능 대비, 실행 성공·답변 정확성·업무 허용 기준의 차이. **Phase1의 AI 역사·React/HTTP/JSON·Ollama 설치 기본을 다시 강의하지 않는다.**
 
@@ -162,7 +162,7 @@ AI 문서 도우미
 
 **교안 집필 요구:** Prompt·Context와 실행 관리의 Prompt 비교에 사용할 **작은 고정 가상 문서/질문 Fixture만 기준 대화 앱에 함께 제공**한다(미리 구현한 검색기는 포함하지 않음). 학생이 다운로드·복사할 시작본 목록, `cd` 위치, OS별 실행 명령, 새 브라우저 주소, 모델/키가 없을 때의 상태를 정확하게 적는다. 학생에게 미리 RAG·Agent 전체 구현을 복사하도록 하지 않는다.
 
-### 02단원. Prompt & Context Engineering — Prompt·Context
+### 02단원. Prompt & Context Engineering
 
 **새 이론:** 동일 질문/문서를 유지한 채 지시·제약·출력 형식을 조정하는 방법, 신뢰할 수 없는 문서와 개발자 지시의 경계, 이번 호출에 포함되는 Context의 수명·선택·순서·Token 예산. Phase1의 Tokenizer·Context Window 정의는 다시 길게 반복하지 않는다.
 
@@ -180,7 +180,7 @@ AI 문서 도우미
 
 **주의:** 현재 GitHub의 `/ai/prepare`는 `case_id`와 `variant`로 고정 자료를 조립하는 **기존 실험**이다. 학생이 브라우저에서 임의 질문을 보내는 새 입력 미리보기는 이를 그대로 학생의 실제 Chat 연동이라고 부르지 않는다. 별도 통합을 구현해야 한다.
 
-### 03단원. AI 실행 관리(Harness) — 실행 관리
+### 03단원. AI 실행 관리(Harness)
 
 **새 이론:** 통신 실패·응답 형식 실패·근거 실패의 차이, 재시도와 수정 요청(Repair)의 차이, 총 호출 예산과 시간 한도, 종료 기록. 고정 응답 테스트와 실제 모델 생성의 차이.
 
@@ -197,7 +197,7 @@ AI 문서 도우미
 
 **주의:** 처음부터 복잡한 비동기 감독/하드 Cancel 보장을 구현한다고 주장하지 않는다. 취소한 응답은 UI에서 버리더라도 외부 모델 작업 중단이 보장되는지 별도로 확인해야 한다.
 
-### 04단원. 문서 수집·전처리·Chunking — 문서 처리
+### 04단원. 문서 수집·전처리·Chunking
 
 **새 이론:** 문서 원본과 검색용 텍스트의 차이, TXT/Markdown의 제목·단락·표 구조, 정규화와 원문 손실의 위험, **Chunk 단위 결정(단락/제목/길이/의미)**, Chunk ID·순서·출처 위치/버전·Metadata, 변경 시 재인덱싱의 필요.
 
@@ -217,7 +217,7 @@ AI 문서 도우미
 
 **범위:** 이번 필수 교안은 **TXT/Markdown**만 처리한다. PDF·OCR·표 레이아웃 재구성은 심화. 기존 `retrieval/index.py`는 줄 단위로 청크를 만드는 구현이므로, 이번에 요구하는 단락/제목 기준을 **그대로 만족하는 코드라고 가정하지 않는다.** EDU-07에서 의도적으로 수정할 범위를 구분해야 한다.
 
-### 05단원. Embedding — Embedding
+### 05단원. Embedding
 
 **새 이론:** Token ID와 검색용 Embedding의 차이, 생성 LLM vs 임베딩 Encoder, Passage/Query 입력 역할, 벡터·차원·정규화·Cosine Similarity, 의미 유사도와 사실/정책 적합성의 차이. Pooling은 **Embedding 생성에 필요한 원리**로만 다루고 Transformer 전체 수식은 반복하지 않는다.
 
@@ -235,7 +235,7 @@ AI 문서 도우미
 
 **실제 기존 코드 근거:** `retrieval/encoder.py`에는 `intfloat/multilingual-e5-small` 및 특정 Revision, `query:`/`passage:` prefix, CPU 기반 `E5Encoder.encode(texts, kind)`가 존재한다. **이번 설계에서 실습 모델의 확정 설치 조건/교육장 재현 성공까지 검증한 것은 아니다.**
 
-### 06단원. Vector DB & Retrieval — 벡터 검색
+### 06단원. Vector DB & Retrieval
 
 **새 이론:** 벡터 생성(Encoder)과 검색 Index(저장/조회)의 분리, 본문·Vector·Metadata 저장, SQLite 기반 Exact Search와 전용 Vector DB의 차이, Top-k/거리/정렬·필터, 갱신·삭제·재색인, ANN·Hybrid는 비교 개요.
 
@@ -252,7 +252,7 @@ AI 문서 도우미
 
 **주의:** SQLite + Python의 전체 Vector Exact 비교는 **교육용 검색 Index**이지 SQLite 자체를 전용 벡터 DB와 완전히 동일하게 구현했다는 뜻이 아니다. ANN/HNSW/FAISS 설치·재현은 **선택 심화**로 둔다.
 
-### 07단원. RAG 구축 — RAG
+### 07단원. RAG 구축
 
 **새 이론:** 문서 인덱싱과 질문시 Retrieval 분리, 검색된 Chunk를 Context에 넣는 방식, 검색 결과와 답변의 차이, Claim/Quote/Source 확인, 근거 부족 시 보류·되묻기, **인용 존재 ≠ 주장 사실성**.
 
@@ -269,7 +269,7 @@ AI 문서 도우미
 
 **중요:** 자료를 인용해도 모델이 잘못된 금액을 말할 수 있다. 교육용 응답 구조에서 **구조 검사 통과**와 **사실성 검토 필요**를 분리하여 학생 화면에도 표현한다.
 
-### 08단원. Tool Calling — Tool Calling
+### 08단원. Tool Calling
 
 **새 이론:** Tool 이름/설명/입력 Schema, 모델이 요청하는 작업과 Backend가 허용·실행하는 작업의 분리, 도구 Registry/Dispatcher, 인자 검증, 권한·실패·결과 메시지. Tool Calling이 곧 Agent 전체를 의미하지 않음.
 
@@ -286,7 +286,7 @@ AI 문서 도우미
 
 **기술 구분:** 기존 참조 구현에는 모델의 **구조화된 JSON 행동 요청 → Python 검증·Dispatch** 경로가 있다. 이는 도구 사용의 요청/실행 원리를 학습하는 방법이지만, 모든 Provider SDK의 네이티브 Tool Calling API를 이미 구현했다는 뜻은 아니다. **네이티브 Tool Call ID/메시지 프로토콜은 Provider 선택 이후 별도 구현 여부를 표시**한다. 실제 학생 결과에는 *요청이 모델로부터 왔는지 또는 고정 응답 Fixture인지*를 구분한다.
 
-### 09단원. Single-Agent 구축 — Single-Agent
+### 09단원. Single-Agent 구축
 
 **새 이론:** 고정 RAG Workflow와 동적 행동 선택의 차이, 관찰→다음 행동→도구→새 관찰을 반복하는 Agent Loop, 상태/이력, 종료 조건, 예산·Timeout, 허용되지 않은 행동을 거절하는 Runtime.
 
@@ -303,7 +303,7 @@ AI 문서 도우미
 
 **주의:** 단순히 `search→read→answer`를 **항상 하드코딩**하면 Single-Agent 기능을 설명하기에 부족하다. 최소 한 단계는 **실제 모델이 허용된 후보 중 다음 행동을 요청**하고 Runtime이 그 행동을 검증·실행하도록 한다. 결정 경로와 재현용 Fixture 테스트는 별도로 남긴다.
 
-### 10단원. Multi-Agent 구축 — Multi-Agent
+### 10단원. Multi-Agent 구축
 
 **새 이론:** Agent 간 목표/책임 분리, 검색자·작성자·검토자의 데이터 전달, 역할별 입력 범위, 공통 예산, 실패 전파, 전체 종료 책임, 모델 검토와 실제 승인 분리.
 
@@ -320,7 +320,7 @@ AI 문서 도우미
 
 **주의:** 기존 구현은 **한 Provider를 역할별로 순차 호출**할 수 있는 구조다. 여러 GPU/서버나 독립된 모델 세 개를 요구하지 않는다. Orchestrator가 허용된 역할 순서를 정하고 모델은 역할 범위 안에서 행동한다. 이것을 완전 자율 분산 Agent라고 설명하지 않는다.
 
-### 11단원. 통합 서비스 및 최종 검증 — 최종 통합
+### 11단원. 통합 서비스 및 최종 검증
 
 **새 이론:** 공통 API/응답·출처·Trace 계약, 로딩/오류/취소와 오래된 결과 차단, 동일 질문으로 다른 모드 비교, 고정 응답 테스트/실제 모델 실행/답변 정확성 평가의 차이. Phase1의 React/FastAPI 문법 재강의 금지.
 
